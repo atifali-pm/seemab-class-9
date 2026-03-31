@@ -1,2 +1,7 @@
-Physics-whole-book.pdf filter=lfs diff=lfs merge=lfs -text
-Biology-whole-book.pdf filter=lfs diff=lfs merge=lfs -text
+biology/whole-book.pdf filter=lfs diff=lfs merge=lfs -text
+chemistry/whole-book.pdf filter=lfs diff=lfs merge=lfs -text
+math/whole-book.pdf filter=lfs diff=lfs merge=lfs -text
+math/whole-book-federal-board.pdf filter=lfs diff=lfs merge=lfs -text
+physics/whole-book.pdf filter=lfs diff=lfs merge=lfs -text
+physics/marked-sheets/teacher-style-marked-v1.pdf filter=lfs diff=lfs merge=lfs -text
+physics/marked-sheets/teacher-style-marked-v2.pdf filter=lfs diff=lfs merge=lfs -text
