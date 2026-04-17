@@ -1,0 +1,7 @@
+# Claude Code internal state (per-user, not source)
+.claude/
+
+# OS / editor artifacts
+.DS_Store
+*.swp
+*~
