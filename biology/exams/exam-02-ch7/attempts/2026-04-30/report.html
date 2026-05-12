@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DejaVu Sans', Arial, sans-serif; font-size: 12px; color: #1a1a1a; background: #fff; }
+  .page { width: 100%; padding: 18mm 16mm; }
+
+  /* Header */
+  .header-box { border: 2px solid #2e7d32; border-radius: 6px; padding: 10px 14px; margin-bottom: 12px; background: #f1f8e9; }
+  .header-box h1 { font-size: 18px; color: #1b5e20; margin-bottom: 3px; }
+  .header-box .meta { font-size: 11px; color: #555; }
+
+  /* Score banner */
+  .score-banner { display: flex; gap: 10px; margin-bottom: 14px; }
+  .score-card { flex: 1; border-radius: 6px; padding: 10px 12px; text-align: center; }
+  .score-card.total { background: #1b5e20; color: #fff; }
+  .score-card.pct { background: #2e7d32; color: #fff; }
+  .score-card.grade { background: #388e3c; color: #fff; }
+  .score-card.mcq  { background: #43a047; color: #fff; }
+  .score-card .label { font-size: 10px; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.5px; }
+  .score-card .value { font-size: 22px; font-weight: bold; margin-top: 2px; }
+
+  /* Section headers */
+  .section-hdr { background: #2e7d32; color: #fff; padding: 5px 10px; font-size: 13px; font-weight: bold; margin: 14px 0 8px 0; border-radius: 4px; }
+
+  /* MCQ table */
+  table.mcq { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 10px; }
+  table.mcq th { background: #388e3c; color: #fff; padding: 5px 7px; text-align: center; }
+  table.mcq td { border: 1px solid #c8e6c9; padding: 4px 7px; text-align: center; }
+  table.mcq tr:nth-child(even) td { background: #f9fbe7; }
+  .correct { color: #1b5e20; font-weight: bold; }
+  .wrong { color: #c62828; font-weight: bold; }
+  .badge-correct { background: #c8e6c9; color: #1b5e20; border-radius: 10px; padding: 1px 7px; font-weight: bold; }
+  .badge-wrong   { background: #ffcdd2; color: #c62828; border-radius: 10px; padding: 1px 7px; font-weight: bold; }
+
+  /* Q-blocks */
+  .q-block { border: 1px solid #c8e6c9; border-radius: 6px; margin-bottom: 10px; page-break-inside: avoid; }
+  .q-block-header { background: #e8f5e9; padding: 6px 10px; border-radius: 5px 5px 0 0; display: flex; justify-content: space-between; align-items: center; }
+  .q-block-header .q-title { font-weight: bold; font-size: 12px; color: #1b5e20; }
+  .q-block-header .marks-badge { border-radius: 12px; padding: 2px 10px; font-weight: bold; font-size: 12px; }
+  .marks-full  { background: #1b5e20; color: #fff; }
+  .marks-part  { background: #f57f17; color: #fff; }
+  .marks-zero  { background: #c62828; color: #fff; }
+  .q-block-body { padding: 8px 10px; }
+  .q-block-body .tag { font-size: 10px; background: #f0f4c3; color: #827717; border-radius: 8px; padding: 1px 7px; margin-bottom: 5px; display: inline-block; }
+  .q-block-body .comment { font-size: 11px; color: #333; margin-top: 4px; }
+  .q-block-body .deduction { color: #b71c1c; font-size: 11px; margin-top: 3px; padding-left: 10px; border-left: 3px solid #ef9a9a; }
+  .q-block-body .strength  { color: #1b5e20; font-size: 11px; margin-top: 3px; padding-left: 10px; border-left: 3px solid #a5d6a7; }
+  .breakdown { font-size: 10.5px; margin-top: 5px; color: #555; }
+  .breakdown span { margin-right: 10px; }
+
+  /* Comparison table */
+  table.compare { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 8px; }
+  table.compare th { background: #37474f; color: #fff; padding: 5px 8px; }
+  table.compare td { border: 1px solid #cfd8dc; padding: 4px 8px; }
+  table.compare .highlight td { background: #e8f5e9; font-weight: bold; }
+
+  /* Summary boxes */
+  .summary-grid { display: flex; gap: 10px; margin-top: 10px; }
+  .summary-box { flex: 1; border-radius: 6px; padding: 9px 12px; page-break-inside: avoid; }
+  .summary-box.strengths { background: #e8f5e9; border: 1px solid #a5d6a7; }
+  .summary-box.weaknesses { background: #fff3e0; border: 1px solid #ffcc80; }
+  .summary-box h3 { font-size: 12px; margin-bottom: 6px; }
+  .summary-box.strengths h3 { color: #1b5e20; }
+  .summary-box.weaknesses h3 { color: #e65100; }
+  .summary-box ul { padding-left: 15px; font-size: 11px; line-height: 1.6; }
+
+  .footer { margin-top: 18px; text-align: center; font-size: 10px; color: #999; border-top: 1px solid #e0e0e0; padding-top: 6px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <h1>Biology — Exam 02 — Chapter 7: Metabolism</h1>
+    <div class="meta">Seemab &nbsp;|&nbsp; Annual Examination 2026 &nbsp;|&nbsp; Federal Board (FBISE) SSC-I &nbsp;|&nbsp; Attempt date: 30 April 2026 &nbsp;|&nbsp; Marked: 30 April 2026</div>
+  </div>
+
+  <!-- SCORE BANNER -->
+  <div class="score-banner">
+    <div class="score-card total">
+      <div class="label">Total Score</div>
+      <div class="value">60.5 / 65</div>
+    </div>
+    <div class="score-card pct">
+      <div class="label">Percentage</div>
+      <div class="value">93.1%</div>
+    </div>
+    <div class="score-card grade">
+      <div class="label">Grade</div>
+      <div class="value">A</div>
+    </div>
+    <div class="score-card mcq">
+      <div class="label">MCQ Score</div>
+      <div class="value">12 / 12</div>
+    </div>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-hdr">SECTION A — Multiple Choice Questions (12 × 1 = 12 Marks) &nbsp; Score: 12/12</div>
+  <table class="mcq">
+    <tr>
+      <th>#</th><th>Question (short)</th><th>Seemab</th><th>Key</th><th>Result</th>
+    </tr>
+    <tr><td>1</td><td>Sum of all chemical reactions in a cell</td><td class="correct">C — Metabolism</td><td>C — Metabolism</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>2</td><td>Enzymes are produced by</td><td class="correct">B — Living cells</td><td>B — Living cells</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>3</td><td>Part of enzyme where substrate binds</td><td class="correct">C — Active site</td><td>C — Active site</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>4</td><td>Enzyme loses function at high temperature because it is</td><td class="correct">B — Denatured</td><td>B — Denatured</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>5</td><td>Competitive inhibitor blocks enzyme by binding to</td><td class="correct">C — Active site</td><td>C — Active site</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>6</td><td>ATP is energy currency because it</td><td class="correct">B — Stores and releases energy</td><td>B — Stores and releases energy</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>7</td><td>Third component of ATP alongside adenine and ribose</td><td class="correct">B — Three phosphate groups</td><td>B — Three phosphate groups</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>8</td><td>O₂ released as by-product of photosynthesis through</td><td class="correct">B — Photolysis of water</td><td>B — Photolysis of water</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>9</td><td>Calvin cycle occurs in the</td><td class="correct">C — Stroma of chloroplast</td><td>C — Stroma of chloroplast</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>10</td><td>Net ATP gain from glycolysis</td><td class="correct">C — 2 ATP</td><td>C — 2 ATP</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>11</td><td>Alcoholic fermentation in yeast produces ethyl alcohol and</td><td class="correct">C — Carbon dioxide</td><td>C — Carbon dioxide</td><td><span class="badge-correct">1/1</span></td></tr>
+    <tr><td>12</td><td>Final electron acceptor in ETC</td><td class="correct">C — Oxygen</td><td>C — Oxygen</td><td><span class="badge-correct">1/1</span></td></tr>
+  </table>
+  <p style="font-size:11px;color:#1b5e20;font-weight:bold;">Seven consecutive perfect 12/12 MCQ scores — record-extending streak continues.</p>
+
+  <!-- SECTION B -->
+  <div class="section-hdr">SECTION B — Short Questions (11 × 3 = 33 Marks) &nbsp; Score: 30.5/33</div>
+
+  <!-- Q2(i) -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(i) MAIN — Define metabolism; differentiate catabolism and anabolism with one example each</span>
+      <span class="marks-badge marks-full">3/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">Metabolism defined correctly ("sum of all chemical reactions going on within each cell … for the maintenance and sustainability of life"). Catabolism defined with digestion example. Anabolism defined with glycogen synthesis example. All three mark-points hit cleanly.</p>
+      <div class="breakdown"><span>Metabolism def: 1/1</span><span>Catabolism + example: 1/1</span><span>Anabolism + example: 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(ii) OR -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(ii) OR — Explain "enzymes are specific"; give one example</span>
+      <span class="marks-badge marks-part">2/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">OR variant chosen</span>
+      <p class="strength">Specificity concept stated well: "enzymes are usually very specific so catalyse only one type of reaction." Amylase example given (acts only on starch, not proteins or fats).</p>
+      <p class="deduction">Missing the second mark-point: the answer key requires an explicit statement that "the active site has a unique shape fitting only one specific substrate — like a lock fits only one key." The mechanism behind specificity (active-site shape) was not mentioned. Lost 1 mark.</p>
+      <div class="breakdown"><span>Specificity concept: 1/1</span><span>Active site mechanism: 0/1</span><span>Example (amylase): 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(iii) OR -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(iii) OR — What is energy of activation? How do enzymes lower it?</span>
+      <span class="marks-badge marks-full">3/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">OR variant chosen</span>
+      <p class="strength">Energy of activation defined precisely ("minimum amount of extra energy required to activate the molecule to react or start the reaction"). Both mechanisms stated: (1) enzymes lower it by changing the shape and charge of the substrate; (2) enzymes may provide an entirely different mechanism of reaction. Body-temperature significance included.</p>
+      <div class="breakdown"><span>Definition: 1/1</span><span>How enzymes lower it (2 mechanisms): 1/1</span><span>Effect / body temp: 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(iv) MAIN -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(iv) MAIN — How does temperature affect enzyme activity? Very high and very low?</span>
+      <span class="marks-badge marks-full">3/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">High temperature: atoms vibrate vigorously → globular structure and active site damaged → denatured. Low temperature: enzyme becomes inactive due to fall in available activation energy. Both effects clearly stated with correct terminology.</p>
+      <div class="breakdown"><span>High temp / denaturation: 1/1</span><span>Low temp / inactivity: 1/1</span><span>Optimum context implicit: 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(v) MAIN -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(v) MAIN — Distinguish competitive and non-competitive inhibition</span>
+      <span class="marks-badge marks-part">2/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">Competitive inhibition: binding site (active site) correctly identified; shape similarity to substrate stated ("molecules which occupy the active site due to their similarity in shape or structure to substrate"). Reversibility contrast present (can be reversed / cannot be reversed).</p>
+      <p class="deduction">Allosteric site not named — for non-competitive inhibition, the answer key requires explicitly naming the allosteric site as the binding location, not just stating that it doesn't bind the active site. Seemab wrote "do not occupy the active site" but did not name the allosteric site. Lost 1 mark.</p>
+      <div class="breakdown"><span>Binding site contrast (active vs allosteric): 1/1</span><span>Shape similarity to substrate (stated): 1/1</span><span>Allosteric site named: 0/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(vi) MAIN -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(vi) MAIN — Describe structure of ATP molecule; name its three components</span>
+      <span class="marks-badge marks-full">3/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">All three components named correctly: Adenine (double-ringed nitrogen base), Ribose (five-carbon sugar), Three phosphate groups (PO₄) in triphosphate chain. Adenosine formation explained (Adenine + 5C sugar → Adenosine). AMP → ADP → ATP chain described with phosphate additions. Excellent structural precision.</p>
+      <div class="breakdown"><span>Adenine: 1/1</span><span>Ribose: 1/1</span><span>Three phosphate groups: 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(vii) MAIN -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(vii) MAIN — Overall equation for photosynthesis; raw materials and products</span>
+      <span class="marks-badge marks-full">3/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">Equation written correctly: 6CO₂ + 12H₂O → (light/chlorophyll) → C₆H₁₂O₆ + 6H₂O + 6O₂. Raw materials (CO₂ from stomata, H₂O absorbed by roots, chlorophyll captures light), products (glucose + oxygen), and conditions (light energy + chlorophyll, plants/algae/cyanobacteria) all stated.</p>
+      <div class="breakdown"><span>Equation: 1/1</span><span>Raw materials: 1/1</span><span>Products + conditions: 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(viii) OR -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(viii) OR — Describe photolysis of water; its role in light-dependent reactions</span>
+      <span class="marks-badge marks-full">3/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">OR variant chosen</span>
+      <p class="strength">Definition: light-dependent reactions depend on Photosystems I and II to absorb light. Role I: electrons released by photolysis replace electrons lost from excited chlorophyll of PSII — maintaining the reaction. Role II: O₂ released through stomata, H⁺ ions reduce NADP⁺ to NADPH. All three mark-points present.</p>
+      <div class="breakdown"><span>Photolysis definition: 1/1</span><span>Role I (electron replacement): 1/1</span><span>Role II (O₂ + NADPH production): 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(ix) MAIN -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(ix) MAIN — Four stages of aerobic respiration in correct order</span>
+      <span class="marks-badge marks-part">2.5/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">All four stages named in correct order: Glycolysis (cytoplasm), Formation of Acetyl CoA (mitochondria), Krebs Cycle, Electron Transport Chain. Equations for each stage written out correctly with products.</p>
+      <p class="deduction">ETC location not stated — answer key requires "inner mitochondrial membrane." The answer says only "NADH + FADH₂ → 32 ATP + H₂O" without specifying the location. Partial mark for ETC (0.5 mark deducted; location mark not fully awarded).</p>
+      <div class="breakdown"><span>4 stages named in order: 1/1</span><span>Locations (glycolysis/mitochondria): 1/1 — but ETC location missing</span><span>Products per stage: 0.5/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(x) MAIN -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(x) MAIN — What is glycolysis? Where does it occur? Products?</span>
+      <span class="marks-badge marks-full">3/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">Definition precise: "first stage of cellular respiration, one glucose (6C) broken down into two molecules of pyruvic acid (3C each)." Location: cytoplasm, outside mitochondria. Products: 2 pyruvic acid + 2 ATP (net) + 2 NADH — "(net)" specifically included, showing understanding of gross vs net yield.</p>
+      <div class="breakdown"><span>Definition: 1/1</span><span>Location: 1/1</span><span>Products (with net qualifier): 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- Q2(xi) OR -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.2(xi) OR — Four reasons why anaerobic respiration is important</span>
+      <span class="marks-badge marks-full">3/3</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">OR variant chosen</span>
+      <p class="strength">All four reasons given: (1) Early Earth / earliest organisms — anaerobic respiration was evolutionary necessity. (2) Bacteria use it for cheese and yogurt making. (3) Yeast fermentation for wine making and baking industry. (4) Lactic acid fermentation provides emergency energy to muscle cells during vigorous exercise when O₂ is insufficient. Matches answer key exactly.</p>
+      <div class="breakdown"><span>Reason 1 (evolutionary): 1 mark</span><span>Reason 2 (food industry): 1 mark</span><span>Reasons 3+4: 1 mark</span></div>
+    </div>
+  </div>
+
+  <!-- SECTION C -->
+  <div class="section-hdr">SECTION C — Long Questions (4 × 5 = 20 Marks) &nbsp; Score: 18/20</div>
+
+  <!-- Q3(i) MAIN -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.3(i) MAIN — Define enzyme; describe any five characteristics with examples</span>
+      <span class="marks-badge marks-part">4/5</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">Enzyme defined excellently: "biological catalysts which are biologically active globular proteins made by living cells, which speed up extremely biochemical reaction (without being used)." Five characteristics written: (1) Globular proteins — amino acid chains folded into 3D globular proteins, ribozymes mentioned. (2) Specific — with amylase example. (3) Required in small quantity — reuse mechanism explained. (4) Regulation of enzyme production and activity — synthesis can increase/decrease by cell; inhibitors and activators. (5) Enzymes make metabolic pathways — series of connected chemical reactions described.</p>
+      <p class="deduction">Characteristic 2 (Increase rate of reaction) — the key expects "millions of times faster than non-enzymatic reactions; only speed up, do not start reactions." Seemab's answer does not include "increase rate of reaction" as a named characteristic with that specific quantitative claim. The specificity and metabolic pathway characteristics are valid but the "rate of reaction" characteristic earns its own mark. Lost 1 mark for omitting the speed/rate-of-reaction characteristic as a distinct point.</p>
+      <div class="breakdown"><span>Definition: 1/1</span><span>Globular proteins: 1/1</span><span>Rate of reaction (missing explicitly): 0/1</span><span>Small quantity + reuse: 1/1</span><span>Specific + example: 1/1</span><span>Regulation/metabolic pathway: 1/1 (takes "also valid" credit)</span></div>
+    </div>
+  </div>
+
+  <!-- Q3(ii) OR -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.3(ii) OR — Competitive and non-competitive inhibition; allosteric site; daily-life examples</span>
+      <span class="marks-badge marks-full">5/5</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">OR variant chosen</span>
+      <p class="strength">Enzyme inhibition intro: definition, inhibitor binds in place of substrate, does not convert to products, external factors listed (poisons, cyanide, antibiotics, drugs). Competitive inhibition: inhibitor resembles substrate → occupies active site → substrate blocked → no product → reversible → sulfonamide drug example with antibiotic action. Non-competitive inhibition: does not resemble substrate → binds allosteric site (enzyme surface, not active site) → alters globular shape → active site damaged → substrate cannot bind → irreversible → cyanide (rat poison) inhibiting cytochrome c oxidase in ETC → heavy metals (Pb, Hg) also mentioned. All five mark-points hit.</p>
+      <div class="breakdown"><span>Inhibition intro: 1/1</span><span>Competitive (mechanism + reversible + example): 2/2</span><span>Non-competitive (allosteric + irreversible + example): 2/2</span></div>
+    </div>
+  </div>
+
+  <!-- Q3(iii) OR -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.3(iii) OR — Describe photosynthesis: equation, light-dependent reactions, Calvin cycle in sequence</span>
+      <span class="marks-badge marks-part">4/5</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">OR variant chosen</span>
+      <p class="strength">Overall equation written. Light-dependent reactions (Phase 1) described in sequence with location (thylakoid membranes, grana), starting at PS II, chlorophyll absorbs light, photolysis of water (H₂O → O₂ + 2H⁺ + electrons), electrons pass through ETC for ATP synthesis, PS I reduces NADP⁺ to NADPH. Products: ATP, NADPH. Calvin cycle (Phase 2) in stroma of chloroplast: CO₂ + RuBP (5C) → 6C intermediate → 2×3-PGA → reduced by NADPH + ATP → G3P (3C sugar) → glucose synthesis + RuBP regeneration. Melvin Calvin credited.</p>
+      <p class="deduction">Overall balanced chemical equation 6CO₂ + 12H₂O → C₆H₁₂O₆ + 6H₂O + 6O₂ not written explicitly in Q3(iii). Raw materials and products were stated in prose but the balanced equation itself was missing. (Note: Seemab DID include "O₂ released through stomata" in the Phase 1 photolysis step — that sub-point is present and credited.) Lost 1 mark.</p>
+      <div class="breakdown"><span>Overall balanced equation (not written): 0/1</span><span>Phase 1 — light reactions (complete): 2/2</span><span>Phase 2 — Calvin cycle: 2/2</span></div>
+    </div>
+  </div>
+
+  <!-- Q3(iv) MAIN -->
+  <div class="q-block">
+    <div class="q-block-header">
+      <span class="q-title">Q.3(iv) MAIN — Compare aerobic and anaerobic respiration; glycolysis as common stage; fate of pyruvic acid</span>
+      <span class="marks-badge marks-full">5/5</span>
+    </div>
+    <div class="q-block-body">
+      <span class="tag">Main question</span>
+      <p class="strength">Comparison table: oxygen needed (yes/no), glucose oxidation (complete → CO₂+H₂O vs incomplete → alcohol/lactic acid), ATP yield (36 vs 2 ATP), site (cytoplasm + mitochondria vs cytoplasm only) — all four features correct. Glycolysis as common first stage: both pathways start with glycolysis in cytoplasm, Glucose (6C) → 2 pyruvic acid (3C) + 2 ATP + 2 NADH. Fate in anaerobic: pyruvic acid not fully oxidised — yeast → ethyl alcohol + CO₂ (wine/bread), muscles → lactic acid (yogurt, exercise fatigue). Fate in aerobic: pyruvic acid enters mitochondria → Step 2 Acetyl CoA → Step 3 Krebs → Step 4 ETC, total 36 ATP with O₂ as final electron acceptor. All five mark-points present — full marks awarded. (The overall aerobic equation C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O is only required in the OR variant, not the main question.)</p>
+      <div class="breakdown"><span>Comparison table (4 features): 1/1</span><span>Glycolysis as common stage: 1/1</span><span>Fate in anaerobic (yeast + muscle examples): 1/1</span><span>Fate in aerobic (all 3 stages + 36 ATP): 1/1</span><span>All required elements present: 1/1</span></div>
+    </div>
+  </div>
+
+  <!-- SCORE RECONCILIATION NOTE -->
+  <div style="background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:8px 12px;margin-top:8px;font-size:11px;page-break-inside:avoid;">
+    <strong>Score reconciliation:</strong>
+    Section A: 12/12 &nbsp;|&nbsp;
+    Section B: Q2(i) 3 + Q2(ii)or 2 + Q2(iii)or 3 + Q2(iv) 3 + Q2(v) 2 + Q2(vi) 3 + Q2(vii) 3 + Q2(viii)or 3 + Q2(ix) 2.5 + Q2(x) 3 + Q2(xi)or 3 = <strong>30.5/33</strong> &nbsp;|&nbsp;
+    Section C: Q3(i) 4 + Q3(ii)or 5 + Q3(iii)or 4 + Q3(iv) 5 = <strong>18/20</strong> &nbsp;|&nbsp;
+    <strong>Total: 60.5/65 (93.1%)</strong>
+  </div>
+
+  <!-- STRENGTHS AND WEAKNESSES -->
+  <div class="section-hdr" style="margin-top:14px;">Summary — Strengths and Areas for Improvement</div>
+  <div class="summary-grid">
+    <div class="summary-box strengths">
+      <h3>Strengths</h3>
+      <ul>
+        <li>Seventh consecutive perfect 12/12 MCQ score — streak extended to 7 in a row</li>
+        <li>ATP structure described with exceptional precision (adenosine formation, AMP→ADP→ATP chain)</li>
+        <li>Anaerobic respiration importance — all 4 reasons correctly stated from memory</li>
+        <li>Glycolysis answer: "(net)" qualifier spontaneously used — shows understanding of gross vs net ATP</li>
+        <li>Section C Q3(ii) inhibition answer: both competitive and non-competitive with examples from daily life (sulfonamide, cyanide, heavy metals) — textbook-level completeness</li>
+        <li>Four-stage aerobic respiration: all equations written correctly with correct products at each stage</li>
+        <li>Calvin cycle steps written correctly in sequence with names (RuBP, 3-PGA, G3P, Melvin Calvin)</li>
+        <li>Q3(iv) — full 5/5 on aerobic vs anaerobic comparison: all 4 table features, glycolysis as common stage, both anaerobic fates (yeast + muscle), all 3 aerobic stages with 36 ATP total</li>
+        <li>Massive improvement vs Biology exam-01 (52/65, 80%) — jumped 13.1 percentage points to 93.1%</li>
+      </ul>
+    </div>
+    <div class="summary-box weaknesses">
+      <h3>Areas for Improvement</h3>
+      <ul>
+        <li><strong>Q2(ii) OR — Enzyme specificity mechanism missing:</strong> Stated that enzymes are specific and gave amylase example, but did not explain WHY (active site has unique shape — lock-and-key). Always link specificity to active-site geometry.</li>
+        <li><strong>Q2(v) — Allosteric site not named:</strong> For non-competitive inhibition, the answer key requires explicitly naming the allosteric site as the binding location. Writing "do not occupy the active site" is necessary but not sufficient — the allosteric site must be named directly.</li>
+        <li><strong>Q2(ix) — ETC location not stated:</strong> "Inner mitochondrial membrane" is a required mark-point for locating ETC. Named all 4 stages but forgot to place ETC on the inner membrane.</li>
+        <li><strong>Q3(i) — "Increase rate of reaction" not named explicitly:</strong> Listed 5 valid characteristics but omitted the speed/rate characteristic as a named, distinct point. The quantitative claim ("millions of times faster") earns its own mark.</li>
+        <li><strong>Q3(iii) — Overall balanced equation not written:</strong> 6CO₂ + 12H₂O → C₆H₁₂O₆ + 6H₂O + 6O₂ was not written explicitly in the long answer. Raw materials and products were stated in prose — the balanced equation itself must appear. (Note: Q2(vii) MAIN had the equation correct; Q3(iii) OR did not include it.)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- COMPARISON VS PRIOR BIO ATTEMPT -->
+  <div class="section-hdr" style="margin-top:14px;">Comparison — Biology Exam Performance</div>
+  <table class="compare">
+    <tr>
+      <th>Exam</th><th>Date</th><th>Score</th><th>%</th><th>MCQ</th><th>Sec B</th><th>Sec C</th><th>Notes</th>
+    </tr>
+    <tr>
+      <td>exam-01-ch1-6</td><td>3 Apr 2026</td><td>52/65</td><td>80.0%</td><td>11/12</td><td>~26/33</td><td>~15/20</td><td>Q.5 Section C not attempted (-5); time issues</td>
+    </tr>
+    <tr class="highlight">
+      <td>exam-02-ch7</td><td>30 Apr 2026</td><td>60.5/65</td><td>93.1%</td><td>12/12</td><td>30.5/33</td><td>18/20</td><td>All sections complete; 7th consecutive perfect MCQ</td>
+    </tr>
+  </table>
+  <p style="font-size:11px;color:#1b5e20;margin-top:6px;"><strong>+13.1 percentage points improvement vs Biology exam-01.</strong> The time-management issue (unattempted Q.5) from exam-01 is fully resolved — all 4 Section C questions answered. MCQ error from exam-01 (missed Q5) not repeated.</p>
+
+  <div class="footer">Biology exam-02-ch7 &nbsp;|&nbsp; Attempt: 2026-04-30 &nbsp;|&nbsp; 60.5/65 = 93.1% &nbsp;|&nbsp; Generated: 2026-04-30</div>
+</div>
+</body>
+</html>
