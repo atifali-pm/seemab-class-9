@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', serif;
+    font-size: 11.5pt;
+    line-height: 1.2;
+    color: #000;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 5mm 6mm;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Header box */
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 4px 6px 3px 6px;
+    margin-bottom: 3px;
+  }
+  .header-box .board { font-size: 15pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.3px; }
+  .header-box .exam-year { font-size: 13pt; margin-top: 1px; }
+  .header-box .subject { font-size: 13pt; margin-top: 1px; }
+  .header-box .syllabus { font-size: 11.5pt; font-weight: bold; margin-top: 2px; }
+
+  /* Info row */
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12.5pt;
+    font-weight: bold;
+    padding: 2px 3px;
+    margin-bottom: 3px;
+  }
+
+  /* Instructions box */
+  .instructions-box {
+    border: 1.5px solid #000;
+    padding: 3px 6px;
+    margin-bottom: 4px;
+    font-size: 10.5pt;
+    line-height: 1.3;
+  }
+  .instructions-box .inst-title { font-weight: bold; margin-bottom: 1px; font-size: 11pt; }
+  .instructions-box ol { padding-left: 16px; }
+  .instructions-box ol li { margin-bottom: 1px; }
+
+  /* Section bars */
+  .section-bar {
+    background: #DAA520;
+    color: #fff;
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+  }
+  .section-bar .sub-line {
+    font-size: 9.5pt;
+    font-weight: normal;
+    margin-top: 1px;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: #fff;
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+  }
+
+  /* MCQ table */
+  .mcq-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 4px;
+    font-size: 11pt;
+  }
+  .mcq-table th {
+    background: #f0f0f0;
+    border: 1px solid #888;
+    padding: 2px 3px;
+    text-align: center;
+    font-size: 10.5pt;
+  }
+  .mcq-table td {
+    border: 1px solid #888;
+    padding: 2px 3px;
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+  .mcq-table td.num-cell { text-align: center; width: 3%; }
+  .mcq-table td.q-cell { width: 29%; }
+  .mcq-table td.opt-cell { text-align: center; width: 13%; }
+  .mcq-table td.ans-cell { text-align: center; width: 16%; }
+  span.mcq-opt {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #555;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+
+  /* Section B/C table */
+  .qb-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin-bottom: 3px;
+  }
+  .qb-table th {
+    background: #f0f0f0;
+    border: 1px solid #888;
+    padding: 2px 3px;
+    font-size: 9.5pt;
+    text-align: center;
+  }
+  .qb-table td {
+    border: 1px solid #888;
+    padding: 2px 4px;
+    vertical-align: top;
+    line-height: 1.25;
+  }
+  .qb-table td.part-cell { width: 5%; text-align: center; font-weight: bold; vertical-align: middle; font-size: 9.5pt; }
+  .qb-table td.q-main { width: 37%; }
+  .qb-table td.marks-cell { width: 6%; text-align: center; vertical-align: middle; font-weight: bold; font-size: 10pt; }
+  .qb-table td.or-cell { width: 5%; text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 12pt; }
+  .qb-table td.q-or { width: 37%; }
+
+  /* Footer */
+  .footer {
+    margin-top: 4px;
+    font-size: 9.5pt;
+  }
+  .sig-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .sig-line {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    width: 160px;
+  }
+  .footer-center { text-align: center; font-size: 10pt; margin-top: 2px; }
+  .end-marker { text-align: center; font-size: 11pt; font-weight: bold; margin-top: 3px; letter-spacing: 1px; }
+
+  @media print {
+    body { margin: 0; }
+    .page { page-break-after: always; }
+    .page:last-child { page-break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1 ==================== -->
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject">Biology — Class IX &nbsp;|&nbsp; Paper: SSC-I</div>
+    <div class="syllabus">Syllabus: Chapter 7 — Metabolism</div>
+  </div>
+
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your Roll Number in the space provided on the answer sheet. Do NOT write your name.</li>
+      <li>Attempt ALL questions from Section A. In Sections B and C, attempt the required number choosing either the main question OR its alternative (OR).</li>
+      <li>All parts of a question must be answered in sequence and at one place.</li>
+      <li>Extra attempt of any question or any part thereof will NOT be considered.</li>
+    </ol>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th style="width:3%">#</th>
+        <th style="width:29%">Question</th>
+        <th style="width:13%">A</th>
+        <th style="width:13%">B</th>
+        <th style="width:13%">C</th>
+        <th style="width:13%">D</th>
+        <th style="width:16%">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num-cell">1</td>
+        <td class="q-cell">The sum of all chemical reactions in a living cell is called:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Catabolism</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Anabolism</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Metabolism</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Enzymology</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">2</td>
+        <td class="q-cell">Enzymes are biologically active globular proteins produced by:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Dead cells</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Living cells</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Inorganic ions</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Ribosomes only</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">3</td>
+        <td class="q-cell">The part of an enzyme where substrate binds and reaction takes place is the:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Allosteric site</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Prosthetic group</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Active site</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Coenzyme</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">4</td>
+        <td class="q-cell">At very high temperature, an enzyme loses function because its structure is:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Activated</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Denatured</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Phosphorylated</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Synthesised</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">5</td>
+        <td class="q-cell">In competitive inhibition, the inhibitor blocks enzyme activity by binding to the:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Allosteric site</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Substrate</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Active site</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Cofactor</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">6</td>
+        <td class="q-cell">ATP is called the &ldquo;energy currency&rdquo; of the cell because it:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Is in the nucleus</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Stores and releases energy</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Builds proteins</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Carries oxygen</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">7</td>
+        <td class="q-cell">ATP molecule consists of adenine, ribose sugar and:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Two phosphate groups</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Three phosphate groups</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>One phosphate group</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Four phosphate groups</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">8</td>
+        <td class="q-cell">During photosynthesis, oxygen is released as a by-product through:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Calvin cycle</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Photolysis of water</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Glycolysis</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Krebs cycle</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">9</td>
+        <td class="q-cell">Light-independent reactions of photosynthesis (Calvin cycle) occur in the:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Thylakoid membrane</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Cytoplasm</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Stroma of chloroplast</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Mitochondrial matrix</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">10</td>
+        <td class="q-cell">Glycolysis produces 2 pyruvic acid from glucose with a net gain of:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>36 ATP</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>4 ATP</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>2 ATP</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>38 ATP</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">11</td>
+        <td class="q-cell">Anaerobic respiration in yeast (alcoholic fermentation) produces ethyl alcohol and:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Water</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Lactic acid</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Carbon dioxide</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Oxygen</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">12</td>
+        <td class="q-cell">The final electron acceptor in the electron transport chain (ETC) is:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>NADH</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Carbon dioxide</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Oxygen</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Water</td>
+        <td class="ans-cell"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end page 1 -->
+
+
+<!-- ==================== PAGE 2 ==================== -->
+<div class="page">
+
+  <div class="section-bar">
+    SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)
+    <div class="sub-line">Attempt 11 questions. Choose either the main question OR its alternative.</div>
+  </div>
+
+  <table class="qb-table">
+    <thead>
+      <tr>
+        <th style="width:5%">Part</th>
+        <th style="width:37%">Question</th>
+        <th style="width:6%">Marks</th>
+        <th style="width:5%">OR</th>
+        <th style="width:37%">Alternative Question</th>
+        <th style="width:6%">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-cell">2(i)</td>
+        <td class="q-main">Define metabolism. Differentiate between catabolism and anabolism with one example each.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Why are enzymes called biological catalysts? Give two characteristics that support this.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(ii)</td>
+        <td class="q-main">Name and describe three types of cofactors with one example each.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain the term &ldquo;enzymes are specific.&rdquo; Give one example to support your answer.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(iii)</td>
+        <td class="q-main">Describe the mechanism of enzyme action with reference to ES complex and EP complex.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">What is energy of activation? How do enzymes lower activation energy?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(iv)</td>
+        <td class="q-main">How does temperature affect enzyme activity? What happens at very high and very low temperatures?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">How does pH affect enzyme activity? Give optimum pH values for pepsin and trypsin.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(v)</td>
+        <td class="q-main">Distinguish between competitive inhibition and non-competitive inhibition of enzymes.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">What is the allosteric site? How does a non-competitive inhibitor damage the active site?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(vi)</td>
+        <td class="q-main">Describe the structure of an ATP molecule. Name its three components.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain the ATP&ndash;ADP cycle. How is energy stored and released in this cycle?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(vii)</td>
+        <td class="q-main">Write the overall equation for photosynthesis. Identify the raw materials and products.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Name three limiting factors of photosynthesis and briefly explain how each affects the rate.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(viii)</td>
+        <td class="q-main">What are light-dependent reactions of photosynthesis? Where do they occur and what are the products?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe photolysis of water. What is its role in the light-dependent reactions?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(ix)</td>
+        <td class="q-main">Briefly describe the four stages of aerobic respiration in the correct order.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Write the equation for aerobic respiration and state how many ATP molecules are produced from one glucose molecule.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(x)</td>
+        <td class="q-main">What is glycolysis? Where does it occur and what are its products?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">What is the role of the Krebs cycle in aerobic respiration? Name the products formed.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(xi)</td>
+        <td class="q-main">Compare alcoholic fermentation and lactic acid fermentation. Give one biological example of each.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Give four reasons why anaerobic respiration is important for living organisms.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)</div>
+
+  <table class="qb-table">
+    <thead>
+      <tr>
+        <th style="width:5%">Part</th>
+        <th style="width:37%">Question</th>
+        <th style="width:6%">Marks</th>
+        <th style="width:5%">OR</th>
+        <th style="width:37%">Alternative Question</th>
+        <th style="width:6%">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-cell">3(i)</td>
+        <td class="q-main">Define enzyme. Describe any five characteristics of enzymes with examples where appropriate.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain how three environmental factors — temperature, pH, and substrate concentration — affect enzyme activity. Include denaturation and saturation.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(ii)</td>
+        <td class="q-main">Describe the mechanism of enzyme action. Explain how an enzyme lowers activation energy and distinguish the lock-and-key concept from the induced-fit model.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe competitive and non-competitive inhibition in detail. What is the role of the allosteric site? Give examples of inhibitors from daily life.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(iii)</td>
+        <td class="q-main">Explain the role of ATP as the energy currency of the cell. Describe the structure of ATP, the ATP&ndash;ADP cycle, and where ATP is used in the body.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe the process of photosynthesis. Write the overall equation. Explain the light-dependent reactions and the Calvin cycle (light-independent reactions) in sequence.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(iv)</td>
+        <td class="q-main">Compare aerobic and anaerobic respiration. Describe glycolysis as the common first stage and explain what happens to pyruvic acid in each pathway. Include relevant equations.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe the mechanism of aerobic respiration in four stages: glycolysis, formation of Acetyl CoA, Krebs cycle, and electron transport chain. State the ATP yield at each stage.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="sig-row">
+      <div>Invigilator's Signature: <span class="sig-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      <div>Candidate's Signature: <span class="sig-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+    </div>
+    <div class="footer-center">Chapters Covered: Chapter 7 — Metabolism (Sections 7.1–7.8)</div>
+    <div class="end-marker">— End of Question Paper —</div>
+  </div>
+
+</div><!-- end page 2 -->
+
+</body>
+</html>

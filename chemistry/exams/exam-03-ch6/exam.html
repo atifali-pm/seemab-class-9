@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chemistry Exam — Chapter 6 Stoichiometry</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", serif; font-size: 13pt; line-height: 1.3; color: #000; background: #fff; }
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; }
+
+  /* Header */
+  .header-box { border: 2.5px solid #000; text-align: center; padding: 6px 10px 6px 10px; margin-bottom: 5px; page-break-after: avoid; }
+  .header-box .board-name { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+  .header-box .exam-name { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject-line { font-size: 15pt; margin-top: 1px; }
+  .header-box .syllabus-line { font-size: 13pt; font-weight: bold; margin-top: 3px; }
+
+  /* Info row */
+  .info-row { display: flex; justify-content: space-between; align-items: center; font-size: 14pt; font-weight: bold; border: 1.5px solid #000; border-top: none; padding: 4px 12px; margin-bottom: 5px; }
+
+  /* Instructions */
+  .instructions-box { border: 1.5px solid #000; padding: 5px 10px; margin-bottom: 6px; font-size: 12pt; }
+  .instructions-box .inst-title { font-weight: bold; font-size: 13pt; margin-bottom: 3px; }
+  .instructions-box ol { margin-left: 18px; }
+  .instructions-box li { margin-bottom: 2px; }
+
+  /* Section bars */
+  .section-bar { background: #DAA520; color: #fff; font-size: 15pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 4px; page-break-after: avoid; }
+  .section-bar .sub-line { font-size: 11.5pt; font-weight: normal; margin-top: 1px; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 15pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 4px; page-break-after: avoid; }
+
+  /* MCQ table */
+  .mcq-table { width: 100%; border-collapse: collapse; margin-bottom: 6px; font-size: 13pt; }
+  .mcq-table th { background: #f0f0f0; border: 1px solid #888; padding: 3px 4px; text-align: center; font-size: 12pt; }
+  .mcq-table td { border: 1px solid #888; padding: 3px 4px; vertical-align: middle; }
+  .mcq-table td.q-num { text-align: center; width: 4%; }
+  .mcq-table td.q-text { width: 40%; }
+  .mcq-table td.q-opt { width: 11%; text-align: center; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; border: 1.5px solid #000; border-radius: 50%; font-size: 9pt; line-height: 13px; text-align: center; margin: 0 1px; }
+
+  /* B/C table */
+  .bc-table { width: 100%; border-collapse: collapse; font-size: 13pt; margin-bottom: 6px; }
+  .bc-table th { background: #f0f0f0; border: 1px solid #888; padding: 3px 5px; text-align: center; font-size: 12pt; }
+  .bc-table td { border: 1px solid #888; padding: 4px 6px; vertical-align: top; line-height: 1.35; }
+  .bc-table td.part-col { width: 5%; text-align: center; font-weight: bold; vertical-align: middle; }
+  .bc-table td.q-col { width: 37%; }
+  .bc-table td.m-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+  .bc-table td.or-col { width: 5%; text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 14pt; }
+  .bc-table td.orq-col { width: 37%; }
+  .bc-table td.orm-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+
+  /* Footer */
+  .footer { margin-top: 10px; padding-top: 6px; border-top: 1px solid #555; font-size: 11.5pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+  .sig-line { border-bottom: 1px solid #000; width: 200px; display: inline-block; margin-left: 6px; }
+  .footer-center { text-align: center; font-size: 11pt; margin-top: 4px; }
+  .end-marker { text-align: center; font-size: 12pt; font-weight: bold; margin-top: 8px; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <div class="board-name">Board of Intermediate and Secondary Education</div>
+    <div class="exam-name">Annual Examination 2026</div>
+    <div class="subject-line">Chemistry — SSC-I (9th Grade)</div>
+    <div class="syllabus-line">Syllabus: Chapter 6 — Stoichiometry</div>
+  </div>
+
+  <!-- INFO ROW -->
+  <div class="info-row">
+    <span>Total Marks: 46</span>
+    <span>Time Allowed: 1h 45m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your name, roll number and section clearly on the answer sheet.</li>
+      <li>Section A is compulsory. Encircle the correct option on the question paper itself.</li>
+      <li>In Section B, attempt any <strong>8</strong> questions out of 11. For each question, attempt either the main question <strong>OR</strong> its alternative.</li>
+      <li>In Section C, attempt any <strong>2</strong> questions out of 4. For each question, attempt either the main question <strong>OR</strong> its alternative.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-bar">SECTION A — Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th style="width:4%">#</th>
+        <th style="width:40%">Question</th>
+        <th style="width:11%">A</th>
+        <th style="width:11%">B</th>
+        <th style="width:11%">C</th>
+        <th style="width:11%">D</th>
+        <th style="width:12%">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="q-num">1</td>
+        <td class="q-text">The empirical formula of glucose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>) is:</td>
+        <td class="q-opt">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></td>
+        <td class="q-opt">CH<sub>2</sub>O</td>
+        <td class="q-opt">C<sub>2</sub>H<sub>4</sub>O<sub>2</sub></td>
+        <td class="q-opt">CHO</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">2</td>
+        <td class="q-text">The molecular mass of naphthalene (C<sub>10</sub>H<sub>8</sub>) is:</td>
+        <td class="q-opt">120 amu</td>
+        <td class="q-opt">108 amu</td>
+        <td class="q-opt">128 amu</td>
+        <td class="q-opt">136 amu</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">3</td>
+        <td class="q-text">The formula mass of Mg(OH)<sub>2</sub> is: (Mg=24, O=16, H=1)</td>
+        <td class="q-opt">40 amu</td>
+        <td class="q-opt">56 amu</td>
+        <td class="q-opt">58 amu</td>
+        <td class="q-opt">74 amu</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">4</td>
+        <td class="q-text">One mole of any substance contains how many representative particles?</td>
+        <td class="q-opt">6.022&times;10<sup>22</sup></td>
+        <td class="q-opt">6.022&times;10<sup>23</sup></td>
+        <td class="q-opt">6.022&times;10<sup>24</sup></td>
+        <td class="q-opt">6.022&times;10<sup>20</sup></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">5</td>
+        <td class="q-text">How many moles of molecules are there in 16 g of oxygen gas (O<sub>2</sub>)?</td>
+        <td class="q-opt">1 mol</td>
+        <td class="q-opt">0.5 mol</td>
+        <td class="q-opt">0.1 mol</td>
+        <td class="q-opt">2 mol</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">6</td>
+        <td class="q-text">The mass of 9.05 moles of ozone (O<sub>3</sub>) is: (O=16)</td>
+        <td class="q-opt">48 g</td>
+        <td class="q-opt">144 g</td>
+        <td class="q-opt">434.4 g</td>
+        <td class="q-opt">480 g</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">7</td>
+        <td class="q-text">How many atoms are present in 1.25 moles of zinc (Zn)?</td>
+        <td class="q-opt">6.022&times;10<sup>23</sup></td>
+        <td class="q-opt">7.53&times;10<sup>23</sup></td>
+        <td class="q-opt">4.82&times;10<sup>23</sup></td>
+        <td class="q-opt">1.25&times;10<sup>23</sup></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">8</td>
+        <td class="q-text">The formula of aluminium oxide (Al<sup>3+</sup>, O<sup>2&minus;</sup>) is:</td>
+        <td class="q-opt">AlO</td>
+        <td class="q-opt">Al<sub>2</sub>O<sub>3</sub></td>
+        <td class="q-opt">Al<sub>3</sub>O<sub>2</sub></td>
+        <td class="q-opt">AlO<sub>3</sub></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">9</td>
+        <td class="q-text">Which compound has the same empirical and molecular formula?</td>
+        <td class="q-opt">H<sub>2</sub>O<sub>2</sub></td>
+        <td class="q-opt">C<sub>6</sub>H<sub>6</sub></td>
+        <td class="q-opt">H<sub>2</sub>O</td>
+        <td class="q-opt">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">10</td>
+        <td class="q-text">What is the mass of 4 moles of hydrogen gas H<sub>2</sub>? (H=1.008)</td>
+        <td class="q-opt">8.064 g</td>
+        <td class="q-opt">4.032 g</td>
+        <td class="q-opt">1 g</td>
+        <td class="q-opt">1.008 g</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">11</td>
+        <td class="q-text">In a chemical equation, balancing must be done by changing:</td>
+        <td class="q-opt">subscripts</td>
+        <td class="q-opt">symbols</td>
+        <td class="q-opt">coefficients</td>
+        <td class="q-opt">state symbols</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">12</td>
+        <td class="q-text">In an ionic equation, ions that appear on both sides and do not participate are called:</td>
+        <td class="q-opt">reactive ions</td>
+        <td class="q-opt">spectator ions</td>
+        <td class="q-opt">anions</td>
+        <td class="q-opt">cations</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION B -->
+  <div class="section-bar">
+    SECTION B — Short Questions (11 &times; 3 = 33 Marks)
+    <div class="sub-line">Attempt any 8 questions. For each pair, attempt either the main question OR its alternative.</div>
+  </div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">OR Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">2(i)</td>
+        <td class="q-col">Define empirical formula and molecular formula. Give one example of each.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">What is a mole? State Avogadro's number and name three types of representative particles.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ii)</td>
+        <td class="q-col">Calculate the molecular mass of glucose C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>. (C=12, H=1.008, O=16)</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Calculate the formula mass of CuSO<sub>4</sub>·5H<sub>2</sub>O. (Cu=63.5, S=32, O=16, H=1)</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iii)</td>
+        <td class="q-col">Differentiate between gram atomic mass, gram molecular mass, and gram formula mass.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Differentiate between molecular formula and empirical formula. Which two quantities are needed to find the molecular formula from the empirical formula?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iv)</td>
+        <td class="q-col">Calculate the mass of 0.25 moles of CO<sub>2</sub>. (C=12, O=16)</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">A balloon is filled with 5 g of hydrogen gas (H<sub>2</sub>). Calculate the number of moles of H<sub>2</sub>. (H=1.008)</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(v)</td>
+        <td class="q-col">How many molecules are present in 0.5 moles of methane (CH<sub>4</sub>)?</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">A sample of titanium contains 3.011&times;10<sup>23</sup> Ti atoms. Calculate the number of moles of Ti. (N<sub>A</sub> = 6.022&times;10<sup>23</sup>)</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vi)</td>
+        <td class="q-col">Write the chemical formula of: (a) sodium chloride (Na<sup>+</sup>, Cl<sup>&#8722;</sup>) &nbsp; (b) magnesium nitride (Mg<sup>2+</sup>, N<sup>3&#8722;</sup>) &nbsp; (c) potassium sulphate (K<sup>+</sup>, SO<sub>4</sub><sup>2&#8722;</sup>)</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Write the structural formula and molecular formula of n-butane (C<sub>4</sub>H<sub>10</sub>). Identify the structural formula of CH<sub>3</sub>-CH<sub>2</sub>-OH and write its molecular formula.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vii)</td>
+        <td class="q-col">Balance the following chemical equation:<br>CH<sub>4(g)</sub> + O<sub>2(g)</sub> &#8594; CO<sub>2(g)</sub> + H<sub>2</sub>O<sub>(l)</sub></td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Balance the following chemical equation and add state symbols:<br>Na<sub>(s)</sub> + H<sub>2</sub>O<sub>(l)</sub> &#8594; NaOH<sub>(aq)</sub> + H<sub>2(g)</sub></td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(viii)</td>
+        <td class="q-col">How many moles of molecules are in 3.011&times;10<sup>22</sup> molecules of formaldehyde (CH<sub>2</sub>O)? Also find its mass. (C=12, H=1, O=16)</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Calculate the number of atoms in 0.2 moles of aluminium (Al). (N<sub>A</sub> = 6.022&times;10<sup>23</sup>)</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ix)</td>
+        <td class="q-col">Write the steps for writing the chemical formula of a binary ionic compound. Apply the steps to write the formula of aluminium oxide (Al<sup>3+</sup>, O<sup>2&#8722;</sup>).</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Define ionic equation. Write the ionic equation for the reaction: HCl<sub>(aq)</sub> + NaOH<sub>(aq)</sub> &#8594; NaCl<sub>(aq)</sub> + H<sub>2</sub>O<sub>(l)</sub></td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(x)</td>
+        <td class="q-col">Calculate the number of moles in: (a) 15 g of NaCl &nbsp; (b) 40 g of sulphur (S). (Na=23, Cl=35.5, S=32)</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Calculate the mass of: (a) 1.2 moles of potassium (K) &nbsp; (b) 0.25 moles of steam (H<sub>2</sub>O). (K=39, H=1.008, O=16)</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(xi)</td>
+        <td class="q-col">Aspirin (C<sub>9</sub>H<sub>8</sub>O<sub>4</sub>) is used as a mild painkiller. (a) Write its empirical formula. (b) Calculate its molecular mass. (C=12, H=1, O=16)</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Caffeine is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>. (a) Write its empirical formula. (b) Calculate its molecular mass. (C=12, H=1, N=14, O=16)</td>
+        <td class="orm-col">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION C -->
+  <div class="section-bar-blue">SECTION C — Long Questions (4 &times; 5 = 20 Marks) &mdash; Attempt any 2</div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">OR Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">3(i)</td>
+        <td class="q-col">
+          (a) Define molecular mass and formula mass. Give one example of each with full calculation. [2]<br>
+          (b) Calculate the formula mass of KClO<sub>3</sub> (potassium chlorate) and NaHCO<sub>3</sub> (baking soda). (K=39, Cl=35.5, O=16, Na=23, H=1, C=12) [3]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Define empirical formula and molecular formula. Explain with benzene (C<sub>6</sub>H<sub>6</sub>) and hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>) as examples. [2]<br>
+          (b) Write empirical formulas for: (i) Aspirin C<sub>9</sub>H<sub>8</sub>O<sub>4</sub> &nbsp; (ii) Vinegar CH<sub>3</sub>COOH &nbsp; (iii) TNT C<sub>7</sub>H<sub>5</sub>N<sub>3</sub>O<sub>6</sub>. Also calculate the molecular mass of each. [3]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(ii)</td>
+        <td class="q-col">
+          (a) Define mole and Avogadro's number. Explain the difference between gram atomic mass, gram molecular mass and gram formula mass. [3]<br>
+          (b) Calculate the number of molecules in: (i) 2.5 moles of CO<sub>2</sub> &nbsp; (ii) 3.4 moles of NH<sub>3</sub>. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Using the mole concept, calculate the number of moles in: (i) 2.4 g of He &nbsp; (ii) 250 mg of carbon &nbsp; (iii) 40 g of sulphur. (He=4, C=12, S=32) [3]<br>
+          (b) Calculate the mass of: (i) 75 moles of H<sub>2</sub> &nbsp; (ii) 0.15 moles of H<sub>2</sub>SO<sub>4</sub>. (H=1.008, S=32, O=16) [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iii)</td>
+        <td class="q-col">
+          (a) Describe the steps for balancing a chemical equation. Why is it important to balance chemical equations? [2]<br>
+          (b) Balance the following equations and add correct state symbols:<br>
+          (i) NH<sub>3</sub> &#8594; N<sub>2</sub> + H<sub>2</sub> &nbsp;&nbsp; (ii) Al + HCl &#8594; AlCl<sub>3</sub> + H<sub>2</sub> &nbsp;&nbsp; (iii) Fe + O<sub>2</sub> &#8594; Fe<sub>2</sub>O<sub>3</sub> [3]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Define ionic equation. Explain the concept of spectator ions and state when they are removed. [2]<br>
+          (b) Transform the following into ionic equations:<br>
+          (i) Mg<sub>(s)</sub> + H<sub>2</sub>SO<sub>4(aq)</sub> &#8594; MgSO<sub>4(aq)</sub> + H<sub>2(g)</sub><br>
+          (ii) AgNO<sub>3(aq)</sub> + NaCl<sub>(aq)</sub> &#8594; AgCl<sub>(s)</sub> + NaNO<sub>3(aq)</sub><br>
+          (iii) Zn<sub>(s)</sub> + 2HCl<sub>(aq)</sub> &#8594; ZnCl<sub>2(aq)</sub> + H<sub>2(g)</sub> [3]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iv)</td>
+        <td class="q-col">
+          (a) A 0.5 g sample of potassium (K) was added to water. [K=39, N<sub>A</sub>=6.022&times;10<sup>23</sup>]<br>
+          K<sub>(s)</sub> + H<sub>2</sub>O<sub>(l)</sub> &#8594; KOH<sub>(aq)</sub> + H<sub>2(g)</sub><br>
+          (i) Balance the equation. [1]<br>
+          (ii) Calculate the number of moles of K. [2]<br>
+          (iii) Calculate the number of K atoms in the sample. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Potassium chlorate (KClO<sub>3</sub>) decomposes on heating to produce KCl and O<sub>2</sub>. [K=39, Cl=35.5, O=16]<br>
+          (i) Write and balance the equation for this decomposition. [1]<br>
+          (ii) Calculate the formula mass of KClO<sub>3</sub>. [2]<br>
+          (iii) How many moles of KClO<sub>3</sub> are in 24.5 g? [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="sig-row">
+      <span>Invigilator's Signature: <span class="sig-line">&nbsp;</span></span>
+      <span>Candidate's Signature: <span class="sig-line">&nbsp;</span></span>
+    </div>
+    <div class="footer-center"><strong>Chapters Covered:</strong> Chapter 6 — Stoichiometry (pp. 95–112)</div>
+    <div class="end-marker">— End of Question Paper —</div>
+  </div>
+
+</div>
+</body>
+</html>

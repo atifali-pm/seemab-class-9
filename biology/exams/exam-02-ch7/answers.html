@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', serif;
+    font-size: 11.5pt;
+    line-height: 1.35;
+    color: #000;
+  }
+  .page {
+    width: 100%;
+    padding: 7mm 9mm 0 9mm;
+  }
+  .page + .page { padding-top: 0; }
+
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 4px 6px 3px 6px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+  .header-box .board { font-size: 14pt; font-weight: bold; text-transform: uppercase; }
+  .header-box .exam-year { font-size: 12.5pt; margin-top: 1px; }
+  .header-box .subject { font-size: 12.5pt; margin-top: 1px; }
+  .header-box .syllabus { font-size: 11pt; font-weight: bold; margin-top: 2px; }
+  .header-box .ak-label { font-size: 13pt; font-weight: bold; color: #005500; margin-top: 2px; }
+
+  .section-bar {
+    background: #DAA520;
+    color: #fff;
+    font-size: 12.5pt;
+    font-weight: bold;
+    padding: 3px 6px;
+    margin: 5px 0 4px 0;
+    page-break-after: avoid;
+    page-break-before: auto;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: #fff;
+    font-size: 12.5pt;
+    font-weight: bold;
+    padding: 3px 6px;
+    margin: 5px 0 4px 0;
+    page-break-after: avoid;
+    page-break-before: auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #e8e8e8;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin-left: 3px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge-green {
+    display: inline-block;
+    background: #d4edda;
+    border: 1px solid #5cb85c;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin-left: 3px;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #155724;
+  }
+
+  .mcq-answer {
+    margin-bottom: 5px;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #ccc;
+    font-size: 11pt;
+    page-break-inside: avoid;
+  }
+  .mcq-qline { font-weight: bold; margin-bottom: 1px; }
+  .mcq-correct { color: #155724; font-weight: bold; }
+  .mcq-expl { font-size: 10.5pt; margin-top: 1px; color: #222; line-height: 1.3; }
+
+  .answer-box {
+    border: 1px solid #ccc;
+    border-left: 4px solid #4682B4;
+    background: #fafafa;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+    font-size: 11pt;
+    line-height: 1.35;
+    page-break-inside: avoid;
+  }
+  .answer-box .q-label {
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 11pt;
+  }
+  .or-label {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 12.5pt;
+    margin: 3px 0 2px 0;
+    display: inline-block;
+  }
+  .answer-box p { margin-bottom: 2px; }
+  .answer-box ul { padding-left: 16px; margin-top: 1px; }
+  .answer-box li { margin-bottom: 1px; }
+
+  .flowchart {
+    font-family: 'Courier New', monospace;
+    font-size: 9.5pt;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 3px 6px;
+    margin: 3px 0;
+    white-space: pre;
+    line-height: 1.3;
+  }
+
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin: 3px 0;
+  }
+  .comp-table th {
+    background: #e0e0e0;
+    border: 1px solid #999;
+    padding: 2px 4px;
+    text-align: center;
+  }
+  .comp-table td {
+    border: 1px solid #999;
+    padding: 2px 4px;
+    vertical-align: top;
+  }
+
+  @media print {
+    body { margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ====== PAGE 1: HEADER + SECTION A ====== -->
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject">Biology — Class IX &nbsp;|&nbsp; Paper: SSC-I</div>
+    <div class="syllabus">Syllabus: Chapter 7 — Metabolism</div>
+    <div class="ak-label">ANSWER KEY (Version 1)</div>
+  </div>
+
+  <div class="section-bar">SECTION A — Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q1. Sum of all chemical reactions in a living cell: <span class="badge-green">C — Metabolism</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><span class="mcq-correct">Metabolism</span> is the sum of all chemical reactions in each cell for maintenance of life. <strong>Catabolism</strong> and <strong>anabolism</strong> are the two types of metabolism, not metabolism itself. Enzymology is the study of enzymes.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q2. Enzymes are produced by: <span class="badge-green">B — Living cells</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">Enzymes are <strong>biologically active globular proteins made by living cells</strong>. Each cell synthesises its own enzymes, determined by active genes. They cannot be produced by dead cells or inorganic ions.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q3. Part of enzyme where substrate binds: <span class="badge-green">C — Active site</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">The <strong>active site</strong> is the charge-bearing cavity on the enzyme's surface where substrate binds and reaction occurs. The <strong>allosteric site</strong> is where non-competitive inhibitors bind — not the reactive site.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q4. Enzyme loses function at high temperature because it is: <span class="badge-green">B — Denatured</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">At very high temperatures, enzyme atoms vibrate vigorously — the globular structure and active site are destroyed (<strong>denatured</strong>). At low temperature, inactivity is reversible; denaturation at high temperature is permanent.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q5. Competitive inhibitor binds to the: <span class="badge-green">C — Active site</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In <strong>competitive inhibition</strong>, the inhibitor resembles the substrate in shape and occupies the <strong>active site</strong>, blocking the substrate. The allosteric site is the target for non-competitive inhibitors only.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q6. ATP is energy currency because it: <span class="badge-green">B — Stores and releases energy</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">ATP is an <strong>energy-rich compound</strong> that stores energy (in high-energy phosphate bonds) and releases it on demand when hydrolysed — used like money across all cell functions.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q7. Third component of ATP alongside adenine and ribose: <span class="badge-green">B — Three phosphate groups</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">ATP = Adenosine + <strong>Three phosphate groups</strong> (triphosphate chain). The covalent bonds between phosphate groups are <strong>high-energy bonds</strong> that store the usable energy.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q8. Oxygen is released as by-product through: <span class="badge-green">B — Photolysis of water</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In light-dependent reactions, water splits into O, H⁺ and electrons — this is <strong>photolysis of water</strong>. Oxygen exits through stomata. Calvin cycle and Krebs cycle do not produce oxygen.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q9. Calvin cycle takes place in the: <span class="badge-green">C — Stroma of chloroplast</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">Light-independent (dark) reactions take place in the <strong>stroma of chloroplast</strong>. Light-dependent reactions are in thylakoid membranes. Glycolysis is in cytoplasm; Krebs cycle is in mitochondria.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q10. Net ATP gain from glycolysis: <span class="badge-green">C — 2 ATP</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Glycolysis</strong> produces 4 ATP gross but consumes 2, giving a <strong>net gain of 2 ATP</strong> per glucose molecule. The 36 ATP figure is the total from complete aerobic respiration, not glycolysis alone.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q11. Alcoholic fermentation (yeast) products: <span class="badge-green">C — Carbon dioxide</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In yeast: Pyruvic acid → <strong>Ethyl Alcohol + Carbon dioxide</strong>. This is used in wine making and bread baking. Lactic acid is the product in muscle cells, not in yeast.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q12. Final electron acceptor in ETC: <span class="badge-green">C — Oxygen</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In the electron transport chain, <strong>oxygen</strong> is the final electron acceptor. It combines with H⁺ ions to produce water. Without oxygen, the ETC stops — this is why aerobic respiration requires oxygen.</div>
+  </div>
+
+</div><!-- end page 1 -->
+
+
+<!-- ====== PAGE 2: SECTION B Answers (i–vi) ====== -->
+<div class="page">
+
+  <div class="section-bar">SECTION B — Short Questions Answers (3 marks each)</div>
+
+  <div class="answer-box">
+    <div class="q-label">2(i) Metabolism / catabolism / anabolism with examples <span class="badge">3 marks</span></div>
+    <p><strong>Metabolism</strong> <span class="badge">1 mark</span>: Sum of all chemical reactions in each cell of living organisms for maintenance and sustainability of life.</p>
+    <p><strong>Catabolism</strong> <span class="badge">1 mark</span>: Breaks down complex molecules into simpler ones, releasing energy. Example: Cellular respiration — glucose → CO₂ + H₂O + energy.</p>
+    <p><strong>Anabolism</strong> <span class="badge">1 mark</span>: Builds complex molecules from simpler ones, using energy. Example: Photosynthesis — CO₂ + H₂O → glucose.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Why enzymes are biological catalysts; two characteristics <span class="badge">3 marks</span></div>
+    <p>Enzymes are <strong>biological catalysts</strong> <span class="badge">1 mark</span>: made by living cells; speed up reactions without being consumed or permanently changed.</p>
+    <p>Characteristic 1 <span class="badge">1 mark</span>: <strong>Increase rate of reaction</strong> — millions of times faster than non-enzymatic reactions; lower activation energy.</p>
+    <p>Characteristic 2 <span class="badge">1 mark</span>: <strong>Required in small quantity</strong> — enzyme structure regains original shape after reaction; one enzyme catalyses a huge amount of substrate repeatedly.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(ii) Three types of cofactors with examples <span class="badge">3 marks</span></div>
+    <p><strong>Activators</strong> <span class="badge">1 mark</span>: Detachable inorganic ions. Example: Cl⁻ ions increase salivary amylase activity; Zn²⁺, Fe²⁺, Cu²⁺.</p>
+    <p><strong>Prosthetic groups</strong> <span class="badge">1 mark</span>: Organic molecules tightly and permanently attached to enzyme. Examples: FAD (Flavin Adenine Dinucleotide), Haem group.</p>
+    <p><strong>Coenzymes</strong> <span class="badge">1 mark</span>: Detachable organic molecules. Examples: NAD (nicotinamide adenine dinucleotide), Coenzyme A, Vitamins A and C.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Enzymes are specific — explanation with example <span class="badge">3 marks</span></div>
+    <p><strong>Specificity</strong> <span class="badge">1 mark</span>: Each enzyme catalyses only one type of reaction and will not act on a different substrate.</p>
+    <p><strong>Reason</strong> <span class="badge">1 mark</span>: The <strong>active site</strong> has a unique shape fitting only one specific substrate — like a lock fits only one key.</p>
+    <p><strong>Example</strong> <span class="badge">1 mark</span>: <strong>Amylase</strong> acts only on starch (not proteins or fats). <strong>Pepsin</strong> digests only proteins in the stomach.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(iii) Mechanism of enzyme action: ES and EP complex <span class="badge">3 marks</span></div>
+    <p>Step 1 <span class="badge">1 mark</span>: Specific substrate binds to the <strong>active site</strong> → forms <strong>Enzyme-Substrate (ES) complex</strong>.</p>
+    <p>Step 2 <span class="badge">1 mark</span>: Enzyme catalyses the reaction, converting substrate to product → forms <strong>Enzyme-Product (EP) complex</strong>.</p>
+    <p>Step 3 <span class="badge">1 mark</span>: EP complex breaks up; products released; <strong>enzyme is unchanged</strong> and available again for the next reaction.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Energy of activation; how enzymes lower it <span class="badge">3 marks</span></div>
+    <p><strong>Activation energy</strong> <span class="badge">1 mark</span>: Minimum extra energy required to activate molecules to start a chemical reaction.</p>
+    <p><strong>How enzymes lower it</strong> <span class="badge">1 mark</span>: By changing the shape and charge of the substrate at the active site, or providing an entirely different reaction mechanism.</p>
+    <p><strong>Effect</strong> <span class="badge">1 mark</span>: Reactions can proceed at <strong>body temperature</strong> (37°C) without requiring extreme heat or harsh conditions.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(iv) Effect of temperature on enzyme activity <span class="badge">3 marks</span></div>
+    <p><strong>Optimum temperature</strong> <span class="badge">1 mark</span>: Each enzyme works best at a specific optimum temperature. For human enzymes: 36–38°C. Rate increases with temperature up to this point.</p>
+    <p><strong>Very high temperature</strong> <span class="badge">1 mark</span>: Enzyme atoms vibrate vigorously → globular structure and active site damaged → <strong>denaturation</strong> (permanent loss of activity).</p>
+    <p><strong>Very low temperature</strong> <span class="badge">1 mark</span>: Insufficient activation energy → enzyme becomes <strong>inactive</strong> (reversible — activity resumes when temperature is restored).</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">pH effect on enzyme activity; optimum pH for pepsin and trypsin <span class="badge">3 marks</span></div>
+    <p><strong>Optimum pH</strong> <span class="badge">1 mark</span>: Each enzyme performs best at specific pH. Change in pH affects ionisation of amino acids at the active site. Slight deviation reduces reaction rate; extreme pH denatures enzyme.</p>
+    <p><strong>Pepsin</strong> <span class="badge">1 mark</span>: Optimum pH <strong>2.00</strong> (acidic). Works in stomach; pH maintained by HCl.</p>
+    <p><strong>Trypsin</strong> <span class="badge">1 mark</span>: Optimum pH <strong>8.00</strong> (alkaline). Works in small intestine. Both are protein-digesting enzymes.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(v) Competitive vs non-competitive inhibition <span class="badge">3 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Competitive</th><th>Non-competitive</th></tr>
+      <tr><td>Binding site</td><td><strong>Active site</strong> <span class="badge">1 mark</span></td><td><strong>Allosteric site</strong> <span class="badge">1 mark</span></td></tr>
+      <tr><td>Shape similarity to substrate</td><td>Yes — resembles substrate</td><td>No</td></tr>
+      <tr><td>Reversibility <span class="badge">1 mark</span></td><td>Reversible with excess substrate</td><td>Irreversible; active site deformed</td></tr>
+    </table>
+    <span class="or-label">OR</span>
+    <div class="q-label">Allosteric site; how non-competitive inhibitor damages active site <span class="badge">3 marks</span></div>
+    <p><strong>Allosteric site</strong> <span class="badge">1 mark</span>: A point on the enzyme surface other than the active site where non-competitive inhibitors attach.</p>
+    <p><strong>Mechanism</strong> <span class="badge">1 mark</span>: Inhibitor binding alters the <strong>globular shape</strong> of the enzyme → deforms and damages the active site.</p>
+    <p><strong>Result</strong> <span class="badge">1 mark</span>: Substrate <strong>cannot bind</strong> to the damaged active site; no ES complex forms; reaction stops.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(vi) Structure of ATP molecule; three components <span class="badge">3 marks</span></div>
+    <p><strong>Adenine</strong> <span class="badge">1 mark</span>: Double-ringed nitrogen base. Adenine + Ribose = Adenosine.</p>
+    <p><strong>Ribose sugar</strong> <span class="badge">1 mark</span>: Five-carbon (pentose) sugar.</p>
+    <p><strong>Three phosphate groups</strong> <span class="badge">1 mark</span>: (PO₄) linked in a triphosphate chain. Bonds between phosphate groups are <strong>high-energy bonds</strong> (wavy lines) — energy stored here is used by cells for all life processes.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">ATP–ADP cycle; energy storage and release <span class="badge">3 marks</span></div>
+    <p><strong>Energy storage</strong> <span class="badge">1 mark</span>: ADP + inorganic phosphate (Pᵢ) combine by <strong>condensation</strong> to reform ATP. Energy from catabolism (or light in plants) drives this — stored in phosphate bond.</p>
+    <p><strong>Energy release</strong> <span class="badge">1 mark</span>: ATP is <strong>hydrolysed</strong> — third phosphate separates → releases energy + ADP + Pᵢ.</p>
+    <p><strong>Significance</strong> <span class="badge">1 mark</span>: Energy available on demand for movement, active transport, growth, nerve impulse, gland secretion — without wasteful overproduction.</p>
+  </div>
+
+</div><!-- end page 2 -->
+
+
+<!-- ====== PAGE 3: SECTION B Answers (vii–xi) ====== -->
+<div class="page">
+
+  <div class="answer-box">
+    <div class="q-label">2(vii) Photosynthesis equation; raw materials and products <span class="badge">3 marks</span></div>
+    <div class="flowchart">6CO₂ + 12H₂O  ──Light/Chlorophyll──►  C₆H₁₂O₆ + 6H₂O + 6O₂</div>
+    <p><strong>Raw materials</strong> <span class="badge">1 mark</span>: CO₂ (from air via stomata) and H₂O (absorbed by roots). Chlorophyll captures light energy.</p>
+    <p><strong>Products</strong> <span class="badge">1 mark</span>: <strong>Glucose</strong> (used for energy and building materials) and <strong>Oxygen</strong> (by-product released through stomata).</p>
+    <p><strong>Conditions</strong> <span class="badge">1 mark</span>: <strong>Light energy</strong> and <strong>chlorophyll</strong> are essential. Photosynthesis occurs in plants, algae, and cyanobacteria.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Three limiting factors of photosynthesis <span class="badge">3 marks</span></div>
+    <p><strong>Light intensity</strong> <span class="badge">1 mark</span>: More light intensity and longer duration increase photosynthesis rate by providing more energy for light reactions.</p>
+    <p><strong>CO₂ concentration</strong> <span class="badge">1 mark</span>: CO₂ is raw material (substrate) for the photosynthetic reaction. More CO₂ increases rate — but only up to a specific limit.</p>
+    <p><strong>Temperature</strong> <span class="badge">1 mark</span>: Optimum temperature for photosynthesis is 25°C. Temperature below or above the optimum decreases rate by affecting enzyme activity.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(viii) Light-dependent reactions: location and products <span class="badge">3 marks</span></div>
+    <p><strong>Definition</strong> <span class="badge">1 mark</span>: Reactions that require light energy directly; they depend on Photosystems I and II to absorb light and begin photosynthesis.</p>
+    <p><strong>Location</strong> <span class="badge">1 mark</span>: <strong>Thylakoid membranes</strong> (grana) of chloroplasts, where photosynthetic pigments are arranged into photosystems.</p>
+    <p><strong>Products</strong> <span class="badge">1 mark</span>: <strong>ATP</strong>, <strong>NADPH</strong>, and <strong>Oxygen</strong> (from photolysis of water). ATP and NADPH power the Calvin cycle.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Photolysis of water; its role in light-dependent reactions <span class="badge">3 marks</span></div>
+    <p><strong>Photolysis</strong> <span class="badge">1 mark</span>: Water molecule splits into oxygen atoms, 2H⁺ ions and 2 electrons under light energy absorbed by Photosystem II.</p>
+    <p><strong>Role 1</strong> <span class="badge">1 mark</span>: Electrons released by photolysis <strong>replace electrons lost</strong> from the excited chlorophyll of Photosystem II — maintaining the reaction.</p>
+    <p><strong>Role 2</strong> <span class="badge">1 mark</span>: Oxygen atoms are released as <strong>O₂</strong> through stomata (source of atmospheric oxygen); H⁺ ions reduce NADP⁺ to NADPH.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(ix) Four stages of aerobic respiration in order <span class="badge">3 marks</span></div>
+    <div class="flowchart">1. GLYCOLYSIS (Cytoplasm):  Glucose → 2 Pyruvic Acid + 2 ATP + 2 NADH
+2. FORMATION OF ACETYL CoA (Mitochondria): 2 Pyruvic Acid → 2 Acetyl CoA + 2CO₂ + 2 NADH
+3. KREBS CYCLE (Mitochondrial matrix): 2 Acetyl CoA → 4CO₂ + 2 ATP + 6 NADH + 2 FADH₂
+4. ELECTRON TRANSPORT CHAIN (Inner mitochondrial membrane): NADH + FADH₂ → 32 ATP + H₂O</div>
+    <p><span class="badge">1 mark</span> four stages named correctly; <span class="badge">1 mark</span> locations; <span class="badge">1 mark</span> products at each stage.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Aerobic respiration equation; ATP yield per glucose <span class="badge">3 marks</span></div>
+    <div class="flowchart">C₆H₁₂O₆ + 6O₂  ──────►  6CO₂ + 6H₂O + Energy (ATP)</div>
+    <p><strong>ATP yield</strong> <span class="badge">1 mark</span>: Complete aerobic respiration yields <strong>36 ATP</strong> per glucose (2 glycolysis + 2 Krebs + 32 ETC).</p>
+    <p><strong>Comparison</strong> <span class="badge">1 mark</span>: Aerobic = 36 ATP vs anaerobic = 2 ATP — aerobic is 18 times more efficient.</p>
+    <p><strong>Requirement</strong> <span class="badge">1 mark</span>: Requires <strong>oxygen</strong> as final electron acceptor; without O₂, only glycolysis + fermentation occurs.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(x) Glycolysis: definition, location, products <span class="badge">3 marks</span></div>
+    <p><strong>Definition</strong> <span class="badge">1 mark</span>: First stage of cellular respiration — one glucose (6C) broken down into two molecules of <strong>pyruvic acid</strong> (3C each).</p>
+    <p><strong>Location</strong> <span class="badge">1 mark</span>: <strong>Cytoplasm</strong> of the cell, outside mitochondria. Common to both aerobic and anaerobic respiration.</p>
+    <p><strong>Products</strong> <span class="badge">1 mark</span>: 2 pyruvic acid + <strong>2 ATP</strong> (net) + 2 NADH.</p>
+    <div class="flowchart">Glucose → 2 Pyruvic Acid + 2 ATP + 2 NADH</div>
+    <span class="or-label">OR</span>
+    <div class="q-label">Role of Krebs cycle; products formed <span class="badge">3 marks</span></div>
+    <p><strong>Role</strong> <span class="badge">1 mark</span>: Cyclic process in <strong>mitochondrial matrix</strong>; acetyl CoA is fully oxidised; energy extracted as electron carriers (NADH, FADH₂) that feed the ETC.</p>
+    <p><strong>Products</strong> <span class="badge">1 mark</span>: <strong>4CO₂ + 2 ATP + 6 NADH + 2 FADH₂</strong> per glucose.</p>
+    <div class="flowchart">2 Acetyl CoA → 4CO₂ + 2 ATP + 6 NADH + 2 FADH₂</div>
+    <p><strong>Significance</strong> <span class="badge">1 mark</span>: NADH and FADH₂ carry electrons to ETC where most ATP is produced; CO₂ released as waste.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(xi) Alcoholic vs lactic acid fermentation <span class="badge">3 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Alcoholic Fermentation</th><th>Lactic Acid Fermentation</th></tr>
+      <tr><td>Organism</td><td>Yeast, some bacteria</td><td>Muscle cells; lactic acid bacteria</td></tr>
+      <tr><td>Products <span class="badge">1 mark</span></td><td>Ethyl alcohol + CO₂</td><td>Lactic acid only</td></tr>
+      <tr><td>Equation <span class="badge">1 mark</span></td><td>Pyruvic acid → Ethyl Alcohol + CO₂</td><td>Pyruvic acid → Lactic Acid</td></tr>
+      <tr><td>Example <span class="badge">1 mark</span></td><td>Wine making; bread baking</td><td>Yogurt/cheese; muscle fatigue in exercise</td></tr>
+    </table>
+    <span class="or-label">OR</span>
+    <div class="q-label">Four reasons anaerobic respiration is important <span class="badge">3 marks</span></div>
+    <p>1. <span class="badge">1 mark</span> Early Earth had no free oxygen; earliest organisms produced energy by <strong>anaerobic respiration</strong> — an evolutionary necessity.</p>
+    <p>2. <span class="badge">1 mark</span> Bacteria use anaerobic respiration for <strong>cheese and yogurt making</strong> — industrially important food production.</p>
+    <p>3. <span class="badge">1 mark</span> <strong>Yeast fermentation</strong> used in wine making and baking industry (CO₂ causes bread to rise).</p>
+    <p>4. Lactic acid fermentation provides <strong>emergency energy</strong> to muscle cells during vigorous exercise when oxygen supply is insufficient.</p>
+  </div>
+
+</div><!-- end page 3 -->
+
+
+<!-- ====== PAGE 4: SECTION C (3i, 3ii) ====== -->
+<div class="page">
+
+  <div class="section-bar-blue">SECTION C — Long Questions Answers (5 marks each)</div>
+
+  <div class="answer-box">
+    <div class="q-label">3(i) Define enzyme; five characteristics <span class="badge">5 marks</span></div>
+    <p><strong>Enzyme</strong> <span class="badge">1 mark</span>: Biologically active globular proteins made by living cells which tremendously speed up biochemical reactions — the biological catalysts of cells. Study of enzymes = <strong>enzymology</strong>.</p>
+    <p><strong>1. Globular proteins</strong>: Chains of amino acids folded into 3D globular proteins. Few are RNA — called <strong>ribozymes</strong>.</p>
+    <p><strong>2. Increase rate of reaction</strong> <span class="badge">1 mark</span>: Millions of times faster than non-enzymatic reactions. Only speed up; do not start reactions. They lower activation energy.</p>
+    <p><strong>3. Required in small quantity</strong> <span class="badge">1 mark</span>: Enzyme regains original shape after each reaction → reused repeatedly → small quantity catalyses a huge amount of substrate.</p>
+    <p><strong>4. Specific</strong> <span class="badge">1 mark</span>: Each enzyme catalyses only one reaction on one substrate. Active site has unique shape. Example: <strong>amylase</strong> acts only on starch.</p>
+    <p><strong>5. Require cofactor</strong> <span class="badge">1 mark</span>: Many enzymes need a non-protein cofactor — activators (Zn²⁺, Cl⁻), prosthetic groups (FAD, Haem), or coenzymes (NAD, Coenzyme A).</p>
+    <p><em>Also valid: energy of activation; metabolic pathways; regulation of production and activity.</em></p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Three factors affecting enzyme activity (temperature, pH, substrate concentration) <span class="badge">5 marks</span></div>
+    <p><strong>Temperature</strong> <span class="badge">1 mark</span>: Rate rises with temperature to <strong>optimum</strong> (36–38°C for humans). Above optimum: enzyme atoms vibrate → globular structure damaged → <strong>denaturation</strong> (permanent). Below optimum: enzyme inactive (reversible); insufficient activation energy.</p>
+    <p><strong>pH</strong> <span class="badge">1 mark</span>: Each enzyme has specific <strong>optimum pH</strong>. Change affects ionisation of amino acids at active site. Pepsin: pH 2 (stomach); Trypsin: pH 8 (small intestine). Extreme pH → denaturation.</p>
+    <p><strong>Substrate concentration</strong> <span class="badge">2 marks</span>: Rate is directly proportional to substrate concentration when enzyme molecules are sufficient. Rate increases until <strong>saturation of active sites</strong> — all sites occupied. Beyond saturation, more substrate has no effect. This plateau is the maximum rate (Vmax).</p>
+    <p><strong>Inhibitors &amp; Activators</strong> <span class="badge">1 mark</span>: <strong>Inhibitors</strong> (poisons, cyanide, antibiotics, drugs) reduce/stop enzyme activity. <strong>Activators</strong> increase rate. Both regulate enzymes from inside or outside the cell.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(ii) Mechanism of enzyme action; activation energy; lock-and-key vs induced-fit <span class="badge">5 marks</span></div>
+    <p><strong>Active site</strong> <span class="badge">1 mark</span>: Charge-bearing cavity on enzyme surface — very small, specific shape. Substrate binds here and reaction occurs.</p>
+    <p><strong>Mechanism — 3 steps</strong> <span class="badge">1 mark</span>: (1) Substrate binds active site → <strong>ES complex</strong>. (2) Enzyme catalyses reaction → <strong>EP complex</strong>. (3) Products released → enzyme unchanged and reusable.</p>
+    <p><strong>Lowering Activation Energy</strong> <span class="badge">1 mark</span>: Enzyme changes shape/charge of substrate at active site or provides a different reaction mechanism → reactions proceed at body temperature without extreme conditions.</p>
+    <p><strong>Lock-and-Key Model</strong> <span class="badge">1 mark</span>: Emil Fischer. Active site is <strong>rigid and fixed</strong> (lock); substrate is the specific key. Explains why one enzyme fits only one substrate.</p>
+    <p><strong>Induced-Fit Model</strong> <span class="badge">1 mark</span>: More accepted. Active site is <strong>flexible</strong>. When the correct substrate approaches, active site <strong>changes shape</strong> to accommodate it precisely. The site is still specific — only the correct substrate can induce the correct conformational change.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Competitive and non-competitive inhibition; allosteric site; daily-life examples <span class="badge">5 marks</span></div>
+    <p><strong>Enzyme inhibition</strong> <span class="badge">1 mark</span>: Chemicals at the reaction site prevent enzymes from performing their role. An inhibitor binds to the enzyme in place of the substrate but does not convert to products. External factors: poisons, cyanide, antibiotics, drugs, accumulated products.</p>
+    <p><strong>Competitive inhibition</strong> <span class="badge">2 marks</span>: Inhibitor's structure resembles substrate → occupies <strong>active site</strong> → substrate blocked → no product. <strong>Reversible</strong>: excess substrate displaces inhibitor. Example: Sulfonamide drugs competitively inhibit bacterial enzyme needed for folic acid synthesis → kills bacteria (antibiotic action).</p>
+    <p><strong>Non-competitive inhibition</strong> <span class="badge">2 marks</span>: Inhibitor does not resemble substrate → binds to <strong>allosteric site</strong> (enzyme surface, not active site) → alters globular shape → active site damaged → substrate cannot bind → reaction stops. <strong>Irreversible</strong>. Example: <strong>Cyanide</strong> (rat poison) inhibits cytochrome c oxidase in ETC. Heavy metals (Pb, Hg) can also act as non-competitive inhibitors.</p>
+  </div>
+
+</div><!-- end page 4 -->
+
+
+<!-- ====== PAGE 5: SECTION C (3iii, 3iv) ====== -->
+<div class="page">
+
+  <div class="answer-box">
+    <div class="q-label">3(iii) ATP as energy currency: structure, ATP–ADP cycle, uses in body <span class="badge">5 marks</span></div>
+    <p><strong>ATP as Energy Currency</strong> <span class="badge">1 mark</span>: Living organisms use and store energy at cellular level in the form of <strong>Adenosine Triphosphate (ATP)</strong>. Called energy currency because it stores/releases energy like money — converted between forms as needed. Human cells use 100–150 moles of ATP per day.</p>
+    <p><strong>Structure of ATP</strong> <span class="badge">1 mark</span>: Three components: (1) <strong>Adenine</strong> (double-ringed N-base) + (2) <strong>Ribose sugar</strong> (5C pentose) = Adenosine. (3) <strong>Three phosphate groups</strong> (PO₄) in triphosphate chain. Bonds between phosphate groups = <strong>high-energy bonds</strong> (wavy lines). AMP = 1 phosphate; ADP = 2 phosphates; ATP = 3 phosphates.</p>
+    <p><strong>ATP–ADP Cycle</strong> <span class="badge">2 marks</span>:</p>
+    <div class="flowchart">Energy from catabolism / light (plants)         Energy for cellular work
+         ↓                                                ↓
+ADP + Pᵢ ──condensation──► ATP ──hydrolysis──► ADP + Pᵢ
+(bond formed = energy stored)          (bond broken = energy released)</div>
+    <p><strong>Uses of ATP</strong> <span class="badge">1 mark</span>: Working of muscles, nerve impulse transmission, growth and repair of cells, active transport, gland secretion. <strong>Brain</strong> uses maximum ATP — 25% of total body ATP.</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Photosynthesis: equation, light-dependent reactions, Calvin cycle in sequence <span class="badge">5 marks</span></div>
+    <p><strong>Overall equation</strong> <span class="badge">1 mark</span>:</p>
+    <div class="flowchart">6CO₂ + 12H₂O  ──Light/Chlorophyll──►  C₆H₁₂O₆ + 6H₂O + 6O₂</div>
+    <p>Takes place in plants, algae, cyanobacteria. Chlorophyll absorbs light; CO₂ and H₂O are raw materials; glucose and O₂ are products.</p>
+    <p><strong>Light-dependent reactions (Phase 1)</strong> <span class="badge">2 marks</span>: In <strong>thylakoid membranes</strong> (grana). Starts at <strong>Photosystem II</strong>: (1) Chlorophyll absorbs light → emits electron pair → accepted by primary electron acceptor. (2) <strong>Photolysis of water</strong>: H₂O → O₂ + 2H⁺ + 2e⁻ (O₂ released through stomata). (3) Electrons pass through <strong>ETC</strong> → energy for <strong>ATP synthesis</strong>. (4) <strong>Photosystem I</strong>: electrons + 2H⁺ reduce NADP⁺ → <strong>NADPH</strong>. Products: ATP, NADPH, O₂.</p>
+    <p><strong>Calvin cycle / Light-independent reactions (Phase 2)</strong> <span class="badge">2 marks</span>: In <strong>stroma of chloroplast</strong>. Uses ATP and NADPH from Phase 1. Steps: (1) CO₂ + RuBP (5C) → 6C intermediate → 2 × 3-PGA. (2) 3-PGA reduced by NADPH + ATP → G3P (3C sugar). (3) G3P → glucose synthesis + RuBP regeneration for next cycle. Described by <strong>Melvin Calvin</strong>.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(iv) Aerobic vs anaerobic respiration; glycolysis; fate of pyruvic acid <span class="badge">5 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature <span class="badge">1 mark</span></th><th>Aerobic Respiration</th><th>Anaerobic Respiration</th></tr>
+      <tr><td>Oxygen needed</td><td>Yes</td><td>No</td></tr>
+      <tr><td>Glucose oxidation</td><td>Complete → CO₂ + H₂O</td><td>Incomplete → alcohol / lactic acid</td></tr>
+      <tr><td>ATP yield</td><td>36 ATP</td><td>2 ATP</td></tr>
+      <tr><td>Site</td><td>Cytoplasm + Mitochondria</td><td>Cytoplasm only</td></tr>
+    </table>
+    <p><strong>Glycolysis — Common first stage</strong> <span class="badge">1 mark</span>: Both pathways start with <strong>glycolysis</strong> in cytoplasm. Glucose (6C) → 2 Pyruvic acid (3C) + 2 ATP + 2 NADH.</p>
+    <p><strong>Fate in Anaerobic respiration</strong> <span class="badge">1 mark</span>: Pyruvic acid not fully oxidised.</p>
+    <div class="flowchart">Yeast:    Pyruvic Acid → Ethyl Alcohol + CO₂   (alcoholic fermentation — wine, bread)
+Muscles: Pyruvic Acid → Lactic Acid             (lactic acid fermentation — yogurt, exercise fatigue)</div>
+    <p>Total ATP = only 2 (from glycolysis).</p>
+    <p><strong>Fate in Aerobic respiration</strong> <span class="badge">2 marks</span>: Pyruvic acid enters mitochondria → fully oxidised in 3 further stages:</p>
+    <div class="flowchart">Stage 2: 2 Pyruvic Acid + 2 CoA → 2 Acetyl CoA + 2CO₂ + 2 NADH
+Stage 3 (Krebs): 2 Acetyl CoA → 4CO₂ + 2 ATP + 6 NADH + 2 FADH₂
+Stage 4 (ETC):   10 NADH + 2 FADH₂ → 32 ATP + H₂O  (O₂ = final e⁻ acceptor)
+Total: 2 + 2 + 32 = 36 ATP per glucose molecule</div>
+    <span class="or-label">OR</span>
+    <div class="q-label">Aerobic respiration: four stages with ATP yield at each <span class="badge">5 marks</span></div>
+    <p><strong>Stage 1 — Glycolysis</strong> <span class="badge">1 mark</span>: Cytoplasm. Glucose → 2 Pyruvic acid. Net yield: <strong>2 ATP + 2 NADH</strong>. Common to aerobic and anaerobic.</p>
+    <p><strong>Stage 2 — Formation of Acetyl CoA</strong> <span class="badge">1 mark</span>: Mitochondria. Pyruvic acid oxidised; 2C acetyl group + CoA → Acetyl CoA; CO₂ released; NADH produced. Yield: <strong>2 NADH</strong> per glucose.</p>
+    <div class="flowchart">2 Pyruvic Acid + 2 CoA → 2 Acetyl CoA + 2 CO₂ + 2 NADH</div>
+    <p><strong>Stage 3 — Krebs Cycle</strong> <span class="badge">1 mark</span>: Mitochondrial matrix. Acetyl group fully oxidised. Yield: <strong>4 CO₂ + 2 ATP + 6 NADH + 2 FADH₂</strong>.</p>
+    <p><strong>Stage 4 — Electron Transport Chain (ETC)</strong> <span class="badge">2 marks</span>: Inner mitochondrial membrane. Electrons from NADH and FADH₂ pass through carrier molecules releasing energy → ATP synthesis. NADH → 3 ATP each; FADH₂ → 2 ATP each. Final electron acceptor = <strong>oxygen</strong> → combines with H⁺ → <strong>water</strong>.</p>
+    <div class="flowchart">Glycolysis  =  2 ATP
+Krebs cycle =  2 ATP
+ETC         = 32 ATP  (10 NADH × 3 + 2 FADH₂ × 2, minus ETC costs)
+─────────────────────
+TOTAL       = 36 ATP per glucose molecule</div>
+  </div>
+
+</div><!-- end page 5 -->
+
+</body>
+</html>
