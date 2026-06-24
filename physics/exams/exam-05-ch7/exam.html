@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Physics Exam — Unit 7: Density and Temperature</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 13pt; line-height: 1.3; background: white; color: #000; }
+
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; }
+
+  /* Header */
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 5px 10px 6px 10px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+  .header-box .board-name { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
+  .header-box .exam-line { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject-line { font-size: 15pt; font-weight: bold; margin-top: 1px; }
+  .header-box .syllabus-line { font-size: 13pt; font-weight: bold; margin-top: 2px; }
+
+  /* Info row */
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px solid #000;
+    padding: 2px 8px;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+
+  /* Instructions */
+  .instructions-box {
+    border: 1.5px solid #000;
+    padding: 3px 10px 4px 10px;
+    font-size: 12pt;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+  .instructions-box .inst-title { font-weight: bold; text-decoration: underline; margin-bottom: 1px; }
+  .instructions-box ol { margin-left: 18px; }
+  .instructions-box ol li { margin-bottom: 0; }
+
+  /* Section bars */
+  .section-bar {
+    background: #DAA520;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+  .section-sub {
+    font-size: 11pt;
+    font-weight: normal;
+    margin-top: 1px;
+  }
+
+  /* MCQ instruction line */
+  .mcq-inst { font-size: 11pt; font-style: italic; margin-bottom: 3px; }
+
+  /* MCQ table */
+  .mcq-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    font-size: 11pt;
+  }
+  .mcq-table th {
+    background: #f0f0f0;
+    border: 1px solid #555;
+    padding: 2px 4px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11pt;
+  }
+  .mcq-table td {
+    border: 1px solid #555;
+    padding: 2px 4px;
+    vertical-align: middle;
+  }
+  .mcq-table .col-num  { width: 3%;  text-align: center; }
+  .mcq-table .col-q    { width: 30%; }
+  .mcq-table .col-opt  { width: 13%; text-align: center; }
+  .mcq-table .col-ans  { width: 15%; text-align: center; }
+
+  /* Bubble circles — td class ans-cell, span class mcq-opt (different names to prevent cascade) */
+  .ans-cell { text-align: center; vertical-align: middle; }
+  .mcq-opt {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1.2px solid #555;
+    line-height: 14px;
+    text-align: center;
+    font-size: 9pt;
+    margin: 0 1px;
+  }
+
+  /* Section B/C table — allow natural page breaking through rows */
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 4px;
+    font-size: 11pt;
+  }
+  .comp-table th {
+    background: #f0f0f0;
+    border: 1px solid #555;
+    padding: 2px 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .comp-table td {
+    border: 1px solid #555;
+    padding: 3px 5px;
+    vertical-align: top;
+  }
+  .comp-table .col-part  { width: 5%;  text-align: center; font-weight: bold; vertical-align: middle; }
+  .comp-table .col-qtext { width: 37%; }
+  .comp-table .col-marks { width: 7%;  text-align: center; font-weight: bold; vertical-align: middle; }
+  .comp-table .col-or    { width: 5%;  text-align: center; font-weight: bold; color: #cc0000; font-size: 13pt; vertical-align: middle; }
+  .comp-table .col-orq   { width: 37%; }
+  .comp-table .col-orm   { width: 7%;  text-align: center; font-weight: bold; vertical-align: middle; }
+
+  /* Footer */
+  .footer {
+    margin-top: 6px;
+    padding-top: 3px;
+    border-top: 1px solid #999;
+    font-size: 11pt;
+  }
+  .footer-sigs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+  }
+  .footer-center { text-align: center; font-size: 11pt; }
+  .end-marker { text-align: center; font-weight: bold; font-size: 12pt; margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <div class="board-name">Board of Intermediate and Secondary Education</div>
+    <div class="exam-line">Annual Examination 2026</div>
+    <div class="subject-line">PHYSICS &mdash; SSC-I (9th Grade)</div>
+    <div class="syllabus-line">Syllabus: Unit 7 &mdash; Density and Temperature</div>
+  </div>
+
+  <!-- INFO ROW -->
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time Allowed: 2 hours 30 minutes</span>
+    <span>Version: 1</span>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>This paper has <strong>three sections</strong>: A (MCQs), B (Short Questions), C (Long Questions).</li>
+      <li><strong>Section A</strong> (12 marks): 12 MCQs. Mark the correct bubble. Time: 15 minutes.</li>
+      <li><strong>Section B</strong> (33 marks): 11 short questions &times; 3 marks each. Answer <em>either</em> the main question <em>or</em> the OR alternative.</li>
+      <li><strong>Section C</strong> (20 marks): 4 long questions &times; 5 marks each. Answer <em>either</em> the main question <em>or</em> the OR alternative.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks) &nbsp;&nbsp; [15 min]</div>
+  <div class="mcq-inst">Q.1: Choose the correct answer and fill in the corresponding bubble.</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th class="col-num">#</th>
+        <th class="col-q">Question</th>
+        <th class="col-opt">A</th>
+        <th class="col-opt">B</th>
+        <th class="col-opt">C</th>
+        <th class="col-opt">D</th>
+        <th class="col-ans">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td class="col-num">1</td>
+        <td class="col-q">Density is defined as:</td>
+        <td class="col-opt">Volume per unit mass</td>
+        <td class="col-opt">Mass per unit volume</td>
+        <td class="col-opt">Weight per unit area</td>
+        <td class="col-opt">Force per unit mass</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">2</td>
+        <td class="col-q">The SI unit of density is:</td>
+        <td class="col-opt">g/cm&sup3;</td>
+        <td class="col-opt">kg/m&sup2;</td>
+        <td class="col-opt">kg/m&sup3;</td>
+        <td class="col-opt">g/mL</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">3</td>
+        <td class="col-q">A cube of side 5 cm has mass 500 g. Its density is:</td>
+        <td class="col-opt">2 g/cm&sup3;</td>
+        <td class="col-opt">4 g/cm&sup3;</td>
+        <td class="col-opt">0.4 g/cm&sup3;</td>
+        <td class="col-opt">10 g/cm&sup3;</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">4</td>
+        <td class="col-q">Osmium is the densest material at room temperature. Its density is:</td>
+        <td class="col-opt">13,600 kg/m&sup3;</td>
+        <td class="col-opt">22,590 kg/m&sup3;</td>
+        <td class="col-opt">19,300 kg/m&sup3;</td>
+        <td class="col-opt">7,900 kg/m&sup3;</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">5</td>
+        <td class="col-q">In the displacement method, volume of the irregular solid equals:</td>
+        <td class="col-opt">Initial water volume</td>
+        <td class="col-opt">Final water volume</td>
+        <td class="col-opt">V<sub>f</sub> &minus; V<sub>i</sub></td>
+        <td class="col-opt">V<sub>i</sub> &minus; V<sub>f</sub></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">6</td>
+        <td class="col-q">Plasma is the fourth state of matter because it consists of:</td>
+        <td class="col-opt">Neutral atoms only</td>
+        <td class="col-opt">Positive ions and free electrons</td>
+        <td class="col-opt">Tightly bound lattice particles</td>
+        <td class="col-opt">Liquid droplets at high pressure</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">7</td>
+        <td class="col-q">Temperature is directly proportional to the average:</td>
+        <td class="col-opt">Potential energy of particles</td>
+        <td class="col-opt">Kinetic energy of particles</td>
+        <td class="col-opt">Mass of particles</td>
+        <td class="col-opt">Volume of particles</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">8</td>
+        <td class="col-q">Absolute zero on the Celsius scale is:</td>
+        <td class="col-opt">0 &deg;C</td>
+        <td class="col-opt">&minus;100 &deg;C</td>
+        <td class="col-opt">&minus;273 &deg;C</td>
+        <td class="col-opt">273 &deg;C</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">9</td>
+        <td class="col-q">Boiling point of water on the Kelvin scale is:</td>
+        <td class="col-opt">100 K</td>
+        <td class="col-opt">273 K</td>
+        <td class="col-opt">373 K</td>
+        <td class="col-opt">212 K</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">10</td>
+        <td class="col-q">37 &deg;C converted to Fahrenheit is:</td>
+        <td class="col-opt">98.6 &deg;F</td>
+        <td class="col-opt">66.6 &deg;F</td>
+        <td class="col-opt">105 &deg;F</td>
+        <td class="col-opt">37.6 &deg;F</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">11</td>
+        <td class="col-q">Thermometric property of a liquid-in-glass thermometer is:</td>
+        <td class="col-opt">Change in resistance</td>
+        <td class="col-opt">Change in emf</td>
+        <td class="col-opt">Volume expansion of liquid</td>
+        <td class="col-opt">Change in colour</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+      <tr>
+        <td class="col-num">12</td>
+        <td class="col-q">A narrower capillary tube in a liquid-in-glass thermometer gives:</td>
+        <td class="col-opt">Wider range, less sensitivity</td>
+        <td class="col-opt">Greater sensitivity, faster response</td>
+        <td class="col-opt">Better linearity, slower response</td>
+        <td class="col-opt">Lower sensitivity, wider range</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- SECTION B -->
+  <div class="section-bar">
+    SECTION B &mdash; Short Answer Questions (11 &times; 3 = 33 Marks)
+    <div class="section-sub">Q.2: Attempt <strong>all</strong> questions. Answer <em>either</em> the main question <em>or</em> the OR alternative.</div>
+  </div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="col-part">Part</th>
+        <th class="col-qtext">Question</th>
+        <th class="col-marks">Marks</th>
+        <th class="col-or">OR</th>
+        <th class="col-orq">OR Question</th>
+        <th class="col-orm">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td class="col-part">(i)</td>
+        <td class="col-qtext">Define <strong>density</strong>. Write its formula and SI unit. State whether density is a scalar or vector quantity and give a reason.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Show that 1 g/cm&sup3; = 1000 kg/m&sup3;. A petrol sample has density 0.9 g/cm&sup3;. Express this in kg/m&sup3; and state why liquids are commonly measured in g/mL.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(ii)</td>
+        <td class="col-qtext">A wooden block: mass 300 g, volume 150 cm&sup3;. A metal ball: mass 500 g, volume 50 cm&sup3;. Calculate density of each and state which is denser.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">500 mL of cooking oil has mass 450 g. Find its density in g/mL. Then find the volume of 1.8 kg of this oil.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(iii)</td>
+        <td class="col-qtext">Explain the <strong>displacement method</strong> for finding density of an irregular solid. List the steps in order and write the formula used.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">A rock of mass 80.52 g is lowered into a measuring cylinder; water level rises from 18 mL to 46 mL. Find the volume and density of the rock.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(iv)</td>
+        <td class="col-qtext">Compare <strong>solids, liquids and gases</strong> with reference to: (a) particle spacing, (b) type of particle motion, (c) relative density.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Why do liquids take the shape of their container but solids do not? Use the concept of attractive forces between particles.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(v)</td>
+        <td class="col-qtext">Define <strong>plasma</strong>. State the conditions for its formation from a gas. Give two examples of plasma from daily life.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Why is plasma called the fourth state of matter? State two properties that distinguish plasma from an ordinary gas.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(vi)</td>
+        <td class="col-qtext">State the relationship between <strong>particle motion and temperature</strong>. What happens to particle speed and K.E. when a substance is cooled?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Define <strong>absolute zero</strong> and give its value on the Celsius scale. Explain why no further cooling is possible below this point.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(vii)</td>
+        <td class="col-qtext">Define <strong>internal energy</strong>. State the two forms of energy that make it up and explain how heating a substance increases its internal energy.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Name three forms of kinetic energy possessed by particles of a substance. In which state of matter is internal energy entirely translational K.E.?</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(viii)</td>
+        <td class="col-qtext">Name the <strong>three temperature scales</strong>. State the lower and upper fixed points on each and the number of divisions between them.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Convert: (a) 25 &deg;C to Kelvin, (b) 350 K to Celsius, (c) 100 &deg;C to Fahrenheit.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(ix)</td>
+        <td class="col-qtext">Define <strong>sensitivity</strong> of a thermometer. Explain how capillary tube diameter affects sensitivity of a liquid-in-glass thermometer.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Define <strong>range</strong> of a thermometer. A clinical mercury thermometer has range 35 &deg;C to 42 &deg;C. Express this range in Fahrenheit.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(x)</td>
+        <td class="col-qtext">Describe the structure and working of a <strong>thermocouple thermometer</strong>. Name the two junctions and state what quantity is measured to find temperature.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Explain why a <strong>liquid crystal strip thermometer</strong> changes colour with temperature. Give two practical applications of this type.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">(xi)</td>
+        <td class="col-qtext">What is a <strong>thermometric property</strong>? Name the thermometric property used in: (a) liquid-in-glass, (b) constant-volume gas thermometer, (c) resistance thermometer.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Explain how <strong>bulb size</strong> affects the range and how the <strong>nature of liquid</strong> affects the sensitivity of a liquid-in-glass thermometer.</td>
+        <td class="col-orm">3</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- SECTION C -->
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)
+    <div class="section-sub">Q.3: Attempt <strong>all</strong> questions. Answer <em>either</em> the main question <em>or</em> the OR alternative.</div>
+  </div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="col-part">Q.</th>
+        <th class="col-qtext">Question</th>
+        <th class="col-marks">Marks</th>
+        <th class="col-or">OR</th>
+        <th class="col-orq">OR Question</th>
+        <th class="col-orm">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td class="col-part">3(i)</td>
+        <td class="col-qtext">Define <strong>density</strong> (&rho; = m/V). Using particle spacing, explain why solids &gt; liquids &gt; gases in density. A brick (21.6 cm &times; 10.2 cm &times; 6.35 cm, mass 3.30 kg) has what density in kg/m&sup3;?</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Describe the <strong>displacement method</strong> (all six steps, formula, labelled diagram). Solve: an irregular stone of mass 200 g raises water from 40 mL to 73 mL. Find its volume and density.</td>
+        <td class="col-orm">5</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">3(ii)</td>
+        <td class="col-qtext">Describe all <strong>four states of matter</strong>. Compare solid, liquid, gas in a table (arrangement, motion, density). Explain how plasma forms from a gas and give three examples in nature or daily life.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Explain the relationship between <strong>temperature, particle motion, and internal energy</strong>. Define absolute zero (Celsius and Kelvin values). Describe the K.E.-vs-Kelvin graph and identify where absolute zero falls.</td>
+        <td class="col-orm">5</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">3(iii)</td>
+        <td class="col-qtext">State all <strong>three temperature scales</strong> with conversion formulas (C&harr;K, C&harr;F). Solve: (a) 37 &deg;C &rarr; K and &deg;F; (b) 212 &deg;F &rarr; &deg;C and K; (c) 300 K &rarr; &deg;C and &deg;F.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Explain <strong>calibration of a thermometer</strong>. Define lower and upper reference points (values for all three scales). Why must fixed points be reproducible? Describe the calibration procedure using ice and steam points.</td>
+        <td class="col-orm">5</td>
+      </tr>
+
+      <tr>
+        <td class="col-part">3(iv)</td>
+        <td class="col-qtext">Compare <strong>liquid-in-glass</strong> and <strong>thermocouple thermometers</strong>: thermometric property, structure, working, and applications. Then state three ways the structure of a liquid-in-glass thermometer affects its sensitivity, range, and linearity.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Name and describe <strong>five types of thermometers</strong>, stating the thermometric property of each. For each, give one application where it is preferred and briefly explain why.</td>
+        <td class="col-orm">5</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-sigs">
+      <span>Invigilator&rsquo;s Signature: ___________________</span>
+      <span>Candidate&rsquo;s Signature: ___________________</span>
+    </div>
+    <div class="footer-center">Chapters Covered: Unit 7 &mdash; Density and Temperature</div>
+    <div class="end-marker">&mdash; End of Question Paper &mdash;</div>
+  </div>
+
+</div><!-- end page container -->
+
+</body>
+</html>

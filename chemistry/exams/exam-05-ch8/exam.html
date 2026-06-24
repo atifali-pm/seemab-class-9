@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chemistry Exam — Chapter 8 Energetics</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", serif; font-size: 12pt; line-height: 1.2; color: #000; background: #fff; }
+  .page { width: 100%; padding: 6mm 9mm 0 9mm; }
+
+  /* Header */
+  .header-box { border: 2.5px solid #000; text-align: center; padding: 4px 10px; margin-bottom: 3px; page-break-after: avoid; }
+  .header-box .board-name { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+  .header-box .exam-name { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject-line { font-size: 15pt; margin-top: 1px; }
+  .header-box .syllabus-line { font-size: 13pt; font-weight: bold; margin-top: 2px; }
+
+  /* Info row */
+  .info-row { display: flex; justify-content: space-between; align-items: center; font-size: 14pt; font-weight: bold; border: 1.5px solid #000; border-top: none; padding: 3px 12px; margin-bottom: 4px; }
+
+  /* Instructions */
+  .instructions-box { border: 1.5px solid #000; padding: 3px 10px; margin-bottom: 4px; font-size: 11pt; }
+  .instructions-box .inst-title { font-weight: bold; font-size: 12pt; margin-bottom: 2px; }
+  .instructions-box ol { margin-left: 18px; }
+  .instructions-box li { margin-bottom: 1px; }
+
+  /* Section bars */
+  .section-bar { background: #DAA520; color: #fff; font-size: 14pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 3px; page-break-after: avoid; }
+  .section-bar .sub-line { font-size: 10.5pt; font-weight: normal; margin-top: 1px; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 14pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 3px; page-break-after: avoid; }
+
+  /* MCQ table */
+  .mcq-table { width: 100%; border-collapse: collapse; margin-bottom: 4px; font-size: 11.5pt; }
+  .mcq-table th { background: #f0f0f0; border: 1px solid #888; padding: 2px 4px; text-align: center; font-size: 11.5pt; }
+  .mcq-table td { border: 1px solid #888; padding: 2px 3px; vertical-align: middle; }
+  .mcq-table td.q-num { text-align: center; width: 4%; }
+  .mcq-table td.q-text { width: 40%; }
+  .mcq-table td.q-opt { width: 11%; text-align: center; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; border: 1.5px solid #000; border-radius: 50%; font-size: 9pt; line-height: 13px; text-align: center; margin: 0 1px; }
+
+  /* B/C table */
+  .bc-table { width: 100%; border-collapse: collapse; font-size: 11pt; margin-bottom: 3px; }
+  .bc-table th { background: #f0f0f0; border: 1px solid #888; padding: 2px 4px; text-align: center; font-size: 11pt; }
+  .bc-table td { border: 1px solid #888; padding: 1px 4px; vertical-align: top; line-height: 1.2; }
+  .bc-table td.part-col { width: 5%; text-align: center; font-weight: bold; vertical-align: middle; }
+  .bc-table td.q-col { width: 37%; }
+  .bc-table td.m-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+  .bc-table td.or-col { width: 5%; text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 13pt; }
+  .bc-table td.orq-col { width: 37%; }
+  .bc-table td.orm-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+
+  /* Footer */
+  .footer { margin-top: 8px; padding-top: 5px; border-top: 1px solid #555; font-size: 11pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+  .sig-line { border-bottom: 1px solid #000; width: 200px; display: inline-block; margin-left: 6px; }
+  .footer-center { text-align: center; font-size: 10.5pt; margin-top: 3px; }
+  .end-marker { text-align: center; font-size: 11.5pt; font-weight: bold; margin-top: 6px; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <div class="board-name">Board of Intermediate and Secondary Education</div>
+    <div class="exam-name">Annual Examination 2026</div>
+    <div class="subject-line">Chemistry &mdash; SSC-I (9th Grade)</div>
+    <div class="syllabus-line">Syllabus: Chapter 8 &mdash; Energetics</div>
+  </div>
+
+  <!-- INFO ROW -->
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time Allowed: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your name, roll number and section clearly on the answer sheet.</li>
+      <li>Section A is compulsory. Encircle the correct option on the question paper itself.</li>
+      <li>In Section B, attempt <strong>all 11</strong> questions. For each question, attempt either the main question <strong>OR</strong> its alternative.</li>
+      <li>In Section C, attempt <strong>all 4</strong> questions. For each question, attempt either the main question <strong>OR</strong> its alternative.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th style="width:4%">#</th>
+        <th style="width:40%">Question</th>
+        <th style="width:11%">A</th>
+        <th style="width:11%">B</th>
+        <th style="width:11%">C</th>
+        <th style="width:11%">D</th>
+        <th style="width:12%">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="q-num">1</td>
+        <td class="q-text">A chemical reaction that proceeds with the <em>evolution</em> of heat is called:</td>
+        <td class="q-opt">Endothermic reaction</td>
+        <td class="q-opt">Exothermic reaction</td>
+        <td class="q-opt">Thermochemical reaction</td>
+        <td class="q-opt">Catalytic reaction</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">2</td>
+        <td class="q-text">If the &Delta;H value of a reaction is <em>negative</em>, the reaction is:</td>
+        <td class="q-opt">Endothermic</td>
+        <td class="q-opt">Exothermic</td>
+        <td class="q-opt">Neutral</td>
+        <td class="q-opt">Catalytic</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">3</td>
+        <td class="q-text">The enthalpy change for C<sub>(s)</sub> + O<sub>2(g)</sub> &rarr; CO<sub>2(g)</sub> is &Delta;H&deg; = &minus;393.5 kJ. This reaction is:</td>
+        <td class="q-opt">Endothermic</td>
+        <td class="q-opt">Exothermic</td>
+        <td class="q-opt">Reversible</td>
+        <td class="q-opt">Neutralization</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">4</td>
+        <td class="q-text">Bond <em>breaking</em> is always:</td>
+        <td class="q-opt">Exothermic</td>
+        <td class="q-opt">Endothermic</td>
+        <td class="q-opt">Catalytic</td>
+        <td class="q-opt">Thermochemical</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">5</td>
+        <td class="q-text">The enthalpy change of a reaction equals:</td>
+        <td class="q-opt">Sum of BDE of reactants only</td>
+        <td class="q-opt">Sum of BFE of products only</td>
+        <td class="q-opt">Sum of BDE of reactants minus sum of BFE of products</td>
+        <td class="q-opt">Sum of BFE of products minus sum of BDE of reactants</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">6</td>
+        <td class="q-text">Activation energy of a reaction must be _______ the average kinetic energy of reacting molecules for an effective collision:</td>
+        <td class="q-opt">lower than</td>
+        <td class="q-opt">equal to</td>
+        <td class="q-opt">greater than</td>
+        <td class="q-opt">unrelated to</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">7</td>
+        <td class="q-text">A catalyst increases the rate of a reaction by:</td>
+        <td class="q-opt">increasing activation energy</td>
+        <td class="q-opt">increasing enthalpy of reaction</td>
+        <td class="q-opt">lowering activation energy</td>
+        <td class="q-opt">decreasing enthalpy of reaction</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">8</td>
+        <td class="q-text">A balanced chemical equation that also shows the heat change of a reaction is called:</td>
+        <td class="q-opt">Ionic equation</td>
+        <td class="q-opt">Thermochemical equation</td>
+        <td class="q-opt">Half equation</td>
+        <td class="q-opt">Nuclear equation</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">9</td>
+        <td class="q-text">Which product is <em>not</em> released in aerobic respiration?</td>
+        <td class="q-opt">Carbon dioxide</td>
+        <td class="q-opt">Water</td>
+        <td class="q-opt">Lactic acid</td>
+        <td class="q-opt">Energy</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">10</td>
+        <td class="q-text">Which of the following reactions has a <em>positive</em> enthalpy change?</td>
+        <td class="q-opt">C<sub>(s)</sub> + O<sub>2(g)</sub> &rarr; CO<sub>2(g)</sub>, &Delta;H&deg; = &minus;393.5 kJ</td>
+        <td class="q-opt">2H<sub>2(g)</sub> + O<sub>2(g)</sub> &rarr; 2H<sub>2</sub>O<sub>(g)</sub>, &Delta;H&deg; = &minus;571.6 kJ</td>
+        <td class="q-opt">N<sub>2(g)</sub> + O<sub>2(g)</sub> &rarr; 2NO<sub>(g)</sub>, &Delta;H&deg; = +180.5 kJ</td>
+        <td class="q-opt">C<sub>(s)</sub> + &frac12;O<sub>2(g)</sub> &rarr; CO<sub>(g)</sub>, &Delta;H&deg; = &minus;110.5 kJ</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">11</td>
+        <td class="q-text">Lipids act as reserve energy stores because:</td>
+        <td class="q-opt">they dissolve in water</td>
+        <td class="q-opt">they can store very large amounts of energy</td>
+        <td class="q-opt">they increase activation energy</td>
+        <td class="q-opt">they are catalysts in the body</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">12</td>
+        <td class="q-text">In living organisms, the catalysts that catalyze chemical reactions are called:</td>
+        <td class="q-opt">Vitamins</td>
+        <td class="q-opt">Hormones</td>
+        <td class="q-opt">Enzymes</td>
+        <td class="q-opt">Lipids</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION B -->
+  <div class="section-bar">
+    SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)
+    <div class="sub-line">Attempt all 11 questions. For each pair, attempt either the main question OR its alternative.</div>
+  </div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">OR Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">2(i)</td>
+        <td class="q-col">Define chemical energetics. What is a thermochemical reaction? Give one example with its thermochemical equation.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Define a chemical system and its surroundings. Give one example from the textbook to illustrate the difference between system and surroundings.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ii)</td>
+        <td class="q-col">Define exothermic reaction. Write two examples of exothermic reactions with their thermochemical equations and &Delta;H values.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Define endothermic reaction. Write two examples of endothermic reactions with their thermochemical equations and &Delta;H values.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iii)</td>
+        <td class="q-col">State the sign convention for enthalpy change (&Delta;H). Why is &Delta;H negative for an exothermic reaction and positive for an endothermic reaction?</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">What is standard enthalpy change? At what temperature and pressure is it measured? Write its symbol.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iv)</td>
+        <td class="q-col">Classify the following processes as exothermic or endothermic: (a) freezing of water &nbsp; (b) combustion of methane &nbsp; (c) decomposition of limestone.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Classify the following processes as exothermic or endothermic: (a) sublimation of dry ice &nbsp; (b) H<sub>2</sub>O<sub>(g)</sub> &rarr; H<sub>2</sub>O<sub>(l)</sub> &nbsp; (c) burning of fuels.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(v)</td>
+        <td class="q-col">Define bond dissociation energy and bond formation energy. State the relationship between them and the enthalpy change of a reaction.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Explain why bond breaking always absorbs energy and bond forming always releases energy. How does this determine whether a reaction is exothermic or endothermic?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vi)</td>
+        <td class="q-col">Write the formula for calculating &Delta;H from bond energy data. Using this formula, state what happens when: (a) sum of BDE of reactants &gt; sum of BFE of products &nbsp; (b) sum of BDE of reactants &lt; sum of BFE of products.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Bond energy of H&minus;H is 436 kJ/mol, I&minus;I is 151 kJ/mol, and H&minus;I is 299 kJ/mol. Calculate &Delta;H for: H<sub>2(g)</sub> + I<sub>2(g)</sub> &rarr; 2HI<sub>(g)</sub>. Show all working.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vii)</td>
+        <td class="q-col">Define activation energy. State what collision theory says about effective and ineffective collisions.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">What two conditions must be met for a molecular collision to be effective? Why does a higher activation energy result in a slower reaction rate?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(viii)</td>
+        <td class="q-col">Define catalyst and catalysis. How does a catalyst increase the rate of a reaction without changing the overall enthalpy?</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">What is an enzyme? How do enzymes in living organisms differ from industrial chemical catalysts in terms of specificity?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ix)</td>
+        <td class="q-col">Define respiration. Why is respiration classified as an exothermic process?</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Write the word equation for aerobic respiration. Name all the reactants and products and state where the energy comes from.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(x)</td>
+        <td class="q-col">Differentiate between aerobic and anaerobic respiration. Write the word equation for each.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Which type of respiration releases more energy? Why does the body use lipids as reserve energy stores when intense exercise is performed?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(xi)</td>
+        <td class="q-col">On a labeled reaction pathway diagram for an <em>exothermic</em> reaction, identify: (a) reactants level (b) products level (c) activation energy (d) enthalpy change.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">On a labeled reaction pathway diagram for an <em>endothermic</em> reaction, identify: (a) reactants level (b) products level (c) activation energy (d) enthalpy change. State the sign of &Delta;H.</td>
+        <td class="orm-col">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION C -->
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks) &mdash; Attempt all 4</div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">OR Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">3(i)</td>
+        <td class="q-col">
+          (a) Define exothermic and endothermic reactions. Explain the sign convention for &Delta;H in each case. [2]<br>
+          (b) Write thermochemical equations (with &Delta;H values) for any three reactions from Unit 8: one exothermic and two endothermic. Identify each type. [3]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Define thermochemical reaction and thermochemistry. Give the textbook example of a thermochemical equation. [2]<br>
+          (b) Classify each of the following as exothermic or endothermic and justify: (i) C<sub>(s)</sub> + &frac12;O<sub>2(g)</sub> &rarr; CO<sub>(g)</sub>, &Delta;H&deg; = &minus;110.5 kJ &nbsp; (ii) N<sub>2(g)</sub> + O<sub>2(g)</sub> &rarr; 2NO<sub>(g)</sub>, &Delta;H&deg; = +180.5 kJ &nbsp; (iii) freezing of water &nbsp; (iv) sublimation of dry ice &nbsp; (v) combustion of methane. [3]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(ii)</td>
+        <td class="q-col">
+          (a) State the formula: &Delta;H&deg; = Sum of BDE of reactants &minus; Sum of BFE of products. Explain each term. [2]<br>
+          (b) Using bond energy data (H&minus;H: 436 kJ/mol, Cl&minus;Cl: 243 kJ/mol, H&minus;Cl: 432 kJ/mol), calculate &Delta;H for the reaction: H<sub>2(g)</sub> + Cl<sub>2(g)</sub> &rarr; 2HCl<sub>(g)</sub>. Show all steps and state whether the reaction is exothermic or endothermic. [3]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Define bond dissociation energy and bond formation energy. State which process absorbs and which releases energy. [2]<br>
+          (b) Using bond energy data (H&minus;H: 436 kJ/mol, F&minus;F: 155 kJ/mol, H&minus;F: 567 kJ/mol), calculate &Delta;H for the reaction: H<sub>2(g)</sub> + F<sub>2(g)</sub> &rarr; 2HF<sub>(g)</sub>. Show all steps and state whether the reaction is exothermic or endothermic. [3]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iii)</td>
+        <td class="q-col">
+          (a) Define activation energy. With reference to collision theory, explain why some collisions are effective and others are ineffective. [3]<br>
+          (b) Draw and label a reaction pathway diagram for an exothermic reaction showing: reactants, products, transition state, activation energy (uncatalyzed), activation energy (catalyzed), and enthalpy change. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Define catalyst. Explain how a catalyst increases reaction rate without changing the overall enthalpy of the reaction. [3]<br>
+          (b) Draw and label a reaction pathway diagram for an endothermic reaction showing: reactants, products, transition state, activation energy, and enthalpy change. State the sign of &Delta;H and explain why products are at a higher energy level than reactants. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iv)</td>
+        <td class="q-col">
+          (a) Define respiration and state why it is an exothermic process. Distinguish between aerobic and anaerobic respiration with word equations. [3]<br>
+          (b) Explain the role of lipids as reserve energy stores. Under what conditions does the body switch from oxidizing glucose to oxidizing lipids? [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Compare aerobic and anaerobic respiration under four headings: oxygen requirement, reactants, products, and energy released. [3]<br>
+          (b) Explain how enzymes act as biological catalysts. How does this connect to the concept of activation energy? [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="sig-row">
+      <span>Invigilator's Signature: <span class="sig-line">&nbsp;</span></span>
+      <span>Candidate's Signature: <span class="sig-line">&nbsp;</span></span>
+    </div>
+    <div class="footer-center"><strong>Chapters Covered:</strong> Chapter 8 &mdash; Energetics (pp. 127&ndash;133)</div>
+    <div class="end-marker">End of Question Paper</div>
+  </div>
+
+</div>
+</body>
+</html>

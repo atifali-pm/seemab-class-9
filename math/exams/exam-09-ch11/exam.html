@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mathematics Exam — Unit 11: Basic Statistics</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", serif; font-size: 12pt; color: #000; background: #fff; line-height: 1.25; }
+
+  .page { width: 100%; padding: 6mm 9mm 0 9mm; }
+
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    page-break-after: avoid;
+  }
+  .header-box .board { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+  .header-box .exam-year { font-size: 14pt; margin-top: 2px; }
+  .header-box .subject-line { font-size: 14pt; margin-top: 2px; }
+  .header-box .syllabus-line { font-size: 12pt; font-weight: bold; margin-top: 2px; }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 2.5px solid #000;
+    border-right: 2.5px solid #000;
+    border-bottom: 2.5px solid #000;
+    padding: 3px 10px;
+    font-size: 13pt;
+    font-weight: bold;
+  }
+
+  .instructions-box {
+    border: 1.5px solid #000;
+    padding: 4px 10px;
+    margin-top: 4px;
+    font-size: 11.5pt;
+    page-break-after: avoid;
+  }
+  .instructions-box .inst-title { font-weight: bold; text-decoration: underline; margin-bottom: 1px; }
+  .instructions-box ol { padding-left: 16px; }
+  .instructions-box li { margin-bottom: 0; }
+
+  .section-bar {
+    background-color: #DAA520;
+    color: #fff;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-top: 5px;
+    page-break-after: avoid;
+  }
+  .section-bar-blue {
+    background-color: #4682B4;
+    color: #fff;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-top: 5px;
+    page-break-after: avoid;
+  }
+  .section-sub {
+    font-size: 10.5pt;
+    font-weight: normal;
+    font-style: italic;
+    padding: 0 10px 2px 10px;
+    background-color: #DAA520;
+    color: #fff;
+    page-break-after: avoid;
+  }
+  .section-sub-blue {
+    font-size: 10.5pt;
+    font-weight: normal;
+    font-style: italic;
+    padding: 0 10px 2px 10px;
+    background-color: #4682B4;
+    color: #fff;
+    page-break-after: avoid;
+  }
+
+  .mcq-note { font-size: 10.5pt; font-style: italic; margin: 2px 0 2px 0; }
+
+  .mcq-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11pt;
+    page-break-inside: avoid;
+  }
+  .mcq-table th, .mcq-table td {
+    border: 1px solid #000;
+    padding: 2px 3px;
+    vertical-align: middle;
+  }
+  .mcq-table th { background-color: #f0f0f0; font-weight: bold; text-align: center; }
+  .mcq-table td.col-num  { width: 3%;  text-align: center; font-weight: bold; }
+  .mcq-table td.col-q    { width: 29%; }
+  .mcq-table td.col-opt  { width: 13%; text-align: center; }
+  .mcq-table td.ans-cell { width: 16%; text-align: center; }
+
+  .mcq-opt {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+    margin: 0 1px;
+    vertical-align: middle;
+  }
+
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+  }
+  .comp-table tr { page-break-inside: avoid; }
+  .comp-table th, .comp-table td {
+    border: 1px solid #000;
+    padding: 2px 4px;
+    vertical-align: top;
+  }
+  .comp-table th { background-color: #f5f5f5; font-weight: bold; text-align: center; font-size: 10pt; }
+  .comp-table td.col-part  { width: 5%;  text-align: center; font-weight: bold; }
+  .comp-table td.col-qtext { width: 37%; }
+  .comp-table td.col-marks { width: 6%;  text-align: center; font-weight: bold; }
+  .comp-table td.col-or    { width: 5%;  text-align: center; font-weight: bold; color: #c00; font-size: 13pt; }
+  .comp-table td.col-orq   { width: 37%; }
+  .comp-table td.col-orm   { width: 6%;  text-align: center; font-weight: bold; }
+
+  /* mini tables inside comp-table cells */
+  .mini-t { border-collapse: collapse; margin-top: 2px; font-size: 9.5pt; }
+  .mini-t td { border: 1px solid #555; padding: 1px 4px; }
+
+  .footer-area { margin-top: 6px; padding-bottom: 3px; }
+  .sig-row { display: flex; justify-content: space-between; margin-top: 4px; font-size: 11pt; }
+  .chapters-line { text-align: center; font-size: 10.5pt; margin-top: 4px; border-top: 1px solid #000; padding-top: 3px; }
+  .end-marker { text-align: center; font-size: 11pt; font-weight: bold; margin-top: 3px; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <div class="board">Board of Intermediate and Secondary Education</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject-line">Mathematics &mdash; SSC-I (9th Grade)</div>
+    <div class="syllabus-line">Syllabus: Chapter 11 &mdash; Basic Statistics</div>
+  </div>
+
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time Allowed: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your name, roll number, and section clearly on the answer sheet.</li>
+      <li><strong>Section A</strong> (MCQs): Attempt <strong>ALL 12</strong> questions. Each carries <strong>1 mark</strong>. Time: 15 minutes.</li>
+      <li><strong>Section B</strong> (Short Questions): Attempt <strong>ALL 11</strong> pairs, choosing the main question <strong>OR</strong> its alternative. Each carries <strong>3 marks</strong>.</li>
+      <li><strong>Section C</strong> (Long Questions): Attempt <strong>ALL 4</strong> pairs, choosing the main question <strong>OR</strong> its alternative. Each carries <strong>5 marks</strong>.</li>
+      <li>Use black or blue ink only. Pencil is not allowed except for graphs and diagrams.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+  <div class="mcq-note">Encircle the correct option. All questions are compulsory.</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th class="col-num">#</th>
+        <th style="width:29%">Question</th>
+        <th class="col-opt">A</th>
+        <th class="col-opt">B</th>
+        <th class="col-opt">C</th>
+        <th class="col-opt">D</th>
+        <th style="width:16%; text-align:center;">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-num">1</td>
+        <td class="col-q">Data which has not been arranged in a systematic order is called:</td>
+        <td class="col-opt">Grouped data</td>
+        <td class="col-opt">Raw data</td>
+        <td class="col-opt">Cumulative data</td>
+        <td class="col-opt">Discrete data</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">2</td>
+        <td class="col-q">The class mark (mid value) of the class 21&ndash;30 is:</td>
+        <td class="col-opt">21</td>
+        <td class="col-opt">25</td>
+        <td class="col-opt">25.5</td>
+        <td class="col-opt">30</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">3</td>
+        <td class="col-q">For the class 31&ndash;40, the lower class boundary is:</td>
+        <td class="col-opt">31</td>
+        <td class="col-opt">30</td>
+        <td class="col-opt">30.5</td>
+        <td class="col-opt">31.5</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">4</td>
+        <td class="col-q">Cumulative frequency of a class is the sum of its frequency and the frequencies of all:</td>
+        <td class="col-opt">Succeeding classes</td>
+        <td class="col-opt">Preceding classes</td>
+        <td class="col-opt">All classes equally</td>
+        <td class="col-opt">The modal class only</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">5</td>
+        <td class="col-q">In a histogram with unequal class intervals, the height of each bar represents:</td>
+        <td class="col-opt">Frequency</td>
+        <td class="col-opt">Class mark</td>
+        <td class="col-opt">Frequency density</td>
+        <td class="col-opt">Cumulative freq.</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">6</td>
+        <td class="col-q">Arithmetic mean of the data: 2, 4, 6, 8, 10 is:</td>
+        <td class="col-opt">5</td>
+        <td class="col-opt">6</td>
+        <td class="col-opt">7</td>
+        <td class="col-opt">8</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">7</td>
+        <td class="col-q">For grouped data the arithmetic mean using class marks is:</td>
+        <td class="col-opt">&Sigma;x / n</td>
+        <td class="col-opt">&Sigma;fx / &Sigma;f</td>
+        <td class="col-opt">&Sigma;f / &Sigma;x</td>
+        <td class="col-opt">&Sigma;fx &times; n</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">8</td>
+        <td class="col-q">The median of: 3, 5, 7, 9, 11 is:</td>
+        <td class="col-opt">5</td>
+        <td class="col-opt">7</td>
+        <td class="col-opt">8</td>
+        <td class="col-opt">9</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">9</td>
+        <td class="col-q">In Mode = l + [(f<sub>m</sub>&minus;f<sub>1</sub>)/(2f<sub>m</sub>&minus;f<sub>1</sub>&minus;f<sub>2</sub>)]&times;h, &lsquo;l&rsquo; is:</td>
+        <td class="col-opt">Class mark of modal class</td>
+        <td class="col-opt">Lower boundary of modal class</td>
+        <td class="col-opt">Upper boundary of modal class</td>
+        <td class="col-opt">Lower limit of preceding class</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">10</td>
+        <td class="col-q">If mode = 26 and mean = 23, the median by empirical relation is:</td>
+        <td class="col-opt">21</td>
+        <td class="col-opt">24</td>
+        <td class="col-opt">25</td>
+        <td class="col-opt">27</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">11</td>
+        <td class="col-q">The weighted arithmetic mean formula is:</td>
+        <td class="col-opt">&Sigma;w / &Sigma;wx</td>
+        <td class="col-opt">&Sigma;wx / &Sigma;w</td>
+        <td class="col-opt">&Sigma;wx &times; &Sigma;w</td>
+        <td class="col-opt">&Sigma;x / &Sigma;w</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">12</td>
+        <td class="col-q">In a frequency polygon, points are plotted against:</td>
+        <td class="col-opt">Class boundaries</td>
+        <td class="col-opt">Frequencies only</td>
+        <td class="col-opt">Class marks (mid values)</td>
+        <td class="col-opt">Cumulative frequencies</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end page 1 -->
+
+<div class="page">
+
+  <!-- SECTION B -->
+  <div class="section-bar">SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)</div>
+  <div class="section-sub">Attempt ALL 11 questions. Choose either the main question OR its alternative.</div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="col-part">Q.</th>
+        <th class="col-qtext">Question</th>
+        <th class="col-marks">Marks</th>
+        <th class="col-or">OR</th>
+        <th class="col-orq">OR Question</th>
+        <th class="col-orm">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-part">2(i)</td>
+        <td class="col-qtext">A library data shows: 1&ndash;10 (f=5), 11&ndash;20 (f=4), 21&ndash;30 (f=8), 31&ndash;40 (f=9), 41&ndash;50 (f=2), 51&ndash;60 (f=2). State: (a) total number of readers, (b) group with highest frequency, (c) lower boundary of the last class.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Define: (a) raw data, (b) class limits, (c) class boundaries. Find the adjustment factor for classes 1&ndash;10, 11&ndash;20.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(ii)</td>
+        <td class="col-qtext">For the class interval 1&ndash;9, find: (a) lower class limit, (b) upper class limit, (c) class boundaries, (d) class mark.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Explain <strong>frequency density</strong> and write its formula. A class has frequency 12 and class interval width 4. Find its frequency density.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(iii)</td>
+        <td class="col-qtext">A die is rolled 30 times: 1 appears 4 times, 2 appears 6, 3 appears 5, 4 appears 5, 5 appears 4, 6 appears 6. Prepare a discrete frequency distribution table and add a cumulative frequency column.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">List the six steps of the <strong>Tally Bar Method</strong> for constructing a frequency distribution table.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(iv)</td>
+        <td class="col-qtext">Find the arithmetic mean of x = 2, 4, 6, 8, 10, 12 using &macr;x = &Sigma;x / n.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Find the arithmetic mean of y = 3, 4, &minus;1, 7, &minus;8, &minus;5, 0.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(v)</td>
+        <td class="col-qtext">Find the arithmetic mean of the frequency distribution:<br>
+          <table class="mini-t"><tr><td><em>x</em></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td><em>f</em></td><td>3</td><td>7</td><td>5</td><td>2</td><td>3</td></tr></table>
+        </td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Find the arithmetic mean of the fuel data:<br>
+          <table class="mini-t"><tr><td>Class</td><td>0&ndash;5</td><td>5&ndash;10</td><td>10&ndash;15</td><td>15&ndash;20</td><td>20&ndash;25</td></tr><tr><td><em>f</em></td><td>5</td><td>7</td><td>10</td><td>6</td><td>2</td></tr></table>
+        </td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(vi)</td>
+        <td class="col-qtext">Find the median of: 40, 35, 45, 60, 50, 35, 40, 45, 35, 50.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Selling prices of 7 articles (Rs): 1075, 1050, 2050, 1030, 2045, 1090, 1530. Find the median selling price.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(vii)</td>
+        <td class="col-qtext">Find mode and state type (unimodal/bimodal):<br>(a) 30, 25, 40, 30, 45, 25, 30, 40, 30 &nbsp;&nbsp;(b) 1, 2, 3, 2, 1, 3, 1, 2</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Find the mode of: 125, 130, 115, 125, 135, 120, 135, 130, 120.<br>State the type (unimodal / bimodal / trimodal).</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(viii)</td>
+        <td class="col-qtext">Mean = 29, Median = 32. Find Mode using: Mode = 3 Median &minus; 2 Mean.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Mode = 26, Mean = 23. Find Median using: Median = &frac13;(Mode + 2 Mean).</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(ix)</td>
+        <td class="col-qtext">Find weighted mean. Marks (x): Maths 90, Physics 75, Chemistry 60, Biology 50. Weights (w): 4, 3, 2, 1 respectively.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Define <strong>weighted mean</strong> and state its formula. A shop sells items at Rs 200 (w=5), Rs 350 (w=3), Rs 500 (w=2). Find the weighted mean price.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(x)</td>
+        <td class="col-qtext">Find median and mode:<br>
+          <table class="mini-t"><tr><td><em>x</em></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td><em>f</em></td><td>3</td><td>4</td><td>5</td><td>2</td><td>2</td></tr></table>
+        </td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Find median and mode:<br>
+          <table class="mini-t"><tr><td><em>x</em></td><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td></tr><tr><td><em>f</em></td><td>2</td><td>5</td><td>7</td><td>4</td><td>2</td></tr></table>
+        </td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(xi)</td>
+        <td class="col-qtext">Describe how a frequency polygon is drawn on a histogram. What is done at both ends to complete a closed polygon?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Workers&rsquo; ages: 20&ndash;24 (f=5), 25&ndash;29 (f=16), 30&ndash;34 (f=12), 35&ndash;39 (f=10), 40&ndash;44 (f=8), 45&ndash;49 (f=4). Find the class mark for each group.</td>
+        <td class="col-orm">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION C -->
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)</div>
+  <div class="section-sub-blue">Attempt ALL 4 questions. Choose either the main question OR its alternative.</div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="col-part">Q.</th>
+        <th class="col-qtext">Question</th>
+        <th class="col-marks">Marks</th>
+        <th class="col-or">OR</th>
+        <th class="col-orq">OR Question</th>
+        <th class="col-orm">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-part">3(i)</td>
+        <td class="col-qtext">Masses (pounds) of 40 boys at a gym:<br>
+          <table class="mini-t"><tr><td>Mass</td><td>125&ndash;135</td><td>136&ndash;146</td><td>147&ndash;157</td><td>158&ndash;168</td><td>169&ndash;179</td></tr><tr><td>f</td><td>8</td><td>13</td><td>11</td><td>6</td><td>2</td></tr></table><br>
+          (a) Find class marks for all 5 classes.<br>
+          (b) Find class boundaries for all 5 classes.<br>
+          (c) Construct a cumulative frequency column.
+        </td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Heights (cm) of 44 students:<br>
+          <table class="mini-t"><tr><td>Ht</td><td>130&ndash;144</td><td>145&ndash;149</td><td>150&ndash;154</td><td>155&ndash;159</td><td>160&ndash;169</td><td>170&ndash;179</td></tr><tr><td>f</td><td>9</td><td>7</td><td>8</td><td>6</td><td>10</td><td>4</td></tr></table><br>
+          Intervals are unequal. Calculate frequency density (F.D) and class boundaries for all 6 classes.
+        </td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(ii)</td>
+        <td class="col-qtext">Find the arithmetic mean of marks (grouped data). Show full working table with class marks and <em>fx</em> column.<br>
+          <table class="mini-t"><tr><td>Marks</td><td>0&ndash;10</td><td>10&ndash;20</td><td>20&ndash;30</td><td>30&ndash;40</td><td>40&ndash;50</td></tr><tr><td>f</td><td>2</td><td>5</td><td>7</td><td>3</td><td>8</td></tr></table>
+        </td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Find the arithmetic mean (detergent packs sold). Show full working table.<br>
+          <table class="mini-t"><tr><td>Class (kg)</td><td>1&ndash;9</td><td>10&ndash;18</td><td>19&ndash;27</td><td>28&ndash;36</td><td>37&ndash;45</td></tr><tr><td>f</td><td>10</td><td>15</td><td>18</td><td>15</td><td>12</td></tr></table>
+        </td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(iii)</td>
+        <td class="col-qtext">Marks of 100 students. Find the <strong>median</strong> marks.<br>
+          <table class="mini-t"><tr><td>Marks</td><td>10&ndash;19</td><td>20&ndash;29</td><td>30&ndash;39</td><td>40&ndash;49</td><td>50&ndash;59</td></tr><tr><td>f</td><td>5</td><td>25</td><td>40</td><td>20</td><td>10</td></tr></table><br>
+          Build c.f. table, identify median group, apply: &tilde;x = l + (h/f)(n/2 &minus; c).
+        </td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Wages (Rs/hr) of 50 workers. Find the <strong>mode</strong>.<br>
+          <table class="mini-t"><tr><td>Wages</td><td>25&ndash;29</td><td>30&ndash;34</td><td>35&ndash;39</td><td>40&ndash;44</td><td>45&ndash;49</td><td>50&ndash;54</td><td>55&ndash;59</td></tr><tr><td>f</td><td>2</td><td>4</td><td>8</td><td>20</td><td>6</td><td>6</td><td>4</td></tr></table><br>
+          Give modal class boundaries. Apply: Mode = l + [(f<sub>m</sub>&minus;f<sub>1</sub>)/(2f<sub>m</sub>&minus;f<sub>1</sub>&minus;f<sub>2</sub>)]&times;h.
+        </td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(iv)</td>
+        <td class="col-qtext">Monthly household expenditure with weights given below. Find the <strong>weighted arithmetic mean</strong>. Show the full wx column.<br>
+          <table class="mini-t">
+            <tr><td>Item</td><td>Food</td><td>Rent</td><td>Clothing</td><td>Utility</td><td>Education</td><td>Misc.</td></tr>
+            <tr><td>x (Rs)</td><td>8000</td><td>5000</td><td>1000</td><td>900</td><td>600</td><td>100</td></tr>
+            <tr><td>w</td><td>20</td><td>10</td><td>6</td><td>4</td><td>2</td><td>1</td></tr>
+          </table>
+        </td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Marks of class 9 students with subject weights. Find weighted mean for <strong>Hanzala</strong> and <strong>Zaki</strong>; state who scores higher.<br>
+          <table class="mini-t">
+            <tr><td>Subject</td><td>w</td><td>Hanzala</td><td>Zaki</td></tr>
+            <tr><td>Mathematics</td><td>4</td><td>70</td><td>90</td></tr>
+            <tr><td>Physics</td><td>3</td><td>95</td><td>55</td></tr>
+            <tr><td>Chemistry</td><td>2</td><td>80</td><td>50</td></tr>
+            <tr><td>Biology</td><td>1</td><td>55</td><td>65</td></tr>
+          </table>
+        </td>
+        <td class="col-orm">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer-area">
+    <div class="sig-row">
+      <div>Invigilator's Signature: ____________________</div>
+      <div>Candidate's Signature: ____________________</div>
+    </div>
+    <div class="chapters-line">Chapters Covered: Ch 11 &mdash; Basic Statistics</div>
+    <div class="end-marker">&mdash; End of Question Paper &mdash;</div>
+  </div>
+
+</div><!-- end page 2 -->
+
+</body>
+</html>

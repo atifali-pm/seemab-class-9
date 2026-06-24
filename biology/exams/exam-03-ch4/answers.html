@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', serif;
+    font-size: 11.5pt;
+    line-height: 1.4;
+    color: #000;
+  }
+  .page {
+    width: 100%;
+    padding: 7mm 9mm 0 9mm;
+  }
+
+  /* Header box */
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 4px 8px 3px 8px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+  .header-box .board { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.3px; }
+  .header-box .exam-year { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject { font-size: 15pt; margin-top: 1px; }
+  .header-box .syllabus { font-size: 13pt; font-weight: bold; margin-top: 2px; }
+  .header-box .ak-label { font-size: 14pt; font-weight: bold; color: #1a5276; margin-top: 2px; }
+
+  /* Info row */
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 2px 4px;
+    margin-bottom: 3px;
+  }
+
+  /* Section bars */
+  .section-bar {
+    background: #DAA520;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+
+  /* Mark badge */
+  .badge {
+    display: inline-block;
+    background: #e8e8e8;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 0 4px;
+    margin-left: 3px;
+    vertical-align: middle;
+  }
+
+  /* MCQ answer grid */
+  .mcq-ans-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    font-size: 10.5pt;
+  }
+  .mcq-ans-table th {
+    background: #f0f0f0;
+    border: 1px solid #888;
+    padding: 2px 4px;
+    text-align: center;
+    font-size: 10pt;
+  }
+  .mcq-ans-table td {
+    border: 1px solid #888;
+    padding: 2px 5px;
+    vertical-align: top;
+    line-height: 1.3;
+  }
+  .mcq-ans-table td.qnum { text-align: center; width: 3%; font-weight: bold; vertical-align: middle; }
+  .mcq-ans-table td.qtext { width: 34%; }
+  .mcq-ans-table td.correct { text-align: center; width: 9%; vertical-align: middle; color: #1a7a1a; font-weight: bold; font-size: 12pt; }
+  .mcq-ans-table td.explain { width: 54%; font-size: 10pt; line-height: 1.3; }
+
+  /* Answer box for B and C */
+  .answer-box {
+    border: 1px solid #ccc;
+    border-left: 4px solid #4682B4;
+    background: #fafafa;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+  }
+  .answer-box .q-label {
+    font-weight: bold;
+    font-size: 11.5pt;
+    margin-bottom: 2px;
+  }
+  .answer-box p {
+    margin-bottom: 2px;
+  }
+  .answer-box ul, .answer-box ol {
+    padding-left: 16px;
+    margin-bottom: 2px;
+  }
+  .answer-box ul li, .answer-box ol li {
+    margin-bottom: 1px;
+  }
+  .or-divider {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 13pt;
+    margin: 3px 0 2px 0;
+  }
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin: 3px 0;
+  }
+  .comp-table th {
+    background: #e0e8f0;
+    border: 1px solid #888;
+    padding: 2px 5px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .comp-table td {
+    border: 1px solid #aaa;
+    padding: 1px 5px;
+    vertical-align: top;
+  }
+  .comp-table tr:nth-child(even) td { background: #f5f5f5; }
+
+  .flowchart {
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    background: #f0f4f0;
+    border: 1px solid #aaa;
+    padding: 3px 8px;
+    margin: 2px 0;
+    line-height: 1.4;
+  }
+
+  @media print {
+    body { margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1 ==================== -->
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject">Biology &mdash; Class IX &nbsp;|&nbsp; Paper: SSC-I</div>
+    <div class="syllabus">Syllabus: Chapter 4 &mdash; Cell Cycle</div>
+    <div class="ak-label">ANSWER KEY (Version 1)</div>
+  </div>
+
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; MCQ Answers (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-ans-table">
+    <thead>
+      <tr>
+        <th style="width:3%">#</th>
+        <th style="width:34%">Question</th>
+        <th style="width:9%">Answer</th>
+        <th style="width:54%">Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="qnum">1</td>
+        <td class="qtext">The cell cycle consists of two main phases. These are:</td>
+        <td class="correct">C <span class="badge">1</span></td>
+        <td class="explain">The cell cycle has two main phases: <strong>interphase</strong> (growth and DNA replication) and the <strong>mitotic (M) phase</strong> (actual division). G1/G2 are sub-phases of interphase; karyokinesis/cytokinesis are sub-divisions of M phase.</td>
+      </tr>
+      <tr>
+        <td class="qnum">2</td>
+        <td class="qtext">DNA replication takes place during which phase of interphase?</td>
+        <td class="correct">B <span class="badge">1</span></td>
+        <td class="explain">The <strong>S phase (Synthesis phase)</strong> is when the cell replicates its entire genetic material. Each chromosome produces two sister chromatids joined at the centromere. G1 is growth; G2 prepares for division; G0 is a quiescent state.</td>
+      </tr>
+      <tr>
+        <td class="qnum">3</td>
+        <td class="qtext">During cell division, spindle fibres attach to a chromosome at the:</td>
+        <td class="correct">C <span class="badge">1</span></td>
+        <td class="explain">Spindle fibres attach at the <strong>centromere</strong> of each chromosome and pull them to opposite poles. The telomere is the chromosome end-cap and has no role in spindle attachment.</td>
+      </tr>
+      <tr>
+        <td class="qnum">4</td>
+        <td class="qtext">The longest phase of mitosis is:</td>
+        <td class="correct">D <span class="badge">1</span></td>
+        <td class="explain"><strong>Prophase</strong> is the longest phase. Chromatin condenses into chromosomes, the nucleolus disappears, the nuclear membrane breaks down, and the spindle apparatus begins to form — all time-consuming events occurring in sequence.</td>
+      </tr>
+      <tr>
+        <td class="qnum">5</td>
+        <td class="qtext">During metaphase of mitosis, chromosomes are aligned at the:</td>
+        <td class="correct">B <span class="badge">1</span></td>
+        <td class="explain">At <strong>metaphase</strong>, chromosomes line up along the <strong>equator of the spindles</strong> (metaphase plate). Two spindle fibres, one from each pole, attach at the centromere of each chromosome.</td>
+      </tr>
+      <tr>
+        <td class="qnum">6</td>
+        <td class="qtext">The spindle apparatus of plant cells differs from that of animal cells in not having:</td>
+        <td class="correct">C <span class="badge">1</span></td>
+        <td class="explain">Plant cells lack <strong>centrioles</strong>. Their spindle is still formed from microtubules but without centrioles as organising centres, whereas animal cells use centrioles that duplicate and migrate to opposite poles.</td>
+      </tr>
+      <tr>
+        <td class="qnum">7</td>
+        <td class="qtext">A bivalent in meiosis consists of:</td>
+        <td class="correct">B <span class="badge">1</span></td>
+        <td class="explain">A <strong>bivalent</strong> is a synapsed pair of homologous chromosomes. Each homologue has two sister chromatids, so a bivalent has <strong>four chromatids</strong> and <strong>two centromeres</strong> (one per homologue).</td>
+      </tr>
+      <tr>
+        <td class="qnum">8</td>
+        <td class="qtext">Crossing over occurs between non-sister chromatids during:</td>
+        <td class="correct">C <span class="badge">1</span></td>
+        <td class="explain">Crossing over takes place during <strong>prophase I</strong>. Homologous chromosomes synapse and non-sister chromatids exchange segments at chiasmata, producing genetic recombination.</td>
+      </tr>
+      <tr>
+        <td class="qnum">9</td>
+        <td class="qtext">Meiosis produces daughter cells that are:</td>
+        <td class="correct">D <span class="badge">1</span></td>
+        <td class="explain">Meiosis completes two successive divisions to give <strong>four haploid (n) daughter cells</strong>. These act as gametes. Mitosis, by contrast, produces two diploid daughter cells.</td>
+      </tr>
+      <tr>
+        <td class="qnum">10</td>
+        <td class="qtext">What causes the chromosome number to reduce to half when a cell divides by meiosis?</td>
+        <td class="correct">B <span class="badge">1</span></td>
+        <td class="explain">In <strong>anaphase I</strong>, spindle fibres pull <strong>homologous chromosomes</strong> to opposite poles. Each pole receives only one member of each homologous pair, halving the chromosome number. Sister chromatids are not separated until meiosis II.</td>
+      </tr>
+      <tr>
+        <td class="qnum">11</td>
+        <td class="qtext">The chromosomal number of fruit fly is 8. The gametes of fruit fly contain:</td>
+        <td class="correct">B <span class="badge">1</span></td>
+        <td class="explain">Gametes are haploid (n = half of 2n). Fruit fly 2n = 8, so gametes carry <strong>4 chromosomes</strong>. Meiosis halves the diploid number to produce haploid gametes.</td>
+      </tr>
+      <tr>
+        <td class="qnum">12</td>
+        <td class="qtext">The ability of a sea star to regenerate a lost arm depends on which type of cell division?</td>
+        <td class="correct">C <span class="badge">1</span></td>
+        <td class="explain"><strong>Mitosis</strong> is responsible for regeneration. It produces genetically identical daughter cells to replace lost tissue. The textbook explicitly cites sea star arm regeneration as an example of mitosis significance.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-bar">SECTION B &mdash; Short Question Answers (11 &times; 3 = 33 Marks)</div>
+
+  <div class="answer-box">
+    <div class="q-label">2(i) Cell cycle definition and two main phases <span class="badge">3</span></div>
+    <p>The <strong>cell cycle</strong> is the sequence of events involving growth of a newly formed cell, replication of its genome, and division into two daughter cells. <span class="badge">1</span></p>
+    <p><strong>Interphase:</strong> the period between two consecutive divisions. The cell grows, synthesises proteins, and replicates its DNA. Divided into G1, S, and G2 sub-phases. <span class="badge">1</span></p>
+    <p><strong>Mitotic phase (M phase):</strong> the cell divides into two daughter cells through karyokinesis (nuclear division) followed by cytokinesis (cytoplasm division). <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">G0 phase — permanent vs temporary <span class="badge">3</span></div>
+    <p>During G1, a cell may exit the cycle and enter <strong>G0 phase</strong>, where it stops dividing and performs only normal metabolic roles. <span class="badge">1</span></p>
+    <p><strong>Permanent G0:</strong> neurons — once mature they never divide again. <span class="badge">1</span></p>
+    <p><strong>Temporary G0:</strong> liver and kidney cells — they can re-enter the cell cycle when needed. Epithelial cells never enter G0 and divide continuously. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(ii) Three sub-phases of interphase <span class="badge">3</span></div>
+    <p><strong>G1 phase:</strong> cell grows in size, increases organelles, forms proteins, enzymes and nucleotides needed for DNA replication in S phase. <span class="badge">1</span></p>
+    <p><strong>S phase (Synthesis):</strong> cell replicates its entire genetic material; each chromosome produces two sister chromatids joined at the centromere. <span class="badge">1</span></p>
+    <p><strong>G2 phase:</strong> cell synthesises spindle proteins, accumulates energy, and forms more mitochondria to prepare for division. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Spindle apparatus — animal vs plant cell formation <span class="badge">3</span></div>
+    <p>The <strong>spindle apparatus</strong> is made of microtubules (cytoskeleton). It separates chromatids/chromosomes and moves them to opposite poles, equally distributing genetic material into daughter cells. <span class="badge">1</span></p>
+    <p><strong>Animal cells:</strong> a pair of centrioles near the nucleus duplicates; both pairs migrate to opposite poles and give rise to spindle fibres. Once the nuclear envelope disintegrates, fibres attach to centromeres. <span class="badge">1</span></p>
+    <p><strong>Plant cells:</strong> lack centrioles entirely. Spindle apparatus still forms from microtubules but without centrioles as organising centres. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(iii) Prophase of mitosis <span class="badge">3</span></div>
+    <p><strong>Prophase</strong> is the longest phase. Chromatin fibres coil and condense into chromosomes; each chromosome consists of two chromatids (due to S-phase replication) joined at the centromere. <span class="badge">1</span></p>
+    <p>The <strong>nucleolus disappears</strong> as its DNA is packed into chromosomes. <span class="badge">1</span></p>
+    <p>The <strong>nuclear membrane breaks down</strong> into vesicles dispersed in the cytoplasm. The spindle apparatus is formed. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Metaphase and anaphase of mitosis <span class="badge">3</span></div>
+    <p><strong>Metaphase:</strong> chromosomes align along the equator (metaphase plate). Two spindle fibres — one from each pole — attach at the centromere of each chromosome. <span class="badge">1</span></p>
+    <p><strong>Anaphase:</strong> spindle fibres pull centromeres, which split. Sister chromatids separate and are pulled to opposite poles as individual chromatids. <span class="badge">1</span></p>
+    <p>Spindle fibres exert a pulling force on the centromere, ensuring each pole receives an identical set of chromosomes. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(iv) Telophase of mitosis <span class="badge">3</span></div>
+    <p>Chromatids reach their poles and uncoil/lengthen to reform <strong>chromatin fibres</strong>. <span class="badge">1</span></p>
+    <p>The <strong>spindle apparatus disintegrates</strong>. A new <strong>nuclear membrane</strong> reforms around the chromatin at each pole. <span class="badge">1</span></p>
+    <p><strong>Nucleoli reappear</strong> in both new nuclei, completing formation of two daughter nuclei each with the same chromosome number as the parent. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Cytokinesis — animal cell vs plant cell <span class="badge">3</span></div>
+    <p><strong>Cytokinesis</strong> divides the cytoplasm into two daughter cells; it begins while telophase is in progress. <span class="badge">1</span></p>
+    <p><strong>Animal cell:</strong> cell membrane invaginates at the equatorial region forming a <strong>cleavage furrow</strong> that grows inward until membranes join and separate the two daughter cells. <span class="badge">1</span></p>
+    <p><strong>Plant cell:</strong> spindle fibres form a <strong>phragmoplast</strong>. Golgi vesicles accumulate at its centre, forming the <strong>middle lamella</strong> and primary cell walls of daughter cells. No cleavage furrow forms. <span class="badge">1</span></p>
+  </div>
+
+</div><!-- end page 1 -->
+
+
+<div class="page">
+
+  <div class="answer-box">
+    <div class="q-label">2(v) Four significances of mitosis <span class="badge">3</span></div>
+    <ul>
+      <li><strong>Genetic stability:</strong> daughter cells have the same chromosome number and genetic information as the parent. <span class="badge">0.75</span></li>
+      <li><strong>Development and growth:</strong> multicellular organisms grow from a single zygote by continuous mitotic divisions. <span class="badge">0.75</span></li>
+      <li><strong>Cell replacement and wound healing:</strong> worn-out cells (e.g., skin, digestive tract lining) are replaced by identical cells via mitosis. <span class="badge">0.75</span></li>
+      <li><strong>Regeneration:</strong> sea star regenerates a lost arm by producing new cells through mitosis. <span class="badge">0.75</span></li>
+    </ul>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Regeneration — three organisms and body parts <span class="badge">3</span></div>
+    <p><strong>Regeneration</strong> is the ability of some animals to regrow body parts removed accidentally. New cells are produced through mitosis. <span class="badge">1</span></p>
+    <ul>
+      <li><strong>Sea star</strong> — regenerates a lost arm. <span class="badge">0.67</span></li>
+      <li><strong>Earthworm</strong> — regenerates its head. <span class="badge">0.67</span></li>
+      <li><strong>Salamander</strong> — regenerates its limb. <span class="badge">0.66</span></li>
+    </ul>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(vi) Cancer, benign tumour, malignant tumour, metastasis <span class="badge">3</span></div>
+    <p><strong>Cancer</strong> is a disease of the cell cycle in which cells lack a proper control system and divide excessively, forming an abnormal mass called a <strong>tumour</strong>. <span class="badge">1</span></p>
+    <p>A <strong>benign tumour</strong> is an abnormal mass of normal cells that stays at its original site and does not spread. <span class="badge">1</span></p>
+    <p>A <strong>malignant tumour</strong> is cancerous and spreads into neighbouring tissues and to distant body parts. This spread is called <strong>metastasis</strong>. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Meiosis definition and contrast with mitosis <span class="badge">3</span></div>
+    <p><strong>Meiosis</strong> gives rise to four daughter cells each having half the number of chromosomes of the parent cell. It takes place only in cells involved in sexual reproduction. <span class="badge">1</span></p>
+    <p><strong>Divisions:</strong> meiosis involves two successive cell divisions (meiosis I and II); mitosis involves only one. <span class="badge">1</span></p>
+    <p><strong>Daughter cells:</strong> meiosis produces four haploid (n) cells; mitosis produces two diploid (2n) cells that are genetically identical to the parent. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(vii) Synapsis, bivalent, crossing over, chiasma <span class="badge">3</span></div>
+    <p><strong>Synapsis</strong> is the pairing of homologous chromosomes during prophase I, with centromeres in the same position. <span class="badge">1</span></p>
+    <p>Each synapsed pair is called a <strong>bivalent</strong>. Non-sister chromatids join at points called <strong>chiasmata</strong> (singular: chiasma). <span class="badge">1</span></p>
+    <p><strong>Crossing over</strong> is the exchange of segments of genetic material between non-sister chromatids at a chiasma, resulting in genetic recombination. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Events of prophase I and why it is the longest phase <span class="badge">3</span></div>
+    <p>During <strong>prophase I</strong>, chromosomes coil and condense. Homologous chromosomes undergo <strong>synapsis</strong> forming bivalents; crossing over occurs at chiasmata between non-sister chromatids. <span class="badge">1</span></p>
+    <p>By end of prophase I, chromosomes are fully condensed; paired chromosomes repel but remain attached at chiasmata. <strong>Nucleoli and nuclear envelope disappear</strong>; spindle apparatus forms. <span class="badge">1</span></p>
+    <p>Prophase I is the <strong>longest phase of meiosis</strong> because synapsis, chiasmata formation, crossing over, and full chromatin condensation are all complex and time-consuming processes. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(viii) Metaphase I and anaphase I; difference from mitotic anaphase <span class="badge">3</span></div>
+    <p><strong>Metaphase I:</strong> bivalents align at the equatorial plate. One member of each homologous pair receives a spindle fibre from one pole; the other member receives one from the opposite pole. <span class="badge">1</span></p>
+    <p><strong>Anaphase I:</strong> spindle fibres pull homologous chromosomes to opposite poles. Each pole receives a haploid set of chromosomes (still as two-chromatid units). <span class="badge">1</span></p>
+    <p><strong>Key difference:</strong> in mitotic anaphase, centromeres split and <em>sister chromatids</em> separate. In anaphase I, centromeres do NOT split; whole <em>homologous chromosomes</em> (each with two chromatids) are pulled apart. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Telophase I and cytokinesis I <span class="badge">3</span></div>
+    <p><strong>Telophase I:</strong> chromosomes reach poles and uncoil into chromatin. A <strong>nuclear envelope</strong> reforms at each pole around the haploid chromosome set. <span class="badge">1</span></p>
+    <p><strong>Cytokinesis I</strong> divides the cell (by cleavage in animals, cell wall in plants). <span class="badge">1</span></p>
+    <p>Result: <strong>two haploid daughter cells</strong>. Each chromosome still consists of two chromatids that are not genetically identical due to crossing over — they must be separated in meiosis II. These cells enter interphase II. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(ix) No DNA replication in interphase II; meiosis II overview <span class="badge">3</span></div>
+    <p><strong>Interphase II</strong> varies in length but has <strong>no further DNA replication</strong> — chromosomes are already duplicated from S phase. Replication would incorrectly double the genetic material again. <span class="badge">1</span></p>
+    <p><strong>Meiosis II</strong> resembles mitosis. It has prophase II, metaphase II, anaphase II, and telophase II, during which <strong>sister chromatids</strong> are separated. <span class="badge">1</span></p>
+    <p>After cytokinesis II: <strong>four haploid cells</strong> are produced, all with new genetic combinations because of crossing over in meiosis I. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Anaphase II and telophase II; final result <span class="badge">3</span></div>
+    <p><strong>Anaphase II:</strong> centromeres divide; spindle fibres pull sister chromatids (now called chromosomes) to opposite poles. <span class="badge">1</span></p>
+    <p><strong>Telophase II:</strong> chromatids reach poles and uncoil. Spindle disappears. Nuclear envelopes reform around chromatin at each pole. <span class="badge">1</span></p>
+    <p>After cytokinesis II: <strong>four haploid (n) daughter cells</strong> from one original diploid (2n) parent. All carry new gene combinations due to prophase I crossing over. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(x) Meiosis and maintenance of chromosome number — human example <span class="badge">3</span></div>
+    <p>Diploid germ cells undergo meiosis to produce haploid gametes. Fusion of two haploid gametes at fertilisation restores the diploid chromosome number specific to the species. <span class="badge">1</span></p>
+    <p>In humans, somatic cells have <strong>46 chromosomes (2n = 46)</strong>. Meiosis produces gametes with <strong>23 chromosomes (n = 23)</strong>. <span class="badge">1</span></p>
+    <p>At fertilisation, sperm (23) + egg (23) = zygote with <strong>46 chromosomes</strong>, restoring the original number. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Genetic variations — two meiotic events <span class="badge">3</span></div>
+    <p><strong>Variations</strong> are differences among members of the same species; they are necessary for survival in a changing environment. <span class="badge">1</span></p>
+    <p><strong>Crossing over (prophase I):</strong> non-sister chromatids exchange segments at chiasmata, producing chromatids with new allele combinations not present in either parent. <span class="badge">1</span></p>
+    <p><strong>Independent assortment (metaphase I):</strong> homologous pairs orient randomly at the metaphase plate, so each gamete receives a random combination of maternal and paternal chromosomes. Both events together are the basis of genetic variation. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(xi) Three differences between mitosis and meiosis <span class="badge">3</span></div>
+    <table class="comp-table">
+      <thead><tr><th>Feature</th><th>Mitosis</th><th>Meiosis</th></tr></thead>
+      <tbody>
+        <tr><td>Occurs in</td><td>Somatic cells <span class="badge">0.5</span></td><td>Germ line cells <span class="badge">0.5</span></td></tr>
+        <tr><td>Number of divisions</td><td>One division <span class="badge">0.5</span></td><td>Two successive divisions <span class="badge">0.5</span></td></tr>
+        <tr><td>Daughter cells</td><td>2 diploid (2n) <span class="badge">0.5</span></td><td>4 haploid (n) <span class="badge">0.5</span></td></tr>
+        <tr><td>Crossing over</td><td>Does not occur</td><td>Occurs in prophase I</td></tr>
+        <tr><td>Genetic outcome</td><td>Genetically identical</td><td>Genetically different</td></tr>
+      </tbody>
+    </table>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Cloning and tissue culture — role of mitosis <span class="badge">3</span></div>
+    <p><strong>Cloning</strong> produces many identical copies of a living organism in an artificial environment. <strong>Tissue culture</strong> uses a small mass of tissue cells placed in agar growth medium with nutrients and auxins to develop into plantlets. <span class="badge">1</span></p>
+    <p>Mitosis makes these possible because every mitotic division produces cells with <strong>exactly the same genetic information</strong> as the parent — so all cells in the clone are genetically identical. <span class="badge">1</span></p>
+    <p>Example: <strong>potato</strong> tissue is scraped, placed in growth medium, develops into plantlets, then transferred to compost. Other examples: onion, garlic, ginger, grasses (vegetative propagation). <span class="badge">1</span></p>
+  </div>
+
+</div><!-- end page 2 -->
+
+
+<div class="page">
+
+  <div class="section-bar-blue">SECTION C &mdash; Long Question Answers (4 &times; 5 = 20 Marks)</div>
+
+  <div class="answer-box">
+    <div class="q-label">3(i) Cell cycle in detail — G1, S, G2, G0 sub-phases and M phase <span class="badge">5</span></div>
+    <p>The <strong>cell cycle</strong> is the sequence of events from the beginning of one division to the beginning of the next. It has two main phases. <span class="badge">0.5</span></p>
+    <p><strong>Interphase</strong> (between consecutive divisions): <span class="badge">0.5</span></p>
+    <ul>
+      <li><strong>G1 phase:</strong> cell grows in size, increases organelle number, forms proteins and enzymes, and prepares nucleotides for DNA replication. It prepares for the S phase. <span class="badge">1</span></li>
+      <li><strong>S phase (Synthesis):</strong> cell replicates its entire genetic material; each chromosome produces two sister chromatids joined at the centromere. <span class="badge">1</span></li>
+      <li><strong>G2 phase:</strong> cell synthesises spindle proteins, accumulates energy, and forms more mitochondria to prepare for division. <span class="badge">0.75</span></li>
+      <li><strong>G0 phase:</strong> cell may exit the cycle during G1 and enter G0, where it performs metabolic functions but does not divide. Neurons stay in G0 permanently; liver/kidney cells enter temporarily. <span class="badge">0.75</span></li>
+    </ul>
+    <p><strong>Mitotic phase (M phase):</strong> the cell divides into two daughter cells through karyokinesis (nuclear division) and cytokinesis (cytoplasm division). <span class="badge">0.5</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Spindle apparatus — formation, role, and disappearance <span class="badge">5</span></div>
+    <p>The <strong>spindle apparatus</strong> is made of microtubules formed by the cytoskeleton during cell division. It separates chromatids or chromosomes and moves them to opposite poles, ensuring equal distribution of hereditary material into daughter cells. <span class="badge">1</span></p>
+    <p><strong>Formation in animal cells:</strong> a pair of centrioles near the nucleus duplicates; both pairs migrate to opposite poles and give rise to spindle fibres. The spindle forms around the nucleus. Once the nuclear envelope disintegrates at end of prophase, spindle fibres penetrate the nuclear region and attach to the centromere of each chromosome. <span class="badge">2</span></p>
+    <p><strong>Formation in plant cells:</strong> plant cells have no centrioles. The spindle apparatus is still organised from microtubules but without centriole organising centres. <span class="badge">1</span></p>
+    <p><strong>Disappearance:</strong> after chromatids are pulled to their poles at end of anaphase, the spindle apparatus disintegrates during telophase, and chromatin reforms. <span class="badge">1</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(ii) Karyokinesis in mitosis — all four stages with centromere role <span class="badge">5</span></div>
+    <p><strong>Karyokinesis</strong> is nuclear division, forming two nuclei. It is divided into four stages: <span class="badge">0.5</span></p>
+    <div class="flowchart">Prophase  -->  Metaphase  -->  Anaphase  -->  Telophase</div>
+    <p><strong>Prophase (longest):</strong> chromatin condenses into chromosomes, each with two chromatids joined at the centromere. Nucleolus disappears. Nuclear membrane breaks down into vesicles. Spindle apparatus forms. <span class="badge">1.5</span></p>
+    <p><strong>Metaphase:</strong> chromosomes align at the spindle equator (metaphase plate). Two spindle fibres — one from each pole — attach at the <strong>centromere</strong> of each chromosome. <span class="badge">1</span></p>
+    <p><strong>Anaphase:</strong> spindle fibres pull on centromeres, which split. Sister chromatids separate and are pulled to opposite poles; each pole receives an identical chromosome set. <span class="badge">1</span></p>
+    <p><strong>Telophase:</strong> chromatids reach poles, uncoil into chromatin. Spindle disintegrates. Nuclear membrane reforms at each pole. Nucleoli reappear in both new nuclei. <span class="badge">1</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Cytokinesis (animal and plant) + significance of mitosis <span class="badge">5</span></div>
+    <p><strong>Cytokinesis</strong> divides the cytoplasm into two daughter cells, beginning during telophase. <span class="badge">0.5</span></p>
+    <p><strong>Animal cell:</strong> membrane invaginates at the equator forming a <strong>cleavage furrow</strong> that deepens until the membranes join and pinch apart two daughter cells. <span class="badge">1</span></p>
+    <p><strong>Plant cell:</strong> spindle fibres form a <strong>phragmoplast</strong>. Golgi vesicles accumulate at the centre and grow outward forming the <strong>middle lamella</strong> and primary cell walls; later secondary walls may form. <span class="badge">1.5</span></p>
+    <p><strong>Significance of mitosis</strong> (four headings):</p>
+    <ul>
+      <li><strong>Genetic stability</strong> — identical genetic information in daughter cells. <span class="badge">0.5</span></li>
+      <li><strong>Development and growth</strong> — zygote grows into adult by repeated mitosis. <span class="badge">0.5</span></li>
+      <li><strong>Cell replacement and wound healing</strong> — epithelial cells of skin/digestive tract replaced by mitosis. <span class="badge">0.5</span></li>
+      <li><strong>Regeneration</strong> — sea star, earthworm, salamander regenerate body parts. <span class="badge">0.5</span></li>
+    </ul>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(iii) Meiosis I in detail — interphase I through cytokinesis I <span class="badge">5</span></div>
+    <p><strong>Interphase I:</strong> genome replicates so each chromosome has two chromatids. <span class="badge">0.5</span></p>
+    <p><strong>Meiosis I</strong> is the reduction division that halves chromosome number: <span class="badge">0.5</span></p>
+    <div class="flowchart">Prophase I  -->  Metaphase I  -->  Anaphase I  -->  Telophase I  -->  Cytokinesis I</div>
+    <p><strong>Prophase I (longest phase of meiosis):</strong> chromosomes condense. Homologous chromosomes pair in <strong>synapsis</strong>, forming <strong>bivalents</strong>. Non-sister chromatids join at <strong>chiasmata</strong> and exchange segments in <strong>crossing over</strong>, producing genetic recombination. By end of prophase I, chromosomes fully condensed; nucleoli and nuclear envelope disappear; paired chromosomes repel but stay attached at chiasmata; spindle apparatus forms. <span class="badge">2</span></p>
+    <p><strong>Metaphase I:</strong> bivalents align at the equatorial plate. One member of each homologous pair receives a spindle fibre from one pole; the other member from the opposite pole. <span class="badge">1</span></p>
+    <p><strong>Anaphase I:</strong> spindle fibres pull homologous chromosomes (not sister chromatids) to opposite poles. Each pole receives a haploid set. <span class="badge">0.5</span></p>
+    <p><strong>Telophase I and Cytokinesis I:</strong> nuclear envelopes reform. Cytokinesis I produces <strong>two haploid daughter cells</strong>; each chromosome still has two chromatids that are not genetically identical due to crossing over — they enter interphase II. <span class="badge">0.5</span></p>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Meiosis II in detail — interphase II through cytokinesis II <span class="badge">5</span></div>
+    <p><strong>Interphase II:</strong> varies in length. <strong>No further DNA replication</strong> — chromosomes are already duplicated. <span class="badge">0.5</span></p>
+    <p><strong>Meiosis II</strong> resembles mitosis and separates sister chromatids: <span class="badge">0.5</span></p>
+    <div class="flowchart">Prophase II  -->  Metaphase II  -->  Anaphase II  -->  Telophase II  -->  Cytokinesis II</div>
+    <p><strong>Prophase II:</strong> chromatin re-condenses into thick fibres. Spindle apparatus is organised. Nucleoli disappear; nuclear envelope disintegrates. <span class="badge">1</span></p>
+    <p><strong>Metaphase II:</strong> chromosomes line up separately around the equator. Each chromosome is attached by a fibre from both poles (as in mitosis). <span class="badge">1</span></p>
+    <p><strong>Anaphase II:</strong> centromeres divide; spindle fibres pull sister chromatids (now individual chromosomes) to opposite poles. <span class="badge">1</span></p>
+    <p><strong>Telophase II:</strong> chromatids reach poles, uncoil. Spindle disappears. Nuclear envelopes reform. <span class="badge">0.5</span></p>
+    <p><strong>Cytokinesis II</strong> gives <strong>four haploid (n) daughter cells</strong> total. All carry new genetic combinations because of crossing over in prophase I. <span class="badge">0.5</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(iv) Mitosis vs meiosis — six or more differences <span class="badge">5</span></div>
+    <table class="comp-table">
+      <thead><tr><th>Feature</th><th>Mitosis</th><th>Meiosis</th></tr></thead>
+      <tbody>
+        <tr><td>Cell type</td><td>Somatic (body) cells <span class="badge">0.5</span></td><td>Germ line cells <span class="badge">0.5</span></td></tr>
+        <tr><td>Number of divisions</td><td>One division <span class="badge">0.5</span></td><td>Two successive divisions <span class="badge">0.5</span></td></tr>
+        <tr><td>Daughter cells produced</td><td>2 daughter cells</td><td>4 daughter cells</td></tr>
+        <tr><td>Chromosome number</td><td>Diploid (2n) <span class="badge">0.5</span></td><td>Haploid (n) <span class="badge">0.5</span></td></tr>
+        <tr><td>Function</td><td>Daughter cells become somatic body cells</td><td>Daughter cells form gametes</td></tr>
+        <tr><td>Homologous pairing</td><td>Chromosomes remain independent <span class="badge">0.5</span></td><td>Homologous chromosomes pair (synapsis) <span class="badge">0.5</span></td></tr>
+        <tr><td>Chiasmata</td><td>No chiasmata formed</td><td>Chiasmata formed in prophase I</td></tr>
+        <tr><td>Crossing over</td><td>No crossing over <span class="badge">0.5</span></td><td>Crossing over in prophase I <span class="badge">0.5</span></td></tr>
+        <tr><td>Genetic outcome</td><td>Daughter cells genetically identical</td><td>Daughter cells genetically different</td></tr>
+        <tr><td>Further division</td><td>Daughter cells can divide again</td><td>Gametes cannot divide any more</td></tr>
+      </tbody>
+    </table>
+    <div class="or-divider">OR</div>
+    <div class="q-label">Significance of meiosis — (a) chromosome maintenance, (b) genetic variations <span class="badge">5</span></div>
+    <p><strong>(a) Maintenance of chromosome number in sexual reproduction</strong> <span class="badge">2.5</span></p>
+    <p>Diploid germ cells undergo meiosis to produce haploid gametes. Fusion of two haploid gametes at fertilisation maintains the species-specific chromosome number. In humans, somatic cells have <strong>46 chromosomes (2n = 46)</strong>. Meiosis produces gametes with <strong>23 chromosomes (n = 23)</strong>. Fertilisation: sperm (23) + egg (23) = zygote (46) — the original diploid number is restored. In plants, meiosis occurs during spore formation.</p>
+    <p><strong>(b) Genetic variations</strong> <span class="badge">2.5</span></p>
+    <p>Variations are differences among members of the same species; they are necessary for survival in a changing environment. Two meiotic events provide the basis for variation:</p>
+    <ul>
+      <li><strong>Crossing over:</strong> prophase I non-sister chromatids exchange segments at chiasmata, producing new allele combinations in gametes and then in the zygote.</li>
+      <li><strong>Independent assortment:</strong> homologous pairs orient randomly at metaphase I, giving each gamete a random combination of maternal and paternal chromosomes. Both events together explain why offspring are genetically different from parents and from each other.</li>
+    </ul>
+  </div>
+
+</div><!-- end page 3 -->
+
+</body>
+</html>

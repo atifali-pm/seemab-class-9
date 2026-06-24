@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chemistry Exam — Chapter 7 Electrochemistry</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", serif; font-size: 12.5pt; line-height: 1.25; color: #000; background: #fff; }
+  .page { width: 100%; padding: 6mm 9mm 0 9mm; }
+
+  /* Header */
+  .header-box { border: 2.5px solid #000; text-align: center; padding: 5px 10px; margin-bottom: 4px; page-break-after: avoid; }
+  .header-box .board-name { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+  .header-box .exam-name { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject-line { font-size: 15pt; margin-top: 1px; }
+  .header-box .syllabus-line { font-size: 13pt; font-weight: bold; margin-top: 2px; }
+
+  /* Info row */
+  .info-row { display: flex; justify-content: space-between; align-items: center; font-size: 14pt; font-weight: bold; border: 1.5px solid #000; border-top: none; padding: 3px 12px; margin-bottom: 4px; }
+
+  /* Instructions */
+  .instructions-box { border: 1.5px solid #000; padding: 4px 10px; margin-bottom: 5px; font-size: 11.5pt; }
+  .instructions-box .inst-title { font-weight: bold; font-size: 12pt; margin-bottom: 2px; }
+  .instructions-box ol { margin-left: 18px; }
+  .instructions-box li { margin-bottom: 1px; }
+
+  /* Section bars */
+  .section-bar { background: #DAA520; color: #fff; font-size: 14pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 3px; page-break-after: avoid; }
+  .section-bar .sub-line { font-size: 10.5pt; font-weight: normal; margin-top: 1px; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 14pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 3px; page-break-after: avoid; }
+
+  /* MCQ table */
+  .mcq-table { width: 100%; border-collapse: collapse; margin-bottom: 5px; font-size: 12pt; }
+  .mcq-table th { background: #f0f0f0; border: 1px solid #888; padding: 2px 4px; text-align: center; font-size: 11.5pt; }
+  .mcq-table td { border: 1px solid #888; padding: 2px 3px; vertical-align: middle; }
+  .mcq-table td.q-num { text-align: center; width: 4%; }
+  .mcq-table td.q-text { width: 40%; }
+  .mcq-table td.q-opt { width: 11%; text-align: center; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; border: 1.5px solid #000; border-radius: 50%; font-size: 9pt; line-height: 13px; text-align: center; margin: 0 1px; }
+
+  /* B/C table */
+  .bc-table { width: 100%; border-collapse: collapse; font-size: 11.5pt; margin-bottom: 4px; }
+  .bc-table th { background: #f0f0f0; border: 1px solid #888; padding: 2px 4px; text-align: center; font-size: 11pt; }
+  .bc-table td { border: 1px solid #888; padding: 2px 5px; vertical-align: top; line-height: 1.28; }
+  .bc-table td.part-col { width: 5%; text-align: center; font-weight: bold; vertical-align: middle; }
+  .bc-table td.q-col { width: 37%; }
+  .bc-table td.m-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+  .bc-table td.or-col { width: 5%; text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 13pt; }
+  .bc-table td.orq-col { width: 37%; }
+  .bc-table td.orm-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+
+  /* Footer */
+  .footer { margin-top: 8px; padding-top: 5px; border-top: 1px solid #555; font-size: 11pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+  .sig-line { border-bottom: 1px solid #000; width: 200px; display: inline-block; margin-left: 6px; }
+  .footer-center { text-align: center; font-size: 10.5pt; margin-top: 3px; }
+  .end-marker { text-align: center; font-size: 11.5pt; font-weight: bold; margin-top: 6px; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <div class="board-name">Board of Intermediate and Secondary Education</div>
+    <div class="exam-name">Annual Examination 2026</div>
+    <div class="subject-line">Chemistry — SSC-I (9th Grade)</div>
+    <div class="syllabus-line">Syllabus: Chapter 7 — Electrochemistry</div>
+  </div>
+
+  <!-- INFO ROW -->
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time Allowed: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your name, roll number and section clearly on the answer sheet.</li>
+      <li>Section A is compulsory. Encircle the correct option on the question paper itself.</li>
+      <li>In Section B, attempt <strong>all 11</strong> questions. For each question, attempt either the main question <strong>OR</strong> its alternative.</li>
+      <li>In Section C, attempt <strong>all 4</strong> questions. For each question, attempt either the main question <strong>OR</strong> its alternative.</li>
+      <li>Use black or blue ink only. Pencil is not allowed except for diagrams.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-bar">SECTION A — Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th style="width:4%">#</th>
+        <th style="width:40%">Question</th>
+        <th style="width:11%">A</th>
+        <th style="width:11%">B</th>
+        <th style="width:11%">C</th>
+        <th style="width:11%">D</th>
+        <th style="width:12%">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="q-num">1</td>
+        <td class="q-text">In which change is nitrogen <em>reduced</em>?</td>
+        <td class="q-opt">N<sub>2</sub> to NO</td>
+        <td class="q-opt">N<sub>2</sub> to NO<sub>2</sub></td>
+        <td class="q-opt">N<sub>2</sub> to NH<sub>3</sub></td>
+        <td class="q-opt">N<sub>2</sub> to HNO<sub>3</sub></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">2</td>
+        <td class="q-text">Which is an example of <em>oxidation</em>?</td>
+        <td class="q-opt">Cl<sub>2</sub> &rarr; Cl<sup>&minus;</sup></td>
+        <td class="q-opt">Ag &rarr; Ag<sup>+</sup></td>
+        <td class="q-opt">O<sub>2</sub> &rarr; O<sup>2&minus;</sup></td>
+        <td class="q-opt">Fe<sup>3+</sup> &rarr; Fe<sup>2+</sup></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">3</td>
+        <td class="q-text">In ZnO + H<sub>2</sub> &rarr; Zn + H<sub>2</sub>O, which substance is reduced?</td>
+        <td class="q-opt">H<sub>2</sub></td>
+        <td class="q-opt">ZnO</td>
+        <td class="q-opt">Zn</td>
+        <td class="q-opt">O</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">4</td>
+        <td class="q-text">Oxidation state of Cr in K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> is:</td>
+        <td class="q-opt">+12</td>
+        <td class="q-opt">+6</td>
+        <td class="q-opt">+3</td>
+        <td class="q-opt">&minus;6</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">5</td>
+        <td class="q-text">Oxidation state of S in SO<sub>4</sub><sup>2&minus;</sup> is:</td>
+        <td class="q-opt">+2</td>
+        <td class="q-opt">+4</td>
+        <td class="q-opt">+6</td>
+        <td class="q-opt">&minus;2</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">6</td>
+        <td class="q-text">In H<sub>2</sub>S + Cl<sub>2</sub> &rarr; 2HCl + S, H<sub>2</sub>S acts as:</td>
+        <td class="q-opt">Reducing agent</td>
+        <td class="q-opt">Oxidizing agent</td>
+        <td class="q-opt">Catalyst</td>
+        <td class="q-opt">Electrolyte</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">7</td>
+        <td class="q-text">An oxidizing agent is a substance that:</td>
+        <td class="q-opt">loses electrons</td>
+        <td class="q-opt">gains electrons</td>
+        <td class="q-opt">loses oxygen</td>
+        <td class="q-opt">gains hydrogen</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">8</td>
+        <td class="q-text">Iron(III) chloride (IUPAC name) has the formula:</td>
+        <td class="q-opt">FeCl</td>
+        <td class="q-opt">FeCl<sub>2</sub></td>
+        <td class="q-opt">FeCl<sub>3</sub></td>
+        <td class="q-opt">Fe<sub>2</sub>Cl<sub>3</sub></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">9</td>
+        <td class="q-text">Rusting of iron requires:</td>
+        <td class="q-opt">oxygen only</td>
+        <td class="q-opt">water only</td>
+        <td class="q-opt">oxygen and water</td>
+        <td class="q-opt">CO<sub>2</sub></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">10</td>
+        <td class="q-text">Cathodic (sacrificial) protection of ships uses blocks of:</td>
+        <td class="q-opt">copper</td>
+        <td class="q-opt">tin</td>
+        <td class="q-opt">zinc</td>
+        <td class="q-opt">magnesium</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">11</td>
+        <td class="q-text">Acidified KMnO<sub>4</sub> changes from purple to _____ when a reducing agent is added:</td>
+        <td class="q-opt">blue</td>
+        <td class="q-opt">colourless</td>
+        <td class="q-opt">reddish-brown</td>
+        <td class="q-opt">yellow</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">12</td>
+        <td class="q-text">The oxidation number of any free element (e.g. Zn, H<sub>2</sub>) is always:</td>
+        <td class="q-opt">+1</td>
+        <td class="q-opt">&minus;1</td>
+        <td class="q-opt">zero</td>
+        <td class="q-opt">+2</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION B -->
+  <div class="section-bar">
+    SECTION B — Short Questions (11 &times; 3 = 33 Marks)
+    <div class="sub-line">Attempt all 11 questions. For each pair, attempt either the main question OR its alternative.</div>
+  </div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">OR Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">2(i)</td>
+        <td class="q-col">Define oxidation and reduction in terms of (a) oxygen and (b) electrons.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Define oxidation and reduction in terms of hydrogen transfer. Give one example of each.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ii)</td>
+        <td class="q-col">State the four rules for assigning oxidation states. Use rule 4 to find the oxidation state of N in HNO<sub>3</sub>.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">What is the oxidation state of a free element? What is the oxidation state of a monoatomic ion? Find the oxidation state of Na in Na<sup>+</sup> and Fe in Fe<sup>3+</sup>.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iii)</td>
+        <td class="q-col">Determine the oxidation state of Cr in K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>. Show all working.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Determine the oxidation state of C in carbonate ion CO<sub>3</sub><sup>2&minus;</sup>. Show all working.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iv)</td>
+        <td class="q-col">Find the oxidation state of N in: (a) NO<sub>2</sub> &nbsp; (b) N<sub>2</sub>O &nbsp; (c) HNO<sub>3</sub>.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Find the oxidation state of S in: (a) H<sub>2</sub>S &nbsp; (b) SO<sub>2</sub> &nbsp; (c) Na<sub>2</sub>S<sub>2</sub>O<sub>3</sub>.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(v)</td>
+        <td class="q-col">Write the formula of: (a) copper(II) sulphate &nbsp; (b) iron(II) chloride &nbsp; (c) iron(III) chloride. State the oxidation state of the metal in each.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Derive the formula of: (a) calcium chloride (Ca<sup>2+</sup>, Cl<sup>&minus;</sup>) &nbsp; (b) aluminium sulphate (Al<sup>3+</sup>, SO<sub>4</sub><sup>2&minus;</sup>). Show the charge-balancing step.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vi)</td>
+        <td class="q-col">Define oxidizing agent and reducing agent. Name three common oxidizing agents and two common reducing agents.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">In 2Na + Cl<sub>2</sub> &rarr; 2NaCl, identify the oxidizing and reducing agents. Justify using oxidation states.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vii)</td>
+        <td class="q-col">In Fe<sub>2</sub>O<sub>3</sub> + 3CO &rarr; 2Fe + 3CO<sub>2</sub>, identify: (a) element oxidized (b) element reduced (c) oxidizing agent (d) reducing agent.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">In WO<sub>3</sub> + 3H<sub>2</sub> &rarr; W + 3H<sub>2</sub>O, identify: (a) substance oxidized (b) substance reduced (c) oxidizing agent (d) reducing agent.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(viii)</td>
+        <td class="q-col">Describe Activity 7.1: what happens when acidified KMnO<sub>4</sub> is added to FeSO<sub>4</sub>? State the oxidizing and reducing agents.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Describe Activity 7.2: what colour change occurs when H<sub>2</sub>O<sub>2</sub> is added to KI solution? Write the equation and name the oxidizing agent.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ix)</td>
+        <td class="q-col">Define corrosion. Write the two half-reactions that occur during rusting of iron, stating which is oxidation and which is reduction.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Why are both oxygen and water necessary for iron to rust? What is the chemical formula of rust?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(x)</td>
+        <td class="q-col">Describe galvanizing and electroplating as methods of preventing corrosion. How does each work?</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Explain cathodic (sacrificial) protection. Why are magnesium blocks used on ships? Why must the sacrificial metal be more active than iron?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(xi)</td>
+        <td class="q-col">Find the oxidation state of the central atom in: (a) SO<sub>4</sub><sup>2&minus;</sup> &nbsp; (b) PO<sub>4</sub><sup>3&minus;</sup> &nbsp; (c) NH<sub>4</sub><sup>+</sup>. Show working.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Why are Roman numerals used in certain compound names? Write the IUPAC names of FeCl<sub>2</sub>, FeCl<sub>3</sub>, and CuSO<sub>4</sub>.</td>
+        <td class="orm-col">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION C -->
+  <div class="section-bar-blue">SECTION C — Long Questions (4 &times; 5 = 20 Marks) &mdash; Attempt all 4</div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">OR Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">3(i)</td>
+        <td class="q-col">
+          (a) Define redox reactions. Explain oxidation and reduction in terms of all three definitions: oxygen, hydrogen, and electron transfer. [3]<br>
+          (b) In CuO + Zn &rarr; Cu + ZnO, rewrite as an ionic equation and use oxidation states to show which species is oxidized and which is reduced. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) State all four rules for assigning oxidation states. Explain Rule 3 (complex ion) with an example. [3]<br>
+          (b) Find the oxidation state of: (i) B in H<sub>3</sub>BO<sub>3</sub> &nbsp; (ii) N in NH<sub>4</sub><sup>+</sup> &nbsp; (iii) Mn in KMnO<sub>4</sub>. Show full working. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(ii)</td>
+        <td class="q-col">
+          (a) Define oxidizing and reducing agents. Explain why an oxidizing agent is itself reduced and a reducing agent is itself oxidized. [2]<br>
+          (b) Identify the oxidizing and reducing agents in: (i) 2S + Cl<sub>2</sub> &rarr; S<sub>2</sub>Cl<sub>2</sub> &nbsp;&nbsp; (ii) 2Na + Br<sub>2</sub> &rarr; 2NaBr &nbsp;&nbsp; (iii) Mg + H<sub>2</sub>O &rarr; MgO + H<sub>2</sub>. Justify using oxidation states. [3]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) What colour change confirms a reducing agent when using acidified KMnO<sub>4</sub>? State the change in oxidation number of Mn and what it indicates. [2]<br>
+          (b) Identify the oxidizing and reducing agents in: (i) 2KI + Cl<sub>2</sub> &rarr; 2KCl + I<sub>2</sub> &nbsp;&nbsp; (ii) 2FeCl<sub>2</sub> + Cl<sub>2</sub> &rarr; 2FeCl<sub>3</sub> &nbsp;&nbsp; (iii) Mg + 2HCl &rarr; MgCl<sub>2</sub> + H<sub>2</sub>. [3]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iii)</td>
+        <td class="q-col">
+          (a) Describe the three steps to derive the formula of an ionic compound. Apply them to write the formula of aluminium sulphate (Al<sup>3+</sup>, SO<sub>4</sub><sup>2&minus;</sup>). [3]<br>
+          (b) Write the formula and state the metal's oxidation number for: (i) copper(I) oxide &nbsp; (ii) copper(II) oxide &nbsp; (iii) iron(II) sulphate &nbsp; (iv) manganese(IV) oxide. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) What are Roman numerals used for in chemical names? Give two examples from the textbook. [2]<br>
+          (b) Determine the oxidation state of the underlined element: (i) N in NO<sub>2</sub> &nbsp; (ii) S in H<sub>2</sub>SO<sub>4</sub> &nbsp; (iii) Cr in Cr<sub>2</sub>O<sub>3</sub> &nbsp; (iv) Mn in MnO<sub>4</sub><sup>&minus;</sup>. Show full working. [3]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iv)</td>
+        <td class="q-col">
+          (a) Define corrosion. Explain why it is an electrochemical process. Write and label the anodic and cathodic half-reactions for the rusting of iron. [3]<br>
+          (b) Describe any four methods of preventing corrosion and state the principle behind each. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Explain cathodic (sacrificial) protection in detail. Why is magnesium preferred over copper? Name two structures protected this way. [3]<br>
+          (b) Compare tinning and galvanizing under: (i) metal used (ii) process (iii) typical application. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="sig-row">
+      <span>Invigilator's Signature: <span class="sig-line">&nbsp;</span></span>
+      <span>Candidate's Signature: <span class="sig-line">&nbsp;</span></span>
+    </div>
+    <div class="footer-center"><strong>Chapters Covered:</strong> Chapter 7 — Electrochemistry (pp. 113–126)</div>
+    <div class="end-marker">— End of Question Paper —</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', serif;
+    font-size: 11pt;
+    line-height: 1.2;
+    color: #000;
+  }
+  .page {
+    width: 100%;
+    padding: 6mm 8mm 0 8mm;
+  }
+
+  /* Header box */
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 4px 6px 3px 6px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+  .header-box .board     { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.3px; }
+  .header-box .exam-year { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject   { font-size: 15pt; margin-top: 1px; }
+  .header-box .syllabus  { font-size: 13pt; font-weight: bold; margin-top: 2px; }
+
+  /* Info row */
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 2px 3px;
+    margin-bottom: 3px;
+  }
+
+  /* Instructions box */
+  .instructions-box {
+    border: 1.5px solid #000;
+    padding: 3px 6px;
+    margin-bottom: 4px;
+    font-size: 11pt;
+    line-height: 1.3;
+  }
+  .instructions-box .inst-title { font-weight: bold; margin-bottom: 1px; font-size: 11pt; }
+  .instructions-box ol { padding-left: 16px; }
+  .instructions-box ol li { margin-bottom: 1px; }
+
+  /* Section bars */
+  .section-bar {
+    background: #DAA520;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+  .section-bar .sub-line {
+    font-size: 9.5pt;
+    font-weight: normal;
+    margin-top: 1px;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+
+  /* MCQ table */
+  .mcq-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 4px;
+    font-size: 11pt;
+  }
+  .mcq-table th {
+    background: #f0f0f0;
+    border: 1px solid #888;
+    padding: 2px 3px;
+    text-align: center;
+    font-size: 10.5pt;
+  }
+  .mcq-table td {
+    border: 1px solid #888;
+    padding: 2px 3px;
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+  .mcq-table td.num-cell  { text-align: center; width: 3%; }
+  .mcq-table td.q-cell    { width: 29%; }
+  .mcq-table td.opt-cell  { text-align: center; width: 13%; }
+  .mcq-table td.ans-cell  { text-align: center; width: 16%; }
+  span.mcq-opt {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #555;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+
+  /* Section B/C table */
+  .qb-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin-bottom: 3px;
+  }
+  .qb-table th {
+    background: #f0f0f0;
+    border: 1px solid #888;
+    padding: 2px 3px;
+    font-size: 9.5pt;
+    text-align: center;
+  }
+  .qb-table td {
+    border: 1px solid #888;
+    padding: 2px 4px;
+    vertical-align: top;
+    line-height: 1.25;
+  }
+  .qb-table td.part-cell  { width: 5%;  text-align: center; font-weight: bold; vertical-align: middle; font-size: 9.5pt; }
+  .qb-table td.q-main     { width: 37%; }
+  .qb-table td.marks-cell { width: 6%;  text-align: center; vertical-align: middle; font-weight: bold; font-size: 10pt; }
+  .qb-table td.or-cell    { width: 5%;  text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 12pt; }
+  .qb-table td.q-or       { width: 37%; }
+
+  /* Footer */
+  .footer {
+    margin-top: 4px;
+    font-size: 9.5pt;
+  }
+  .sig-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .sig-line {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    width: 160px;
+  }
+  .footer-center { text-align: center; font-size: 10pt; margin-top: 2px; }
+  .end-marker    { text-align: center; font-size: 11pt; font-weight: bold; margin-top: 3px; letter-spacing: 1px; }
+
+  @media print {
+    body { margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1 ==================== -->
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject">Biology &mdash; Class IX &nbsp;|&nbsp; Paper: SSC-I</div>
+    <div class="syllabus">Syllabus: Chapter 8 &mdash; Plant Physiology</div>
+  </div>
+
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your Roll Number in the space provided on the answer sheet. Do NOT write your name.</li>
+      <li>Attempt ALL questions from Section A. In Sections B and C, attempt the required number choosing either the main question OR its alternative (OR).</li>
+      <li>All parts of a question must be answered in sequence and at one place.</li>
+      <li>Extra attempt of any question or any part thereof will NOT be considered.</li>
+    </ol>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th style="width:3%">#</th>
+        <th style="width:29%">Question</th>
+        <th style="width:13%">A</th>
+        <th style="width:13%">B</th>
+        <th style="width:13%">C</th>
+        <th style="width:13%">D</th>
+        <th style="width:16%">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num-cell">1</td>
+        <td class="q-cell">Chlorosis (yellowing of leaves) occurs due to deficiency of:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Sulphur</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Phosphorus</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Magnesium</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Calcium</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">2</td>
+        <td class="q-cell">Most of the uptake of water and minerals from soil takes place through:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Root cap</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Root hair</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Epidermis</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Endodermis</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">3</td>
+        <td class="q-cell">What percentage of absorbed water is lost through stomatal transpiration?</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>7&ndash;9%</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Less than 3%</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>90%</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>50%</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">4</td>
+        <td class="q-cell">The upward movement of water and dissolved minerals through xylem is called:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Translocation</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Transpiration</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Ascent of sap</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Osmosis</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">5</td>
+        <td class="q-cell">The TACT acronym stands for the four forces that drive ascent of sap. What does each letter represent?</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Temperature, Absorption, Cohesion, Tension</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Transpiration pull, Adhesion, Cohesion, Tension</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Turgor, Adhesion, Capillary, Tension</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Transpiration, Air, Capillary, Transport</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">6</td>
+        <td class="q-cell">Sugar moves through phloem mostly in the form of:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Glucose</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Sucrose</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Maltose</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Lactose</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">7</td>
+        <td class="q-cell">What is the role of companion cells in phloem translocation?</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Store excess solutes in phloem</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Regulate water potential in xylem</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Actively transport sugars into sieve tube elements</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Assist water absorption by roots</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">8</td>
+        <td class="q-cell">When the rate of photosynthesis equals respiration, what is the net gas exchange with the environment?</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>CO&#8322; absorbed, O&#8322; released</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>O&#8322; absorbed, CO&#8322; released</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Both absorbed</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>No net exchange</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">9</td>
+        <td class="q-cell">Which plant group stores a small amount of water and has a thin cuticle?</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Hydrophytes</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Xerophytes</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Mesophytes</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Succulents</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">10</td>
+        <td class="q-cell">Leaves loaded with pigmented waste compounds, causing them to yellow and fall, are called:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Chlorotic leaves</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Excretophores</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Lenticels</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Mesophyll cells</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">11</td>
+        <td class="q-cell">Active transport of minerals into root cells directly requires:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>NADH</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>ADP</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>ATP</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Glucose directly</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">12</td>
+        <td class="q-cell">In the pressure flow mechanism of translocation, sugar loading into sieve tubes begins at the:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Sink (roots)</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Source (leaves)</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Xylem vessels</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Root hairs</td>
+        <td class="ans-cell"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end page 1 -->
+
+
+<!-- ==================== PAGE 2 ==================== -->
+<div class="page">
+
+  <div class="section-bar">
+    SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)
+    <div class="sub-line">Attempt 11 questions. Choose either the main question OR its alternative.</div>
+  </div>
+
+  <table class="qb-table">
+    <thead>
+      <tr>
+        <th style="width:5%">Part</th>
+        <th style="width:37%">Question</th>
+        <th style="width:6%">Marks</th>
+        <th style="width:5%">OR</th>
+        <th style="width:37%">Alternative Question</th>
+        <th style="width:6%">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-cell">2(i)</td>
+        <td class="q-main">Differentiate between macronutrients and micronutrients. Give three examples of each.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain the importance of nitrogen in the plant body. What happens when nitrogen is deficient?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(ii)</td>
+        <td class="q-main">Describe the internal structure of the root naming the layers from outermost to innermost. What are Casparian strips and what is their function?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain the role of root hairs. How do they increase absorption efficiency and to which cell layers do they connect?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(iii)</td>
+        <td class="q-main">Compare passive transport and active transport in mineral uptake by roots. Which requires energy and why?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain water absorption by roots. Name the process involved and describe the path water takes from soil into the xylem.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(iv)</td>
+        <td class="q-main">Name and describe the three types of transpiration. Which type accounts for the greatest water loss?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Why is transpiration called a &ldquo;necessary evil&rdquo;? Give two advantages and one major disadvantage.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(v)</td>
+        <td class="q-main">How does temperature affect the rate of transpiration? What happens when temperature rises to 40&ndash;45&deg;C?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">How does wind affect transpiration rate? Explain the mechanism involving diffusion of water molecules from mesophyll cells.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(vi)</td>
+        <td class="q-main">Explain how cohesion and tension work together in the TACT theory to maintain the water column in xylem.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">What is adhesion in the context of water transport? How does it help water move upward against gravity in xylem?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(vii)</td>
+        <td class="q-main">Define translocation. Name the tissue involved and describe the direction of flow using the terms &ldquo;source&rdquo; and &ldquo;sink.&rdquo;</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe phloem sap composition. What are sieve tube elements and what is the specific role of companion cells?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(viii)</td>
+        <td class="q-main">Describe gas exchange in leaves during daytime. Why do plants absorb CO&#8322; and release O&#8322; in daylight?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">What is the compensation point of photosynthesis? When does it occur and what is the net gas exchange at that moment?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(ix)</td>
+        <td class="q-main">Define homeostasis in plants. Give three reasons why it is essential for plant survival.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe two mechanisms by which plants excrete waste. What are excretophores and why are autumn leaves used in garden soil?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(x)</td>
+        <td class="q-main">Distinguish between hypotonic and hypertonic situations in plant cells. What effect does each have on cell turgor?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">What is osmotic adjustment (osmoregulation) in plants? What is the isotonic situation and why is it rarely found in nature?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(xi)</td>
+        <td class="q-main">Compare hydrophytes and xerophytes. Give two structural adaptations of each related to transpiration and stomatal placement.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe the pattern of gas exchange in roots. How does it differ from leaves and why does it remain the same day and night?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)</div>
+
+  <table class="qb-table">
+    <thead>
+      <tr>
+        <th style="width:5%">Part</th>
+        <th style="width:37%">Question</th>
+        <th style="width:6%">Marks</th>
+        <th style="width:5%">OR</th>
+        <th style="width:37%">Alternative Question</th>
+        <th style="width:6%">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-cell">3(i)</td>
+        <td class="q-main">Describe mineral nutrition in plants. Define nutrient, distinguish macronutrients from micronutrients, and give a detailed account of the roles of nitrogen and magnesium, including the effects of each deficiency.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain the internal structure of root and root hairs in sequence from epidermis inward. Explain the role of the Casparian strip and describe how both passive and active uptake of minerals and water occur through root cells.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(ii)</td>
+        <td class="q-main">Explain the TACT theory in full. Name each of the four factors, describe the driving force behind each, and trace the complete path water takes from root hair to leaf mesophyll cell.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe transpiration fully. Define all three types, explain the relationship between stomatal opening and transpiration rate, and evaluate using the phrase &ldquo;necessary evil.&rdquo;</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(iii)</td>
+        <td class="q-main">Explain the pressure flow (mass flow) mechanism of translocation step by step. Include the roles of source, sink, companion cells, sieve tube elements, and the movement of water by osmosis at each end.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Compare xylem and phloem transport in a structured table. Your table must cover: materials transported, direction of flow, cell types involved, energy requirement, and driving force.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(iv)</td>
+        <td class="q-main">Describe gas exchange in plants. Explain the pattern in leaves during the day, at night, and at the compensation point. Also describe root gas exchange. Include the role of stomata and lenticels.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain osmotic adjustment in plants. Define all three osmotic situations (hypotonic, hypertonic, isotonic). Compare adaptations of hydrophytes, mesophytes, and xerophytes in a table covering transpiration rate, stomatal placement, cuticle thickness, and water storage.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="sig-row">
+      <div>Invigilator's Signature: <span class="sig-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      <div>Candidate's Signature: <span class="sig-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+    </div>
+    <div class="footer-center">Chapters Covered: Chapter 8 &mdash; Plant Physiology (Sections 8.1&ndash;8.4)</div>
+    <div class="end-marker">&#8212; End of Question Paper &#8212;</div>
+  </div>
+
+</div><!-- end page 2 -->
+
+</body>
+</html>

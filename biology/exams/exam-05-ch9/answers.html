@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', serif;
+    font-size: 13pt;
+    line-height: 1.5;
+    color: #000;
+  }
+  .page {
+    width: 100%;
+    padding: 7mm 9mm 0 9mm;
+  }
+
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 5px 8px 4px 8px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+  .header-box .board    { font-size: 14pt; font-weight: bold; text-transform: uppercase; }
+  .header-box .exam-year{ font-size: 12.5pt; margin-top: 2px; }
+  .header-box .subject  { font-size: 12.5pt; margin-top: 2px; }
+  .header-box .syllabus { font-size: 11pt; font-weight: bold; margin-top: 2px; }
+  .header-box .ak-label { font-size: 13pt; font-weight: bold; color: #005500; margin-top: 3px; }
+
+  .section-bar {
+    background: #DAA520;
+    color: #fff;
+    font-size: 12.5pt;
+    font-weight: bold;
+    padding: 3px 7px;
+    margin: 5px 0 4px 0;
+    page-break-after: avoid;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: #fff;
+    font-size: 12.5pt;
+    font-weight: bold;
+    padding: 3px 7px;
+    margin: 5px 0 4px 0;
+    page-break-after: avoid;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #e8e8e8;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin-left: 3px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge-green {
+    display: inline-block;
+    background: #d4edda;
+    border: 1px solid #5cb85c;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin-left: 3px;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #155724;
+  }
+
+  .mcq-answer {
+    margin-bottom: 5px;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #ccc;
+    font-size: 11pt;
+    page-break-inside: avoid;
+  }
+  .mcq-qline  { font-weight: bold; margin-bottom: 1px; }
+  .mcq-correct{ color: #155724; font-weight: bold; }
+  .mcq-expl   { font-size: 10.5pt; margin-top: 1px; color: #222; line-height: 1.3; }
+
+  .answer-box {
+    border: 1px solid #ccc;
+    border-left: 4px solid #4682B4;
+    background: #fafafa;
+    padding: 5px 8px;
+    margin-bottom: 5px;
+    font-size: 11pt;
+    line-height: 1.35;
+    page-break-inside: avoid;
+  }
+  .answer-box .q-label {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 11pt;
+  }
+  .or-label {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 12.5pt;
+    margin: 4px 0 2px 0;
+    display: inline-block;
+  }
+  .answer-box p  { margin-bottom: 3px; }
+  .answer-box ul { padding-left: 17px; margin-top: 2px; }
+  .answer-box li { margin-bottom: 2px; }
+
+  .flowchart {
+    font-family: 'Courier New', monospace;
+    font-size: 9.5pt;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    margin: 3px 0;
+    white-space: pre;
+    line-height: 1.3;
+  }
+
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin: 4px 0;
+    page-break-inside: avoid;
+  }
+  .comp-table th {
+    background: #e0e0e0;
+    border: 1px solid #999;
+    padding: 3px 5px;
+    text-align: center;
+  }
+  .comp-table td {
+    border: 1px solid #999;
+    padding: 3px 5px;
+    vertical-align: top;
+  }
+
+  @media print {
+    body { margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ====== PAGE 1: HEADER + SECTION A ====== -->
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject">Biology &mdash; Class IX &nbsp;|&nbsp; Paper: SSC-I</div>
+    <div class="syllabus">Syllabus: Chapter 9 &mdash; Plant Reproduction</div>
+    <div class="ak-label">ANSWER KEY (Version 1)</div>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q1. Asexual reproduction in which a cell splits into two equal parts: <span class="badge-green">C &mdash; Binary fission</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Binary fission</strong> is the splitting of one cell into two equal daughter cells after DNA replication. It is common in bacteria. <strong>Budding</strong> produces an unequal outgrowth; <strong>spore formation</strong> involves production of dispersal units called spores; <strong>fragmentation</strong> is not listed as a main mode here.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q2. Tiny outgrowth on yeast parent cell that detaches: <span class="badge-green">B &mdash; Budding</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In <strong>budding</strong>, a small outgrowth (bud) forms on the parent yeast cell. The nucleus splits by mitosis, one nucleus enters the bud, the bud enlarges and eventually detaches. Binary fission splits the cell equally, not unequally.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q3. Parthenogenesis in flowering plants is also known as: <span class="badge-green">A &mdash; Apomixis</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Apomixis</strong> is the term used specifically for parthenogenesis in flowering plants. It is the asexual formation of a seed from the maternal tissues of the ovule, avoiding meiosis and fertilization. Pollination and fertilization are separate events.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q4. Compact, thickened underground stem enveloped by thick succulent leaves: <span class="badge-green">C &mdash; Bulb</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">A <strong>bulb</strong> (e.g. onion, tulip) is a compact underground stem surrounded by thick, fleshy (succulent) leaves that store nutrients. A <strong>corm</strong> (e.g. colocasia) stores food in the stem itself, not in surrounding leaves. A <strong>rhizome</strong> is a horizontal underground stem.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q5. Bryophyllum produces new plantlets along its: <span class="badge-green">C &mdash; Leaves</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In <strong>Bryophyllum</strong>, tiny plantlets form along the notched edges of its leaves. When they detach and fall on soil, they grow into independent plants. This is vegetative propagation by leaves, unique to this plant.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q6. Upper part of a graft carrying desired characteristics: <span class="badge-green">B &mdash; Scion</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">The <strong>scion</strong> is the upper part of the graft; it carries the desired traits such as fruit quality, flower colour, or disease resistance. The <strong>rootstock</strong> is the lower part, providing the root system and stem support. An <strong>explant</strong> is used in tissue culture, not grafting.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q7. First piece of parent plant used in tissue culture: <span class="badge-green">C &mdash; Explant</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">The <strong>explant</strong> is the initial cell or small tissue piece taken from the parent plant and placed on a nutrient medium. It grows into an undifferentiated mass called a <strong>callus</strong>, which is then induced to form a plantlet. The term "plantlet" refers to the fully formed young plant at the end.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q8. Two whorls called necessary whorls (directly involved in reproduction): <span class="badge-green">B &mdash; Androecium and gynoecium</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">The <strong>androecium</strong> (male, produces pollen) and <strong>gynoecium</strong> (female, contains the ovule/egg) are the necessary whorls because they directly participate in reproduction. <strong>Calyx</strong> and <strong>corolla</strong> are accessory whorls that protect or attract pollinators.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q9. Haploid pollen grains produced by meiosis in the anther: <span class="badge-green">B &mdash; Microspores</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Microspores</strong> are produced by meiosis in the four pollen sacs (microsporangia) of the anther. They become pollen grains. <strong>Megaspores</strong> are the female equivalent, produced in the ovule. <strong>Synergids</strong> are cells found inside the embryo sac.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q10. Pollination between flowers of two separate plants: <span class="badge-green">C &mdash; Cross-pollination</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Cross-pollination</strong> occurs when pollen from one plant reaches the stigma of a flower on a different plant of the same species. It ensures more genetic variability in offspring. <strong>Self-pollination</strong> occurs within the same plant and produces genetically uniform offspring.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q11. Second sperm fuses with polar nuclei to form: <span class="badge-green">C &mdash; Triploid endosperm nucleus</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In <strong>double fertilization</strong>, one sperm (1N) fuses with the egg (1N) to form a diploid (2N) zygote. The second sperm (1N) fuses with the two polar nuclei (1N + 1N) to form a <strong>triploid (3N) endosperm nucleus</strong>. The endosperm later stores food for the developing embryo.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q12. Part that stretches and pulls cotyledons above ground in epigeal germination: <span class="badge-green">C &mdash; Hypocotyl</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In <strong>epigeal germination</strong>, the <strong>hypocotyl</strong> (stem below cotyledon attachment) elongates and forms a hook, pulling the cotyledons above the soil. Examples: bean, cotton, papaya. In hypogeal germination it is the <strong>epicotyl</strong> that elongates while cotyledons stay underground.</div>
+  </div>
+
+</div><!-- end page 1 -->
+
+
+<!-- ====== PAGE 2: SECTION B (2i to 2vi) ====== -->
+<div class="page">
+
+  <div class="section-bar">SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)</div>
+
+  <div class="answer-box">
+    <div class="q-label">2(i) Define asexual reproduction. State three characteristics that make it different from sexual reproduction. <span class="badge">3 marks</span></div>
+    <p><strong>Asexual reproduction</strong> is a method in which only one parent is involved and offspring are generated that are genetically identical to the parent (clones). It does not require gamete formation or meiosis. <span class="badge">1 mark</span></p>
+    <p><strong>Three distinguishing characteristics:</strong></p>
+    <ul>
+      <li>Only one parent is needed; sexual reproduction requires two parents. <span class="badge">1 mark</span></li>
+      <li>No gametes or fertilization are involved; sexual reproduction requires gamete fusion.</li>
+      <li>Offspring are genetically identical (no variation); sexual reproduction produces genetically diverse offspring. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Describe binary fission in bacteria. <span class="badge">3 marks</span></div>
+    <p>In <strong>binary fission</strong>, the bacterium first replicates its DNA so two identical sets are formed. <span class="badge">1 mark</span> The two DNA sets move to opposite ends of the cell, and the middle of the cell folds inward. <span class="badge">1 mark</span> A cross-wall (septum) then forms completely, dividing the original cell into two equal daughter cells, each with one copy of the DNA. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(ii) Explain budding in yeast. What happens to the nucleus during bud formation? <span class="badge">3 marks</span></div>
+    <p>In <strong>budding</strong>, a small outgrowth called a bud emerges from the parent yeast cell. <span class="badge">1 mark</span> Inside the parent cell, the nucleus splits by <strong>mitosis</strong> and one of the new nuclei moves into the bud. <span class="badge">1 mark</span> The bud grows larger, becoming more like the parent, and eventually detaches as a new independent cell. Sometimes multiple buds form on the same parent simultaneously. <span class="badge">1 mark</span></p>
+    <span class="or-label">OR</span>
+    <div class="q-label">What is spore formation? How does Rhizopus produce and release spores? <span class="badge">3 marks</span></div>
+    <p><strong>Spore formation</strong> is an asexual method in which small, unicellular, thick-walled, non-motile reproductive bodies called <strong>spores</strong> are produced. <span class="badge">1 mark</span> In Rhizopus, body cells form protective bags called <strong>sporangia</strong> on the tips of stalks called <strong>sporangiophores</strong>. Cells inside divide to produce many spores, each with a tough cyst wall. <span class="badge">1 mark</span> When the sporangia are mature they burst open, releasing spores. Under favourable conditions, each spore germinates into a new Rhizopus. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(iii) What is vegetative propagation? Distinguish natural from artificial with one example each. <span class="badge">3 marks</span></div>
+    <p><strong>Vegetative propagation</strong> is asexual reproduction in plants in which new individuals are produced from vegetative structures (roots, stems, leaves) without seeds. <span class="badge">1 mark</span></p>
+    <ul>
+      <li><strong>Natural vegetative propagation:</strong> occurs without human involvement using the plant's own structures (e.g. strawberry runners/stolons). <span class="badge">1 mark</span></li>
+      <li><strong>Artificial vegetative propagation:</strong> humans purposely use a vegetative propagule to grow plants with desired traits (e.g. stem cuttings of roses). <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Define parthenogenesis. Why is it asexual? What is it called in flowering plants? <span class="badge">3 marks</span></div>
+    <p><strong>Parthenogenesis</strong> is the development of an offspring directly from an unfertilized egg. <span class="badge">1 mark</span> It is considered asexual because no fusion of genetic material from two parents occurs; the offspring are produced without fertilization. <span class="badge">1 mark</span> In flowering plants it is called <strong>apomixis</strong> and involves the asexual formation of a seed from the maternal tissues of the ovule, bypassing meiosis and fertilization. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(iv) Describe any three methods of natural vegetative propagation with one plant example each. <span class="badge">3 marks</span></div>
+    <ul>
+      <li><strong>Bulb:</strong> compact, thickened underground stem surrounded by fleshy leaves storing nutrients; adventitious roots and shoots arise from it. Example: onion. <span class="badge">1 mark</span></li>
+      <li><strong>Rhizome:</strong> flat, horizontal underground stem with distinct nodes and internodes; buds on the upper side grow into shoots. Example: ginger. <span class="badge">1 mark</span></li>
+      <li><strong>Stolon/Runner:</strong> long horizontal above-ground stem that grows outward; at nodes, new shoots and roots develop into independent plants. Example: strawberry. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Differentiate bulb and rhizome with one example each. How does each give rise to a new plant? <span class="badge">3 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Bulb</th><th>Rhizome</th></tr>
+      <tr><td>Orientation</td><td>Vertically growing, compact</td><td>Horizontal, flat underground stem</td></tr>
+      <tr><td>Food storage</td><td>In thick, succulent (fleshy) leaves</td><td>In the stem tissue itself</td></tr>
+      <tr><td>New plant formation</td><td>Adventitious roots below, shoots from buds above</td><td>Buds on upper nodes grow into shoots; lower side forms roots</td></tr>
+      <tr><td>Example</td><td>Onion, tulip, lily</td><td>Ginger, fern, water lily</td></tr>
+    </table>
+    <p><span class="badge">1 mark</span> per two correct rows / example pair; full table = 3 marks.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(v) Explain stem cuttings. What role does auxin play? <span class="badge">3 marks</span></div>
+    <p><strong>Stem cuttings</strong> are small pieces of stem, each with at least one node, cut from the parent plant. <span class="badge">1 mark</span> The cutting is placed in water or damp soil; roots grow from the bottom of the stem while the top produces leaves. <span class="badge">1 mark</span> If the cutting fails to root, the cut ends are treated with the plant hormone <strong>auxin</strong>, which stimulates root initiation and promotes growth. The top may also be covered with plastic or glass to reduce water loss. <span class="badge">1 mark</span></p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Describe grafting. Name the two parts and explain the role of each. <span class="badge">3 marks</span></div>
+    <p><strong>Grafting</strong> joins two plant parts to create a single new plant and is used to reproduce desirable varieties. <span class="badge">1 mark</span></p>
+    <ul>
+      <li><strong>Scion:</strong> the upper part carrying desired characteristics (fruit type, flower colour). It contributes the desired traits to the grafted plant. <span class="badge">1 mark</span></li>
+      <li><strong>Rootstock:</strong> the lower part providing the established root system and stem support. Precise cuts maximize contact between scion and rootstock; grafting tape holds them together until they fuse and the plant begins to grow. <span class="badge">1 mark</span></li>
+    </ul>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(vi) What is tissue culture? Define explant and describe what happens in the nutrient medium. <span class="badge">3 marks</span></div>
+    <p><strong>Tissue culture</strong> (cloning / micropropagation) is a method of producing genetically identical individuals by growing a single plant cell or piece of tissue on an artificial nutrient medium under aseptic conditions. <span class="badge">1 mark</span> The first cell or tiny tissue piece taken from the parent plant is called the <strong>explant</strong>. <span class="badge">1 mark</span> The explant is placed on a nutrient medium and grows into an undifferentiated mass of cells called a <strong>callus</strong>. The callus is then treated with substances that cause it to produce shoots and roots, eventually developing into a complete <strong>plantlet</strong>, which is then transferred to natural soil. <span class="badge">1 mark</span></p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Differentiate artificial and natural vegetative propagation. Why is artificial preferred commercially? <span class="badge">3 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Natural Vegetative Propagation</th><th>Artificial Vegetative Propagation</th></tr>
+      <tr><td>Human involvement</td><td>None; uses plant's own structures</td><td>Humans purposely use a vegetative propagule</td></tr>
+      <tr><td>Methods</td><td>Bulbs, rhizomes, runners, suckers</td><td>Stem cuttings, grafting, tissue culture</td></tr>
+      <tr><td>Trait control</td><td>No selection of specific traits</td><td>Desired traits (taste, disease-resistance) preserved</td></tr>
+    </table>
+    <p>Artificial propagation is preferred commercially because it preserves desirable qualities (taste, colour, disease-resistance) across large numbers of plants and can be performed at scale in controlled conditions. <span class="badge">1 mark</span></p>
+  </div>
+
+</div><!-- end page 2 -->
+
+
+<!-- ====== PAGE 3: SECTION B (2vii to 2xi) ====== -->
+<div class="page">
+
+  <div class="answer-box">
+    <div class="q-label">2(vii) Name the four floral whorls. Which are necessary, which are accessory? <span class="badge">3 marks</span></div>
+    <p>A typical flower possesses four whorls arranged on the thalamus: <span class="badge">1 mark</span></p>
+    <ul>
+      <li><strong>Calyx</strong> (sepals) and <strong>Corolla</strong> (petals): the outer two whorls. They protect the inner flower and attract pollinators but do not directly participate in reproduction. They are called <strong>accessory whorls</strong>. <span class="badge">1 mark</span></li>
+      <li><strong>Androecium</strong> (stamens) and <strong>Gynoecium</strong> (carpels/pistil): the inner two whorls. They directly carry out reproduction (produce pollen and house the egg) and are called <strong>necessary whorls</strong>. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Describe the structure of a stamen. How are microspores (pollen grains) produced? <span class="badge">3 marks</span></div>
+    <p>Each <strong>stamen</strong> consists of a long stalk called the <strong>filament</strong> and a bilobed swollen tip called the <strong>anther</strong>. <span class="badge">1 mark</span> In the anther lobes, there are four pollen sacs called <strong>microsporangia</strong>. <span class="badge">1 mark</span> Inside each microsporangium, <strong>microspore mother cells</strong> undergo meiosis to produce haploid (1N) pollen grains (<strong>microspores</strong>). When the pollen sacs are mature, the anther wall bursts and the microspores are liberated. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(viii) Define pollination. Distinguish self-pollination from cross-pollination. Which promotes genetic variability? <span class="badge">3 marks</span></div>
+    <p><strong>Pollination</strong> is the transfer of microspores (pollen grains) from the anther of a stamen to the stigma of a carpel by wind, insects, or other animals. <span class="badge">1 mark</span></p>
+    <ul>
+      <li><strong>Self-pollination:</strong> pollen is transferred within the same flower or between two flowers of the same plant. Offspring are genetically similar. <span class="badge">1 mark</span></li>
+      <li><strong>Cross-pollination:</strong> pollen is transferred between flowers of two separate plants. This ensures more <strong>genetic variability</strong> in coming generations because gametes from two genetically different parents combine. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Compare insect-pollinated and wind-pollinated flowers under three features. <span class="badge">3 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Insect-pollinated</th><th>Wind-pollinated</th></tr>
+      <tr><td>Petal colour</td><td>Brightly coloured (attracts insects)</td><td>Green or dull colour (no need to attract)</td></tr>
+      <tr><td>Pollen grains</td><td>Small number produced; heavy and sticky (clings to insect)</td><td>Large number produced; light with smooth surface (blown by wind)</td></tr>
+      <tr><td>Stigma shape</td><td>Pinhead-shaped with no branches</td><td>Feathery branches to catch airborne pollen</td></tr>
+    </table>
+    <p><span class="badge">1 mark</span> per correctly compared feature. Total: 3 marks.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(ix) What is the female gametophyte (embryo sac)? Name the cell types inside it. <span class="badge">3 marks</span></div>
+    <p>The <strong>female gametophyte</strong> (embryo sac) is the mature structure inside the ovule of an angiosperm that houses the female gametes. It develops from the functional megaspore. <span class="badge">1 mark</span> The embryo sac contains eight nuclei organized into the following cell types: <span class="badge">1 mark</span></p>
+    <ul>
+      <li><strong>Egg cell</strong> (1N): the female gamete, located in the center at one end of the ovule.</li>
+      <li><strong>Synergids</strong> (1N, two cells): flank the egg on both sides; assist in guiding the pollen tube.</li>
+      <li><strong>Antipodal cells</strong> (1N, three cells): at the opposite end of the ovule; control the fertilization process.</li>
+      <li><strong>Polar nuclei</strong> (two 1N nuclei): at the center; fuse with the second sperm to form the triploid endosperm nucleus. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Describe the development of the male gametophyte after pollination. Name the two nuclei. What does the pollen tube do? <span class="badge">3 marks</span></div>
+    <p>After pollination, the microspore (pollen grain) germinates on the surface of the stigma. <span class="badge">1 mark</span> The microspore nucleus divides by mitosis to form two nuclei: the <strong>tube nucleus</strong> and the <strong>generative nucleus</strong>. The generative nucleus further divides to form two <strong>sperm nuclei</strong>. <span class="badge">1 mark</span> The tube nucleus controls the formation of the <strong>pollen tube</strong>, which grows down through the style and penetrates the ovule. This whole structure (microspore body + pollen tube + tube nucleus + two sperm nuclei) is the <strong>male gametophyte</strong>. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(x) Name the three parts of an angiosperm seed. Briefly explain the function of each. <span class="badge">3 marks</span></div>
+    <ul>
+      <li><strong>Embryo:</strong> develops from the zygote (union of egg and sperm). It is an immature plant consisting of the radicle, plumule, and cotyledons. It will grow into the new plant upon germination. <span class="badge">1 mark</span></li>
+      <li><strong>Endosperm:</strong> storage tissue derived from the triploid endosperm nucleus. Rich in starch, oil, and protein; provides nutrients to the growing seedling. <span class="badge">1 mark</span></li>
+      <li><strong>Seed coat (testa):</strong> the protective outer covering that develops from the integuments surrounding the ovule. It protects the embryo from drying, mechanical damage, and pathogens. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Explain seed and fruit formation after fertilization. What does the ovule become? What does the ovary wall become? <span class="badge">3 marks</span></div>
+    <p>After double fertilization, the <strong>zygote</strong> (2N) develops into the <strong>embryo</strong> and the triploid endosperm nucleus (3N) develops into the <strong>endosperm</strong> tissue. <span class="badge">1 mark</span> The <strong>ovule</strong> is transformed into the <strong>seed</strong> (defined as a "ripened ovule"). <span class="badge">1 mark</span> The surrounding wall of the ovary is transformed into the <strong>fruit</strong> (defined as a "ripened ovary"). The fruit protects the seed and often aids in its dispersal. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(xi) State three external conditions for seed germination. Explain the role of water. <span class="badge">3 marks</span></div>
+    <p>Three external conditions required for seed germination: <span class="badge">1 mark</span></p>
+    <ul>
+      <li><strong>Water (moisture):</strong> seeds absorb water, which causes them to swell and break open the seed coat. Water activates the stored food reserves and provides a medium for metabolic reactions to start. <span class="badge">1 mark</span></li>
+      <li><strong>Oxygen:</strong> needed by the embryo cells for cellular respiration, which provides energy for the growing seedling.</li>
+      <li><strong>Suitable temperature:</strong> most seeds germinate optimally at 25&ndash;30&deg;C; temperature controls enzyme activity during germination. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Differentiate epigeal and hypogeal germination. Give one example each and name the part that elongates. <span class="badge">3 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Epigeal Germination</th><th>Hypogeal Germination</th></tr>
+      <tr><td>Part that elongates</td><td><strong>Hypocotyl</strong> (stem below cotyledon attachment)</td><td><strong>Epicotyl</strong> (stem above cotyledon attachment)</td></tr>
+      <tr><td>Cotyledon position</td><td>Pulled above ground; cotyledons are exposed to light</td><td>Cotyledons remain underground; only shoot emerges</td></tr>
+      <tr><td>Example</td><td>Bean, cotton, papaya</td><td>Pea, maize, coconut</td></tr>
+    </table>
+    <p><span class="badge">1 mark</span> per pair of correctly contrasted features. Total: 3 marks.</p>
+  </div>
+
+</div><!-- end page 3 -->
+
+
+<!-- ====== PAGE 4: SECTION C (3i and 3ii) ====== -->
+<div class="page">
+
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)</div>
+
+  <div class="answer-box">
+    <div class="q-label">3(i) Compare sexual and asexual reproduction in plants under five points. Which is more beneficial for changing environments? <span class="badge">5 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Asexual Reproduction</th><th>Sexual Reproduction</th></tr>
+      <tr><td>Number of parents</td><td>One parent only</td><td>Two parents (male and female)</td></tr>
+      <tr><td>Gamete formation</td><td>Not required; no meiosis</td><td>Required; meiosis produces gametes</td></tr>
+      <tr><td>Genetic variation</td><td>Offspring are genetically identical (clones)</td><td>Offspring are genetically diverse</td></tr>
+      <tr><td>Speed</td><td>Rapid; can produce many offspring quickly</td><td>Slower; complex process of gamete fusion</td></tr>
+      <tr><td>Suitability</td><td>Suitable for stable, favourable environments</td><td>Suitable for changing or unfavourable environments</td></tr>
+    </table>
+    <p><span class="badge">1 mark</span> per two correctly compared rows; table correct = 4 marks; conclusion = 1 mark.</p>
+    <p><strong>Conclusion:</strong> <strong>Sexual reproduction</strong> is more beneficial for adapting to changing environments because it generates genetic variability in offspring. This variation means that some individuals may carry traits better suited to new conditions, increasing the chance that at least some offspring survive environmental changes. <span class="badge">1 mark</span></p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Describe the methods of natural vegetative propagation. Cover all seven types with one example each. <span class="badge">5 marks</span></div>
+    <p><strong>Natural vegetative propagation</strong> is the process by which plants reproduce asexually using their own vegetative structures without human involvement. Seven methods:</p>
+    <ul>
+      <li><strong>Bulb</strong> (e.g. onion): compact underground stem enveloped by fleshy nutrient-storing leaves; adventitious roots and buds produce new shoots. <span class="badge">0.5 mark</span></li>
+      <li><strong>Corm</strong> (e.g. colocasia/dasheen): compact underground stem that stores food in the stem itself; buds at the top give rise to new shoots. <span class="badge">0.5 mark</span></li>
+      <li><strong>Rhizome</strong> (e.g. ginger): horizontal underground stem with nodes and internodes; upper buds grow into shoots, lower side produces adventitious roots. <span class="badge">0.5 mark</span></li>
+      <li><strong>Stem tuber</strong> (e.g. potato): swollen tips of underground stems with "eyes" (axillary buds); new shoots grow from the buds under suitable conditions. <span class="badge">0.5 mark</span></li>
+      <li><strong>Stolon/Runner</strong> (e.g. strawberry): horizontal above-ground stem; at nodes, shoots and roots develop into independent plants; the runner eventually dries up. <span class="badge">0.5 mark</span></li>
+      <li><strong>Suckers</strong> (e.g. lawn grass): small shoots that emerge from the underground root system or stem base; they develop their own roots and become self-sustaining. <span class="badge">0.5 mark</span></li>
+      <li><strong>Vegetative propagation by leaves</strong> (e.g. Bryophyllum): plantlets form along the notched edges of leaves; they detach, fall on soil, and grow into independent plants. <span class="badge">1 mark</span></li>
+    </ul>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(ii) Describe the structure of a typical flower. Name and explain the function of each of the four whorls. Label key parts of the gynoecium and androecium. <span class="badge">5 marks</span></div>
+    <p>A <strong>flower</strong> is the reproductive organ of an angiosperm. It consists of a stalk called the <strong>pedicel</strong> topped by the <strong>thalamus</strong>, from which four whorls of floral leaves arise. <span class="badge">1 mark</span></p>
+    <ul>
+      <li><strong>Calyx</strong> (1st whorl, outermost): made up of green leaf-like <strong>sepals</strong>. Function: protects the inner flower parts before it opens; accessory whorl. <span class="badge">1 mark</span></li>
+      <li><strong>Corolla</strong> (2nd whorl): made up of variously coloured <strong>petals</strong>. Function: attracts pollinators (insects) through colour and scent; accessory whorl. <span class="badge">1 mark</span></li>
+      <li><strong>Androecium</strong> (3rd whorl): the male reproductive part made up of <strong>stamens</strong>. Each stamen = <strong>filament</strong> (stalk) + <strong>anther</strong> (tip). The anther contains four pollen sacs (microsporangia) that produce pollen grains by meiosis; necessary whorl. <span class="badge">1 mark</span></li>
+      <li><strong>Gynoecium</strong> (4th whorl, innermost): the female reproductive part made up of one or more <strong>carpels (pistils)</strong>. Each carpel = <strong>stigma</strong> (sticky tip to catch pollen) + <strong>style</strong> (tube) + <strong>ovary</strong> (base, contains ovules). The ovule houses the megaspore that develops into the egg; necessary whorl. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Explain plant tissue culture (cloning/micropropagation). Define explant, describe callus formation, explain how a plantlet develops. State two advantages. <span class="badge">5 marks</span></div>
+    <p><strong>Tissue culture</strong> (also called micropropagation or cloning) is the process of growing a single plant cell or small piece of tissue on an artificial nutrient medium under aseptic (microbe-free) conditions to produce a genetically identical copy (clone) of the parent plant. <span class="badge">1 mark</span></p>
+    <div class="flowchart">Parent plant
+      |
+      v
+[Explant taken] -- small cell or tissue piece from parent
+      |
+      v
+[Placed on nutrient medium under aseptic conditions]
+      |
+      v
+[Callus forms] -- undifferentiated mass of cells
+      |
+      v
+[Treated with growth substances]
+      |
+      v
+[Plantlet develops -- shoots + roots]
+      |
+      v
+[Transferred to natural soil]</div>
+    <ul>
+      <li>The <strong>explant</strong> is the first cell or tiny piece of parent plant tissue used to begin the culture. <span class="badge">1 mark</span></li>
+      <li>On the nutrient medium, the explant grows into a <strong>callus</strong> (undifferentiated mass). The callus is then treated with different substances to stimulate it to produce shoots and later roots, forming a <strong>plantlet</strong>. <span class="badge">1 mark</span></li>
+      <li>The plantlet is carefully moved to natural soil to continue growing. <span class="badge">1 mark</span></li>
+    </ul>
+    <p><strong>Two advantages:</strong> (1) preserves desirable plant traits exactly (taste, disease-resistance, yield); (2) produces large numbers of genetically identical plants rapidly from a single parent. <span class="badge">1 mark</span></p>
+  </div>
+
+</div><!-- end page 4 -->
+
+
+<!-- ====== PAGE 5: SECTION C (3iii and 3iv) ====== -->
+<div class="page">
+
+  <div class="answer-box">
+    <div class="q-label">3(iii) Explain double fertilization in angiosperms. Name both fusion events, identify ploidy of each product, and explain why it is called "double" fertilization. <span class="badge">5 marks</span></div>
+    <p>Double fertilization is unique to angiosperms and involves two separate fusion events using two sperm nuclei delivered by one male gametophyte. <span class="badge">1 mark</span></p>
+    <div class="flowchart">Pollen grain germinates on stigma
+      |
+      v
+Pollen tube grows down the style
+      |
+      v
+Pollen tube penetrates the ovule
+      |
+      +--> Sperm nucleus 1 (1N) + Egg cell (1N)
+      |          --> Zygote (2N / diploid)
+      |               --> Embryo
+      |
+      +--> Sperm nucleus 2 (1N) + Two polar nuclei (1N + 1N)
+                 --> Endosperm nucleus (3N / triploid)
+                      --> Endosperm tissue (food store)</div>
+    <ul>
+      <li><strong>First fusion:</strong> one sperm nucleus (1N) fuses with the <strong>egg cell</strong> (1N) to form the <strong>zygote</strong> (2N / diploid). The zygote develops into the embryo. <span class="badge">1 mark</span></li>
+      <li><strong>Second fusion:</strong> the other sperm nucleus (1N) fuses with the two <strong>polar nuclei</strong> (1N + 1N) to form the <strong>triploid endosperm nucleus</strong> (3N). This develops into the endosperm, which stores nutrients for the embryo. <span class="badge">2 marks</span></li>
+      <li>It is called <strong>"double" fertilization</strong> because one male gametophyte contributes two sperm nuclei, and both fuse with different nuclei in the embryo sac in two separate, simultaneous fertilization events. <span class="badge">1 mark</span></li>
+    </ul>
+    <span class="or-label">OR</span>
+    <div class="q-label">Describe the development of the female gametophyte (embryo sac). How does the functional megaspore divide? Name all structures in a mature embryo sac. <span class="badge">5 marks</span></div>
+    <p>The female gametophyte develops inside the <strong>ovule</strong>. The ovule contains a <strong>macrospore mother cell</strong> (2N) that undergoes meiosis to produce four megaspores; three degenerate and one becomes the <strong>functional megaspore</strong>. <span class="badge">1 mark</span></p>
+    <p>The nucleus of the functional megaspore divides by mitosis <strong>three times</strong> to produce eight nuclei. <span class="badge">1 mark</span></p>
+    <ul>
+      <li>Three nuclei migrate to one end of the ovule: the central one becomes the <strong>egg cell</strong> (1N) and the two on either side are called <strong>synergids</strong> (1N each). <span class="badge">1 mark</span></li>
+      <li>Three other nuclei migrate to the opposite end and act as <strong>antipodal cells</strong> (1N each). They help control the fertilization process. <span class="badge">1 mark</span></li>
+      <li>The remaining two nuclei rest in the center; they are called <strong>polar nuclei</strong> (1N each). In some cases they fuse before fertilization to form the diploid <strong>secondary nucleus</strong>. <span class="badge">1 mark</span></li>
+    </ul>
+    <p>This whole structure (megaspore body + egg + two synergids + three antipodals + two polar nuclei or secondary nucleus) is the <strong>female gametophyte or embryo sac</strong>.</p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(iv) Define seed germination. Describe the angiosperm seed structure. Explain three external conditions and distinguish epigeal from hypogeal germination with one example each. <span class="badge">5 marks</span></div>
+    <p><strong>Seed germination</strong> is the process by which a seed absorbs water, swells, breaks open the seed coat, and the embryo starts growing into a seedling under suitable conditions. <span class="badge">1 mark</span></p>
+    <p><strong>Structure of an angiosperm seed</strong> (three parts):</p>
+    <ul>
+      <li><strong>Embryo:</strong> an immature plant consisting of the radicle (future root), plumule (future shoot), epicotyl, hypocotyl, and one or two cotyledons. <span class="badge">0.5 mark</span></li>
+      <li><strong>Endosperm:</strong> nutrient storage tissue (starch, oil, protein) that feeds the growing embryo and seedling. <span class="badge">0.5 mark</span></li>
+      <li><strong>Seed coat (testa):</strong> protective outer layer; has a hilum (point of attachment) and micropyle (water entry point). <span class="badge">0.5 mark</span></li>
+    </ul>
+    <p><strong>Three external conditions for germination:</strong></p>
+    <ul>
+      <li><strong>Water:</strong> seeds absorb water, swell, break the seed coat, and activate enzymes to digest stored food for the embryo. <span class="badge">0.5 mark</span></li>
+      <li><strong>Oxygen:</strong> embryo cells require aerobic respiration for energy to fuel growth. <span class="badge">0.25 mark</span></li>
+      <li><strong>Temperature (25&ndash;30&deg;C optimal):</strong> controls the rate of enzyme activity; too cold slows germination, too hot denatures enzymes. <span class="badge">0.25 mark</span></li>
+    </ul>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Epigeal Germination</th><th>Hypogeal Germination</th></tr>
+      <tr><td>Elongating part</td><td>Hypocotyl forms a hook and elongates</td><td>Epicotyl forms a hook and elongates</td></tr>
+      <tr><td>Cotyledon position</td><td>Cotyledons pulled above the soil surface</td><td>Cotyledons remain underground</td></tr>
+      <tr><td>Example</td><td>Bean, cotton, papaya</td><td>Pea, maize, coconut</td></tr>
+    </table>
+    <p><span class="badge">1 mark</span> for the comparison table (both types correctly described with examples).</p>
+    <span class="or-label">OR</span>
+    <div class="q-label">Compare insect-pollinated and wind-pollinated flowers using a table covering six features. Explain why each adaptation is necessary. <span class="badge">5 marks</span></div>
+    <table class="comp-table">
+      <tr><th>Feature</th><th>Insect-pollinated Flowers</th><th>Wind-pollinated Flowers</th></tr>
+      <tr><td>Size</td><td>Generally large</td><td>Generally small</td></tr>
+      <tr><td>Colour</td><td>Petals brightly coloured</td><td>Petals green or dull</td></tr>
+      <tr><td>Nectar</td><td>Produce nectar to reward insects</td><td>Do not produce nectar</td></tr>
+      <tr><td>Floral arrangement</td><td>Flowers face upward</td><td>Flowers hang down for easy shaking</td></tr>
+      <tr><td>Pollen grains</td><td>Small number; heavy and sticky (clings to insect body)</td><td>Large number; light with smooth surface (carried by wind)</td></tr>
+      <tr><td>Stigma</td><td>Pinhead-shaped with no branches</td><td>Feathery/branched to trap airborne pollen</td></tr>
+    </table>
+    <p><span class="badge">0.5 mark</span> per feature row correctly contrasted (6 rows = 3 marks).</p>
+    <p><strong>Why adaptations are necessary:</strong></p>
+    <ul>
+      <li>Insect flowers need bright petals, nectar, and sticky pollen to attract insects and ensure pollen adheres to the insect body for transfer. <span class="badge">1 mark</span></li>
+      <li>Wind flowers need light pollen (to travel far), large quantities (many will be lost), and feathery stigmas (to intercept airborne grains) because wind dispersal is random and inefficient. <span class="badge">1 mark</span></li>
+    </ul>
+  </div>
+
+</div><!-- end page 5 -->
+
+</body>
+</html>

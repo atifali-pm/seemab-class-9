@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chemistry Exam — Chapter 14 Hydrocarbons</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", serif; font-size: 12.5pt; line-height: 1.25; color: #000; background: #fff; }
+  .page { width: 100%; padding: 6mm 9mm 0 9mm; }
+
+  /* Header */
+  .header-box { border: 2.5px solid #000; text-align: center; padding: 5px 10px; margin-bottom: 4px; page-break-after: avoid; }
+  .header-box .board-name { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+  .header-box .exam-name { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject-line { font-size: 15pt; margin-top: 1px; }
+  .header-box .syllabus-line { font-size: 13pt; font-weight: bold; margin-top: 2px; }
+
+  /* Info row */
+  .info-row { display: flex; justify-content: space-between; align-items: center; font-size: 14pt; font-weight: bold; border: 1.5px solid #000; border-top: none; padding: 3px 12px; margin-bottom: 4px; }
+
+  /* Instructions */
+  .instructions-box { border: 1.5px solid #000; padding: 4px 10px; margin-bottom: 5px; font-size: 11.5pt; }
+  .instructions-box .inst-title { font-weight: bold; font-size: 12pt; margin-bottom: 2px; }
+  .instructions-box ol { margin-left: 18px; }
+  .instructions-box li { margin-bottom: 1px; }
+
+  /* Section bars */
+  .section-bar { background: #DAA520; color: #fff; font-size: 14pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 3px; page-break-after: avoid; }
+  .section-bar .sub-line { font-size: 10.5pt; font-weight: normal; margin-top: 1px; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 14pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 3px; page-break-after: avoid; }
+
+  /* MCQ table */
+  .mcq-table { width: 100%; border-collapse: collapse; margin-bottom: 5px; font-size: 12pt; }
+  .mcq-table th { background: #f0f0f0; border: 1px solid #888; padding: 2px 4px; text-align: center; font-size: 11.5pt; }
+  .mcq-table td { border: 1px solid #888; padding: 2px 3px; vertical-align: middle; }
+  .mcq-table td.q-num { text-align: center; width: 4%; }
+  .mcq-table td.q-text { width: 40%; }
+  .mcq-table td.q-opt { width: 11%; text-align: center; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; border: 1.5px solid #000; border-radius: 50%; font-size: 9pt; line-height: 13px; text-align: center; margin: 0 1px; }
+
+  /* B table */
+  .bc-table { width: 100%; border-collapse: collapse; font-size: 11.5pt; margin-bottom: 4px; }
+  .bc-table th { background: #f0f0f0; border: 1px solid #888; padding: 2px 4px; text-align: center; font-size: 11pt; }
+  .bc-table td { border: 1px solid #888; padding: 2px 5px; vertical-align: top; line-height: 1.28; }
+  .bc-table tr { page-break-inside: avoid; }
+  .bc-table td.part-col { width: 5%; text-align: center; font-weight: bold; vertical-align: middle; }
+  .bc-table td.q-col { width: 37%; }
+  .bc-table td.m-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+  .bc-table td.or-col { width: 5%; text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 13pt; }
+  .bc-table td.orq-col { width: 37%; }
+  .bc-table td.orm-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+
+  /* Section C table — smaller font and tighter padding to fit 4 rows on page 2 */
+  .c-table { width: 100%; border-collapse: collapse; font-size: 10.5pt; margin-bottom: 4px; }
+  .c-table th { background: #f0f0f0; border: 1px solid #888; padding: 2px 4px; text-align: center; font-size: 10.5pt; }
+  .c-table td { border: 1px solid #888; padding: 2px 4px; vertical-align: top; line-height: 1.22; }
+  .c-table tr { page-break-inside: avoid; }
+  .c-table td.part-col { width: 5%; text-align: center; font-weight: bold; vertical-align: middle; font-size: 10.5pt; }
+  .c-table td.q-col { width: 37%; }
+  .c-table td.m-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+  .c-table td.or-col { width: 5%; text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 12pt; }
+  .c-table td.orq-col { width: 37%; }
+  .c-table td.orm-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+
+  /* Footer */
+  .footer { margin-top: 6px; padding-top: 4px; border-top: 1px solid #555; font-size: 11pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .sig-line { border-bottom: 1px solid #000; width: 200px; display: inline-block; margin-left: 6px; }
+  .footer-center { text-align: center; font-size: 10.5pt; margin-top: 2px; }
+  .end-marker { text-align: center; font-size: 11.5pt; font-weight: bold; margin-top: 4px; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <div class="board-name">Board of Intermediate and Secondary Education</div>
+    <div class="exam-name">Annual Examination 2026</div>
+    <div class="subject-line">Chemistry — SSC-I (9th Grade)</div>
+    <div class="syllabus-line">Syllabus: Chapter 14 — Hydrocarbons</div>
+  </div>
+
+  <!-- INFO ROW -->
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time Allowed: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your name, roll number and section clearly on the answer sheet.</li>
+      <li>Section A is compulsory. Encircle the correct option on the question paper itself.</li>
+      <li>In Section B, attempt <strong>all 11</strong> questions. For each question, attempt either the main question <strong>OR</strong> its alternative.</li>
+      <li>In Section C, attempt <strong>all 4</strong> questions. For each question, attempt either the main question <strong>OR</strong> its alternative.</li>
+      <li>Use black or blue ink only. Pencil is not allowed except for diagrams.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th style="width:4%">#</th>
+        <th style="width:40%">Question</th>
+        <th style="width:11%">A</th>
+        <th style="width:11%">B</th>
+        <th style="width:11%">C</th>
+        <th style="width:11%">D</th>
+        <th style="width:12%">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="q-num">1</td>
+        <td class="q-text">Alkanes are called <em>saturated</em> hydrocarbons because they contain only:</td>
+        <td class="q-opt">C=C double bonds</td>
+        <td class="q-opt">C&#8801;C triple bonds</td>
+        <td class="q-opt">C&mdash;C single bonds</td>
+        <td class="q-opt">C=O bonds</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">2</td>
+        <td class="q-text">The general formula of alkanes is:</td>
+        <td class="q-opt">C<sub>n</sub>H<sub>2n</sub></td>
+        <td class="q-opt">C<sub>n</sub>H<sub>2n&minus;2</sub></td>
+        <td class="q-opt">C<sub>n</sub>H<sub>2n+2</sub></td>
+        <td class="q-opt">C<sub>n</sub>H<sub>n</sub></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">3</td>
+        <td class="q-text">The simplest possible alkane molecule is:</td>
+        <td class="q-opt">Ethane</td>
+        <td class="q-opt">Propane</td>
+        <td class="q-opt">Butane</td>
+        <td class="q-opt">Methane</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">4</td>
+        <td class="q-text">Addition of hydrogen across a C=C double bond is called:</td>
+        <td class="q-opt">Halogenation</td>
+        <td class="q-opt">Hydrogenation</td>
+        <td class="q-opt">Combustion</td>
+        <td class="q-opt">Cracking</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">5</td>
+        <td class="q-text">Hydrogenation of alkenes and alkynes requires a catalyst. Which catalyst is used at 200&ndash;300&deg;C?</td>
+        <td class="q-opt">Iron (Fe)</td>
+        <td class="q-opt">Copper (Cu)</td>
+        <td class="q-opt">Nickel (Ni)</td>
+        <td class="q-opt">Platinum (Pt)</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">6</td>
+        <td class="q-text">In the reduction of alkyl halides, the reagent used to produce nascent hydrogen is:</td>
+        <td class="q-opt">Zn/HCl(aq)</td>
+        <td class="q-opt">Ni, high pressure</td>
+        <td class="q-opt">Sunlight</td>
+        <td class="q-opt">Pt/Pd at room temp</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">7</td>
+        <td class="q-text">Breaking a large hydrocarbon into smaller ones by heating at 450&ndash;750&deg;C and high pressure is called:</td>
+        <td class="q-opt">Combustion</td>
+        <td class="q-opt">Hydrogenation</td>
+        <td class="q-opt">Cracking</td>
+        <td class="q-opt">Halogenation</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">8</td>
+        <td class="q-text">When decane (C<sub>10</sub>H<sub>22</sub>) undergoes cracking, the products are:</td>
+        <td class="q-opt">Octane + Ethene</td>
+        <td class="q-opt">Hexane + Butane</td>
+        <td class="q-opt">Propane + Heptane</td>
+        <td class="q-opt">Methane + Nonane</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">9</td>
+        <td class="q-text">Alkanes react with halogens in sunlight via <em>substitution</em>. This means one hydrogen atom is:</td>
+        <td class="q-opt">Added alongside existing H</td>
+        <td class="q-opt">Replaced by a halogen atom</td>
+        <td class="q-opt">Removed without replacement</td>
+        <td class="q-opt">Oxidized to water</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">10</td>
+        <td class="q-text">CH<sub>4</sub> + Cl<sub>2</sub> in diffused sunlight gives:</td>
+        <td class="q-opt">CH<sub>3</sub>Cl + HCl</td>
+        <td class="q-opt">CH<sub>2</sub>Cl<sub>2</sub> + H<sub>2</sub></td>
+        <td class="q-opt">CCl<sub>4</sub> + 2H<sub>2</sub></td>
+        <td class="q-opt">CHCl<sub>3</sub> + HCl</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">11</td>
+        <td class="q-text">Complete combustion of methane produces:</td>
+        <td class="q-opt">CO + H<sub>2</sub>O</td>
+        <td class="q-opt">CO<sub>2</sub> + H<sub>2</sub>O + heat</td>
+        <td class="q-opt">CO<sub>2</sub> + C + H<sub>2</sub>O</td>
+        <td class="q-opt">C + HCl</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">12</td>
+        <td class="q-text">Alkanes are generally <em>unreactive</em> towards ionic compounds because their molecules are:</td>
+        <td class="q-opt">polar</td>
+        <td class="q-opt">non-polar</td>
+        <td class="q-opt">ionic</td>
+        <td class="q-opt">metallic</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION B -->
+  <div class="section-bar">
+    SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)
+    <div class="sub-line">Attempt all 11 questions. For each pair, attempt either the main question OR its alternative.</div>
+  </div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">OR Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">2(i)</td>
+        <td class="q-col">Define hydrocarbons. How are they classified according to the type of bond between carbon atoms? Give one example of each class.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Define alkanes. State their general formula. Give the molecular formulae and names of the first two members of the alkane series.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ii)</td>
+        <td class="q-col">Draw the structural formula of methane (CH<sub>4</sub>) and ethane (C<sub>2</sub>H<sub>6</sub>). What type of bond is present in each?</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Draw the structural formula of an alkane containing five carbon atoms. Write its molecular formula.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iii)</td>
+        <td class="q-col">What is hydrogenation? Write the equation for the hydrogenation of ethene to produce ethane. State the catalyst and temperature used.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Write the equation for the hydrogenation of ethyne (CH&#8801;CH) to produce ethene. Why does an alkyne require two molecules of hydrogen for complete reduction to an alkane?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iv)</td>
+        <td class="q-col">Describe the reduction of alkyl halides to prepare an alkane. Write the equation for the reduction of chloromethane (CH<sub>3</sub>Cl) and state what nascent hydrogen is.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Complete the following reaction and name the product:<br>CH<sub>3</sub>&mdash;CH<sub>2</sub>&mdash;Cl + 2[H] &rarr; ?<br>State the reagent providing 2[H] and name the type of reaction.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(v)</td>
+        <td class="q-col">What is cracking? Write the equation showing cracking of decane (C<sub>10</sub>H<sub>22</sub>). Name the two products and state the conditions required.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Explain why cracking is an important industrial process. What types of products are formed during thermal cracking?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vi)</td>
+        <td class="q-col">Describe two physical properties of alkanes: (a) polarity and solubility in water; (b) states at room temperature based on carbon chain length.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Hexane is used as a solvent to extract vegetable oils. Explain why alkanes are suitable for this purpose based on their chemical and physical properties.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vii)</td>
+        <td class="q-col">Define substitution reaction. Write the equation for the reaction of methane with chlorine in diffused sunlight. Name the organic product.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">What happens when methane reacts with chlorine in <em>direct</em> sunlight instead of diffused sunlight? Write the equation and describe the difference in products.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(viii)</td>
+        <td class="q-col">Why is the reaction of alkanes with halogens called a <em>photochemical</em> reaction? What does this term mean?</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Alkanes do not undergo addition reactions but undergo substitution reactions. Explain why, linking your answer to the type of bonding in alkanes.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ix)</td>
+        <td class="q-col">Define combustion. Write the equation for the complete combustion of methane. Name all products and state the type of flame produced.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Write the equation for the incomplete combustion of methane (3CH<sub>4</sub> + 4O<sub>2</sub>). Name all three products and explain when incomplete combustion occurs.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(x)</td>
+        <td class="q-col">Give three reasons why lighter alkanes are widely used as fuels.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Methane is the main component of natural gas. State three properties of methane that make it useful as a domestic fuel.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(xi)</td>
+        <td class="q-col">Write the chemical equations for the preparation of propane (C<sub>3</sub>H<sub>8</sub>) by: (a) hydrogenation of propene; (b) reduction of 1-chloropropane (CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>Cl).</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Using equations, show how ethane (C<sub>2</sub>H<sub>6</sub>) can be prepared by (a) cracking and (b) hydrogenation. Include all conditions and reagents.</td>
+        <td class="orm-col">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION C -->
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks) &mdash; Attempt all 4</div>
+
+  <table class="c-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">OR Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">3(i)</td>
+        <td class="q-col">
+          (a) Define alkanes. State their general formula and explain why they are called saturated hydrocarbons. Draw the structural formulas of methane and ethane. [3]<br>
+          (b) Name the TWO chemical reactions alkanes undergo and state the condition required for each. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Describe the three methods of preparing alkanes: hydrogenation, reduction of alkyl halides, cracking. For each, state reagents and conditions. [3]<br>
+          (b) Write one balanced equation illustrating each method. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(ii)</td>
+        <td class="q-col">
+          (a) Explain hydrogenation. Write balanced equations for: (i) ethyne to ethene; (ii) ethene to ethane. State catalyst and temperature for both. [3]<br>
+          (b) Explain reduction of alkyl halides. Write the equation for reduction of chloromethane. What is nascent hydrogen and how is it produced from Zn/HCl(aq)? [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Describe thermal cracking. State the temperature and pressure. Write the equation for cracking of decane into octane and ethene. [3]<br>
+          (b) State two industrial reasons why cracking is important. What mixture of compounds does it typically produce? [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iii)</td>
+        <td class="q-col">
+          (a) Describe halogenation of alkanes as a photochemical substitution. Define substitution reaction. Write the equation for mono-substitution of methane with Cl<sub>2</sub> in diffused sunlight. [3]<br>
+          (b) Write the equation for the reaction of methane with Cl<sub>2</sub> in direct sunlight. Explain the difference from mono-substitution. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Describe the physical properties of alkanes: polarity, density vs water, solubility in water, and states of matter based on chain length. [3]<br>
+          (b) Explain why alkanes are useful solvents. Name one specific solvent and state what it is used to extract. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iv)</td>
+        <td class="q-col">
+          (a) Define combustion. Write balanced equations for complete and incomplete combustion of methane, naming all products in each case. [3]<br>
+          (b) Give three reasons why lighter alkanes make good fuels. Write the equation for combustion of propane (C<sub>3</sub>H<sub>8</sub>). [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Write balanced equations for the preparation of propane (C<sub>3</sub>H<sub>8</sub>) by: (i) hydrogenation of propene; (ii) reduction of 1-chloropropane; (iii) cracking of a larger alkane of your choice. Include all conditions. [3]<br>
+          (b) Describe photochemical halogenation of ethane with Cl<sub>2</sub>. Write the equation for mono-substitution and name the product. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="sig-row">
+      <span>Invigilator's Signature: <span class="sig-line">&nbsp;</span></span>
+      <span>Candidate's Signature: <span class="sig-line">&nbsp;</span></span>
+    </div>
+    <div class="footer-center"><strong>Chapters Covered:</strong> Chapter 14 — Hydrocarbons (pp. 193&ndash;196)</div>
+    <div class="end-marker">&mdash; End of Question Paper &mdash;</div>
+  </div>
+
+</div>
+</body>
+</html>

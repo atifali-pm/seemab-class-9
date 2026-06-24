@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chemistry Cumulative Exam — Chapters 1 to 9</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", serif; font-size: 13pt; line-height: 1.3; color: #000; background: #fff; }
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; }
+
+  /* Header */
+  .header-box { border: 2.5px solid #000; text-align: center; padding: 6px 10px 6px 10px; margin-bottom: 5px; page-break-after: avoid; }
+  .header-box .board-name { font-size: 16pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
+  .header-box .exam-name { font-size: 14pt; margin-top: 2px; }
+  .header-box .subject-line { font-size: 14pt; margin-top: 1px; }
+  .header-box .syllabus-line { font-size: 11pt; font-weight: bold; margin-top: 4px; line-height: 1.35; }
+
+  /* Info row */
+  .info-row { display: flex; justify-content: space-between; align-items: center; font-size: 13pt; font-weight: bold; border: 1.5px solid #000; border-top: none; padding: 4px 12px; margin-bottom: 5px; }
+
+  /* Instructions */
+  .instructions-box { border: 1.5px solid #000; padding: 5px 10px; margin-bottom: 6px; font-size: 11.5pt; }
+  .instructions-box .inst-title { font-weight: bold; font-size: 12.5pt; margin-bottom: 3px; }
+  .instructions-box ol { margin-left: 18px; }
+  .instructions-box li { margin-bottom: 2px; }
+
+  /* Section bars */
+  .section-bar { background: #DAA520; color: #fff; font-size: 14.5pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 4px; page-break-after: avoid; }
+  .section-bar .sub-line { font-size: 11pt; font-weight: normal; margin-top: 1px; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 14.5pt; font-weight: bold; text-align: center; padding: 3px 0; margin-bottom: 4px; page-break-after: avoid; }
+
+  /* MCQ table */
+  .mcq-table { width: 100%; border-collapse: collapse; margin-bottom: 6px; font-size: 12.5pt; }
+  .mcq-table th { background: #f0f0f0; border: 1px solid #888; padding: 3px 4px; text-align: center; font-size: 11.5pt; }
+  .mcq-table td { border: 1px solid #888; padding: 3px 4px; vertical-align: middle; }
+  .mcq-table td.q-num { text-align: center; width: 4%; }
+  .mcq-table td.q-text { width: 40%; }
+  .mcq-table td.q-opt { width: 11%; text-align: center; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; border: 1.5px solid #000; border-radius: 50%; font-size: 9pt; line-height: 13px; text-align: center; margin: 0 1px; }
+
+  /* B/C table */
+  .bc-table { width: 100%; border-collapse: collapse; font-size: 12.5pt; margin-bottom: 6px; }
+  .bc-table th { background: #f0f0f0; border: 1px solid #888; padding: 3px 5px; text-align: center; font-size: 11.5pt; }
+  .bc-table td { border: 1px solid #888; padding: 4px 6px; vertical-align: top; line-height: 1.35; }
+  .bc-table td.part-col { width: 5%; text-align: center; font-weight: bold; vertical-align: middle; }
+  .bc-table td.q-col { width: 37%; }
+  .bc-table td.m-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+  .bc-table td.or-col { width: 5%; text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 13pt; }
+  .bc-table td.orq-col { width: 37%; }
+  .bc-table td.orm-col { width: 7%; text-align: center; vertical-align: middle; font-weight: bold; }
+  tr { page-break-inside: avoid; }
+
+  /* Footer */
+  .footer { margin-top: 10px; padding-top: 6px; border-top: 1px solid #555; font-size: 11pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+  .sig-line { border-bottom: 1px solid #000; width: 180px; display: inline-block; margin-left: 6px; }
+  .footer-center { text-align: center; font-size: 10.5pt; margin-top: 4px; line-height: 1.35; }
+  .end-marker { text-align: center; font-size: 12pt; font-weight: bold; margin-top: 8px; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <div class="board-name">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-name">Annual Examination 2026</div>
+    <div class="subject-line">Chemistry &mdash; Class IX</div>
+    <div class="syllabus-line">Syllabus: Ch 1 &mdash; Nature of Chemistry | Ch 2 &mdash; Matter | Ch 3 &mdash; Atomic Structure | Ch 4 &mdash; Periodic Table | Ch 5 &mdash; Chemical Bonding | Ch 6 &mdash; Stoichiometry | Ch 7 &mdash; Electrochemistry | Ch 8 &mdash; Energetics | Ch 9 &mdash; Chemical Equilibrium</div>
+  </div>
+
+  <!-- INFO ROW -->
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time Allowed: 2 Hours 30 Minutes</span>
+    <span>Version: 1</span>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>This paper has three sections: Section A (MCQs), Section B (Short Questions), and Section C (Long Questions).</li>
+      <li>Attempt Section A on the question paper by filling the bubble next to the correct option.</li>
+      <li>In Section B, attempt any 11 questions. For each, choose either the main question <strong>OR</strong> its alternative.</li>
+      <li>In Section C, attempt all 4 long questions. For each, choose either the main question <strong>OR</strong> its alternative.</li>
+      <li>Use black or blue ink only. Atomic masses: H=1, C=12, N=14, O=16, Na=23, S=32, Cl=35.5, K=39, Ca=40, Fe=56, Cu=63.5. N<sub>A</sub> = 6.022&times;10<sup>23</sup>.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th style="width:4%">#</th>
+        <th style="width:40%">Question</th>
+        <th style="width:11%">A</th>
+        <th style="width:11%">B</th>
+        <th style="width:11%">C</th>
+        <th style="width:11%">D</th>
+        <th style="width:12%">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="q-num">1</td>
+        <td class="q-text">The branch of chemistry that deals with the study of compounds of carbon is:</td>
+        <td class="q-opt">Physical chemistry</td>
+        <td class="q-opt">Inorganic chemistry</td>
+        <td class="q-opt">Organic chemistry</td>
+        <td class="q-opt">Analytical chemistry</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">2</td>
+        <td class="q-text">The direct change of a substance from the solid state to the gaseous state is called:</td>
+        <td class="q-opt">Sublimation</td>
+        <td class="q-opt">Condensation</td>
+        <td class="q-opt">Fusion</td>
+        <td class="q-opt">Deposition</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">3</td>
+        <td class="q-text">Isotopes of an element have the:</td>
+        <td class="q-opt">Same neutrons, different protons</td>
+        <td class="q-opt">Same protons, different neutrons</td>
+        <td class="q-opt">Same electrons, different protons</td>
+        <td class="q-opt">Same mass number, different atomic number</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">4</td>
+        <td class="q-text">The maximum number of electrons that the third shell (M, n=3) can hold is:</td>
+        <td class="q-opt">8</td>
+        <td class="q-opt">32</td>
+        <td class="q-opt">2</td>
+        <td class="q-opt">18</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">5</td>
+        <td class="q-text">Moving from left to right across a period, the atomic radius generally:</td>
+        <td class="q-opt">Decreases</td>
+        <td class="q-opt">Increases</td>
+        <td class="q-opt">Stays constant</td>
+        <td class="q-opt">First decreases then increases</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">6</td>
+        <td class="q-text">A bond formed by the complete transfer of electrons from a metal to a non-metal is a:</td>
+        <td class="q-opt">Covalent bond</td>
+        <td class="q-opt">Coordinate covalent bond</td>
+        <td class="q-opt">Ionic bond</td>
+        <td class="q-opt">Metallic bond</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">7</td>
+        <td class="q-text">One mole of any substance contains the following number of representative particles:</td>
+        <td class="q-opt">6.022&times;10<sup>22</sup></td>
+        <td class="q-opt">6.022&times;10<sup>24</sup></td>
+        <td class="q-opt">6.022&times;10<sup>20</sup></td>
+        <td class="q-opt">6.022&times;10<sup>23</sup></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">8</td>
+        <td class="q-text">The empirical formula of benzene (C<sub>6</sub>H<sub>6</sub>) is:</td>
+        <td class="q-opt">CH</td>
+        <td class="q-opt">C<sub>6</sub>H<sub>6</sub></td>
+        <td class="q-opt">CH<sub>2</sub></td>
+        <td class="q-opt">C<sub>2</sub>H<sub>2</sub></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">9</td>
+        <td class="q-text">In terms of electrons, oxidation is defined as the:</td>
+        <td class="q-opt">Gain of electrons</td>
+        <td class="q-opt">Loss of electrons</td>
+        <td class="q-opt">Gain of protons</td>
+        <td class="q-opt">Loss of protons</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">10</td>
+        <td class="q-text">For an exothermic reaction, the enthalpy change (&Delta;H) is:</td>
+        <td class="q-opt">Negative</td>
+        <td class="q-opt">Positive</td>
+        <td class="q-opt">Zero</td>
+        <td class="q-opt">Always equal to one</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">11</td>
+        <td class="q-text">At dynamic equilibrium, the rate of the forward reaction is ____ the rate of the reverse reaction:</td>
+        <td class="q-opt">Greater than</td>
+        <td class="q-opt">Equal to</td>
+        <td class="q-opt">Less than</td>
+        <td class="q-opt">Zero compared to</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="q-num">12</td>
+        <td class="q-text">The rusting of iron in the presence of air and moisture is an example of:</td>
+        <td class="q-opt">Reduction</td>
+        <td class="q-opt">Neutralization</td>
+        <td class="q-opt">Sublimation</td>
+        <td class="q-opt">Corrosion</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION B -->
+  <div class="section-bar">
+    SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)
+    <div class="sub-line">Attempt 11 questions. For each pair, attempt either the main question OR its alternative.</div>
+  </div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">Alternative Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">2(i)</td>
+        <td class="q-col">Define chemistry. Name THREE branches of chemistry and state what each one studies.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Differentiate between science, technology, and engineering with one example of each.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ii)</td>
+        <td class="q-col">Differentiate between an element, a compound, and a mixture, giving one example of each.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Differentiate between a solution, a suspension, and a colloid, giving one example of each.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iii)</td>
+        <td class="q-col">Define atomic number and mass number. Calculate the number of protons, neutrons, and electrons in <sup>35</sup><sub>17</sub>Cl.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Define isotopes. Name the three isotopes of hydrogen and state the composition of each nucleus.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(iv)</td>
+        <td class="q-col">Write the electronic configuration of (a) sodium (Z=11) and (b) chlorine (Z=17), and state the number of valence electrons of each.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">State the modern periodic law. How are the elements arranged into groups and periods in the modern periodic table?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(v)</td>
+        <td class="q-col">Define ionization energy. State how it varies (a) down a group and (b) across a period.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">State THREE differences between metals and non-metals.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vi)</td>
+        <td class="q-col">Define ionic bond and covalent bond. Give one example of each.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Using electron distribution, explain the formation of magnesium chloride (MgCl<sub>2</sub>) from its atoms.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(vii)</td>
+        <td class="q-col">Calculate the molecular mass of sulphuric acid (H<sub>2</sub>SO<sub>4</sub>). (H=1, S=32, O=16)</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Calculate the number of moles present in 36 g of water (H<sub>2</sub>O). (H=1, O=16)</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(viii)</td>
+        <td class="q-col">Balance the following chemical equation:<br>Fe<sub>(s)</sub> + O<sub>2(g)</sub> &#8594; Fe<sub>2</sub>O<sub>3(s)</sub></td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Define empirical formula and molecular formula. Give one example of each.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(ix)</td>
+        <td class="q-col">Define oxidation and reduction in terms of loss and gain of electrons. Give one example of each.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Calculate the oxidation number of sulphur (S) in sulphuric acid (H<sub>2</sub>SO<sub>4</sub>). Show your working.</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(x)</td>
+        <td class="q-col">Define exothermic and endothermic reactions, giving one example of each.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">Define activation energy. How does a catalyst affect the activation energy and the rate of a reaction?</td>
+        <td class="orm-col">3</td>
+      </tr>
+      <tr>
+        <td class="part-col">2(xi)</td>
+        <td class="q-col">Define a reversible reaction and dynamic equilibrium. Give one example of a reversible reaction.</td>
+        <td class="m-col">3</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">State THREE characteristics of a chemical system that has reached dynamic equilibrium.</td>
+        <td class="orm-col">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION C -->
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks) &mdash; Attempt all 4</div>
+
+  <table class="bc-table">
+    <thead>
+      <tr>
+        <th class="part-col">Part</th>
+        <th class="q-col">Question</th>
+        <th class="m-col">Marks</th>
+        <th class="or-col">OR</th>
+        <th class="orq-col">Alternative Question</th>
+        <th class="orm-col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-col">3(i)</td>
+        <td class="q-col">
+          (a) State the main postulates of Bohr's atomic model. [3]<br>
+          (b) Write the electronic configuration of potassium (Z=19) and calcium (Z=20), and identify the valence electrons of each. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Compare the three subatomic particles (proton, neutron, electron) in terms of charge, relative mass, and location in the atom. [3]<br>
+          (b) Define atomic number, mass number, and isotope, with one example each. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(ii)</td>
+        <td class="q-col">
+          (a) Explain the following periodic trends across a period, with reasons: (i) atomic size (ii) ionization energy (iii) electronegativity. [3]<br>
+          (b) Differentiate between electropositive and electronegative elements, with one example of each. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Using dot-and-cross diagrams, explain the formation of an ionic bond in NaCl and a covalent bond in Cl<sub>2</sub>. [3]<br>
+          (b) State FOUR differences between ionic and covalent compounds. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iii)</td>
+        <td class="q-col">
+          (a) Define mole and Avogadro's number. [2]<br>
+          (b) Calculate: (i) the number of moles in 49 g of H<sub>2</sub>SO<sub>4</sub> &nbsp; (ii) the number of molecules in 0.5 mol of CO<sub>2</sub> &nbsp; (iii) the mass of 2 moles of NaOH. (H=1, S=32, O=16, C=12, Na=23) [3]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Balance the following equations: (i) C<sub>3</sub>H<sub>8</sub> + O<sub>2</sub> &#8594; CO<sub>2</sub> + H<sub>2</sub>O &nbsp; (ii) Al + HCl &#8594; AlCl<sub>3</sub> + H<sub>2</sub> &nbsp; (iii) KClO<sub>3</sub> &#8594; KCl + O<sub>2</sub>. [3]<br>
+          (b) Calculate the molecular mass of glucose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>) and the formula mass of calcium carbonate (CaCO<sub>3</sub>). (C=12, H=1, O=16, Ca=40) [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+      <tr>
+        <td class="part-col">3(iv)</td>
+        <td class="q-col">
+          (a) Define oxidation and reduction in terms of electron transfer. In the reaction Zn + CuSO<sub>4</sub> &#8594; ZnSO<sub>4</sub> + Cu, identify the oxidizing agent and the reducing agent, with reasons. [3]<br>
+          (b) What is corrosion? State TWO methods used to prevent the rusting of iron. [2]
+        </td>
+        <td class="m-col">5</td>
+        <td class="or-col">OR</td>
+        <td class="orq-col">
+          (a) Define exothermic and endothermic reactions. Draw a labelled energy diagram for each and give one example of each. [3]<br>
+          (b) Define dynamic equilibrium. State TWO conditions necessary for a system to attain dynamic equilibrium. [2]
+        </td>
+        <td class="orm-col">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="sig-row">
+      <span>Invigilator's Signature: <span class="sig-line">&nbsp;</span></span>
+      <span>Candidate's Name: <span class="sig-line">&nbsp;</span></span>
+      <span>Roll No: <span class="sig-line" style="width:110px">&nbsp;</span></span>
+    </div>
+    <div class="footer-center"><strong>Chapters:</strong> Ch 1 (Nature of Chemistry) | Ch 2 (Matter) | Ch 3 (Atomic Structure) | Ch 4 (Periodic Table) | Ch 5 (Chemical Bonding) | Ch 6 (Stoichiometry) | Ch 7 (Electrochemistry) | Ch 8 (Energetics) | Ch 9 (Chemical Equilibrium)</div>
+    <div class="end-marker">&mdash; End of Question Paper &mdash;</div>
+  </div>
+
+</div>
+</body>
+</html>

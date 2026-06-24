@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mathematics Exam &mdash; Unit 6: Trigonometry and Bearing</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", serif; font-size: 13pt; color: #000; background: #fff; line-height: 1.3; }
+
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; }
+
+  /* Header */
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 6px 10px;
+    margin-bottom: 0;
+    page-break-after: avoid;
+  }
+  .header-box .board { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+  .header-box .exam-year { font-size: 15pt; margin-top: 2px; }
+  .header-box .subject-line { font-size: 15pt; margin-top: 2px; }
+  .header-box .syllabus-line { font-size: 13pt; font-weight: bold; margin-top: 3px; }
+
+  /* Info row */
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 2.5px solid #000;
+    border-right: 2.5px solid #000;
+    border-bottom: 2.5px solid #000;
+    padding: 4px 10px;
+    font-size: 14pt;
+    font-weight: bold;
+  }
+
+  /* Instructions */
+  .instructions-box {
+    border: 1.5px solid #000;
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 12pt;
+    page-break-after: avoid;
+  }
+  .instructions-box .inst-title { font-weight: bold; text-decoration: underline; margin-bottom: 2px; }
+  .instructions-box ol { padding-left: 18px; }
+  .instructions-box li { margin-bottom: 1px; }
+
+  /* Section bars */
+  .section-bar {
+    background-color: #DAA520;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 5px;
+    page-break-after: avoid;
+  }
+  .section-bar-blue {
+    background-color: #4682B4;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 5px;
+    page-break-after: avoid;
+  }
+  .section-sub {
+    font-size: 11pt;
+    font-weight: normal;
+    font-style: italic;
+    padding: 0 10px 3px 10px;
+    background-color: #DAA520;
+    color: #fff;
+    page-break-after: avoid;
+  }
+  .section-sub-blue {
+    font-size: 11pt;
+    font-weight: normal;
+    font-style: italic;
+    padding: 0 10px 3px 10px;
+    background-color: #4682B4;
+    color: #fff;
+    page-break-after: avoid;
+  }
+
+  /* MCQ table — long-option layout */
+  .mcq-note { font-size: 11pt; font-style: italic; margin: 2px 0 2px 0; }
+
+  .mcq-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11.5pt;
+    page-break-inside: avoid;
+  }
+  .mcq-table th, .mcq-table td {
+    border: 1px solid #000;
+    padding: 2px 4px;
+    vertical-align: middle;
+  }
+  .mcq-table th { background-color: #f0f0f0; font-weight: bold; text-align: center; }
+  .mcq-table td.col-num  { width: 3%;  text-align: center; font-weight: bold; }
+  .mcq-table td.col-q    { width: 29%; }
+  .mcq-table td.col-opt  { width: 13%; text-align: center; }
+  .mcq-table td.ans-cell { width: 16%; text-align: center; }
+
+  .mcq-opt {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+    margin: 0 1px;
+    vertical-align: middle;
+  }
+
+  /* Section B/C table — allow natural page breaks between rows */
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11pt;
+  }
+  .comp-table th, .comp-table td {
+    border: 1px solid #000;
+    padding: 2px 4px;
+    vertical-align: top;
+  }
+  .comp-table th { background-color: #f5f5f5; font-weight: bold; text-align: center; font-size: 10.5pt; }
+  .comp-table td.col-part  { width: 5%;  text-align: center; font-weight: bold; }
+  .comp-table td.col-qtext { width: 37%; }
+  .comp-table td.col-marks { width: 7%;  text-align: center; font-weight: bold; }
+  .comp-table td.col-or    { width: 5%;  text-align: center; font-weight: bold; color: #c00; font-size: 13pt; }
+  .comp-table td.col-orq   { width: 37%; }
+  .comp-table td.col-orm   { width: 7%;  text-align: center; font-weight: bold; }
+
+  /* Footer */
+  .footer-area { margin-top: 6px; padding-bottom: 4px; }
+  .sig-row { display: flex; justify-content: space-between; margin-top: 5px; font-size: 12pt; }
+  .chapters-line { text-align: center; font-size: 11pt; margin-top: 5px; border-top: 1px solid #000; padding-top: 3px; }
+  .end-marker { text-align: center; font-size: 12pt; font-weight: bold; margin-top: 3px; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-box">
+    <div class="board">Board of Intermediate and Secondary Education</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject-line">Mathematics &mdash; SSC-I (9th Grade)</div>
+    <div class="syllabus-line">Syllabus: Chapter 6 &mdash; Trigonometry and Bearing</div>
+  </div>
+
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time Allowed: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your name, roll number, and section clearly on the answer sheet.</li>
+      <li><strong>Section A</strong> (MCQs): Attempt <strong>ALL 12</strong> questions. Each carries <strong>1 mark</strong>. Time: 15 minutes.</li>
+      <li><strong>Section B</strong> (Short Questions): Attempt <strong>ALL 11</strong> pairs, choosing the main question <strong>OR</strong> its alternative. Each carries <strong>3 marks</strong>.</li>
+      <li><strong>Section C</strong> (Long Questions): Attempt <strong>ALL 4</strong> pairs, choosing the main question <strong>OR</strong> its alternative. Each carries <strong>5 marks</strong>.</li>
+      <li>Use black or blue ink only. Pencil is not allowed except for diagrams.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION A -->
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+  <div class="mcq-note">Encircle the correct option. All questions are compulsory.</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th class="col-num">#</th>
+        <th style="width:29%">Question</th>
+        <th class="col-opt">A</th>
+        <th class="col-opt">B</th>
+        <th class="col-opt">C</th>
+        <th class="col-opt">D</th>
+        <th style="width:16%; text-align:center;">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-num">1</td>
+        <td class="col-q">There are how many minutes in one degree?</td>
+        <td class="col-opt">30</td>
+        <td class="col-opt">60</td>
+        <td class="col-opt">90</td>
+        <td class="col-opt">3600</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">2</td>
+        <td class="col-q">The measure of a complete angle in circular system is:</td>
+        <td class="col-opt">&pi; rad</td>
+        <td class="col-opt">2&pi; rad</td>
+        <td class="col-opt">3&pi; rad</td>
+        <td class="col-opt">4&pi; rad</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">3</td>
+        <td class="col-q">The length of a circular arc is given by:</td>
+        <td class="col-opt"><em>l</em> = r + &theta;</td>
+        <td class="col-opt"><em>l</em> = r / &theta;</td>
+        <td class="col-opt"><em>l</em> = r&theta;</td>
+        <td class="col-opt"><em>l</em> = &theta; / r</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">4</td>
+        <td class="col-q">The value of sin 30&deg; is:</td>
+        <td class="col-opt">&radic;3 / 2</td>
+        <td class="col-opt">1 / 2</td>
+        <td class="col-opt">1 / &radic;2</td>
+        <td class="col-opt">1</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">5</td>
+        <td class="col-q">In the second quadrant, which ratio is positive?</td>
+        <td class="col-opt">cos &theta;</td>
+        <td class="col-opt">tan &theta;</td>
+        <td class="col-opt">sin &theta;</td>
+        <td class="col-opt">sec &theta;</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">6</td>
+        <td class="col-q">Which Pythagorean identity is correct?</td>
+        <td class="col-opt">sin<sup>2</sup>&theta; &minus; cos<sup>2</sup>&theta; = 1</td>
+        <td class="col-opt">sec<sup>2</sup>&theta; + tan<sup>2</sup>&theta; = 1</td>
+        <td class="col-opt">sin<sup>2</sup>&theta; + cos<sup>2</sup>&theta; = 1</td>
+        <td class="col-opt">cosec<sup>2</sup>&theta; + cot<sup>2</sup>&theta; = 1</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">7</td>
+        <td class="col-q">cos&theta; = b/c in a right triangle represents:</td>
+        <td class="col-opt">Perp / Hyp</td>
+        <td class="col-opt">Base / Hyp</td>
+        <td class="col-opt">Hyp / Base</td>
+        <td class="col-opt">Perp / Base</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">8</td>
+        <td class="col-q">50&deg;30&prime; expressed in decimal degrees is:</td>
+        <td class="col-opt">50.2&deg;</td>
+        <td class="col-opt">50.3&deg;</td>
+        <td class="col-opt">50.4&deg;</td>
+        <td class="col-opt">50.5&deg;</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">9</td>
+        <td class="col-q">The angle between the horizontal and line of sight to an object <em>above</em> the horizontal is:</td>
+        <td class="col-opt">Depression</td>
+        <td class="col-opt">Elevation</td>
+        <td class="col-opt">Vertical angle</td>
+        <td class="col-opt">Quadrantal angle</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">10</td>
+        <td class="col-q">Bearings are measured clockwise from:</td>
+        <td class="col-opt">South</td>
+        <td class="col-opt">East</td>
+        <td class="col-opt">North</td>
+        <td class="col-opt">West</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">11</td>
+        <td class="col-q">The bearing of due east direction is:</td>
+        <td class="col-opt">000&deg;</td>
+        <td class="col-opt">045&deg;</td>
+        <td class="col-opt">090&deg;</td>
+        <td class="col-opt">180&deg;</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+      <tr>
+        <td class="col-num">12</td>
+        <td class="col-q">If cos x = sin x, the value of x is:</td>
+        <td class="col-opt">30&deg;</td>
+        <td class="col-opt">45&deg;</td>
+        <td class="col-opt">60&deg;</td>
+        <td class="col-opt">90&deg;</td>
+        <td class="ans-cell"><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span><span class="mcq-opt"></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end page 1 -->
+
+<div class="page">
+
+  <!-- SECTION B -->
+  <div class="section-bar">SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)</div>
+  <div class="section-sub">Attempt ALL 11 questions. Choose either the main question OR its alternative.</div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="col-part">Q.</th>
+        <th class="col-qtext">Question</th>
+        <th class="col-marks">Marks</th>
+        <th class="col-or">OR</th>
+        <th class="col-orq">OR Question</th>
+        <th class="col-orm">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-part">2(i)</td>
+        <td class="col-qtext">Convert 45&deg;45&prime;45&prime;&prime; into seconds.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Convert 216000&prime;&prime; into D&deg;M&prime;S&prime;&prime;.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(ii)</td>
+        <td class="col-qtext">Convert 45&deg; into radians (express in terms of &pi; and as a decimal, use &pi;&asymp;3.1416).</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Convert 3&pi;/4 radians into D&deg;M&prime;S&prime;&prime;.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(iii)</td>
+        <td class="col-qtext">Find arc length and area of sector: r = 12 m, &theta; = 120&deg;.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">A 30-inch pendulum swings through 30&deg;. Find arc length through which the tip swings.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(iv)</td>
+        <td class="col-qtext">Find all six trigonometric ratios of &theta; if sin&theta; = &radic;3/2 and terminal ray is in the first quadrant.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Write all six trigonometric ratios of 45&deg;.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(v)</td>
+        <td class="col-qtext">Evaluate: sin 60&deg; &minus; cos 30&deg;.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Evaluate: sec 45&deg; cosec 45&deg; &minus; sin 30&deg; cos 60&deg;.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(vi)</td>
+        <td class="col-qtext">Terminal ray of &theta; is in the first quadrant and cos&theta; = 1/2. Find the remaining five trigonometric ratios.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Terminal ray of &theta; is in the second quadrant and cosec&theta; = 2. Find the value of cos&theta;&sdot;(sin<sup>2</sup>&theta;&minus;cos<sup>2</sup>&theta;)/(sin<sup>2</sup>&theta;+cos<sup>2</sup>&theta;).</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(vii)</td>
+        <td class="col-qtext">Prove: (1 &minus; sin<sup>2</sup>&theta;) sec<sup>2</sup>&theta; = 1.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Prove: 1/(sec&theta; &minus; tan&theta;) = sec&theta; + tan&theta;.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(viii)</td>
+        <td class="col-qtext">Solve &Delta;ABC: &angle;C=90&deg;, &angle;A=30&deg;, a=6 cm. Find &angle;B, b and c.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Solve &Delta;PQR: &angle;Q=90&deg;, &angle;P=60&deg;, PQ=4&radic;3 cm. Find &angle;R, QR and PR.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(ix)</td>
+        <td class="col-qtext">From a point 20 m from a tree, angle of elevation of the treetop is 30&deg;. Find the height of the tree.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Shadow of a 10 m pole is 10&radic;3 m long. Find the angle of elevation of the sun.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(x)</td>
+        <td class="col-qtext">Define bearing. Write the three-figure bearings of north, south, east and west.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Bearing of boat B from boat A is 250&deg;. Find the bearing of boat A from boat B.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">2(xi)</td>
+        <td class="col-qtext">A car leaves a garage at bearing 040&deg; and travels 13 km. How many km north and how many km east has it travelled?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">A plane is 119 km west and 100 km south of an airport. At what bearing should the pilot fly to return to the airport?</td>
+        <td class="col-orm">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION C -->
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)</div>
+  <div class="section-sub-blue">Attempt ALL 4 questions. Choose either the main question OR its alternative.</div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="col-part">Q.</th>
+        <th class="col-qtext">Question</th>
+        <th class="col-marks">Marks</th>
+        <th class="col-or">OR</th>
+        <th class="col-orq">OR Question</th>
+        <th class="col-orm">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-part">3(i)</td>
+        <td class="col-qtext">Find arc length and area of sector for r = 6 dm, &theta; = 60&deg;45&prime;30&prime;&prime;. Then verify the area using A = &frac12;r&sup2;&theta;.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Length of an arc is 4 cm and area of its sector is 16 cm&sup2;. Find the radius and the radian measure of the central angle using l = r&theta; and A = &frac12;r&sup2;&theta;.</td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(ii)</td>
+        <td class="col-qtext">Prove the identities:<br>
+          (a) (sin&theta;&minus;2sin<sup>3</sup>&theta;)/(2cos<sup>3</sup>&theta;&minus;cos&theta;) = tan&theta;<br>
+          (b) &radic;(sec<sup>2</sup>&theta;+cosec<sup>2</sup>&theta;) = tan&theta;+cot&theta;</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Prove the identities:<br>
+          (a) (1&minus;sin&theta;)/(1+sin&theta;) = (sec&theta;&minus;tan&theta;)<sup>2</sup><br>
+          (b) sin<sup>6</sup>&theta;+cos<sup>6</sup>&theta; = 1&minus;3sin<sup>2</sup>&theta;cos<sup>2</sup>&theta;</td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(iii)</td>
+        <td class="col-qtext">An aeroplane at altitude 900 m sees two ships sailing towards it, angles of depression 30&deg; and 60&deg;. Find the distance between the ships.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">From the top of a 120 m tower, angles of depression of two boats on the same side are 60&deg; and 45&deg;. Find the distance between the boats with full working.</td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(iv)</td>
+        <td class="col-qtext">A ship goes from A to B at bearing 040&deg; for 35 km, then B to C at bearing 130&deg; for 50 km. Find: (a) distance AC, (b) bearing of C from A.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Babar Azam walks P to Q at bearing 050&deg; for 3 km, then Q to R at bearing 140&deg;. Distance PR = 5 km. Find: (a) distance QR, (b) bearing of R from P.</td>
+        <td class="col-orm">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer-area">
+    <div class="sig-row">
+      <div>Invigilator's Signature: ____________________</div>
+      <div>Candidate's Signature: ____________________</div>
+    </div>
+    <div class="chapters-line">Chapters Covered: Ch 6 &mdash; Trigonometry and Bearing</div>
+    <div class="end-marker">&mdash; End of Question Paper &mdash;</div>
+  </div>
+
+</div><!-- end page 2 -->
+
+</body>
+</html>

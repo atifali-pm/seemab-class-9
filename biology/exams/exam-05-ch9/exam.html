@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', serif;
+    font-size: 11.5pt;
+    line-height: 1.3;
+    color: #000;
+  }
+  .page {
+    width: 100%;
+    padding: 7mm 9mm 0 9mm;
+  }
+
+  /* Header box */
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 5px 8px 4px 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  .header-box .board { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.3px; }
+  .header-box .exam-year { font-size: 15pt; margin-top: 2px; }
+  .header-box .subject { font-size: 15pt; margin-top: 2px; }
+  .header-box .syllabus { font-size: 13pt; font-weight: bold; margin-top: 3px; }
+
+  /* Info row */
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 3px 4px;
+    margin-bottom: 4px;
+  }
+
+  /* Instructions box */
+  .instructions-box {
+    border: 1.5px solid #000;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+    font-size: 12pt;
+    line-height: 1.3;
+  }
+  .instructions-box .inst-title { font-weight: bold; margin-bottom: 2px; font-size: 12pt; }
+  .instructions-box ol { padding-left: 18px; }
+  .instructions-box ol li { margin-bottom: 1px; }
+
+  /* Section bars */
+  .section-bar {
+    background: #DAA520;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  .section-bar .sub-line {
+    font-size: 10pt;
+    font-weight: normal;
+    margin-top: 1px;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+
+  /* MCQ table — long-option layout */
+  .mcq-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    font-size: 11.5pt;
+  }
+  .mcq-table th {
+    background: #f0f0f0;
+    border: 1px solid #888;
+    padding: 2px 4px;
+    text-align: center;
+    font-size: 11pt;
+  }
+  .mcq-table td {
+    border: 1px solid #888;
+    padding: 3px 4px;
+    vertical-align: middle;
+    line-height: 1.25;
+  }
+  .mcq-table td.num-cell  { text-align: center; width: 3%; }
+  .mcq-table td.q-cell    { width: 29%; }
+  .mcq-table td.opt-cell  { text-align: center; width: 13%; }
+  .mcq-table td.ans-cell  { text-align: center; width: 16%; }
+  span.mcq-opt {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #555;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+
+  /* Section B/C table */
+  .qb-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+    margin-bottom: 4px;
+  }
+  .qb-table th {
+    background: #f0f0f0;
+    border: 1px solid #888;
+    padding: 2px 4px;
+    font-size: 10pt;
+    text-align: center;
+  }
+  .qb-table td {
+    border: 1px solid #888;
+    padding: 3px 5px;
+    vertical-align: top;
+    line-height: 1.28;
+  }
+  .qb-table td.part-cell  { width: 5%;  text-align: center; font-weight: bold; vertical-align: middle; font-size: 10pt; }
+  .qb-table td.q-main     { width: 37%; }
+  .qb-table td.marks-cell { width: 6%;  text-align: center; vertical-align: middle; font-weight: bold; font-size: 10.5pt; }
+  .qb-table td.or-cell    { width: 5%;  text-align: center; vertical-align: middle; color: #cc0000; font-weight: bold; font-size: 14pt; }
+  .qb-table td.q-or       { width: 37%; }
+
+  /* Footer */
+  .footer {
+    margin-top: 5px;
+    font-size: 10pt;
+  }
+  .sig-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .sig-line {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    width: 165px;
+  }
+  .footer-center { text-align: center; font-size: 10.5pt; margin-top: 2px; }
+  .end-marker    { text-align: center; font-size: 11.5pt; font-weight: bold; margin-top: 4px; letter-spacing: 1px; }
+
+  @media print {
+    body { margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1 ==================== -->
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject">Biology &mdash; Class IX &nbsp;|&nbsp; Paper: SSC-I</div>
+    <div class="syllabus">Syllabus: Chapter 9 &mdash; Plant Reproduction</div>
+  </div>
+
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>Write your Roll Number in the space provided on the answer sheet. Do NOT write your name.</li>
+      <li>Attempt ALL questions from Section A. In Sections B and C, attempt the required number choosing either the main question OR its alternative (OR).</li>
+      <li>All parts of a question must be answered in sequence and at one place.</li>
+      <li>Extra attempt of any question or any part thereof will NOT be considered.</li>
+    </ol>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th style="width:3%">#</th>
+        <th style="width:29%">Question</th>
+        <th style="width:13%">A</th>
+        <th style="width:13%">B</th>
+        <th style="width:13%">C</th>
+        <th style="width:13%">D</th>
+        <th style="width:16%">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num-cell">1</td>
+        <td class="q-cell">Asexual reproduction in which a cell splits into two equal parts is called:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Budding</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Fragmentation</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Binary fission</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Spore formation</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">2</td>
+        <td class="q-cell">In yeast, a tiny outgrowth forms on the parent cell and eventually detaches. This process is called:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Binary fission</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Budding</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Spore formation</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Parthenogenesis</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">3</td>
+        <td class="q-cell">Parthenogenesis in flowering plants is also known as:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Apomixis</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Pollination</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Fertilization</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Germination</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">4</td>
+        <td class="q-cell">Which of the following is a compact, thickened underground stem enveloped by thick succulent leaves storing nutrients?</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Rhizome</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Corm</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Bulb</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Stem tuber</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">5</td>
+        <td class="q-cell">In Bryophyllum, new plantlets are produced along the edges of its:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Roots</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Stem nodes</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Leaves</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Flowers</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">6</td>
+        <td class="q-cell">The upper part of a graft that carries the desired characteristics (e.g. fruit quality) is called the:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Rootstock</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Scion</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Explant</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Callus</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">7</td>
+        <td class="q-cell">The first cell or tiny piece of the parent plant used in tissue culture is called the:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Plantlet</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Callus</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Explant</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Sporangiophore</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">8</td>
+        <td class="q-cell">Which two whorls of a flower are called the necessary whorls because they directly participate in reproduction?</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Calyx and corolla</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Androecium and gynoecium</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Calyx and androecium</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Corolla and gynoecium</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">9</td>
+        <td class="q-cell">Pollen grains are produced in the anther by meiosis. These haploid pollen grains are also called:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Megaspores</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Microspores</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Ovules</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Synergids</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">10</td>
+        <td class="q-cell">Pollination that occurs between flowers of two separate plants is called:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Self-pollination</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Artificial pollination</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Cross-pollination</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Wind pollination</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">11</td>
+        <td class="q-cell">In double fertilization, one sperm fuses with the egg to form a zygote. The other sperm fuses with polar nuclei to form the:</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Embryo sac</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Diploid endosperm</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Triploid endosperm nucleus</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Antipodal cells</td>
+        <td class="ans-cell"></td>
+      </tr>
+      <tr>
+        <td class="num-cell">12</td>
+        <td class="q-cell">In epigeal germination, which part of the embryo stretches out and pulls the cotyledons above ground?</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Epicotyl</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Radicle</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Hypocotyl</td>
+        <td class="opt-cell"><span class="mcq-opt"></span>Plumule</td>
+        <td class="ans-cell"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end page 1 -->
+
+
+<!-- ==================== PAGE 2 ==================== -->
+<div class="page">
+
+  <div class="section-bar">
+    SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)
+    <div class="sub-line">Attempt 11 questions. Choose either the main question OR its alternative.</div>
+  </div>
+
+  <table class="qb-table">
+    <thead>
+      <tr>
+        <th style="width:5%">Part</th>
+        <th style="width:37%">Question</th>
+        <th style="width:6%">Marks</th>
+        <th style="width:5%">OR</th>
+        <th style="width:37%">Alternative Question</th>
+        <th style="width:6%">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-cell">2(i)</td>
+        <td class="q-main">Define asexual reproduction. State three characteristics that make it different from sexual reproduction.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe the process of binary fission in bacteria. Include the role of DNA replication and cross-wall formation.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(ii)</td>
+        <td class="q-main">Explain the process of budding in yeast. What happens to the nucleus during bud formation?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">What is spore formation? Describe how Rhizopus produces and releases spores using sporangiophores.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(iii)</td>
+        <td class="q-main">What is vegetative propagation? Distinguish between natural and artificial vegetative propagation with one example each.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Define parthenogenesis. Why is it considered a form of asexual reproduction? Name the process by which it occurs in flowering plants.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(iv)</td>
+        <td class="q-main">Describe any three methods of natural vegetative propagation with one plant example each.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Differentiate between a bulb and a rhizome. Give one plant example for each and describe how each structure gives rise to a new plant.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(v)</td>
+        <td class="q-main">Explain the method of stem cuttings. What role does the plant hormone auxin play when the cutting does not start growing?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe grafting. Name the two plant parts involved and explain the role each plays in the success of the graft.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(vi)</td>
+        <td class="q-main">What is tissue culture (cloning)? Define the term explant and describe what happens to it in the nutrient medium.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Differentiate between artificial vegetative propagation and natural vegetative propagation. Why is artificial propagation preferred for commercial crops?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(vii)</td>
+        <td class="q-main">Name the four floral whorls of a typical flower and state which two are called necessary whorls and which two are accessory whorls.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe the structure of a stamen. How are microspores (pollen grains) produced from the anther?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(viii)</td>
+        <td class="q-main">Define pollination. Distinguish between self-pollination and cross-pollination. Which one promotes genetic variability and why?</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Compare insect-pollinated and wind-pollinated flowers under any three features from the textbook table (e.g. petal colour, pollen grains, stigma shape).</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(ix)</td>
+        <td class="q-main">What is the female gametophyte (embryo sac)? Name the cell types found inside it: egg, synergids, antipodals, and polar nuclei.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe the development of the male gametophyte after pollination. Name the two nuclei formed and explain the role of the pollen tube.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(x)</td>
+        <td class="q-main">Name the three parts of an angiosperm seed. Briefly explain the function of each part.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain seed and fruit formation after fertilization. What does the ovule become and what does the ovary wall become?</td>
+        <td class="marks-cell">3</td>
+      </tr>
+      <tr>
+        <td class="part-cell">2(xi)</td>
+        <td class="q-main">State three external conditions required for seed germination. Explain the role of water in activating the germination process.</td>
+        <td class="marks-cell">3</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Differentiate between epigeal and hypogeal germination. Give one plant example of each and name the embryo part that elongates in each type.</td>
+        <td class="marks-cell">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)</div>
+
+  <table class="qb-table">
+    <thead>
+      <tr>
+        <th style="width:5%">Part</th>
+        <th style="width:37%">Question</th>
+        <th style="width:6%">Marks</th>
+        <th style="width:5%">OR</th>
+        <th style="width:37%">Alternative Question</th>
+        <th style="width:6%">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="part-cell">3(i)</td>
+        <td class="q-main">Compare sexual and asexual reproduction in plants under five points: number of parents, gamete formation, genetic variation, speed, and suitability. Which is more beneficial for adapting to changing environments and why?</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe the methods of natural vegetative propagation in plants. Cover bulb, corm, rhizome, stem tuber, stolon/runner, suckers, and vegetative propagation by leaves. Give one plant example for each.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(ii)</td>
+        <td class="q-main">Describe the structure of a typical flower. Name and explain the function of each of the four whorls. Label the key parts of the gynoecium (pistil) and androecium (stamen).</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Explain the procedure of plant tissue culture (cloning / micropropagation). Define explant, describe the formation of callus, and explain how a complete plantlet is developed from a single cell. State two advantages of this method.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(iii)</td>
+        <td class="q-main">Explain the event of double fertilization in angiosperms. Describe how the male gametophyte reaches the ovule, name both fusion events, identify the ploidy of each product, and explain why this event is called "double" fertilization.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Describe the development of the female gametophyte (embryo sac) in a flowering plant. Explain how the functional megaspore divides, and name all the structures present in a mature embryo sac.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+      <tr>
+        <td class="part-cell">3(iv)</td>
+        <td class="q-main">Define seed germination. Describe the structure of an angiosperm seed (embryo, endosperm, seed coat). Explain the three external conditions needed for germination and distinguish between epigeal and hypogeal germination with one example each.</td>
+        <td class="marks-cell">5</td>
+        <td class="or-cell">OR</td>
+        <td class="q-or">Compare insect-pollinated flowers with wind-pollinated flowers using a table covering six features: size, colour, nectar, pollen grains, stamens and stigmas, and floral arrangement. Explain why each adaptation is necessary for the pollination method.</td>
+        <td class="marks-cell">5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="sig-row">
+      <div>Invigilator's Signature: <span class="sig-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      <div>Candidate's Signature: <span class="sig-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+    </div>
+    <div class="footer-center">Chapters Covered: Chapter 9 &mdash; Plant Reproduction (Sections 9.1&ndash;9.2)</div>
+    <div class="end-marker">&mdash; End of Question Paper &mdash;</div>
+  </div>
+
+</div><!-- end page 2 -->
+
+</body>
+</html>

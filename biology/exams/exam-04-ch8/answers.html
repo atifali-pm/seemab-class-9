@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', serif;
+    font-size: 13pt;
+    line-height: 1.5;
+    color: #000;
+  }
+  .page {
+    width: 100%;
+    padding: 7mm 9mm 0 9mm;
+  }
+
+  /* Header box */
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 5px 8px 4px 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  .header-box .board     { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.3px; }
+  .header-box .exam-year { font-size: 15pt; margin-top: 2px; }
+  .header-box .subject   { font-size: 15pt; margin-top: 2px; }
+  .header-box .syllabus  { font-size: 13pt; font-weight: bold; margin-top: 3px; }
+
+  /* Info row */
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 3px 4px;
+    margin-bottom: 4px;
+  }
+
+  /* Section bars */
+  .section-bar {
+    background: #DAA520;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 4px 7px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 4px 7px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+
+  /* MCQ answer table */
+  .mcq-ans-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 6px;
+    font-size: 12pt;
+  }
+  .mcq-ans-table th {
+    background: #f0f0f0;
+    border: 1px solid #888;
+    padding: 3px 5px;
+    text-align: center;
+    font-size: 11.5pt;
+  }
+  .mcq-ans-table td {
+    border: 1px solid #888;
+    padding: 4px 6px;
+    vertical-align: top;
+    line-height: 1.45;
+  }
+  .mcq-ans-table td.num-cell  { text-align: center; width: 3%; vertical-align: middle; }
+  .mcq-ans-table td.q-cell    { width: 28%; }
+  .mcq-ans-table td.key-cell  { width: 11%; text-align: center; vertical-align: middle; font-weight: bold; color: #006400; font-size: 13pt; }
+  .mcq-ans-table td.exp-cell  { width: 58%; font-size: 11.5pt; }
+  .mark-badge {
+    display: inline-block;
+    background: #e8e8e8;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 0px 5px;
+    font-size: 11pt;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  /* Answer boxes */
+  .answer-box {
+    border: 1px solid #ccc;
+    border-left: 4px solid #4682B4;
+    background: #fafafa;
+    padding: 6px 9px;
+    margin-bottom: 6px;
+    page-break-inside: avoid;
+  }
+  .answer-box .q-label {
+    font-weight: bold;
+    font-size: 12.5pt;
+    margin-bottom: 3px;
+  }
+  .or-label {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 14pt;
+    margin: 4px 0 3px 0;
+  }
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11.5pt;
+    margin: 5px 0;
+    page-break-inside: avoid;
+  }
+  .comp-table th {
+    background: #e8f0f8;
+    border: 1px solid #aaa;
+    padding: 3px 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .comp-table td {
+    border: 1px solid #aaa;
+    padding: 3px 6px;
+    vertical-align: top;
+    line-height: 1.4;
+  }
+  .comp-table td.feature-col { font-weight: bold; background: #f8f8f8; width: 22%; }
+  .flowchart {
+    font-family: 'Courier New', monospace;
+    font-size: 11pt;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    margin: 4px 0;
+    line-height: 1.6;
+  }
+
+  @media print {
+    body { margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1 ==================== -->
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-year">Annual Examination 2026 &mdash; ANSWER KEY (Version 1)</div>
+    <div class="subject">Biology &mdash; Class IX &nbsp;|&nbsp; Paper: SSC-I</div>
+    <div class="syllabus">Syllabus: Chapter 8 &mdash; Plant Physiology</div>
+  </div>
+
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time: 2h 30m</span>
+    <span>Version: 1</span>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; MCQ Answer Key (12 &times; 1 = 12 Marks)</div>
+
+  <table class="mcq-ans-table">
+    <thead>
+      <tr>
+        <th style="width:3%">#</th>
+        <th style="width:28%">Question</th>
+        <th style="width:11%">Answer <span class="mark-badge">1 mk</span></th>
+        <th style="width:58%">Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num-cell">1</td>
+        <td class="q-cell">Chlorosis (yellowing of leaves) occurs due to deficiency of:</td>
+        <td class="key-cell">C &mdash; Magnesium</td>
+        <td class="exp-cell"><strong>Magnesium</strong> is a macronutrient required to make <strong>chlorophyll</strong>. Its deficiency causes <strong>chlorosis</strong> (yellowing). Sulphur and phosphorus deficiency cause other growth problems; calcium deficiency causes structural issues.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">2</td>
+        <td class="q-cell">Most uptake of water and minerals from soil takes place through:</td>
+        <td class="key-cell">B &mdash; Root hair</td>
+        <td class="exp-cell"><strong>Root hairs</strong> are extensions of root epidermal cells that increase surface area by approximately <strong>67%</strong>. They are the primary absorption sites. Root caps protect the root tip; epidermal cells do absorb but root hairs maximise the area.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">3</td>
+        <td class="q-cell">Approximately what percentage of absorbed water is lost through stomatal transpiration?</td>
+        <td class="key-cell">C &mdash; 90%</td>
+        <td class="exp-cell"><strong>90%</strong> of water loss is <strong>stomatal transpiration</strong> through stomata in leaves. Cuticular transpiration accounts for 7&ndash;9%; lenticular transpiration accounts for less than 3%.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">4</td>
+        <td class="q-cell">The upward movement of water and dissolved minerals through xylem is called:</td>
+        <td class="key-cell">C &mdash; Ascent of sap</td>
+        <td class="exp-cell"><strong>Ascent of sap</strong> is the upward movement of water and dissolved minerals through <strong>xylem tissue</strong>. Translocation is movement of organic solutes through phloem; transpiration is water loss from aerial parts.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">5</td>
+        <td class="q-cell">According to the TACT theory, what are the four forces that move water up a plant?</td>
+        <td class="key-cell">B &mdash; Transpiration pull, Adhesion, Cohesion, Tension</td>
+        <td class="exp-cell">The <strong>TACT acronym</strong> stands for <strong>Transpiration pull, Adhesion, Cohesion, and Tension</strong>. These four forces work together to drive the ascent of sap against gravity through xylem vessels.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">6</td>
+        <td class="q-cell">Sugar moves through phloem mostly in the form of:</td>
+        <td class="key-cell">B &mdash; Sucrose</td>
+        <td class="exp-cell"><strong>Phloem sap</strong> contains about 10&ndash;25% dry matter, most of which is <strong>sucrose</strong>. Glucose is the direct product of photosynthesis but is converted to sucrose before loading into phloem for transport.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">7</td>
+        <td class="q-cell">What is the role of companion cells in translocation?</td>
+        <td class="key-cell">C &mdash; Actively transport sugars into sieve tube elements</td>
+        <td class="exp-cell"><strong>Companion cells</strong> have nuclei and control the function of adjacent sieve tube elements (which lack nuclei). They <strong>actively load sucrose</strong> into sieve tube elements using ATP-driven carrier proteins.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">8</td>
+        <td class="q-cell">When the rate of photosynthesis equals the rate of respiration, which gas exchange pattern occurs?</td>
+        <td class="key-cell">D &mdash; Neither CO&#8322; nor O&#8322; exchanged</td>
+        <td class="exp-cell">This is the <strong>compensation point of photosynthesis</strong>, occurring at dawn and dusk. The CO&#8322; produced by respiration is entirely used by photosynthesis and vice versa, so <strong>no net gas exchange</strong> occurs with the environment.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">9</td>
+        <td class="q-cell">Which plant group stores a small amount of water and has a thin cuticle?</td>
+        <td class="key-cell">C &mdash; Mesophytes</td>
+        <td class="exp-cell"><strong>Mesophytes</strong> thrive where water is moderately available. They have a <strong>thinner cuticle</strong> than xerophytes and store less water than hydrophytes. Xerophytes have the thickest cuticle; hydrophytes have almost none.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">10</td>
+        <td class="q-cell">Leaves loaded with large amounts of pigmented compounds causing them to yellow and fall are called:</td>
+        <td class="key-cell">B &mdash; Excretophores</td>
+        <td class="exp-cell"><strong>Excretophores</strong> are leaves that accumulate pigmented waste compounds, turn yellow, and fall in autumn. This is a form of <strong>excretion through leaves</strong>. Gardeners value decomposed autumn leaves as a mineral-rich soil amendment.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">11</td>
+        <td class="q-cell">Active transport of minerals into root cells requires energy in the form of:</td>
+        <td class="key-cell">C &mdash; ATP</td>
+        <td class="exp-cell"><strong>Active transport</strong> moves minerals against the concentration gradient. It requires energy from <strong>ATP</strong> (adenosine triphosphate) and involves <strong>carrier proteins</strong> embedded in the cell membrane of root epidermal cells.</td>
+      </tr>
+      <tr>
+        <td class="num-cell">12</td>
+        <td class="q-cell">In the pressure flow mechanism, sugar is first loaded into sieve tubes at the:</td>
+        <td class="key-cell">B &mdash; Source (leaves)</td>
+        <td class="exp-cell">In the <strong>pressure flow mechanism</strong>, companion cells actively load sucrose into sieve tube elements at the <strong>source</strong> (e.g., photosynthesising leaves). Water then enters by osmosis, creating hydrostatic pressure that pushes the solution toward the sink.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end page 1 -->
+
+
+<!-- ==================== PAGE 2: SECTION B ==================== -->
+<div class="page">
+
+  <div class="section-bar">SECTION B &mdash; Short Answer Key (11 &times; 3 = 33 Marks)</div>
+
+  <!-- 2(i) -->
+  <div class="answer-box">
+    <div class="q-label">2(i) Macronutrients vs Micronutrients <span class="mark-badge">3 mks</span></div>
+    <strong>Macronutrients</strong> are needed in large amounts (greater than 0.05% dry weight). They include carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, sulphur, calcium, and magnesium. <span class="mark-badge">1 mk</span><br>
+    <strong>Micronutrients</strong> are needed in trace amounts (less than 0.05% dry weight). They include iron, boron, manganese, copper, molybdenum, chlorine, and zinc. <span class="mark-badge">1 mk</span><br>
+    Sixteen elements in total are essential for plant growth. Nine are macronutrients and seven are micronutrients. All are inorganic and absorbed from soil through roots. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(i) OR: Importance of Nitrogen <span class="mark-badge">3 mks</span></div>
+    <strong>Nitrogen</strong> is a macronutrient absorbed from soil as inorganic nitrates (NO&#8323;<sup>&minus;</sup>). It is used to make <strong>amino acids, nucleotides, and chlorophyll</strong>. <span class="mark-badge">1 mk</span><br>
+    Amino acids are then used in <strong>protein synthesis</strong>; proteins are the most abundant organic molecules in the plant body. <span class="mark-badge">1 mk</span><br>
+    Deficiency leads to <strong>chlorosis</strong> (yellowing) and severe growth retardation because chlorophyll formation is inhibited. Nitrogen fertilisers are added to nitrogen-depleted soils to correct this. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(ii) -->
+  <div class="answer-box">
+    <div class="q-label">2(ii) Internal Structure of Root <span class="mark-badge">3 mks</span></div>
+    From outermost to innermost, the root layers are: <strong>epidermis (epiblema)</strong> &rarr; <strong>cortex</strong> &rarr; <strong>endodermis</strong> &rarr; <strong>pericycle</strong> &rarr; <strong>vascular bundle (xylem and phloem)</strong> &rarr; pith (in monocots). <span class="mark-badge">1 mk</span><br>
+    <strong>Casparian strips</strong> are waxy (suberin) deposits in the radial walls of endodermal cells. They prevent uncontrolled movement of water and solutes, forcing all materials to pass through the cell membrane, allowing the plant to regulate what enters the xylem. <span class="mark-badge">1 mk</span><br>
+    Vascular bundles in <strong>monocot roots</strong> form a ring with central pith; in <strong>dicot roots</strong> they are star-shaped in the centre without pith. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(ii) OR: Role of Root Hairs <span class="mark-badge">3 mks</span></div>
+    <strong>Root hairs</strong> are extensions of root epidermal cells that penetrate spaces between soil particles. They increase the surface area of the root by approximately <strong>67%</strong>. <span class="mark-badge">1 mk</span><br>
+    They are the primary sites for <strong>absorption of water and minerals</strong>. Water enters by <strong>osmosis</strong>; minerals enter by diffusion, facilitated diffusion, or active transport. <span class="mark-badge">1 mk</span><br>
+    After entering root hairs, absorbed substances pass through cortex, endodermis, and pericycle before reaching the <strong>xylem cells</strong> for upward transport. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(iii) -->
+  <div class="answer-box">
+    <div class="q-label">2(iii) Passive vs Active Transport in Mineral Uptake <span class="mark-badge">3 mks</span></div>
+    <strong>Passive transport</strong> includes diffusion and facilitated diffusion. Minerals move <strong>along</strong> their concentration gradient (high to low concentration) with no energy expenditure. Carrier proteins help in facilitated diffusion. <span class="mark-badge">1 mk</span><br>
+    <strong>Active transport</strong> moves minerals <strong>against</strong> the concentration gradient, from low to high concentration inside root cells. It requires <strong>ATP energy</strong> and specific carrier proteins; it is selective. <span class="mark-badge">1 mk</span><br>
+    Active transport is essential when mineral concentration inside root cells is higher than in soil solution, allowing the plant to accumulate minerals it needs. Both mechanisms together ensure the plant obtains all required nutrients. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(iii) OR: Water Absorption Mechanism <span class="mark-badge">3 mks</span></div>
+    Water absorption by roots occurs by <strong>osmosis</strong>, a passive transport mechanism. Water moves from a region of high concentration (soil) to low concentration (inside root cells) across a <strong>selectively permeable</strong> membrane. <span class="mark-badge">1 mk</span><br>
+    If water moves into a cell it is <strong>endosmosis</strong>; if it moves out it is <strong>exosmosis</strong>. The cell wall allows water and minerals to pass freely but the cell membrane is selectively permeable. <span class="mark-badge">1 mk</span><br>
+    Path of water: soil &rarr; root hair cell &rarr; cortex &rarr; endodermis &rarr; pericycle &rarr; <strong>xylem cells</strong>. From xylem, water is pulled upward toward the leaves by transpiration. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(iv) -->
+  <div class="answer-box">
+    <div class="q-label">2(iv) Three Types of Transpiration <span class="mark-badge">3 mks</span></div>
+    (i) <strong>Stomatal transpiration</strong>: water vapour lost through <strong>stomata</strong> (tiny pores mainly on leaves). Accounts for <strong>90%</strong> of all water loss. Stomata are open during the day. <span class="mark-badge">1 mk</span><br>
+    (ii) <strong>Cuticular transpiration</strong>: water lost through the <strong>cuticle</strong> (waxy layer) of the general leaf surface. Accounts for <strong>7&ndash;9%</strong> of water loss. <span class="mark-badge">1 mk</span><br>
+    (iii) <strong>Lenticular transpiration</strong>: water lost through <strong>lenticels</strong> in the stem. Lenticels are scar-like regions with ruptured epidermis and loosely packed cortical cells. Accounts for <strong>less than 3%</strong> of water loss. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(iv) OR: Transpiration as Necessary Evil <span class="mark-badge">3 mks</span></div>
+    <strong>Advantages</strong>: (1) Creates the transpiration pull that drives <strong>ascent of sap</strong> (water and minerals to leaves). (2) Provides <strong>cooling</strong> to the plant through evaporative cooling. <span class="mark-badge">2 mks</span><br>
+    <strong>Disadvantage</strong>: Plants lose approximately 99% of absorbed water through transpiration. Excessive unchecked transpiration causes <strong>wilting</strong> (loss of turgor) and can ultimately cause plant death. That is why transpiration is called a &ldquo;necessary evil&rdquo;: without it the plant cannot survive, yet it causes massive water loss. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(v) -->
+  <div class="answer-box">
+    <div class="q-label">2(v) Effect of Temperature on Transpiration <span class="mark-badge">3 mks</span></div>
+    Higher temperature lowers <strong>humidity in the air</strong>, increasing the rate of evaporation from mesophyll cell surfaces. For every <strong>10&deg;C rise</strong>, the transpiration rate roughly <strong>doubles</strong>. <span class="mark-badge">1 mk</span><br>
+    At very high temperatures (<strong>40&ndash;45&deg;C</strong>), stomata <strong>close</strong> to prevent excessive water loss. This protects the plant from wilting. <span class="mark-badge">1 mk</span><br>
+    If high temperatures persist and soil water is insufficient, the plant begins to <strong>wilt and may die</strong>. Stomatal closure reduces photosynthesis as CO&#8322; entry is also restricted. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(v) OR: Effect of Wind on Transpiration <span class="mark-badge">3 mks</span></div>
+    Wind is <strong>moving air</strong> that speeds up the <strong>diffusion</strong> of water molecules away from the leaf surface. This removes the water vapour boundary layer around the leaf. <span class="mark-badge">1 mk</span><br>
+    As water vapour is removed, the concentration gradient between the air inside the leaf (humid) and outside (drier) increases, so water diffuses outward faster, increasing evaporation from <strong>mesophyll cell surfaces</strong>. <span class="mark-badge">1 mk</span><br>
+    When air is <strong>calm and still</strong>, diffusion slows as water vapour accumulates around the leaf, creating a saturated boundary layer that reduces the rate of transpiration. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(vi) -->
+  <div class="answer-box">
+    <div class="q-label">2(vi) Cohesion and Tension in TACT Theory <span class="mark-badge">3 mks</span></div>
+    <strong>Cohesion</strong> is the attraction between water molecules themselves. Because water is a <strong>polar molecule</strong>, <strong>hydrogen bonds</strong> form between neighbouring water molecules, holding them together like a string. <span class="mark-badge">1 mk</span><br>
+    <strong>Tension</strong> is the pulling force created in the water column when transpiration removes water from the top. This tension travels down through the continuous water column in the xylem. <span class="mark-badge">1 mk</span><br>
+    Together, cohesion keeps molecules linked and tension transmits the pull downward so the entire column moves as a single unit. Imagine the water column as a steel wire: as long as transpiration continues, the wire remains taut and is pulled upward. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(vi) OR: Adhesion in Water Transport <span class="mark-badge">3 mks</span></div>
+    <strong>Adhesion</strong> is the attraction between water molecules and the walls of xylem cells. Both water and <strong>cellulose</strong> (in cell walls) are polar molecules. <span class="mark-badge">1 mk</span><br>
+    Water molecules are attracted to and &ldquo;stick to&rdquo; the xylem cell walls. This adhesion helps water <strong>move upward against gravity</strong> by resisting the tendency of the column to fall back downward. <span class="mark-badge">1 mk</span><br>
+    Adhesion also keeps water in the xylem even when transpiration temporarily slows, preventing the column from draining back into the root. It is especially important in <strong>tall plants</strong> where the gravitational pull is strong. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(vii) -->
+  <div class="answer-box">
+    <div class="q-label">2(vii) Translocation: Tissue, Direction, Source and Sink <span class="mark-badge">3 mks</span></div>
+    <strong>Translocation</strong> is the transport of prepared food (organic solutes, mainly sucrose) to different parts of the plant through <strong>phloem</strong> tissue. <span class="mark-badge">1 mk</span><br>
+    Movement is not unidirectional. It goes from a <strong>source</strong> (a region that supplies food, e.g., photosynthesising leaves or storage organs) to a <strong>sink</strong> (a region that uses food, e.g., roots, fruits, growing tips). <span class="mark-badge">1 mk</span><br>
+    Leaves and storage organs are sources; roots, fruits, and stem apices are sinks. Stems can act as both. The direction of flow is determined by the relative pressures at source and sink. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(vii) OR: Phloem Sap Composition and Sieve Tube / Companion Cells <span class="mark-badge">3 mks</span></div>
+    <strong>Phloem sap</strong> (translocating fluid) contains about 10&ndash;25% dry matter. Most of this is <strong>sucrose</strong>, with other organic compounds in smaller amounts. <span class="mark-badge">1 mk</span><br>
+    <strong>Sieve tube elements</strong> are long tube-like structures that transport organic solutes throughout the plant. They <strong>lack nuclei</strong>, so they cannot control their own activities. <span class="mark-badge">1 mk</span><br>
+    <strong>Companion cells</strong> sit next to sieve tube elements, have nuclei, and control the function of adjacent sieve elements. They actively load sucrose into sieve tubes using ATP. Together they form the conducting channels for organic solutes. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(viii) -->
+  <div class="answer-box">
+    <div class="q-label">2(viii) Gas Exchange in Leaves During Daytime <span class="mark-badge">3 mks</span></div>
+    During the day, plants carry out both <strong>photosynthesis</strong> and respiration. The rate of photosynthesis is greater than respiration in daylight. <span class="mark-badge">1 mk</span><br>
+    Photosynthesis uses more <strong>CO&#8322;</strong> than respiration produces, so plants draw in extra CO&#8322; from the environment through open stomata. Photosynthesis produces more <strong>O&#8322;</strong> than respiration needs, so excess oxygen is released. <span class="mark-badge">1 mk</span><br>
+    The overall result: leaves <strong>absorb CO&#8322; and release O&#8322;</strong> during the day. Gas exchange occurs primarily through <strong>stomata</strong> on leaf surfaces and through <strong>lenticels</strong> on stems. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(viii) OR: Compensation Point of Photosynthesis <span class="mark-badge">3 mks</span></div>
+    The <strong>compensation point</strong> is the light intensity at which the rate of photosynthesis exactly equals the rate of respiration. <span class="mark-badge">1 mk</span><br>
+    It occurs at <strong>dawn and dusk</strong>, when light intensity is low. At this point, all CO&#8322; produced by respiration is consumed by photosynthesis, and all O&#8322; produced by photosynthesis is consumed by respiration. <span class="mark-badge">1 mk</span><br>
+    Therefore there is <strong>no net gas exchange</strong> with the environment. This is a transitional state between the daytime pattern (absorb CO&#8322;, release O&#8322;) and the night pattern (absorb O&#8322;, release CO&#8322;). <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(ix) -->
+  <div class="answer-box">
+    <div class="q-label">2(ix) Homeostasis in Plants <span class="mark-badge">3 mks</span></div>
+    <strong>Homeostasis</strong> in plants refers to the adjustment and adaptation of plants to varying degrees of environmental temperatures and availability of water and salts in the soil. <span class="mark-badge">1 mk</span><br>
+    It is essential because: (1) it allows plants to respond to <strong>temperature changes</strong> and survive in various climates; (2) it maintains <strong>adequate hydration levels</strong>; (3) it enables response to stressors such as drought, salinity, pathogens, and herbivores. <span class="mark-badge">1 mk</span><br>
+    Homeostasis helps plants activate <strong>defence mechanisms</strong>, adapt to changing environmental conditions, and maintain internal stability, which contributes to their ecological success. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(ix) OR: Plant Excretion and Excretophores <span class="mark-badge">3 mks</span></div>
+    Plants excrete (1) <strong>carbon dioxide</strong> (waste of respiration, released at night) and <strong>oxygen</strong> (waste of photosynthesis, released in daytime) through gas exchange. (2) <strong>Water</strong> is excreted through transpiration as a waste of both photosynthesis and respiration. <span class="mark-badge">1 mk</span><br>
+    <strong>Excretophores</strong> are leaves loaded with large amounts of pigmented waste compounds. They turn yellow and fall from the plant, carrying waste materials away from the plant body. This is excretion through leaves. <span class="mark-badge">1 mk</span><br>
+    Decomposed autumn leaves are mineral-rich because the waste compounds they contain break down and release minerals back into the soil, which is why <strong>gardeners use autumn leaves</strong> as a natural fertiliser. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(x) -->
+  <div class="answer-box">
+    <div class="q-label">2(x) Hypotonic vs Hypertonic Situations <span class="mark-badge">3 mks</span></div>
+    <strong>Hypotonic situation</strong>: The external environment contains more water and less dissolved solutes than inside the cell. Water moves into the cell by osmosis (<strong>endosmosis</strong>), making the cell swell and become firm (<strong>turgid</strong>). <span class="mark-badge">1 mk</span><br>
+    <strong>Hypertonic situation</strong>: The external environment has less water and more dissolved solutes than inside the cell (more concentrated than cell sap). Water moves out (<strong>exosmosis</strong>), causing the cell to shrink and become limp (<strong>flaccid</strong>). <span class="mark-badge">1 mk</span><br>
+    Both situations require osmotic adjustments to maintain balance. In hypotonic conditions the plant gains turgor pressure, useful for structural support; in hypertonic conditions (e.g., drought or high salinity) the plant can wilt if no adjustment occurs. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(x) OR: Osmotic Adjustment and Isotonic Situation <span class="mark-badge">3 mks</span></div>
+    <strong>Osmotic adjustment</strong> (osmoregulation) is the plant's mechanism for maintaining the correct balance of water and solutes in its body. It creates three possible situations: hypotonic, hypertonic, and isotonic. <span class="mark-badge">1 mk</span><br>
+    In an <strong>isotonic situation</strong>, the water and solute concentrations inside and outside the cell are equal. There is no net movement of water in or out of the cell, so the cell is in balance. <span class="mark-badge">1 mk</span><br>
+    The isotonic situation is considered the ideal state for a cell but is <strong>rarely found in nature</strong> because environmental conditions constantly fluctuate, constantly shifting the balance between hypotonic and hypertonic. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 2(xi) -->
+  <div class="answer-box">
+    <div class="q-label">2(xi) Hydrophytes vs Xerophytes <span class="mark-badge">3 mks</span></div>
+    <strong>Hydrophytes</strong> live in water-rich environments. They have the <strong>highest transpiration rate</strong>; stomata are on the <strong>upper leaf surface</strong>; stomata remain open day and night; cuticle is almost absent. <span class="mark-badge">1 mk</span><br>
+    <strong>Xerophytes</strong> are adapted to extremely dry conditions. They have the <strong>lowest transpiration rate</strong>; stomata are <strong>sunken</strong> (recessed into the leaf surface to reduce air movement); stomata open only at <strong>night</strong>; cuticle is very thick. <span class="mark-badge">1 mk</span><br>
+    Xerophytes (succulents) also have high water storage capacity in their tissues. These contrasting adaptations reflect the opposite water availability challenges each group faces. <span class="mark-badge">1 mk</span>
+    <div class="or-label">OR</div>
+    <div class="q-label">2(xi) OR: Gas Exchange in Roots <span class="mark-badge">3 mks</span></div>
+    <strong>Roots</strong> are non-photosynthetic parts of the plant. They exchange gases with soil air through <strong>root epidermal cells</strong>. They absorb <strong>oxygen</strong> for cellular respiration and release <strong>carbon dioxide</strong> as a waste product. <span class="mark-badge">1 mk</span><br>
+    This pattern <strong>does not change</strong> between day and night because roots never carry out photosynthesis. Leaves change their gas exchange pattern depending on light intensity, but roots always absorb O&#8322; and release CO&#8322;. <span class="mark-badge">1 mk</span><br>
+    Gas exchange in roots occurs through the root cell surfaces and through intercellular air spaces. In waterlogged soils, restricted air access can cause oxygen deficiency (anaerobic conditions), harming root respiration. <span class="mark-badge">1 mk</span>
+  </div>
+
+</div><!-- end page 2 -->
+
+
+<!-- ==================== PAGE 3: SECTION C ==================== -->
+<div class="page">
+
+  <div class="section-bar-blue">SECTION C &mdash; Long Answer Key (4 &times; 5 = 20 Marks)</div>
+
+  <!-- 3(i) -->
+  <div class="answer-box">
+    <div class="q-label">3(i) Mineral Nutrition in Plants <span class="mark-badge">5 mks</span></div>
+    <strong>Nutrient:</strong> Any substance that provides necessary elements to the organism for growth and metabolism. Plant nutrients are mostly inorganic, absorbed from the environment. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Macronutrients vs Micronutrients:</strong> 16 elements are essential. Nine are macronutrients (needed in amounts &gt; 0.05% dry weight): carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, sulphur, calcium, and magnesium. Seven are micronutrients (needed in trace amounts &lt; 0.05% dry weight): iron, boron, manganese, copper, molybdenum, chlorine, and zinc. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Role of Nitrogen:</strong> Absorbed as nitrates (NO&#8323;<sup>&minus;</sup>) from soil. Used to make amino acids, nucleotides, and chlorophyll. Amino acids build proteins, the most abundant organic constituent of the plant. Nitrogen deficiency causes <strong>chlorosis</strong> (yellowing) and severe growth retardation. Added in nitrogen fertilisers for depleted soils. <span class="mark-badge">1.5 mks</span><br><br>
+    <strong>Role of Magnesium:</strong> Absorbed as Mg<sup>2+</sup> ions. Used to make <strong>chlorophyll</strong> (magnesium is the central atom in the chlorophyll molecule). Magnesium deficiency also causes <strong>chlorosis</strong>. Added in dolomitic limestone or magnesium sulphate fertilisers for depleted soils. <span class="mark-badge">1.5 mks</span>
+
+    <div class="or-label">OR</div>
+    <div class="q-label">3(i) OR: Internal Structure of Root and Root Hairs &mdash; Mineral and Water Uptake <span class="mark-badge">5 mks</span></div>
+    <strong>Root Layers (outer to inner):</strong> epidermis (epiblema) &rarr; cortex &rarr; endodermis &rarr; pericycle &rarr; vascular bundle (xylem and phloem). Monocot roots have pith at the centre; dicot roots do not. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Root Hairs:</strong> Extensions of epidermal cells that penetrate spaces between soil particles. They increase surface area by ~67% and are the primary absorption sites for water and minerals. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Casparian Strip:</strong> A waxy (suberin) deposit in the radial walls of endodermal cells. Forces all materials entering the xylem to pass through the endodermal cell membrane, allowing selective regulation. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Passive Mineral Uptake:</strong> Diffusion along concentration gradient; facilitated diffusion using membrane carrier proteins. No energy required. Minerals move from high concentration in soil to lower concentration in root cells. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Active Mineral Uptake:</strong> Against concentration gradient, requires <strong>ATP</strong>. Selective; allows plant to accumulate essential minerals even when soil concentration is low. Water absorption is by <strong>osmosis</strong> (passive), moving from high water concentration in soil to lower concentration in root cells. Path: soil &rarr; root hair &rarr; cortex &rarr; endodermis &rarr; pericycle &rarr; xylem. <span class="mark-badge">1 mk</span>
+  </div>
+
+  <!-- 3(ii) -->
+  <div class="answer-box">
+    <div class="q-label">3(ii) TACT Theory &mdash; Full Explanation with Water Path <span class="mark-badge">5 mks</span></div>
+    The <strong>TACT theory</strong> explains the ascent of sap (upward movement of water and dissolved minerals) through xylem. Four forces work together:<br><br>
+    <strong>T &mdash; Transpiration Pull:</strong> When stomata open, water evaporates from leaf mesophyll cells into air spaces and out through stomata. This creates a <strong>suction force</strong> (pulling force) that draws water upward through xylem from roots to leaves. It is driven by solar energy. <span class="mark-badge">1 mk</span><br><br>
+    <strong>A &mdash; Adhesion:</strong> Attraction between water molecules and the cellulose walls of xylem cells (both polar). Adhesion helps water climb the walls and prevents the water column from falling back under gravity. <span class="mark-badge">1 mk</span><br><br>
+    <strong>C &mdash; Cohesion:</strong> Attraction between water molecules themselves through hydrogen bonds. Keeps water molecules linked as a continuous unbroken chain. Imagine a string of beads: pulling the top bead (transpiration) pulls all others up because cohesion holds them together. <span class="mark-badge">1 mk</span><br><br>
+    <strong>T &mdash; Tension:</strong> The tension (mechanical pulling force) created in the water column by transpiration. As long as transpiration continues, the water column remains taut and is pulled upward as a single unit. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Complete water path:</strong>
+    <div class="flowchart">Soil water
+  &darr; (osmosis)
+Root hair cell
+  &darr; (osmosis through cortex, endodermis, pericycle)
+Xylem vessel in root
+  &darr; (TACT forces)
+Xylem vessel in stem
+  &darr; (TACT forces)
+Xylem vessel in leaf vein
+  &darr; (diffusion)
+Mesophyll cell
+  &darr; (evaporation through open stomata)
+Atmosphere</div>
+    <span class="mark-badge">1 mk</span>
+
+    <div class="or-label">OR</div>
+    <div class="q-label">3(ii) OR: Transpiration &mdash; Types, Stomatal Regulation, and Necessary Evil <span class="mark-badge">5 mks</span></div>
+    <strong>Definition:</strong> Transpiration is the loss of water in the form of vapour from the aerial parts of the plant. Approximately 99% of water absorbed by roots is lost this way. <span class="mark-badge">0.5 mk</span><br><br>
+    <strong>Three Types:</strong><br>
+    (1) <strong>Stomatal transpiration</strong>: through stomata; 90% of loss. (2) <strong>Cuticular transpiration</strong>: through cuticle; 7&ndash;9% of loss. (3) <strong>Lenticular transpiration</strong>: through lenticels in stem; less than 3% of loss. <span class="mark-badge">1.5 mks</span><br><br>
+    <strong>Stomatal Opening and Closing:</strong> Stomata are mainly present on leaf surfaces. Plants with large leaf surface area (more stomata) transpire more. Stomata are widely open during the day and nearly close at night, so transpiration is higher during daytime. At 40&ndash;45&deg;C stomata close to conserve water. <span class="mark-badge">1.5 mks</span><br><br>
+    <strong>Necessary Evil Evaluation:</strong><br>
+    Advantages: (1) Creates transpiration pull, the driving force for the ascent of sap, delivering water and minerals to all leaf cells. (2) Provides evaporative <strong>cooling</strong>. (3) Facilitates CO&#8322; entry through open stomata for photosynthesis.<br>
+    Disadvantage: Massive water loss (99% of absorbed water). Excessive transpiration causes wilting and plant death. Thus transpiration is &ldquo;necessary&rdquo; (plant cannot function without it) yet &ldquo;evil&rdquo; (causes damaging water loss). <span class="mark-badge">1.5 mks</span>
+  </div>
+
+  <!-- 3(iii) -->
+  <div class="answer-box">
+    <div class="q-label">3(iii) Pressure Flow (Mass Flow) Mechanism of Translocation <span class="mark-badge">5 mks</span></div>
+    <strong>Step 1 &mdash; Loading at Source:</strong> Sugars (sucrose) produced in leaves (source) are <strong>actively loaded</strong> into sieve tube elements by companion cells using ATP-driven carrier proteins. This raises sucrose concentration in the phloem. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Step 2 &mdash; Water Entry at Source:</strong> The high solute concentration in the phloem reduces water potential. Water moves in from nearby xylem cells by <strong>osmosis</strong>, increasing <strong>hydrostatic (turgor) pressure</strong> in the phloem at the source end. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Step 3 &mdash; Flow from Source to Sink:</strong> The high pressure at the source pushes the sugary solution through sieve tubes toward the lower-pressure <strong>sink</strong> (roots, fruits, storage organs), like water pushed through a hose. This bulk movement is translocation. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Step 4 &mdash; Unloading at Sink:</strong> At the sink, companion cells <strong>actively unload sucrose</strong> out of the sieve tube (requiring ATP). The loss of solutes increases water potential in the phloem at the sink. Water leaves the phloem by osmosis back into xylem or surrounding cells. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Step 5 &mdash; Result:</strong> This loss of water at the sink reduces hydrostatic pressure there, maintaining the pressure gradient between source and sink that drives continued flow. The system is thus like a <strong>pressurised loop</strong>. Sieve tube elements lack nuclei; companion cells next to them provide metabolic control. <span class="mark-badge">1 mk</span>
+
+    <div class="or-label">OR</div>
+    <div class="q-label">3(iii) OR: Xylem vs Phloem Transport &mdash; Comparison Table <span class="mark-badge">5 mks</span></div>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th class="feature-col">Feature</th>
+          <th>Xylem Transport (Ascent of Sap)</th>
+          <th>Phloem Transport (Translocation)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature-col">Materials transported</td>
+          <td>Water and dissolved minerals (inorganic)</td>
+          <td>Organic solutes: mainly sucrose; also amino acids</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Direction of flow</td>
+          <td>Unidirectional: upward only (root to leaf)</td>
+          <td>Bidirectional: source to sink (any direction)</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Cell types involved</td>
+          <td>Tracheids and vessel elements (dead, no nuclei)</td>
+          <td>Sieve tube elements (no nuclei) + companion cells (with nuclei)</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Energy requirement</td>
+          <td>No direct ATP for flow; passive (TACT forces)</td>
+          <td>Active loading and unloading requires ATP</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Driving force</td>
+          <td>Transpiration pull, adhesion, cohesion, tension</td>
+          <td>Hydrostatic pressure gradient (pressure flow)</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Where driven from</td>
+          <td>Driven from the top (transpiration at leaves)</td>
+          <td>Driven from the source (high pressure) to sink (low pressure)</td>
+        </tr>
+      </tbody>
+    </table>
+    Award 1 mark per correct row (any 5 rows fully correct = full marks). <span class="mark-badge">5 mks</span>
+  </div>
+
+  <!-- 3(iv) -->
+  <div class="answer-box">
+    <div class="q-label">3(iv) Gas Exchange in Plants &mdash; Day, Night, Compensation Point, Leaves and Roots <span class="mark-badge">5 mks</span></div>
+    <strong>Gas exchange defined:</strong> The process by which a plant exchanges gases (O&#8322; and CO&#8322;) with its environment. It occurs primarily through <strong>stomata</strong> in leaves and through <strong>lenticels</strong> in stems. <span class="mark-badge">0.5 mk</span><br><br>
+    <strong>Pattern in leaves during the day:</strong> Both photosynthesis and respiration occur. Rate of photosynthesis &gt; rate of respiration. Net result: leaves <strong>absorb CO&#8322;</strong> from air (for photosynthesis) and <strong>release O&#8322;</strong> (excess from photosynthesis). <span class="mark-badge">1 mk</span><br><br>
+    <strong>Pattern in leaves at night:</strong> No photosynthesis. Only respiration. Leaves <strong>absorb O&#8322;</strong> and <strong>release CO&#8322;</strong>, exactly like animals. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Compensation point (dawn and dusk):</strong> Light intensity is low; rate of photosynthesis equals rate of respiration. CO&#8322; produced by respiration is entirely consumed by photosynthesis; O&#8322; produced by photosynthesis is entirely consumed by respiration. <strong>No net gas exchange</strong> with the environment. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Pattern in roots (non-photosynthetic):</strong> Roots always absorb <strong>O&#8322;</strong> and release <strong>CO&#8322;</strong>, day and night, because there is no photosynthesis in roots. Gas exchange here occurs through root epidermal cells and intercellular air spaces. <span class="mark-badge">1 mk</span><br><br>
+    <strong>Summary table:</strong>
+    <table class="comp-table">
+      <thead>
+        <tr><th>Part</th><th>Condition</th><th>Gas Absorbed</th><th>Gas Released</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Leaves</td><td>Daytime</td><td>CO&#8322;</td><td>O&#8322;</td></tr>
+        <tr><td>Leaves</td><td>Nighttime</td><td>O&#8322;</td><td>CO&#8322;</td></tr>
+        <tr><td>Leaves</td><td>Dawn/Dusk (comp. point)</td><td>Neither</td><td>Neither</td></tr>
+        <tr><td>Roots</td><td>Day and night</td><td>O&#8322;</td><td>CO&#8322;</td></tr>
+      </tbody>
+    </table>
+    <span class="mark-badge">0.5 mk</span>
+
+    <div class="or-label">OR</div>
+    <div class="q-label">3(iv) OR: Osmotic Adjustment &mdash; Three Situations and Hydrophyte/Mesophyte/Xerophyte Adaptations <span class="mark-badge">5 mks</span></div>
+    <strong>Osmotic adjustment (osmoregulation):</strong> The plant's mechanism for maintaining the right balance of water and solutes in its body, creating three situations. <span class="mark-badge">0.5 mk</span><br><br>
+    <strong>Hypotonic situation:</strong> External environment has more water and fewer solutes than inside the cell. Water enters by osmosis (endosmosis); cell becomes <strong>turgid</strong> (firm and swollen). <span class="mark-badge">1 mk</span><br>
+    <strong>Hypertonic situation:</strong> External environment has less water and more solutes than inside the cell. Water exits by osmosis (exosmosis); cell becomes <strong>flaccid</strong> (limp and shrunken). <span class="mark-badge">1 mk</span><br>
+    <strong>Isotonic situation:</strong> Water and solute concentrations inside and outside the cell are equal. No net water movement; the cell is in balance. Rarely found in nature due to constant environmental fluctuations. <span class="mark-badge">0.5 mk</span><br><br>
+    <strong>Adaptations comparison:</strong>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th class="feature-col">Feature</th>
+          <th>Hydrophytes (water-rich)</th>
+          <th>Mesophytes (moderate water)</th>
+          <th>Xerophytes (water-poor)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature-col">Transpiration rate</td>
+          <td>Highest</td>
+          <td>Moderate</td>
+          <td>Lowest</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Stomatal placement</td>
+          <td>Upper leaf surface</td>
+          <td>Lower leaf surface</td>
+          <td>Sunken stomata</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Stomatal behaviour</td>
+          <td>Open day and night</td>
+          <td>Open during day</td>
+          <td>Open only at night</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Cuticle thickness</td>
+          <td>Almost none</td>
+          <td>Thin</td>
+          <td>Very thick</td>
+        </tr>
+        <tr>
+          <td class="feature-col">Water storage</td>
+          <td>Minimal</td>
+          <td>Moderate</td>
+          <td>High (succulents)</td>
+        </tr>
+      </tbody>
+    </table>
+    <span class="mark-badge">2 mks</span>
+  </div>
+
+</div><!-- end page 3 -->
+
+</body>
+</html>

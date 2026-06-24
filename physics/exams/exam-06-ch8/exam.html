@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Physics Exam -- Unit 8: Magnetism</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 13pt; line-height: 1.3; background: white; color: #000; }
+
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; }
+
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 6px 10px 7px 10px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  .header-box .board-name   { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
+  .header-box .exam-line    { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject-line { font-size: 15pt; font-weight: bold; margin-top: 1px; }
+  .header-box .syllabus-line{ font-size: 13pt; font-weight: bold; margin-top: 3px; }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px solid #000;
+    padding: 3px 8px;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .instructions-box {
+    border: 1.5px solid #000;
+    padding: 4px 10px 5px 10px;
+    font-size: 12pt;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  .instructions-box .inst-title { font-weight: bold; text-decoration: underline; margin-bottom: 2px; }
+  .instructions-box ol { margin-left: 18px; }
+  .instructions-box ol li { margin-bottom: 1px; }
+
+  .section-bar {
+    background: #DAA520;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+  .section-sub { font-size: 11pt; font-weight: normal; margin-top: 1px; }
+
+  .mcq-inst { font-size: 11pt; font-style: italic; margin-bottom: 4px; }
+
+  .mcq-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 6px;
+    font-size: 12pt;
+  }
+  .mcq-table th {
+    background: #f0f0f0;
+    border: 1px solid #555;
+    padding: 3px 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12pt;
+  }
+  .mcq-table td {
+    border: 1px solid #555;
+    padding: 3px 5px;
+    vertical-align: middle;
+  }
+  .mcq-table .col-num { width: 3%;  text-align: center; }
+  .mcq-table .col-q   { width: 30%; }
+  .mcq-table .col-opt { width: 13%; text-align: center; }
+  .mcq-table .col-ans { width: 15%; text-align: center; }
+
+  /* td class = ans-cell, span class = mcq-opt -- different classes prevent the CSS cascade bug
+     where display:inline-block on span would cascade to td and collapse the Answer column */
+  .ans-cell { text-align: center; vertical-align: middle; }
+  .mcq-opt {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1.2px solid #555;
+    line-height: 14px;
+    text-align: center;
+    font-size: 9pt;
+    margin: 0 1px;
+  }
+
+  /* page-break-inside:avoid is on tr, NOT on the whole table,
+     so the table can span pages but individual rows won't split mid-cell */
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3px;
+    font-size: 11pt;
+  }
+  .comp-table th {
+    background: #f0f0f0;
+    border: 1px solid #555;
+    padding: 2px 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .comp-table td {
+    border: 1px solid #555;
+    padding: 2px 4px;
+    vertical-align: top;
+  }
+  .comp-table .col-part  { width: 6%;  text-align: center; font-weight: bold; vertical-align: middle; }
+  .comp-table .col-qtext { width: 37%; }
+  .comp-table .col-marks { width: 7%;  text-align: center; font-weight: bold; vertical-align: middle; }
+  .comp-table .col-or    { width: 6%;  text-align: center; font-weight: bold; color: #cc0000; font-size: 14pt; vertical-align: middle; }
+  .comp-table .col-orq   { width: 37%; }
+  .comp-table .col-orm   { width: 7%;  text-align: center; font-weight: bold; vertical-align: middle; }
+
+  .footer {
+    margin-top: 4px;
+    padding-top: 3px;
+    border-top: 1px solid #999;
+    font-size: 11pt;
+    page-break-before: avoid;
+  }
+  .footer-sigs { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .footer-center { text-align: center; font-size: 11pt; }
+  .end-marker { text-align: center; font-weight: bold; font-size: 12pt; margin-top: 3px; }
+</style>
+</head>
+<body>
+
+<!-- =================== PAGE 1 =================== -->
+<div class="page">
+
+  <div class="header-box">
+    <div class="board-name">Board of Intermediate and Secondary Education</div>
+    <div class="exam-line">Annual Examination 2026</div>
+    <div class="subject-line">PHYSICS &mdash; SSC-I (9th Grade)</div>
+    <div class="syllabus-line">Syllabus: Unit 8 &mdash; Magnetism</div>
+  </div>
+
+  <div class="info-row">
+    <span>Total Marks: 65</span>
+    <span>Time Allowed: 2 hours 30 minutes</span>
+    <span>Version: 1</span>
+  </div>
+
+  <div class="instructions-box">
+    <div class="inst-title">General Instructions:</div>
+    <ol>
+      <li>This paper has <strong>three sections</strong>: A (MCQs), B (Short Questions), C (Long Questions).</li>
+      <li><strong>Section A</strong> (12 marks): 12 MCQs. Mark the correct bubble. Time: 15 minutes.</li>
+      <li><strong>Section B</strong> (33 marks): 11 short questions &times; 3 marks each. Answer <em>either</em> the main question <em>or</em> the OR alternative.</li>
+      <li><strong>Section C</strong> (20 marks): 4 long questions &times; 5 marks each. Answer <em>either</em> the main question <em>or</em> the OR alternative.</li>
+    </ol>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks) &nbsp;&nbsp; [15 min]</div>
+  <div class="mcq-inst">Q.1: Choose the correct answer and fill in the corresponding bubble.</div>
+
+  <table class="mcq-table">
+    <thead>
+      <tr>
+        <th class="col-num">#</th>
+        <th class="col-q">Question</th>
+        <th class="col-opt">A</th>
+        <th class="col-opt">B</th>
+        <th class="col-opt">C</th>
+        <th class="col-opt">D</th>
+        <th class="col-ans">Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-num">1</td>
+        <td class="col-q">The basis of magnetism, according to domain theory, is the motion of:</td>
+        <td class="col-opt">Protons</td>
+        <td class="col-opt">Neutrons</td>
+        <td class="col-opt">Electrons</td>
+        <td class="col-opt">Nuclei</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">2</td>
+        <td class="col-q">A magnetic domain contains roughly how many atoms?</td>
+        <td class="col-opt">10<sup>3</sup></td>
+        <td class="col-opt">10<sup>6</sup></td>
+        <td class="col-opt">10<sup>12</sup></td>
+        <td class="col-opt">10<sup>20</sup></td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">3</td>
+        <td class="col-q">Magnetic field lines of a bar magnet originate from the:</td>
+        <td class="col-opt">South pole</td>
+        <td class="col-opt">Centre</td>
+        <td class="col-opt">North pole</td>
+        <td class="col-opt">Both poles equally</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">4</td>
+        <td class="col-q">The SI unit of magnetic field strength B is:</td>
+        <td class="col-opt">Weber</td>
+        <td class="col-opt">Tesla</td>
+        <td class="col-opt">Ampere</td>
+        <td class="col-opt">Henry</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">5</td>
+        <td class="col-q">A material that becomes a magnet when placed inside a magnetic field is called a/an:</td>
+        <td class="col-opt">Permanent magnet</td>
+        <td class="col-opt">Induced magnet</td>
+        <td class="col-opt">Diamagnetic material</td>
+        <td class="col-opt">Hard magnet</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">6</td>
+        <td class="col-q">Which is the most commonly used method for magnetizing metals?</td>
+        <td class="col-opt">Stroking method</td>
+        <td class="col-opt">Hammering method</td>
+        <td class="col-opt">Heating method</td>
+        <td class="col-opt">Solenoid method</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">7</td>
+        <td class="col-q">Which material is best suited for making an electromagnet?</td>
+        <td class="col-opt">Steel</td>
+        <td class="col-opt">Cobalt</td>
+        <td class="col-opt">Soft iron</td>
+        <td class="col-opt">Nickel</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">8</td>
+        <td class="col-q">Diamagnetic materials have a net magnetic field per atom that is:</td>
+        <td class="col-opt">Very large</td>
+        <td class="col-opt">Small but non-zero</td>
+        <td class="col-opt">Zero</td>
+        <td class="col-opt">Equal to 1 T</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">9</td>
+        <td class="col-q">Earth&rsquo;s magnetic and geographical poles are inclined at an angle of:</td>
+        <td class="col-opt">0&deg;</td>
+        <td class="col-opt">11.3&deg;</td>
+        <td class="col-opt">23.5&deg;</td>
+        <td class="col-opt">90&deg;</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">10</td>
+        <td class="col-q">Which of the following is a ferromagnetic material?</td>
+        <td class="col-opt">Silver</td>
+        <td class="col-opt">Copper</td>
+        <td class="col-opt">Aluminium</td>
+        <td class="col-opt">Nickel</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">11</td>
+        <td class="col-q">If a bar magnet is cut in half, it will become:</td>
+        <td class="col-opt">A monopole</td>
+        <td class="col-opt">Unmagnetized</td>
+        <td class="col-opt">Two complete magnets</td>
+        <td class="col-opt">A weaker magnet</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+      <tr>
+        <td class="col-num">12</td>
+        <td class="col-q">Earth&rsquo;s magnetic field is caused by:</td>
+        <td class="col-opt">Rotation of Earth</td>
+        <td class="col-opt">Spinning of Earth</td>
+        <td class="col-opt">Pull of the Sun</td>
+        <td class="col-opt">Motion of ions in the core</td>
+        <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end page 1 -->
+
+<!-- =================== PAGE 2 =================== -->
+<div class="page">
+
+  <div class="section-bar">
+    SECTION B &mdash; Short Answer Questions (11 &times; 3 = 33 Marks)
+    <div class="section-sub">Q.2: Attempt <strong>all</strong> questions. Answer <em>either</em> the main question <em>or</em> the OR alternative.</div>
+  </div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="col-part">Part</th>
+        <th class="col-qtext">Question</th>
+        <th class="col-marks">Marks</th>
+        <th class="col-or">OR</th>
+        <th class="col-orq">OR Question</th>
+        <th class="col-orm">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-part">(i)</td>
+        <td class="col-qtext">Define the <strong>domain theory of magnetism</strong>. What is a domain? How do domain arrangements differ in magnetized vs unmagnetized material?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Describe how <strong>electrons in an atom</strong> produce magnetism. Why is the contribution of the spinning nucleus neglected?</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(ii)</td>
+        <td class="col-qtext">Define <strong>magnetic field</strong>. State its SI unit. Explain how the direction of the magnetic field at any point is determined.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">What are <strong>magnetic field lines</strong>? State any three properties of the field lines of a bar magnet.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(iii)</td>
+        <td class="col-qtext">Explain <strong>relative strength of a magnetic field</strong> as shown by field lines. What does close spacing of field lines indicate?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">What is <strong>magnetic shielding</strong>? Explain the neutral zone. Name three materials used as magnetic shields and why their corners are rounded.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(iv)</td>
+        <td class="col-qtext">Define <strong>induced magnetism</strong>. Describe the <strong>stroking method</strong> step by step. Which pole forms at the end where stroking finishes?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Describe the <strong>hammering method</strong>. For which material is it mainly used? How can its magnetization effect be increased before hammering?</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(v)</td>
+        <td class="col-qtext">Explain how the <strong>heating method</strong> demagnetizes a material. What is the &ldquo;magnetic Seebeck effect&rdquo; mentioned in the chapter?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Describe the <strong>solenoid method</strong> of magnetization. Why does DC magnetize in one direction while AC demagnetizes the material?</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(vi)</td>
+        <td class="col-qtext">Write the formula <strong>B = &mu;<sub>o</sub>nI</strong>. Define each symbol with its unit and state the value of &mu;<sub>o</sub> for vacuum.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">A solenoid has 200 turns, length 50 cm, current 2 A. (&mu;<sub>o</sub> = 4&pi;&times;10<sup>&minus;7</sup> N A<sup>&minus;2</sup>) Calculate the magnetic field <strong>B</strong> inside.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(vii)</td>
+        <td class="col-qtext">Differentiate between <strong>temporary magnets</strong> and <strong>permanent magnets</strong>. Give two examples of each.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Why is <strong>soft iron</strong> used for electromagnets while <strong>steel</strong> is used for permanent magnets? Relate to soft and hard magnetic materials.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(viii)</td>
+        <td class="col-qtext">Differentiate between <strong>diamagnetic</strong> and <strong>paramagnetic</strong> materials (net field per atom, behaviour in external field, two examples each).</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Define <strong>ferromagnetic materials</strong>. State three properties distinguishing them from paramagnetic materials. Give two examples.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(ix)</td>
+        <td class="col-qtext">Differentiate between <strong>magnetic</strong> and <strong>non-magnetic materials</strong>. Give three differences and one example of each.</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Can two magnetic field lines ever intersect? Justify your answer with reference to what the direction of the field at that point would mean.</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(x)</td>
+        <td class="col-qtext">Describe <strong>Earth&rsquo;s magnetic field</strong>. What is the dynamo effect and how does it generate Earth&rsquo;s field?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Why are Earth&rsquo;s <strong>geographical and magnetic poles not the same</strong>? By what angle are they offset and what is the practical effect on a compass?</td>
+        <td class="col-orm">3</td>
+      </tr>
+      <tr>
+        <td class="col-part">(xi)</td>
+        <td class="col-qtext">Explain how <strong>speakers</strong> use a permanent magnet and an electromagnet to produce sound. What material is used as the permanent magnet?</td>
+        <td class="col-marks">3</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Explain the principle of <strong>magnetic recording</strong>. Name three recording media. State two types of devices that use magnetic recording.</td>
+        <td class="col-orm">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)
+    <div class="section-sub">Q.3: Attempt <strong>all</strong> questions. Answer <em>either</em> the main question <em>or</em> the OR alternative.</div>
+  </div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="col-part">Q.</th>
+        <th class="col-qtext">Question</th>
+        <th class="col-marks">Marks</th>
+        <th class="col-or">OR</th>
+        <th class="col-orq">OR Question</th>
+        <th class="col-orm">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-part">3(i)</td>
+        <td class="col-qtext">Explain the <strong>domain theory of magnetism</strong>: (a) how electrons produce magnetism at the atomic level, (b) definition and typical size of a domain, (c) domain arrangement before and after magnetization, (d) what happens to domains when a magnetized material is heavily heated.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Define <strong>magnetic field</strong> and <strong>field lines</strong>. Explain: (a) plotting with compass and iron filings, (b) direction of lines inside and outside a bar magnet, (c) what spacing of lines indicates, (d) what a neutral zone is and how it is formed by two N-poles placed side by side.</td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(ii)</td>
+        <td class="col-qtext">Explain <strong>three methods of magnetization</strong> (stroking, hammering, solenoid). For the solenoid write B = &mu;<sub>o</sub>nI and define all terms. Calculate B for a solenoid: N = 100 turns, L = 25 cm, I = 3 A, &mu;<sub>o</sub> = 4&pi;&times;10<sup>&minus;7</sup> N A<sup>&minus;2</sup>. State which method is most common and why.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Compare <strong>permanent magnets</strong> and <strong>electromagnets</strong> under four headings: material used, how magnetism is produced, whether strength can be varied, and whether poles can be changed. List four applications of permanent magnets and four of electromagnets.</td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(iii)</td>
+        <td class="col-qtext">Classify magnetic materials as <strong>diamagnetic, paramagnetic, and ferromagnetic</strong>. For each: (a) net field per atom, (b) behaviour in an external field, (c) whether magnetism is retained after field removal, (d) two examples. State which type the chapter calls &ldquo;non-magnetic material.&rdquo;</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Using five textbook points, differentiate <strong>magnetic from non-magnetic materials</strong>. Then explain <strong>magnetic shielding</strong>: define it, state why it is needed, explain the neutral zone, name two shield materials, and explain rounded corners.</td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr>
+        <td class="col-part">3(iv)</td>
+        <td class="col-qtext">Describe <strong>Earth&rsquo;s magnetic field</strong>: (a) dynamo effect and source, (b) resemblance to bar magnet, (c) angle between geographical and magnetic poles, (d) protection from cosmic rays, (e) how Aurora forms.</td>
+        <td class="col-marks">5</td>
+        <td class="col-or">OR</td>
+        <td class="col-orq">Explain two magnet applications: (a) <strong>magnetic recording</strong> (process step by step, three recording media, two device types), and (b) <strong>speakers and microphones</strong> (role of each magnet; why microphone is the reverse of a speaker).</td>
+        <td class="col-orm">5</td>
+      </tr>
+      <tr style="page-break-inside:avoid;">
+        <td colspan="6" style="border:none;border-top:1px solid #999;padding:3px 4px 2px 4px;page-break-inside:avoid;font-size:11pt;">
+          <span>Invigilator&rsquo;s Signature: ___________________</span>
+          <span style="margin-left:60px;">Candidate&rsquo;s Signature: ___________________</span>
+          <div style="text-align:center;margin-top:1px;">Chapters Covered: Unit 8 &mdash; Magnetism &nbsp;&nbsp;&nbsp; <strong>-- End of Question Paper --</strong></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end page 2 -->
+
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', serif;
+    font-size: 13pt;
+    line-height: 1.5;
+    color: #000;
+  }
+  .page {
+    width: 100%;
+    padding: 7mm 9mm 0 9mm;
+  }
+
+  .header-box {
+    border: 2.5px solid #000;
+    text-align: center;
+    padding: 4px 6px 3px 6px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+  .header-box .board    { font-size: 17pt; font-weight: bold; text-transform: uppercase; }
+  .header-box .exam-year { font-size: 15pt; margin-top: 1px; }
+  .header-box .subject  { font-size: 15pt; margin-top: 1px; }
+  .header-box .syllabus { font-size: 13pt; font-weight: bold; margin-top: 2px; }
+  .header-box .ak-label { font-size: 14pt; font-weight: bold; color: #005500; margin-top: 2px; }
+
+  .section-bar {
+    background: #DAA520;
+    color: #fff;
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 4px 8px;
+    margin: 6px 0 5px 0;
+    page-break-after: avoid;
+  }
+  .section-bar-blue {
+    background: #4682B4;
+    color: #fff;
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 4px 8px;
+    margin: 6px 0 5px 0;
+    page-break-after: avoid;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #e8e8e8;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin-left: 3px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge-green {
+    display: inline-block;
+    background: #d4edda;
+    border: 1px solid #5cb85c;
+    border-radius: 4px;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin-left: 3px;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #155724;
+  }
+
+  .mcq-answer {
+    margin-bottom: 5px;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #ccc;
+    font-size: 12pt;
+    page-break-inside: avoid;
+  }
+  .mcq-qline { font-weight: bold; margin-bottom: 1px; }
+  .mcq-correct { color: #155724; font-weight: bold; }
+  .mcq-expl { font-size: 11pt; margin-top: 1px; color: #222; line-height: 1.3; }
+
+  .answer-box {
+    border: 1px solid #ccc;
+    border-left: 4px solid #4682B4;
+    background: #fafafa;
+    padding: 5px 9px;
+    margin-bottom: 6px;
+    font-size: 12pt;
+    line-height: 1.45;
+    page-break-inside: avoid;
+  }
+  .answer-box .q-label {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 12pt;
+  }
+  .or-label {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 13pt;
+    margin: 4px 0 3px 0;
+    display: inline-block;
+  }
+  .answer-box p  { margin-bottom: 3px; }
+  .answer-box ul { padding-left: 18px; margin-top: 2px; }
+  .answer-box li { margin-bottom: 2px; }
+  .answer-box ol { padding-left: 18px; margin-top: 2px; }
+
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11pt;
+    margin: 4px 0;
+    page-break-inside: avoid;
+  }
+  .comp-table th {
+    background: #e0e0e0;
+    border: 1px solid #999;
+    padding: 3px 5px;
+    text-align: center;
+  }
+  .comp-table td {
+    border: 1px solid #999;
+    padding: 3px 5px;
+    vertical-align: top;
+  }
+
+  @media print {
+    body { margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">Federal Board of Intermediate and Secondary Education, Islamabad</div>
+    <div class="exam-year">Annual Examination 2026</div>
+    <div class="subject">Biology &mdash; Class IX &nbsp;|&nbsp; Paper: SSC-I</div>
+    <div class="syllabus">Syllabus: Chapter 10 &mdash; Evolution</div>
+    <div class="ak-label">ANSWER KEY (Version 1)</div>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; Multiple Choice Questions (12 &times; 1 = 12 Marks)</div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q1. Evolution is defined as the gradual change in a population's traits in response to: <span class="badge-green">B &mdash; Environmental conditions</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><span class="mcq-correct">Evolution</span> is the gradual alteration of a population's or species' traits over time in response to the <strong>environmental conditions</strong>. Evolutionary changes can always be passed on to next generations. Food supply, geographic barriers, and reproductive rate are contributing factors but are not the definition.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q2. Which is NOT a listed source of variation: <span class="badge-green">C &mdash; Photosynthesis</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">The textbook lists five sources: <strong>genetic recombination</strong> (crossing over), independent assortment of chromosomes, fertilization, <strong>mutation in gamete-forming cells</strong>, and <strong>gene flow</strong>. Photosynthesis is a metabolic process and is not a source of variation.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q3. Darwin's voyage was on the ship: <span class="badge-green">B &mdash; HMS Beagle</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">After a <strong>five-year voyage</strong> around the world on the <strong>HMS Beagle</strong>, Charles Darwin put forth the Theory of Natural Selection in 1838. In 1859 he published <em>On the Origin of Species by Natural Selection</em>. Victory, Endeavour, and Discovery were other famous ships unrelated to Darwin.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q4. An inherited trait that increases survival chances is called: <span class="badge-green">C &mdash; Adaptation</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">An <strong>adaptation</strong> is an inherited trait (or group of traits) that increases an organism's chances of survival in specific environmental conditions. Variation refers to differences in traits; mutation is a gene change; speciation is the formation of new species.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q5. What most accurately measures an organism's fitness: <span class="badge-green">B &mdash; How many fertile offspring it produces</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">In the context of <strong>natural selection</strong>, fitness is measured by reproductive success: an organism that produces more <strong>fertile offspring</strong> passes more of its genes to the next generation. Withstanding extremes or eating well are useful but secondary to actual reproduction.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q6. Peppered moths before 1848 were mostly: <span class="badge-green">B &mdash; Light colour with dark patches</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">All reported variants of the peppered moth up until 1848 had <strong>light colours with dark patches</strong>. A dark-coloured moth was first discovered in 1848. By 1895 dark-coloured moths made up 95% of the population due to Industrial Melanism.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q7. Limb bones of humans, dogs, birds, whales with same structure are: <span class="badge-green">C &mdash; Homologous structures</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Homologous structures</strong> share the same fundamental shape due to origin from a common ancestor, though their shapes and sizes have evolved for different functions. Vestigial structures are inactive remnants; analogous structures have similar function but different origin (not in this textbook).</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q8. A mutation is: <span class="badge-green">C &mdash; A change in gene</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">A <strong>mutation</strong> is a change in the <strong>gene</strong>. Mutations in gamete-forming germ cells can be inherited and serve as a source of variation. A change in appearance may be the result of a mutation but is not the definition; a change in behaviour is not a mutation.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q9. Neli-Ravi buffalo were produced by: <span class="badge-green">C &mdash; Selective breeding</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Selective breeding</strong> (artificial selection) is the practice of breeding domesticated animals to produce offspring with desired genetic features. Cows/buffalo producing more milk are chosen as parents for the next generation, creating breeds that outperform the original.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q10. Speciation is the evolutionary process by which: <span class="badge-green">B &mdash; A new species is formed</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Speciation</strong> is defined as the evolutionary process by which new biological <strong>species</strong> arise. A breed is produced by artificial selection; a race and a population are not new biological species by definition.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q11. Vestigial organs are: <span class="badge-green">B &mdash; Inactive; remains from a previous common ancestor</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl"><strong>Vestigial organs</strong> are inactive, non-functional structures that are likely just the remains from a previous common ancestor. Examples include wings on flightless birds, leaves on some cacti, and the appendix in humans. They are not newly evolved, not found only in plants, and are distinct from homologous structures.</div>
+  </div>
+
+  <div class="mcq-answer">
+    <div class="mcq-qline">Q12. Natural selection operates to produce changes in: <span class="badge-green">B &mdash; Populations</span> <span class="badge">1 mark</span></div>
+    <div class="mcq-expl">Natural selection causes <strong>population-wide</strong> changes in gene frequencies over time. It does not act on individuals (individuals don't evolve; they live or die). It operates at the level of the whole population, shifting how common or rare certain traits are over generations.</div>
+  </div>
+
+</div><!-- end page 1 -->
+
+
+<div class="page">
+
+  <div class="section-bar">SECTION B &mdash; Short Questions (11 &times; 3 = 33 Marks)</div>
+
+  <div class="answer-box">
+    <div class="q-label">2(i) Define evolution. How old is the Earth and how did life develop? <span class="badge">3 marks</span></div>
+    <p><strong>Evolution</strong> is the gradual alteration of a population's or species' traits over time in response to environmental conditions. <span class="badge">1 mark</span></p>
+    <p>According to scientists, the Earth is more than <strong>four billion years old</strong>. <span class="badge">1 mark</span></p>
+    <p>New life forms developed from unicellular organisms, and all current living things developed gradually from earlier ones. Evolutionary changes can always be passed on to next generations. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Define variation. List any three sources of variation from meiosis and related processes. <span class="badge">3 marks</span></div>
+    <p><strong>Variation</strong> refers to the differences in traits displayed by members of the same species (e.g., domestic cats differ in size, coat colour, eye colour, hair length). <span class="badge">1 mark</span></p>
+    <p>Three sources of variation: <span class="badge">1 mark each (any 3)</span></p>
+    <ul>
+      <li><strong>Genetic recombination</strong> from crossing over during gamete development.</li>
+      <li>Different chromosome combinations formed by <strong>independent assortment</strong> in gametes.</li>
+      <li>The process of <strong>fertilization</strong> (one of countless sperms fuses with an egg).</li>
+      <li>A <strong>mutation</strong> in the gamete-forming germ cells.</li>
+      <li><strong>Gene flow</strong> (transfer of genes from one population of a species to another).</li>
+    </ul>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(ii) What is adaptation? How does it differ from variation? Give one example. <span class="badge">3 marks</span></div>
+    <p>An <strong>adaptation</strong> is an inherited trait or group of traits that increases an organism's chances of survival in specific environmental conditions. <span class="badge">1 mark</span></p>
+    <p>Variation refers to differences in traits among individuals of the same species; adaptation is specifically those variations that are <strong>beneficial for survival and reproduction</strong> in a given environment. <span class="badge">1 mark</span></p>
+    <p>Example: the light colour of pre-industrial peppered moths blended with lichen-covered tree bark, giving excellent concealment from predator birds. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">How does variation promote evolution? <span class="badge">3 marks</span></div>
+    <p>Some individuals in a population may have an advantage over others as a result of population variations. <span class="badge">1 mark</span></p>
+    <p>These individuals will be able to have more progeny. The population will gradually see more instances of that specific variant. <span class="badge">1 mark</span></p>
+    <p>With these variations, individuals will have a better chance of surviving and procreating, which is evolution. Only the healthiest, fittest, and strongest will survive and reproduce when resources are scarce. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(iii) State the four bases of Darwin's Theory of Natural Selection. <span class="badge">3 marks</span></div>
+    <p>Darwin's Theory of Natural Selection is based on four points <span class="badge">1 mark for correctly naming all four</span>:</p>
+    <ol>
+      <li><strong>Overproduction:</strong> All living creatures are very fertile so that their populations could grow quickly to produce large numbers of offspring.</li>
+      <li><strong>Competition:</strong> Population sizes stay roughly constant despite overproduction; food and other resources are scarce, causing competition.</li>
+      <li><strong>Variations:</strong> No two organisms are the same; a large portion of this diversity is heritable, inherited through genes.</li>
+      <li><strong>Natural selection:</strong> Only organisms with desirable variations will live till reproductive age and reproduce. Only fittest organisms survive. <span class="badge">2 marks for description</span></li>
+    </ol>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Darwin's observations at the Galapagos Islands. <span class="badge">3 marks</span></div>
+    <p>Darwin visited the <strong>Galapagos Islands</strong> and found a number of <strong>finch species</strong> that varied from island to island. <span class="badge">1 mark</span></p>
+    <p>He noticed that the form of the birds' beaks varied depending on the <strong>kind of food they ate</strong> (seeds, insects, cactus, etc.). <span class="badge">1 mark</span></p>
+    <p>Darwin believed the processes of <strong>speciation and adaptation were linked</strong>: accumulation of adaptations in different environments, isolated by geographic barriers, would form a new species from an ancestral form. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(iv) Publication of "On the Origin of Species" and the year the theory was put forth. <span class="badge">3 marks</span></div>
+    <p>After a five-year voyage around the world on the HMS Beagle, Charles Darwin put forth the <strong>Theory of Natural Selection in 1838</strong>. <span class="badge">1 mark</span></p>
+    <p>In <strong>1859</strong>, he released the book titled <em>On the Origin of Species by Natural Selection</em>, recording his observations. <span class="badge">1 mark</span></p>
+    <p>The book described the theory that organisms with favourable traits survive, reproduce more, and pass those traits to offspring, gradually changing the population over generations. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Describe overproduction and competition in natural selection. <span class="badge">3 marks</span></div>
+    <p><strong>Overproduction:</strong> All living creatures are very fertile so that their populations could grow quickly to produce a large number of offspring. <span class="badge">1.5 marks</span></p>
+    <p><strong>Competition:</strong> Population sizes do not rise to very high levels even after overproduction because food supplies and other resources are scarce. As a result, there is competition for resources and food. <span class="badge">1.5 marks</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(v) Industrial Melanism: moth population before and after the Industrial Revolution. <span class="badge">3 marks</span></div>
+    <p><strong>Industrial Melanism</strong> is the name given to the phenomenon where dark-coloured moths became dominant in England during the industrial era of pollution. <span class="badge">1 mark</span></p>
+    <p><strong>Before the Industrial Revolution (before 1848):</strong> All reported variants of the peppered moth had light colours with dark patches; the dark mutation was first discovered in 1848. <span class="badge">1 mark</span></p>
+    <p><strong>After the Industrial Revolution (by 1895):</strong> Dark-coloured moths made up 95% of the peppered moth population in England, as sulphur dioxide pollution from coal burning drove out the lichens and exposed the darker bark of trees. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Why light-coloured moths became easy prey after the Industrial Revolution. <span class="badge">3 marks</span></div>
+    <p>Light-coloured <strong>lichens</strong> growing on tree trunks had blended with the colour of the light-coloured moth, giving it excellent concealment from predator birds. <span class="badge">1 mark</span></p>
+    <p>As the industrial revolution progressed, sulphur dioxide pollution from coal burning <strong>drove out lichens</strong>, exposing the darker bark. Light-coloured moths were now visible on dark-coloured trunks and were easily seen and eaten by the birds. <span class="badge">1 mark</span></p>
+    <p>The predator birds served as <strong>snoopers</strong> (agents of natural selection): they ate more light moths on dark trunks, so the dark colour became the adaptive advantage in polluted environments. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(vi) Three conclusions from the peppered moth case study. <span class="badge">3 marks</span></div>
+    <p>The analysis of the peppered moth case study shows three conclusions <span class="badge">1 mark each</span>:</p>
+    <ol>
+      <li>The variation (change in bark colour) is an illustration of <strong>variation subject to selection</strong> by the environment in a changing environment.</li>
+      <li>It demonstrates the <strong>truth of evolution</strong>: populations do change over time in response to environmental pressure.</li>
+      <li>It points out that <strong>evolution and natural selection operate on the basis of genetic change</strong> within a population.</li>
+    </ol>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">After the 1950s pollution was reduced; what happened to the moths? <span class="badge">3 marks</span></div>
+    <p>After the 1950s, England's industrial pollution was reduced. <span class="badge">1 mark</span></p>
+    <p>As pollution decreased, lichens returned to tree trunks, making the bark lighter again. The light-coloured moths now had better <strong>camouflage</strong> than the dark moths. <span class="badge">1 mark</span></p>
+    <p>As a result, the <strong>number of light-coloured moths increased</strong> again. This shows that natural selection is reversible when environmental conditions change, confirming the mechanism of selection by predators. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(vii) Fossil record and one textbook example of evolution shown by fossils. <span class="badge">3 marks</span></div>
+    <p>The <strong>fossil record</strong> is the collection of all fossils from around the world, classified and aged by scientists. It shows the evolution of organisms across time and tells the tale of the past over millions of years. <span class="badge">1 mark</span></p>
+    <p>Fossils also show that ancient species were distinct from modern ones, providing strong evidence that ancient species were distinct from modern ones. <span class="badge">1 mark</span></p>
+    <p>The textbook mentions that researchers have found comprehensive records demonstrating how <strong>humans and horses</strong> have evolved over time. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">What are vestigial organs? Give two examples. <span class="badge">3 marks</span></div>
+    <p><strong>Vestigial organs</strong> are inactive, non-functional structures that organisms possess and which are likely just the remains from a previous common ancestor. These structures have lost their use over time. <span class="badge">1 mark</span></p>
+    <p>Example 1: <strong>Wings on flightless birds</strong> (e.g., ostriches) are vestigial; the ancestor could fly but modern birds of this type cannot. <span class="badge">1 mark</span></p>
+    <p>Example 2: The <strong>appendix in humans</strong> is a vestigial organ with no known current digestive function, believed to be a remnant from ancestors with a different digestive system. (Also acceptable: leaves on some cacti.) <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(viii) Homologous structures with four animals. <span class="badge">3 marks</span></div>
+    <p><strong>Homologous structures</strong> are similar parts in different animals that share the same fundamental shape due to their origin from a common ancestor. The shapes and sizes have evolved over time in different animals but the general structure remains the same. <span class="badge">1 mark</span></p>
+    <p>Example: the bones in the limbs of a <strong>human, dog, bird, and whale</strong> all share the same general structure (humerus, radius, ulna, and hand/foot bones). <span class="badge">1 mark</span></p>
+    <p>This similarity in structure is evidence of <strong>common ancestry</strong> and supports the theory of evolution through comparative anatomy. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Comparative anatomy as evidence of evolution. <span class="badge">3 marks</span></div>
+    <p><strong>Comparative anatomy</strong> involves the study of structural similarities in creatures of different species. The existence of structures with the same fundamental shape is a type of evidence supporting evolution. <span class="badge">1 mark</span></p>
+    <p>Due to their origin in the appendages of a <strong>common ancestor</strong>, the bones in the limbs of different mammals share the same general structure, even though their shapes and sizes have evolved differently. <span class="badge">1 mark</span></p>
+    <p>Sharing the same fundamental bone structure indicates descent from a common ancestor, meaning these diverse animals evolved from one ancestral form, which is the definition of evolution. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(ix) What is artificial selection? Name its two techniques. <span class="badge">3 marks</span></div>
+    <p><strong>Artificial selection</strong> is the practice of breeding domesticated and genetically enhanced plants and animals to produce offspring with desired genetic features. <span class="badge">1 mark</span></p>
+    <p>Artificial selection is also called <strong>selective breeding</strong>. <span class="badge">1 mark</span></p>
+    <p>The two techniques used in artificial selection are: <strong>selective breeding</strong> and <strong>hybridization</strong>. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Two examples of improving plants by selection; effect on yield. <span class="badge">3 marks</span></div>
+    <p>Farmers select plant varieties that cause plants to grow <strong>larger, more quickly, be drought-resistant</strong>, or have higher nutritional value. <span class="badge">1 mark</span></p>
+    <p>Example 1: <strong>Corn (maize)</strong> was bred from a small wild plant (teosinte) through generations of selection; modern corn is much larger. <span class="badge">1 mark</span></p>
+    <p>Over generations of repeating the selection process (choosing seeds only from individuals with the most desirable traits), the <strong>yield of the crop increases</strong> progressively. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(x) Define speciation and the role of geographical isolation. <span class="badge">3 marks</span></div>
+    <p><strong>Speciation</strong> is the evolutionary process by which new biological species arise. <span class="badge">1 mark</span></p>
+    <p>When a species gets split into two <strong>geographical regions</strong>, the process of speciation starts. Each group adapts to its own environmental conditions independently. <span class="badge">1 mark</span></p>
+    <p>After a while, individuals from one group can no longer reproduce with the other group (reproductive isolation). Ultimately, two new species have evolved from one ancestral species. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Reproductive isolation leading to two distinct species. <span class="badge">3 marks</span></div>
+    <p><strong>Reproductive isolation</strong> occurs when two groups that originated from the same ancestor can no longer interbreed successfully. <span class="badge">1 mark</span></p>
+    <p>Once a species is separated by geographical barriers, each group accumulates different adaptations over many generations. Their gene pools diverge. <span class="badge">1 mark</span></p>
+    <p>Eventually the two groups differ so much genetically that they can no longer reproduce with each other, meaning they have become <strong>two distinct species</strong>. Ultimately, two new species have evolved from one. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">2(xi) Three differences between natural selection and artificial selection. <span class="badge">3 marks</span></div>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Natural Selection</th>
+          <th>Artificial Selection</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Selection occurs when natural environmental conditions change.</td>
+          <td>It is selected by man. <span class="badge">1 mark</span></td>
+        </tr>
+        <tr>
+          <td>Varieties are produced by mutations.</td>
+          <td>Varieties are produced by selective breeding. <span class="badge">1 mark</span></td>
+        </tr>
+        <tr>
+          <td>It is a slow process and takes thousands to millions of years.</td>
+          <td>It is a fast process; results are immediate (in the next generation). <span class="badge">1 mark</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">How does selective breeding improve animals? One example. <span class="badge">3 marks</span></div>
+    <p>Animals are subjected to selection by choosing individuals with the most desirable traits as parents for the next generation. Over many generations, offspring that carry and express those traits become the dominant form of the breed. <span class="badge">1 mark</span></p>
+    <p>Example: <strong>Cows</strong> that generate a lot of milk and high-quality meat are chosen for selective breeding. They serve as parents for the following generation. <span class="badge">1 mark</span></p>
+    <p>In this manner, a breed of cow is created that can produce <strong>more milk</strong> than the original breed, demonstrating improvement by artificial selection. <span class="badge">1 mark</span></p>
+  </div>
+
+</div><!-- end page 2 -->
+
+
+<div class="page">
+
+  <div class="section-bar-blue">SECTION C &mdash; Long Questions (4 &times; 5 = 20 Marks)</div>
+
+  <div class="answer-box">
+    <div class="q-label">3(i) Darwin's Theory of Natural Selection in detail (four bases). <span class="badge">5 marks</span></div>
+    <p>Natural selection is the process through which organisms who possess traits that are helpful for reproduction in a certain environment produce more children in the following generation, gradually expanding the population's <strong>genetic diversity</strong>. <span class="badge">1 mark</span></p>
+    <p>The theory is based on four interconnected points:</p>
+    <ol>
+      <li><strong>Overproduction:</strong> All living creatures are very fertile so their populations could grow quickly to produce large numbers of offspring. This means not all can survive. <span class="badge">1 mark</span></li>
+      <li><strong>Competition:</strong> Population sizes do not rise to very high levels even after overproduction because food supplies and other resources are scarce. This creates a struggle for existence. <span class="badge">1 mark</span></li>
+      <li><strong>Variations:</strong> No two organisms are the same; a large portion of this diversity is heritable, inherited through the genes of offspring. Those with favourable variations have a survival advantage. <span class="badge">1 mark</span></li>
+      <li><strong>Natural selection:</strong> Only those organisms with desirable variations will live until reproductive age. The population will have more advantageous genetic variations and fewer harmful ones after many generations. Natural selection is essentially an elimination process; only the fittest organisms survive. <span class="badge">1 mark</span></li>
+    </ol>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Darwin's observations on the HMS Beagle voyage and the Galapagos finches. <span class="badge">5 marks</span></div>
+    <p>After a <strong>five-year voyage</strong> around the world on the ship HMS Beagle, Charles Darwin put forth the Theory of Natural Selection in 1838. <span class="badge">1 mark</span></p>
+    <p>Darwin was able to create his theory when he visited the <strong>Galapagos Islands</strong>. He found a number of finch species that varied from island to island. <span class="badge">1 mark</span></p>
+    <p>He noticed that the form of the birds' <strong>beaks varied depending on the kind of food they ate</strong> (woodpecker finch used tools, seed-eaters had thick beaks, insect-eaters had slender beaks, etc.). <span class="badge">1 mark</span></p>
+    <p>Darwin believed that <strong>speciation and adaptation were linked</strong>: the overall accumulation of adaptations in different environments, isolated from the original environment by geographic barriers, would lead to the formation of a new species from an ancestral form. <span class="badge">1 mark</span></p>
+    <p>Darwin identified three basic patterns in biological diversity: (1) <strong>global</strong>, (2) <strong>local</strong>, and (3) <strong>variation over time in species</strong>. The two groups could differ sufficiently over many generations to be classified as two different species. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(ii) Peppered moth case study: colour shift during and after the Industrial Revolution. <span class="badge">5 marks</span></div>
+    <p><strong>Pre-industrial phase (before 1848):</strong> All peppered moths (<em>Biston betularia</em>) had light colours with dark patches. The moths rest on tree trunks throughout the day. Light-coloured lichens growing on the trunks blended with the colour of the light-coloured moth, giving excellent concealment from predator birds. Dark moths were rare (from a mutation). <span class="badge">1 mark</span></p>
+    <p><strong>During the Industrial Revolution (1848 onward):</strong> Sulphur dioxide pollution from coal burning drove out lichens from trees in industrial locations, exposing the darker bark. Light-coloured moths resting on dark-coloured trunks were now easily visible. Predator birds could locate and consume the light-coloured moths easily. <span class="badge">1 mark</span></p>
+    <p><strong>Selection mechanism:</strong> Dark colour was the adaptive variable: dark moths resting on dark trunks were hidden from the birds. Predator birds served as <strong>snoopers</strong>, picking off the visible light moths. By 1895, dark-coloured moths made up <strong>95% of the population</strong>. This phenomenon is called <strong>Industrial Melanism</strong>. <span class="badge">2 marks</span></p>
+    <p><strong>Post-1950s reversal:</strong> After England's industrial pollution was reduced, lichens returned to tree trunks, the bark lightened, and the light-coloured moths regained their camouflage advantage. The number of light-coloured moths <strong>increased again</strong>, confirming that natural selection reverses when the environment changes back. <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Three types of evidence for evolution with examples. <span class="badge">5 marks</span></div>
+    <p><strong>1. Palaeontology (Fossil Record):</strong> Fossils show the evolution of organisms across time. Scientists classify and age fossils from around the world; the resulting fossil record tells the tale of the past over millions of years. Example: comprehensive fossil records demonstrate how <strong>humans and horses</strong> have evolved. <span class="badge">2 marks</span></p>
+    <p><strong>2. Comparative Anatomy:</strong></p>
+    <ul>
+      <li><strong>Homologous structures:</strong> Structures in creatures with the same fundamental shape due to origin from a common ancestor, e.g., limb bones of human, dog, bird, and whale all share the same general bone arrangement. <span class="badge">1 mark</span></li>
+      <li><strong>Vestigial structures:</strong> Inactive, non-functional remains from a previous common ancestor, e.g., wings on flightless birds, the appendix in humans. <span class="badge">1 mark</span></li>
+    </ul>
+    <p><strong>3. Selective Breeding:</strong> The practice of breeding domesticated plants and animals to produce offspring with desired genetic features demonstrates that traits are heritable and can be directed. Example: <strong>modern corn</strong> was developed from teosinte through generations of selection by farmers. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(iii) Natural selection vs artificial selection: five key differences and one example each. <span class="badge">5 marks</span></div>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th style="width:50%">Natural Selection</th>
+          <th style="width:50%">Artificial Selection</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Selection occurs when natural environmental conditions change.</td>
+          <td>It is selected by man.</td>
+        </tr>
+        <tr>
+          <td>Varieties are produced by mutations.</td>
+          <td>Varieties are produced by selective breeding.</td>
+        </tr>
+        <tr>
+          <td>It operates in natural population.</td>
+          <td>It operates in domesticated population.</td>
+        </tr>
+        <tr>
+          <td>It is a slow process and takes thousands to millions of years.</td>
+          <td>It is a fast process; results are immediate (in the next generation).</td>
+        </tr>
+        <tr>
+          <td>It is responsible for the great biological diversity.</td>
+          <td>It is responsible for new varieties different from the starting generation.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:4px;"><span class="badge">1 mark per row, any 5 correct differences = 3 marks; 1 mark per valid example = 2 marks</span></p>
+    <p><strong>Example of natural selection:</strong> The Industrial Melanism of the peppered moth, where dark moths became dominant in polluted environments without human intervention.</p>
+    <p><strong>Example of artificial selection:</strong> Dog breeds (e.g., Labrador, Dachshund, Poodle) were all produced from wolf ancestry by humans selecting for specific traits over generations.</p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Artificial selection: four-step crop process and one animal example. <span class="badge">5 marks</span></div>
+    <p><strong>Artificial selection</strong> is the practice of breeding domesticated and genetically enhanced plants and animals to produce offspring with desired genetic features. Its two techniques are selective breeding and hybridization. <span class="badge">1 mark</span></p>
+    <p>The four-step process of increasing crop yield by artificial selection:</p>
+    <ol>
+      <li><strong>Natural variation</strong> occurs in the wild population of the crop. <span class="badge">1 mark</span></li>
+      <li>Seeds for the next generation are <strong>chosen only from individuals with the most desirable traits</strong> (e.g., largest grain, drought resistance).</li>
+      <li>This process is <strong>repeated for several generations</strong>, each time selecting only the best individuals.</li>
+      <li>Over time, the <strong>yield of the crop increases</strong>. <span class="badge">1 mark</span> (Steps 2-4 together = 2 marks)</li>
+    </ol>
+    <p><strong>Animal example:</strong> Cows that generate a lot of milk and high-quality meat are chosen for selective breeding. They serve as parents for the following generation. In this manner, a breed of cow is created that can produce <strong>more milk</strong> than the original breed. <span class="badge">1 mark</span></p>
+  </div>
+
+  <div class="answer-box">
+    <div class="q-label">3(iv) Speciation: geographical isolation, reproductive isolation, and Darwin's three patterns. <span class="badge">5 marks</span></div>
+    <p><strong>Speciation</strong> is the evolutionary process by which new biological species arise. Two groups that originate from the same ancestor can become very different over time if they live in different places. <span class="badge">1 mark</span></p>
+    <p><strong>Geographical isolation:</strong> When a species gets split into two geographical regions, the process of speciation starts. Each group adapts to its own environmental conditions independently. <span class="badge">1 mark</span></p>
+    <p><strong>Reproductive isolation:</strong> After a while, individuals from one group can no longer reproduce with the other group. The two populations' gene pools have diverged so much that interbreeding fails. <span class="badge">1 mark</span></p>
+    <p><strong>Result:</strong> Ultimately, two new species have evolved from one ancestral species. The two groups differ sufficiently over many generations to be classified as two different species. <span class="badge">1 mark</span></p>
+    <p><strong>Darwin's three patterns of biological diversity:</strong> (1) <strong>global</strong> variation (differences between species across the whole world), (2) <strong>local</strong> variation (differences between species in one area), and (3) <strong>variation over time</strong> (species change their form across geological time). <span class="badge">1 mark</span></p>
+
+    <span class="or-label">OR</span>
+    <div class="q-label">Variation and its role in evolution: definition, five sources, adaptation, and heritable change. <span class="badge">5 marks</span></div>
+    <p><strong>Variation</strong> is the differences in traits displayed by members of the same species. For instance, domestic cats differ in size, coat colour, eye colour, and hair length. <span class="badge">1 mark</span></p>
+    <p><strong>Five sources of variation</strong> (from meiosis and related processes): <span class="badge">1 mark</span></p>
+    <ol>
+      <li>Genetic recombination from crossing over during gamete development.</li>
+      <li>Different chromosome combinations by independent assortment.</li>
+      <li>Fertilization (one of countless sperms fuses with an egg).</li>
+      <li>Mutation in the gamete-forming germ cells.</li>
+      <li>Gene flow (transfer of genes between populations).</li>
+    </ol>
+    <p><strong>Adaptation:</strong> An inherited trait or group of traits that increases an organism's chances of survival in specific environmental conditions is called an adaptation. Variations are beneficial for organisms as they help them be more advanced and immune. <span class="badge">1 mark</span></p>
+    <p><strong>Heritable variation drives evolutionary change:</strong> A large portion of variation is heritable, inherited from parents through the genes of offspring. Individuals with advantageous variations survive, reproduce more, and pass those traits on. Over many generations, the population changes, which is evolution. <span class="badge">2 marks</span></p>
+  </div>
+
+</div><!-- end page 3 -->
+
+</body>
+</html>
