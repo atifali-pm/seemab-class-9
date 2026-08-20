@@ -237,3 +237,47 @@ These stems and contexts appear in three or more papers. Reuse them only with a 
 32. **Enzymes as biological catalysts, and the list-of-characteristics question.** 02, 07, 08.
 
 Borderline repeats worth watching, at two papers each but already used twice inside a single paper: the respiratory and circulatory systems cooperating (07, and both an MCQ and a short question in 10); base-pairing percentage calculations (both an MCQ and a Section C part in 10, then a full Section C question in 12); and the "longest phase of mitosis is prophase" MCQ, which is already a verbatim repeat between exam-03 and exam-07.
+
+## Exam-14 (this build) — 2026-08-18
+
+**Non-standard structure at Atif's request:** 24 MCQs + 3 short (3 marks) + 2 long (5 marks) = **43 marks**, 2 hours, **no OR alternatives**.
+
+**Every question carries an SLO citation.** This is the first Biology paper built under the [[mcq-book-citation]] / never-out-of-syllabus rule adopted after Physics exam-13 was found to contain four out-of-syllabus MCQs. The SLO list on page 1 of each chapter scan was read as an image first, and no question was written that is not covered by a stated SLO.
+
+| Q | Chapter | SLO cited |
+|---|---|---|
+| 1 | Ch1 | SLO 1, define biology (bios + logos), §1.1.1 |
+| 2 | Ch1 | SLO 3, major fields (Zoology) |
+| 3 | Ch1 | SLO 4, sub-fields (Histology) |
+| 4 | Ch2 | SLO 1, define biodiversity |
+| 5 | Ch2 | SLO 4, three domains (Eukarya) |
+| 6 | Ch2 | SLO 7, binomial nomenclature (genus first) |
+| 7 | Ch3 | SLO 1, cell as basic unit of life |
+| 8 | Ch3 | SLO 3, organelle roles (nucleus) |
+| 9 | Ch3 | SLO 10, stem cells as unspecialized cells |
+| 10 | Ch3 | SLO 5, types of cells (neuron) |
+| 11 | Ch4 | SLO 1, cell cycle (S phase) |
+| 12 | Ch4 | SLO 2, stages of mitosis (PMAT order) |
+| 13 | Ch4 | SLO 3, compare mitosis and meiosis |
+| 14 | Ch5 | SLO 1, emergent properties / levels of organisation |
+| 15 | Ch5 | SLO 2, distinguish tissues, organs, systems |
+| 16 | Ch5 | SLO 8, leaf as a plant organ |
+| 17 | Ch6 | SLO 8, DNA as carrier of hereditary information |
+| 18 | Ch6 | SLO 3, proteins and amino acids |
+| 19 | Ch6 | SLO 6, monosaccharides |
+| 20 | Ch6 | SLO 7, complementary base pairing (A–T) |
+| 21 | Ch6 | SLO 9, RNA single stranded |
+| 22 | Ch7 | SLO 1, anabolism vs catabolism |
+| 23 | Ch7 | SLO 2, enzymes are proteins |
+| 24 | Ch7 | SLO 5, competitive inhibition |
+
+Section B: 2(i) Ch2 SLO 5+6 (taxonomic ranks, species); 2(ii) Ch6 SLO 7+8 (DNA structure, base pairing, function); 2(iii) Ch7 SLO 4 (factors influencing enzyme activity).
+Section C: 3(i) Ch3 SLO 2+3 (**labelled animal cell diagram** + animal vs plant differences, satisfying the standing Biology diagram requirement); 3(ii) Ch4 SLO 2+3+4 (four stages of mitosis + mitosis vs meiosis).
+
+**CHAPTER 7 BOUNDARY RESPECTED.** Ch7's SLO list has 8 outcomes; **SLO 7 is photosynthesis and SLO 8 is respiration**, which are sections 7.7 and 7.8 and therefore OUT of the studied syllabus. Only SLOs 1 to 6 were used (metabolism/catabolism/anabolism, enzymes and characteristics, mechanism of enzyme action, factors affecting activity, competitive and non-competitive inhibition, ATP as energy currency). **No question anywhere on this paper mentions photosynthesis or respiration.**
+
+**No cross-subject contamination.** Every question comes from the Biology textbook only. Nothing was imported from Chemistry despite the overlap in Ch6 (biomolecules) and Ch7 (metabolism).
+
+**Uniqueness:** all prior Biology exams (exam-01 to exam-13) were extracted and grep-checked. Deliberately favoured the least-used angles (Zoology 0 prior hits, Histology 1, double helix 1, complementary base pairing 1, binomial 2, taxonomic ranks 2, emergent 2) and avoided the saturated ones (interphase/G1/S 24 hits, ATP 22, homeostasis 12, mesophyll 11, crossing over 11, lock-and-key/active site 10).
+
+**Exam-14 attempted 2026-08-19: 39/43 (90.7%, A+).** MCQ 21/24, Section B 9/9, Section C 9/10. The three MCQ misses were Q9 (stem cells), Q13 (what meiosis produces) and Q19 (glucose as a monosaccharide); all three were re-checked after marking and confirmed to sit on stated SLOs, so the syllabus rule held. Weak point to re-test next time: **meiosis divides twice and yields four haploid cells** (cost her marks in both MCQ 13 and Section C 3(ii)(b)).
