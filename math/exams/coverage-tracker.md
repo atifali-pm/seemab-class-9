@@ -184,3 +184,78 @@ Section C: 3(i) U4 (x²+9x+20, 8a³+27b³, HCF/LCM of 8a²b and 12ab³ with veri
 **Uniqueness:** all prior Maths exams (exam-01 to exam-14) extracted and grep-checked. Six numeric collisions were caught and changed before finalising: x²+7x+12 → x²+9x+20; HCF/LCM pair 6x²y and 9xy² → 8a²b and 12ab³; coordinate pairs (1,2)/(7,10) and (2,4)/(6,8) → (−1,2)/(5,10) and (−3,5)/(7,1); log₃81 → log₅125; 5x−3 → 7x−4; 3x−6 → 4x−12. Favoured the least-used angles (terminating decimals 0 prior hits, exponential form 1, radicand 2) over the saturated ones (HCF/LCM 36 hits, mid-point 21, square root 14).
 
 **Attempted 2026-08-19: 41/43 (95.3%, A+).** MCQ 23/24, Section B 8/9, Section C 10/10. The single MCQ miss was Q13 (chose the a³−b³ form for a³+b³), though she then applied the correct identity in Section C. The other mark went on not naming the properties of inequalities in 2(iii). Her strongest paper in months.
+
+## Exam-16 (this build) — 2026-08-21
+
+**Same 43-mark shape as exam-15:** 24 MCQs + 3 short (3 marks) + 2 long (5 marks) = **43 marks**, 2 hours, **no choices**, header "Revision Test 2026". Files: `math/exams/exam-16-ch1-2-4-5-7/exam.pdf` (2 pp) + `answers.pdf` (6 pp).
+
+**Every question carries an SLO citation** and the answer key prints a **"Source in her textbook"** line under all 24 MCQs, per [[mcq-book-citation]]. Units 1, 2, 4 and 5 have usable text layers and their SLO lists were read directly; **Unit 7 is image-only**, so its 15 pages were OCR'd (`pdftoppm -r 300` + `tesseract`) and its SLO page read as an image.
+
+| Q | Unit | SLO cited |
+|---|---|---|
+| 1 | U1 | recall base, exponent and **value** |
+| 2 | U1 | apply the laws of exponents |
+| 3 | U1 | depict real numbers on the number line (√19 between 4 and 5) |
+| 4 | U1 | know the properties of real numbers (multiplicative identity) |
+| 5 | U1 | **recall the history of numbers** (Babylonian sexagesimal, base 60) |
+| 6 | U2 | concept of antilog and use of tables |
+| 7 | U2 | define logarithm of a number to the base a (log₇7 = 1) |
+| 8 | U2 | apply the laws of logarithm (quotient law) |
+| 9 | U2 | scientific notation ↔ **standard notation** |
+| 10 | U2 | characteristic and mantissa (characteristic of log 3456) |
+| 11 | U4 | factorize **a³ + b³** (27x³ + 64) |
+| 12 | U4 | recall factorization of ac + ad + bc + bd |
+| 13 | U4 | factorize **a³ + 3a²b + 3ab² + b³** |
+| 14 | U4 | recall factorization of a² + 2ab + b² − c² |
+| 15 | U4 | recall factorization of a² − b² (two-step, complete factorization) |
+| 16 | U4 | factorize ax² + bx + c |
+| 17 | U5 | **recall linear equation in one variable** (x² = 4 is non-linear) |
+| 18 | U5 | properties of inequalities (**additive**) |
+| 19 | U5 | solve linear inequalities with rational coefficients |
+| 20 | U5 | reduce equations involving radicals to simple linear form |
+| 21 | U7 | conventions for coordinates (**abscissa on the y-axis is zero**) |
+| 22 | U7 | conventions for coordinates (**equality of ordered pairs**) |
+| 23 | U7 | mid-point formula (AC : BC = 2 : 1) |
+| 24 | U7 | distance between two points in the plane |
+
+Section B: 2(i) U1 (laws of exponents; (81)^(3/4); radical → exponential form); 2(ii) U2 (evaluate **log 48** from log 2 and log 3, **naming the law used at each step**); 2(iii) U5 (solve |2z − 3| = 9 **and verify both solutions**).
+
+Section C, both multi-step per the standing Maths requirement: 3(i) U4 three-part chain — factorize **1 + 4x⁴** (the a⁴ + 4b⁴ type, via add-and-subtract 4x²), square root of 49p² − 84pq + 36q² by factorization, and a **÷ of two algebraic fractions** reducing to x/(x − 8). 3(ii) U7 — A(−1,−2), B(−1,4), C(7,4): all three side lengths by the distance formula (6, 8, 10), the converse of Pythagoras to prove a right angle at B, then the mid-point of the hypotenuse M(3,1) shown to satisfy **MA = MB = MC = 5**, i.e. half the hypotenuse.
+
+**UNIT 10 EXCLUDED** per [[no-geometry-box]] — no practical geometry, no construction questions. Units 3, 6, 8, 9 and 11 are outside the studied scope and were not touched.
+
+**Deliberate re-test of exam-15's genuine misses:** Q11 targets the **sum-of-cubes sign** (she chose the a³ − b³ form on exam-15 Q13), and its answer-key explanation spells out both sign patterns side by side. Section B 2(ii) and 2(iii) both explicitly demand something extra beyond the answer (naming the law, verifying the roots), because she lost a mark on exam-15 by not naming the properties of inequalities — the marking notes state that those marks hang on the extra step.
+
+**Uniqueness:** all 15 prior Maths papers were extracted (`pdftotext -layout`) into one file and every candidate number and expression was grep-checked before being set. **Eleven** drafted items were rejected as collisions and replaced: √(3x + 1) = 5 (verbatim in a prior Section B), the distance between (−2,1) and (1,5) (used twice), the x² + 7x + 12 MCQ, x⁴ + x²y² + y⁴, √(9x² + 30x + 25), the "a³ + b³ factorizes to" MCQ stem (that is exam-15 Q13 itself), the distributive-property MCQ (5 prior hits), the √7-irrational MCQ, |4x − 3| = 13, log 7 = 0.8451, and three coordinate pairs that had appeared before. Antilog value 2.6180 and every expression in Section C return zero hits across all 15 prior papers.
+
+**Option audit:** a script confirmed no two options in any question are textually **or numerically** identical — this caught Q20 offering both "18/3" and "6", which was changed to "16/3" before the paper was finalised (exactly the trap that voided Physics exam-13 Q2). Answer letters are balanced at exactly **6 A / 6 B / 6 C / 6 D**, verified against the final option ordering.
+
+## Exam-17 (this build) — 2026-09-07
+
+**Custom 50-mark format at Atif's request, mirroring the OPF Girls College First Term Exam (August 2026):** 10 MCQs (1 mark) + 6 short questions (4 marks each) + 2 long questions (8 marks each) = **50 marks**, 2 hours 15 minutes, **zero optional/OR questions anywhere** — every question compulsory. **Question-paper-only delivery**: per a scope change mid-build, no answer key was produced for this exam; every question was still solved and independently verified (numerically, in a scratch Python session) before being committed to the paper.
+
+Sourced content by reading `chapters-ocr/compressed/unit-01, 02, 04, 05` via `pdftotext -layout` (usable text layers) and `unit-07` as rendered page images via `pdftoppm` (its text layer is broken, returns only "CamScanner"). Read Seemab's actual OPF school paper (`seemab-reports/school/2026-08-first-term-exam/math-paper.pdf`) first for style/difficulty calibration, and the overlap report (`seemab-reports/school/2026-08-first-term-exam/practice-vs-school-overlap-2026-09-07.pdf`) for content priorities.
+
+**Priority items closed (per Atif's brief), all with fresh numbers distinct from the school paper:**
+1. "Find the other polynomial given P, HCF and LCM" (Section B 2(iii)) — genuinely new question TYPE for this tracker (previously only tested as an abstract "HCF×LCM=P×Q" MCQ concept, never as a full worked computation). Fresh values: P = x²+2x−24, HCF = x−4, LCM = x³+x²−26x+24 ⇒ Q = x²−5x+4 (school used x²−x−6/(x−3)/x³+11x²+12x−12 — no overlap).
+2. Right-angled-triangle proof via distance formula + converse of Pythagoras (Section B 2(vi)) — grounded directly in the book's own worked **Example 4** (points (3,4),(3,1),(8,4)) and Exercise 7.1 Q10 (rectangle ⇒ two right triangles). Fresh points used: A(5,7), B(2,3), C(10,−3), right angle at B (legs 5 and 10, hypotenuse 5√5). Distinct from the school's A(−1,2),B(7,5),C(−2,6) and from exam-16's A(−1,−2),B(−1,4),C(7,4).
+3. Sum of three algebraic fractions with factorable quadratic denominators (Section B 2(iv)): 1/(x²−1) + 1/(x²−3x+2) + 1/(x²+3x+2), reducing to 3x²/[(x²−1)(x²−4)]. Fresh denominators (difference-of-squares-based), distinct from the school's consecutive-integer-root pattern (x²−3x+2, x²−4x+3, x²−5x+6).
+   Also closed: reduce a product of two algebraic fractions to lowest form (Section C 3(i)(a)): [(x²−25)/(x²+8x+15)]×[(x²+3x)/(x²−3x−10)] = x/(x+2). Fresh factors, distinct from the school's (x³−8)/(x²−4)×(x²+6x+8)/(x²−2x+1).
+4. Square root by algebraic division method (Section C 3(i)(b)): 9x⁴−12x³+10x²−4x+1 ⇒ ±(3x²−2x+1). Fresh quartic, distinct from all prior division-method quartics used in exam-03/10/16 and from the school's x²/y²−10x/y+27−10y/x+y²/x².
+5. Volume-to-cost cuboidal application (school's Q.4 style) was deliberately SKIPPED per Atif's own guidance, since exam-13 and the school both already used this exact application type.
+
+**Section A MCQs (fresh, spread across all 5 units):** exponent simplification (3⁴×3⁻²÷3⁻³); radical addition (√48+√27); log₅(1/25); log 128 from log 2; x²−14x+49 factorization; HCF of 15a³b² & 20a²b³; |−8|+|3|; compound inequality −3≤2x−1≤5; distance (0,0)–(9,12); mid-point of A(−5,3),B(1,−7). One draft MCQ ("exponential form of ⁵√x³") was caught as a **verbatim duplicate** of an existing MCQ and replaced with the √48+√27 item; another draft ("additive property of inequality: a<b ⇒ a+c<b+c") was caught as a near-verbatim duplicate of exam-16 Q18 and replaced with the |−8|+|3| item. A third draft (HCF of 12x²y³-style monomials) was dropped for being nearly identical to monomial-HCF questions used in at least four prior exams and replaced with 15a³b²/20a²b³.
+
+**Answer-letter distribution:** A=2, B=3, C=3, D=2 (out of 10) — balanced.
+
+**Uniqueness check:** all 16 prior Maths papers (`exam-01` through `exam-16`) were extracted with `pdftotext -layout` into one combined file and every new question's key numbers/expressions/coordinate pairs were grep-checked against it, plus a manual read of the OPF school paper for its exact values. Zero verbatim or near-verbatim overlap remains after the three replacements noted above.
+
+**All 18 answers were independently computed and verified** (Section A distances/logs/factorizations; Section B polynomial-division, right-triangle Pythagoras check, partial-fraction sum, absolute-value/inequality solving; Section C fraction reduction, square-root-by-division expansion check, and the collinearity/mid-point chain for P(1,2), Q(4,6), R(7,10)) before finalising the paper. Every numeric value used in a solution appears in its printed question stem.
+
+**UNIT 10 EXCLUDED** per [[no-geometry-box]]. Units 3, 6, 8, 9 and 11 are outside the studied scope and were not touched.
+
+**Post-build correction (2026-09-07, same day):** Atif independently re-solved all 18 questions and caught two issues before this paper reached Seemab:
+1. MCQ4 as originally drafted ("log 128 = ?" with options 0.6020/0.9030/1.2040/1.5050) had **no correct option** — 1.5050 is log 32, not log 128 (= 7×0.3010 = 2.1070). Fixed by keeping the stem and replacing the options with 1.5050 / 1.8060 / 2.4080 / **2.1070 (D, correct)** — all four are now clean multiples of log 2 (5×, 6×, 8×, 7×), keeping the question a genuine test of recognising 128 = 2⁷. Letter balance unchanged (still A=2/B=3/C=3/D=2).
+2. Short question 2(v)(a) originally used |3x+1|=13, whose second root (−14/3) is needless fraction-grinding for a "verify both solutions" part. Changed to **|2x+1|=13**, giving clean integer roots x=6 and x=−7 — same technique, cleanly verifiable. Checked against all 16 prior papers: no collision.
+
+Both fixes were re-verified numerically before the paper was re-rendered. `exam.pdf` in `math/exams/exam-17-ch1-2-4-5-7/` reflects the corrected version; no other question, the mark distribution, or the no-choice structure changed.

@@ -281,3 +281,78 @@ Section C: 3(i) Ch3 SLO 2+3 (**labelled animal cell diagram** + animal vs plant 
 **Uniqueness:** all prior Biology exams (exam-01 to exam-13) were extracted and grep-checked. Deliberately favoured the least-used angles (Zoology 0 prior hits, Histology 1, double helix 1, complementary base pairing 1, binomial 2, taxonomic ranks 2, emergent 2) and avoided the saturated ones (interphase/G1/S 24 hits, ATP 22, homeostasis 12, mesophyll 11, crossing over 11, lock-and-key/active site 10).
 
 **Exam-14 attempted 2026-08-19: 39/43 (90.7%, A+).** MCQ 21/24, Section B 9/9, Section C 9/10. The three MCQ misses were Q9 (stem cells), Q13 (what meiosis produces) and Q19 (glucose as a monosaccharide); all three were re-checked after marking and confirmed to sit on stated SLOs, so the syllabus rule held. Weak point to re-test next time: **meiosis divides twice and yields four haploid cells** (cost her marks in both MCQ 13 and Section C 3(ii)(b)).
+
+## Exam-15 (this build) — 2026-08-21
+
+**Same 43-mark shape as exam-14:** 24 MCQs + 3 short (3 marks) + 2 long (5 marks) = **43 marks**, 2 hours, **no choices**, header "Revision Test 2026". Files: `biology/exams/exam-15-ch1-7/exam.pdf` (3 pp) + `answers.pdf` (7 pp).
+
+**Every question carries an SLO citation** and the answer key prints a **"Source in her textbook"** line under all 24 MCQs, per [[mcq-book-citation]]. All seven chapter scans are image-only, so each chapter was OCR'd page by page (`pdftoppm -r 300` + `tesseract`) and the SLO page of every chapter was additionally read as an image before any question was set.
+
+| Q | Chapter | SLO cited |
+|---|---|---|
+| 1 | Ch1 | SLO 4, sub-fields (embryology) |
+| 2 | Ch1 | SLO 9, hypothesis / theory / **law** |
+| 3 | Ch1 | SLO 5, biostatistics also called **biometry** (Table 1.1) |
+| 4 | Ch2 | SLO 5, taxonomic ranks (family = related genera) |
+| 5 | Ch2 | SLO 4, three domains based on **rRNA** nucleotide sequence |
+| 6 | Ch2 | SLO 6, define species (interbreeding, **fertile** offspring) |
+| 7 | Ch3 | SLO 3, cell membrane, fluid mosaic model (proteins float in phospholipids) |
+| 8 | Ch3 | SLO 5, neuron — **dendrites** conduct impulses toward the cell body |
+| 9 | Ch3 | SLO 10, the **zygote** as the most basic stem cell |
+| 10 | Ch3 | SLO 1, cell as the smallest unit of living material |
+| 11 | Ch4 | SLO 2 + 3, meiosis divides **twice**, gives **four haploid** cells |
+| 12 | Ch4 | SLO 3, homologous chromosomes pair only in meiosis |
+| 13 | Ch4 | SLO 4, wound healing / cell replacement = mitosis |
+| 14 | Ch4 | SLO 2, animal cytokinesis by **cleavage furrow** |
+| 15 | Ch5 | SLO 3, four animal tissue types (vascular is a plant tissue) |
+| 16 | Ch5 | SLO 4, stomach lining = **epithelial** cells |
+| 17 | Ch5 | SLO 8, **cutin** forms the leaf cuticle |
+| 18 | Ch6 | SLO 3, amino acids differ by their **alkyl (R) group** |
+| 19 | Ch6 | SLO 4, lipids are **hydrophobic** |
+| 20 | Ch6 | SLO 6, a 6-carbon monosaccharide is a **hexose** |
+| 21 | Ch6 | SLO 10, **tRNA** transfers amino acids to the ribosome |
+| 22 | Ch7 | SLO 2, study of enzymes = **enzymology** |
+| 23 | Ch7 | SLO 1, glucose → glycogen is **anabolism** |
+| 24 | Ch7 | SLO 6, ATP → ADP + Pi by **hydrolysis** (ATP–ADP cycle) |
+
+Section B: 2(i) Ch2 SLO 5+7 (taxonomic ranks of the **pea**, *Pisum sativum*, Table 2.1 — prior papers only ever used the human column); 2(ii) Ch3 SLO 4 (**three advantages an animal cell gains from having no cell wall** — prior papers only asked the plant-cell side); 2(iii) Ch6 SLO 2 (Table 6.1 location-in-cell + main role for carbohydrates, lipids and DNA).
+
+Section C: 3(i) Ch6 SLO 7+8 — **draw a well-labelled nucleotide** (three components + which carbon each attaches to) plus the hydrogen-bond counts and the sugar-phosphate backbone. This satisfies the standing Biology diagram requirement; prior "draw a well-labelled diagram of" questions covered only the leaf TS, a neuron, a homologous chromosome pair and an animal cell, so the nucleotide is the first fresh drawing. 3(ii) Ch4 SLO 2+3+4 — a 20-chromosome plant ovary cell through meiosis, with a flow chart of cells and chromosome counts after meiosis I and meiosis II.
+
+**CHAPTER 7 BOUNDARY RESPECTED.** Only SLOs 1 to 6 were used. **No question anywhere on this paper mentions photosynthesis (7.7) or respiration (7.8).**
+
+**No cross-subject contamination.** Every question comes from the Biology textbook only.
+
+**Deliberate re-test of exam-14's genuine misses:** Q11 and Section C 3(ii) both target **meiosis divides twice and yields four haploid cells** (she lost marks on this twice in exam-14); Q9 re-tests **stem cells** from the zygote angle after she missed the exam-14 stem-cell MCQ; Q20 re-tests **glucose is a monosaccharide** through the hexose naming rule.
+
+**Uniqueness:** all 14 prior Biology papers were extracted (`pdftotext -layout`) into one file and every candidate question was grep-checked against it before being set. Nine drafted questions were **rejected as repeats** and replaced: hypothesis/theory/law as a Section B (verbatim in a prior paper), the three types of cofactors (verbatim), "how do different tissues form the stomach" (verbatim), the DNA diameter 2 nm MCQ (verbatim), the fruit-fly gamete MCQ (verbatim), the sea-star regeneration MCQ (verbatim), phragmoplast, liver-cell specialisation, and the mitochondrion-structure Section C. Distractors were also constrained: **microvilli**, **hnRNA** and **glycosidic bonds** were removed from option lists because those terms do not appear in her textbook.
+
+**Option audit:** no two options in any question are textually or numerically identical, and the answer letters are balanced at exactly **6 A / 6 B / 6 C / 6 D**, verified by script against the final option ordering.
+
+## Exam-16 (this build) — 2026-09-11
+
+**Different shape at Atif's request, matched to the Physics exam-15 / Chemistry exam-21 header and layout style:** 20 MCQs (20 marks) + 2 short (4 marks each = 8) + 1 long (8 marks) = **36 marks**, 1 hour 45 minutes, **zero OR alternatives anywhere**. Header uses the "Annual Examination 2026 / Federal Board..." style (not the "Revision Test" style of exam-14/15) specifically so Biology, Physics and Chemistry now form a matched set. Files: `biology/exams/exam-16-ch1-7/exam.pdf` (3 pp) + `answers.pdf` (5 pp).
+
+**Priority items delivered:**
+- Section B 2(i): the four levels of protein structure — the school's First Term paper tested this and it hadn't been asked since exam-10. Reworded as a "folding journey" prompt rather than reusing the "Describe the four levels..." stem that a prior paper already used verbatim.
+- Section B 2(ii): "Why is it impossible to eradicate malaria?" — sourced directly from Ch1 Exercise Section II Q7 (p.19), the school's other never-before-set item. Answer key gives four textbook-grounded reasons (incubation period/hidden carriers, multiple Plasmodium fever cycles, mosquito breeding in marshy water, the need for simultaneous vector control + drug treatment).
+- Four documented error re-tests included as MCQs: law vs theory (Q2, flipped to give the THEORY definition since exam-15 already used the LAW definition verbatim), animal cytokinesis/cleavage furrow vs phragmoplast (Q8, reworded stem), hydrophobic vs saturated (Q15, reworded stem, wrong twin "saturated" present), purines vs pyrimidines double-ring identification (Q14, via Guanine).
+- Diagram requirement: Section C is a labelled fluid-mosaic-model cell-membrane diagram (inline SVG, A = phospholipid bilayer, B = transport protein, C = carbohydrate chain) with composition and model-explanation sub-parts. This is a fresh diagram angle — no prior paper used a "label the given figure" format on the cell membrane (prior diagram questions covered leaf TS, neuron, homologous chromosome pair, animal cell, mitosis Fig 4.3, and a nucleotide).
+
+**Two originally-planned priority items were dropped after failing the mandatory syllabus/content verification (Step 2a) and are flagged here so future builds don't retry them:**
+- Ch2 "conservation of biodiversity, causes of biodiversity loss, endangered species" — read every page of ch-02-biodiversity.pdf; this content does **not exist** in this textbook at all (no SLO, no section). Excluded.
+- Ch2 "structure of a virus (nucleic acid core, protein coat, bacteriophage shape) and viral reproduction" — also **not in the book**; only the living/non-living characteristics and the "boundary of life"/prions/viroids material exist, and those are already heavily tested (exam-01, 08, 09, 10, 13).
+- Ch7 "apoenzyme and holoenzyme" and "enzymes in industry/daily life (detergents, cheese making)" — read every page of §7.1–7.6; neither term nor topic appears anywhere in this textbook (only Activator/Prosthetic group/Coenzyme are named cofactor types). Excluded and replaced.
+- Ch5 "the reproductive system" — Table 5.2's full list of 11 organ systems (Cardiovascular, Lymphatic, Digestive, Endocrine, Integumentary, Muscular, Nervous, Respiratory, Skeletal, Urinary, Immune) has **no Reproductive system row**. Excluded; Ch5 MCQs used Skeletal/Immune/Muscular instead.
+
+**Heavy pre-existing saturation discovered.** Extracting and grepping all 15 prior papers (`biology/exams/exam-01` through `exam-15`, including exam-01's `paper.pdf`) showed that after 15 comprehensive papers, nearly every conventional fact in Ch1–Ch7 (within the 7.1–7.6 boundary) has been asked at least once, several 3–4 times (see "Heavily repeated questions" list above, now further validated). A first draft of this paper had to discard and rebuild **14 of 20 MCQs** after grep confirmed they were verbatim or near-verbatim matches to prior questions (domain Archaea types, five-kingdom Animalia table entry, cell-wall middle lamella, ribosome subunit joining, chromoplast function, G0/epithelial cells, telophase nuclear-membrane detail, cardiovascular/emergent-properties/endocrine-system MCQs, major and minor bioelement percentages, cofactor activator + salivary amylase, extracellular enzymes, and the chewing-food Science Titbits fact were ALL already used, several verbatim). Replacements drew on genuinely fresh content confirmed absent from the combined prior-exam text: Bioinformatics (career), binomial-nomenclature format recognition (fresh organism, *Panthera leo*), the cytoskeleton's three named components, the secondary cell-wall/lignin detail, two fresh numerical chromosome-counting MCQs (2n=14 meiosis I halving; 2n=10 mitosis chromatid count — neither number used before), the 20–25 amino-acid-types fact, and the ATP high-energy phosphate bond terminology as its own dedicated MCQ.
+
+**Disclosed, non-verbatim residual overlap.** After exhausting genuinely virgin content in Ch5 (every one of the 11 Table 5.2 organ systems already has some prior coverage) and Ch7 (only 6 short sub-sections, mined by 15 prior papers), three Ch5 MCQs (skeletal/calcium, immune system organs, muscular+integumentary/temperature) and two Ch7 MCQs (enzyme reusability, metabolic pathway) sit on topics with some prior topical coverage. In every case the exact wording, specific extracted fact, and MCQ format were rebuilt from scratch and checked to NOT match any prior stem verbatim or near-verbatim; only the underlying textbook fact (which is finite) has appeared before. Flagged transparently for whoever builds exam-17.
+
+**No cross-subject contamination.** Every question comes from the Biology textbook only.
+
+**CHAPTER 7 BOUNDARY RESPECTED.** No question, option, or answer-key explanation anywhere in either PDF mentions photosynthesis (7.7) or respiration (7.8) — verified by direct text grep on both rendered PDFs after an initial draft's Q8 distractor ("carrying out photosynthesis") was caught and replaced with "storing fats and oils for the seed", and Q20's initial distractor ("anaerobic respiration") was caught and replaced with "enzymatic hydrolysis".
+
+**Option audit:** no two options within any single question are textually or numerically identical. Answer letters balanced at exactly **5 A / 5 B / 5 C / 5 D** (sequence: B D A C A D B C A D C A D B A C B D C B — no cyclic 4-block repeat), verified by script against the final option ordering in the rendered PDF.
+
+**Post-build fix (2026-09-11, same day):** Q2 was rebuilt after review caught that it was constructed backwards as an error re-test. Her documented exam-15 mistake is "chose theory where the definition given was of a law" — the original Q2 gave the THEORY definition and made "scientific theory" the correct answer, so her known bias (always answering "theory") would have scored it correct by accident, making it useless as a re-test. Fixed by flipping the stem to give the LAW definition instead ("a statement that describes an observable occurrence in nature which appears to always be true, but does not explain why, is called a"), with "scientific law" now the correct answer (kept at option D to preserve the 5A/5B/5C/5D balance and the exact answer sequence) and "scientific theory" moved into option C as the wrong twin she must actively resist. Same SLO 9 citation retained.

@@ -1,8 +1,8 @@
 # Chemistry Exam Coverage Tracker
 
-Tracks which sub-topics have been tested in which exam, per [[exam-coverage-discipline]]. Built retroactively on 2026-07-22 while creating exam-16, by reading the full text of exam-01 through exam-06 (individual-chapter papers) and exam-12 through exam-16 (comprehensive Ch1-9 papers). Update this file whenever a new chemistry exam covering Ch1-9 is built. Updated 2026-08-20 for exam-19.
+Tracks which sub-topics have been tested in which exam, per [[exam-coverage-discipline]]. Built retroactively on 2026-07-22 while creating exam-16, by reading the full text of exam-01 through exam-06 (individual-chapter papers) and exam-12 through exam-16 (comprehensive Ch1-9 papers). Update this file whenever a new chemistry exam covering Ch1-9 is built. Updated 2026-08-22 for exam-20.
 
-Exam key: 01=Ch1-2, 02=Ch3-5, 03=Ch6, 04=Ch7, 05=Ch8, 06=Ch9, 07=Ch10, 08=Ch11, 09=Ch12, 10=Ch13, 11=Ch14 (07-11 are outside the current studied syllabus, Ch1-9 only — not tracked below), 12/13/14/15/16/17/18/19=Ch1-9 comprehensive papers (18 = 31-mark revision test, 19 = 43-mark revision test).
+Exam key: 01=Ch1-2, 02=Ch3-5, 03=Ch6, 04=Ch7, 05=Ch8, 06=Ch9, 07=Ch10, 08=Ch11, 09=Ch12, 10=Ch13, 11=Ch14 (07-11 are outside the current studied syllabus, Ch1-9 only — not tracked below), 12/13/14/15/16/17/18/19/20=Ch1-9 comprehensive papers (18 = 31-mark revision test, 19 = 43-mark revision test, 20 = 71-mark 60-MCQ revision test).
 
 **Saturation warning:** Ch7 (Electrochemistry), Ch8 (Energetics), and Ch9 (Chemical Equilibrium) are short chapters (14, 7, and 6 pages respectively) that each already received a FULL dedicated 65-mark paper (exam-04, exam-05, exam-06) in addition to repeated reuse across exam-12 through exam-15. Their content pools are now close to exhausted — exam-16 deliberately gave Ch8 and Ch9 only light representation (1-2 questions each) rather than manufacture near-duplicate content. Exam-17 pushed this further: Ch9 received ZERO questions (no MCQ, no Section B/C — genuinely no fresh angle remained), and Ch8 was reduced to a single MCQ. Flag this to Atif: future comprehensive papers may need to accept heavier thematic recycling for these three chapters, or Atif may want to deprioritize them in favour of Ch1-6, or consider Ch9 fully retired from future comprehensive papers until new source material (e.g. a re-OCR or supplementary exercises) is found.
 
@@ -293,3 +293,115 @@ New sub-topics added to the tested set:
 **Answer-letter balance:** the paper was constructed to exactly 6 A / 6 B / 6 C / 6 D (final string BCCADBACBDACBDACDBADBCAD), and all 24 key letters were re-verified against the paper's option order by script (0 mismatches).
 
 **Zero-overlap check:** the full text of exam-01 through exam-18 was extracted with `pdftotext -layout` (all 36 files have text layers) and grep-checked against every stem, compound, numeric value and percentage used here. Items dropped during the build: (1) a "bond breaking is always endothermic" MCQ, which duplicated exam-05's MCQ 4 almost verbatim; (2) an "exothermic means H_products < H_reactants" MCQ, which is exam-18's item from the immediately preceding paper; (3) a %-composition problem answering C₄H₁₀, because butane is already used repeatedly for structural-vs-molecular formula work; (4) a C₂H₆O and a C₃H₆O target, both of which are exam-17's structural-formula answers; (5) an Mg + O₂ balancing MCQ, because the balanced form 2Mg + O₂ already appears in a prior redox answer; (6) an SO₄²⁻ oxidation-state part, since sulfur in sulfate has been used in five papers, replaced by the oxidation number of Mg reasoned from the monoatomic-ion rule.
+
+## Summary of exam-20 additions
+
+Exam-20 (2026-08-22). **Non-standard structure at Atif's request:** **60 MCQs + 2 short (3 marks) + 1 long (5 marks) = 71 marks**, 2 hours 15 minutes, no choices anywhere. Section A carries nearly all of the breadth, so this paper is the widest single sweep of Ch1-9 built so far. Every item was passed through the two-part test in [[mcq-book-citation]]: printed book content **and** a stated SLO. The Chemistry chapter scans still have no text layer, so all nine chapters were re-read page by page as rendered images (`pdftoppm -r 125`) and the SLO lists were transcribed from page 1 (and page 2 for Ch3/Ch4/Ch5) of each chapter. The answer key prints the chapter, section and SLO beside all 60 MCQs.
+
+**Per-chapter MCQ allocation:** Ch1 = 4, Ch2 = 5, Ch3 = 10, Ch4 = 13, Ch5 = 10, Ch6 = 11, Ch7 = 5, Ch8 = 2, **Ch9 = 0**.
+
+New sub-topics added to the tested set:
+
+| Chapter | Sub-topic | Status |
+|---|---|---|
+| Ch1 | **Essential questions mapped to their branch (biochemistry, geochemistry, nuclear chemistry)** | **first time ever.** SLO 3 ("formulate examples of essential questions that are important for the branch of chemistry") had **never been tested in any of exams 01-19**; Section 1.3 supplies the exact question wording |
+| Ch1 | Astrochemistry as the *answer* to a branch-definition MCQ | first time as an MCQ answer (previously only a distractor, and once a Sec-B "differentiate geochemistry and astrochemistry") |
+| Ch2 | **Amalgam = a solution of any metal in liquid mercury** | **first time ever** |
+| Ch2 | **Fog/clouds/mist as a liquid solute in a gaseous solvent** | **first time ever** |
+| Ch2 | **Hydrogen on solid nickel in the ghee industry = a solid solution (solvent decides the type)** | **first time ever** |
+| Ch2 | **Solubility depends on solvent, temperature AND pressure** | **first time ever** (earlier papers only ever tested the temperature half) |
+| Ch2 | **Carbonated drink = gas dissolved in a liquid** | **first time ever** |
+| Ch3 | **An atomic model is a simplified representation / an aid to understanding** | **first time ever** (explicit SLO, never examined) |
+| Ch3 | **Tritium's nucleus is highly unstable, so it is absent from natural hydrogen** | **first time ever** ("tritium" had zero occurrences in exams 01-19) |
+| Ch3 | **Definition of a radioisotope (unstable combination of neutrons and protons)** | **first time ever** |
+| Ch3 | Neutron count in <sup>80</sup>Br (Z = 35) = 45 | **first time with bromine** (earlier Cl, Al, P, Ca, Fe, Ag, Li, V) |
+| Ch3 | **Emitting a PROTON changes the atom into another element (vs emitting a neutron -> another isotope)** | **first time ever** |
+| Ch3 | **The strong nuclear force acts between p-p, n-n AND n-p** | first time as its own item (ex19 tested only that the force exists) |
+| Ch3 | **Electrons deflect far more than protons in a uniform electric field because of their much smaller mass** | first time on magnitude (ex16 tested deflection *direction*) |
+| Ch3 | **Rutherford: centrifugal force of the revolving electron balances the electrostatic attraction** | **first time ever** |
+| Ch3 | **Auf Bau: 4s is filled immediately after 3p** | first time as its own question |
+| Ch3 | **Anion formation requires a relatively high electron affinity** | **first time ever** |
+| Ch4 | **The block is decided by the sub-shell into which the LAST electron goes** | first time as a stated rule |
+| Ch4 | 1s(2)2s(2)2p(2) -> Group 14 | **first time with carbon's configuration** |
+| Ch4 | **Group 16 = chalcogens** | **first time ever** (the word appeared once, as a distractor) |
+| Ch4 | **Density across a period peaks near the middle then falls** | **first time ever** (ex19 did atomic radius down a group; density had only ever been listed) |
+| Ch4 | **Ionization-energy data reading: Na 496 / Mg 738 / Al 578 / Si 786 -> Si holds its electron most tightly** | first time as a data-comparison MCQ |
+| Ch4 | **HF is the most thermally stable hydrogen halide** | first time as its own MCQ (ex02 buried it inside a 5-mark halogen essay) |
+| Ch4 | **Transition metals melt high because partially filled d sub-shells strengthen the metallic bonding** | first time on the *reason* (ex02/16 only listed the property) |
+| Ch4 | **Noble gases are mono-atomic** | first time as its own MCQ |
+| Ch4 | **Halogens are diatomic** | first time as its own MCQ |
+| Ch4 | **Lithium is the least reactive alkali metal** | **first time ever** |
+| Ch4 | **Period number = principal quantum number of the valence shell** | first time as a stated rule |
+| Ch4 | **Atoms with 5, 6 or 7 valence electrons gain electrons and form anions** | first time as its own item |
+| Ch4 | **Non-metals melt lower because their particles are held by weaker covalent / van der Waals / hydrogen bonds** | **first time ever** |
+| Ch5 | **CO2 has strong covalent bonds but weak intermolecular forces, hence a low melting point** | **first time ever** (ex16 used the melting-point tables, not this contrast) |
+| Ch5 | **The C-N bond in HCN is a triple bond** | **first time ever with HCN** |
+| Ch5 | **BF3 is electron deficient: boron has only three pairs in its valence shell** | **first time ever** ("electron deficient" had zero prior occurrences) |
+| Ch5 | **The adhesive action of paints and dyes comes from hydrogen bonding** | **first time ever** (Ch5 Key Point, never used) |
+| Ch5 | **Graphite's layers are held by weak van der Waals forces** | **first time ever** ("van der Waals" had zero prior occurrences) |
+| Ch5 | **Be(2+) attains the helium configuration (duplet rule)** | **first time with beryllium** (ex17 did H obeying the duplet) |
+| Ch5 | **The three factors that fix a substance's properties: type of particles, how they are connected, their arrangement** | **first time ever** |
+| Ch5 | **Metals are malleable because layers of cations slide over one another** | first time as its own MCQ |
+| Ch5 | **Ionic compounds are strong in compression but brittle** | **first time ever** |
+| Ch5 | **Batteries and fuel cells use ionic compounds as electrolytes** | **first time ever** |
+| Ch6 | **Which compound has identical empirical and molecular formulas (CH4)** | first time in this direction |
+| Ch6 | **Formula mass of Ca(OH)2 = 74** | **first time ever as a mass calculation** (Ca(OH)2 had only appeared in the ex16 solubility table) |
+| Ch6 | **Moles in 1.5 KG of MgO = 37.5** | **first time ever** (first question in any paper requiring a kg -> g conversion) |
+| Ch6 | Atoms in 23 g of Na = 6.022 x 10^23 | first time with the gram-atomic-mass shortcut |
+| Ch6 | **Balancing Ca + 2H2O -> Ca(OH)2 + H2** | **first time ever** (fresh reaction) |
+| Ch6 | **Definition of spectator ions** | first time as its own item (ionic equations had been set, the term never defined) |
+| Ch6 | **CH3-CH2-NH2 -> C2H7N** | **first time ever** (ex17 did ethanol and acetone) |
+| Ch6 | **Ca(2+) + PO4(3-) -> Ca3(PO4)2, incl. the bracket convention with a 3:2 ratio** | **first time ever with phosphate** |
+| Ch6 | **Naming a binary compound: aluminium + nitrogen -> aluminium nitride** | **first time ever** |
+| Ch6 | **Mass of 1.5 mol N2 = 42 g (diatomic trap)** | first time with this value |
+| Ch6 | **Molecules in 0.5 mol H2O2 = 3.011 x 10^23** | **first time ever with hydrogen peroxide as a mole calculation** |
+| Ch7 | **Oxidation number of N in NO = +2** | **first time ever with nitric oxide** (earlier NO2, N2O, N2O5, HNO3, NaNO3, NaNO2) |
+| Ch7 | **Reducing agent in CO2 + 2Mg -> 2MgO + C** | **first time ever** (fresh reaction, zero prior occurrences) |
+| Ch7 | **In a polyatomic ion the sum of oxidation numbers = the charge on the ion** | **first time ever as its own item** (ex19 did the monoatomic half of this SLO) |
+| Ch7 | **The oxidizing/reducing agent is the WHOLE molecule or formula unit, not the atom that changed** | **first time ever** (a bolded textbook statement, never examined) |
+| Ch7 | **Ag+ + e- -> Ag is reduction (gain of an electron)** | **first time ever** |
+| Ch8 | **An effective collision must overcome the REPULSION between the electrons of the reacting particles** | only genuinely unused angle left |
+| Ch8 | **A catalyst does not change the overall enthalpy of the reaction** | first time as its own item |
+
+**Section B (i)** is a fresh %-composition problem: 30.4% N / 69.6% O, relative molecular mass 92 -> **NO2 -> N2O4**. Both the percentages and the answer compound have zero prior occurrences. **Section B (ii)** is the paper's diagram question: a **dot-and-cross diagram for ammonia, NH3**, plus counting bond pairs and lone pairs. Prior dot-and-cross work has been almost entirely ionic (NaCl, MgCl2, CaCl2, MgO, Na2S, AlF3, K2O, CaF2); **NH3 is the first covalent dot-and-cross set on any paper**. **Section C** is a five-step numerical on **K2SO4**: formula mass 174 -> 0.35 mol in 60.9 g -> 2.108 x 10^23 formula units -> balancing 2KOH + H2SO4 -> K2SO4 + 2H2O -> the same equation with state symbols. K2SO4 had only ever been used for formula *writing* (exam-03), never as a mass/mole chain.
+
+**Ch9 received ZERO questions for the fourth consecutive paper**, per the standing default recorded under exam-17. The one angle that looked fresh, "in an irreversible reaction equilibrium is never established", turned out to be exam-06's MCQ 3 verbatim, so it was dropped. **Ch8 got only 2 of 60 MCQs** and both are scraped from the bottom of the barrel; treat Ch8 as retired alongside Ch9 for the next paper unless new source material appears.
+
+**Answer-letter balance:** exactly 15 A / 15 B / 15 C / 15 D. Final string CCDBBAACBBADDBDAABDBCCADDCDCBCBACBBCACDCCDABDBCDACDAABADABDA (verified by script against the printed option order, 0 mismatches), with no letter repeated more than twice in a row.
+
+**Zero-overlap check:** the full text of exam-01 through exam-19 (38 PDFs, all with text layers) was extracted with `pdftotext -layout` and grep-checked against every stem, term, compound and numeric value considered. **Twenty-three candidate items were caught and dropped during the build**, including: the orbital definition (exam-15/17), BEC near absolute zero (exam-01 MCQ 8), plasma as a conducting ionized gas (exam-01 and exam-18), liquid crystals in LCDs (exam-18), the colloid ultra-filter-paper row (exam-01/15), graphite's three C-C bonds and hexagonal layers (exam-13/16), graphite conducting while diamond does not (exam-13), the electron's 1/1836 relative mass (exam-02/12), the 1/12-of-C-12 definition of relative atomic mass (exam-17), Iodine-131 and the thyroid (exam-16), Sodium-24 and blood flow (exam-17), lanthanides/actinides as the f-block (exam-17), bromine as the red-brown halogen (exam-18/19), electron affinity decreasing down a group (exam-17), the electron-donor description of a reducing agent (exam-04), P in PO4(3-) (exam-04), alloying with chromium to make stainless steel (exam-04), tinning (exam-04), KMnO4 purple -> colourless and Mn +7 -> +2 (exam-04), C forming two double bonds in CO2 (exam-17), ionic solids not conducting until molten (exam-17), acids conducting because they ionize in water (exam-17), subscripts vs coefficients when balancing (exam-03), the mass of 1.2 mol of K (exam-03), gram atomic vs gram molecular vs gram formula mass (exam-03), bond dissociation energy (exam-05 and others), standard enthalpy at 25 C / 298 K (exam-05), freezing of water and sublimation of dry ice (exam-05), and "in an irreversible reaction equilibrium is never established" (exam-06).
+
+---
+
+## Exam-21 (Ch1-9) — built 2026-09-09
+
+**Custom format specified by Atif:** 30 MCQ x 1 + 2 short x 4 + 1 long x 8 = **46 marks**, 2 hours, and **NO optional/OR questions anywhere**. This differs from every prior chemistry paper, all of which used main+OR pairing. Reference build for the no-choice format alongside math exam-17.
+
+**Question distribution (33 questions):** Ch1 = 2, Ch2 = 3, Ch3 = 4, Ch4 = 6, Ch5 = 4, Ch6 = 6, Ch7 = 4, **Ch8 = 2, Ch9 = 2**. MCQ answer-letter balance A=8, B=8, C=7, D=7.
+
+### The Ch8 / Ch9 retirement decision is REVERSED
+
+Earlier notes in this tracker (exam-17 onward) recommended treating **Ch8 and Ch9 as retired** because their content pools were judged exhausted; Ch9 received zero questions for four consecutive papers.
+
+**That was wrong, and this paper reverses it.** On 2026-09-07 all 65 practice papers were checked against the OPF Girls College First Term Examination Seemab actually sat (`seemab-reports/school/2026-08-first-term-exam/`). Her school gave **both chapters real slots**: a bond-energy enthalpy calculation and a catalyst question from Ch8, and forward-vs-reverse reactions plus the cobalt chloride equilibrium from Ch9.
+
+**Standing instruction from here on: never drop a chapter from a comprehensive paper on saturation grounds alone.** Accept thematic recycling instead. A repeated question she needs beats a fresh question she does not. Exam-21 accordingly gives Ch8 two MCQs (catalyst mechanism; sign of ΔH for an exothermic reaction) plus the bond-breaking/forming reasoning inside Section B(i), and Ch9 two MCQs (definition of a reversible reaction; the hydrated cobalt(II) chloride colour change on heating).
+
+### Four never-before-set items from the school paper, now closed
+
+All four gaps the 2026-09-07 overlap analysis identified as never appearing in exam-01 through exam-20:
+
+| Item | Where in exam-21 |
+|---|---|
+| **Why is an atom electrically neutral?** | MCQ 6 (answer: protons = electrons) |
+| **Why do transition elements show variable oxidation state?** | MCQ 10 (answer: both s and d sub-shell electrons can take part in bonding) |
+| **Balanced equation for burning hydrogen to produce water** | Section B 2(i), with state symbols plus exo/endothermic reasoning |
+| **Derive the formula of aluminium sulfate** | Section B 2(ii), criss-cross method with the LCM step and bracket notation |
+
+### Section C
+
+A six-part numerical chain on an unnamed dicarboxylic acid **Z**: 49.3% C / 6.8% H / 43.9% O, Mr = 146. Empirical formula **C3H5O2** (EF mass 73), molecular formula **C6H10O4** (adipic acid), 43.8 g = **0.3 mol**, **1.807 x 10^23** molecules, combustion balanced as **2C6H10O4 + 13O2 -> 12CO2 + 10H2O**, and 0.3 mol Z yielding **79.2 g** CO2. Every value independently recomputed and confirmed; the equation balances (O: 34 = 34). Deliberately avoids the school paper's 436/243/432 bond energies.
+
+**Zero-overlap check:** the builder extracted all 20 prior chemistry papers and grep-checked every stem, compound and numeric value, reporting zero hits. Independently re-verified on the finished PDF: all 30 MCQs present and numbered, no optional questions, and every keyed answer confirmed present among its four options.
+
+**Note on the key's letter sequence:** the pattern runs close to repeating blocks of four containing one of each letter (ABCD / BADC / ABDC / BACD / ABCD ...). Balance is correct, but future builds should shuffle more irregularly so the sequence cannot be pattern-guessed.
