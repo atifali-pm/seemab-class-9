@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tarjuma Quran Majeed - Answer Key 01</title>
+<style>
+@page { size: A4; margin: 12mm; }
+* { box-sizing: border-box; }
+body { font-family: "Georgia", serif; color: #111; margin: 0; padding: 0; }
+.page { width: 100%; padding: 0; }
+.ar { font-family: "Noto Naskh Arabic"; font-size: 19pt; direction: rtl; line-height: 2.3; text-align: center; }
+.ur { font-family: "Noto Nastaliq Urdu"; font-size: 14pt; direction: rtl; line-height: 2.6; }
+.en { font-family: Georgia, serif; direction: ltr; font-size: 11.5pt; line-height: 1.5; }
+
+.header-box { border: 2.5px solid #000; padding: 8px 14px; text-align: center; page-break-after: avoid; }
+.board-name { font-size: 17pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
+.exam-title { font-size: 15pt; margin-top: 2px; }
+.subject-line { font-size: 15pt; margin-top: 4px; font-weight: bold; }
+.subject-line .ur { font-size: 15pt; display: inline; }
+.syllabus-line { font-size: 13pt; font-weight: bold; margin-top: 6px; }
+.syllabus-line .ur { font-size: 13pt; display: inline; line-height: 1.8;}
+
+.info-row { display: flex; justify-content: space-between; border: 1.5px solid #000; border-top: none; padding: 5px 14px; font-size: 14pt; font-weight: bold; page-break-after: avoid; }
+
+.instructions-box { border: 1.5px solid #000; margin-top: 6px; padding: 6px 12px; font-size: 12pt; page-break-inside: avoid; }
+.instructions-box ol { margin: 4px 0; padding-inline-start: 20px; }
+.instructions-box li { margin-bottom: 4px; }
+.instructions-box li .ur { font-size: 12.5pt; display: block; margin-top: 1px; }
+
+.section-bar { background: #DAA520; color: #fff; font-size: 15pt; font-weight: bold; text-align: center; padding: 6px 4px; margin-top: 10px; page-break-after: avoid; }
+.section-bar .ur { color: #fff; font-size: 14pt; display: block; }
+.section-bar-blue { background: #4682B4; color: #fff; font-size: 15pt; font-weight: bold; text-align: center; padding: 6px 4px; margin-top: 10px; page-break-after: avoid; }
+.section-bar-blue .ur { color: #fff; font-size: 14pt; display: block; }
+.section-bar-green { background: #2E8B57; color: #fff; font-size: 15pt; font-weight: bold; text-align: center; padding: 6px 4px; margin-top: 10px; page-break-after: avoid; }
+.section-bar-green .ur { color: #fff; font-size: 14pt; display: block; }
+.section-sub { text-align: center; font-size: 11pt; font-style: italic; margin-top: 2px; margin-bottom: 4px; }
+.section-sub .ur { display: block; font-style: normal; font-size: 12pt; }
+
+table.mcq { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12.5pt; }
+table.mcq th, table.mcq td { border: 1px solid #000; padding: 5px 6px; vertical-align: middle; }
+table.mcq th { background: #f0e6c8; text-align: center; font-size: 12pt; }
+td.qnum { width: 4%; text-align: center; font-weight: bold; }
+td.qtext { width: 40%; }
+td.qtext .en { font-size: 11.5pt; }
+td.qtext .ur { font-size: 12.5pt; margin-top: 2px; }
+td.opt { width: 11%; text-align: center; }
+td.opt .ur { font-size: 12.5pt; }
+td.ans-cell { width: 12%; text-align: center; }
+span.mcq-opt { font-weight: bold; }
+
+table.bc-tbl { width: 100%; border-collapse: collapse; margin-top: 4px; font-size: 12.5pt; }
+table.bc-tbl th, table.bc-tbl td { border: 1px solid #000; padding: 6px 8px; vertical-align: top; }
+table.bc-tbl th { background: #f0e6c8; text-align: center; }
+td.part { width: 5%; text-align: center; font-weight: bold; }
+td.qcol { width: 37%; }
+td.markcol { width: 7%; text-align: center; font-weight: bold; }
+td.orcol { width: 5%; text-align: center; font-weight: bold; color: #b30000; font-size: 14pt; }
+td.orqcol { width: 37%; }
+
+.word-table { width: 100%; border-collapse: collapse; margin-top: 4px; font-size: 13pt; }
+.word-table th, .word-table td { border: 1px solid #000; padding: 8px; text-align: center; }
+.word-table th { background: #f0e6c8; }
+.word-table .ar { font-size: 16pt; line-height: 1.4; }
+
+.comp-box { border: 1px solid #000; padding: 8px 10px; margin-top: 6px; page-break-inside: avoid; background: #fbfbf3; }
+.comp-box .ar { margin: 4px 0; }
+.comp-box .ur { margin: 4px 0; }
+.comp-box .en { margin: 4px 0; font-style: italic; }
+.comp-q { margin-top: 6px; font-size: 12.5pt; }
+.comp-q .ur { font-size: 13pt; }
+
+.footer { margin-top: 14px; font-size: 11.5pt; }
+.sig-row { display: flex; justify-content: space-between; margin-top: 30px; }
+.sig-line { border-top: 1px solid #000; width: 40%; text-align: center; padding-top: 3px; }
+.chapters-line { text-align: center; margin-top: 14px; font-weight: bold; }
+.end-marker { text-align: center; margin-top: 10px; font-weight: bold; font-size: 13pt; }
+
+.answer-box { border: 1px solid #000; border-left: 4px solid #4682B4; background: #fafafa; padding: 8px 12px; margin-top: 8px; page-break-inside: avoid; }
+.mark-badge { display: inline-block; background: #e8e8e8; border: 1px solid #bbb; border-radius: 4px; padding: 1px 7px; font-weight: bold; font-size: 11pt; margin: 0 3px; }
+.or-label { color: #b30000; font-weight: bold; font-size: 14pt; }
+.correct { color: #0a7d0a; font-weight: bold; }
+.cite { color: #555; font-size: 10.5pt; font-style: italic; }
+.mcq-answer { page-break-inside: avoid; border-bottom: 1px dashed #aaa; padding: 6px 2px; }
+
+body { font-size: 13pt; line-height: 1.5; }
+.ans-line { margin: 6px 0; }
+.mcq-answer .ur { font-size: 13pt; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header-box">
+  <div class="board-name">Punjab Curriculum &amp; Textbook Board (PECTAA)</div>
+  <div class="exam-title">Practice Examination 2026 &#8212; ANSWER KEY (Version 1)</div>
+  <div class="subject-line">Tarjuma-tul-Quran-ul-Majeed &nbsp;<span class="ur">ترجمہ قرآن مجید</span>&nbsp; — Class 9</div>
+  <div class="syllabus-line">Syllabus: Surah Maryam &#8212; Surah Al-Anbiya &#8212; Surah Al-Hajj &#8212; Surah An-Naml &#8212; Surah Luqman &#8212; Surah As-Sajdah<br>
+  <span class="ur">نصاب: سُوْرَةُ مَرْيَمَ — سُوْرَةُ الْاَنْبِيَآءِ — سُوْرَةُ الْحَجِّ — سُوْرَةُ النَّمْلِ — سُوْرَةُ لُقْمٰنَ — سُوْرَةُ السَّجْدَةِ</span></div>
+</div>
+<div class="info-row">
+  <div>Total Marks: 65</div>
+  <div>Time: 2 Hours 45 Minutes</div>
+  <div>Version 1</div>
+</div>
+
+<div class="section-bar">SECTION A &#8212; Multiple Choice Questions (10 &times; 1 = 10 Marks)</div>
+
+<div class="mcq-answer">
+<b>Q1.</b> According to Surah Maryam's مضامین, whose miraculous creation is described in detail? &nbsp; <span class="correct">Answer: (a) Hazrat Isa (AS)</span> <span class="mark-badge">1 mark</span><br>
+The مضامین of Surah Maryam state that after narrating Hazrat Maryam's (AS) account, the surah gives a <b>detailed description of the miraculous creation of Hazrat Isa (AS)</b>, born without a father, to establish that this does not make him Allah or Allah's son.
+<div class="cite">SLO: derive the مرکزی مضامین of the surah &nbsp;|&nbsp; Book p.6 (PDF p.9)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q2.</b> Who recited Surah Maryam in the court of the Najashi? &nbsp; <span class="correct">Answer: (b) Hazrat Jafar bin Abi Talib (RA)</span> <span class="mark-badge">1 mark</span><br>
+During the <b>Hijrat-e-Habsha</b>, when the Quraish sent envoys demanding the Muslims be handed back, <b>Hazrat Jafar bin Abi Talib (RA)</b> stood before the Najashi and recited the opening of Surah Maryam, describing Hazrat Isa (AS) as a servant of Allah, which moved the Najashi to tears and he refused to hand the Muslims over.
+<div class="cite">SLO: introduce (تعارف) each prescribed surah &nbsp;|&nbsp; Book p.4-5 (PDF p.7-8)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q3.</b> Surah Al-Anbiya is so named because: &nbsp; <span class="correct">Answer: (c) it contains the tazkira of many prophets</span> <span class="mark-badge">1 mark</span><br>
+The surah narrates the accounts of many prophets &#8212; Ibrahim, Ishaq, Yaqoob, Nooh, Dawud, Sulaiman, Ayyub, Musa, Harun, Zakariya, Yahya, Isa and Maryam (AS) &#8212; hence the name <b>"Al-Anbiya" (the Prophets)</b>.
+<div class="cite">SLO: know the surah's name and meaning &nbsp;|&nbsp; Book p.34 (PDF p.37)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q4.</b> A hadith describes Surah Al-Anbiya as: &nbsp; <span class="correct">Answer: (d) an old and precious treasure (قدیم و قیمتی اثاثہ)</span> <span class="mark-badge">1 mark</span><br>
+Per the hadith quoted in the surah's تعارف (Sahih Bukhari: 4731), the Prophet (SAW) described this surah as <b>"my old wealth and precious treasure" (میرا قدیم مال اور قیمتی اثاثہ)</b>. The book does not name who he said this to &#8212; that detail is outside what p.34 states, so it is left out here.
+<div class="cite">Distractor note: option (a) "قرآن کا دل" (the heart of the Quran) is the description the book gives for <b>Surah Yasin</b>, not Al-Anbiya &#8212; a different surah's fact, not a valid answer here.</div>
+<div class="cite">SLO: introduce (تعارف) each prescribed surah &nbsp;|&nbsp; Book p.34 (PDF p.37)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q5.</b> Surah Al-Hajj consists of how many ayat? &nbsp; <span class="correct">Answer: (b) 78</span> <span class="mark-badge">1 mark</span><br>
+Surah Al-Hajj is a <b>Madani</b> surah of <b>78 ayat</b>, per its تعارف.
+<div class="cite">SLO: introduce (تعارف) each prescribed surah &nbsp;|&nbsp; Book p.48 (PDF p.51)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q6.</b> In which surah was jihad first permitted? &nbsp; <span class="correct">Answer: (a) Surah Al-Hajj</span> <span class="mark-badge">1 mark</span><br>
+According to the مضامین of Surah Al-Hajj, permission to fight was granted here for the <b>first time</b>, and it was declared good news for the Muslims who could now defend themselves against the oppression of the disbelievers.
+<div class="cite">SLO: derive the مرکزی مضامین of the surah &nbsp;|&nbsp; Book p.48 (PDF p.51)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q7.</b> What does "Naml" mean? &nbsp; <span class="correct">Answer: (d) چیونٹی (ant)</span> <span class="mark-badge">1 mark</span><br>
+"Naml" literally means <b>ant</b>. The surah takes its name from the incident of the valley of the ants mentioned in ayat 18.
+<div class="cite">SLO: know the surah's name and meaning &nbsp;|&nbsp; Book p.88 (PDF p.91)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q8.</b> Surah An-Naml was revealed right after which surah? &nbsp; <span class="correct">Answer: (c) Surah Ash-Shu'ara</span> <span class="mark-badge">1 mark</span><br>
+Per its تعارف, Surah An-Naml was revealed <b>immediately after Surah Ash-Shu'ara</b>.
+<div class="cite">SLO: introduce (تعارف) each prescribed surah &nbsp;|&nbsp; Book p.88 (PDF p.91)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q9.</b> What is the خلاصہ (summary) of Surah Luqman? &nbsp; <span class="correct">Answer: (a) توحید کے دلائل، کردار سازی اور آخرت کی یاد دہانی</span> <span class="mark-badge">1 mark</span><br>
+The book's own closing line describes Surah Luqman's خلاصہ as <b>"دلائلِ توحید، کردار سازی، اور آخرت کی یاد دہانی"</b> (arguments for the Oneness of Allah, character-building, and a reminder of the Hereafter).
+<div class="cite">SLO: derive the مرکزی مضامین of the surah &nbsp;|&nbsp; Book p.137 (PDF p.140)</div>
+</div>
+
+<div class="mcq-answer">
+<b>Q10.</b> Surah As-Sajdah's other name is: &nbsp; <span class="correct">Answer: (b) تَنْزِيْلُ السَّجْدَةِ</span> <span class="mark-badge">1 mark</span><br>
+Surah As-Sajdah is also known as <b>Tanzil As-Sajdah</b> and <b>Alif Lam Meem As-Sajdah</b>.
+<div class="cite">SLO: know the surah's name and meaning &nbsp;|&nbsp; Book p.145 (PDF p.148)</div>
+</div>
+
+</div>
+<!-- PAGE 2 -->
+<div class="page">
+
+<div class="section-bar">SECTION B (a) &#8212; Short Questions (5 &times; 2 = 10 Marks)</div>
+
+<div class="answer-box">
+<b>(i) Main</b> &#8212; What dua did Hazrat Zakariya (AS) make? <span class="mark-badge">2</span><br>
+<span class="ar">فَهَبْ لِيْ مِنْ لَّدُنْكَ وَلِيًّا ﴿٥﴾ وَاجْعَلْهُ رَبِّ رَضِيًّا ﴿٦﴾</span><br>
+"So grant me from Yourself an heir. And make him, my Lord, pleasing (to You)." <span class="mark-badge">Arabic 1</span><span class="mark-badge">Translation 1</span>
+<span class="cite">(Surah Maryam: 5-6, Book p.15)</span>
+<b class="or-label">OR</b> &#8212; By what titles are Ibrahim (AS) and Musa (AS) remembered? Hazrat Ibrahim (AS) is called <b>Khalilullah</b> (the Friend of Allah) <span class="mark-badge">1</span>, and Hazrat Musa (AS) is called <b>Kalimullah</b> (the one who spoke with Allah) <span class="mark-badge">1</span>. <span class="cite">(Book p.35)</span>
+</div>
+
+<div class="answer-box">
+<b>(ii) Main</b> &#8212; How do hypocrites worship Allah, and what is the result? <span class="mark-badge">2</span><br>
+Hypocrites worship Allah <b>"on the edge"</b> (کنارے کنارے سے) &#8212; if good comes to them they are content, but if a trial befalls them, they turn back to disbelief <span class="mark-badge">1</span>, and so they lose <b>both this world and the Hereafter</b>, which is a manifest loss <span class="mark-badge">1</span>. <span class="cite">(Surah Al-Hajj: 11, Book p.49)</span>
+<b class="or-label">OR</b> &#8212; Hazrat Sulaiman (AS) was blessed by Allah with <b>wealth, kingship and great splendour</b> <span class="mark-badge">1</span>, inheriting prophethood and knowledge from his father Dawud (AS), and was granted extraordinary <b>miracles</b> such as command over the wind, jinn and understanding the speech of birds <span class="mark-badge">1</span>. <span class="cite">(Book p.88)</span>
+</div>
+
+<div class="answer-box">
+<b>(iii) Main</b> &#8212; Why was Surah Luqman given this name? <span class="mark-badge">2</span><br>
+The surah is named after <b>Hazrat Luqman (AS)</b> because it narrates the pieces of <b>wise advice</b> he gave to his son <span class="mark-badge">2</span>. <span class="cite">(Book p.137)</span>
+<b class="or-label">OR</b> &#8212; Allah sends a <b>lesser punishment</b> before the greater punishment <span class="mark-badge">1</span>, so that the wrongdoers may <b>turn back from their sins</b> <span class="mark-badge">1</span>. <span class="cite">(Surah As-Sajdah: 21, Book p.146)</span>
+</div>
+
+<div class="answer-box">
+<b>(iv) Main</b> &#8212; How should we treat parents, per Surah Maryam? <span class="mark-badge">2</span><br>
+We should be <b>good and dutiful</b> to our parents, as this is the way of the prophets <span class="mark-badge">1</span>. Hazrat Yahya (AS) is described as <b>"barran bi-walidayhi"</b> (dutiful to his parents) and was never arrogant or disobedient, which illustrates this <span class="mark-badge">1</span>. <span class="cite">(Surah Maryam: 14, Book p.6)</span>
+<b class="or-label">OR</b> &#8212; Allah did <b>not</b> create the heavens and the earth for <b>play or without purpose</b> <span class="mark-badge">1</span>; His creation is entirely <b>purposeful</b> and points to the truth of the Hereafter <span class="mark-badge">1</span>. <span class="cite">(Surah Al-Anbiya: 16-17, Book p.35)</span>
+</div>
+
+<div class="answer-box">
+<b>(v) Main</b> &#8212; Whom does Allah help, per Surah Al-Hajj? <span class="mark-badge">2</span><br>
+Allah helps those who <b>help His religion</b> (i.e. strive for the cause of Islam) <span class="mark-badge">2</span>. <span class="cite">(Surah Al-Hajj: 46, Book p.49)</span>
+<b class="or-label">OR</b> &#8212; The closing part of Surah An-Naml discusses the <b>proofs and circumstances of Qiyamah</b>, and the fate awaiting good and evil people on that Day <span class="mark-badge">2</span>. <span class="cite">(Book p.88)</span>
+</div>
+
+<div class="section-bar" style="margin-top:14px;">SECTION B (b) &#8212; Quranic Words (5 &times; 1 = 5 Marks)</div>
+<table class="word-table">
+<tr><th>Word</th><th>Meaning</th></tr>
+<tr><td class="ar">عَبْدُ اللّٰہِ</td><td>Servant/bondsman of Allah <span class="cite">(Surah Maryam, Book p.15)</span></td></tr>
+<tr><td class="ar">اَیْنَ مَا</td><td>Wherever <span class="cite">(Surah Maryam, Book p.15)</span></td></tr>
+<tr><td class="ar">یُمْسِكُ</td><td>He holds / restrains <span class="cite">(Surah Al-Hajj, Book p.59)</span></td></tr>
+<tr><td class="ar">مَنسَکًا</td><td>A way / rite of worship <span class="cite">(Surah Al-Hajj, Book p.59)</span></td></tr>
+<tr><td class="ar">رَوَاسِیَ</td><td>Firm mountains <span class="cite">(Surah Al-Anbiya, Book p.45)</span></td></tr>
+</table>
+
+<div class="section-bar" style="margin-top:14px;">SECTION B (c) &#8212; Comprehension (3 &times; 3 = 9 Marks)</div>
+
+<div class="answer-box">
+<b>(i) Main</b> &#8212; Qualities of Hazrat Yahya (AS): given <b>wisdom in childhood</b>, <b>tenderness and purity</b> from Allah, was <b>pious (taqi)</b>, <b>dutiful to his parents</b>, and was never arrogant or disobedient. (Any three) <span class="mark-badge">3</span>
+<b class="or-label">OR</b> &#8212; Every messenger before the Prophet (SAW) was given the <b>same revelation of Tawheed</b>: that there is no god but Allah, so worship Him alone. <span class="mark-badge">3</span>
+</div>
+
+<div class="answer-box">
+<b>(ii) Main</b> &#8212; On the Day of Qiyamah, <b>every nursing mother will forget the child she is nursing</b> <span class="mark-badge">1.5</span>, and <b>every pregnant woman will miscarry her load</b> out of sheer terror, and people will appear intoxicated though they are not, due to the severity of Allah's punishment <span class="mark-badge">1.5</span>.
+<b class="or-label">OR</b> &#8212; Allah created the heavens and the earth <b>in six days</b> <span class="mark-badge">1.5</span>, then <b>established Himself above the Throne</b> and directs the affairs of the universe from the heaven to the earth <span class="mark-badge">1.5</span>.
+</div>
+
+<div class="answer-box">
+<b>(iii) Main</b> &#8212; Allah has subjected <b>everything in the heavens and the earth</b> for man's benefit <span class="mark-badge">1.5</span>, and has completed His favours upon him in <b>two kinds: apparent (zahirah) and hidden (batinah)</b> <span class="mark-badge">1.5</span>.
+<b class="or-label">OR</b> &#8212; Allah, for the distressed person: (1) <b>responds to his call</b>, (2) <b>removes his suffering</b>, and (3) <b>makes mankind successors on the earth</b>. <span class="mark-badge">3</span>
+</div>
+
+</div>
+<!-- PAGE 3 -->
+<div class="page">
+
+<div class="section-bar-blue">SECTION C &#8212; Long Questions (2 &times; 8 = 16 Marks)</div>
+
+<div class="answer-box">
+<b>Q.3 Main</b> &#8212; Hazrat Sulaiman (AS), in the light of Surah An-Naml:
+<ul>
+<li>He inherited <b>knowledge and prophethood</b> from his father Hazrat Dawud (AS). <span class="mark-badge">1.5</span></li>
+<li>Allah taught him the <b>language of birds (mantiq at-tayr)</b> and gave him abundantly from everything. <span class="mark-badge">1.5</span></li>
+<li>He commanded a disciplined <b>army of jinn, men and birds</b>. <span class="mark-badge">1.5</span></li>
+<li><b>Incident of the valley of the ants:</b> an ant warned the other ants to enter their dwellings so Sulaiman's army would not crush them unknowingly &#8212; Sulaiman (AS) smiled at her words. <span class="mark-badge">2</span></li>
+<li>He <b>thanked Allah</b> for this favour and prayed to be enabled to do righteous deeds pleasing to Him and to be counted among His righteous servants. <span class="mark-badge">1.5</span></li>
+</ul>
+<span class="cite">(Surah An-Naml: 15-19, Book p.88-90)</span>
+<b class="or-label">OR</b> &#8212; Creation and management of the universe, per Surah As-Sajdah:
+<ul>
+<li>Allah <b>created the heavens and the earth</b> and all between them <b>in six days</b>, then established Himself above the <b>Throne (Arsh)</b> in a manner befitting His majesty. <span class="mark-badge">2</span></li>
+<li>Man has <b>no protector or intercessor</b> besides Allah. <span class="mark-badge">1.5</span></li>
+<li>He <b>directs every affair</b> of the universe, from the heaven to the earth, continuously. <span class="mark-badge">2</span></li>
+<li>He is the <b>Knower of the unseen and the witnessed</b>, the Mighty, the Merciful. <span class="mark-badge">1.5</span></li>
+<li>This shows Allah's complete <b>power and control over all creation</b>. <span class="mark-badge">1</span></li>
+</ul>
+<span class="cite">(Surah As-Sajdah: 4-6, Book p.146-147)</span>
+</div>
+
+<div class="answer-box">
+<b>Q.4 Main</b> &#8212; Events of Qiyamah, per Surah Al-Hajj:
+<ul>
+<li>The <b>tremor of the Hour</b> will be terrible: nursing mothers will forget their infants, pregnant women will miscarry, and people will appear intoxicated though they are not, from the severity of Allah's punishment. <span class="mark-badge">2</span></li>
+<li>Some people <b>dispute about Allah without knowledge</b>, following every rebellious devil who leads them to the punishment of the Blaze. <span class="mark-badge">2</span></li>
+<li>The <b>disbelievers</b> will face humiliating punishment in this world and the severe punishment of the Fire in the Hereafter. <span class="mark-badge">2</span></li>
+<li>Those who <b>believe and do righteous deeds</b> will be admitted into gardens beneath which rivers flow. <span class="mark-badge">1</span></li>
+<li>Allah will <b>judge between people</b> on the Day of Resurrection concerning what they used to dispute about. <span class="mark-badge">1</span></li>
+</ul>
+<span class="cite">(Surah Al-Hajj: 1-2, 19-24, 69, Book p.48-52)</span>
+<b class="or-label">OR</b> &#8212; Tawheed and its arguments, per Surah Al-Anbiya:
+<ul>
+<li>If there were <b>other gods besides Allah</b> in the heavens and the earth, both realms would surely have been <b>ruined/corrupted</b> &#8212; the proof of Tawheed from cosmic order. <span class="mark-badge">2</span></li>
+<li>Allah is <b>not questioned</b> about what He does, but His creation will be questioned about their deeds. <span class="mark-badge">1.5</span></li>
+<li>The heavens and earth were <b>joined</b>, and Allah <b>separated them</b> and made every living thing from water &#8212; proof of His creative power. <span class="mark-badge">2</span></li>
+<li>Allah set <b>firm mountains</b>, a <b>protected sky</b>, and created night, day, the sun and moon, each <b>swimming in its own orbit</b>. <span class="mark-badge">1.5</span></li>
+<li>No human was granted <b>immortality</b>, answering the disbelievers' objection to the Prophet's (SAW) mortality; every soul will taste death. <span class="mark-badge">1</span></li>
+</ul>
+<span class="cite">(Surah Al-Anbiya: 22-23, 30-35, Book p.34-38)</span>
+</div>
+
+<div class="section-bar-green">SECTION D &#8212; Idiomatic Translation (Complete key for all four passages)</div>
+
+<div class="answer-box">
+<b>(i) Surah Maryam, Ayat 30-33</b> <span class="mark-badge">5</span><br>
+<div class="ur">اس (بچے) نے کہا: بے شک میں اللہ کا بندہ ہوں۔ اس نے مجھے کتاب عطا فرمائی ہے اور مجھے نبی بنایا ہے۔ اور مجھے بابرکت بنایا ہے جہاں بھی میں ہوں، اور مجھے نماز اور زکوٰۃ کا حکم دیا ہے جب تک میں زندہ رہوں۔ اور اپنی والدہ کے ساتھ اچھا سلوک کرنے والا بنایا ہے، اور مجھے سرکش، بدبخت نہیں بنایا۔ اور مجھ پر سلامتی ہے جس دن میں پیدا ہوا، اور جس دن میں وفات پاؤں گا، اور جس دن زندہ کرکے اٹھایا جاؤں گا۔</div>
+<div class="en">He said, "Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet. And He has made me blessed wherever I am, and has enjoined upon me prayer and zakah as long as I remain alive. And [He has made me] dutiful to my mother, and He has not made me a wretched tyrant. And peace is on me the day I was born, the day I will die, and the day I will be raised alive."</div>
+</div>
+
+<div class="answer-box">
+<b>(ii) Surah Maryam, Ayat 34-36</b> <span class="mark-badge">5</span><br>
+<div class="ur">یہ ہیں عیسیٰ بن مریم، سچی بات جس میں لوگ شک کرتے ہیں۔ اللہ کی یہ شان نہیں کہ وہ کسی کو اپنا بیٹا بنائے، وہ پاک ہے! جب وہ کسی کام کا فیصلہ فرماتا ہے تو صرف اسے کہتا ہے "ہوجا" تو وہ ہوجاتا ہے۔ اور بے شک اللہ میرا رب اور تمہارا رب ہے، پس اسی کی عبادت کرو، یہ سیدھا راستہ ہے۔</div>
+<div class="en">That is Jesus, the son of Mary &#8212; a statement of truth about which they are in dispute. It is not [befitting] for Allah to take a son; exalted is He! When He decrees a matter, He only says to it "Be," and it is. [Jesus said], "And indeed, Allah is my Lord and your Lord, so worship Him. This is a straight path."</div>
+</div>
+
+<div class="answer-box">
+<b>(iii) Surah Al-Anbiya, Ayat 30-35</b> <span class="mark-badge">5</span><br>
+<div class="ur">کیا کافروں نے یہ نہیں دیکھا کہ آسمان اور زمین دونوں ملے ہوئے تھے تو ہم نے انہیں الگ کر دیا، اور ہم نے ہر زندہ چیز کو پانی سے بنایا، تو کیا وہ ایمان نہیں لاتے؟ اور ہم نے زمین میں پہاڑ بنائے تاکہ وہ انہیں لے کر جھک نہ جائے، اور ہم نے اس میں کشادہ راستے بنائے تاکہ وہ راستہ پا سکیں۔ اور ہم نے آسمان کو ایک محفوظ چھت بنایا، اور وہ اس کی نشانیوں سے منہ موڑے ہوئے ہیں۔ اور وہی ہے جس نے رات اور دن، سورج اور چاند بنائے، سب اپنے اپنے مدار میں تیرتے ہیں۔ اور ہم نے آپ سے پہلے کسی انسان کو ہمیشہ کی زندگی نہیں دی، تو اگر آپ کا انتقال ہو جائے تو کیا وہ ہمیشہ رہنے والے ہیں؟ ہر جان کو موت کا مزہ چکھنا ہے، اور ہم تمہیں برائی اور بھلائی سے آزمائش کے طور پر آزماتے ہیں، اور تم ہماری ہی طرف لوٹائے جاؤ گے۔</div>
+<div class="en">Have those who disbelieved not considered that the heavens and the earth were a joined entity, and We separated them and made from water every living thing? Then will they not believe? And We placed within the earth firmly set mountains, lest it should shift with them, and We made therein passages [as] roads that they might be guided. And We made the sky a protected ceiling, but they, from its signs, are turning away. And it is He who created the night and the day, and the sun and the moon; all, in an orbit, are swimming. And We did not grant to any man before you eternity; so if you die, would they be eternal? Every soul will taste death, and We test you with evil and good as trial, and to Us you will be returned.</div>
+</div>
+
+<div class="answer-box">
+<b>(iv) Surah Al-Hajj, Ayat 65-69</b> <span class="mark-badge">5</span><br>
+<div class="ur">کیا تم نے نہیں دیکھا کہ اللہ نے تمہارے لیے مسخر کر دیا ہے جو کچھ زمین میں ہے، اور کشتیاں سمندر میں اس کے حکم سے چلتی ہیں، اور وہی آسمان کو روکے ہوئے ہے کہ وہ زمین پر نہ گر پڑے مگر اس کی اجازت سے۔ بے شک اللہ لوگوں پر بہت شفقت فرمانے والا، بہت رحم فرمانے والا ہے۔ اور وہی ہے جس نے تمہیں زندہ کیا، پھر تمہیں موت دے گا، پھر تمہیں زندہ کرے گا۔ بے شک انسان بڑا ہی ناشکرا ہے۔ ہم نے ہر امت کے لیے عبادت کا ایک طریقہ مقرر کیا ہے جس پر وہ عمل پیرا ہیں، تو وہ اس معاملے میں آپ سے جھگڑا نہ کریں، اور آپ اپنے رب کی طرف بلاتے رہیں، بے شک آپ سیدھی راہ پر ہیں۔ اور اگر وہ آپ سے جھگڑا کریں تو فرما دیجیے: اللہ خوب جانتا ہے جو کچھ تم کرتے ہو۔ اللہ تمہارے درمیان قیامت کے دن اس بات کا فیصلہ فرمائے گا جس میں تم اختلاف کرتے تھے۔</div>
+<div class="en">Have you not seen that Allah has subjected to you whatever is on the earth and the ships sailing through the sea by His command, and He restrains the sky from falling upon the earth, except by His permission? Indeed Allah, to the people, is Kind and Merciful. And it is He who gave you life; then He causes you to die, then He will [again] give you life. Indeed, mankind is ungrateful. For every nation We have appointed rites which they perform, so let them not dispute with you over the matter, but invite [them] to your Lord. Indeed you are upon straight guidance. And if they argue with you, then say, "Allah is most knowing of what you do." Allah will judge between you on the Day of Resurrection concerning that over which you used to differ.</div>
+</div>
+
+<div class="footer">
+<div class="end-marker">&#8212; End of Answer Key &#8212;</div>
+</div>
+
+</div>
+</body>
+</html>

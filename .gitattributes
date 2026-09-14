@@ -5,3 +5,4 @@ math/whole-book-federal-board.pdf filter=lfs diff=lfs merge=lfs -text
 physics/whole-book.pdf filter=lfs diff=lfs merge=lfs -text
 physics/marked-sheets/teacher-style-marked-v1.pdf filter=lfs diff=lfs merge=lfs -text
 physics/marked-sheets/teacher-style-marked-v2.pdf filter=lfs diff=lfs merge=lfs -text
+quran/chapters/quran-9-pctb-full-book.pdf filter=lfs diff=lfs merge=lfs -text
