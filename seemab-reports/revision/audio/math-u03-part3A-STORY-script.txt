@@ -1,0 +1,47 @@
+Assalam o alaikum Seemab. Aaj Maths, Unit teen, Sets. Aur aaj ka sabaq kitab se nahin, aap ki apni class se shuru hoga.
+
+Socho games period hai. Madam ground mein do lambi rassiyan daal kar do bare daaire bana deti hain: jo cricket kheltin hain woh baayen daaire mein khari ho jayen, jo badminton kheltin hain woh daayen mein.
+
+Sab chal parti hain. Lekin paanch larkiyan beech mein khari reh jati hain. Madam poochti hain kya hua. Woh kehti hain, Madam, hum dono kheltin hain. Hum kahan khari hon?
+
+Is sawal ka jawab poore Unit teen mein chhupa hua hai. Zara sabr karein.
+
+Pehle asaan baat. Set koi jadoo nahin, set sirf ek group hai. Aap khud roz kai groups mein hain: Class nine ki larkiyan, ghar ke log, van wali larkiyan. Har ek set hai.
+
+Magar ek shart hai. Group ka rule aisa ho ke jhagra baaqi na rahe. Kitab ki apni misal: agar main kahoon, halke patharon ka collection, to ye set nahin. Kyunke halka hota kya hai? Aap kahengi ye halka hai, saheli kahegi bhaari hai, faisla koi nahin kar sakta. Lekin agar kahoon, aise pathar jin ka wazan ek kilo se kam hai, to jhagra khatam. Tarazu faisla kar dega. Isi ko kehte hain well-defined.
+
+Kitab ke alfaaz, page chhialees par: "A set is a well-defined collection of distinct objects." Aur: "The term well-defined means that the objects follow a given discipline with which presence or absence of some object in the set is checked."
+
+Lafz distinct ka matlab alag alag: haazri register mein aap ka naam ek hi dafa likha jata hai. Isi liye teen, minus nau, do, teen, chaar, do mein se natural numbers ka jawab hai do, teen, chaar.
+
+Ab doosra idea. Farz karein aap school gate par khari hain aur sirf apne school ki larkiyan andar aane deni hain. Ya saat sau naam ki list yaad karein, ya ek rule pakar lein: jo blue uniform aur badge mein hai woh andar. Pehla tareeqa tabular form hai, doosra set-builder form.
+
+Likhne ka andaz: A barabar, curly bracket kholo, x, phir ek seedhi khari lakeer, phir x belongs to Z, bracket band. Parha aise jata hai: "A is the set of all elements x such that x belongs to Z." Woh khari lakeer such that hai, aur ulta V and hai.
+
+Ek pakki trick. Multiples ka sawal aaye to element ki jagah chaar x likhein aur shart x par lagayein: multiples of four, chalees se shuru, matlab chaar x bara ya barabar chalees, yani x bara ya barabar das. Shart x par lagti hai, chalees par nahin.
+
+Aur nau number sets, page athtalees par. N natural, ek se shuru. W whole, zero bhi. Z integers, minus wale bhi. E even, O odd, P prime. Q rational, yani p over q jahan q zero na ho. Q dash irrational, jo p over q mein likhe hi nahin ja sakte. R real, Q aur Q dash dono mila kar. Check Point: R ko tabular form mein nahin likh sakte, real numbers gine hi nahin ja sakte.
+
+Wapas ground par. Cricket wali set A, badminton wali set B.
+
+Union, A union B: jo bhi kisi game mein hai, sab ek list mein. Kitab: the set of all those elements which are taken either from A or from B or from both. Jo dono kheltin hain, un ka naam sirf ek dafa.
+
+Intersection, A intersection B: sirf woh jo dono kheltin hain. Wohi paanch larkiyan. Kitab: the set of elements which belong to both A and B.
+
+Difference, A minus B: woh jo cricket to kheltin hain magar badminton nahin. Aur A minus B aur B minus A ek cheez nahin: ek sirf cricket wali, doosri sirf badminton wali.
+
+Complement: poori class set U hai, universal set. A complement matlab woh saari larkiyan jo cricket nahin kheltin. A dash barabar U minus A.
+
+Aur teen rishte. Koi larki common nahin, to disjoint: do daaire jo ek doosre ko chhutay bhi nahin. Kuch common hain magar koi group doosre ke andar poora nahin aata, to overlapping: do daaire jo beech mein kat rahe hain. Aur ek group poora doosre ke andar, jaise Class nine ki har larki poore school mein, to subset.
+
+Aur Venn diagram? Woh bas wohi do rassiyan hain, kaghaz par. Kitab: "In a Venn diagram, universal set is represented by the interior of the rectangle, however inside the rectangle, the subsets are represented by the interior of any other closed shape like circles or ovals." Rectangle poori class hai, daaire us ke groups.
+
+Ab un paanch larkiyon ka jawab. Woh ghalat jagah khari nahin theen. Un ki jagah wohi hai jahan dono daaire ek doosre ko kaat rahe hain, aur us hissay ka naam hai A intersection B.
+
+Ye baat zindagi bhar yaad rakhein: union matlab sab mila kar, intersection matlab sirf woh jo dono mein hain, aur difference matlab jo mere paas hai magar tumhare paas nahin.
+
+Ab imtihani baat. Teen sets ka sawal aaye to bracket sab se ahem hai. Kitab: we use brackets to separate two sets from the third one. Pehle bracket ke andar wala kaam, phir teesre set ke saath. Is liye A union B poore bracket mein intersection C, aur A union bracket B intersection C, do bilkul alag jawab dete hain.
+
+Teen chhoti ghaltiyan. Common element sirf ek dafa likhein. Complement se pehle universal set zaroori hai. Venn mein pehle poora naqsha banayein, phir sirf maanga gaya hissa shade karein.
+
+Khuda hafiz, aur agli dafa ek mazedaar baat. Teen sets par ek hi operation lag raha ho, to bracket chahe pehle do par lagayein ya aakhri do par, jawab bilkul wohi rehta hai. Us ka naam hai associative law.

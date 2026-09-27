@@ -1,0 +1,43 @@
+Assalam o alaikum Seemab. Aaj ka sabaq paper mein sab se zyada number deta hai: Venn diagram ke lafzon wale sawal aur ginti ke formulay. Lekin pehle ek sawal.
+
+Socho Miss class mein aati hain. Kul tees larkiyan hain. Miss kehti hain, jo cricket khelti hain hath khara karein. Bees hath khare hote hain. Phir hockey wali baari: pandrah hath. Board par likhti hain, bees jama pandrah, barabar paintees.
+
+Ab zara ruko. Class mein to sirf tees larkiyan hain. Paintees kahan se aa gayin? Kisi ne jhoot nahin bola, har hath sach mein khara tha. Thora sabr karein, hum is class mein wapas aayenge.
+
+Socho class mein Ayesha hai, jo cricket bhi khelti hai aur hockey bhi. Cricket wale sawal par hath uthaya, hockey wale par dobara. Ek larki, do hath. Aur aisi sirf Ayesha nahin. Farz karein aath larkiyan dono khelti hain, har ek ne do dafa hath uthaya. Yani paintees mein aath larkiyan zyada gin li gayin.
+
+To asal ginti? Paintees mein se aath nikal do. Sattais. Tees ki class mein sattais larkiyan koi na koi game khelti hain, aur teen koi bhi nahin. Formula yaad karne ki nobat hi nahin aayi.
+
+Ab kitab ke alfaaz. Overlapping sets A aur B ke liye: n of A union B, barabar, n of A, jama n of B, manfi n of A intersection B.
+
+Yahan n of A ka matlab hai set A mein kitne elements hain. Ghatana isi liye parta hai: jo dono sets mein hain woh do dafa gin liye gaye, ek dafa n of A mein aur ek dafa n of B mein.
+
+Ghar mein bhi yehi hota hai. Shaadi ke khane mein nabbe ne biryani li aur pachas ne qorma, magar mehmaan ek sau hi thay, kyunke chalis ne plate mein dono daal li theen.
+
+Ab teen sets, football bhi shamil kar lein. Pehle teeno ki ginti jama karein. Jo larki do games khelti hai woh do dafa gin gayi, to teeno joray ghata dein.
+
+Lekin ab nayi problem. Woh larki jo teeno khelti hai, pehle teen dafa gini gayi. Phir aap ne use teeno joron se nikal diya, yani teen dafa ghata diya. Ab woh zero par hai, poori tarah ghaib. Is liye aakhir mein use ek dafa wapas jama karna parta hai.
+
+Kitab ka formula yehi kehta hai. n of A union B union C, barabar, n of A jama n of B jama n of C, manfi n of A intersection B, manfi n of B intersection C, manfi n of A intersection C, jama n of A intersection B intersection C. Signs ka order yaad rakhein: jama jama jama, manfi manfi manfi, jama.
+
+Ab bohat zaroori baat. Kitab ke Example 12 mein hisaab khud galat chhapa hai, aur jo student us par bharosa karegi us ke number katenge.
+
+Example 12 mein ek survey ka naqsha hai. Us mein saat hisse hain. Chauntees sirf cricket, do cricket aur hockey dono, teen cricket aur football dono, paanch teeno games, chhe hockey aur football dono, chhabbis sirf hockey, bees sirf football, aur rectangle se bahar baarah.
+
+Kitab either of the three games ke liye sirf chauntees, paanch, chhe, chhabbis aur bees jorti hai, jawab likhti hai ikyanway. Phir kul survey wale ek sau teen.
+
+Dono galat hain. Kitab do hisse bhool gayi: woh do jo cricket aur hockey dono khelte hain, aur woh teen jo cricket aur football dono. Either of the three games ka matlab hai har woh jo kam az kam ek game khelta hai, is liye koi hissa bahar nahin reh sakta.
+
+Sahi jawab ye hai. Saaray saat hisse joriye: chauntees jama do jama teen jama paanch jama chhe jama chhabbis jama bees, barabar chhannway. Yehi hai n of C union H union F. Aur kul survey wale, chhannway jama baarah, barabar ek sau aath.
+
+Yani ikyanway galat hai, sahi chhannway. Ek sau teen galat, sahi ek sau aath. Imtihan mein sahi wala likhna. Naqshe mein woh teen cricket aur football ke jore se thora bahar chhapa hai, is liye nazar andaz ho gaya.
+
+Ek aur baat. Example 13 mein kitab likhti hai, total number of students that like both subjects is n of E union M, barabar pansath. Ye lafz galat hain: pansath woh hain jo either subject pasand karte hain. Both to sirf nau hain.
+
+Ab imtihan wala kaam. Lafzon wala sawal aaye to pehle naqsha banayein, andar se bahar: beech wala hissa, phir do do ke hisse, phir akele wale, phir bahar ka number. Lafz khud formula bata dete hain. Both ya and ka matlab intersection. Either ya at least one ka matlab union. Neither ka matlab n of U manfi n of A union B. Only A ka matlab n of A manfi n of A intersection B.
+
+Ab wapas Miss ki class mein. Paintees hath, magar larkiyan sirf tees. Jawab ab aap ke paas hai: jo aath dono games khelti theen, unhon ne do do dafa hath uthaya. Koi jhoot nahin, sirf dohri ginti.
+
+Ye baat zindagi bhar yaad rakhein: jorne se pehle socho, kaun do dafa gina gaya.
+
+Khuda hafiz. Agli dafa ordered pairs, jahan do jama paanch aur paanch jama do barabar hain, magar bracket do comma paanch aur bracket paanch comma do alag hain.

@@ -1,0 +1,19 @@
+Hello Seemab. This is the audio note for Physics Unit 7, Part 7A. It takes about four minutes. You can listen with the notes in front of you, or just listen on its own.
+
+First, what density is. The book's definition is this: mass per unit volume of the substance is called its density. The formula is rho equals m over V, where rho is density, m is mass and V is volume. Its S I unit is kilogram per cubic metre. A smaller unit is gram per cubic centimetre, and for liquids we often use gram per millilitre. Remember also that density is a scalar quantity, so it has size but no direction.
+
+Here is a conversion you will need again and again. One gram per cubic centimetre equals one thousand kilogram per cubic metre. So to change gram per cubic centimetre into kilogram per cubic metre, multiply by one thousand. To go the other way, divide by one thousand.
+
+Second, how to find the density of a liquid. You need two things, a graduated measuring cylinder and a balance. There are five steps. One, place the empty measuring cylinder on the balance and find its mass. Two, pour the liquid into the cylinder and find the mass again. Three, subtract, and that difference is the mass of the liquid alone. Four, read the volume of the liquid from the marks on the cylinder. Five, divide the mass by the volume.
+
+Here is a worked example. The empty cylinder has a mass of one hundred and twenty grams. After pouring in the liquid, the total is one hundred and sixty grams. So the liquid's mass is forty grams. The volume is fifty millilitres. Density is forty divided by fifty, which is zero point eight gram per millilitre. And in kilogram per cubic metre, multiply by one thousand, which gives eight hundred.
+
+Third, solids with a regular shape. When the shape is regular you calculate the volume from its measurements. The volume of a cuboid is length times width times height. The volume of a cube is side length cubed. The volume of a sphere is four thirds pi r cubed, where r is the radius, not the diameter. Once you have the volume, density is again mass over volume.
+
+Now the single most common way marks are lost here: mixing units. If the mass is in kilograms, the volume must be in cubic metres, and the answer comes out in kilogram per cubic metre. If the mass is in grams, the volume must be in cubic centimetres, and the answer is in gram per cubic centimetre. Never divide kilograms by cubic centimetres. Convert first, then divide.
+
+Next, three mistakes printed in your own textbook. First, petrol. Table seven point one gives eight hundred kilogram per cubic metre, but the information box beside it works petrol out as nine hundred. In the exam, use the table value, eight hundred. Second, the book says osmium is harder than diamond. That is wrong. Osmium is the densest material, but diamond is the hardest. Dense and hard are two different properties. Third, in numerical question five, the iron cube, the book prints nine hundred and thirty five point nine cubic centimetres, which only works if you take iron as seven point eight. Table seven point one gives seven point nine, which leads to nine hundred and thirty six point seven. Either answer is acceptable.
+
+Finally, your three quiz questions. One. State the book's definition of density, write equation seven point one with its S I unit, and then write the volume formulas for a cuboid, a cube and a sphere. Two. An empty measuring cylinder has a mass of one hundred and twenty grams. When fifty millilitres of a liquid is poured in, the total mass becomes one hundred and sixty grams. Find the density of the liquid in gram per millilitre, then convert it into kilogram per cubic metre. Three. A small cube and a large cube are cut from the same block of iron. Why is the density of both cubes exactly the same, even though their masses and volumes are different?
+
+Remember, these same three questions will appear on your Physics paper. Good luck, and enjoy it.

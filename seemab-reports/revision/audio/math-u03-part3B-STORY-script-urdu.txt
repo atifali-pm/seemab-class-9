@@ -1,0 +1,41 @@
+السلام علیکم سیماب۔ آج ہم Unit 3 کے associative اور distributive laws سیکھیں گے۔ لیکن پہلے ایک سوال، جس کا جواب ابھی آپ کے پاس نہیں ہے۔
+
+سوچو امی نے گھر پر دعوت رکھی ہے۔ تین لسٹیں ہیں: خاندان والوں کی، محلے والوں کی، اور آپ کی school friends کی۔ امی کہتی ہیں، سب کو بلا لو۔ آپ نے پہلے خاندان اور محلے والی لسٹ ملا دی، پھر اس میں friends جوڑ دیں۔ آپ کی بہن نے الٹا کیا، پہلے محلے اور friends ملائے، پھر خاندان والی۔ دونوں کی final لسٹ بالکل ایک جیسی نکلی۔
+
+اگلے دن امی نے کہا، مجھے صرف وہ لوگ چاہئیں جو خاندان میں بھی ہیں اور ساتھ ہی محلے یا school والوں میں۔ اب آپ نے bracket کی جگہ تھوڑی سی بدلی، اور پورا جواب بدل گیا۔
+
+عجیب بات ہے نا۔ ایک دن bracket ہلانے سے کچھ نہیں ہوا، دوسرے دن سب بدل گیا۔ کیوں؟ تھوڑا صبر کریں، ہم اس دعوت پر واپس آئیں گے۔
+
+پہلے ایک آسان چیز۔ تین تھیلے چاول کے ہیں اور ایک بڑی دیگ۔ آپ پہلے دو تھیلے ملا کر دیگ میں پلٹ دیں، یا آخری دو پہلے ملا لیں۔ چاول اتنے کے اتنے۔
+
+بس یہی associative property ہے۔ جب تین sets پر ایک ہی operation ہو، bracket صرف یہ بتاتا ہے کہ پہلے کون سا جوڑا بنانا ہے۔ Intersection میں بھی وہی بات: دال تین چھاننیوں سے گزاریں، کسی بھی دو سے شروع کریں، بچیں گے وہی دانے جو تینوں سے نکلیں۔
+
+اب کتاب کے الفاظ، جو امتحان میں بالکل یہی لکھنے ہیں۔ Associative Property of Union. A union B، پورا bracket، union C، برابر A union، bracket میں B union C.
+
+Associative Property of Intersection. A intersection B، bracket، intersection C، برابر A intersection، bracket میں B intersection C.
+
+دیکھا، symbols وہی کہہ رہے ہیں جو چاول اور چھاننی نے دکھایا۔ اسی لیے ہم A union B union C بغیر bracket کے بھی لکھ دیتے ہیں۔
+
+اب وہ law جو کام کی شکل بدل دیتی ہے۔ دس مہمان ہیں، ہر ایک کو ایک سموسہ اور ایک گلاب جامن دینا ہے۔ یا دس پلیٹوں پر ایک ایک رکھ دیں، یا پہلے دس سموسے گن لیں اور الگ سے دس جامن۔ کھانا اتنا ہی، مگر کام کی ترتیب بدلی۔ Numbers میں اسی کو a into bracket b plus c، برابر ab plus ac لکھتے ہیں۔
+
+Sets میں بھی یہی ہوتا ہے۔ باہر والا set bracket کے دونوں members پر بانٹ دیا جاتا ہے۔ Distributive Property of Union over Intersection. A union، bracket میں B intersection C، برابر، bracket A union B، intersection، bracket A union C.
+
+Distributive Property of Intersection over Union. A intersection، bracket میں B union C، برابر، bracket A intersection B، union، bracket A intersection C.
+
+بانٹنے کے بعد باہر والا operation اندر چلا جاتا ہے اور اندر والا باہر۔ یوں سمجھیں: خاندان والے اور، bracket، محلے یا friends۔ یہ وہی لوگ ہیں جو bracket خاندان اور محلے، یا bracket خاندان اور friends میں آتے ہیں۔ Proof کی چوتھی لائن یہی چال ہے۔
+
+اب وہ سوال جو اکثر نمبر کھاتا ہے۔ کتاب پہلے ثابت کرتی ہے کہ LHS، RHS کا subset ہے، پھر الگ سے کہ RHS، LHS کا subset ہے۔ صرف پہلا حصہ کیوں کافی نہیں؟
+
+اپنا school bag سوچو اور اپنی بہن کا bag۔ آپ دکھا دیتی ہیں کہ آپ کے bag کی ہر چیز اس کے bag میں بھی ہے۔ کیا دونوں bag ایک جیسے ہیں؟ بالکل نہیں، اس کے bag میں تین کتابیں اور بھی ہو سکتی ہیں۔ یقین تبھی آئے گا جب دوسری طرف سے بھی دکھائیں۔ دو sets برابر تبھی ہوتے ہیں جب ہر ایک دوسرے کا subset ہو۔ صرف step a آدھا نمبر ہے۔
+
+اب دو جگہ کتاب نے خود غلطی چھاپی ہے۔ پہلی۔ Example 10 میں set C کی شرط وہی چھپی ہے جو B کی ہے، تین سے سات تک۔ لیکن اس کا Venn diagram بتاتا ہے کہ C چھ سے نو تک ہے۔ نقشے کو سچ مانو۔
+
+دوسری۔ Associative union کے proof میں دوسرے step سے ایک bracket چھوٹ گیا۔ صحیح لکھائی ہے A union، کھلا bracket، B union C، بند bracket، subset of، bracket A union B، union C.
+
+اب واپس امی کی دعوت پر۔ جواب اب آپ کے پاس ہے۔ پہلے دن دونوں کام union تھے، ایک ہی operation، اس لیے bracket ہلانے سے کچھ نہیں ہوا۔ دوسرے دن ایک طرف اور تھا، دوسری طرف یا، دو الگ operations، اور وہاں bracket ہی سب طے کر رہا تھا۔
+
+یہ بات زندگی بھر یاد رکھیں۔ ایک جیسا operation ہو تو bracket آزاد، الگ operations ہوں تو bracket ہی سب کچھ۔
+
+اب امتحان والا کام۔ Proof میں Let x belongs to LHS والی chain لکھیں، اس کے آگے step a، پھر Similarly والی line اور step b، اور آخر میں From a and b کے ساتھ برابری کا نشان۔ Law کا پورا نام بھی لکھیں۔ اور سب سے عام غلطی: bracket A union B، intersection C، اس کے برابر نہیں جو A union، bracket B intersection C ہے۔
+
+خدا حافظ۔ اگلی دفعہ آپ کی اپنی class کا survey، جہاں تیس لڑکیوں کی class میں پینتیس ہاتھ کھڑے ہو جاتے ہیں اور کسی نے جھوٹ بھی نہیں بولا۔

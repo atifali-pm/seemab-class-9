@@ -1,0 +1,19 @@
+Assalam o alaikum Seemab. Ye Physics Unit 7, Part 7A ka audio note hai. Teen minute ka hai. Aap notes saath rakhein to aur behtar, lekin sirf sunn kar bhi kaam ho jayega.
+
+Pehli baat: density kya hai. Kitab ki definition yaad rakhein: Mass per unit volume of the substance is called its density. Formula hai rho equals m upon V. Rho matlab density, m matlab mass, aur V matlab volume. Is ka S I unit hai kilogram per cubic metre. Chhota unit hai gram per cubic centimetre, aur liquids ke liye aksar gram per millilitre likhte hain.
+
+Ek trick jo har baar kaam aati hai: ek gram per cubic centimetre barabar hai ek hazaar kilogram per cubic metre. Yani gram per cubic centimetre ko kilogram per cubic metre banana ho to ek hazaar se multiply kar dein. Aur agar ulta karna ho, to ek hazaar se divide.
+
+Ab doosri baat: liquid ki density kaise nikalte hain. Aap ko do cheezein chahiyen, ek graduated measuring cylinder aur ek balance. Paanch steps hain. Pehla, khaali cylinder ko balance par rakh kar us ka mass naapein. Doosra, us mein liquid daalein aur dobara mass naapein. Teesra, dono ka farq nikalein, yehi liquid ka mass hai. Chautha, cylinder par nishan se liquid ka volume parh lein. Aur paanchwan, mass ko volume se divide kar dein.
+
+Ek misaal. Khaali cylinder ka mass ek sau bees gram. Liquid daalne ke baad total ek sau saath gram. To liquid ka mass hua chalees gram. Volume tha pachaas millilitre. Density hui chalees taqseem pachaas, yani zero point aath gram per millilitre. Aur agar kilogram per cubic metre mein chahiye, to ek hazaar se multiply karein, aath sau kilogram per cubic metre.
+
+Teesri baat: regular shape wale solids. Jab shakal seedhi ho to volume formula se nikalta hai. Cuboid ka volume hai length into width into height. Cube ka volume hai side length ka cube, yani side ko teen baar multiply karein. Aur sphere ka volume hai chaar bata teen pi r cube, jahan r radius hai, diameter nahin.
+
+Ek bohat zaroori baat jo har paper mein marks bachati hai: units pehle milayein. Agar mass kilogram mein hai to volume cubic metre mein honi chahiye, aur jawab aayega kilogram per cubic metre. Agar mass gram mein hai to volume cubic centimetre mein, aur jawab gram per cubic centimetre. Kilogram ko cubic centimetre se kabhi divide na karein.
+
+Ab teen baatein jo aap ki kitab mein ghalat chhapi hain. Pehli, petrol ki density. Table sat point ek mein aath sau kilogram per cubic metre likha hai, magar saath wale box mein nau sau bana hua hai. Imtihan mein Table wala aath sau likhein. Doosri, kitab kehti hai osmium diamond se sakht hai. Ye ghalat hai. Osmium sab se zyada dense hai, magar sab se sakht diamond hota hai. Dense aur hard do alag cheezein hain. Teesri, exercise ke sawal paanch mein iron cube ka jawab kitab mein nau sau paintees point nau cubic centimetre hai, jo tab aata hai jab iron ki density saat point aath lein. Table se saat point nau lein to nau sau chhattees point saat aata hai. Dono jawab theek hain.
+
+Aur aakhir mein aap ke quiz ke teen sawal. Pehla: density ki definition, Equation seven point one, us ka S I unit, aur cuboid, cube aur sphere ke volume formulay likhein. Doosra: ek khaali cylinder ka mass ek sau bees gram hai, pachaas millilitre liquid daalne par kul mass ek sau saath gram ho jata hai, liquid ki density nikalein. Teesra: ek chhota cube aur ek bara cube ek hi iron ke tukray se kaatay gaye hain, dono ki density barabar kyun hai.
+
+Yaad rahe, yehi teen sawal aap ke Physics paper mein bhi aayenge. Shukriya, aur maze se parhein.

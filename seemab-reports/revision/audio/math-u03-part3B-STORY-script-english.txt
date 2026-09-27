@@ -1,0 +1,41 @@
+Hello Seemab. Today we learn the associative and distributive laws from Unit 3. But first, a question you cannot answer yet.
+
+Imagine your mother is hosting a dinner at home. There are three lists: the family, the neighbours, and your school friends. She says, invite everyone. You joined the family and the neighbours lists first, then added the friends to that. Your sister did it the other way round, neighbours and friends first, then the family. Both final lists came out exactly the same.
+
+The next day your mother says, I only want the people who are in the family, and who are also either neighbours or school friends. This time you shifted the bracket very slightly, and the whole answer changed.
+
+Strange, isn't it. One day moving the bracket did nothing at all, the next day it changed everything. Why? Hold that thought. We will come back to this dinner.
+
+First, something easy. Three bags of rice and one large pot. You can mix the first two bags and tip them into the pot, or mix the last two first. The rice is the same either way.
+
+That is all the associative property is. When three sets have the same operation between them, the bracket only says which pair you make first. The same is true for intersection: pass lentils through three sieves, start with any two you like, and the grains left are the ones that got through all three.
+
+Now the book's own words, which is exactly what you write in the exam. Associative Property of Union. A union B, whole bracket, union C, equals A union, bracket, B union C.
+
+Associative Property of Intersection. A intersection B, bracket, intersection C, equals A intersection, bracket, B intersection C.
+
+See? The symbols are saying what the rice and the sieves already showed you. That is why we are allowed to write A union B union C with no brackets at all.
+
+Now the law that changes the shape of the work. Ten guests, and each one gets a samosa and a gulab jaman. You can put one of each onto ten plates, or you can count out ten samosas first and then ten gulab jamans separately. The same food, a different order of work. With numbers we write this as a into bracket b plus c, equals ab plus ac.
+
+Sets behave the same way. The set outside the bracket is shared out to both members inside it. Distributive Property of Union over Intersection. A union, bracket, B intersection C, equals, bracket A union B, intersection, bracket A union C.
+
+Distributive Property of Intersection over Union. A intersection, bracket, B union C, equals, bracket A intersection B, union, bracket A intersection C.
+
+After sharing out, the outer operation moves inside and the inner one moves outside. Think of it in words: family, and, bracket, neighbours or friends. Those are the same people who are in bracket family and neighbours, or bracket family and friends. That is the trick sitting in the fourth line of the proof.
+
+Now the question that costs marks. The book first proves that the LHS is a subset of the RHS, then separately that the RHS is a subset of the LHS. Why is the first half not enough on its own?
+
+Think of your school bag and your sister's. You show that everything in your bag is also in her bag. Does that make the two bags the same? Not at all. Hers could hold three more books. You are only certain when you show it from the other side as well. Two sets are equal only when each one is a subset of the other. Step (a) on its own is half a mark.
+
+Now two places where the book itself is wrong. First, in Example 10 the condition printed for set C is the same one printed for B, three to seven. But its own Venn diagram shows C running from six to nine. Trust the diagram.
+
+Second, in the proof of associative union a bracket has been dropped from the second step. The correct line is A union, open bracket, B union C, close bracket, subset of, bracket A union B, union C.
+
+Now back to your mother's dinner. You can answer it yourself now. On the first day both jobs were union, one single operation, so moving the bracket changed nothing. On the second day one side was and, the other side was or, two different operations, and there the bracket decided everything.
+
+Remember this for the rest of your life. Same operation, and the bracket is free. Different operations, and the bracket is everything.
+
+Now the exam technique. In the proof, write the Let x belongs to LHS chain, then step (a), then the Similarly line and step (b), and at the end From (a) and (b) with the equals sign. Write the full name of the law as well. And the most common mistake of all: bracket A union B, intersection C, is not the same thing as A union, bracket B intersection C.
+
+Goodbye for now. Next time, a survey in your own class, where thirty girls somehow produce thirty five hands, and nobody told a lie.

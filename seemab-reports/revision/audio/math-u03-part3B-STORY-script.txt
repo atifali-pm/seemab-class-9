@@ -1,0 +1,41 @@
+Assalam o alaikum Seemab. Aaj hum Unit 3 ke associative aur distributive laws seekhenge. Lekin pehle ek sawal jis ka jawab abhi aap ke paas nahin hai.
+
+Socho Ammi ne ghar par dawat rakhi hai. Teen listein hain: khandaan walon ki, mohalle walon ki, aur aap ki school friends ki. Ammi kehti hain, sab ko bula lo. Aap ne pehle khandaan aur mohalle wali list mila di, phir us mein friends jor deen. Aap ki behen ne ulta kiya, pehle mohalle aur friends milaye phir khandaan wali. Dono ki final list bilkul ek jaisi nikli.
+
+Agle din Ammi ne kaha, mujhe sirf woh log chahiye jo khandaan mein bhi hain aur saath hi mohalle ya school walon mein. Ab aap ne bracket ki jagah thori si badli, aur poora jawab badal gaya.
+
+Ajeeb baat hai na. Ek din bracket hilane se kuch nahin hua, doosre din sab badal gaya. Kyun? Thora sabr karein, hum is dawat par wapas aayenge.
+
+Pehle ek asaan cheez. Teen thailay chawal ke hain aur ek bari deg. Aap pehle do thailay mila kar deg mein palat dein, ya aakhri do pehle mila lein. Chawal utne ke utne.
+
+Bas yehi associative property hai. Jab teen sets par ek hi operation ho, bracket sirf ye batata hai ke pehle kaun sa joora banana hai. Intersection mein bhi wohi baat: daal teen chhaanniyon se guzaarein, kisi bhi do se shuru karein, bachenge wohi daanay jo teeno se niklein.
+
+Ab kitab ke alfaaz, jo imtihan mein bilkul yehi likhne hain. Associative Property of Union. A union B, poora bracket, union C, barabar A union, bracket mein B union C.
+
+Associative Property of Intersection. A intersection B, bracket, intersection C, barabar A intersection, bracket mein B intersection C.
+
+Dekha, symbol wohi keh rahe hain jo chawal aur chhaanni ne dikhaya. Isi liye hum A union B union C bina bracket ke bhi likh dete hain.
+
+Ab woh law jo kaam ki shakal badal deti hai. Das mehmaan hain, har ek ko ek samosa aur ek gulab jaman dena hai. Ya das plateon par ek ek rakh dein, ya pehle das samose gin lein aur alag se das jaman. Khana utna hi banta hai, magar kaam ki tarteeb badli. Numbers mein isi ko a into bracket b plus c, barabar ab plus ac likhte hain.
+
+Sets mein bhi yehi hota hai. Bahar wala set bracket ke dono members par baant diya jata hai. Distributive Property of Union over Intersection. A union, bracket mein B intersection C, barabar, bracket A union B, intersection, bracket A union C.
+
+Distributive Property of Intersection over Union. A intersection, bracket mein B union C, barabar, bracket A intersection B, union, bracket A intersection C.
+
+Baantne ke baad bahar wala operation andar chala jata hai aur andar wala bahar. Urdu mein yun samjhein: khandaan wale aur, bracket, mohalle ya friends. Ye wohi log hain jo bracket khandaan aur mohalle, ya bracket khandaan aur friends mein aate hain. Proof ki chauthi line yehi chaal hai.
+
+Ab woh sawal jo aksar number khata hai. Kitab pehle sabit karti hai ke LHS, RHS ka subset hai, phir alag se ke RHS, LHS ka subset hai. Sirf pehla hissa kyun kaafi nahin?
+
+Apna school bag socho aur apni behen ka bag. Aap dikha deti hain ke aap ke bag ki har cheez us ke bag mein bhi hai. Kya dono bag ek jaise hain? Bilkul nahin, us ke bag mein teen kitaabein aur bhi ho sakti hain. Yaqeen tabhi jab doosri taraf se bhi dikhayein. Do sets barabar tabhi hote hain jab har ek doosre ka subset ho. Sirf step a likhna aadha number hai.
+
+Ab do jagah kitab ne khud ghalti chhaapi hai. Pehli. Example 10 mein set C ki shart wohi chhapi hai jo B ki hai, teen se saat tak. Lekin us ka Venn diagram batata hai ke C chhe se nau tak hai. Naqshe ko sach maano.
+
+Doosri. Associative union ke proof mein doosre step se ek bracket chhoot gaya. Sahi likhai hai A union, khula bracket, B union C, band bracket, subset of, bracket A union B, union C.
+
+Ab wapas Ammi ki dawat par. Jawab ab aap ke paas hai. Pehle din dono kaam union thay, ek hi operation, is liye bracket hilane se kuch nahin hua. Doosre din ek taraf aur tha, doosri taraf ya, do alag operations, aur wahan bracket hi sab tay kar raha tha.
+
+Ye baat zindagi bhar yaad rakhein. Ek jaisa operation ho to bracket azad, alag operations hon to bracket hi sab kuch.
+
+Ab imtihan wala kaam. Proof mein Let x belongs to LHS wali chain likhein, uske aage step a, phir Similarly wali line aur step b, aur aakhir mein From a and b ke saath barabari ka nishan. Law ka poora naam bhi likhein. Aur sab se aam ghalti: bracket A union B, intersection C, us ke barabar nahin jo A union, bracket B intersection C hai.
+
+Khuda hafiz. Agli dafa aap ki apni class ka survey, jahan tees larkiyon ki class mein paintees hath khare ho jate hain aur kisi ne jhoot bhi nahin bola.

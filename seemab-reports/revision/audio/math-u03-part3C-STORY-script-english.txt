@@ -1,0 +1,49 @@
+Hello Seemab. Today's lesson carries more marks in the paper than any other: Venn diagram word problems, and the counting formulas. But first, a question.
+
+Imagine your teacher comes into the class. There are thirty girls in all. She says, hands up everyone who plays cricket. Twenty hands go up. Then hockey: fifteen hands.
+
+She writes on the board: twenty plus fifteen equals thirty five.
+
+Now wait a moment. There are only thirty girls in that class. So where did thirty five come from? Nobody told a lie, every single hand was honest. Hold that thought, we will come back to this class.
+
+Think of Ayesha, who plays cricket and hockey both. She put her hand up for the cricket question, and she put it up again for hockey. One girl, two hands.
+
+And Ayesha is not the only one. Suppose eight girls play both games. Each of them raised her hand twice. So inside that thirty five, eight girls have each been counted one time too many.
+
+So what is the real count? Take eight away from thirty five. Twenty seven. In a class of thirty, twenty seven girls play some game, and three play none at all. Notice that you did not need to remember a formula to get there.
+
+Now the book's words. For overlapping sets A and B: n of A union B, equals, n of A, plus n of B, minus n of A intersection B.
+
+Here n of A means how many elements are in set A. And you subtract for exactly the reason you just saw for yourself: the people who are in both sets got counted twice, once inside n of A and once inside n of B.
+
+The same thing happens at home all the time. Think of the food at a wedding. Going by the pots, ninety people took biryani and fifty took qorma, so a hundred and forty guests. But there were only a hundred chairs in the hall. Why? Because forty people had put both of them on their plate.
+
+Now three sets. Add football in as well. First add up all three counts. A girl who plays two games has been counted twice, so subtract the three pairs.
+
+But now a new problem appears. The girl who plays all three games was counted three times at the start. Then you removed her from all three pairs as well, which subtracted her three times. She has now dropped to zero, vanished completely, even though she is the one playing all three. So right at the end she has to be added back once.
+
+That is all the book's formula is saying. n of A union B union C, equals, n of A plus n of B plus n of C, minus n of A intersection B, minus n of B intersection C, minus n of A intersection C, plus n of A intersection B intersection C.
+
+Remember the order of the signs: plus plus plus, minus minus minus, plus.
+
+Now something very important. In Example 12 the arithmetic printed in your own book is wrong, and a student who trusts it will lose marks.
+
+Example 12 shows a survey diagram: cricket, hockey and football. The diagram has seven regions. Thirty four play only cricket, two play both cricket and hockey, three play both cricket and football, five play all three games, six play both hockey and football, twenty six play only hockey, twenty play only football, and twelve are outside the rectangle.
+
+For either of the three games, the book adds only thirty four, five, six, twenty six and twenty, and writes the answer as ninety one. Then it gives the total surveyed as a hundred and three.
+
+Both of those are wrong. The book forgot two regions: the two who play both cricket and hockey, and the three who play both cricket and football. They are playing as well. Either of the three games means anyone who plays at least one of them, so no region of the diagram can be left out.
+
+Here is the correct answer. Add all seven regions: thirty four plus two plus three plus five plus six plus twenty six plus twenty, equals ninety six. That is n of C union H union F. And the total surveyed is ninety six plus twelve, which equals a hundred and eight.
+
+So ninety one is wrong and ninety six is right. A hundred and three is wrong and a hundred and eight is right. Write the correct one in your exam. Why did the slip happen? In the printed diagram that three sits slightly outside the cricket and football lens, so it was overlooked.
+
+One more thing. In Example 13 the book writes, total number of students that like both subjects is n of E union M, equals sixty five. Those words are wrong. Sixty five are the ones who like either subject. Both is only nine.
+
+Now two minutes of exam technique. When a word problem comes, draw the diagram first, never go straight to the formula. Always fill the diagram from the inside out: the middle region first, then the pairs, then the singles, and the outside number last. And the words themselves tell you which formula you need. Both, or and, means intersection. Either, or, at least one, means union. Neither means n of U minus n of A union B. Only A means n of A minus n of A intersection B.
+
+Now back to your teacher's class. Thirty five hands, and only thirty girls in the room. You can answer it yourself now. The eight girls who play both games each put a hand up twice. No lies anywhere, just double counting.
+
+Remember this for the rest of your life: before you add, ask who has been counted twice.
+
+Goodbye for now. Next time, ordered pairs, where two plus five and five plus two are equal, but bracket two comma five and bracket five comma two are completely different things.

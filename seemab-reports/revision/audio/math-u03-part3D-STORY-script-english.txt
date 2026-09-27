@@ -1,0 +1,53 @@
+Hello Seemab. Last time I promised we would begin with ordered pairs, so here is the question first.
+
+Two plus five equals seven. And five plus two also equals seven. Exactly the same. So far so good.
+
+But if I write bracket two comma five, and then bracket five comma two, those two are completely different things. Completely different.
+
+Strange, isn't it. The same two numbers, equal in one place and not equal in the other. Why? Hold that thought, we will come back to it.
+
+First, something easy. Imagine somebody is giving you their home address: street number two, house number five. Now turn it around: street number five, house number two. Is that the same house? Not at all. It could be in another neighbourhood entirely. The same two numbers, but the moment the order changed, the place changed.
+
+That is all an ordered pair is. Here is the book's definition: pairs of two numbers in which order of numbers is not invertible, is called an ordered pair. The numbers are written inside small brackets and separated by a comma. The first number is called the first element and the second is called the second element.
+
+The book gives the geometry example itself: bracket two comma five and bracket five comma two represent two different points. So the two are not equal.
+
+Now the rule for equality. Two ordered pairs, bracket a comma b and bracket c comma d, are equal only when a equals c and b equals d. First matches first, second matches second. And this is the rule that earns marks in the exam, because it turns one line into two separate equations.
+
+Look at Example fifteen in the book. Bracket x minus three y comma five x plus one equals bracket four comma six. Apply the rule: x minus three y equals four, that is the first equation. And five x plus one equals six, that is the second. From the second, five x equals five, so x equals one. Now put x equals one into the first: one minus three y equals four, so minus three y equals three, and y equals minus one. Two unknowns need two equations. That is the whole trick.
+
+Next, the Cartesian product. The name sounds difficult but the work is very easy.
+
+Think of a canteen menu. Three kinds of sandwich and two kinds of drink. Every sandwich can go with every drink. So how many different deals are there? Three times two, which is six. That is exactly what a Cartesian product is: every element of one set paired with every element of the other.
+
+In the book's words: A cross B is the set of ordered pairs x comma y where x belongs to A and y belongs to B.
+
+Now fix three formulas in your mind. First, n of A cross B equals n of A times n of B. So to count the pairs you just multiply; you do not have to write them all out. Second, if either set is empty then A cross B is empty too. Third, the number of subsets of A cross B is two to the power n of A cross B.
+
+Notice one thing. If A is zero, one, two and B is three, four, then A cross B has six pairs and B cross A also has six. The counts match. But the two sets are not the same, because every pair is written the other way round. That is the street and house number again.
+
+Now relations. The Cartesian product makes every possible pair. A relation picks out only the pairs that satisfy some condition.
+
+Think of it this way. A cross B is the full class list. R is the shorter list headed, only the girls who play cricket. The short list can only ever come out of the long one. That is why the book says a binary relation R in the set A cross B is a subset of the Cartesian product A cross B.
+
+And the formula for counting relations is two to the power n of A cross B. The reason is simple: for each pair there are only two possibilities, either it is in R or it is not.
+
+Look at Example nineteen. A is one, two, three and B is zero, one, three, and the condition is that a is greater than b. First write out the whole of A cross B, which is nine pairs. Then keep only the ones where the first number is bigger than the second. The answer is bracket one comma zero, bracket two comma zero, bracket two comma one, bracket three comma zero, and bracket three comma one. The method is always the same: all the pairs first, then the sieve of the condition.
+
+Now domain and range, which are easy. The domain is the set of all the first elements. The range is the set of all the second elements.
+
+Here is how to remember it. Treat the ordered pair as input and output. What goes in is the domain, what comes out is the range.
+
+And finally the inverse relation, which is easier still: write every pair backwards. R inverse is the set of bracket b comma a. That is all it is.
+
+Two results follow, and the exam asks for them often: the domain of R inverse equals the range of R, and the range of R inverse equals the domain of R. It makes sense: once every pair is reversed, what used to come out is now going in.
+
+One warning. Only take the inverse when the question actually says R inverse or uses the word inverse. The book's own key fact is that the ordered pair a comma b cannot be written as b comma a. Never flip a pair on your own.
+
+Now back to the opening question. You can answer it yourself. Two plus five and five plus two are equal because in addition the order does not matter. But bracket two comma five and bracket five comma two are not additions at all, they are describing a position: one is street two house five, the other is street five house two.
+
+Remember this for life: wherever the order matters, that is where the bracket and the comma appear.
+
+Now two minutes of exam technique. In an equality question, write the rule first, then the two equations, then the solution. If you only have to count pairs, write the formula rather than wasting time listing them. And when you have to find a relation with a condition, write the full Cartesian product first and then apply the condition, otherwise a pair always gets left out.
+
+Goodbye, Seemab. And with this, Unit three is complete.
