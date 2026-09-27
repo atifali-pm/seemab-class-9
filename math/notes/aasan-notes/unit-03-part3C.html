@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Maths Unit 3 Part 3C Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 5mm 5mm 5mm 5mm; }
+  :root {
+    --ink:#1f2430; --muted:#5b6475;
+    --blue:#1d5fa8; --blue-bg:#e8f1fc;
+    --green:#1e7a4a; --green-bg:#e7f6ee;
+    --yellow:#8a6200; --yellow-bg:#fff6d8;
+    --purple:#6a3fa0; --purple-bg:#f2ecfb;
+    --red:#a8202a; --red-bg:#fdecec;
+    --line:#d7dce5;
+  }
+  * { box-sizing:border-box; }
+  body { font-family:"Noto Sans","DejaVu Sans",sans-serif; color:var(--ink); font-size:8.55pt; line-height:1.235; margin:0; }
+  .emoji { font-family:"Noto Color Emoji"; font-style:normal; }
+  h1 { font-size:13.2pt; color:var(--blue); margin:0 0 0.6mm; line-height:1.12; }
+  .sub { color:var(--muted); font-size:8.3pt; margin-bottom:1.6mm; }
+  h2 { font-size:9.7pt; color:#fff; background:var(--blue); padding:0.8mm 2.2mm; border-radius:1.7mm; margin:1.5mm 0 0.9mm; page-break-after:avoid; }
+  h2 .pg { font-size:8.2pt; font-weight:normal; opacity:.9; }
+  p { margin:0.6mm 0; }
+  ul { margin:0.6mm 0 0.8mm; padding-left:4.6mm; }
+  li { margin:0.3mm 0; }
+  b.m { font-family:"DejaVu Serif",serif; font-weight:bold; }
+  .box { border-radius:1.6mm; padding:1mm 2mm; margin:0.8mm 0; page-break-inside:avoid; }
+  .box .t { font-weight:bold; font-size:8.6pt; display:block; margin-bottom:0.4mm; }
+  .def { background:var(--blue-bg); border-left:3px solid var(--blue); }
+  .def .t { color:var(--blue); }
+  .eg { background:var(--green-bg); border-left:3px solid var(--green); }
+  .eg .t { color:var(--green); }
+  .trick { background:var(--yellow-bg); border-left:3px solid #e0a800; }
+  .trick .t { color:var(--yellow); }
+  .mcq { background:var(--purple-bg); border-left:3px solid var(--purple); }
+  .mcq .t { color:var(--purple); }
+  .warn { background:var(--red-bg); border-left:3px solid var(--red); }
+  .warn .t { color:var(--red); }
+  table.t1 { border-collapse:collapse; width:100%; table-layout:fixed; font-size:8.4pt; margin:0.8mm 0; }
+  table.t1 tr { page-break-inside:avoid; }
+  table.t1 th { background:var(--blue); color:#fff; padding:0.7mm 1.3mm; text-align:left; font-size:8.5pt; font-weight:bold; }
+  table.t1 td { border:1px solid var(--line); padding:0.7mm 1.3mm; vertical-align:top; }
+  table.t1 tr:nth-child(even) td { background:#f6f8fb; }
+  .fml { font-family:"DejaVu Serif",serif; }
+  .ans { color:var(--green); font-weight:bold; }
+  .small { font-size:8.1pt; color:var(--muted); }
+  .ne { font-family:"DejaVu Sans","Liberation Sans",sans-serif; }
+  .flex { display:flex; gap:2.4mm; align-items:flex-start; }
+  ol.q { margin:0.6mm 0 0; padding-left:4.8mm; font-size:8.5pt; }
+  ol.q li { margin:0.9mm 0; }
+  svg { display:block; }
+  del { color:#a8202a; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">🎯</span> Maths Unit 3, Part 3C: Venn word problems and counting formulas</h1>
+<div class="sub">Aasan Notes for Seemab &middot; kitab ke page 57 se 59 tak &middot; practice: Exercise 3.2</div>
+
+<h2><span class="emoji">🗺️</span> 1. Application of Venn diagrams <span class="pg">(p57, p58)</span></h2>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ka jumla</span>
+<q>Venn diagram is a practical mathematical tool for solving real world problems of set theory.</q></div>
+<p>Lafzon wala sawal aaye to seedha formula mat lagao, pehle <b>naqsha</b> banao. Aur naqsha hamesha <b>andar se bahar</b> ki taraf bharo: sab se pehle beech wala hissa (jo teeno mein aata hai), phir do-do ke hisse, phir akele wale, aur aakhir mein rectangle ke bahar ka number. Jo log do cheezon mein aate hain woh donon circles mein gine ja chuke hote hain, is liye seedha jorne se jawab hamesha zyada aata hai.</p>
+
+<div class="flex">
+<div style="flex:1">
+<div class="box eg" style="margin-top:0"><span class="t"><span class="emoji">✏️</span> Example 11 (p57), subset wala case</span>
+<q>Among the ten teachers of a secondary school, five teach Mathematics and three teach Biology. However, all these teachers also teach English. Show the data by Venn diagram. Also find how many teachers teach only English.</q><br>
+<b>Solution.</b> E = set of English Teachers, M = set of Mathematics Teachers, B = set of Biology Teachers. <i>Both M and B are the subsets of E</i>, so dono chhote ovals bare oval E ke <b>andar</b> banenge.<br>
+Only English = 10 &minus; 5 &minus; 3 = <b class="ans">2 teachers</b>.</div>
+</div>
+<div style="flex:0 0 36mm">
+<svg width="36mm" viewBox="0 0 250 115" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans" font-size="14">
+<rect x="3" y="3" width="244" height="109" fill="none" stroke="#1f2430" stroke-width="2"/>
+<text x="10" y="20" font-size="12" fill="#5b6475">U</text>
+<ellipse cx="127" cy="60" rx="106" ry="42" fill="#1d5fa8" fill-opacity="0.10" stroke="#1d5fa8" stroke-width="2"/>
+<ellipse cx="84" cy="54" rx="40" ry="26" fill="#1e7a4a" fill-opacity="0.14" stroke="#1e7a4a" stroke-width="2"/>
+<ellipse cx="180" cy="54" rx="34" ry="24" fill="#6a3fa0" fill-opacity="0.14" stroke="#6a3fa0" stroke-width="2"/>
+<text x="216" y="66" fill="#1d5fa8" font-weight="bold">E</text>
+<text x="92" y="50" fill="#1e7a4a" font-weight="bold">M</text>
+<text x="186" y="50" fill="#6a3fa0" font-weight="bold">B</text>
+<text x="66" y="60">5</text>
+<text x="166" y="60">3</text>
+<text x="122" y="94">2</text>
+</svg>
+</div>
+</div>
+
+<div class="flex">
+<div style="flex:1">
+<div class="box eg" style="margin-top:0"><span class="t"><span class="emoji">✏️</span> Example 12 (p57, p58), teen overlapping sets padhna</span>
+<q>In a survey, people were asked whether they like cricket, hockey or football.</q> Naqshe se jawab nikalne hain. C = cricket, H = hockey, F = football.</div>
+<table class="t1" style="margin-top:0.8mm">
+<colgroup><col style="width:44%"><col style="width:30%"><col style="width:26%"></colgroup>
+<thead><tr><th>Number of people who play</th><th>From the figure</th><th>Notation</th></tr></thead>
+<tbody>
+<tr><td>(i) only cricket</td><td class="ans">34</td><td>n(C &minus; C&cap;H&cap;F)</td></tr>
+<tr><td>(ii) hockey and football</td><td class="ans">6 + 5 = 11</td><td>n(H &cap; F)</td></tr>
+<tr><td>(iii) all three games</td><td class="ans">5</td><td>n(C &cap; H &cap; F)</td></tr>
+<tr><td>(iv) either of the three games</td><td class="ans">34+5+6+26+20 = 91</td><td>n(C &cup; H &cup; F)</td></tr>
+<tr><td>(v) neither of the three games</td><td class="ans">12</td><td>n(U &minus; C&cup;H&cup;F)</td></tr>
+<tr><td>Total number of people surveyed</td><td class="ans">34+5+6+26+20+12 = 103</td><td>n(U)</td></tr>
+</tbody></table>
+</div>
+<div style="flex:0 0 38mm">
+<svg width="38mm" viewBox="0 0 250 172" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans" font-size="14">
+<rect x="3" y="3" width="244" height="166" fill="none" stroke="#1f2430" stroke-width="2"/>
+<text x="10" y="20" font-size="12" fill="#5b6475">U</text>
+<circle cx="86" cy="68" r="46" fill="#1d5fa8" fill-opacity="0.12" stroke="#1d5fa8" stroke-width="2"/>
+<circle cx="150" cy="68" r="46" fill="#1e7a4a" fill-opacity="0.12" stroke="#1e7a4a" stroke-width="2"/>
+<circle cx="118" cy="110" r="46" fill="#6a3fa0" fill-opacity="0.12" stroke="#6a3fa0" stroke-width="2"/>
+<text x="60" y="44" fill="#1d5fa8" font-weight="bold">C</text>
+<text x="166" y="44" fill="#1e7a4a" font-weight="bold">H</text>
+<text x="96" y="134" fill="#6a3fa0" font-weight="bold">F</text>
+<text x="50" y="70">34</text>
+<text x="114" y="48">2</text>
+<text x="84" y="106">3</text>
+<text x="113" y="86">5</text>
+<text x="147" y="108">6</text>
+<text x="180" y="70">26</text>
+<text x="112" y="150">20</text>
+<text x="216" y="152" font-size="12">12</text>
+</svg>
+</div>
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki ghalti Example 12 mein, exam mein yeh galti mat karna</span>
+Kitab (iv) mein sirf <b>34 + 5 + 6 + 26 + 20 = 91</b> jorti hai aur <b>2</b> (cricket aur hockey wale) aur <b>3</b> (cricket aur football wale) ko bhool jati hai. <b>Saray saat hisse joro</b> to n(C &cup; H &cup; F) = 34+2+3+5+6+26+20 = <b>96</b>, aur n(U) = 96 + 12 = <b>108</b>. Naqshe mein bhi <b>3</b> C aur F ke jore wale hisse se thora bahar chhap gaya hai; uski asal jagah wohi lens hai. Doosri baat: <q>only cricket</q> ka sahi notation <b>n(C) &minus; n(C&cap;H) &minus; n(C&cap;F) + n(C&cap;H&cap;F)</b> hai, kitab wala n(C &minus; C&cap;H&cap;F) nahin.</div>
+
+<h2><span class="emoji">🧮</span> 2. Application of set theory: counting formulas <span class="pg">(p58)</span></h2>
+<p>Ab naqsha banaye baghair ginti. <b>n(A)</b> ka matlab hai set A ke elements ki tadaad. Union ke formula mein ghatana isi liye parta hai ke jo dono sets mein hain woh <b>do dafa</b> gin liye gaye, ek dafa n(A) mein aur ek dafa n(B) mein.</p>
+<table class="t1">
+<colgroup><col style="width:29%"><col style="width:71%"></colgroup>
+<thead><tr><th>Case</th><th>Formulae (kitab p58)</th></tr></thead>
+<tbody>
+<tr><td>(i) For any two overlapping sets A and B</td><td class="fml">n(A &cup; B) = n(A) + n(B) &minus; n(A &cap; B)<br>n(A &minus; B) = n(A &cup; B) &minus; n(B)<br>n(A &minus; B) = n(A) &minus; n(A &cap; B)<br>n(A &cup; B) = n(A &minus; B) + n(A &cap; B) + n(B &minus; A)</td></tr>
+<tr><td>(ii) For any two sets A and B that are disjoint</td><td class="fml">n(A &cup; B) = n(A) + n(B)<br>n(A &minus; B) = n(A)</td></tr>
+<tr><td>(iii) For any three sets A, B and C</td><td class="fml">n(A &cup; B &cup; C) = n(A) + n(B) + n(C) &minus; n(A &cap; B) &minus; n(B &cap; C) &minus; n(A &cap; C) + n(A &cap; B &cap; C)</td></tr>
+</tbody></table>
+<div class="box mcq"><span class="t"><span class="emoji">⭐</span> Key Fact (p58), yahan se MCQ banti hai</span>
+For any sets A and B: &nbsp;<b class="fml">A &cup; A = A</b>, &nbsp;<b class="fml">A &cap; A = A</b>, &nbsp;<b class="fml">A &cap; &phi; = &phi;</b>, &nbsp;<b class="fml">A &cup; &phi; = A</b>, &nbsp;<b class="fml">A &cap; B <span class="ne">&sube;</span> A</b>, &nbsp;<b class="fml">A <span class="ne">&sube;</span> A &cup; B</b>.</div>
+
+<div class="box eg"><span class="t"><span class="emoji">✏️</span> Example 13 (p58, p59), do sets ka formula</span>
+<q>In a class of 80 students, 40 like English, 34 like Mathematics and 9 like both. How many students like either of both subjects and how many like neither?</q><br>
+Total number of students = n(T) = 80 &nbsp;&middot;&nbsp; n(E) = 40 &nbsp;&middot;&nbsp; n(M) = 34 &nbsp;&middot;&nbsp; n(E &cap; M) = 9<br>
+n(E &cup; M) = n(E) + n(M) &minus; n(E &cap; M) = 40 + 34 &minus; 9 = <b class="ans">65</b> &nbsp;(like either subject)<br>
+n(T) &minus; n(E &cup; M) = 80 &minus; 65 = <b class="ans">15</b> &nbsp;(like neither subject)</div>
+
+<div class="flex">
+<div style="flex:1">
+<div class="box warn" style="margin-top:0"><span class="t"><span class="emoji">⚠️</span> Example 13 ke lafzon par dhyan</span>
+Kitab likhti hai <del>total number of students that like both subjects is n(E &cup; M) = 65</del>. Yeh lafz ghalat hain. 65 woh hain jo <b>either</b> subject pasand karte hain (kam az kam ek). <b>Both</b> to sirf <b>9</b> hain, yaani n(E &cap; M). Isi tarah 15 woh hain jo <b>neither</b> subject pasand karte hain.</div>
+</div>
+<div style="flex:1">
+<div class="box trick" style="margin-top:0"><span class="t"><span class="emoji">🧠</span> Pakki trick</span>
+Sawal ke lafz seedha formula batate hain: <b>both</b> ya <b>and</b> = &cap; &middot; <b>either</b>, <b>or</b>, <b>at least one</b> = &cup; &middot; <b>neither</b>, <b>none</b> = n(U) &minus; n(A &cup; B) &middot; <b>only A</b> = n(A) &minus; n(A &cap; B). Sirf teen sets wale formula mein signs ka order yaad rakho: <b>plus, plus, plus, minus, minus, minus, plus</b>. Ab <b>Exercise 3.2</b> khud karo.</div>
+</div>
+</div>
+
+<h2><span class="emoji">🧪</span> Quiz</h2>
+<p class="small" style="margin-top:0">Ye teeno sawal tumhare Maths paper mein bhi aayenge, is liye inhein achhi tarah karo.</p>
+<ol class="q">
+<li><b>Write the formulae.</b> (i) n(A &cup; B &cup; C) for any three sets A, B and C. (ii) Both formulae the book gives for n(A &minus; B) when A and B are overlapping.</li>
+<li><b>Solve.</b> In a survey of 120 students, 60 play cricket, 45 play hockey, 30 play football, 20 play cricket and hockey, 15 play hockey and football, 12 play cricket and football, and 8 play all three games. Find (i) n(C &cup; H &cup; F), (ii) how many play none of the three games, (iii) how many play only football.</li>
+<li><b>Explain in one or two lines.</b> In Example 13 we write n(E &cup; M) = n(E) + n(M) &minus; n(E &cap; M). Why must n(E &cap; M) be subtracted instead of added?</li>
+</ol>
+
+<!-- ANSWER KEY. NOT PRINTED IN THE PDF. Kept here for marking and for building her Maths paper.
+Q1.
+  (i)  n(A u B u C) = n(A) + n(B) + n(C) − n(A n B) − n(B n C) − n(A n C) + n(A n B n C)
+  (ii) n(A − B) = n(A u B) − n(B)   AND   n(A − B) = n(A) − n(A n B)
+  Both forms of (ii) are needed for full marks; one form only = half.
+
+Q2. n(C) = 60, n(H) = 45, n(F) = 30, n(C n H) = 20, n(H n F) = 15, n(C n F) = 12, n(C n H n F) = 8, n(U) = 120.
+  (i)  n(C u H u F) = 60 + 45 + 30 − 20 − 15 − 12 + 8 = 96
+  (ii) none of the three = n(U) − n(C u H u F) = 120 − 96 = 24
+  (iii) only football = n(F) − n(H n F) − n(C n F) + n(C n H n F) = 30 − 15 − 12 + 8 = 11
+  Common error to watch for in (iii): 30 − 15 − 12 = 3, i.e. forgetting to add back the all-three group,
+  which was removed twice. Working must be shown; award the method mark even if the arithmetic slips.
+
+Q3. Students who like both subjects appear once inside n(E) and once again inside n(M), so simply
+    adding n(E) + n(M) counts that group twice. Subtracting n(E n M) removes the one extra count and
+    leaves every student counted exactly once.
+    Full marks for the idea "the common part gets counted twice"; no marks for just restating the formula.
+-->
+
+</body>
+</html>

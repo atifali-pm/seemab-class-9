@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Biology Chapter 8 Part 1 Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 9mm 9mm 10mm 9mm; }
+  :root {
+    --ink: #1f2430; --muted: #5b6475;
+    --blue: #1d5fa8; --blue-bg: #e8f1fc;
+    --green: #1e7a4a; --green-bg: #e7f6ee;
+    --yellow: #8a6200; --yellow-bg: #fff6d8;
+    --red: #a8322a; --red-bg: #fdecea;
+    --purple: #6a3fa0; --purple-bg: #f2ecfb;
+    --line: #d7dce5;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 10.2pt; line-height: 1.45; margin: 0; }
+  .emoji { font-family: "Noto Color Emoji"; font-style: normal; }
+  h1 { font-size: 19pt; color: var(--blue); margin: 0 0 2mm; line-height: 1.2; }
+  .sub { color: var(--muted); font-size: 10pt; margin-bottom: 4mm; }
+  h2 { font-size: 14pt; color: #fff; background: var(--blue); padding: 2.2mm 3.5mm; border-radius: 3mm; margin: 6mm 0 3mm; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: var(--blue); margin: 5mm 0 1.5mm; border-bottom: 1.5px solid var(--line); padding-bottom: 1mm; page-break-after: avoid; }
+  h3 .pg { font-size: 8.5pt; color: var(--muted); font-weight: normal; }
+  p { margin: 1.5mm 0; }
+  ul, ol { margin: 1mm 0 1.5mm; padding-left: 6mm; }
+  li { margin: 0.6mm 0; }
+  .box { border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .box .t { font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .def { background: var(--blue-bg); border-left: 4px solid var(--blue); }
+  .def .t { color: var(--blue); }
+  .def q { font-weight: 600; quotes: "\201C" "\201D"; }
+  .eg { background: var(--green-bg); border-left: 4px solid var(--green); }
+  .eg .t { color: var(--green); }
+  .trick { background: var(--yellow-bg); border-left: 4px solid #e0a800; }
+  .trick .t { color: var(--yellow); }
+  .warn { background: var(--red-bg); border-left: 4px solid var(--red); }
+  .warn .t { color: var(--red); }
+  .mcq { background: var(--purple-bg); border-left: 4px solid var(--purple); }
+  .mcq .t { color: var(--purple); }
+  .solve { border: 1.5px dashed var(--green); border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .solve .t { color: var(--green); font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .solve table td { padding: 0.3mm 2mm 0.3mm 0; vertical-align: top; border: none; }
+  .ans { color: var(--green); font-weight: bold; }
+  .formula { text-align: center; font-size: 13pt; font-weight: bold; color: var(--blue); margin: 2mm 0; }
+  table.t1 { border-collapse: collapse; width: 100%; font-size: 9.3pt; margin: 2mm 0; page-break-inside: avoid; }
+  table.t1 th { background: var(--blue); color: #fff; padding: 1.2mm 1.6mm; text-align: left; }
+  table.t1 td { border: 1px solid var(--line); padding: 1.1mm 1.6mm; vertical-align: top; }
+  table.t1 tr:nth-child(even) td { background: #f6f8fb; }
+  .intro { background: linear-gradient(135deg, #e8f1fc, #f2ecfb); border-radius: 3mm; padding: 3mm 3.5mm; margin: 2mm 0 3mm; }
+  .map td { padding: 1mm 1.5mm; }
+  .small { font-size: 9pt; color: var(--muted); }
+  .pb { page-break-before: always; }
+  .cap { page-break-after: avoid; break-after: avoid; }
+  h2 { margin-top: 5mm; }
+  .check li { margin: 1.4mm 0; }
+  .pill { display: inline-block; background: var(--blue); color: #fff; border-radius: 10px; padding: 0 2.2mm; font-size: 8.5pt; font-weight: bold; }
+  .one { background: #e6f7f7; border: 1.5px solid #1a8a8a; }
+  .one .t { color: #11706f; }
+  .solve table.t1 td { border: 1px solid var(--line); }
+  td.wrong { text-decoration: line-through; color: #8a8f99; }
+  pre.dot { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; background: #f6f8fb; border: 1px solid var(--line); border-radius: 2mm; padding: 2mm; margin: 2mm 0; white-space: pre; line-height: 1.35; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">🌱</span> Biology Chapter 8: Part 1<br>Nutrition in Plants (8.1 aur 8.1.1)</h1>
+<div class="sub">Aasan Notes, tumhari kitab ke saath saath (book pages 113 aur 114 ka pehla hissa)</div>
+
+<div class="intro">
+  <p><b>Assalam o alaikum Seemab!</b> Chapter 8 "Plant Physiology" chaar parts mein hai. Ye <b>Part 1</b> hai: sirf <b>8.1 Nutrition in Plants</b> aur <b>8.1.1 Types of plant nutrients</b>, yani nitrogen aur magnesium tak. Aage 8.2 Transport in Plants se Part 2 shuru hoga.</p>
+  <p><b>Is part ka andaaz thora alag hai.</b> Ye poora hissa <b>sawal aur jawab</b> ki shakal mein likha hai. Jo sawal teacher board par likhti hai, wahi yahan heading hai, aur us ke neeche poora jawab. Tum chaho to sirf sawal parho, jawab chhupao, aur khud bolo. Phir neeche dekh kar check kar lo.</p>
+  <p><b>Kitab ki har line yahan mojood hai.</b> Kitab kholne ki zaroorat nahin. Jahan neela <span class="emoji">📖</span> box hai, wahan kitab ke apne English alfaaz hain. Exam mein wohi likhne hain.</p>
+  <p><b>Kaise parhna hai</b> (25 se 30 minute):</p>
+  <ol>
+    <li>Sawal jawab ek dafa aaram se parho.</li>
+    <li>Phir sirf neelay <span class="emoji">📖</span> boxes aur do tables dobara dekho.</li>
+    <li>Aakhir mein kitab ki exercise ke 4 hal shuda sawal parho, phir "Khud ko check karo" karo.</li>
+  </ol>
+</div>
+
+<div class="box def"><span class="t"><span class="emoji">🎯</span> Student Learning Outcomes (chapter ke pehle page par) jo Part 1 mein hain</span>
+<ul>
+<li><b>1.</b> Define mineral nutrition in plants.</li>
+<li><b>2.</b> Categorize minerals nutrients of plants into micronutrient and micronutrients.</li>
+<li><b>3.</b> State that nitrogen is important in protein synthesis and magnesium for chlorophyll formation.</li>
+</ul>
+<span class="small">SLO 2 kitab mein isi tarah chhapa hai. Dono dafa "micronutrient" likha hua hai. Asal mein hona chahiye tha <b>macronutrient and micronutrient</b>. Ye kitab ki printing ki ghalti hai, tumhari samajh ki nahin. Baaqi 11 SLOs (4 se 14 tak) Part 2, 3 aur 4 mein aayenge.</span>
+</div>
+
+<p class="small">Chapter ke pehle page par tasveer bhi hai: suraj se light energy, hawa se <b>Carbon dioxide CO₂</b>, mitti se <b>Minerals</b> aur <b>Water H₂O</b>, aur plant se nikalti hui <b>Oxygen O₂</b> aur <b>Sugar</b>. Neeche bara sa likha hai <b>PLANT PHYSIOLOGY</b>.</p>
+
+<table class="map t1">
+  <tr><th colspan="2">Part 1 ka naqsha (4 hisse)</th></tr>
+  <tr><td><span class="emoji">🔬</span> Hissa 1</td><td>Plant physiology kya hai (kitab p113)</td></tr>
+  <tr><td><span class="emoji">🥣</span> Hissa 2</td><td>8.1 Nutrition in Plants (kitab p113)</td></tr>
+  <tr><td><span class="emoji">⚖️</span> Hissa 3</td><td>8.1.1 Types of plant nutrients: macro aur micro (kitab p113)</td></tr>
+  <tr><td><span class="emoji">🌿</span> Hissa 4</td><td>Nitrogen aur Magnesium (kitab p113, p114)</td></tr>
+</table>
+
+<!-- ================= HISSA 1 ================= -->
+<h2><span class="emoji">🔬</span> Hissa 1: Plant physiology kya hai</h2>
+
+<h3>Chapter ka introduction <span class="pg">(kitab p113)</span></h3>
+
+<p><b><span class="emoji">❓</span> Sawal 1: Plant physiology kis cheez ki branch hai aur wo kis se deal karti hai?</b></p>
+<p><b>Jawab.</b> Plant physiology <b>botany</b> (plants ka ilm) ki ek branch hai. Ye plant ke jism ke <b>functions</b> se related sawalon ka jawab deti hai. Yani plant ke andar kaam kaise hota hai.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Plant physiology is the branch of botany, which deals with various questions related to the functions of plant body.</q>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 2: Wo kaun kaun se sawal hain jo plant physiology mein parhe jaate hain?</b></p>
+<p><b>Jawab.</b> Kitab ne khud chhe (6) sawal ginwaye hain:</p>
+<ol>
+  <li><b>How plants grow from seed to the whole body.</b> Plant ek chhote se beej (seed) se poora paoda kaise ban jata hai.</li>
+  <li><b>How plants absorb water and minerals and transport them to the leaves.</b> Plant paani aur minerals kaise absorb karta hai aur unhein patton (leaves) tak kaise pohanchata hai.</li>
+  <li><b>How plants prepare organic solutes and transport them to the rest of the body.</b> Plant organic solutes (khaana) kaise banata hai aur usay baaqi jism tak kaise bhejta hai.</li>
+  <li><b>How plants exchange carbon dioxide and oxygen with their environment.</b> Plant apne maahol ke saath carbon dioxide aur oxygen ka tabadla kaise karta hai.</li>
+  <li><b>How plants adapt themselves in changing environmental conditions.</b> Mausam aur haalaat badalne par plant khud ko kaise dhaal leta hai.</li>
+  <li><b>How plants produce their young ones to continue their species.</b> Plant apni nasl aage barhane ke liye apne bachay kaise paida karta hai.</li>
+</ol>
+
+<p><b><span class="emoji">❓</span> Sawal 3: Kya ye saare functions isi chapter mein parhne hain?</b></p>
+<p><b>Jawab.</b> Nahin. Kitab khud kehti hai: <b>"Some of these functions will be studied in this chapter, while some have been discussed in other chapters."</b> Yani kuch functions is chapter mein hain aur kuch doosre chapters mein pehle aa chuke hain.</p>
+
+<!-- ================= HISSA 2 ================= -->
+<h2><span class="emoji">🥣</span> Hissa 2: 8.1 Nutrition in Plants</h2>
+
+<h3>8.1 Nutrition in Plants <span class="pg">(kitab p113)</span></h3>
+
+<p><b><span class="emoji">❓</span> Sawal 4: Nutrient kise kehte hain?</b></p>
+<p><b>Jawab.</b> Jo bhi cheez kisi organism ko uski <b>growth</b> aur <b>metabolism</b> ke liye zaroori elements de, usay nutrient kehte hain.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>Any substance that provides necessary elements to the organism for growth and metabolism is called nutrient.</q>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 5: Kya nutrient organic hota hai ya inorganic? Aur plant nutrients kaun se hote hain?</b></p>
+<p><b>Jawab.</b> Aam tor par nutrient <b>organic bhi ho sakta hai aur inorganic bhi</b>. Lekin <b>plant nutrients hamesha inorganic hote hain</b>.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>In general, a nutrient may be organic or inorganic, however, plant nutrients are inorganic.</q>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 6: Nutrition kise kehte hain?</b></p>
+<p><b>Jawab.</b> Nutrition sirf khaana lene ka naam nahin. Nutrition mein wo <b>saare processes</b> aa jaate hain jin mein nutrients ko growth ya jism ki mukhtalif metabolic activities mein <b>istemaal</b> kiya jata hai.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>The term nutrition is applied to all the processes that are involved in the utilization of nutrients in growth or various metabolic activities of the body.</q>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 7: Plants ko autotrophs kyun kehte hain?</b></p>
+<p><b>Jawab.</b> Kyunke plants maahol se <b>inorganic nutrients</b> lete hain, jaise <b>paani (water)</b>, <b>carbon dioxide</b> aur kuch <b>minerals</b>, aur phir khud hi unhein <b>organic compounds</b> mein badal lete hain. Yani apna khaana khud banate hain. Isi liye plants autotrophs kehlate hain.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Plants are autotrophs as they obtain inorganic nutrients such as water, carbon dioxide and certain minerals form the environment and convert them into organic compounds.</q>
+  <span class="small">Kitab mein yahan "form the environment" chhapa hai. Wo asal mein <b>"from the environment"</b> hona chahiye tha. Choti si printing ki ghalti hai, matlab wohi rehta hai: maahol se.</span>
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">🎯</span> Ek line mein</span>
+  Nutrient = zaroori elements dene wali cheez. Nutrition = un nutrients ko istemaal karne ke saare processes. Plant nutrients inorganic hote hain, aur plants autotrophs hain.
+</div>
+
+<!-- ================= HISSA 3 ================= -->
+<h2><span class="emoji">⚖️</span> Hissa 3: 8.1.1 Types of plant nutrients</h2>
+
+<h3>8.1.1 Types of plant nutrients <span class="pg">(kitab p113)</span></h3>
+
+<p><b><span class="emoji">❓</span> Sawal 8: Plant growth ke liye kitne elements essential paaye gaye hain?</b></p>
+<p><b>Jawab.</b> <b>Sixteen (16) elements.</b> Kitab ki pehli line hi yahi hai: <b>"Sixteen elements have been found essential for plant growth."</b> In 16 ko do groups mein baanta gaya hai: <b>9 macronutrients</b> aur <b>7 micronutrients</b>.</p>
+
+<p><b><span class="emoji">❓</span> Sawal 9: Macronutrients kise kehte hain, aur wo kaun se hain?</b></p>
+<p><b>Jawab.</b> 16 mein se <b>9 elements</b> plant ko kaafi <b>bari miqdar</b> mein chahiye hote hain, yani <b>0.05% dry weight se zyada</b>. Inhi ko macronutrients kehte hain.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Nine of these are required in fairly large quantities (greater than 0.05% dry weights) and are therefore known as macronutrients. These include carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, sulphur, calcium, and magnesium.</q>
+</div>
+<p>Yani 9 macronutrients ye hain: <b>carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, sulphur, calcium, magnesium.</b></p>
+
+<p><b><span class="emoji">❓</span> Sawal 10: Micronutrients kise kehte hain, aur wo kaun se hain?</b></p>
+<p><b>Jawab.</b> Baaqi bachay hue <b>saat (7) elements</b> plant ko sirf <b>traces ya bohat choti miqdar</b> mein chahiye hote hain, yani <b>0.05% dry weight se kam</b>. Ye normal plant growth aur development ke liye zaroori hote hain. Inhein micronutrients kehte hain.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>The remaining seven elements are needed in traces or small amounts (less than 0.05% dry weight) for normal plant growth and development that are known as micronutrients. These include iron, boron, manganese, copper, molybdenum, chlorine, and zinc.</q>
+</div>
+<p>Yani 7 micronutrients ye hain: <b>iron, boron, manganese, copper, molybdenum, chlorine, zinc.</b></p>
+
+<p class="cap"><b>Poori tasveer ek table mein</b> (ye table yaad kar lo, exam mein bohat kaam aayegi):</p>
+<table class="t1">
+  <tr><th></th><th>Macronutrients</th><th>Micronutrients</th></tr>
+  <tr><td><b>Kitne</b></td><td>9</td><td>7</td></tr>
+  <tr><td><b>Kitni miqdar</b></td><td>Fairly large quantities (bari miqdar)</td><td>Traces or small amounts (bohat thori miqdar)</td></tr>
+  <tr><td><b>Dry weight</b></td><td>Greater than 0.05%</td><td>Less than 0.05%</td></tr>
+  <tr><td><b>Elements</b></td><td>Carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, sulphur, calcium, magnesium</td><td>Iron, boron, manganese, copper, molybdenum, chlorine, zinc</td></tr>
+</table>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Yaad karne ki trick</span>
+  <b>Macro = MORE, Micro = MINI.</b> Macro wale <b>0.05% se ooper</b>, micro wale <b>0.05% se neeche</b>. Number bhi yaad rakho: <b>9 + 7 = 16</b>. Agar exam mein 16 yaad aa gaya aur 9 yaad aa gaya, to 7 khud nikal aayega.<br>
+  Micro ke 7 naam yaad karne ke liye pehle harf jor lo: <b>I B M C M C Z</b> (Iron, Boron, Manganese, Copper, Molybdenum, Chlorine, Zinc).
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Yahan ghalti hoti hai</span>
+  Micronutrient ka matlab ye <b>nahin</b> ke wo ghair zaroori hai. Kitab saaf kehti hai ke ye bhi <b>"for normal plant growth and development"</b> zaroori hain. Farq sirf <b>miqdar</b> ka hai, <b>ahmiyat</b> ka nahin. MCQ mein aksar yahi phansata hai.
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 11: Is chapter mein kitne nutrients ki ahmiyat parhni hai?</b></p>
+<p><b>Jawab.</b> Sirf <b>do</b>: <b>nitrogen</b> aur <b>magnesium</b>. Baaqi saare nutrients ka role grade 11 ki biology mein parhaya jayega.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Although, each mineral nutrient is very important for normal plant growth, here you will learn about the importance of only nitrogen and magnesium. The role of rest of the plant nutrients will be discussed in biology grade 11.</q>
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">🎯</span> Ek line mein</span>
+  16 essential elements: 9 macronutrients (0.05% se zyada) aur 7 micronutrients (0.05% se kam). Is class mein sirf nitrogen aur magnesium ki ahmiyat parhni hai.
+</div>
+
+<!-- ================= HISSA 4 ================= -->
+<h2 class="pb"><span class="emoji">🌿</span> Hissa 4: Nitrogen aur Magnesium</h2>
+
+<h3>Importance of nitrogen in protein synthesis <span class="pg">(kitab p113, p114)</span></h3>
+
+<p><b><span class="emoji">❓</span> Sawal 12: Nitrogen macronutrient hai ya micronutrient? Aur plant usay kahan se aur kis shakal mein leta hai?</b></p>
+<p><b>Jawab.</b> Nitrogen ek <b>macronutrient</b> hai. Plant isay zyadatar <b>mitti (soil)</b> se, apni <b>roots</b> ke zariye absorb karta hai. Shakal hoti hai <b>inorganic nitrogenous compounds</b> ki, jaise <b>nitrates (NO₃⁻)</b>.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Nitrogen is a macronutrient in the plant which is mainly absorbed by the plant from soil through their roots in the form of inorganic nitrogenous compounds like nitrates (NO₃⁻).</q>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 13: Mitti mein nitrates ka sab se bara source kya hai?</b></p>
+<p><b>Jawab.</b> <b>Dead organic matter ka decomposition</b>, yani murda jaandaron aur pooron ka gal sarr jana. Kitab: <b>"The major source of nitrates in the soil is the decomposition of dead organic matter."</b></p>
+
+<p><b><span class="emoji">❓</span> Sawal 14: Agar mitti mein nitrogen khatam ho jaye to kya karte hain?</b></p>
+<p><b>Jawab.</b> Aisi mitti ko <b>nitrogen depleted soil</b> kehte hain. Us mein nitrogen <b>nitrogen fertilizers</b> ki shakal mein daal diya jata hai.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>However, in the nitrogen depleted soils, it can be added in the form of nitrogen fertilizers.</q>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 15: Plant ke jism mein ye nitrogenous compounds kis kaam aate hain?</b></p>
+<p><b>Jawab.</b> Teen cheezein banane mein: <b>amino acids</b>, <b>nucleotides</b> aur <b>chlorophyll</b>. Aur phir un amino acids se <b>protein synthesis</b> hoti hai.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>In plant body these nitrogenous compounds are used to make amino acids, nucleotides, and chlorophyll. The amino acids are then utilised in protein synthesis.</q>
+</div>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Teen naam yaad rakho</span>
+  Nitrogen se banti hain: <b>A</b>mino acids, <b>N</b>ucleotides, <b>C</b>hlorophyll. Yaad rakhne ke liye <b>ANC</b>. SLO 3 ka sawal isi par aata hai.
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 16: Nitrogen ki kami itni khatarnak kyun hai?</b></p>
+<p><b>Jawab.</b> Kyunke <b>protein plant ke jism ka sab se zyada paya jane wala organic constituent</b> hai. Protein amino acids se banti hai aur amino acids nitrogen se. Is liye nitrogen kam hoga to protein kam banegi, aur plant ki growth <b>bohat buri tarah ruk</b> jayegi (severe growth retardation).</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>As the protein is the most abundant organic constituent of the plant body therefore, nitrogen deficiency in plant can lead to severe growth retardation.</q>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 17: Nitrogen deficiency ki sab se zyada nazar aane wali nishani (symptom) kya hai? Chlorosis kya hai?</b></p>
+<p><b>Jawab.</b> Sab se obvious symptom <b>chlorosis</b> hai. Chlorosis ka matlab hai <b>plant ke patton ka peela par jana</b>, jo minerals ki kami ki wajah se hota hai. Nitrogen ki kami <b>chlorophyll banne ko rok deti hai</b> (inhibits chlorophyll formation), is liye patte peele ho jaate hain.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>The most obvious symptom of nitrogen deficiency in plant is the chlorosis i.e., yellowing of plant leaves due to deficiency of minerals, as the deficiency of nitrogen inhibits chlorophyll formation.</q>
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">🖼️</span> Figure 8.1: Molecular Structure of Chlorophyll (kitab p113)</span>
+  Ye chlorophyll ke molecule ki tasveer hai. Beech mein <b>Mg</b> (magnesium) ka atom hai, jis ke chaaron taraf <b>N</b> (nitrogen) ke atoms hain. Rings par Roman numbers likhe hain: <b>I, II, III, IV, V</b>. Ek taraf <b>R</b> ka group hai. Tasveer ke saath do labels hain:<br>
+  <b>Chlorophyll-a (R=CH₃)</b><br>
+  <b>Chlorophyll-b (R=CHO)</b><br>
+  <span class="small">Yani chlorophyll-a aur chlorophyll-b mein farq sirf R wale group ka hai. Aur dhyan do: tasveer khud bata rahi hai ke chlorophyll mein <b>nitrogen bhi hai aur magnesium bhi</b>. Isi liye dono ki kami se chlorosis hota hai.</span>
+</div>
+
+<h3>Importance of magnesium in chlorophyll formation <span class="pg">(kitab p114)</span></h3>
+
+<p><b><span class="emoji">❓</span> Sawal 18: Magnesium macronutrient hai ya micronutrient? Plant usay kis shakal mein absorb karta hai?</b></p>
+<p><b>Jawab.</b> Magnesium bhi <b>macronutrient</b> hai. Plant isay bhi <b>mitti se roots ke zariye</b> leta hai, aur shakal hoti hai <b>inorganic Mg ions</b> ki.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Magnesium is a macronutrient in the plant which is mainly absorbed by the plant from soil through their roots in the form of inorganic Mg⁺ ions.</q>
+  <span class="small">Kitab mein yahan <b>Mg⁺</b> chhapa hai (ek hi plus). Chemistry mein magnesium ka ion <b>Mg²⁺</b> hota hai, is liye ye kitab ki printing ki ghalti lagti hai. Exam mein biology ka jawab likhte waqt bas <b>"inorganic Mg ions"</b> likh dena, safe rahega.</span>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 19: Mitti mein magnesium ka sab se bara source kya hai?</b></p>
+<p><b>Jawab.</b> <b>Dead plant debris ka decomposition</b>, yani murda pooron ka koora karkat gal sarr jana. Kitab: <b>"The major source of magnesium in the soil is the decomposition of dead plant debris."</b></p>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Yahan dhyan se</span>
+  Nitrogen ka source <b>dead organic matter</b> hai. Magnesium ka source <b>dead plant debris</b> hai. Alfaaz alag hain, exam mein ulta mat likh dena.
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 20: Magnesium depleted soil mein magnesium kaise daala jata hai?</b></p>
+<p><b>Jawab.</b> Do tareeqe kitab ne likhe hain: <b>dolomitic limestone</b>, ya phir <b>magnesium fertilizers</b> jaise <b>Magnesium sulphate (MgSO₄)</b>.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>However, in the magnesium depleted soils, it can be added in the form of dolomitic limestone or magnesium fertilizers like Magnesium sulphate (MgSO₄).</q>
+</div>
+
+<p><b><span class="emoji">❓</span> Sawal 21: Plant ke jism mein magnesium kis kaam aata hai, aur uski kami se kya hota hai?</b></p>
+<p><b>Jawab.</b> Magnesium se <b>chlorophyll</b> banti hai. Is liye magnesium ki kami se bhi <b>chlorosis</b> ho jata hai, yani patte peele par jaate hain.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>In plant body, the magnesium is used to make chlorophyll therefore, magnesium deficiency in plant can also lead to chlorosis.</q>
+</div>
+
+<p class="cap"><b>Nitrogen aur Magnesium ka muqabla</b> (dono macronutrients hain, aur dono ki kami se chlorosis hota hai):</p>
+<table class="t1">
+  <tr><th></th><th>Nitrogen</th><th>Magnesium</th></tr>
+  <tr><td><b>Qism</b></td><td>Macronutrient</td><td>Macronutrient</td></tr>
+  <tr><td><b>Kahan se</b></td><td>Soil se, roots ke zariye</td><td>Soil se, roots ke zariye</td></tr>
+  <tr><td><b>Kis shakal mein</b></td><td>Inorganic nitrogenous compounds, jaise nitrates (NO₃⁻)</td><td>Inorganic Mg ions</td></tr>
+  <tr><td><b>Soil mein major source</b></td><td>Decomposition of dead organic matter</td><td>Decomposition of dead plant debris</td></tr>
+  <tr><td><b>Kami ho to kya daalein</b></td><td>Nitrogen fertilizers</td><td>Dolomitic limestone, ya magnesium fertilizers jaise MgSO₄</td></tr>
+  <tr><td><b>Plant mein kaam</b></td><td>Amino acids, nucleotides aur chlorophyll banana; amino acids se protein synthesis</td><td>Chlorophyll banana</td></tr>
+  <tr><td><b>Kami ka asar</b></td><td>Severe growth retardation, aur chlorosis (chlorophyll formation ruk jati hai)</td><td>Chlorosis</td></tr>
+</table>
+
+<div class="box one"><span class="t"><span class="emoji">🎯</span> Ek line mein</span>
+  <b>Nitrogen = protein synthesis</b> (amino acids ke zariye). <b>Magnesium = chlorophyll formation.</b> Dono ki kami se <b>chlorosis</b>, yani patte peele.
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">🛑</span> Part 1 yahan khatam</span>
+  Kitab mein magnesium wale paragraph ke bilkul baad <b>8.2 TRANSPORT IN PLANTS</b> ki heading shuru ho jati hai (isi page 114 par). Wo hissa <b>Part 2</b> mein hai, is notes mein nahin.
+</div>
+
+<!-- ================= SUMMARY ================= -->
+<h2><span class="emoji">📝</span> Summary: kitab ke alfaaz mein yaad karo</h2>
+<div class="box def">
+  <ul>
+    <li>Any substance that provides necessary elements to the organism for growth and metabolism is called nutrient.</li>
+    <li>Plant nutrients are inorganic.</li>
+    <li>Plants are autotrophs.</li>
+    <li>Sixteen elements have been found essential for plant growth.</li>
+    <li>Nine are macronutrients (greater than 0.05% dry weight), seven are micronutrients (less than 0.05% dry weight).</li>
+    <li>Nitrogen is absorbed as nitrates and is used to make amino acids, nucleotides and chlorophyll.</li>
+    <li>Magnesium is used to make chlorophyll.</li>
+    <li>Deficiency of nitrogen and deficiency of magnesium both lead to chlorosis.</li>
+  </ul>
+</div>
+<p class="small">Kitab ke apne SUMMARY box (page 126) mein bhi Part 1 wali ek line hai: <b>"Plants, as autotrophs, derive nutrients from the environment to synthesize organic compounds essential for growth and metabolism. Sixteen elements, including macronutrients and micronutrients, are crucial for plant health. Nitrogen and magnesium play pivotal roles in protein synthesis and chlorophyll formation, respectively."</b></p>
+
+<p class="cap"><b>English alfaaz ki chhoti dictionary</b></p>
+<table class="t1">
+  <tr><td>nutrient</td><td>ghiza dene wala maadda</td><td>autotroph</td><td>apna khaana khud banane wala</td></tr>
+  <tr><td>metabolism</td><td>jism ke andar ke kemiyai kaam</td><td>trace</td><td>bohat hi thori miqdar</td></tr>
+  <tr><td>dry weight</td><td>sukha wazan (paani nikal kar)</td><td>depleted</td><td>jis mein cheez khatam ho gayi</td></tr>
+  <tr><td>decomposition</td><td>gal sarr jana</td><td>debris</td><td>koora karkat, tootay hue tukray</td></tr>
+  <tr><td>chlorosis</td><td>patton ka peela par jana</td><td>retardation</td><td>growth ka ruk jana</td></tr>
+  <tr><td>abundant</td><td>bohat zyada mojood</td><td>inhibit</td><td>rok dena</td></tr>
+</table>
+
+<!-- ================= EXERCISE ================= -->
+<h2 class="pb"><span class="emoji">📚</span> Kitab ki exercise: Part 1 wale sawal, poore jawab ke saath</h2>
+<p class="small">Ye chaar sawal kitab ke page 126 aur page 128 se hain, aur inka poora jawab Part 1 hi se aata hai. Neeche wohi likha hai jo tum exam mein likh sakti ho.</p>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Section I, MCQ 1 (kitab p126): Chlorosis does not occur due to the deficiency of</span>
+  A) sulphur &nbsp;&nbsp; (B) magnesium &nbsp;&nbsp; C) phosphorus &nbsp;&nbsp; (D) calcium
+  <p><b>Jawab: <span class="ans">(D) calcium</span></b></p>
+  <p><b>Kaise pata chala:</b> Sawal ulta hai. Ye poochh raha hai ke kis ki kami se chlorosis <b>nahin</b> hota.</p>
+  <ul>
+    <li><b>(B) magnesium:</b> ye to seedha kaat do. Kitab (p114) khud kehti hai <b>"magnesium deficiency in plant can also lead to chlorosis"</b>. Yani magnesium se chlorosis hota hi hai, is liye ye jawab nahin ho sakta.</li>
+    <li><b>(A) sulphur:</b> sulphur protein banane wale amino acids ka hissa hai, aur uski kami se bhi patte peele hote hain. Ye bhi jawab nahin.</li>
+    <li><b>(D) calcium:</b> calcium ka kaam chlorophyll banana nahin hai. Chlorophyll ke molecule mein calcium hota hi nahin (Figure 8.1 dekho: beech mein Mg hai, aur N hain, calcium kahin nahin). Is liye calcium ki kami se patte peele nahin hote. <b>Yehi sahi jawab hai.</b></li>
+  </ul>
+  <p class="small"><b>Imaandari se ek baat:</b> phosphorus (option C) ki kami se bhi patte peele nahin hote, wo gehre sabz ya baingani ho jaate hain. Yani ye sawal thora dheela hai aur do options bante hain. Kitab khud sirf nitrogen aur magnesium ka zikr karti hai. Exam mein <b>calcium</b> likhna, aur agar teacher ne tumhara C kaat diya ho to aaram se dalil de dena.</p>
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Section II, Q8 (iv) (kitab p128): Define Micronutrients</span>
+  <p><b>Likhne wala jawab:</b></p>
+  <p><b>"Out of the sixteen elements essential for plant growth, the remaining seven elements which are needed in traces or small amounts (less than 0.05% dry weight) for normal plant growth and development are known as micronutrients. These include iron, boron, manganese, copper, molybdenum, chlorine, and zinc."</b></p>
+  <p class="small">Teen cheezein zaroor likhna: <b>seven elements</b>, <b>less than 0.05% dry weight</b>, aur kam az kam do teen misalein (iron, boron, zinc). Agar poora jawab yaad na rahe to yehi teen points bhi achhe number de denge.</p>
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Section II, Q9 (a) (kitab p128): Write the difference between Micronutrients and Macronutrients</span>
+  <p>Ye jawab table ki shakal mein likhna sab se behtar hai:</p>
+  <table class="t1">
+    <tr><th>Point</th><th>Macronutrients</th><th>Micronutrients</th></tr>
+    <tr><td>Definition</td><td>The elements required in fairly large quantities for plant growth</td><td>The elements needed in traces or small amounts for normal plant growth and development</td></tr>
+    <tr><td>Quantity</td><td>Greater than 0.05% dry weight</td><td>Less than 0.05% dry weight</td></tr>
+    <tr><td>Number</td><td>Nine (9)</td><td>Seven (7)</td></tr>
+    <tr><td>Examples</td><td>Carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, sulphur, calcium, magnesium</td><td>Iron, boron, manganese, copper, molybdenum, chlorine, zinc</td></tr>
+  </table>
+  <p class="small">Dono milkar <b>16 essential elements</b> bante hain. Agar table ke liye waqt na ho to kam az kam <b>number (9 aur 7)</b> aur <b>0.05% wali line</b> zaroor likhna, poora number wahin hai.</p>
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Section III, Q1 (kitab p128): State that nitrogen is important in protein synthesis and magnesium for chlorophyll formation</span>
+  <p>Ye extensive answer wala sawal hai, is liye jawab do hisson mein likhna. Poora jawab ye raha:</p>
+  <p><b>Introduction.</b> Sixteen elements have been found essential for plant growth. Nine of them are macronutrients and seven are micronutrients. Nitrogen and magnesium are both macronutrients, and both are very important for the plant.</p>
+  <p><b>(a) Importance of nitrogen in protein synthesis.</b></p>
+  <ul>
+    <li>Nitrogen is a macronutrient which is mainly absorbed by the plant from the soil through its roots.</li>
+    <li>It is absorbed in the form of inorganic nitrogenous compounds like nitrates (NO₃⁻).</li>
+    <li>The major source of nitrates in the soil is the decomposition of dead organic matter.</li>
+    <li>In nitrogen depleted soils, nitrogen can be added in the form of nitrogen fertilizers.</li>
+    <li>In the plant body, these nitrogenous compounds are used to make amino acids, nucleotides and chlorophyll.</li>
+    <li>The amino acids are then utilised in protein synthesis.</li>
+    <li>Protein is the most abundant organic constituent of the plant body, therefore nitrogen deficiency can lead to severe growth retardation.</li>
+    <li>The most obvious symptom of nitrogen deficiency is chlorosis, that is, yellowing of plant leaves, because the deficiency of nitrogen inhibits chlorophyll formation.</li>
+  </ul>
+  <p><b>(b) Importance of magnesium in chlorophyll formation.</b></p>
+  <ul>
+    <li>Magnesium is also a macronutrient which is mainly absorbed by the plant from the soil through its roots.</li>
+    <li>It is absorbed in the form of inorganic Mg ions.</li>
+    <li>The major source of magnesium in the soil is the decomposition of dead plant debris.</li>
+    <li>In magnesium depleted soils, it can be added in the form of dolomitic limestone or magnesium fertilizers like Magnesium sulphate (MgSO₄).</li>
+    <li>In the plant body, magnesium is used to make chlorophyll. Magnesium is present at the centre of the chlorophyll molecule (Figure 8.1).</li>
+    <li>Therefore, magnesium deficiency in the plant can also lead to chlorosis.</li>
+  </ul>
+  <p><b>Conclusion.</b> So nitrogen is important because the amino acids made from it are used in protein synthesis, and magnesium is important because chlorophyll is made from it. A deficiency of either of the two leads to chlorosis in the plant.</p>
+  <p class="small"><span class="emoji">📌</span> Conclusion ki line likhna mat bhoolna. Pichhle kai papers mein sirf isi wajah se half mark gaya hai.</p>
+</div>
+
+<!-- ================= CHECK ================= -->
+<h2 class="pb"><span class="emoji">✅</span> Khud ko check karo (10 sawal)</h2>
+<p class="small">Pehle khud jawab socho ya notebook mein likho, phir agle hisse mein check karo.</p>
+<ol class="check">
+  <li>Plant physiology kis subject (branch) ka hissa hai?</li>
+  <li>Nutrient ki definition likho.</li>
+  <li>Plant nutrients organic hote hain ya inorganic?</li>
+  <li>Plant growth ke liye kitne elements essential hain, aur un ka batwara kya hai?</li>
+  <li>Macronutrients aur micronutrients ke darmiyan dry weight ki line kya hai?</li>
+  <li>9 macronutrients ke naam likho.</li>
+  <li>Nitrogen plant mein kis form mein absorb hota hai?</li>
+  <li>Nitrogenous compounds se plant kaun si teen cheezein banata hai?</li>
+  <li>Magnesium depleted soil mein kya daala jata hai?</li>
+  <li>Chlorosis kya hai, aur kitab ke mutabiq kin do elements ki kami se hota hai?</li>
+</ol>
+
+<h2 class="pb"><span class="emoji">🔑</span> Jawab</h2>
+<ol class="check">
+  <li><b>Botany.</b> Plant physiology botany ki branch hai jo plant body ke functions se deal karti hai.</li>
+  <li><b>"Any substance that provides necessary elements to the organism for growth and metabolism is called nutrient."</b></li>
+  <li><b>Inorganic.</b> (Aam nutrient organic bhi ho sakta hai, lekin plant nutrients inorganic hote hain.)</li>
+  <li><b>Sixteen (16).</b> Un mein <b>9 macronutrients</b> aur <b>7 micronutrients</b> hain.</li>
+  <li><b>0.05% dry weight.</b> Us se <b>zyada</b> chahiye to macronutrient, us se <b>kam</b> to micronutrient.</li>
+  <li><b>Carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, sulphur, calcium, magnesium.</b></li>
+  <li><b>Inorganic nitrogenous compounds like nitrates (NO₃⁻)</b>, soil se roots ke zariye.</li>
+  <li><b>Amino acids, nucleotides aur chlorophyll.</b> (Aur amino acids se phir protein synthesis hoti hai.)</li>
+  <li><b>Dolomitic limestone</b>, ya <b>magnesium fertilizers</b> jaise <b>Magnesium sulphate (MgSO₄)</b>.</li>
+  <li><b>Chlorosis = yellowing of plant leaves due to deficiency of minerals.</b> Kitab ke mutabiq <b>nitrogen</b> aur <b>magnesium</b> dono ki kami se hota hai.</li>
+</ol>
+
+<div class="intro">
+  <p><b>Score dekho:</b> 8 se 10 sahi: zabardast, Part 1 pakka ho gaya. <span class="emoji">🌟</span> 5 se 7: jo ghalat hue sirf un ka hissa dobara dekh lo, poora notes nahin. 5 se kam: koi baat nahin, ek dafa aur aaram se parh lo, ye sirf do page ka material hai. <span class="emoji">💪</span></p>
+  <p>Part 2 mein <b>8.2 Transport in Plants</b> aayega: transport ki zaroorat, root aur root hair ki structure, aur paani aur minerals ka uptake.</p>
+</div>
+
+</body>
+</html>

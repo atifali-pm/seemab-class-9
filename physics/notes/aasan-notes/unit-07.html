@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Physics Unit 7 Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 9mm 9mm 10mm 9mm; }
+  :root {
+    --ink: #1f2430; --muted: #5b6475;
+    --blue: #1d5fa8; --blue-bg: #e8f1fc;
+    --green: #1e7a4a; --green-bg: #e7f6ee;
+    --yellow: #8a6200; --yellow-bg: #fff6d8;
+    --red: #a8322a; --red-bg: #fdecea;
+    --purple: #6a3fa0; --purple-bg: #f2ecfb;
+    --line: #d7dce5;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 10.2pt; line-height: 1.45; margin: 0; }
+  .emoji { font-family: "Noto Color Emoji"; font-style: normal; }
+  h1 { font-size: 19pt; color: var(--blue); margin: 0 0 2mm; line-height: 1.2; }
+  .sub { color: var(--muted); font-size: 10pt; margin-bottom: 4mm; }
+  h2 { font-size: 14pt; color: #fff; background: var(--blue); padding: 2.2mm 3.5mm; border-radius: 3mm; margin: 6mm 0 3mm; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: var(--blue); margin: 5mm 0 1.5mm; border-bottom: 1.5px solid var(--line); padding-bottom: 1mm; page-break-after: avoid; }
+  h3 .pg { font-size: 8.5pt; color: var(--muted); font-weight: normal; }
+  p { margin: 1.5mm 0; }
+  ul, ol { margin: 1mm 0 1.5mm; padding-left: 6mm; }
+  li { margin: 0.6mm 0; }
+  .box { border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .box .t { font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .def { background: var(--blue-bg); border-left: 4px solid var(--blue); }
+  .def .t { color: var(--blue); }
+  .def q { font-weight: 600; quotes: "\201C" "\201D"; }
+  .eg { background: var(--green-bg); border-left: 4px solid var(--green); }
+  .eg .t { color: var(--green); }
+  .trick { background: var(--yellow-bg); border-left: 4px solid #e0a800; }
+  .trick .t { color: var(--yellow); }
+  .warn { background: var(--red-bg); border-left: 4px solid var(--red); }
+  .warn .t { color: var(--red); }
+  .mcq { background: var(--purple-bg); border-left: 4px solid var(--purple); }
+  .mcq .t { color: var(--purple); }
+  .solve { border: 1.5px dashed var(--green); border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .solve .t { color: var(--green); font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .solve table td { padding: 0.3mm 2mm 0.3mm 0; vertical-align: top; border: none; }
+  .ans { color: var(--green); font-weight: bold; }
+  .formula { text-align: center; font-size: 13pt; font-weight: bold; color: var(--blue); margin: 2mm 0; }
+  table.t1 { border-collapse: collapse; width: 100%; font-size: 9.3pt; margin: 2mm 0; page-break-inside: avoid; }
+  table.t1 th { background: var(--blue); color: #fff; padding: 1.2mm 1.6mm; text-align: left; }
+  table.t1 td { border: 1px solid var(--line); padding: 1.1mm 1.6mm; vertical-align: top; }
+  table.t1 tr:nth-child(even) td { background: #f6f8fb; }
+  .intro { background: linear-gradient(135deg, #e8f1fc, #f2ecfb); border-radius: 3mm; padding: 3mm 3.5mm; margin: 2mm 0 3mm; }
+  .map td { padding: 1mm 1.5mm; }
+  .small { font-size: 9pt; color: var(--muted); }
+  .pb { page-break-before: always; }
+  .cap { page-break-after: avoid; break-after: avoid; }
+  h2 { margin-top: 5mm; }
+  .check li { margin: 1.4mm 0; }
+  .pill { display: inline-block; background: var(--blue); color: #fff; border-radius: 10px; padding: 0 2.2mm; font-size: 8.5pt; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">🌡️</span> Physics Unit 7<br>Density aur Temperature</h1>
+<div class="sub">Aasan Notes, tumhari kitab ke saath saath (book pages 167 to 188)</div>
+
+<div class="intro">
+  <p><b>Assalam o alaikum Seemab!</b> Ye chapter abhi class mein nahin parhaya gaya, is liye ye notes tumhari kitab ke bilkul saath chalte hain: wahi headings aur wahi numbers (7.1, 7.2 ...). Kitab ki har line, har table, har figure aur har exercise ka jawab isi mein hai, kitab kholne ki zaroorat nahin (sirf page 170, 171, 186, 187 ki scan abhi aani hai, woh bhi jald add hongi).</p>
+  <p><b>Kaise parhna hai</b> (sirf 35 se 40 minute):</p>
+  <ol>
+    <li>Ek dafa aaram se poore notes parho. Ratna nahin, bas samajhna hai.</li>
+    <li>Phir sirf <b>neelay <span class="emoji">📖</span> boxes</b> dobara parho. Yehi definitions exam mein likhni hain, kitab ke English alfaaz mein.</li>
+    <li>Aakhir mein <b>"Khud ko check karo"</b> ke 12 sawal karo. 9 ya zyada sahi? Shabaash, tum paper ke liye tayyar ho!</li>
+  </ol>
+</div>
+
+<table class="map t1">
+  <tr><th colspan="2">Is chapter ka naqsha (5 hisse)</th></tr>
+  <tr><td><span class="emoji">🧱</span> Hissa 1</td><td>Density aur usay naapna (7.1, 7.2)</td></tr>
+  <tr><td><span class="emoji">🧊</span> Hissa 2</td><td>Matter ki states aur Plasma (7.3, 7.4)</td></tr>
+  <tr><td><span class="emoji">🔥</span> Hissa 3</td><td>Temperature, particles aur internal energy (7.5, 7.6)</td></tr>
+  <tr><td><span class="emoji">🌡️</span> Hissa 4</td><td>Thermometer kaise kaam karte hain, fixed points (7.8, 7.9)</td></tr>
+  <tr><td><span class="emoji">🔬</span> Hissa 5</td><td>Achha thermometer: sensitivity, range, linearity (7.10 to 7.12)</td></tr>
+</table>
+<p class="small">Note: kitab mein 7.7 number ka koi hissa nahin hai, 7.6 ke baad seedha 7.8 aata hai. Ye kitab ki numbering hai, tumse kuch nahin chhoota.</p>
+
+<div class="box def"><span class="t"><span class="emoji">🎯</span> Student Learning Outcomes (kitab p167): chapter ke baad tumhein ye aana chahiye</span>
+<ul>
+<li>Define and calculate density.</li>
+<li>Justify and illustrate how to determine the density of a substance.</li>
+<li>Describe, qualitatively, the particle structure of solids, liquids and gases.</li>
+<li>Describe plasma as a fourth state of matter.</li>
+<li>Describe the relationship between the motion of particles and temperature.</li>
+<li>State that an increase in the temperature of an object increases its internal energy.</li>
+<li>Explain, with examples, how a physical property which varies with temperature may be used for the measurement of temperature.</li>
+<li>Justify the need for fixed points in the calibration of thermometers.</li>
+<li>Illustrate what is meant by the sensitivity, range and linearity of thermometers.</li>
+<li>Differentiate between the structures and function of liquid-in-glass and of thermocouple thermometers.</li>
+<li>Analyze how the structure of a liquid-in-glass thermometer affects its sensitivity, range and linearity.</li>
+</ul>
+<span class="small">Chapter ke pehle page par thermometer ki tasveer ke saath sawal hai: "What is the highest recorded temperature on earth?" Kitab is ka jawab nahin deti; ye sirf soch jagane ke liye hai.</span>
+</div>
+<!-- ================= HISSA 1 ================= -->
+<h2><span class="emoji">🧱</span> Hissa 1: Density</h2>
+
+<h3>7.1 Density <span class="pg">(kitab p168)</span></h3>
+<p>Ek sawal socho: <b>1 kilo rui (cotton) zyada jagah gherti hai ya 1 kilo loha?</b> Wazan dono ka barabar hai, lekin rui ka bara sa dher hota hai aur loha ek chhota sa tukra. Kyun? Kyunke loha mein atoms bohat qareeb qareeb bhare hote hain (<b>closely packed</b>). Rui mein beech mein bohat khaali jagah hoti hai.</p>
+<p>Bas yehi density hai: <b>kisi cheez ki ek fixed jagah (volume) mein kitna maal (matter) bhara hua hai.</b></p>
+<p>Kitab ke alfaaz (p168): "Density of a material tells us how much matter a substance has in its unit volume. The substance which has more closely packed atoms, has more matter in a fix volume. Therefore, it is denser substance." Metals aur rocks jaise solids dense hain kyunke un mein atoms qareeb qareeb hain. Jin cheezon mein atoms door door hain un mein fixed volume mein maal kam hota hai, is liye woh kam dense hain; isi liye liquids aur gases solids se kam dense hain.</p>
+<p class="small"><b>Figure 7.1 (States of matter):</b> "Solids have more atoms per unit volume than liquids and gases, so solids are denser than liquids and gases." Tasveer mein solid ke balls ek doosre se chipke, liquid ke thore khule, gas ke door door.</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>Mass per unit volume of the substance is called its density.</q>
+</div>
+
+<div class="formula">Density = Mass / Volume &nbsp;&nbsp; ρ = m / V</div>
+<ul>
+  <li>ρ ko <b>"rho"</b> parhte hain. Ye density ka symbol hai.</li>
+  <li><b>SI unit: kg/m³</b> (kilogram per cubic metre). Chhota unit: <b>g/cm³</b>. Liquids ke liye aksar <b>g/mL</b>.</li>
+  <li>Density ek <b>scalar quantity</b> hai (sirf number aur unit, koi direction nahin).</li>
+  <li><b>Solids &gt; Liquids &gt; Gases.</b> Solids mein atoms sab se qareeb, gases mein sab se door. Is liye solids sab se dense aur gases sab se kam dense.</li>
+</ul>
+
+<div class="box trick"><span class="t"><span class="emoji">🔁</span> Unit badalne ki trick (kitab ka FYI box)</span>
+  <b>1 g/cm³ = 1000 kg/m³.</b> g/cm³ se kg/m³ banana ho to <b>1000 se multiply</b> karo.<br>
+  Kitab ki misal: "the density of petrol, 0.9 g/cm³, is multiplied by 1000 to write in units of kg/m³ as 900 kg/m³." Aur 1 mL = 1 cm³, is liye g/mL aur g/cm³ ek hi baat hai.<br><span class="small">Dhyan do: Table 7.1 mein petrol 800 kg/m³ likha hai; FYI box ne misal ke liye 0.9 liya hai. Table wala number yaad karo.</span>
+</div>
+
+<p class="cap"><b>Table 7.1: kuch cheezon ki density</b> (bhaari se halki tak, kg/m³):</p>
+<table class="t1">
+  <tr><th>Material</th><th>Density (kg/m³)</th><th>Material</th><th>Density (kg/m³)</th></tr>
+  <tr><td>Gold (sona)</td><td>19300</td><td>Ice (barf)</td><td>920</td></tr>
+  <tr><td>Mercury (paara)</td><td>13600</td><td>Polythene</td><td>900</td></tr>
+  <tr><td>Iron (loha)</td><td>7900</td><td>Petrol</td><td>800</td></tr>
+  <tr><td>Pure water</td><td>1000</td><td>Carbon dioxide</td><td>2.0</td></tr>
+  <tr><td></td><td></td><td>Air (hawa)</td><td>1.3</td></tr>
+</table>
+
+<div class="box eg"><span class="t"><span class="emoji">🏠</span> Roz ki misal</span>
+  Glass mein barf ka tukra hamesha upar kyun tairta (float) hai? Table dekho: <b>barf 920, paani 1000.</b> Barf paani se halki (kam dense) hai, is liye upar rehti hai. Aur carbon dioxide (2.0) hawa (1.3) se bhaari hai.
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">❓</span> Can you tell? (kitab p169)</span>
+"Write the followings in increasing order of densities: Hydrogen, milk, mercury, gold"<br>
+<b>Hydrogen &lt; milk &lt; mercury &lt; gold</b> (hydrogen gas hai, sab se halki; milk liquid, paani jaisa; mercury 13600; gold 19300).</div>
+<div class="box mcq"><span class="t"><span class="emoji">⭐</span> MCQ wali baatein</span>
+  <ul>
+    <li><b>Osmium</b> sab se zyada dense material hai (room temperature aur pressure par): <b>22.59 g/cm³</b>. Kitab kehti hai ye <b>diamond se bhi sakht (harder)</b> hai. <span class="small">(Asal science mein diamond sab se sakht cheez hai; lekin agar exam mein kitab ka ye sawal aaye to kitab wala jawab: osmium.)</span></li>
+    <li>Kisi cheez ka chhota tukra lo ya bara, <b>density same</b> rehti hai, kyunke density "unit volume" ka maal hai.</li>
+    <li>Temperature badle to density bhi badal jati hai (garam cheez phail jati hai, volume barh jata hai).</li>
+    <li><b>Liquids gases se zyada dense kyun?</b> Liquids mein particles qareeb hain; gases mein door door, is liye fixed volume mein maal kam.</li>
+  </ul>
+</div>
+
+<h3>7.2 Density kaise maloom karein <span class="pg">(kitab p169 to 173)</span></h3>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Zaroori</span>
+  Kitab ke <b>page 170 aur 171</b> (7.2 ka shuru wala hissa, aur liquids aur gases ki density) ki scan abhi hamare paas nahin. Photo milte hi ye hissa isi notes mein add ho jayega.
+</div>
+
+<p><b>7.2.1 Regular shape</b> (seedhi, pakki shakal, jaise cube ya eent): volume ruler se naap kar nikal lete hain.</p>
+<ul>
+  <li><b>Cube ka volume = (side length)³</b></li>
+  <li><b>Brick (eent) ka volume = length × width × height</b></li>
+  <li>Phir <b>ρ = m / V</b></li>
+</ul>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 7.1 (kitab p169): cube ki density</span>
+  Cube ki side 5 cm, mass 500 g. Density?
+  <table>
+    <tr><td><b>Given:</b></td><td>m = 500 g, side = 5 cm</td></tr>
+    <tr><td><b>Required:</b></td><td>ρ = ?</td></tr>
+    <tr><td><b>Solution:</b></td><td>V = (side)³ = (5 cm)³ = 125 cm³</td></tr>
+    <tr><td></td><td>ρ = m / V = 500 g / 125 cm³</td></tr>
+    <tr><td></td><td class="ans">ρ = 4 g/cm³</td></tr>
+  </table>
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 7.3 (kitab p172): eent (brick) ki density</span>
+  Mass 3.30 kg; length 21.6 cm, width 10.2 cm, height 6.35 cm.
+  <table>
+    <tr><td><b>Step 1:</b></td><td>cm ko metre mein: 0.216 m, 0.102 m, 0.0635 m</td></tr>
+    <tr><td><b>Step 2:</b></td><td>V = 0.216 × 0.102 × 0.0635 = 0.00140 m³</td></tr>
+    <tr><td><b>Step 3:</b></td><td>ρ = 3.3 kg / 0.00140 m³</td></tr>
+    <tr><td></td><td class="ans">ρ ≈ 2360 kg/m³</td></tr>
+  </table>
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Units milao!</span>
+  Mass <b>kg</b> mein hai to volume <b>m³</b> mein lo, jawab <b>kg/m³</b>. Mass <b>g</b> mein hai to volume <b>cm³</b> mein, jawab <b>g/cm³</b>. Kabhi kg ko cm³ se divide mat karna.
+</div>
+
+<p><b>7.2.2 Irregular shape</b> (tedhi meydhi shakal, jaise pathar): <b>displacement method</b>.</p>
+
+<div class="box eg"><span class="t"><span class="emoji">🐦</span> Pyaase kawwe ki kahani yaad hai?</span>
+  Kawwe ne ghade mein kankar daale aur paani upar aa gaya. Har kankar ne <b>apne volume jitna paani upar dhakel diya</b> (displace kiya). Displacement method bilkul yehi hai! (Ye kahani sirf samajhne ke liye hai, exam mein kitab ke steps likhne hain.)
+</div>
+
+<p>Kitab (p172): "We can find the density of irregular shaped solid objects like stones which can sink in the water. We need graduated <b>measuring cylinder</b> to measure volume and <b>balance</b> to measure mass of object."</p>
+<p class="cap"><b>Kitab ke 6 steps</b> (Figure 7.3: Finding volume of irregular shaped stone):</p>
+<ol>
+  <li>Pathar ka <b>mass</b> balance se naapo.</li>
+  <li>Measuring cylinder mein kuch paani daalo, <b>initial volume (Vi)</b> note karo.</li>
+  <li>Pathar ko <b>dhaage (thread)</b> se baandh kar aahista se cylinder mein utaaro.</li>
+  <li>Paani upar charh jayega (displace hoga). <b>Final volume (Vf)</b> note karo. Vf = paani ka volume + pathar ka volume.</li>
+  <li><b>Pathar ka volume = Vf − Vi</b></li>
+  <li><b>Density = mass / volume</b></li>
+</ol>
+<p class="small">Yaad rakho: ye method un cheezon ke liye hai jo paani mein <b>doob jayen</b> (sink) aur <b>ghulein nahin</b> (insoluble).</p>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 7.4 (kitab p173): pathar ki density</span>
+  Rock ka mass 80.52 g. Paani 18 mL se 46 mL par aa gaya.
+  <table>
+    <tr><td><b>Volume:</b></td><td>V = Vf − Vi = 46 mL − 18 mL = 28 mL = 28 cm³</td></tr>
+    <tr><td><b>Density:</b></td><td>ρ = 80.52 g / 28 cm³</td></tr>
+    <tr><td></td><td class="ans">ρ = 2.88 g/cm³</td></tr>
+  </table>
+</div>
+
+<p class="small"><span class="emoji">💪</span> Kitab ke saare 6 numericals (p188) poore hal ke saath notes ke aakhir mein "Kitab ki exercise" hisse mein hain.</p>
+
+<!-- ================= HISSA 2 ================= -->
+<h2><span class="emoji">🧊</span> Hissa 2: Matter ki states</h2>
+
+<h3>7.3 States of matter <span class="pg">(kitab p174, 175)</span></h3>
+<p>Kitab (p174): <b>"Matter exists in three fundamental states; solid, liquid and gas. Matter consists of particles (atoms and molecules). Gaps between these particles is the main reason that divides the matter in three states."</b> Particles ek doosre par attractive force lagate hain; is force ki taaqat ka farq hi particles ke darmiyan chhote ya bare gaps ki wajah hai, aur isi se un ki <b>densities</b> aur <b>particle motion ke patterns</b> bhi badalte hain.</p>
+<p>Har cheez chhote chhote <b>particles</b> (atoms aur molecules) se bani hai. Ye particles ek doosre ko kheenchte hain (<b>attractive force</b>). Ye force kitni mazboot hai, isi se faisla hota hai ke cheez solid hogi, liquid ya gas. Force mazboot = particles qareeb; force kamzor = particles door.</p>
+
+<div class="box eg"><span class="t"><span class="emoji">🏫</span> School ki misal (samajhne ke liye)</span>
+  <b>Solid</b> = assembly ki line mein khari larkiyan. Apni jagah se hil nahin saktin, bas wahin thora sa hilti julti (<b>vibrate</b>) hain.<br>
+  <b>Liquid</b> = break mein corridor. Sab qareeb qareeb hain, lekin ek doosre ke paas se guzar jati hain (<b>glide</b>).<br>
+  <b>Gas</b> = chhutti ke baad ground. Sab door door, tezi se har taraf bhaag rahi hain aur takra rahi hain.
+</div>
+
+<p class="cap"><b>Table 7.2: States of matter</b> (ye poori table yaad karo):</p>
+<table class="t1">
+  <tr><th></th><th>Solid</th><th>Liquid</th><th>Gas</th></tr>
+  <tr><td><b>Density</b></td><td>High</td><td>Medium</td><td>Low</td></tr>
+  <tr><td><b>Arrangement</b></td><td>Fixed positions</td><td>Random positions</td><td>Random positions</td></tr>
+  <tr><td><b>Movement</b></td><td>Vibrate around a fixed position</td><td>Move around each other</td><td>Move quickly in all directions</td></tr>
+  <tr><td><b>Energy</b></td><td>Low energy</td><td>Greater energy</td><td>Highest energy</td></tr>
+  <tr><td><b>2D diagram</b></td><td>Gole ek doosre se chipke, sab apni jagah thartharate</td><td>Gole ek doosre ko chhoote hue, aapas mein phisalte</td><td>Gole door door, seedhi lakeeron mein tez chalte</td></tr>
+</table>
+
+<p class="small"><b>Figure 7.4 (Motion of particles in different states):</b> (a) particles vibration about their mean position in solids; (b) particles move freely relative to each other in liquid; (c) particles move freely and quickly in gases. <b>Figure 7.5 (Particles):</b> different states of matter and arrangement of particles in each state: gas (vapours), liquid (water), solid (ice).</p>
+<p class="cap"><b>Kitab ke points, har state ke</b>:</p>
+<ul>
+  <li><b>Solids (7.3.1):</b> strong attractive force; particles closely packed, <b>fixed lattice pattern</b>; na gas ki tarah azad ghoom sakte na liquid ki tarah phisal sakte; sirf apni <b>mean position</b> ke gird vibrate karte hain; <b>fix shape</b>; high density.</li>
+  <li><b>Liquids:</b> force gases se zyada lekin solids se kam (<b>intermediate</b>); faasla solids se zyada lekin phir bhi qareeb; particles <b>flow and glide</b> over each other aur <b>apni jagah badalte rehte hain</b> ("Liquid particles keep changing their position"); koi fix shape nahin, <b>bartan (container) ki shakal</b> le leta hai; intermediate density.</li>
+  <li><b>Gases:</b> <b>negligibly weak</b> force; particles ka faasla un ke apne size se bohat zyada; <b>constant random motion</b>, aapas mein aur container ki deewaron se takrate rehte hain; force sirf takrane (collision) ke waqt; <b>na fix shape na fix volume</b>, poore container mein phail jati hai (volume = container ka volume); sab se kam dense.</li>
+</ul>
+
+<div class="box mcq"><span class="t"><span class="emoji">ℹ️</span> For your information (kitab p175)</span>
+"Particles in liquids move freely but stay at the bottom of the container due to a relatively strong attractive force, while in gases, particles spread, fill the container and move freely in it."<br>
+Yani liquid bartan ke neeche tik jata hai, gas poore bartan mein phail jati hai.</div>
+<div class="box mcq"><span class="t"><span class="emoji">⭐</span> Point to ponder (kitab p176)</span>
+  Liquids aur gases ki koi fixed shape nahin, dono beh (flow) sakte hain. Is liye dono ko mila kar <b>fluids</b> kehte hain.<br>
+  <b>Trick:</b> FLUID = jo Flow kare = Liquid + Gas. (Solid fluid nahin hai!)
+</div>
+
+<h3>7.4 Plasma: chauthi (fourth) state <span class="pg">(kitab p176, 177)</span></h3>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki baat: exam mein yehi likho</span>
+  <q>Plasma consists of positive ions, free electrons (negatively charged particles) and neutral atoms in gaseous state.</q>
+</div>
+
+<p><b>Plasma banta kaise hai?</b> Gas ko garam karte jao. Particles ki K.E. barhti jati hai, attractive force kam hoti jati hai, aur particles zor zor se takrate hain. Takkar se atoms ke <b>electrons alag ho jate hain</b> aur atom <b>positive ion</b> ban jata hai. Is <b>ionic state</b> ko plasma kehte hain. Free electrons aur moving ions ki wajah se plasma <b>current bohat achhi tarah conduct</b> karta hai.</p>
+<p class="small">Kitab: "There is lot of plasma in the universe." Plasma is gas that hot, bright and highly ionized; "these characteristics together makes it different from the gas".</p>
+<ul>
+  <li>Aksar <b>bohat high temperature</b>, ya <b>high pressure</b>, ya dono par banta hai. <b>High electric aur magnetic field</b> se bhi ban sakta hai.</li>
+  <li>Plasma = gas jo <b>hot, bright aur highly ionized</b> ho.</li>
+  <li><b>99% visible universe</b> plasma se bana hai.</li>
+</ul>
+
+<div class="box eg"><span class="t"><span class="emoji">⚡</span> Plasma kahan milta hai (Figure 7.6: examples of plasma from daily life, aur Figure 7.7: examples of plasma in nature)</span>
+  <b>Figure 7.6:</b> neon plasma tube light, welding arc plasma, plasma lamps. <b>Figure 7.7:</b> the Sun, nebula, aurora.<br>
+  <b>Sun</b> (stars plasma ki wajah se chamakte hain), <b>neon light</b>, <b>lightning</b> (aasmani bijli), <b>aurora</b> (north aur south poles par), <b>nebula</b>, <b>welding arc</b>, <b>plasma lamps</b>.<br>
+  Gali ke welding wale mistri ki neeli chamakti chingari dekhi hai? Wo welding arc plasma hai!
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">⭐</span> For your information (kitab p177)</span>
+  <b>Aurora (polar lights):</b> Sun ke charged particles upper atmosphere se takrate hain to aasman mein rangeen roshniyan nazar aati hain.<br>
+  <b>Nebula:</b> stars ke darmiyan dust aur gas ka bohat bara badal. Latin lafz, matlab "mist, fog". Is mein hydrogen aur ionized gases (plasma) hoti hain; andar ke garam stars inhein garam karte hain to laal, neeli, hari roshni nikalti hai.
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> 4 states yaad karne ki trick</span>
+  <b>S</b>olid, <b>L</b>iquid, <b>G</b>as, <b>P</b>lasma = "<b>S</b>ab <b>L</b>og <b>G</b>aram <b>P</b>akore" <span class="emoji">😄</span><br>
+  Aur yaad rakho: Plasma = <b>ionized state of matter</b>.
+</div>
+
+<!-- ================= HISSA 3 ================= -->
+<h2><span class="emoji">🔥</span> Hissa 3: Temperature aur particles</h2>
+
+<h3>7.5 Particles ki motion aur temperature <span class="pg">(kitab p177, 178)</span></h3>
+<div class="box eg"><span class="t"><span class="emoji">🍵</span> Kitab ki misal</span>
+  Pateele mein paani ke molecules hamesha hil rahe hote hain, lekin nazar nahin aate. Choolha jalao to paani garam ho kar us mein <b>harkat (currents)</b> nazar aane lagti hai. Garmi ne molecules ko tez kar diya!
+</div>
+
+<p class="cap">Kisi cheez ko garam karo to <b>do mein se ek</b> kaam hota hai:</p>
+<ol>
+  <li>Particles ke darmiyan attractive force kamzor ho kar <b>bonds toot</b> sakte hain (jaise <b>melting</b> aur <b>boiling</b> mein), ya</li>
+  <li>Particles <b>tez</b> ho jate hain, yani un ki <b>K.E. barh jati hai</b>.</li>
+</ol>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>The temperature of a substance is the measure of its hotness or coldness, and the temperature of a substance is directly proportional to the average K.E. of its particles.</q>
+</div>
+<p>Matlab: <b>particles jitne tez, cheez utni garam.</b> Garmi do: particles tez, temperature upar. Garmi nikalo (barf par rakho ya fridge mein): particles sust, temperature neeche.</p>
+
+<p><b>Absolute zero:</b> garmi nikalte jao to particles sust hote hote ek aisi haalat mein aa jate hain jahan un ke paas <b>least ya no K.E.</b> hoti hai. Na aapas mein takrate hain na container se, is liye <b>pressure = 0 Pa</b>.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+  <q>Absolute zero is the lowest possible temperature of a substance at which its particles have least kinetic energy.</q>
+</div>
+<div class="formula">Absolute zero = 0 K = −273.15 °C</div>
+<p class="small">Is se zyada thanda kuch ho hi nahin sakta. Absolute zero par particles ko hilane ke liye koi heat energy nahin hoti.</p>
+
+<p><b>Figure 7.8 ke do graphs:</b> (a) Kelvin temperature barhe to particles ki K.E. bhi barhe: <b>seedhi line</b> (straight line). (b) Gas ka pressure aur °C: line ko peeche barhao to <b>−273 °C par pressure zero</b> ho jata hai. Yehi absolute zero hai.</p>
+
+<div class="box mcq"><span class="t"><span class="emoji">⭐</span> Can you tell? (kitab p183): bohat pasandeeda sawal</span>
+  <b>Melting point aur boiling point par garmi dene ke bawajood temperature kyun nahin barhta?</b><br>
+  Kyunke us waqt garmi particles ke darmiyan <b>faasla barhane</b> (force kamzor karne) mein lagti hai taa ke <b>state badle</b>. Ye garmi K.E. barhane mein nahin lagti. K.E. nahin barhi to temperature bhi <b>same</b> rehta hai.
+</div>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki printing ghalti</span>
+  Is box ki aakhri line mein "temperature ... <b>does change</b>" chhapa hai. Asal mein "<b>does not change</b>" hai. Temperature melting aur boiling point par <b>nahin badalta</b>.
+</div>
+
+<h3>7.6 Internal energy <span class="pg">(kitab p178, 179)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>Internal energy is the total kinetic and potential energy of the particles of a substance.</q>
+</div>
+<ul>
+  <li><b>Potential energy</b> particles ke darmiyan <b>attractive force</b> ki wajah se hoti hai.</li>
+  <li><b>K.E. teen qism ki:</b> <b>translational</b> (seedha chalna), <b>rotational</b> (ghoomna), <b>vibrational</b> (thartharana).</li>
+  <li><b>Ideal gas</b> mein sirf translational K.E. hoti hai, is liye us ki internal energy <b>sirf K.E.</b> ki wajah se hai.</li>
+</ul>
+<div class="box def"><span class="t"><span class="emoji">📖</span> SLO wali line: zaroor yaad karo</span>
+  <q>By increasing the temperature of a substance, its internal energy also increases.</q>
+</div>
+<div class="box eg"><span class="t"><span class="emoji">💰</span> Misal (samajhne ke liye)</span>
+  Poori class ki "total pocket money" = har larki ke paise jama karo. Isi tarah <b>internal energy = har particle ki K.E. + P.E. ka total.</b> Garam karne se har particle ki K.E. barhi, to total bhi barh gaya.
+</div>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Teeno saath chalte hain</span>
+  <b>Temperature ↑ → K.E. ↑ → Internal energy ↑</b><br>
+  <span class="small">Ek exception yaad rakho: melting aur boiling ke waqt garmi dene se internal energy barhti hai lekin temperature same rehta hai (upar "Can you tell?" dekho).</span><br>
+  Kitab (p179): "A change in internal energy gives important information about the substance. For example, an increase in internal energy indicates an increase in temperature of the substance, which can be the result of energy given to particles by adding heat or by some other method."<br>
+<b>Kitab ka sawal:</b> "Can you name any method that can increase the internal energy of a substance without adding heat to it?" <b>Jawab:</b> us par <b>kaam (work) kar ke</b>, jaise dono haath zor se ragro (rubbing/friction): haath garam ho jate hain, garmi diye baghair.
+</div>
+
+<!-- ================= HISSA 4 ================= -->
+<h2><span class="emoji">🌡️</span> Hissa 4: Thermometer kaise kaam karte hain</h2>
+
+<h3>7.8 Physical properties se temperature naapna <span class="pg">(kitab p179, 180)</span></h3>
+<p>Garmi se particles tez hote hain, aur cheezon ki kuch <b>physical properties</b> ek pakke, pehle se maloom andaz (<b>predictable way</b>) mein badalti hain: <b>volume, pressure, colour, electrical resistance.</b> Inhi tabdeeliyon ko dekh kar temperature naapte hain.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+  The physical property on the basis of which a thermometer works is called its <b>thermometric property</b>.
+</div>
+
+<p><b>7.8.1 Liquids ka phailna (expansion):</b> zyada tar liquids garam ho kar phailte hain. Jo liquid <b>uniformly</b> (barabar) phailta hai woh thermometric material ban sakta hai: <b>mercury ya alcohol</b>. Thermometer garam cheez ko chhuye to mercury phailti hai, tube mein upar charhti hai, aur scale par reading aa jati hai. Mercury ka phailna temperature ke saath <b>linearly</b> badalta hai.</p>
+<div class="box eg"><span class="t"><span class="emoji">🤒</span> Roz ki misal</span>
+  Ammi jab bukhar check karti hain to thermometer mein chamakdaar line upar charhti hai. Wo mercury ka phailna hai!
+</div>
+
+<p class="cap"><b>7.8.2 Gas ka volume aur pressure:</b> gas garam ho to us ka volume aur pressure badal sakte hain. Gas thermometer <b>do qism</b> ke:</p>
+<ul>
+  <li><b>Constant volume gas thermometer:</b> volume same rakhte hain; <b>pressure</b> temperature ke saath directly proportional. Law: <b>Gay-Lussac's law</b>. Garam bulb mein gas ke particles zor se takrate hain, pressure barhta hai.</li>
+  <li><b>Constant pressure gas thermometer:</b> pressure same rakhte hain; <b>volume</b> temperature ke saath proportional. Law: <b>Charles's law</b>. Gas phail kar <b>piston</b> ko dhakelti hai.</li>
+  <li class="small">Constant volume wale mein "we touch the thermometer bulb with the body whose temperature is to be measured." Garam hone par gas ke particles ki K.E. barhti hai, woh aapas mein aur deewaron se zyada zor se takrate hain, is se pressure barhta hai, aur pressure ki ye tabdeeli temperature batati hai.</li>
+</ul>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Trick</span>
+  "<b>Charles ke paas PC hai</b>": <b>P</b>ressure <b>C</b>onstant = <b>Charles</b>'s law.<br>
+  Baqi bacha: Volume constant = <b>Gay-Lussac</b>'s law.
+</div>
+
+<p><b>7.8.3 Liquid crystals ka rang:</b> liquid crystal ek <b>plastic strip ya patch</b> mein band hota hai. Jism se lagao, temperature badle to <b>rang (colour) badalta</b> hai. Rang ko temperature scale se milao aur temperature maloom. Use: <b>fever thermometers, aquariums, baby bottles</b> (kitab mein bache ke maathe par strip ki tasveer hai).</p>
+<p class="small"><b>Figure 7.9 (Thermometers):</b> (a) mercury thermometer; (b) gas thermometer: gas ka bulb "bath or environment to be measured" mein, scale, mercury reservoir, flexible hose, aur mercury ki unchai h; (c) liquid crystal strip thermometer. Kitab: "There are also other thermometers for example resistance thermometers, bimetallic thermometers, thermocouple etc."</p>
+<p><b>7.8.4 Resistance thermometer / thermistor:</b> temperature badalne se is ki <b>resistance</b> (current ke raaste mein rukawat) badalti hai.</p>
+<p><b>7.8.5 Bimetallic strip thermometer:</b> <b>solid</b> (do metals ki patti) ke phailne se kaam karta hai.</p>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki ghalti (p180)</span>
+  7.8.5 ki line mein bimetallic strip aur thermocouple ki baat ghalti se aapas mein mil gayi hai. <b>Neeche wali Table 7.3 ka jora yaad karo, woh sahi hai.</b>
+</div>
+
+<p class="small"><b>Figure 7.10 (Types of thermometers):</b> (a) thermocouple thermometer; (b) bimetallic strip thermometer, thande (cold) aur garam (hot) haalat mein; garmi se patti mur jati hai aur sui (pointer) ghoomti hai.</p>
+<p class="cap"><b>Table 7.3: thermometer aur us ki thermometric property</b> (MCQs ke liye bohat zaroori):</p>
+<table class="t1">
+  <tr><th>Thermometric property</th><th>Thermometer</th></tr>
+  <tr><td>Volume expansion of a gas</td><td>Constant pressure gas thermometer</td></tr>
+  <tr><td>Volume expansion of a liquid</td><td>Laboratory or clinical thermometer</td></tr>
+  <tr><td>Volume expansion of a solid</td><td>Bi-metallic strip thermometer</td></tr>
+  <tr><td>Pressure change of a fixed mass of gas</td><td>Constant-volume gas thermometer</td></tr>
+  <tr><td>Changes in e.m.f</td><td>Thermocouple</td></tr>
+  <tr><td>Changes in electrical resistance</td><td>Resistance thermometer or thermistor</td></tr>
+</table>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Ulta jora yaad rakho</span>
+  Gas ka <b>volume</b> naap rahe ho? To <b>pressure</b> constant hai. Gas ka <b>pressure</b> naap rahe ho? To <b>volume</b> constant hai. Jo cheez naapte ho, woh <b>constant nahin</b> ho sakti!<br>
+  <b>Solid</b> phaile = <b>bimetallic</b>. <b>e.m.f / voltage</b> = <b>thermocouple</b>.
+</div>
+
+<h3>7.9 Fixed points (calibration) <span class="pg">(kitab p181, 182)</span></h3>
+<p>Socho tumhare paas ek ruler hai jis par koi nishan (marking) nahin. Kya us se kuch naap sakti ho? Nahin! Thermometer ka bhi yehi haal hai: <b>scale ke baghair thermometer "valueless" hai</b>. Theek scale banane ke liye <b>do fixed points</b> chahiye: neeche wala aur upar wala. Phir un ke beech ke faasle ko <b>barabar hisson (equal divisions)</b> mein baant dete hain.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+  <q>A fixed point is a standard degree of hotness or coldness.</q>
+</div>
+<ul>
+  <li>Fixed points ko <b>reference points</b> bhi kehte hain: <b>lower reference point</b> aur <b>upper reference point</b>.</li>
+  <li>Fixed points <b>accessible</b> (asaani se mil saken) aur <b>reproducible</b> (baar baar wahi aayen) hone chahiye.</li>
+  <li>Fixed points tay kiye baghair temperature <b>accurately</b> nahin naap sakte.</li>
+  <li><b>Lower reference point is a standard degree of coldness</b> = barf ke pighalne ka point (<b>ice point</b>): 0 °C, 32 °F, 273 K. <b>Upper reference point is standard degree of hotness</b> = paani ka boiling point (<b>steam point</b>): 100 °C, 212 °F, 373 K.</li>
+  <li class="small">Figure 7.11 (Fixed reference points): teen thermometers (Celsius, Fahrenheit, Kelvin) par steam point aur ice point ki lakeerein, aur beech mein 100, 180, 100 divisions.</li>
+</ul>
+<table class="t1">
+  <tr><th>Scale</th><th>Ice point (lower)</th><th>Steam point (upper)</th><th>Divisions</th></tr>
+  <tr><td>Celsius</td><td>0 °C</td><td>100 °C</td><td>100</td></tr>
+  <tr><td>Fahrenheit</td><td>32 °F</td><td>212 °F</td><td>180</td></tr>
+  <tr><td>Kelvin</td><td>273 K</td><td>373 K</td><td>100</td></tr>
+</table>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Trick</span>
+  <b>Divisions = upper − lower.</b> (100 − 0 = 100; 212 − 32 = 180; 373 − 273 = 100)<br>
+  <b>Kelvin = Celsius + 273.</b> Fahrenheit hi akela "ajeeb" hai: <b>32 se shuru, 212 par khatam, 180 hisse</b>.
+</div>
+
+<!-- ================= HISSA 5 ================= -->
+<h2><span class="emoji">🔬</span> Hissa 5: Achha thermometer kaisa hota hai</h2>
+
+<h3>7.10 Sensitivity, range aur linearity <span class="pg">(kitab p182, 183)</span></h3>
+<p><b>7.10.1 Sensitivity</b></p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+  <q>It is ability of a thermometer to detect small changes in temperature. We can say that it is smallest variation in temperature which a thermometer can measure.</q>
+</div>
+<ul>
+  <li>0.1 °C sensitivity wala thermometer 0.1 °C ki chhoti si tabdeeli bhi pakar leta hai. 1 °C wala, 1 °C se chhoti tabdeeli nahin naap sakta.</li>
+  <li>Sensitivity <b>least count</b> jaisi hai (analogous to least count).</li>
+  <li><b>Mercury thermometer sensitive</b> hota hai: room temperature ke paani mein garam paani ke chand qatre daalo, mercury foran upar.</li>
+</ul>
+<div class="box eg"><span class="t"><span class="emoji">💍</span> Misal (samajhne ke liye)</span>
+  Sunar (jeweller) ka taraazu aur sabzi wale ka taraazu. Sunar ka taraazu chhoti se chhoti tabdeeli bhi pakar leta hai, woh zyada "sensitive" hai.
+</div>
+
+<p><b>7.10.2 Range</b> <span class="small">(Figure 7.12: ek clinical thermometer ki tasveer)</span></p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+  <q>The range of a thermometer is the range of temperatures that it can measure. It is measured by the lowest and highest temperatures that the thermometer can measure.</q>
+</div>
+<ul>
+  <li><b>Clinical mercury thermometer: 35 °C to 42 °C</b> (Fahrenheit par <b>94 °F to 108 °F</b>).</li>
+  <li><b>Digital thermometer</b> ki range <b>wide</b> hai. Barf mein 0 °C aur ubalte paani mein 100 °C sahi dikhata hai. Isi tarah range check karte hain.</li>
+</ul>
+<p class="small"><span class="emoji">😄</span> Clinical thermometer sirf insani jism ke liye bana hai (35 se 42). Is se garam chai ka temperature mat naapna!</p>
+
+<p><b>7.10.3 Linearity</b></p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+  <q>Linearity tells us how equally and uniformly a thermometer shows the temperature variations.</q>
+</div>
+<ul>
+  <li>Scale par nishan <b>barabar faasle</b> par (equally spaced). 0 se 50 °C ka izafa aur 50 se 100 °C ka izafa, dono <b>same accuracy</b> se naape jayen.</li>
+  <li><b>Bimetallic thermometers linear</b> hote hain aur apni poori range mein barabar accuracy se naapte hain.</li>
+  <li><b>Kitab ka tajurba:</b> room temperature ke paani mein bimetallic thermometer rakho, phir paani ko aahista aahista garam karo. Thermometer aahista aahista respond karega aur us ki sui (pointer) chalegi.</li>
+</ul>
+<div class="box eg"><span class="t"><span class="emoji">🪜</span> Misal</span>
+  Seerhiyan: har seerhi ki unchai barabar ho to chadhna aasan hai. Thermometer ki "seerhiyan" (divisions) barabar hon, yehi linearity hai.
+</div>
+
+<h3>7.11 Liquid-in-glass aur thermocouple thermometers <span class="pg">(kitab p183, 184)</span></h3>
+<p>Kitab: "Liquid-in-glass thermometers and thermocouple thermometers are two different types of thermometers that are used to measure temperature."</p>
+<p><b>7.11.1 Liquid-in-glass:</b> lambi, patli glass tube, aakhir mein <b>bulb</b>; bulb mein <b>mercury ya alcohol</b>. Garam: liquid <b>phail kar</b> tube mein upar. Thanda: <b>sikur kar</b> neeche. Scale calibrated hota hai, liquid ki unchai se reading. Use: <b>ghar, school, laboratories</b>, aur kuch industries.</p>
+<p><b>Figure 7.14: parts of glass thermometer:</b> mercury bulb, <b>constriction (prevent back flow of mercury)</b>, capillary tube, column of mercury, scale lines, stem, expansion chamber. Constriction ek tang jagah hai jo mercury ko khud wapas bulb mein girne nahin deti, is liye reading ruki rehti hai.</p>
+<p><b>7.11.2 Thermocouple:</b> <b>do mukhtalif metals</b> ki taarein ek sire par juri hoti hain: ye <b>hot junction</b>. Doosre sire (<b>cold junctions</b>) voltmeter se jure hote hain. Hot junction garam ho to metals mein free electrons behte hain aur hot aur cold junction ke darmiyan <b>voltage</b> ban jata hai. Zyada garam = zyada voltage; thanda = kam voltage. Temperature ki tabdeeli voltage ki tabdeeli ke <b>linearly proportional</b> hai. Voltmeter ko calibrate kar dete hain taa ke voltage se temperature parha ja sake.</p>
+<p>Use: <b>furnaces, kilns, engines</b>, industrial equipment; <b>agriculture</b> mein mitti (soil) aur paani ka temperature. </p>
+<p class="small"><b>Figure 7.13 (Thermocouple thermometers):</b> do taarein, <b>Wire Type A</b> aur <b>Wire Type B</b>, ek sire par jud kar <b>Hot Junction</b> banati hain (neeche shola/garmi); doosre sire <b>Cold Junction</b> par copper lead wires se <b>MILLIVOLTS</b> meter tak jaate hain, jis par <b>829 °C / 1500 °F</b> dikhaya gaya hai. Saath mein ek digital thermocouple ki tasveer hai jis ke do probes (nokili taarein) hain.</p>
+
+<table class="t1">
+  <tr><th></th><th>Liquid-in-glass</th><th>Thermocouple</th></tr>
+  <tr><td><b>Structure</b></td><td>Glass tube + bulb (mercury/alcohol)</td><td>2 different metals ki wires: hot junction + cold junctions</td></tr>
+  <tr><td><b>Kaam</b></td><td>Liquid ka expansion aur contraction</td><td>Voltage (e.m.f) ka farq</td></tr>
+  <tr><td><b>Kahan</b></td><td>Ghar, school, lab</td><td>Furnaces, kilns, engines, industry, agriculture</td></tr>
+</table>
+
+<h3>7.12 Structure ka asar <span class="pg">(kitab p184, 185)</span></h3>
+<table class="t1">
+  <tr><th>Structure ki cheez</th><th>Kis par asar</th><th>Kaise</th></tr>
+  <tr><td>Tube ka diameter</td><td>Sensitivity</td><td><b>Patli (narrow)</b> capillary tube = zyada sensitive. Liquid kam, jaldi react kare, jaldi upar charhe.</td></tr>
+  <tr><td>Liquid ki qism</td><td>Sensitivity</td><td>Mercury aur alcohol paani se zyada phailte hain = zyada sensitive.</td></tr>
+  <tr><td>Bulb ka size</td><td>Range</td><td><b>Bara bulb</b> = zyada liquid phailne ke liye = large range.</td></tr>
+  <tr><td>Liquid ki qism</td><td>Range</td><td>Mercury: <b>melting point kam, boiling point zyada</b> = wide range. Kitab: "Liquids with a wider boiling point range will have a wider range than liquids with a narrower boiling point range."</td></tr>
+  <tr><td>Glass ki qism</td><td>Linearity</td><td>Glass apne <b>expansion and contraction</b>, <b>transparency, chemical stability, uniformity, durability</b> aur <b>thermal conductivity</b> ke zariye linearity par asar dalta hai. <b>Borosilicate glass</b> ka "linear expansion coefficient" zyada linear hai, is liye woh <b>soda lime glass</b> se zyada linear thermometer banata hai.</td></tr>
+</table>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Trick: "Nali, Bulb, Glass"</span>
+  <b>Patli Nali = Sensitive. Bara Bulb = Range. Borosilicate Glass = Linear.</b><br>
+  <span class="emoji">🥤</span> Straw socho: patli straw mein thora sa juice bhi kaafi upar charh jata hai. Yehi patli tube ki sensitivity hai.
+</div>
+
+<!-- ================= SUMMARY ================= -->
+<h2><span class="emoji">📝</span> Summary: kitab ke alfaaz mein yaad karo</h2>
+<div class="box def">
+  <ul>
+    <li>Density is mass per unit volume.</li>
+    <li>States of matter are four, which are named as Solids, Liquids, Gases and Plasma.</li>
+    <li>Plasma is called fourth state of matter which is the ionized state of matter.</li>
+    <li>Thermometry is the branch of physics, which deals with the measurements of temperature.</li>
+    <li>Temperature is the measure of degree of hotness or coldness of a body.</li>
+    <li>Thermometer is a device which is used to measure temperature.</li>
+    <li>Heat is the form of energy which is transferred from one body to another body due to the difference in temperature.</li>
+  </ul>
+</div>
+
+<p class="cap"><b>English alfaaz ki chhoti dictionary</b></p>
+<table class="t1">
+  <tr><td>closely packed</td><td>qareeb qareeb bhare hue</td><td>lattice</td><td>particles ka pakka jaal/pattern</td></tr>
+  <tr><td>vibrate</td><td>apni jagah thartharana</td><td>ionized</td><td>electrons alag ho gaye</td></tr>
+  <tr><td>displace</td><td>jagah se hataana</td><td>insoluble</td><td>jo ghule nahin</td></tr>
+  <tr><td>calibrate</td><td>sahi scale lagana</td><td>reproducible</td><td>baar baar wahi aaye</td></tr>
+  <tr><td>capillary tube</td><td>baal jaisi patli tube</td><td>junction</td><td>jahan taarein milti hain</td></tr>
+</table>
+
+<h2 class="pb"><span class="emoji">📚</span> Kitab ki exercise: sab ke jawab (p188)</h2>
+<p class="small">Kitab ke page 186 aur 187 (MCQs aur short questions) ki scan abhi hamare paas nahin. Photo milte hi un ke jawab bhi yahan add honge. Page 188 ke saare sawal neeche hal hain.</p>
+
+<p class="cap"><b>Long Response Questions (QIII): answer ke main points</b></p>
+<div class="box def"><span class="t">1. Define density. Describe methods to determine densities of regular and irregular-shaped solids, liquids and gases.</span>
+<ul>
+<li><b>Definition:</b> Mass per unit volume of the substance is called its density. ρ = m / V; SI unit kg/m³.</li>
+<li><b>Regular solid:</b> mass balance se naapo; volume dimensions se (cube = side³, brick = length × width × height); phir ρ = m / V.</li>
+<li><b>Irregular solid (displacement method):</b> mass naapo; measuring cylinder mein paani, initial volume Vi; pathar dhaage se utaaro, final volume Vf; volume = Vf − Vi; ρ = mass / volume. Sirf insoluble cheezon ke liye jo doob jayen.</li>
+<li><b>Liquids aur gases:</b> ye hissa kitab ke page 170, 171 par hai jis ki scan abhi nahin; photo milte hi add hoga.</li>
+</ul></div>
+<div class="box def"><span class="t">2. How would you distinguish between solids, liquids and gases on the basis of attractive forces between particles and the motion of particles?</span>
+<table class="t1">
+<tr><th></th><th>Solid</th><th>Liquid</th><th>Gas</th></tr>
+<tr><td>Attractive force</td><td>Strong</td><td>Weaker than solids, stronger than gases</td><td>Negligibly weak</td></tr>
+<tr><td>Gaps</td><td>Closely packed, fixed lattice</td><td>Greater than solids, still close</td><td>Large compared to particle size</td></tr>
+<tr><td>Motion</td><td>Vibrate about mean positions</td><td>Flow and glide over each other</td><td>Constant random motion, collide with each other and walls</td></tr>
+<tr><td>Shape/volume</td><td>Fixed shape</td><td>No fixed shape, takes container's shape</td><td>No fixed shape or volume</td></tr>
+</table></div>
+<div class="box def"><span class="t">3. Describe two different physical properties that vary with temperature and explain how these properties can be used to measure temperature.</span>
+<ul>
+<li><b>Expansion of a liquid:</b> mercury or alcohol expands uniformly when heated and rises in a thin glass tube; its position on the calibrated scale gives the temperature (liquid-in-glass thermometer).</li>
+<li><b>Pressure of a gas at constant volume:</b> heating makes gas particles collide more vigorously, so pressure increases; this change in pressure is used to measure temperature (constant volume gas thermometer, Gay-Lussac's law).</li>
+<li>Aur bhi likh sakti ho: colour of liquid crystals (liquid crystal strip), electrical resistance (thermistor), e.m.f (thermocouple).</li>
+</ul></div>
+<div class="box def"><span class="t">4. Describe the construction and working of different types of gas thermometers.</span>
+<ul>
+<li><b>Constant volume gas thermometer</b> (Figure 7.9 b): gas ka bulb us cheez (bath) mein jis ka temperature naapna hai; bulb ek tube se mercury ke saath juri, mercury reservoir flexible hose se juri, aur scale se mercury ki unchai (h) naapi jati hai. Volume constant rakha jata hai; temperature barhne par gas particles ki K.E. barhti hai, woh zyada zor se takrate hain, pressure barhta hai. Pressure temperature ke directly proportional (Gay-Lussac's law).</li>
+<li><b>Constant pressure gas thermometer:</b> pressure constant; gas garam ho kar phailti hai aur piston ko dhakelti hai; volume ki tabdeeli se temperature (Charles's law).</li>
+</ul></div>
+<div class="box def"><span class="t">5. Analyze how the structure of a liquid-in-glass thermometer can be modified to improve its performance.</span>
+<ul>
+<li><b>Narrow capillary tube</b> → more sensitive (small volume of liquid reacts quickly and rises quickly).</li>
+<li><b>Mercury or alcohol</b> (expand more than water) → more sensitive.</li>
+<li><b>Larger bulb</b> → more liquid to expand → larger range.</li>
+<li><b>Mercury</b> (low melting point, high boiling point) → wide range.</li>
+<li><b>Borosilicate glass</b> instead of soda lime glass → more linear.</li>
+</ul></div>
+
+<p class="cap"><b>Numerical Response Questions (QIV): poore hal</b></p>
+<div class="solve"><span class="t">1. Wooden block: 300 g, 150 cm³. Metal ball: 500 g, 50 cm³. Density of each, and which is denser?</span>
+Wooden block: ρ = 300 / 150 = <span class="ans">2 g/cm³</span>. Metal ball: ρ = 500 / 50 = <span class="ans">10 g/cm³</span>. <b>Metal ball zyada dense hai.</b></div>
+<div class="solve"><span class="t">2. 500 mL cooking oil, mass 450 g. Density in g/mL?</span>
+ρ = 450 g / 500 mL = <span class="ans">0.9 g/mL</span> (paani 1 g/mL se kam, is liye tel paani par tairta hai).</div>
+<div class="solve"><span class="t">3. Plastic box 70 cm × 10 cm × 30 cm, mass 2500 g. Density of plastic?</span>
+V = 70 × 10 × 30 = 21000 cm³. ρ = 2500 / 21000 = 0.119 ≈ <span class="ans">0.12 g/cm³</span></div>
+<div class="solve"><span class="t">4. Aluminium density 2700 kg/m³. Mass of a solid aluminium ball of diameter 25 cm?</span>
+Sphere (gend) ka volume: <b>V = (4/3) π r³</b>. Radius = diameter / 2 = 12.5 cm = 0.125 m.<br>
+V = (4/3) × 3.14 × (0.125)³ = (4/3) × 3.14 × 0.001953 = 0.00818 m³<br>
+m = ρ × V = 2700 × 0.00818 = 22.1 ≈ <span class="ans">22 kg</span></div>
+<div class="solve"><span class="t">5. Iron cube, side 10 cm, mass half kilogram, has a cavity inside. Volume of cube? Volume of cavity?</span>
+Cube ka volume = 10³ = <span class="ans">1000 cm³</span>. Mass = 0.5 kg = 500 g.<br>
+Iron ki density (Table 7.1) = 7900 kg/m³ = 7.9 g/cm³. Asal iron ka volume = 500 / 7.9 = 63.3 cm³.<br>
+Cavity = 1000 − 63.3 = <span class="ans">936.7 cm³</span><br>
+<span class="small">Kitab ka jawab 935.9 cm³ hai; woh iron ko 7.8 g/cm³ le kar aata hai (500 / 7.8 = 64.1). Dono tareeqe sahi hain, bas jo density lo woh likh do.</span></div>
+<div class="solve"><span class="t">6. Stone 200 g; water level rises from 40 mL to 73 mL. Volume and density?</span>
+V = 73 − 40 = <span class="ans">33 mL</span>. ρ = 200 / 33 = 6.06 ≈ <span class="ans">6.1 g/mL</span></div>
+<!-- ================= CHECK ================= -->
+<h2 class="pb"><span class="emoji">✅</span> Khud ko check karo (12 sawal)</h2>
+<p class="small">Pehle khud jawab socho ya notebook mein likho, phir agle page par check karo.</p>
+<ol class="check">
+  <li>Density ka SI unit kya hai?</li>
+  <li>2.5 g/cm³ ko kg/m³ mein likho.</li>
+  <li>Cube ki side 2 cm, mass 40 g. Density kitni?</li>
+  <li>Pathar ka mass 60 g. Paani 30 mL se 50 mL par aa gaya. Pathar ki density?</li>
+  <li>Barf paani par kyun tairti hai? (Table 7.1 ke numbers se batao.)</li>
+  <li>Kis state mein particles sirf apni fixed position ke gird vibrate karte hain?</li>
+  <li>Liquids aur gases ko mila kar kya kehte hain?</li>
+  <li>Absolute zero Celsius mein kitna hai?</li>
+  <li>Constant volume gas thermometer kis law par kaam karta hai?</li>
+  <li>Thermometer ko zyada sensitive banana ho to capillary tube kaisi honi chahiye?</li>
+  <li>Fahrenheit scale par ice point aur steam point ke darmiyan kitne divisions hain?</li>
+  <li>Thermocouple ki thermometric property kya hai?</li>
+</ol>
+
+<div class="box eg"><span class="t"><span class="emoji">🎥</span> Agar kuch samajh na aaye (optional)</span>
+  NBF Physics 9 Unit 7 short questions ki video: youtube.com/watch?v=PHh4-85H4E4<br>
+  <span class="small">Notes kaafi hain; video sirf tab dekho jab koi hissa mushkil lage.</span>
+</div>
+
+<h2 class="pb"><span class="emoji">🔑</span> Jawab</h2>
+<ol class="check">
+  <li><b>kg/m³</b> (kilogram per cubic metre)</li>
+  <li>2.5 × 1000 = <b>2500 kg/m³</b></li>
+  <li>V = 2³ = 8 cm³; ρ = 40 / 8 = <b>5 g/cm³</b></li>
+  <li>V = 50 − 30 = 20 mL = 20 cm³; ρ = 60 / 20 = <b>3 g/cm³</b></li>
+  <li>Barf ki density <b>920 kg/m³</b>, paani ki <b>1000 kg/m³</b>. Barf kam dense hai, is liye upar tairti hai.</li>
+  <li><b>Solid</b></li>
+  <li><b>Fluids</b></li>
+  <li><b>−273.15 °C</b> (yani 0 K)</li>
+  <li><b>Gay-Lussac's law</b> (pressure temperature ke directly proportional, volume constant)</li>
+  <li><b>Patli (narrow / small diameter)</b></li>
+  <li><b>180 divisions</b> (212 − 32)</li>
+  <li><b>Changes in e.m.f</b> (voltage)</li>
+</ol>
+<div class="intro">
+  <p><b>Score dekho:</b></p>
+  <ul>
+    <li><b>10 se 12 sahi:</b> zabardast! <span class="emoji">🌟</span> Tum paper ke liye bilkul tayyar ho.</li>
+    <li><b>7 se 9 sahi:</b> bohat achha! Jo ghalat hue, sirf un ka hissa notes mein dobara dekh lo.</li>
+    <li><b>7 se kam:</b> koi baat nahin. Notes ek dafa aur aaram se parho, doosri dafa hamesha aasan lagta hai. <span class="emoji">💪</span></li>
+  </ul>
+  <p>Ye chapter class mein abhi nahin hua, is liye agar paper mein kuch mushkil lage to ghabrana nahin. Maqsad sirf ye dekhna hai ke kya dobara samjhana hai.</p>
+</div>
+
+</body>
+</html>

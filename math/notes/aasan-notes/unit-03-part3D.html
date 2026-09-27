@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Maths Unit 3 Part 3C Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 5mm 5mm 5mm 5mm; }
+  :root {
+    --ink:#1f2430; --muted:#5b6475;
+    --blue:#1d5fa8; --blue-bg:#e8f1fc;
+    --green:#1e7a4a; --green-bg:#e7f6ee;
+    --yellow:#8a6200; --yellow-bg:#fff6d8;
+    --purple:#6a3fa0; --purple-bg:#f2ecfb;
+    --red:#a8202a; --red-bg:#fdecec;
+    --line:#d7dce5;
+  }
+  * { box-sizing:border-box; }
+  body { font-family:"Noto Sans","DejaVu Sans",sans-serif; color:var(--ink); font-size:8.55pt; line-height:1.235; margin:0; }
+  .emoji { font-family:"Noto Color Emoji"; font-style:normal; }
+  h1 { font-size:13.2pt; color:var(--blue); margin:0 0 0.6mm; line-height:1.12; }
+  .sub { color:var(--muted); font-size:8.3pt; margin-bottom:1.6mm; }
+  h2 { font-size:9.7pt; color:#fff; background:var(--blue); padding:0.8mm 2.2mm; border-radius:1.7mm; margin:1.5mm 0 0.9mm; page-break-after:avoid; }
+  h2 .pg { font-size:8.2pt; font-weight:normal; opacity:.9; }
+  p { margin:0.6mm 0; }
+  ul { margin:0.6mm 0 0.8mm; padding-left:4.6mm; }
+  li { margin:0.3mm 0; }
+  b.m { font-family:"DejaVu Serif",serif; font-weight:bold; }
+  .box { border-radius:1.6mm; padding:1mm 2mm; margin:0.8mm 0; page-break-inside:avoid; }
+  .box .t { font-weight:bold; font-size:8.6pt; display:block; margin-bottom:0.4mm; }
+  .def { background:var(--blue-bg); border-left:3px solid var(--blue); }
+  .def .t { color:var(--blue); }
+  .eg { background:var(--green-bg); border-left:3px solid var(--green); }
+  .eg .t { color:var(--green); }
+  .trick { background:var(--yellow-bg); border-left:3px solid #e0a800; }
+  .trick .t { color:var(--yellow); }
+  .mcq { background:var(--purple-bg); border-left:3px solid var(--purple); }
+  .mcq .t { color:var(--purple); }
+  .warn { background:var(--red-bg); border-left:3px solid var(--red); }
+  .warn .t { color:var(--red); }
+  table.t1 { border-collapse:collapse; width:100%; table-layout:fixed; font-size:8.4pt; margin:0.8mm 0; }
+  table.t1 tr { page-break-inside:avoid; }
+  table.t1 th { background:var(--blue); color:#fff; padding:0.7mm 1.3mm; text-align:left; font-size:8.5pt; font-weight:bold; }
+  table.t1 td { border:1px solid var(--line); padding:0.7mm 1.3mm; vertical-align:top; }
+  table.t1 tr:nth-child(even) td { background:#f6f8fb; }
+  .fml { font-family:"DejaVu Serif",serif; }
+  .ans { color:var(--green); font-weight:bold; }
+  .small { font-size:8.1pt; color:var(--muted); }
+  .ne { font-family:"DejaVu Sans","Liberation Sans",sans-serif; }
+  .flex { display:flex; gap:2.4mm; align-items:flex-start; }
+  ol.q { margin:0.6mm 0 0; padding-left:4.8mm; font-size:8.5pt; }
+  ol.q li { margin:0.9mm 0; }
+  svg { display:block; }
+  del { color:#a8202a; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">🎯</span> Maths Unit 3, Part 3D: Ordered pairs, Cartesian product aur Relations</h1>
+<div class="sub">Aasan Notes for Seemab &middot; kitab ke page 60 se 66 tak &middot; practice: Exercise 3.3 aur Exercise 3.4</div>
+
+<p><b>Pehle ek sawal.</b> Do jama paanch barabar saat, aur paanch jama do bhi barabar saat. Dono ek jaise. Lekin agar main likhoon <b>(2, 5)</b> aur <b>(5, 2)</b>, to ye do bilkul alag cheezein hain. Aisa kyun? Zara socho, jawab is note ke aakhir mein khud de dogi.</p>
+
+<h2><span class="emoji">📍</span> 1. Ordered Pair <span class="pg">(p60)</span></h2>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+<q>Pairs of two numbers in which order of numbers is not invertible, is called an ordered pair.</q>
+Numbers <b>chhote bracket</b> mein likhe jate hain aur beech mein <b>comma</b> hota hai.</div>
+<p>Jaise <b class="fml">(a, 5)</b> mein <b>a</b> ko <i>first element</i> kehte hain aur <b>5</b> ko <i>second element</i>. Elements ki jagah badal do to poora ordered pair hi badal jata hai.</p>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Isay yaad rakhne ka asaan tareeqa</span>
+Ghar ka pata socho: <b>gali number 2, makaan number 5</b>. Ab ulta kar do: gali 5, makaan 2. Bilkul doosra ghar, doosre mohalle mein. Number wohi do hain, magar <b>tarteeb</b> badalte hi jagah badal gayi.<br>
+Kitab yehi baat geometry se kehti hai: <q>As in geometry, position of a point is determined by ordered pair, therefore (2, 5) and (5, 2) represent two different points.</q> Yani <b class="fml">(2, 5) &ne; (5, 2)</b>.</div>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Equality of Two Ordered Pairs</span>
+Do ordered pairs <b class="fml">(a, b)</b> aur <b class="fml">(c, d)</b> tabhi barabar hote hain jab:
+<b class="fml">a = c</b> <b>aur</b> <b class="fml">b = d</b>. Yani pehla pehle ke barabar, doosra doosre ke barabar.</div>
+
+<div class="box eg"><span class="t"><span class="emoji">✏️</span> Example 15 (p60)</span>
+Find the values of <b class="fml">x</b> and <b class="fml">y</b> when <b class="fml">(x &minus; 3y, 5x + 1) = (4, 6)</b>.<br>
+<b>Solution.</b> Equality of ordered pairs se do alag equations bante hain:<br>
+<b class="fml">x &minus; 3y = 4</b> &nbsp;(i) &nbsp;&nbsp; aur &nbsp;&nbsp; <b class="fml">5x + 1 = 6</b> &nbsp;(ii)<br>
+(ii) se: <b class="fml">5x = 6 &minus; 1 = 5</b>, to <b class="fml">x = 1</b>.<br>
+Ab <b class="fml">x = 1</b> ko (i) mein rakho: <b class="fml">1 &minus; 3y = 4</b> &rarr; <b class="fml">&minus;3y = 3</b> &rarr; <b class="ans">y = &minus;1</b>.<br>
+<span class="small">Do unknowns ke liye do equations: yehi is sawal ki poori chaal hai.</span></div>
+
+<h2><span class="emoji">✖️</span> 2. Cartesian Product of Sets <span class="pg">(p61, p62)</span></h2>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+Agar A aur B do non-empty sets hain to Cartesian product:
+<b class="fml">A &times; B = {(x, y) | x &isin; A &and; y &isin; B}</b><br>
+Aur isi tarah <b class="fml">B &times; A = {(y, x) | y &isin; B &and; x &isin; A}</b>.</div>
+<p>Matlab: A ka <b>har</b> element B ke <b>har</b> element ke saath ek jora banata hai. Canteen ka menu socho: teen tarah ke sandwich aur do drinks. Har sandwich har drink ke saath chal sakta hai, to kul <b>3 &times; 2 = 6</b> alag deals banti hain. Bas yehi Cartesian product hai.</p>
+<div class="box eg"><span class="t"><span class="emoji">✏️</span> Kitab ki misal (p61)</span>
+A = {0, 1, 2}, B = {3, 4}<br>
+<b class="fml">A &times; B = {(0,3), (0,4), (1,3), (1,4), (2,3), (2,4)}</b> &nbsp; (6 pairs)<br>
+<b class="fml">B &times; A = {(3,0), (3,1), (3,2), (4,0), (4,1), (4,2)}</b> &nbsp; (6 pairs)<br>
+<b>Ghor karo:</b> dono mein 6 pairs hain, magar <b>A &times; B aur B &times; A ek jaise nahin hain</b>, kyunke har jore ki tarteeb ulti hai.</div>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Teen pakke formulay (Key Facts, p62)</span>
+<ul>
+<li><b class="fml">n(A &times; B) = n(A) &times; n(B)</b> &nbsp; Pairs ginne ke liye elements multiply kar do, likhne ki zaroorat nahin.</li>
+<li><b class="fml">A &times; B = &empty;</b> agar A ya B mein se koi bhi khaali ho.</li>
+<li><b>A &times; B ke subsets ki tadaad</b> = <b class="fml">2<sup>n(A&times;B)</sup></b></li>
+</ul></div>
+
+<h2><span class="emoji">🔗</span> 3. Binary Relation <span class="pg">(p63)</span></h2>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+<q>A binary relation R in the set A &times; B is a subset of the Cartesian product A &times; B.</q><br>
+Yani <b class="fml">R</b> relation hai <b>agar aur sirf agar</b> <b class="fml">R &sube; A &times; B</b>.</div>
+<p>Cartesian product <b>saaray</b> mumkin joray banata hai. Relation un mein se sirf <b>woh joray chunta hai jo kisi shart par poore utarte hain</b>. Samajhne ka tareeqa: A &times; B poori class ki list hai, aur R woh list hai jis par likha ho "sirf woh larkiyan jo cricket khelti hain". R hamesha A &times; B ke andar hi rahegi.</p>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Relations ginne ka formula</span>
+<b>Number of binary relations in A &times; B</b> = <b class="fml">2<sup>n(A&times;B)</sup></b><br>
+Wajah: har jora ya to R mein hoga ya nahin hoga, yani har jore par do choices.</div>
+<div class="box eg"><span class="t"><span class="emoji">✏️</span> Example 17 aur 18 (p63)</span>
+<b>17.</b> A = {5, 10, 15, 20, 25}. n(A) = 5, to n(A &times; A) = 5 &times; 5 = 25.<br>
+Number of binary relations in A = <b class="fml">2<sup>25</sup></b>.<br>
+<b>18.</b> P = {2, 3}, Q mein bhi 2 elements. n(P &times; Q) = 2 &times; 2 = 4.<br>
+Number of binary relations = <b class="fml">2<sup>4</sup> = 16</b>.</div>
+<div class="box eg"><span class="t"><span class="emoji">✏️</span> Example 19 (p63), shart lagana</span>
+A = {1, 2, 3}, B = {0, 1, 3}, aur R = {(a, b) | a &isin; A, b &isin; B <b>aur a &gt; b</b>}.<br>
+Pehle poora A &times; B likho (9 joray), phir un mein se sirf woh chuno jahan pehla number doosre se bara ho:<br>
+<b class="fml">R = {(1,0), (2,0), (2,1), (3,0), (3,1)}</b><br>
+<span class="small">Tareeqa hamesha yehi: pehle saaray joray, phir shart ki chhanni.</span></div>
+
+<h2><span class="emoji">📥</span> 4. Domain aur Range <span class="pg">(p64, p65)</span></h2>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Yaad rakhne ka usool</span>
+<b>Domain of R</b> = saaray <b>pehle</b> elements ka set. &nbsp;&nbsp; <b>Range of R</b> = saaray <b>doosray</b> elements ka set.</div>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Do lafz jo kabhi nahin bhoologi</span>
+<b>D</b>omain = <b>D</b>aayen wala nahin, <b>pehla</b> wala. Sochne ka asaan tareeqa: ordered pair <b>(input, output)</b> hai. Jo andar jata hai wo <b>Domain</b>, jo bahar aata hai wo <b>Range</b>.</div>
+<div class="box eg"><span class="t"><span class="emoji">✏️</span> Example 20(c) (p65)</span>
+E = {2, 4, 6}, F = {0, 1, 2}, R&#8322; = {(x, y) | x &isin; E, y &isin; F <b>aur x + y = 6</b>}<br>
+E &times; F ke 9 joray banao, phir sirf woh rakho jinka total 6 ho:<br>
+<b class="fml">R&#8322; = {(4, 2), (6, 0)}</b><br>
+<b class="fml">Dom R&#8322; = {4, 6}</b> &nbsp;aur&nbsp; <b class="fml">Range R&#8322; = {0, 2}</b></div>
+
+<h2><span class="emoji">🔄</span> 5. Inverse Relation <span class="pg">(p65, p66)</span></h2>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+Agar <b class="fml">R = {(a, b) | a &isin; A, b &isin; B}</b> ek relation hai A se B tak, to iska inverse:<br>
+<b class="fml">R<sup>&minus;1</sup> = {(b, a) | b &isin; B, a &isin; A}</b><br>
+Yani <b>har jore ko ulta likh do</b>. Bas itni si baat.</div>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Do natije jo imtihan mein aksar poochhe jate hain</span>
+<b class="fml">Dom R<sup>&minus;1</sup> = Range R</b> &nbsp;&nbsp; aur &nbsp;&nbsp; <b class="fml">Range R<sup>&minus;1</sup> = Dom R</b><br>
+Samajhna asaan hai: jab har jora ulta ho gaya to jo pehle bahar aa raha tha wo ab andar ja raha hai.</div>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Sab se aam ghalti</span>
+<b class="fml">(a, b)</b> ko <b class="fml">(b, a)</b> likh dena jab sawal ne kaha hi nahin. Inverse sirf tab lo jab sawal mein <b>R<sup>&minus;1</sup></b> ya lafz <b>inverse</b> likha ho. Aur Key Fact yaad rakho (p62): <q>The ordered pair (a, b) cannot be written as (b, a).</q></div>
+
+<h2><span class="emoji">💡</span> Ab shuru wala sawal</h2>
+<p>Do jama paanch aur paanch jama do barabar hain kyunke <b>jorne mein tarteeb ki koi ahmiyat nahin</b>. Lekin <b>(2, 5)</b> aur <b>(5, 2)</b> jama nahin hain, ye <b>jagah</b> bata rahe hain: ek gali 2 makaan 5, doosra gali 5 makaan 2. Isi liye kitab kehti hai ke ye do alag points hain. <b>Jahan tarteeb maayne rakhti ho, wahan bracket aur comma lagta hai.</b></p>
+
+<div class="box mcq"><span class="t"><span class="emoji">🧪</span> Quiz</span>
+Ye teeno sawal tumhare Maths paper mein bhi aayenge, is liye inhein achhi tarah karo.
+<ol class="q">
+<li>Find the values of <b class="fml">x</b> and <b class="fml">y</b> when <b class="fml">(2x + 1, y &minus; 4) = (7, 3)</b>. Pehle equality of ordered pairs ka usool likho, phir dono equations hal karo.</li>
+<li>Let <b class="fml">A = {1, 2}</b> and <b class="fml">B = {3, 4, 5}</b>. (i) Write <b class="fml">A &times; B</b> in tabular form. (ii) Using the formula, state <b class="fml">n(A &times; B)</b>. (iii) How many binary relations are there in <b class="fml">A &times; B</b>?</li>
+<li>Let <b class="fml">C = {2, 4, 6}</b>, <b class="fml">D = {4, 6, 8}</b> and <b class="fml">R = {(x, y) | x &isin; C, y &isin; D &and; y = x + 2}</b>. Write <b class="fml">R</b> in tabular form, then find <b class="fml">Dom R</b>, <b class="fml">Range R</b> and <b class="fml">R<sup>&minus;1</sup></b>.</li>
+</ol></div>
+
+<!--
+ANSWER KEY. NOT PRINTED IN HER PDF. Kept here for marking and for building her paper.
+
+Q1. Equality of ordered pairs: (a,b)=(c,d) iff a=c and b=d.
+    2x + 1 = 7  =>  2x = 6  =>  x = 3
+    y - 4 = 3   =>  y = 7
+    Answer: x = 3, y = 7.
+
+Q2. (i) A x B = {(1,3), (1,4), (1,5), (2,3), (2,4), (2,5)}
+    (ii) n(A x B) = n(A) x n(B) = 2 x 3 = 6
+    (iii) Number of binary relations = 2^n(AxB) = 2^6 = 64
+
+Q3. C x D has 9 pairs; keep only those with y = x + 2:
+    R = {(2,4), (4,6), (6,8)}
+    Dom R = {2, 4, 6}   Range R = {4, 6, 8}
+    R^-1 = {(4,2), (6,4), (8,6)}
+    Check: Dom R^-1 = {4,6,8} = Range R, and Range R^-1 = {2,4,6} = Dom R.
+-->
+
+</body>
+</html>

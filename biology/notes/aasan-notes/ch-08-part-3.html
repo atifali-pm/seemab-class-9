@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Biology Chapter 8 Part 3 Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 9mm 9mm 10mm 9mm; }
+  :root {
+    --ink: #1f2430; --muted: #5b6475;
+    --blue: #1d5fa8; --blue-bg: #e8f1fc;
+    --green: #1e7a4a; --green-bg: #e7f6ee;
+    --yellow: #8a6200; --yellow-bg: #fff6d8;
+    --red: #a8322a; --red-bg: #fdecea;
+    --purple: #6a3fa0; --purple-bg: #f2ecfb;
+    --line: #d7dce5;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 10.2pt; line-height: 1.45; margin: 0; }
+  .emoji { font-family: "Noto Color Emoji"; font-style: normal; }
+  h1 { font-size: 19pt; color: var(--blue); margin: 0 0 2mm; line-height: 1.2; }
+  .sub { color: var(--muted); font-size: 10pt; margin-bottom: 4mm; }
+  h2 { font-size: 14pt; color: #fff; background: var(--blue); padding: 2.2mm 3.5mm; border-radius: 3mm; margin: 6mm 0 3mm; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: var(--blue); margin: 5mm 0 1.5mm; border-bottom: 1.5px solid var(--line); padding-bottom: 1mm; page-break-after: avoid; }
+  h3 .pg { font-size: 8.5pt; color: var(--muted); font-weight: normal; }
+  p { margin: 1.5mm 0; }
+  ul, ol { margin: 1mm 0 1.5mm; padding-left: 6mm; }
+  li { margin: 0.6mm 0; }
+  .box { border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .box .t { font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .def { background: var(--blue-bg); border-left: 4px solid var(--blue); }
+  .def .t { color: var(--blue); }
+  .def q { font-weight: 600; quotes: "\201C" "\201D"; }
+  .eg { background: var(--green-bg); border-left: 4px solid var(--green); }
+  .eg .t { color: var(--green); }
+  .trick { background: var(--yellow-bg); border-left: 4px solid #e0a800; }
+  .trick .t { color: var(--yellow); }
+  .warn { background: var(--red-bg); border-left: 4px solid var(--red); }
+  .warn .t { color: var(--red); }
+  .mcq { background: var(--purple-bg); border-left: 4px solid var(--purple); }
+  .mcq .t { color: var(--purple); }
+  .solve { border: 1.5px dashed var(--green); border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .solve .t { color: var(--green); font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .solve table td { padding: 0.3mm 2mm 0.3mm 0; vertical-align: top; border: none; }
+  .ans { color: var(--green); font-weight: bold; }
+  .formula { text-align: center; font-size: 13pt; font-weight: bold; color: var(--blue); margin: 2mm 0; }
+  table.t1 { border-collapse: collapse; width: 100%; font-size: 9.3pt; margin: 2mm 0; page-break-inside: avoid; }
+  table.t1 th { background: var(--blue); color: #fff; padding: 1.2mm 1.6mm; text-align: left; }
+  table.t1 td { border: 1px solid var(--line); padding: 1.1mm 1.6mm; vertical-align: top; }
+  table.t1 tr:nth-child(even) td { background: #f6f8fb; }
+  .intro { background: linear-gradient(135deg, #e8f1fc, #f2ecfb); border-radius: 3mm; padding: 3mm 3.5mm; margin: 2mm 0 3mm; }
+  .map td { padding: 1mm 1.5mm; }
+  .small { font-size: 9pt; color: var(--muted); }
+  .pb { page-break-before: always; }
+  .cap { page-break-after: avoid; break-after: avoid; }
+  h2 { margin-top: 5mm; }
+  .check li { margin: 1.4mm 0; }
+  .pill { display: inline-block; background: var(--blue); color: #fff; border-radius: 10px; padding: 0 2.2mm; font-size: 8.5pt; font-weight: bold; }
+  .one { background: #e6f7f7; border: 1.5px solid #1a8a8a; }
+  .one .t { color: #11706f; }
+  .solve table.t1 td { border: 1px solid var(--line); }
+  td.wrong { text-decoration: line-through; color: #8a8f99; }
+  pre.dot { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; background: #f6f8fb; border: 1px solid var(--line); border-radius: 2mm; padding: 2mm; margin: 2mm 0; white-space: pre; line-height: 1.35; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">💧</span> Biology Chapter 8: Part 3<br>Transpiration, Ascent of Sap aur Translocation</h1>
+<div class="sub">Aasan Notes, tumhari kitab ke saath saath (book pages 117 se 121, sections 8.2.3 se 8.2.5)</div>
+
+<div class="intro">
+  <p><b>Assalam o alaikum Seemab!</b> Ye Chapter 8 ka <b>teesra hissa</b> hai. Part 2 mein tum ne parha tha ke jar (root) pani aur minerals kaise absorb karti hai. Ab agla sawal: wo pani <b>jata kahan hai</b>, aur patton mein bana hua <b>khana (food) wapas poore plant mein kaise pohanchta</b> hai. Bas yehi teen cheezein is part mein hain.</p>
+  <p><b>Kitab ki har line, har figure caption, har Critical Thinking box aur har Scientific Enquiry box isi file mein hai.</b> Kitab kholne ki zaroorat nahin. Headings aur page numbers kitab wale hi hain.</p>
+  <p><b>Kaise parhna hai</b> (taqreeban 35 minute):</p>
+  <ol>
+    <li>Ek dafa aaram se parho. Har hisse ke aakhir mein <b><span class="emoji">🔹</span> "Ek line mein"</b> box hai: itna yaad rahe to kaafi hai.</li>
+    <li>Phir sirf neelay <span class="emoji">📖</span> boxes dobara parho. Ye kitab ke English alfaaz hain, exam mein yehi likhne hain.</li>
+    <li>Aakhir mein <b>"Kitab ki Exercise"</b> wala hissa parho. Is part ke 5 MCQs aur 9 sawal wahan poore hal hain.</li>
+    <li>Sab se aakhir mein 12 sawal khud karo, jawab agle page par hain.</li>
+  </ol>
+</div>
+
+<div class="box def"><span class="t"><span class="emoji">🎯</span> SLOs (kitab ke chapter opening page par) jo is Part 3 mein hain</span>
+<ul>
+<li><b>SLO 8:</b> Describe transpiration and relate this process with the cell surface and stomatal opening and closing.</li>
+<li><b>SLO 9:</b> Describe temperature, wind and humidity as factors affecting the rate of transpiration.</li>
+<li><b>SLO 10:</b> Explain the mechanism of food translocation by the theory of pressure flow mechanism.</li>
+</ul>
+<span class="small">Yehi teen SLOs Section III ke sawal 4, 5 aur 6 ban kar exercise mein bhi aaye hain. Yani ye teen lambe sawal paper mein aane ke sab se zyada chance rakhte hain.</span>
+</div>
+
+<table class="map t1">
+  <tr><th colspan="2">Part 3 ka naqsha (4 hisse)</th></tr>
+  <tr><td><span class="emoji">💨</span> Hissa 1</td><td>8.2.3 Transpiration (kitab p117)</td></tr>
+  <tr><td><span class="emoji">🌡️</span> Hissa 2</td><td>8.2.4 Factors affecting the rate of transpiration (p118, p119)</td></tr>
+  <tr><td><span class="emoji">⬆️</span> Hissa 3</td><td>Transport of water and salts within plant body, Ascent of Sap aur TACT theory (p119, p120)</td></tr>
+  <tr><td><span class="emoji">🍬</span> Hissa 4</td><td>8.2.5 Transport of organic solute within plant body, Translocation (p120, p121)</td></tr>
+  <tr><td><span class="emoji">📚</span> Aakhir mein</td><td>Kitab ki exercise: 5 MCQs + Section II ke sawal + Section III ke 3 lambe sawal</td></tr>
+</table>
+
+<!-- ================= HISSA 1 ================= -->
+<h2><span class="emoji">💨</span> Hissa 1: Transpiration</h2>
+
+<h3>8.2.3 Transpiration <span class="pg">(kitab p117)</span></h3>
+
+<p>Socho: tum ne gamle (pot) mein subah ek glass pani daala. Sham tak wo pani gaya kahan? Thora sa plant ne apne kaam mein lagaya, lekin <b>taqreeban saara pani patton se water vapour ban kar hawa mein ur gaya</b>. Bas yehi transpiration hai.</p>
+
+<p>Kitab ke alfaaz (p117): "You have learnt that plants absorb water from the soil by the roots. This absorbed water moves in the areal parts of the plant from where the most of this water (approx. 99%) has been lost in the form of vapours into the atmosphere. This loss is called <b>transpiration</b>."</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>Transpiration is the loss of the most of the absorbed water (approx. 99%) in the form of vapours into the atmosphere from the areal (aerial) parts of the plant.</q>
+</div>
+
+<p><b>Ab ye 99% pani nikalta kahan kahan se hai?</b> Kitab teen raste batati hai.</p>
+
+<table class="t1">
+  <tr><th>Qisam</th><th>Kitna pani</th><th>Kahan se, kitab ke alfaaz mein</th></tr>
+  <tr><td><b>Stomatal transpiration</b></td><td><b>90%</b> of this loss</td><td>"through the stomata present mainly in the leaves and some other aerial parts of the plant"</td></tr>
+  <tr><td><b>Cuticular transpiration</b></td><td><b>7 to 9%</b> of this absorbed water</td><td>"lost from general body surface through the cuticle"</td></tr>
+  <tr><td><b>Lenticular transpiration</b></td><td><b>less than 3%</b> (a very little amount)</td><td>"through lenticels which are scar like regions (with ruptured epidermis and loosely packed underlying cortical cells) present in the stem"</td></tr>
+</table>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Pakki trick: teen numbers gadbad na karna</span>
+  <b>99%</b> = kitna absorbed water zaaya hota hai (total loss).<br>
+  <b>90%</b> = is loss ka kitna hissa stomata se jata hai.<br>
+  <b>7 to 9%</b> = cuticle se. <b>3% se kam</b> = lenticels se.<br>
+  Yaad karne ka tareeqa: <b>S</b>tomata sab se zyada, <b>C</b>uticle darmiyana, <b>L</b>enticel sab se kam. Yani <b>S &gt; C &gt; L</b>.
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">🤔</span> Critical Thinking (kitab p117)</span>
+"Does a submerged aquatic plant perform transpiration."<br>
+<span class="small">Kitab is ka jawab nahin deti, ye sirf sochne ke liye hai. Sochne ka raasta: transpiration ka matlab hai pani ka <b>water vapour</b> ban kar hawa mein jana. Jo plant poora pani ke andar doobi hui hai, us ke paas hawa hai hi nahin ke vapours bana kar bhejay.</span></div>
+
+<p class="cap"><b>Transpiration ke faide (kitab p117, lafz ba lafz):</b> "Transpiration is a vital process for the plant as it not only provides <b>cooling</b> to the plant but also help to <b>absorb the water and dissolved minerals</b> and to <b>move them in upward direction to the leaves</b>. Therefore, without transpiration plants are unable to survive."</p>
+
+<p><b>Aur nuqsan?</b> Kitab: "On the other hand, transpiration is generally regarded as disadvantageous as it shows great loss of absorbed water so, an unchecked excessive transpiration can lead to the <b>wilting (loss of turgor)</b> and ultimately <b>death of the plant</b>."</p>
+
+<div class="box mcq"><span class="t"><span class="emoji">🤔</span> Critical Thinking (kitab p117)</span>
+"Why transpiration is sometimes called necessary evil."<br>
+<span class="small">Is ka poora jawab aakhir wale exercise hisse mein hai (Section II, sawal 1). Choti si baat: <b>necessary</b> kyunke is ke baghair plant zinda nahin reh sakta, <b>evil</b> kyunke is mein 99% pani zaaya ho jata hai.</span></div>
+
+<div class="box eg"><span class="t"><span class="emoji">🏠</span> Ghar ki misal</span>
+  Garmi mein jab tumhein paseena aata hai to jism thanda ho jata hai, lekin saath hi pani bhi kam ho jata hai, is liye pyaas lagti hai. Plant ke liye transpiration bilkul <b>paseene jaisa</b> hai: thanda bhi karta hai, aur pani bhi le jata hai. Aur jaise paseene ke baad pani peena parta hai, waise hi transpiration ki kheench se jar se naya pani upar aata hai.
+</div>
+
+<h3>Relation of transpiration with leaf surface area and Stomatal opening and closing <span class="pg">(kitab p117)</span></h3>
+
+<p>Kitab: "As you have learnt that transpiration is mainly occurs through the <b>stomata</b>, which are present on the <b>leaf surface</b>. So, the plants having <b>large surface area of the leaves</b> having <b>more stomata</b> show <b>greater rate of transpiration</b> as compared to the plants having <b>narrow and reduced surfaces of the leaves</b> having <b>less stomata</b>."</p>
+
+<p>Aasan lafzon mein: <b>patta jitna bara, us par stomata utne zyada, aur transpiration utni zyada.</b> Chhota aur patla patta (jaise cactus ka kaanta) matlab kam stomata, matlab kam transpiration.</p>
+
+<p>Aur waqt ka farq? Kitab: "Similarly, more transpiration is generally observed in <b>date time</b> than night as the stomata are <b>widely open during day</b> and <b>nearly close at night</b>."</p>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki chhapai ki ghalti</span>
+  Yahan kitab ne <b>"date time"</b> likha hai. Asal lafz <b>"day time"</b> hai (din ka waqt). Tum exam mein <b>day time</b> hi likhna.<br>
+  Isi page par kitab ne <b>"areal parts"</b> bhi likha hai. Sahi lafz <b>"aerial parts"</b> hai, yani plant ke wo hisse jo hawa mein hain (tana aur patte).
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">🤔</span> Critical Thinking (kitab p117)</span>
+"Can you think that the shape and the size of the leaves would be an adaptation of the plants in different habitats such as aquatic and terrestrial."<br>
+<span class="small">Sochne ka raasta: registan ke plants ke patte chhote, sakht ya kaanton jaise hote hain taa ke pani kam nikle. Pani ke plants ke patte chaure hote hain kyunke unhein pani bachane ki fikr nahin.</span></div>
+
+<div class="box one"><span class="t"><span class="emoji">🔹</span> Ek line mein (Hissa 1)</span>
+  Transpiration = aerial parts se absorbed pani (approx 99%) ka water vapour ban kar nikalna. 90% stomata se, 7 se 9% cuticle se, 3% se kam lenticels se. Bara patta aur khuley stomata = zyada transpiration, aur din mein raat se zyada.
+</div>
+
+<!-- ================= HISSA 2 ================= -->
+<h2 class="pb"><span class="emoji">🌡️</span> Hissa 2: Factors affecting the rate of transpiration</h2>
+
+<h3>8.2.4 Factors affecting the rate of transpiration <span class="pg">(kitab p118)</span></h3>
+
+<p>Kitab: "The rate of transpiration is influenced by several <b>environmental factors</b> like <b>temperature, wind, and humidity</b> etc. The rate of <b>translation</b> can be measured by using a simple apparatus called the <b>potometer</b> which is shown in the diagram. Students under the guidance of their teachers should plan simple experimental activities to investigate the effect of these factors on the rate of transpiration using the <b>photometer</b>."</p>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki chhapai ki do ghaltiyan, isi paragraph mein</span>
+  <b>1.</b> "The rate of <b>translation</b> can be measured": yahan <b>transpiration</b> hona chahiye tha. Translation ka biology mein matlab bilkul aur hai (protein banna).<br>
+  <b>2.</b> "using the <b>photometer</b>": sahi lafz <b>potometer</b> hai. Photometer roshni naapne wala aala hota hai; <b>potometer</b> transpiration ki rate naapta hai. Exam mein hamesha <b>potometer</b> likhna.
+</div>
+
+<div class="box def"><span class="t"><span class="emoji">🔬</span> Figure: 8.7 Investigation of rate of transpiration by using [potometer]</span>
+  Tasveer ke labels: <b>cut shoot</b> (kaati hui tehni), <b>reservoir</b> (pani ka zakheera), <b>air bubble</b> (hawa ka bulbula), <b>capillary tube</b> (bohat patli naali), <b>volume scale</b> (volume naapne wali patti), <b>beaker of water</b>.<br>
+  <b>Chalta kaise hai:</b> cut shoot jitna pani kheenchti hai, capillary tube mein air bubble utna aage sarakta hai. Bubble ka safar volume scale par parh lo, transpiration ki rate maloom.<br>
+  <span class="small">Kitab mein is caption ka aakhri lafz page ke kinaray par kat gaya hai; jumla "by using <b>potometer</b>" banta hai.</span>
+</div>
+
+<h3>Effect of temperature <span class="pg">(kitab p118)</span></h3>
+
+<p>Kitab: "On a sunny day with strong sunlight, the air temperature rises, and this increase in temperature <b>lowers the humidity</b> in the air. As a result, more water evaporates from the surfaces of plant <b>mesophyll cells</b>, which leads to a <b>higher rate of transpiration</b>. For every <b>10&deg;C increase in temperature, the rate of transpiration roughly doubles</b>. However, when the environmental temperature becomes <b>very high, around 40 to 45&deg;C</b>, it causes the <b>stomata on plant leaves to close</b>. This closure helps the plant conserve its much needed water because excessive loss can be detrimental."</p>
+
+<p>Aur agar garmi lambi chal jaye? Kitab: "If these higher temperatures persist for an <b>extended period</b> and the <b>soil doesn't have enough water</b>, the plants may start to <b>wilt</b> and could eventually <b>die</b>."</p>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Pakki trick: temperature ka ulta mor</span>
+  Temperature barhne se rate <b>barhti</b> hai (har 10&deg;C par taqreeban <b>double</b>), lekin <b>40 se 45&deg;C</b> par baat ulti ho jati hai: stomata <b>band</b> ho jate hain aur rate <b>gir</b> jati hai.<br>
+  Plant sochta hai: "itni garmi mein agar main darwaze khule rakhoon to saara pani khatam. Behtar hai darwaze band kar loon."
+</div>
+
+<h3>Effect of Wind <span class="pg">(kitab p118)</span></h3>
+
+<p>Kitab: "Wind is <b>moving air</b>, and it <b>speeds up the diffusion</b> of water molecules. This leads to a <b>higher rate of evaporation</b> from the surfaces of mesophyll cells. In contrast, when the air is <b>calm and still</b>, the movement of water molecules (diffusion) <b>slows down</b>, resulting in a <b>decreased rate of transpiration</b>."</p>
+
+<div class="box eg"><span class="t"><span class="emoji">🌬️</span> Ghar ki misal</span>
+  Geeley kapre chhat par kyun sukhate hain? Kyunke wahan hawa chalti hai. Hawa geeli hawa ko hata kar sookhi hawa le aati hai, is liye pani jaldi urta hai. Band kamre mein wohi kapra der se sukhta hai. Patta bhi bilkul aisa hi hai.
+</div>
+
+<h3>Effect of Humidity <span class="pg">(kitab p119)</span></h3>
+
+<p>Kitab: "Humidity is the <b>percentage of water vapours in the air</b>. In <b>dry air (low humidity)</b>, water molecules diffuse <b>more rapidly</b> from the surfaces of <b>mesophyll cells, air spaces, and through stomata</b> to the outside of the leaf. This results in <b>more water being lost</b>, which <b>increases the rate of transpiration</b>. Conversely, in <b>humid air</b>, the <b>diffusion rate slows down</b>, leading to a <b>significant decrease</b> in the rate of transpiration."</p>
+
+<p>Aur kitab ka agla jumla ek sawal hai: "Similarly, can you predict the effect of other factors like <b>sun light, CO<sub>2</sub> concentration and availability of soil water</b> on the rate of transpiration."</p>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Teeno factors, ek nazar mein</span>
+  <table class="t1">
+  <tr><th>Factor</th><th>Rate barhti hai jab</th><th>Rate ghatti hai jab</th></tr>
+  <tr><td>Temperature</td><td>Temperature barhe (har 10&deg;C par taqreeban double)</td><td>40 se 45&deg;C par stomata band ho jayen</td></tr>
+  <tr><td>Wind</td><td>Hawa chal rahi ho (diffusion tez)</td><td>Hawa calm and still ho</td></tr>
+  <tr><td>Humidity</td><td>Hawa <b>khushk</b> ho (low humidity)</td><td>Hawa <b>namm</b> ho (humid air)</td></tr>
+  </table>
+  <b>Dhyan do:</b> humidity wala rishta <b>ulta</b> hai. Humidity zyada = transpiration kam.
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">🔬</span> Scientific Enquiry box (kitab p118), poora</span>
+  <p><b>Temperature wali activity:</b> "To instigate the effect of temperature on rate of transpiration, set the apparatus as shown in the figure 8.6, observe the movement of bubble in potometer and record the readings with appropriate intervals. Perform the experiment in different temperatures in a growth room. Remember that other conditions like sun light, wind and humidity should be constant. Take the mean reading of every experiment and plot a graph to show the relationship of rate of transpiration against temperature. Interpret your results and make conclusion."</p>
+  <p><b>Wind wali activity:</b> "To instigate the effect of wind on the rate of transpiration, set the apparatus as shown in the figure 8.6, observe the movement of bubble in potometer and record the readings with appropriate intervals. Perform the several experiments by putting the potometer at different distances in front of pedestal fan so that different velocities of wind can be investigated. Remember that other conditions like sun light, temperature and humidity should be constant. Take the mean reading of every experiment and plot a graph to show the relationship of rate of transpiration against different velocities of wind. Interpret your results and make conclusion."</p>
+  <p><b>Humidity wali activity:</b> "Similarly, plan an activity to instigate the effect of humidity on the rate of transpiration."</p>
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Is box ki do ghaltiyan</span>
+  <b>1.</b> Kitab ne teen baar <b>"instigate"</b> likha hai. Sahi lafz <b>"investigate"</b> hai (tehqeeq karna). Instigate ka matlab hai bharkana, jo yahan bilkul fit nahin baithta.<br>
+  <b>2.</b> Box do baar kehta hai "as shown in the <b>figure 8.6</b>", lekin potometer wali tasveer <b>Figure 8.7</b> hai. Figure 8.6 to pichle page (p117) par hai: "Uptake of water by the plant".<br>
+  <b>Ek zaroori baat yaad rakho:</b> teeno experiments mein sirf <b>ek</b> factor badalte hain aur baqi sab <b>constant</b> rakhte hain. Agar do cheezein ek saath badlein to pata hi nahin chalega ke asar kis ka tha.
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">🔹</span> Ek line mein (Hissa 2)</span>
+  Rate naapne ka aala = potometer (bubble ki harkat se). Temperature barhe to rate double per 10&deg;C, magar 40 se 45&deg;C par stomata band. Hawa chale to rate zyada, calm air mein kam. Khushk hawa mein zyada, namm hawa mein kam.
+</div>
+
+<!-- ================= HISSA 3 ================= -->
+<h2 class="pb"><span class="emoji">⬆️</span> Hissa 3: Ascent of Sap aur TACT Theory</h2>
+
+<h3>8.2.4 Transport of water and salts within plant body (Ascent of Sap) <span class="pg">(kitab p119)</span></h3>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Number ki ghalti, ghabrana nahin</span>
+  Kitab ne <b>do</b> sections ko <b>8.2.4</b> ka number de diya hai: p118 wala "Factors affecting the rate of transpiration" bhi 8.2.4, aur p119 wala "Transport of water and salts within plant body (Ascent of Sap)" bhi 8.2.4. Ye sirf chhapai ki ghalti hai. Tum <b>headings ke naam</b> yaad rakho, numbers nahin.
+</div>
+
+<p>Kitab: "Root epidermal cells absorb water and minerals from the soil. These substances are then transported from the <b>roots to the leaves</b>. This <b>upward movement of water and dissolved minerals through the xylem tissue</b> is known as the <b>ascent of sap</b>. This process requires a <b>passage</b> and a significant amount of <b>force</b> because it occurs <b>against the force of gravity</b>, especially in <b>tall plants</b>. It is now quite evident that passage of ascent of sap is the <b>xylem tissue</b> and the most widely accepted theory that explains the force responsible for ascent of sap is called the <b>TACT theory</b>."</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>The upward movement of water and dissolved minerals through the xylem tissue is known as the ascent of sap.</q>
+</div>
+
+<div class="box eg"><span class="t"><span class="emoji">🌳</span> Soch kar dekho</span>
+  Ek 20 foot ooncha darakht. Us ki jar se pani upar sab se oonche patte tak jata hai. Koi pump nahin, koi motor nahin, koi bijli nahin. Phir bhi <b>gravity ke khilaf</b> pani upar chalta rehta hai. Kitab kehti hai is ke liye do cheezein chahiyein: ek <b>raasta</b> (passage) aur ek <b>taaqat</b> (force). Raasta = xylem. Taaqat = TACT.
+</div>
+
+<h3>Passage of Ascent of Sap <span class="pg">(kitab p119)</span></h3>
+
+<p>Kitab: "<b>Xylem</b> is a <b>complex and permanent tissue</b> which act as passage for ascent of sap. Two type of xylem cells: <b>Tracheids</b> and <b>Vessel</b> are very important. <b>Tracheids are long, dead cells with pointed ends</b> and <b>Xylem vessels are long, dead, and thick-walled tube-like structures formed by the fusion of vessel cells (vessel elements) placed end to end.</b> Both are <b>essential for water and mineral transport as well as structural support</b>."</p>
+
+<table class="t1">
+  <tr><th>Xylem ke do ahem cells</th><th>Kitab kya kehti hai</th></tr>
+  <tr><td><b>Tracheids</b></td><td>Long, dead cells with <b>pointed ends</b></td></tr>
+  <tr><td><b>Vessels</b> (vessel elements)</td><td>Long, dead, <b>thick-walled tube-like</b> structures, banti hain vessel cells ke <b>fusion</b> se jo <b>end to end</b> laggi hoti hain</td></tr>
+  <tr><td><b>Dono ka kaam</b></td><td>Water aur mineral transport, aur saath hi <b>structural support</b></td></tr>
+</table>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Dhyan do: ye cells MARE huey hain</span>
+  Tracheids aur vessels dono <b>dead</b> cells hain. Ye achhi baat hai! Andar koi cytoplasm nahin, koi nucleus nahin, bas <b>khaali naali</b>. Jaise plastic pipe. Pani bila rukawat guzar jata hai. Is ke bar aks phloem ke sieve tubes <b>zinda</b> hote hain.
+</div>
+
+<h3>TACT Theory <span class="pg">(kitab p119, p120)</span></h3>
+
+<p>Kitab: "According to the TACT theory, <b>four factors work together</b> to make a force that move water and minerals up a plant. These factors are <b>Transpiration pull, Adhesion, Cohesion, and Tension</b>, forming the acronym <b>TACT</b>."</p>
+
+<div class="formula">T + A + C + T = Transpiration pull, Adhesion, Cohesion, Tension</div>
+
+<p class="cap"><b>Ab kitab char factors ko alag alag kholti hai (p120):</b></p>
+
+<p><b>i) Transpiration Pull:</b> "When stomata (tiny openings) on leaves are open, water evaporates from the leaves into the air, creating a <b>pulling force</b> known as <b>transpiration</b>. This pull makes water move from the <b>roots to the leaves through the xylem tissue</b>."</p>
+
+<p><b>ii) Adhesion:</b> "Adhesion is the <b>attraction between water molecules and other substances</b>. Water is strongly attracted to the <b>walls of the xylem cells</b> because both <b>water and cellulose (in cell walls) are polar molecules</b>. This adhesion helps water move <b>upward in the plant against gravity</b>. It also <b>keeps water in the xylem when transpiration is not happening</b>."</p>
+
+<p><b>iii) Cohesion and Tension:</b> "<b>Cohesion</b> is the <b>attraction between nearby water molecules</b>, which is possible because <b>water is a polar molecule</b>. <b>Tension</b> refers to the <b>tension created in the water column</b>. These forces help hold the water molecules together in a <b>continuous column within the xylem</b>."</p>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Adhesion aur Cohesion mein farq (MCQ ka favourite)</span>
+  <b>Cohesion</b> = pani ka molecule <b>doosre pani ke molecule</b> se chipakna. (Co = companion, apna saathi.)<br>
+  <b>Adhesion</b> = pani ka molecule <b>kisi aur cheez</b> se chipakna, jaise xylem ki deewar. (Adhesive = gond, jo doosri cheez par lagta hai.)<br>
+  Dono mumkin isi liye hain ke <b>water ek polar molecule</b> hai.
+</div>
+
+<h3>How TACT Force Works <span class="pg">(kitab p120)</span></h3>
+
+<p>Kitab: "Imagine the column of water in the xylem as <b>strong as a steel wire</b>. <b>Hydrogen bonds</b> among water molecules create <b>cohesion</b>, holding the water molecules together <b>like a string</b>. As long as <b>transpiration continues</b> (water evaporating from leaves), the string of water <b>remains tense</b> and is <b>pulled upward as a single unit</b>. This <b>bulk flow of water to the top of the plant is driven by solar energy</b>, as it's the <b>evaporation from leaves</b> that causes the <b>transpiration pull</b>."</p>
+
+<div class="box eg"><span class="t"><span class="emoji">🧵</span> Dhaage wali misal</span>
+  Socho pani ke saare molecules ek <b>dhaaga</b> ban gaye hain, ek doosre ka haath pakre huey (cohesion, hydrogen bonds ki wajah se). Upar patte se jab ek molecule urta hai (transpiration) to wo apne peechay waale ko kheench leta hai, wo agle ko, aur kheench poori jar tak chali jati hai. Dhaaga kabhi tootta nahin, is liye kitab kehti hai wo <b>steel wire jitna mazboot</b> hai. Aur deewar se chipke rehne ki wajah se (adhesion) dhaaga phisal kar neeche bhi nahin girta.
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">⭐</span> Exam ki khaas line</span>
+  "This bulk flow of water to the top of the plant is driven by <b>solar energy</b>." Yani asal engine <b>sooraj</b> hai. Sooraj ki garmi se patte se pani urta hai, us se transpiration pull banti hai, aur usi se poora pani upar aata hai. Plant apni koi ATP kharch nahin karta.
+</div>
+
+<div class="box def"><span class="t"><span class="emoji">🖼️</span> Fig. 8.8: Movement of water in xylem through TACT Mechanism</span>
+  Kitab ki ye tasveer teen hisson mein hai, upar se neeche:<br>
+  <b>1. Upar, patte mein (TRANSPIRATION):</b> labels hain <b>Xylem sap</b>, <b>Leaf</b>, <b>Mesophyll cells</b>, <b>Stoma</b>, <b>Water molecule</b>, <b>Air</b>. Pani ke molecules stoma se bahar hawa mein ja rahe hain.<br>
+  <b>2. Beech mein, tane mein (COHESION AND ADHESION IN THE XYLEM):</b> labels hain <b>Xylem cells</b>, <b>Stem</b>, <b>Adhesion</b>, <b>Cell Wall</b>, aur <b>Cohesion, by hydrogen bonding</b>. Bari tasveer mein dikhaya gaya hai ke pani ke gole ek doosre se (cohesion) aur cell wall se (adhesion) jure huey hain.<br>
+  <b>3. Neeche, jar mein (Water UPTAKE FROM SOIL):</b> labels hain <b>Water molecule</b>, <b>Root hair</b>, <b>Soil</b>, <b>Water</b>, <b>Root</b>.
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">🔹</span> Ek line mein (Hissa 3)</span>
+  Ascent of sap = pani aur ghule huey minerals ka xylem ke zariye jar se patton tak upar jana, gravity ke khilaf. Raasta = xylem (tracheids + vessels, dono dead). Taaqat = TACT (Transpiration pull, Adhesion, Cohesion, Tension), aur is bulk flow ka engine <b>solar energy</b> hai.
+</div>
+
+<!-- ================= HISSA 4 ================= -->
+<h2 class="pb"><span class="emoji">🍬</span> Hissa 4: Translocation</h2>
+
+<h3>8.2.5 Transport of organic solute within plant body <span class="pg">(kitab p120)</span></h3>
+
+<p>Ab ulti taraf. Pani to jar se patton tak gaya. Lekin patton ne photosynthesis se jo <b>khana</b> banaya, wo jar, phal aur poore plant tak kaise pohanchay? Is ka naam hai <b>translocation</b>.</p>
+
+<p>Kitab: "The transport of <b>prepared food (organic solutes)</b> to different parts of the plant through the <b>phloem tissue</b> is <b>translocation</b>."</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>The transport of prepared food (organic solutes) to different parts of the plant through the phloem tissue is translocation.</q>
+</div>
+
+<h3>Passage of Translocation <span class="pg">(kitab p120, p121)</span></h3>
+
+<p>Kitab: "It is evident that translocation occurs through <b>phloem tissues</b> which are <b>complex and permanent plant</b>. <b>Sieve tube elements</b> and <b>companion cells</b> are important components of phloem."</p>
+
+<p>Kitab (p121): "<b>Sieve Tubes</b> are <b>long tube-like structures</b> that transport <b>organic solutes (like sucrose)</b> throughout the plant. Since <b>sieve tube elements lack nuclei</b>, <b>companion cells</b> next to them <b>control their functions</b>. Together, sieve elements and companion cells act as <b>conducting channels</b> for moving organic solutes."</p>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Chhoti si chhapai ki ghalti</span>
+  Kitab likhti hai "phloem tissues which are complex and <b>permanent plant</b>". Yahan lafz <b>"permanent tissue"</b> hona chahiye tha, jaise xylem ke liye likha gaya hai. Exam mein likho: <b>phloem is a complex and permanent tissue.</b>
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Pakki trick: sieve tube ka nucleus nahin hota</span>
+  Sieve tube <b>zinda</b> hai lekin us ka <b>nucleus nahin</b> hota. To phir wo chalta kaise hai? Us ke bilkul saath jo <b>companion cell</b> hai, wohi us ke kaam <b>control</b> karta hai.<br>
+  Misal: sieve tube ek gaari hai jis mein steering nahin, aur companion cell baghal mein baitha driver hai jo usay chala raha hai. Ye baat MCQ mein bohat aati hai.
+</div>
+
+<h3>Direction of Translocation <span class="pg">(kitab p121)</span></h3>
+
+<p>Kitab: "This movement is <b>not just up or down; it goes in various directions</b>. We usually say that translocation goes from a <b>source</b> to a <b>sink</b>. A <b>source supplies food</b> (like leaves making food), and a <b>sink uses food</b> (like roots or storage organs). <b>Leaves are sources, fruits are sinks, and stems and roots can act as both.</b>"</p>
+
+<table class="t1">
+  <tr><th>Source (khana deta hai)</th><th>Sink (khana kharch karta hai)</th><th>Dono ban sakte hain</th></tr>
+  <tr><td>Leaves (jo food banate hain)</td><td>Fruits, roots, storage organs</td><td>Stems aur roots</td></tr>
+</table>
+
+<div class="box eg"><span class="t"><span class="emoji">🥔</span> Aloo wali misal</span>
+  Garmiyon mein patte khana banate hain (source) aur wo khana neeche aloo mein jama ho jata hai (sink). Lekin jab naya plant ugna shuru karta hai to wohi aloo apna jama shuda khana bahar bhejta hai, yani ab aloo <b>source</b> ban gaya. Isi liye kitab kehti hai stems aur roots dono kaam kar sakte hain.
+</div>
+
+<h3>Composition of Translocating Fluid (Phloem Sap) <span class="pg">(kitab p121)</span></h3>
+
+<p>Kitab: "<b>Phloem sap contains about 10 to 25% dry matter. Most of this dry matter is sucrose (a kind of sugar), with some other organic compounds.</b>"</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Yaad karne wala number</span>
+  Phloem sap = <b>10 to 25% dry matter</b>, aur is dry matter ka zyada hissa <b>sucrose</b> hai, baqi kuch <b>doosray organic compounds</b>.<br>
+  <span class="small">Yani phloem sap ka baqi 75 se 90% hissa <b>pani</b> hai.</span>
+</div>
+
+<h3>Mechanism of Translocation (Pressure Flow or Mass Flow Theory) <span class="pg">(kitab p121)</span></h3>
+
+<p>Kitab: "The <b>most accepted idea</b> for how organic solutes moves in plants is the <b>pressure flow</b> or <b>mass flow</b> theory. Here's how it works:"</p>
+
+<ol>
+  <li>"Sugars produced in <b>source regions</b>, like leaves or storage areas, are <b>loaded into the phloem's sieve tube elements by companion cells</b>."</li>
+  <li>"This <b>active transport</b> raises the <b>sugar concentration</b> and <b>reduces the water concentration</b> in the phloem. This makes the phloem cells more <b>sweet</b>."</li>
+  <li>"<b>Water moves into the phloem through osmosis from nearby xylem cells</b>, increasing <b>hydrostatic pressure</b> (pressure from water) in the phloem cells. This pressure <b>pushes the sugary solution away from the source</b> (usually a leaf)."</li>
+  <li>"The <b>pressure difference</b>, from the <b>high-pressure source</b> to the <b>lower-pressure sink</b>, causes translocation. It's <b>like water being pushed through a hose</b>."</li>
+  <li>"When the solution reaches a <b>sink</b>, like the roots, <b>root cells actively absorb the organic solutes</b>. This makes the phloem sap <b>less sweet</b>."</li>
+  <li>"The <b>loss of solutes</b> in phloem sap <b>increases solute potential and water potential</b>, causing <b>water to flow back into the xylem tubes</b>."</li>
+</ol>
+
+<p>Kitab ka akhri jumla: "So, it's like a <b>system of moving food and water around the plant</b>, driven by <b>differences in pressure</b> and the <b>needs of different plant parts</b>."</p>
+
+<div class="box eg"><span class="t"><span class="emoji">🚿</span> Hose pipe wali misal (kitab ki apni misal)</span>
+  Bagh mein hose pipe socho. Ek sire par nalka khol do, pressure banta hai aur pani doosray sire tak khud chala jata hai. Phloem mein "nalka" source hai: wahan sugar bharne se pani osmosis se andar aata hai aur <b>pressure</b> banta hai. Sink par sugar nikal jati hai to pressure kam ho jata hai. Pressure zyada se pressure kam ki taraf, bas yehi <b>pressure flow</b> hai.
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Loading aur unloading dono mein ATP lagti hai</span>
+  Figure 8.9 saaf likhta hai: source par <b>"Sucrose loaded (requires ATP)"</b> aur sink par <b>"Sucrose unloaded (requires ATP)"</b>.<br>
+  <b>Bara farq yaad rakho:</b> Ascent of sap (xylem) mein plant ki apni energy kharch <b>nahin</b> hoti, wo <b>solar energy</b> se chalta hai. Translocation (phloem) mein <b>ATP</b> kharch hoti hai, is liye ye <b>active</b> process hai.
+</div>
+
+<div class="box def"><span class="t"><span class="emoji">🖼️</span> Figure: 8.9 Pressure flow Mechanism for Phloem Transport</span>
+  Kitab ka caption: "Sugar is <b>actively loaded into the sieve tube at the source</b>. As a result, <b>water moves into the sieve tubes by osmosis</b>. At the sink, the <b>sugar is actively unloaded</b>, and <b>water leaves the sieve tube by osmosis</b>."<br>
+  Tasveer ke labels: <b>SOURCE leaf cells</b>, upar likha hai "At source: Sucrose loaded (requires ATP), Water moves in osmotically". Beech mein <b>Sieve tube running through the length of the plant</b> aur <b>Companion cells</b>. Neeche <b>SINK root cells</b>, aur wahan likha hai "Sucrose unloaded (requires ATP), Water moves out osmotically".
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Figure 8.9 ki label ghalti</span>
+  Tasveer mein <b>neeche wala</b> label bhi "At <b>source</b>:" likha hua hai, halanke wahan sucrose <b>unload</b> ho rahi hai aur pani bahar nikal raha hai. Wahan "At <b>sink</b>:" hona chahiye tha.<br>
+  Agar exam mein ye diagram banao to neeche <b>SINK</b> hi likhna.
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">🔹</span> Ek line mein (Hissa 4)</span>
+  Translocation = tayyar khana (organic solutes) phloem ke zariye poore plant mein jana, source se sink tak, har taraf. Phloem = sieve tubes (nucleus ke baghair) + companion cells (jo unhein control karte hain). Phloem sap mein 10 se 25% dry matter, zyada tar sucrose. Chalane wali cheez = pressure difference (pressure flow ya mass flow theory), aur loading aur unloading dono ATP maangti hain.
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">📊</span> Poora Part 3 ek table mein (revision ke liye sab se kaam ki cheez)</span>
+<table class="t1">
+<tr><th></th><th>Transpiration</th><th>Ascent of sap</th><th>Translocation</th></tr>
+<tr><td><b>Kya move hota hai</b></td><td>Water vapours (bahar jate hain)</td><td>Water + dissolved minerals</td><td>Prepared food (organic solutes, mostly sucrose)</td></tr>
+<tr><td><b>Kis tissue se</b></td><td>Stomata, cuticle, lenticels</td><td>Xylem</td><td>Phloem</td></tr>
+<tr><td><b>Kidhar</b></td><td>Plant se bahar atmosphere mein</td><td>Roots se leaves, sirf upar</td><td>Source se sink, har direction</td></tr>
+<tr><td><b>Theory ya wajah</b></td><td>Evaporation aur diffusion</td><td>TACT theory</td><td>Pressure flow (mass flow) theory</td></tr>
+<tr><td><b>Energy</b></td><td>Solar energy</td><td>Solar energy, ATP nahin</td><td>ATP chahiye (active)</td></tr>
+</table>
+</div>
+
+<!-- ================= EXERCISE ================= -->
+<h2 class="pb"><span class="emoji">📚</span> Kitab ki Exercise: Part 3 wale sawal, poore jawab ke saath</h2>
+<p class="small">Kitab ke page 126, 127 aur 128 par poori exercise hai. Neeche wo sawal hain jo <b>isi part</b> (transpiration, ascent of sap, translocation) se banaye gaye hain. Baqi sawal doosre parts ke notes mein hain.</p>
+
+<h3>Section I: Multiple Choice Questions <span class="pg">(kitab p126, p127)</span></h3>
+
+<div class="solve"><span class="t">MCQ 3. The sugar moves through phloem is mostly in the form of</span>
+(A) glucose &nbsp;&nbsp; (B) sucrose &nbsp;&nbsp; (C) maltose &nbsp;&nbsp; (D) lactose<br>
+<b>Jawab: <span class="ans">(B) sucrose</span></b><br>
+<span class="small"><b>Kyun:</b> kitab p121, "Composition of Translocating Fluid (Phloem Sap)": phloem sap mein 10 se 25% dry matter hai aur "Most of this dry matter is <b>sucrose</b>". Glucose photosynthesis mein banti hai lekin plant usay sucrose mein badal kar bhejta hai. Lactose to doodh ki sugar hai, plant mein hoti hi nahin.</span>
+</div>
+
+<div class="solve"><span class="t">MCQ 7. What is the role of companion cells in the translocation process?</span>
+A) They store excess solutes in the phloem<br>
+B) They help regulate water potential in the xylem<br>
+C) They actively transport sugars into the phloem's sieve tube elements<br>
+D) They assist in the absorption of water by roots<br>
+<b>Jawab: <span class="ans">(C) They actively transport sugars into the phloem's sieve tube elements</span></b><br>
+<span class="small"><b>Kyun:</b> kitab p121 ke pressure flow step 1 mein saaf likha hai: "Sugars ... are loaded into the phloem's sieve tube elements <b>by companion cells</b>." Aur p121: "Since sieve tube elements lack nuclei, companion cells next to them <b>control their functions</b>." Companion cells na sugar store karte hain, na xylem ka kaam dekhte hain, na jar se pani absorb karte hain.</span>
+</div>
+
+<div class="solve"><span class="t">MCQ 8. What drives the translocation of organic solutes in plants?</span>
+A) Differences in sugar concentration &nbsp;&nbsp; (B) Differences in leaf size<br>
+B) Differences in root structure &nbsp;&nbsp; (D) Differences in stem length<br>
+<b>Jawab: <span class="ans">(A) Differences in sugar concentration</span></b><br>
+<span class="small"><b>Kyun:</b> pressure flow theory ke mutabiq source par sugar load hone se wahan sugar concentration barhti hai, osmosis se pani andar aata hai aur hydrostatic pressure barhta hai; sink par sugar unload hone se concentration girti hai. Yehi sugar concentration ka farq pressure ka farq banata hai, aur "The pressure difference, from the high-pressure source to the lower-pressure sink, causes translocation" (p121). Leaf size, root structure aur stem length ka is se koi taluq nahin.<br>
+<b>Dhyan do:</b> kitab ne is MCQ ke options ke labels ghalat chhaap diye hain: A, B, B, D. Doosra "B" asal mein <b>C</b> hona chahiye tha. Sahi jawab phir bhi <b>pehla</b> option (sugar concentration) hai.</span>
+</div>
+
+<div class="solve"><span class="t">MCQ 9. According to the TACT theory, what are the four factors that work together to move water and minerals up a plant?</span>
+A) Temperature, humidity, sunlight, and soil type<br>
+B) Transpiration pull, Adhesion, Cohesion, and Tension<br>
+C) Stomata, xylem, phloem, and roots<br>
+D) Leaves, stems, roots, and flowers<br>
+<b>Jawab: <span class="ans">(B) Transpiration pull, Adhesion, Cohesion, and Tension</span></b><br>
+<span class="small"><b>Kyun:</b> kitab p119, "These factors are Transpiration pull, Adhesion, Cohesion, and Tension, forming the acronym <b>TACT</b>." Naam hi T, A, C, T se bana hai.</span>
+</div>
+
+<div class="solve"><span class="t">MCQ 10. What drives the bulk flow of water to the top of the plant according to the TACT theory?</span>
+A) Root pressure &nbsp;&nbsp; (B) Soil moisture<br>
+C) Solar energy from photosynthesis &nbsp;&nbsp; (D) Transpiration from the leaves<br>
+<b>Jawab: <span class="ans">(C) Solar energy</span></b><br>
+<span class="small"><b>Kyun:</b> kitab p120 ka jumla bilkul yehi hai: "This <b>bulk flow of water to the top of the plant is driven by solar energy</b>, as it's the evaporation from leaves that causes the transpiration pull."<br>
+<b>Trap se bacho:</b> option D (transpiration from the leaves) sun kar dil kehta hai ke yehi hoga, lekin sawal poochh raha hai ke <b>transpiration ko kaun chalata</b> hai. Jawab: sooraj ki energy. Kitab ke option mein "from photosynthesis" laga hua hai jo kitab ke apne jumle mein nahin hai (solar energy patton se pani urane mein lagti hai, photosynthesis se nahin aati), lekin option C phir bhi wohi hai jo kitab ka jumla kehta hai.</span>
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🔑</span> Part 3 ke MCQ jawab, ek line mein</span>
+  <b>3 = B (sucrose) &nbsp;|&nbsp; 7 = C (companion cells sugar load karte hain) &nbsp;|&nbsp; 8 = A (sugar concentration ka farq) &nbsp;|&nbsp; 9 = B (TACT) &nbsp;|&nbsp; 10 = C (solar energy)</b>
+</div>
+
+<h3 class="pb">Section II: Short Answer Questions <span class="pg">(kitab p127, p128)</span></h3>
+
+<div class="solve"><span class="t">Q1. Why is transpiration called necessary evil?</span>
+Transpiration ko <b>necessary evil</b> (aisi buri cheez jo zaroori bhi hai) is liye kaha jata hai ke us ke faide aur nuqsan dono bohat bare hain.<br><br>
+<b>Necessary (zaroori) kyun:</b>
+<ul>
+<li>It provides <b>cooling</b> to the plant.</li>
+<li>It helps the plant to <b>absorb water and dissolved minerals</b> from the soil.</li>
+<li>It helps to <b>move water and minerals in the upward direction to the leaves</b> (ascent of sap ki transpiration pull isi se banti hai).</li>
+<li>Kitab ke alfaaz: "without transpiration plants are unable to survive."</li>
+</ul>
+<b>Evil (nuqsan deh) kyun:</b>
+<ul>
+<li>Is mein absorbed water ka <b>bohat bara hissa (approx. 99%)</b> zaaya ho jata hai, is liye "transpiration is generally regarded as disadvantageous as it shows great loss of absorbed water".</li>
+<li><b>Unchecked excessive transpiration</b> se plant <b>wilting (loss of turgor)</b> ka shikar ho jata hai aur <b>ultimately death of the plant</b> ho sakti hai.</li>
+</ul>
+<span class="ans">Yani plant is ke baghair zinda nahin reh sakta, aur is ke saath us ka 99% pani chala jata hai. Isi liye ise necessary evil kehte hain.</span>
+</div>
+
+<div class="solve"><span class="t">Q2. What is the composition of translocating flood?</span>
+<b>Pehle ek baat:</b> kitab ne yahan <b>"flood"</b> chhaap diya hai. Asal lafz <b>"fluid"</b> hai. Sawal ka matlab hai: <b>translocating fluid, yani phloem sap, kis cheez se bana hota hai?</b> Kitab ke page 121 par heading hi ye hai: "Composition of Translocating Fluid (Phloem Sap)".<br><br>
+<b>Jawab:</b>
+<ul>
+<li>Translocating fluid ko <b>phloem sap</b> kehte hain, kyunke ye phloem ke sieve tubes mein behta hai.</li>
+<li>Phloem sap mein <b>about 10 to 25% dry matter</b> hota hai.</li>
+<li><b>Most of this dry matter is sucrose</b> (a kind of sugar).</li>
+<li>Is ke ilawa <b>kuch doosre organic compounds</b> bhi hote hain.</li>
+<li>Baqi hissa (taqreeban 75 se 90%) <b>pani</b> hai, jo xylem se osmosis ke zariye phloem mein aata hai.</li>
+</ul>
+<span class="ans">Ek line mein: phloem sap = 10 to 25% dry matter, jis ka zyada tar hissa sucrose hai, saath mein kuch aur organic compounds, aur baqi pani.</span>
+</div>
+
+<div class="solve"><span class="t">Q4. What is the effect of temperature on the rate of transportation?</span>
+<b>Pehle ek baat:</b> kitab ne yahan <b>"transportation"</b> chhaap diya hai. Sawal asal mein <b>transpiration</b> ka hai (kitab p118 ki heading "Effect of temperature", jo transpiration ke factors mein hai). Jawab transpiration ka hi likhna hai.<br><br>
+<b>Jawab:</b>
+<ul>
+<li>Tez dhoop wale din <b>air temperature barhta</b> hai, aur temperature barhne se <b>hawa ki humidity kam</b> ho jati hai.</li>
+<li>Is ki wajah se <b>mesophyll cells</b> ki surfaces se <b>zyada pani evaporate</b> hota hai, yani <b>rate of transpiration barh jati</b> hai.</li>
+<li>Kitab ka pakka number: <b>"For every 10&deg;C increase in temperature, the rate of transpiration roughly doubles."</b></li>
+<li><b>Lekin</b> jab temperature bohat zyada ho jaye, <b>around 40 to 45&deg;C</b>, to plant ke patton ke <b>stomata band ho jate hain</b>. Is se rate of transpiration <b>gir</b> jati hai. Ye closure plant ko apna zaroori pani bachane mein madad deta hai, kyunke zyada loss us ke liye <b>detrimental</b> (nuqsan deh) hai.</li>
+<li>Agar ye ooncha temperature <b>lambe arse tak</b> rahe aur <b>mitti mein pani kaafi na ho</b>, to plants <b>wilt</b> karne lagte hain aur aakhir kaar <b>mar</b> bhi sakte hain.</li>
+</ul>
+<span class="ans">Khulasa: temperature barhne se rate barhti hai (har 10&deg;C par taqreeban double), magar 40 se 45&deg;C par stomata band ho jane se rate kam ho jati hai.</span>
+</div>
+
+<div class="solve"><span class="t">Q8. Define following terms (ii, iii, viii, ix)</span>
+<b>(ii) Transpiration:</b> The loss of most of the absorbed water (approx. 99%) in the form of <b>vapours</b> into the atmosphere from the <b>aerial parts</b> of the plant is called transpiration. Is ka 90% hissa <b>stomata</b> se (stomatal transpiration), 7 to 9% <b>cuticle</b> se (cuticular transpiration) aur 3% se kam <b>lenticels</b> se (lenticular transpiration) hota hai.<br><br>
+<b>(iii) Translocation:</b> The transport of <b>prepared food (organic solutes)</b> to different parts of the plant through the <b>phloem tissue</b> is called translocation. Ye <b>source</b> se <b>sink</b> ki taraf hoti hai.<br><br>
+<b>(viii) Adhesion:</b> Adhesion is the <b>attraction between water molecules and other substances</b>. Xylem mein pani ke molecules <b>xylem cells ki deewaron</b> se kheenche jate hain, kyunke <b>water aur cellulose dono polar molecules</b> hain. Ye adhesion pani ko <b>gravity ke khilaf upar</b> chalne mein madad deti hai aur jab transpiration nahin ho rahi hoti tab pani ko <b>xylem ke andar rokay</b> rakhti hai.<br><br>
+<b>(ix) Cohesion:</b> Cohesion is the <b>attraction between nearby water molecules</b>, which is possible because <b>water is a polar molecule</b>. Ye <b>hydrogen bonds</b> ki wajah se hoti hai aur pani ke molecules ko xylem ke andar ek <b>continuous column</b> (lagatar lambi lari) ki soorat mein jore rakhti hai.
+</div>
+
+<div class="solve"><span class="t">Q9 (d). Write the difference between transpiration and translocation</span>
+<table class="t1">
+<tr><th>Transpiration</th><th>Translocation</th></tr>
+<tr><td>Loss of water in the form of vapours from the aerial parts of the plant.</td><td>Transport of prepared food (organic solutes) to different parts of the plant.</td></tr>
+<tr><td>Jo cheez move karti hai: <b>water (as vapours)</b>.</td><td>Jo cheez move karti hai: <b>organic solutes, mostly sucrose</b>.</td></tr>
+<tr><td>Raasta: <b>stomata, cuticle aur lenticels</b> (pani xylem se aa kar inhi se bahar jata hai).</td><td>Raasta: <b>phloem tissue</b> (sieve tubes aur companion cells).</td></tr>
+<tr><td>Direction: plant se <b>bahar atmosphere</b> mein.</td><td>Direction: <b>source se sink</b>, plant ke andar, har taraf.</td></tr>
+<tr><td>Plant ke liye <b>pani ka nuqsan</b> hai (approx. 99% loss), is liye necessary evil.</td><td>Plant ke liye <b>khane ki supply</b> hai, koi nuqsan nahin.</td></tr>
+<tr><td>Plant ki apni <b>ATP kharch nahin</b> hoti; ye evaporation aur diffusion se hoti hai.</td><td>Loading aur unloading mein <b>ATP kharch</b> hoti hai (active transport).</td></tr>
+</table>
+</div>
+
+<div class="solve"><span class="t">Q9 (e). Write the difference between translocation and ascent of sap</span>
+<table class="t1">
+<tr><th>Translocation</th><th>Ascent of sap</th></tr>
+<tr><td>Transport of <b>prepared food (organic solutes)</b>.</td><td>Transport of <b>water and dissolved minerals</b>.</td></tr>
+<tr><td>Tissue: <b>phloem</b> (sieve tubes + companion cells).</td><td>Tissue: <b>xylem</b> (tracheids + vessels).</td></tr>
+<tr><td>Direction: <b>source se sink</b>; upar, neeche, har taraf ho sakti hai.</td><td>Direction: sirf <b>upar</b>, roots se leaves ki taraf, gravity ke khilaf.</td></tr>
+<tr><td>Theory: <b>pressure flow (mass flow) theory</b>.</td><td>Theory: <b>TACT theory</b> (transpiration pull, adhesion, cohesion, tension).</td></tr>
+<tr><td>Chalane wali cheez: source aur sink ke darmiyan <b>pressure ka farq</b>.</td><td>Chalane wali cheez: <b>transpiration pull</b>, aur bulk flow <b>solar energy</b> se driven hai.</td></tr>
+<tr><td><b>ATP chahiye</b> (loading aur unloading ke liye).</td><td>Plant ki <b>ATP nahin</b> lagti.</td></tr>
+<tr><td>Jin cells se guzarti hai wo <b>zinda</b> hain (sieve tubes).</td><td>Jin cells se guzarta hai wo <b>mare huey (dead)</b> hain.</td></tr>
+</table>
+</div>
+
+<div class="solve"><span class="t">Q9 (f). Write the difference between xylem and phloem</span>
+<table class="t1">
+<tr><th>Xylem</th><th>Phloem</th></tr>
+<tr><td>Complex and permanent tissue jo <b>ascent of sap</b> ka passage hai.</td><td>Complex and permanent tissue jo <b>translocation</b> ka passage hai.</td></tr>
+<tr><td>Ahem cells: <b>tracheids</b> (long, dead cells with pointed ends) aur <b>vessels</b> (long, dead, thick-walled tube-like structures formed by the fusion of vessel cells placed end to end).</td><td>Ahem cells: <b>sieve tube elements</b> (long tube-like structures) aur <b>companion cells</b>.</td></tr>
+<tr><td>Cells <b>dead</b> hote hain.</td><td>Sieve tubes <b>zinda</b> hote hain lekin un mein <b>nucleus nahin</b> hota; companion cells un ke functions control karte hain.</td></tr>
+<tr><td>Kya le kar jata hai: <b>water aur dissolved minerals</b>.</td><td>Kya le kar jata hai: <b>organic solutes</b> (phloem sap: 10 to 25% dry matter, mostly sucrose).</td></tr>
+<tr><td>Direction: sirf <b>upar</b> (roots se leaves).</td><td>Direction: <b>source se sink</b>, har direction mein.</td></tr>
+<tr><td>Transport ke saath saath plant ko <b>structural support</b> bhi deta hai.</td><td>Ka asal kaam <b>khana pohanchana</b> hai.</td></tr>
+</table>
+</div>
+
+<h3 class="pb">Section III: Extensive Answer Questions <span class="pg">(kitab p128)</span></h3>
+<p class="small">Ye teen sawal seedha SLO 8, 9 aur 10 se bane hain. Inhein poora likhna aata ho to is part ka kaam mukammal hai.</p>
+
+<div class="solve"><span class="t">Q4. Describe transpiration and relate this process with the cell surface and stomatal opening and closing.</span>
+<b>1. Transpiration kya hai:</b> Plants roots ke zariye mitti se pani absorb karte hain. Ye absorbed water plant ke <b>aerial parts</b> mein jata hai aur wahan se is ka <b>zyada tar hissa (approx. 99%) vapours ki shakal mein atmosphere</b> mein chala jata hai. Isi loss ko <b>transpiration</b> kehte hain.<br><br>
+<b>2. Transpiration ki teen qismein:</b>
+<ul>
+<li><b>Stomatal transpiration:</b> is loss ka <b>90%</b>, jo <b>stomata</b> se hota hai. Stomata zyada tar <b>leaves</b> mein aur kuch doosre aerial parts mein hote hain.</li>
+<li><b>Cuticular transpiration:</b> absorbed water ka <b>7 to 9%</b>, jo <b>general body surface</b> se <b>cuticle</b> ke zariye nikalta hai.</li>
+<li><b>Lenticular transpiration:</b> <b>3% se kam</b>, jo <b>lenticels</b> se nikalta hai. Lenticels <b>scar like regions</b> hain (ruptured epidermis aur loosely packed underlying cortical cells ke saath) jo <b>stem</b> par hote hain.</li>
+</ul>
+<b>3. Transpiration ki ahmiyat:</b> ye plant ke liye ek <b>vital process</b> hai. Ye plant ko <b>cooling</b> deta hai, <b>water aur dissolved minerals absorb</b> karne mein madad deta hai, aur unhein <b>upward direction mein leaves tak</b> pohanchata hai. Is ke baghair plants zinda nahin reh sakte. Doosri taraf ise <b>disadvantageous</b> bhi kaha jata hai kyunke is mein absorbed water ka bohat bara hissa zaaya hota hai, aur <b>unchecked excessive transpiration</b> se plant mein <b>wilting (loss of turgor)</b> aur aakhir kaar <b>death</b> ho sakti hai. Isi liye ise <b>necessary evil</b> kaha jata hai.<br><br>
+<b>4. Leaf surface (cell surface) ke saath rishta:</b> transpiration zyada tar <b>stomata</b> se hoti hai, aur stomata <b>leaf surface</b> par hote hain. Is liye:
+<ul>
+<li>Jin plants ke patton ka <b>surface area bara</b> hota hai, un par <b>stomata zyada</b> hote hain, aur wo <b>greater rate of transpiration</b> dikhate hain.</li>
+<li>Jin plants ke patton ki surfaces <b>narrow aur reduced</b> hoti hain, un par <b>stomata kam</b> hote hain, aur un ki transpiration ki rate <b>kam</b> hoti hai.</li>
+<li>Is ke ilawa pani mesophyll cells ki <b>surfaces</b> se evaporate ho kar air spaces mein aata hai aur phir stomata se bahar jata hai, yani cell surface jitni zyada exposed ho, evaporation utna zyada.</li>
+</ul>
+<b>5. Stomatal opening aur closing ke saath rishta:</b>
+<ul>
+<li><b>Din mein</b> stomata <b>widely open</b> hote hain, is liye <b>din mein transpiration raat se zyada</b> hoti hai.</li>
+<li><b>Raat ko</b> stomata <b>nearly close</b> ho jate hain, is liye transpiration bohat kam ho jati hai.</li>
+<li>Bohat zyada garmi (<b>around 40 to 45&deg;C</b>) mein bhi stomata <b>band</b> ho jate hain taa ke plant apna zaroori pani bacha sake, aur us waqt bhi transpiration gir jati hai.</li>
+</ul>
+<span class="ans">Khulasa: transpiration ka darwaza stomata hai. Patta bara aur stomata zyada = transpiration zyada. Stomata khule (din) = transpiration zyada; stomata band (raat, ya bohat zyada garmi) = transpiration kam.</span>
+</div>
+
+<div class="solve"><span class="t">Q5. Describe temperature, wind and humidity as factors affecting the rate of transpiration.</span>
+Transpiration ki rate kai <b>environmental factors</b> se badalti hai, jaise <b>temperature, wind aur humidity</b>. Ye rate ek simple apparatus <b>potometer</b> se naapi jati hai, jis mein capillary tube ke andar <b>air bubble</b> ki harkat ko <b>volume scale</b> par parha jata hai (Figure 8.7).<br><br>
+<b>1. Effect of temperature:</b>
+<ul>
+<li>Tez dhoop wale din <b>air temperature barhta</b> hai aur is se hawa ki <b>humidity kam</b> ho jati hai.</li>
+<li>Nateeja: <b>mesophyll cells</b> ki surfaces se zyada pani evaporate hota hai aur <b>rate of transpiration barh</b> jati hai.</li>
+<li><b>For every 10&deg;C increase in temperature, the rate of transpiration roughly doubles.</b></li>
+<li>Lekin jab temperature <b>bohat zyada (around 40 to 45&deg;C)</b> ho jaye to <b>stomata band</b> ho jate hain. Ye closure plant ko apna much needed pani bachane deta hai, kyunke excessive loss <b>detrimental</b> hai.</li>
+<li>Agar ye garmi <b>lambe arse</b> tak rahe aur <b>soil mein pani kaafi na</b> ho to plants <b>wilt</b> kar ke <b>mar</b> bhi sakte hain.</li>
+</ul>
+<b>2. Effect of wind:</b>
+<ul>
+<li><b>Wind is moving air</b>, aur ye water molecules ke <b>diffusion ko tez</b> kar deti hai.</li>
+<li>Is se <b>mesophyll cells</b> ki surfaces se <b>evaporation ki rate barh</b> jati hai, yani transpiration zyada.</li>
+<li>Is ke bar aks jab hawa <b>calm and still</b> ho to water molecules ki harkat (diffusion) <b>slow</b> ho jati hai aur <b>rate of transpiration kam</b> ho jati hai.</li>
+</ul>
+<b>3. Effect of humidity:</b>
+<ul>
+<li><b>Humidity hawa mein water vapours ka percentage</b> hai.</li>
+<li><b>Dry air (low humidity)</b> mein water molecules <b>mesophyll cells, air spaces aur stomata</b> se patte ke bahar <b>more rapidly diffuse</b> karte hain. Is se zyada pani zaaya hota hai aur <b>rate of transpiration barh</b> jati hai.</li>
+<li><b>Humid air</b> mein <b>diffusion rate slow</b> ho jati hai, jis se transpiration ki rate mein <b>significant decrease</b> aata hai.</li>
+</ul>
+<span class="ans">Khulasa: temperature barhe to rate barhti hai (40 se 45&deg;C par stomata band hone tak); hawa chale to rate barhti hai, still air mein girti hai; humidity barhe to rate girti hai, khushk hawa mein barhti hai.</span><br>
+<span class="small">Kitab ye bhi kehti hai ke inhi ke sath <b>sun light, CO<sub>2</sub> concentration aur availability of soil water</b> bhi transpiration ki rate par asar dalte hain.</span>
+</div>
+
+<div class="solve"><span class="t">Q6. Explain the mechanism of food translocation by the theory of pressure flow mechanism.</span>
+<b>Translocation kya hai:</b> prepared food (organic solutes) ka <b>phloem tissue</b> ke zariye plant ke mukhtalif hisson tak pohanchna translocation kehlata hai. Ye <b>source</b> (jo khana deta hai, jaise leaves) se <b>sink</b> (jo khana kharch karta hai, jaise roots ya storage organs) ki taraf hoti hai. Jo fluid behta hai use <b>phloem sap</b> kehte hain, jis mein <b>about 10 to 25% dry matter</b> hai aur us ka zyada tar hissa <b>sucrose</b> hai.<br><br>
+<b>Theory ka naam:</b> "The most accepted idea for how organic solutes moves in plants is the <b>pressure flow</b> or <b>mass flow</b> theory."<br><br>
+<b>Mechanism ke 6 steps (kitab ke mutabiq):</b>
+<ol>
+<li><b>Loading at the source:</b> source regions, jaise leaves ya storage areas, mein bani sugars ko <b>companion cells</b> phloem ke <b>sieve tube elements</b> mein load karte hain.</li>
+<li><b>Concentration barhna:</b> ye <b>active transport</b> phloem mein <b>sugar concentration barha</b> deta hai aur <b>water concentration kam</b> kar deta hai. Is se phloem cells zyada "sweet" ho jate hain.</li>
+<li><b>Osmosis se pani andar:</b> qareebi <b>xylem cells</b> se pani <b>osmosis</b> ke zariye phloem mein aata hai, jis se phloem cells mein <b>hydrostatic pressure</b> (pani ka pressure) barh jata hai. Yehi pressure sugary solution ko <b>source (aksar patta) se door</b> dhakelta hai.</li>
+<li><b>Pressure ka farq:</b> <b>high-pressure source</b> se <b>lower-pressure sink</b> tak ka ye pressure difference hi <b>translocation</b> paida karta hai. Kitab ki misal: "It's like water being pushed through a hose."</li>
+<li><b>Unloading at the sink:</b> jab solution sink tak pohanchta hai, jaise roots, to <b>root cells organic solutes ko actively absorb</b> kar lete hain. Is se phloem sap <b>less sweet</b> ho jata hai.</li>
+<li><b>Pani ki wapsi:</b> phloem sap mein solutes kam hone se <b>solute potential aur water potential barh</b> jate hain, jis ki wajah se pani wapas <b>xylem tubes</b> mein chala jata hai.</li>
+</ol>
+<b>Natija (kitab ke alfaaz):</b> "So, it's like a system of moving food and water around the plant, driven by <b>differences in pressure</b> and the <b>needs of different plant parts</b>."<br><br>
+<b>Figure 8.9 se madad:</b> "Sugar is actively loaded into the sieve tube at the source. As a result, water moves into the sieve tubes by osmosis. At the sink, the sugar is actively unloaded, and water leaves the sieve tube by osmosis." Diagram mein source par <b>leaf cells</b>, sink par <b>root cells</b>, beech mein poore plant ki lambai mein chalta <b>sieve tube</b> aur us ke saath <b>companion cells</b> dikhaye gaye hain. Dono jagah (loading aur unloading) <b>ATP</b> darkar hoti hai.
+</div>
+
+<!-- ================= CHECK ================= -->
+<h2 class="pb"><span class="emoji">✅</span> Khud ko check karo (12 sawal)</h2>
+<p class="small">Pehle khud jawab socho ya notebook mein likho, phir agle page par check karo.</p>
+<ol class="check">
+  <li>Absorbed water ka kitna percent transpiration mein zaaya hota hai?</li>
+  <li>Transpiration ki teen qismein aur har ek ka percentage batao.</li>
+  <li>Lenticels kahan hote hain aur wo kaisi regions hain?</li>
+  <li>Transpiration ki rate naapne wale aale ka naam kya hai?</li>
+  <li>Har 10&deg;C temperature barhne par rate ka kya hota hai, aur kis temperature par stomata band ho jate hain?</li>
+  <li>Humid air mein transpiration barhti hai ya ghatti hai?</li>
+  <li>Ascent of sap ka passage kya hai, aur us ke do ahem cells kaun se hain?</li>
+  <li>TACT mein T, A, C aur T kis kis ke liye hain?</li>
+  <li>Adhesion aur cohesion mein kya farq hai?</li>
+  <li>Sieve tube mein kya nahin hota, aur us ke functions kaun control karta hai?</li>
+  <li>Phloem sap mein kitna dry matter hota hai aur us ka zyada tar hissa kya hai?</li>
+  <li>Pressure flow theory mein translocation kis cheez ki wajah se hoti hai?</li>
+</ol>
+
+<h2 class="pb"><span class="emoji">🔑</span> Jawab</h2>
+<ol class="check">
+  <li><b>Approx. 99%</b></li>
+  <li><b>Stomatal transpiration 90%</b> (stomata se), <b>cuticular transpiration 7 to 9%</b> (cuticle se), <b>lenticular transpiration 3% se kam</b> (lenticels se)</li>
+  <li><b>Stem</b> par. Ye <b>scar like regions</b> hain jin mein <b>ruptured epidermis</b> aur <b>loosely packed underlying cortical cells</b> hote hain.</li>
+  <li><b>Potometer</b> (kitab ne ek jagah ghalti se "photometer" likh diya hai)</li>
+  <li>Rate taqreeban <b>double</b> ho jati hai. <b>40 se 45&deg;C</b> par stomata band ho jate hain.</li>
+  <li><b>Ghatti hai</b> (significant decrease). Dry air mein barhti hai.</li>
+  <li>Passage = <b>xylem</b>. Do ahem cells = <b>tracheids</b> (long, dead, pointed ends) aur <b>vessels</b> (long, dead, thick-walled tube-like, vessel cells ke fusion se end to end).</li>
+  <li><b>T</b>ranspiration pull, <b>A</b>dhesion, <b>C</b>ohesion, <b>T</b>ension</li>
+  <li><b>Cohesion</b> = pani ke molecules ka aapas mein kheencha jana (hydrogen bonds). <b>Adhesion</b> = pani ka doosri cheezon se, jaise xylem cell wall (cellulose) se, kheencha jana. Dono is liye mumkin hain ke water <b>polar molecule</b> hai.</li>
+  <li>Sieve tube mein <b>nucleus nahin</b> hota. Us ke functions <b>companion cells</b> control karte hain.</li>
+  <li><b>About 10 to 25% dry matter</b>, jis ka zyada tar hissa <b>sucrose</b> hai (saath mein kuch aur organic compounds).</li>
+  <li><b>Pressure ke farq</b> ki wajah se: high-pressure <b>source</b> se lower-pressure <b>sink</b> ki taraf, jaise hose pipe mein pani.</li>
+</ol>
+
+<div class="intro">
+  <p><b>Score dekho:</b> 10 se 12 sahi: zabardast, ye part pakka ho gaya! <span class="emoji">🌟</span> 7 se 9: jo ghalat huey sirf un ka hissa dobara dekh lo. 7 se kam: koi baat nahin, ek dafa aur aaram se parh lo, khaas taur par numbers wale boxes. <span class="emoji">💪</span></p>
+  <p><b>Sab se ahem yaad rakhne wali cheez:</b> xylem upar ki taraf <b>pani</b> le jata hai (TACT, solar energy), phloem har taraf <b>khana</b> le jata hai (pressure flow, ATP). Baqi sab tafseel isi ek farq ke aas paas ghoomti hai.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Physics Unit 7 Part 7B Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 5mm 5.5mm 5mm 5.5mm; }
+  :root {
+    --ink: #1f2430; --muted: #5b6475;
+    --blue: #1d5fa8; --blue-bg: #e8f1fc;
+    --green: #1e7a4a; --green-bg: #e7f6ee;
+    --yellow: #8a6200; --yellow-bg: #fff6d8;
+    --red: #a8322a; --red-bg: #fdecea;
+    --line: #d7dce5;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 8.6pt; line-height: 1.26; margin: 0; }
+  .emoji { font-family: "Noto Color Emoji"; font-style: normal; }
+  h1 { font-size: 13pt; color: var(--blue); margin: 0 0 1mm; line-height: 1.15; }
+  .sub { color: var(--muted); font-size: 8.6pt; margin-bottom: 1.6mm; }
+  h2 { font-size: 10.2pt; color: #fff; background: var(--blue); padding: 1.1mm 2.4mm; border-radius: 2mm; margin: 2.2mm 0 1.3mm; page-break-after: avoid; }
+  h2 .pg { font-size: 8pt; font-weight: normal; opacity: .9; }
+  p { margin: 1mm 0; }
+  ol, ul { margin: 1mm 0; padding-left: 5mm; }
+  li { margin: 0.25mm 0; }
+  .box { border-radius: 1.8mm; padding: 1.3mm 2.1mm; margin: 1.3mm 0; page-break-inside: avoid; }
+  .box .t { font-weight: bold; font-size: 8.7pt; display: block; margin-bottom: 0.5mm; }
+  .def { background: var(--blue-bg); border-left: 3.5px solid var(--blue); }
+  .def .t { color: var(--blue); }
+  .trick { background: var(--yellow-bg); border-left: 3.5px solid #e0a800; }
+  .trick .t { color: var(--yellow); }
+  .warn { background: var(--red-bg); border-left: 3.5px solid var(--red); }
+  .warn .t { color: var(--red); }
+  .solve { border: 1.3px dashed var(--green); border-radius: 1.8mm; padding: 1.3mm 2.1mm; margin: 1.3mm 0; page-break-inside: avoid; }
+  .solve .t { color: var(--green); font-weight: bold; font-size: 8.7pt; display: block; margin-bottom: 0.5mm; }
+  .ans { color: var(--green); font-weight: bold; }
+  .formula { text-align: center; font-size: 9.8pt; font-weight: bold; color: var(--blue); margin: 1.1mm 0; }
+  table.t1 { border-collapse: collapse; width: 100%; font-size: 7.4pt; margin: 1.2mm 0; page-break-inside: avoid; }
+  table.t1 th { background: var(--blue); color: #fff; padding: 0.9mm 1.3mm; text-align: left; }
+  table.t1 td { border: 1px solid var(--line); padding: 0.6mm 1.2mm; vertical-align: top; }
+  table.t1 tr:nth-child(even) td { background: #f6f8fb; }
+  table.t1 td:first-child { font-weight: 600; width: 22%; }
+  .small { font-size: 7.7pt; color: var(--muted); }
+  .quiz { background: #f2ecfb; border: 1.3px solid #6a3fa0; border-radius: 2mm; padding: 1.5mm 2.3mm; margin: 1.6mm 0 1.2mm; page-break-inside: avoid; }
+  .quiz .t { color: #6a3fa0; font-weight: bold; font-size: 9pt; display: block; margin-bottom: 0.8mm; }
+  .quiz ol { padding-left: 5mm; font-size: 8.1pt; }
+  .quiz li { margin: 0.6mm 0; }
+  .key { background: #e6f7f7; border: 1.3px solid #1a8a8a; border-radius: 2mm; padding: 1.3mm 2.2mm; font-size: 7.1pt; line-height: 1.22; page-break-inside: avoid; }
+  .key .t { color: #11706f; font-weight: bold; display: block; margin-bottom: 0.5mm; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">🪨</span> Physics Unit 7, Part 7B</h1>
+<div class="sub">Irregular cheez ki density (displacement method) aur Matter ki teen halatein &middot; kitab p172 se p175</div>
+
+<p>Seemab, hissa chhota hai magar numericals yahin se bantay hain. Pehle notes mein liquids aur regular solids ka method reh gaya tha (kitab p170, p171), woh Part 7A mein aa raha hai; yahan p172 se p175 tak sab kuch hai.</p>
+
+<h2><span class="emoji">💧</span> 1. Displacement method <span class="pg">(7.2.2, kitab p172, p173)</span></h2>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein bilkul yehi likhna</span>
+"We can find the density of <b>irregular shaped solid objects</b> like stones which can <b>sink in the water</b>. We need <b>graduated measuring cylinder</b> to measure volume and <b>balance</b> to measure mass of object." Aur aakhir mein: "...any <b>insoluble</b> irregular shaped object."
+</div>
+
+<p><b>Kitab ke 6 steps</b> (yehi likhne hain, isi tarteeb mein):</p>
+<ol>
+<li>Find the mass of the irregular shaped stone (balance se).</li>
+<li>Add some water in measuring cylinder and measure its <b>initial volume (V<sub>i</sub>)</b>.</li>
+<li>Tie thread with the object and lower it in the measuring cylinder.</li>
+<li>Water will rise (displace); measure <b>final volume (V<sub>f</sub>)</b>. Ye reading paani + pathar dono ka volume hai.</li>
+<li>Volume of object = V<sub>f</sub> &minus; V<sub>i</sub></li>
+<li>Density nikalne ke liye mass ko volume se divide karo.</li>
+</ol>
+
+<div class="formula">Density of Solid = Mass of Solid / Volume of Solid &nbsp;<span class="small">(Equation 7.4)</span></div>
+
+<p class="small"><b>Figure 7.3</b> banana aa jaye: do cylinders. Pehle mein sirf paani, level <b>V<sub>i</sub></b>. Doosre mein pathar <b>dhaage se latka hua</b> andar, ooncha level <b>V<sub>f</sub></b>.</p>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 7.4 (kitab p173): pathar ki density</span>
+Mass = 80.52 g, paani 18 mL se 46 mL par aaya.<br>
+V = V<sub>f</sub> &minus; V<sub>i</sub> = 46 &minus; 18 = <b>28 mL = 28 cm³</b><br>
+ρ = 80.52 g &divide; 28 cm³ = <span class="ans">2.88 g/cm³</span>
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki galti: yaad rakho</span>
+Kitab ka apna data 28 cm³ deta hai, magar neeche <b>80.52 &divide; 25 cm³</b> likh kar jawab <b>3.22 g/cm³</b> chhapa hai. Ye <b>ghalat</b> hai. Tum hamesha <b>28</b> se divide karna, jawab <b>2.88 g/cm³</b>.
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 7.3 (kitab p172): eent (brick) ki density, cm se metre</span>
+Mass = 3.30 kg; 21.6 cm &times; 10.2 cm &times; 6.35 cm.<br>
+Pehle cm ko metre: 0.216 m, 0.102 m, 0.0635 m.<br>
+V = 0.216 &times; 0.102 &times; 0.0635 = <b>0.00140 m³</b><br>
+ρ = 3.3 kg &divide; 0.00140 m³ = 2358.773 = <span class="ans">2360 kg/m³</span>
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Do pakki baatein</span>
+<b>1 mL = 1 cm³</b>, is liye cylinder ki reading seedha cm³ ban jati hai.<br>
+<b>Units milao:</b> mass kg mein ho to volume m³ mein (jawab kg/m³); mass g mein ho to volume cm³ mein (jawab g/cm³). kg ko cm³ se kabhi divide mat karna.
+</div>
+
+<h2><span class="emoji">🧊</span> 2. Matter ki teen halatein <span class="pg">(7.3, kitab p174, p175)</span></h2>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein bilkul yehi likhna</span>
+"Matter exists in three fundamental states; <b>solid, liquid and gas</b>. Matter consists of particles (atoms and molecules). <b>Gaps between these particles is the main reason that divides the matter in three states.</b> Particles of matter apply an <b>attractive force</b> on each other. The difference in strength of this force is the reason for smaller or large gaps between particles."
+</div>
+
+<p class="small">Asli farq sirf do cheezein: <b>force kitni strong</b> aur <b>gap kitna</b>. Shape, density, motion sab usi se nikalte hain.</p>
+
+<table class="t1">
+<tr><th>Cheez</th><th>Solid</th><th>Liquid</th><th>Gas</th></tr>
+<tr><td>Attractive force</td><td>Strong</td><td>Intermediate (solid se kam)</td><td>Negligibly weak</td></tr>
+<tr><td>Arrangement</td><td>Closely packed, <b>fixed lattice pattern</b></td><td>Randomly arranged, phir bhi paas paas</td><td>Randomly arranged, faasla particle ke size se bhi bara</td></tr>
+<tr><td>Movement</td><td>Sirf mean position par <b>vibrate</b></td><td>Ek doosre par <b>flow aur glide</b>, position badalti hai</td><td>Tez <b>random motion</b>, aapas mein aur deewar se takraatay hain</td></tr>
+<tr><td>Shape</td><td>Fix shape</td><td>No fix shape; container ki shape le leta hai</td><td>No fix shape, no fix volume; poora container bhar deti hai</td></tr>
+<tr><td>Density</td><td><b>High</b></td><td><b>Medium</b> (intermediate)</td><td><b>Low</b></td></tr>
+<tr><td>Energy</td><td>Low energy</td><td>Greater energy</td><td>Highest energy</td></tr>
+</table>
+<p class="small">Ye <b>Table 7.2</b> + 7.3.1 ke points ek hi jagah. <b>FYI (p175):</b> liquid ke particles free move karte hain magar force ki wajah se container ke <b>neeche</b> rehte hain; gas ke phail kar poora container bhar dete hain.</p>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki Figure 7.4 ke label ulat gaye hain</span>
+"Solids" wale cylinder mein particles <b>door door phaile</b> hain (ye gas hai), "Gases" wale mein <b>ghichi packed</b> (ye solid hai). <b>Jahan particles sab se paas paas hain woh solid hai.</b>
+</div>
+
+<div class="quiz"><span class="t"><span class="emoji">✅</span> Quiz (3 sawal, ye teeno aap ke paper mein bhi aayenge)</span>
+<ol>
+<li>Displacement method kis tarah ki cheez ke liye hai, aur us mein kaunsi <b>do</b> sharten honi chahiyen?</li>
+<li>Ek pathar ka mass 175 g hai. Measuring cylinder mein paani 30 mL se 55 mL par aa gaya. Is ka volume aur density nikalo.</li>
+<li>Solid ki density gas se kahin zyada kyun hoti hai? Attractive force ke lafz mein samjhao.</li>
+</ol>
+</div>
+
+<!-- ANSWER KEY, NOT PRINTED FOR HER. Kept for marking and for reuse on her paper:
+🔑 Jawab
+1. Irregular shaped solid object ki. Sharten: woh paani mein sink kare (doobe) aur insoluble ho (paani mein ghule nahin).
+2. V = 55 &minus; 30 = 25 mL = 25 cm³; ρ = 175 &divide; 25 = 7.0 g/cm³.
+3. Solid mein attractive force strong hai, is liye particles closely packed aur fixed lattice mein hain, gaps bohat chhote. Utne hi volume mein zyada mass aa jata hai, to density high. Gas mein force negligible hai, gaps bohat bare, is liye density low.
+-->
+
+
+</body>
+</html>

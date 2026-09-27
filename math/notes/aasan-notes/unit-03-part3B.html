@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Maths Unit 3 Part 3B Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 5mm 5mm 5mm 5mm; }
+  :root {
+    --ink:#1f2430; --muted:#5b6475;
+    --blue:#1d5fa8; --blue-bg:#e8f1fc;
+    --green:#1e7a4a; --green-bg:#e7f6ee;
+    --yellow:#8a6200; --yellow-bg:#fff6d8;
+    --purple:#6a3fa0; --purple-bg:#f2ecfb;
+    --red:#a8202a; --red-bg:#fdecec;
+    --line:#d7dce5;
+  }
+  * { box-sizing:border-box; }
+  body { font-family:"Noto Sans","DejaVu Sans",sans-serif; color:var(--ink); font-size:8.55pt; line-height:1.235; margin:0; }
+  .emoji { font-family:"Noto Color Emoji"; font-style:normal; }
+  h1 { font-size:13.5pt; color:var(--blue); margin:0 0 0.6mm; line-height:1.12; }
+  .sub { color:var(--muted); font-size:8.3pt; margin-bottom:1.6mm; }
+  h2 { font-size:9.7pt; color:#fff; background:var(--blue); padding:0.8mm 2.2mm; border-radius:1.7mm; margin:1.5mm 0 0.9mm; page-break-after:avoid; }
+  h2 .pg { font-size:8.2pt; font-weight:normal; opacity:.9; }
+  p { margin:0.6mm 0; }
+  ul { margin:0.6mm 0 0.8mm; padding-left:4.6mm; }
+  li { margin:0.3mm 0; }
+  b.m { font-family:"DejaVu Serif",serif; font-weight:bold; }
+  .box { border-radius:1.6mm; padding:1mm 2mm; margin:0.8mm 0; page-break-inside:avoid; }
+  .box .t { font-weight:bold; font-size:8.6pt; display:block; margin-bottom:0.4mm; }
+  .def { background:var(--blue-bg); border-left:3px solid var(--blue); }
+  .def .t { color:var(--blue); }
+  .eg { background:var(--green-bg); border-left:3px solid var(--green); }
+  .eg .t { color:var(--green); }
+  .trick { background:var(--yellow-bg); border-left:3px solid #e0a800; }
+  .trick .t { color:var(--yellow); }
+  .mcq { background:var(--purple-bg); border-left:3px solid var(--purple); }
+  .mcq .t { color:var(--purple); }
+  .warn { background:var(--red-bg); border-left:3px solid var(--red); }
+  .warn .t { color:var(--red); }
+  table.t1 { border-collapse:collapse; width:100%; table-layout:fixed; font-size:8.4pt; margin:0.8mm 0; }
+  table.t1 tr { page-break-inside:avoid; }
+  table.t1 th { background:var(--blue); color:#fff; padding:0.7mm 1.3mm; text-align:left; font-size:8.5pt; font-weight:bold; }
+  table.t1 td { border:1px solid var(--line); padding:0.7mm 1.3mm; vertical-align:top; }
+  table.t1 tr:nth-child(even) td { background:#f6f8fb; }
+  .law { text-align:center; font-family:"DejaVu Serif",serif; font-weight:bold; font-size:9.6pt; margin:0.6mm 0; }
+  .ans { color:var(--green); font-weight:bold; }
+  .small { font-size:8.1pt; color:var(--muted); }
+  .ne { font-family:"DejaVu Sans","Liberation Sans",sans-serif; }
+  .flex { display:flex; gap:2.4mm; align-items:flex-start; }
+  ol.q { margin:0.6mm 0 0; padding-left:4.8mm; font-size:8.5pt; }
+  ol.q li { margin:0.9mm 0; }
+  .stp { margin:0; padding:0; list-style:none; font-size:8.3pt; line-height:1.3; }
+  .stp li { white-space:nowrap; }
+  svg { display:block; }
+  del { color:#a8202a; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">🎯</span> Maths Unit 3, Part 3B: Associative and distributive laws</h1>
+<div class="sub">Aasan Notes for Seemab &middot; kitab ke page 52 se 56 tak &middot; practice: Exercise 3.1 ke Q3 se Q7</div>
+
+<h2><span class="emoji">🔗</span> 1. Associative properties <span class="pg">(p52, p53)</span></h2>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke do laws, exam mein bilkul yehi likhna hai</span>
+<div class="law">Associative Property of Union: (A &cup; B) &cup; C = A &cup; (B &cup; C)</div>
+<div class="law">Associative Property of Intersection: (A &cap; B) &cap; C = A &cap; (B &cap; C)</div></div>
+<p>Teen sets par <b>ek hi</b> operation lag raha ho, to bracket chahe pehle do par lagao ya aakhri do par, jawab bilkul wohi nikalta hai. Bracket sirf yeh tay karta hai ke <b>kaam ka order</b> kya hoga, natija nahin badalta. Is liye hum <b>A &cup; B &cup; C</b> bina bracket ke bhi likh dete hain.</p>
+
+<table class="t1">
+<colgroup><col style="width:50%"><col style="width:50%"></colgroup>
+<thead><tr><th>Proof: Associative Property of Union</th><th>Proof: Associative Property of Intersection</th></tr></thead>
+<tbody><tr><td>
+<ul class="stp">
+<li>Let &nbsp;<i>x</i> &isin; (A &cup; B) &cup; C</li>
+<li>&rArr; <i>x</i> &isin; (A &cup; B) &nbsp;or&nbsp; <i>x</i> &isin; C</li>
+<li>&rArr; (<i>x</i> &isin; A or <i>x</i> &isin; B) or <i>x</i> &isin; C</li>
+<li>&rArr; <i>x</i> &isin; A or (<i>x</i> &isin; B or <i>x</i> &isin; C)</li>
+<li>&rArr; <i>x</i> &isin; A &nbsp;or&nbsp; <i>x</i> &isin; (B &cup; C)</li>
+<li>&rArr; <i>x</i> &isin; A &cup; (B &cup; C)</li>
+<li>&rArr; (A &cup; B) &cup; C <span class="ne">&sube;</span> A &cup; (B &cup; C) &nbsp;(a)</li>
+<li>Similarly, A &cup; (B &cup; C) <span class="ne">&sube;</span> (A &cup; B) &cup; C &nbsp;(b)</li>
+<li>From (a) and (b): <b>(A &cup; B) &cup; C = A &cup; (B &cup; C)</b></li>
+</ul></td><td>
+<ul class="stp">
+<li>Let &nbsp;<i>y</i> &isin; (A &cap; B) &cap; C</li>
+<li>&rArr; <i>y</i> &isin; A &cap; B &nbsp;and&nbsp; <i>y</i> &isin; C</li>
+<li>&rArr; (<i>y</i> &isin; A and <i>y</i> &isin; B) and <i>y</i> &isin; C</li>
+<li>&rArr; <i>y</i> &isin; A and (<i>y</i> &isin; B and <i>y</i> &isin; C)</li>
+<li>&rArr; <i>y</i> &isin; A &nbsp;and&nbsp; <i>y</i> &isin; (B &cap; C)</li>
+<li>&rArr; <i>y</i> &isin; A &cap; (B &cap; C)</li>
+<li>&rArr; (A &cap; B) &cap; C <span class="ne">&sube;</span> A &cap; (B &cap; C) &nbsp;(a)</li>
+<li>Similarly, A &cap; (B &cap; C) <span class="ne">&sube;</span> (A &cap; B) &cap; C &nbsp;(b)</li>
+<li>From (a) and (b): <b>(A &cap; B) &cap; C = A &cap; (B &cap; C)</b></li>
+</ul></td></tr></tbody></table>
+<p class="small">Poora proof likhte waqt <b>dono</b> taraf sabit karni parti hain: pehle LHS <span class="ne">&sube;</span> RHS, phir RHS <span class="ne">&sube;</span> LHS. Ek set doosre ke barabar tabhi hota hai jab har ek doosre ka subset ho. Sirf (a) likh dena aadha jawab hai.</p>
+
+<div class="box eg"><span class="t"><span class="emoji">✏️</span> Example 8 (p52, p53), Venn verification of union</span>
+U = {1, 2, 3, 4, 5, &hellip;, 15}, A = {2, 4, 6, 8, 10}, B = {1, 2, 3, 4, 5, 6, 7}, C = {2, 3, 5, 7, 11}.<br>
+LHS: A &cup; B = {1,2,3,4,5,6,7,8,10}, so <b class="ans">(A &cup; B) &cup; C = {1,2,3,4,5,6,7,8,10,11}</b><br>
+RHS: B &cup; C = {1,2,3,4,5,6,7,11}, so <b class="ans">A &cup; (B &cup; C) = {1,2,3,4,5,6,7,8,10,11}</b><br>
+Dono Venn diagrams mein <i>same region is shaded</i>, is liye law verified. Bahar reh gaye 9, 12, 13, 14, 15.</div>
+
+<div class="box eg"><span class="t"><span class="emoji">✏️</span> Example 9 (p53), Venn verification of intersection</span>
+U = {1, 2, 3, &hellip;, 11}, A = {1, 2, 3, 5, 7, 9}, B = {1, 2, 3, 4, 5, 6}, C = {5, 6, 7, 8}.<br>
+LHS: A &cap; B = {1, 2, 3, 5}, so <b class="ans">(A &cap; B) &cap; C = {5}</b> &nbsp;&middot;&nbsp; RHS: B &cap; C = {5, 6}, so <b class="ans">A &cap; (B &cap; C) = {5}</b><br>
+Intersection mein hamesha <b>chhota</b> jawab aata hai; teeno circles ka beech wala hissa hi shade hoga.</div>
+
+<h2><span class="emoji">📤</span> 2. Distributive properties <span class="pg">(p54, p55)</span></h2>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke do laws</span>
+<div class="law">(a) Union over Intersection: A &cup; (B &cap; C) = (A &cup; B) &cap; (A &cup; C)</div>
+<div class="law">(b) Intersection over Union: A &cap; (B &cup; C) = (A &cap; B) &cup; (A &cap; C)</div></div>
+<p>Yahan <b>do alag</b> operations hain, is liye bracket ab bekaar nahin. Bahar wala set bracket ke <b>dono</b> members par baant diya jata hai, theek jaise numbers mein <i>a</i>(<i>b</i> + <i>c</i>) = <i>ab</i> + <i>ac</i> hota hai. Farq sirf itna ke numbers mein multiplication hi addition par distribute hota hai, ulta nahin; sets mein <b>dono</b> taraf chalta hai, union bhi aur intersection bhi. Baantne ke baad bahar wala operation andar chala jata hai aur andar wala bahar aa jata hai, yaani &cup; aur &cap; apni jagah badal lete hain.</p>
+
+<table class="t1">
+<colgroup><col style="width:50%"><col style="width:50%"></colgroup>
+<thead><tr><th>Proof (a): Union over Intersection</th><th>Proof (b): Intersection over Union</th></tr></thead>
+<tbody><tr><td>
+<ul class="stp">
+<li>Let &nbsp;<i>x</i> &isin; A &cup; (B &cap; C)</li>
+<li>&rArr; <i>x</i> &isin; A &nbsp;or&nbsp; <i>x</i> &isin; (B &cap; C)</li>
+<li>&rArr; <i>x</i> &isin; A or (<i>x</i> &isin; B and <i>x</i> &isin; C)</li>
+<li>&rArr; (<i>x</i> &isin; A or <i>x</i> &isin; B) and<br>&nbsp;&nbsp;&nbsp;&nbsp;(<i>x</i> &isin; A or <i>x</i> &isin; C)</li>
+<li>&rArr; <i>x</i> &isin; (A &cup; B) and <i>x</i> &isin; (A &cup; C)</li>
+<li>&rArr; <i>x</i> &isin; (A &cup; B) &cap; (A &cup; C)</li>
+<li>&rArr; A &cup; (B &cap; C) <span class="ne">&sube;</span> (A &cup; B) &cap; (A &cup; C) &nbsp;(a)</li>
+<li>Again, let <i>y</i> &isin; (A &cup; B) &cap; (A &cup; C)</li>
+<li>&rArr; &hellip; &rArr; <i>y</i> &isin; A &cup; (B &cap; C)</li>
+<li>&rArr; (A &cup; B) &cap; (A &cup; C) <span class="ne">&sube;</span> A &cup; (B &cap; C) &nbsp;(b)</li>
+</ul></td><td>
+<ul class="stp">
+<li>Let &nbsp;<i>x</i> &isin; A &cap; (B &cup; C)</li>
+<li>&rArr; <i>x</i> &isin; A &nbsp;and&nbsp; <i>x</i> &isin; (B &cup; C)</li>
+<li>&rArr; <i>x</i> &isin; A and (<i>x</i> &isin; B or <i>x</i> &isin; C)</li>
+<li>&rArr; (<i>x</i> &isin; A and <i>x</i> &isin; B) or<br>&nbsp;&nbsp;&nbsp;&nbsp;(<i>x</i> &isin; A and <i>x</i> &isin; C)</li>
+<li>&rArr; <i>x</i> &isin; (A &cap; B) or <i>x</i> &isin; (A &cap; C)</li>
+<li>&rArr; <i>x</i> &isin; (A &cap; B) &cup; (A &cap; C)</li>
+<li>&rArr; A &cap; (B &cup; C) <span class="ne">&sube;</span> (A &cap; B) &cup; (A &cap; C) &nbsp;(a)</li>
+<li>Again, let <i>y</i> &isin; (A &cap; B) &cup; (A &cap; C)</li>
+<li>&rArr; &hellip; &rArr; <i>y</i> &isin; A &cap; (B &cup; C)</li>
+<li>&rArr; (A &cap; B) &cup; (A &cap; C) <span class="ne">&sube;</span> A &cap; (B &cup; C) &nbsp;(b)</li>
+</ul></td></tr></tbody></table>
+<p class="small">Dono taraf From (a) and (b) likh kar barabari ka nishan lagta hai. Chauthi line hi asal chaal hai: <i>or</i> ke andar se <i>and</i> bahar nikal aata hai (aur doosre proof mein <i>and</i> ke andar se <i>or</i>).</p>
+
+<div class="flex">
+<div style="flex:1">
+<div class="box eg" style="margin-top:0"><span class="t"><span class="emoji">✏️</span> Example 10 (p55), dono laws Venn se verify</span>
+U = {<i>x</i> : <i>x</i> &isin; W &and; <i>x</i> &le; 12} = {0, 1, 2, &hellip;, 12}, A = {<i>x</i> : <i>x</i> &isin; W &and; <i>x</i> &le; 4} = {0, 1, 2, 3, 4}, B = {3, 4, 5, 6, 7}, C = {6, 7, 8, 9}.<br>
+<b>(a)</b> B &cap; C = {6, 7} &rArr; <b class="ans">A &cup; (B &cap; C) = {0,1,2,3,4,6,7}</b>.<br>
+A &cup; B = {0,1,2,3,4,5,6,7} and A &cup; C = {0,1,2,3,4,6,7,8,9} &rArr; <b class="ans">(A &cup; B) &cap; (A &cup; C) = {0,1,2,3,4,6,7}</b>. Verified.<br>
+<b>(b)</b> B &cup; C = {3,4,5,6,7,8,9} &rArr; <b class="ans">A &cap; (B &cup; C) = {3, 4}</b>.<br>
+A &cap; B = {3, 4} and A &cap; C = &phi; &rArr; <b class="ans">(A &cap; B) &cup; (A &cap; C) = {3, 4}</b>. Verified.</div>
+</div>
+<div style="flex:0 0 40mm">
+<svg width="40mm" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans" font-size="13">
+<rect x="3" y="3" width="244" height="144" fill="none" stroke="#1f2430" stroke-width="2"/>
+<text x="9" y="19" font-size="12" fill="#5b6475">U</text>
+<circle cx="66" cy="78" r="46" fill="#1d5fa8" fill-opacity="0.12" stroke="#1d5fa8" stroke-width="2"/>
+<circle cx="128" cy="78" r="46" fill="#1e7a4a" fill-opacity="0.12" stroke="#1e7a4a" stroke-width="2"/>
+<circle cx="190" cy="78" r="46" fill="#6a3fa0" fill-opacity="0.12" stroke="#6a3fa0" stroke-width="2"/>
+<text x="50" y="53" fill="#1d5fa8" font-weight="bold">A</text>
+<text x="121" y="53" fill="#1e7a4a" font-weight="bold">B</text>
+<text x="190" y="53" fill="#6a3fa0" font-weight="bold">C</text>
+<text x="44" y="78">0</text><text x="33" y="99">1</text><text x="52" y="113">2</text>
+<text x="91" y="76">3</text><text x="91" y="100">4</text>
+<text x="121" y="102">5</text>
+<text x="154" y="76">6</text><text x="154" y="100">7</text>
+<text x="199" y="82">8</text><text x="188" y="106">9</text>
+<text x="12" y="141" font-size="11">12</text><text x="112" y="23" font-size="11">10</text><text x="221" y="23" font-size="11">11</text>
+</svg>
+<div class="small" style="margin-top:1mm">Example 10 ka naqsha: A aur B kat-te hain, B aur C kat-te hain, magar <b>A &cap; C = &phi;</b>.</div>
+</div>
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki do ghaltiyan, in par dhoka mat khana</span>
+<b>1.</b> Example 10 mein C ki shart <del>{<i>z</i> : <i>z</i> &isin; N &and; 3 &le; <i>z</i> &le; 7}</del> chhapi hai, jo bilkul B jaisi hai. Naqsha saaf batata hai ke <b>C = {6, 7, 8, 9}</b>, yaani shart <b>6 &le; <i>z</i> &le; 9</b> honi chahiye. Venn diagram ko sach maano.<br>
+<b>2.</b> Associative union ke proof ki step (b) mein ek bracket chhoot gaya hai: <del>A &cup; B &cup; C) <span class="ne">&sube;</span> (A &cup; B) &cup; C</del>. Sahi likhai hai <b>A &cup; (B &cup; C) <span class="ne">&sube;</span> (A &cup; B) &cup; C</b>.</div>
+
+<div class="flex">
+<div style="flex:1.15"><div class="box mcq" style="margin-top:0"><span class="t"><span class="emoji">⭐</span> Key Fact box (p56), yahan se sawal bante hain</span>
+(a) A = {0, 1, 3, 5, 7}, B = {<i>x</i> | <i>x</i> &isin; N &and; <i>x</i> &le; 5} and C = {1, 2, 3, 4, 6, 12}: find (A &cup; B) &cap; C using Venn diagrams.<br>
+(b) A = {0, 2, 4, 6}, B = {1, 3, 5, 7} and C = {1, 2, 3, 6}: find (A &cap; B) &cap; C, A &cap; (B &cap; C) and (A &cup; B) &cap; C using Venn diagram.</div>
+
+</div>
+<div style="flex:1"><div class="box trick" style="margin-top:0"><span class="t"><span class="emoji">🧠</span> Pakki trick</span>
+Sab se aam ghalti: <b>(A &cup; B) &cap; C</b> ko <b>A &cup; (B &cap; C)</b> samajh lena. Yaad rakho <b>(A &cup; B) &cap; C <span class="ne">&ne;</span> A &cup; (B &cap; C)</b>, kyunke operations alag hain. Usool yaad rakho: <b>ek jaisa operation to bracket azad, alag operations to bracket pakka.</b> Ab <b>Exercise 3.1 ke Q3 se Q7</b> khud karo.</div>
+
+</div>
+</div>
+
+<h2><span class="emoji">🧪</span> Quiz</h2>
+<p class="small" style="margin-top:0">Ye teeno sawal tumhare Maths paper mein bhi aayenge, is liye inhein achhi tarah karo.</p>
+<ol class="q">
+<li><b>Write the four laws of this section in symbols</b>, with their exact book names: associative property of union, associative property of intersection, distributive property of union over intersection, and distributive property of intersection over union.</li>
+<li><b>Verify, using the sets</b> A = {1, 2, 3, 4}, B = {3, 4, 5, 6} and C = {5, 6, 7}: (i) (A &cup; B) &cup; C = A &cup; (B &cup; C), and (ii) A &cap; (B &cup; C) = (A &cap; B) &cup; (A &cap; C). Name the law each part verifies.</li>
+<li><b>Explain in one or two lines.</b> In the analytical proof we first show (a) LHS <span class="ne">&sube;</span> RHS and then (b) RHS <span class="ne">&sube;</span> LHS, and only after that we write "=". Why is proving (a) alone not enough?</li>
+</ol>
+
+<!-- ANSWER KEY. NOT PRINTED IN THE PDF. Kept here for marking and for building her Maths paper.
+Q1.
+  Associative property of union:                  (A u B) u C = A u (B u C)
+  Associative property of intersection:           (A n B) n C = A n (B n C)
+  Distributive property of union over intersection:  A u (B n C) = (A u B) n (A u C)
+  Distributive property of intersection over union:  A n (B u C) = (A n B) u (A n C)
+  1 mark per correct law, name + symbols both needed.
+
+Q2. A = {1,2,3,4}, B = {3,4,5,6}, C = {5,6,7}
+  (i) A u B = {1,2,3,4,5,6};  (A u B) u C = {1,2,3,4,5,6,7}
+      B u C = {3,4,5,6,7};    A u (B u C) = {1,2,3,4,5,6,7}
+      Both sides equal, so the ASSOCIATIVE PROPERTY OF UNION is verified.
+  (ii) B u C = {3,4,5,6,7};   A n (B u C) = {3, 4}
+       A n B = {3, 4};  A n C = { } = phi;  (A n B) u (A n C) = {3, 4}
+       Both sides equal, so the DISTRIBUTIVE PROPERTY OF INTERSECTION OVER UNION is verified.
+  Watch for: A n C must come out empty. If she writes A n C = {5} or {7} she has misread C.
+
+Q3. Two sets are equal only when each one is a subset of the other. Step (a) alone shows that
+    every element of the LHS lies in the RHS, but the RHS could still hold extra elements that the
+    LHS does not have. Step (b) rules that out. Together (a) and (b) force the two sets to be equal.
+    Full marks for the idea "equality needs both inclusions"; half if she only says "to complete the proof".
+-->
+
+</body>
+</html>

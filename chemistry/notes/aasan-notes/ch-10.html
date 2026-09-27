@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chemistry Chapter 10 Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 9mm 9mm 10mm 9mm; }
+  :root {
+    --ink: #1f2430; --muted: #5b6475;
+    --blue: #1d5fa8; --blue-bg: #e8f1fc;
+    --green: #1e7a4a; --green-bg: #e7f6ee;
+    --yellow: #8a6200; --yellow-bg: #fff6d8;
+    --red: #a8322a; --red-bg: #fdecea;
+    --purple: #6a3fa0; --purple-bg: #f2ecfb;
+    --line: #d7dce5;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 10.2pt; line-height: 1.45; margin: 0; }
+  .emoji { font-family: "Noto Color Emoji"; font-style: normal; }
+  h1 { font-size: 19pt; color: var(--blue); margin: 0 0 2mm; line-height: 1.2; }
+  .sub { color: var(--muted); font-size: 10pt; margin-bottom: 4mm; }
+  h2 { font-size: 14pt; color: #fff; background: var(--blue); padding: 2.2mm 3.5mm; border-radius: 3mm; margin: 6mm 0 3mm; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: var(--blue); margin: 5mm 0 1.5mm; border-bottom: 1.5px solid var(--line); padding-bottom: 1mm; page-break-after: avoid; }
+  h3 .pg { font-size: 8.5pt; color: var(--muted); font-weight: normal; }
+  p { margin: 1.5mm 0; }
+  ul, ol { margin: 1mm 0 1.5mm; padding-left: 6mm; }
+  li { margin: 0.6mm 0; }
+  .box { border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .box .t { font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .def { background: var(--blue-bg); border-left: 4px solid var(--blue); }
+  .def .t { color: var(--blue); }
+  .def q { font-weight: 600; quotes: "\201C" "\201D"; }
+  .eg { background: var(--green-bg); border-left: 4px solid var(--green); }
+  .eg .t { color: var(--green); }
+  .trick { background: var(--yellow-bg); border-left: 4px solid #e0a800; }
+  .trick .t { color: var(--yellow); }
+  .warn { background: var(--red-bg); border-left: 4px solid var(--red); }
+  .warn .t { color: var(--red); }
+  .mcq { background: var(--purple-bg); border-left: 4px solid var(--purple); }
+  .mcq .t { color: var(--purple); }
+  .solve { border: 1.5px dashed var(--green); border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .solve .t { color: var(--green); font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .solve table td { padding: 0.3mm 2mm 0.3mm 0; vertical-align: top; border: none; }
+  .ans { color: var(--green); font-weight: bold; }
+  .formula { text-align: center; font-size: 13pt; font-weight: bold; color: var(--blue); margin: 2mm 0; }
+  table.t1 { border-collapse: collapse; width: 100%; font-size: 9.3pt; margin: 2mm 0; page-break-inside: avoid; }
+  table.t1 th { background: var(--blue); color: #fff; padding: 1.2mm 1.6mm; text-align: left; }
+  table.t1 td { border: 1px solid var(--line); padding: 1.1mm 1.6mm; vertical-align: top; }
+  table.t1 tr:nth-child(even) td { background: #f6f8fb; }
+  .intro { background: linear-gradient(135deg, #e8f1fc, #f2ecfb); border-radius: 3mm; padding: 3mm 3.5mm; margin: 2mm 0 3mm; }
+  .map td { padding: 1mm 1.5mm; }
+  .small { font-size: 9pt; color: var(--muted); }
+  .pb { page-break-before: always; }
+  .cap { page-break-after: avoid; break-after: avoid; }
+  h2 { margin-top: 5mm; }
+  .check li { margin: 1.4mm 0; }
+  .pill { display: inline-block; background: var(--blue); color: #fff; border-radius: 10px; padding: 0 2.2mm; font-size: 8.5pt; font-weight: bold; }
+  .one { background: #e6f7f7; border: 1.5px solid #1a8a8a; }
+  .one .t { color: #11706f; }
+  .solve table.t1 td { border: 1px solid var(--line); }
+  td.wrong { text-decoration: line-through; color: #8a8f99; }
+  pre.dot { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; background: #f6f8fb; border: 1px solid var(--line); border-radius: 2mm; padding: 2mm; margin: 2mm 0; white-space: pre; line-height: 1.35; }
+</style>
+</head>
+<body>
+<h1><span class="emoji">🍋</span> Chemistry Chapter 10<br>Acids, Bases aur Salts</h1>
+<div class="sub">Aasan Notes, tumhari kitab ke saath saath (book pages 140 to 149)</div>
+
+<div class="intro">
+  <p><b>Assalam o alaikum Seemab!</b> Ye chapter class mein ho chuka hai. Ye notes usay <b>bilkul pakka</b> karne ke liye hain, bohat aasan alfaaz aur ghar ki misalon ke saath. <b>Kitab ki har line, har table aur har exercise ka jawab isi mein hai</b>, kitab kholne ki zaroorat nahin. Headings aur page numbers kitab wale hi hain.</p>
+  <p>Pichle paper mein jo 3, 4 cheezein thori mushkil lagi thin, un par khaas <b><span class="emoji">🎯</span> "Pakki trick"</b> boxes hain. Unhein zaroor parhna!</p>
+  <p><b>Kaise parhna hai</b> (sirf 30 se 35 minute):</p>
+  <ol>
+    <li>Ek dafa aaram se parho. Har hisse ke aakhir mein <b>"Ek line mein"</b> box hai: bas woh yaad rahe to kaafi hai.</li>
+    <li>Phir neelay <span class="emoji">📖</span> boxes dobara parho: ye kitab ke English alfaaz hain, exam mein yehi likhne hain.</li>
+    <li>Aakhir mein 12 sawal khud karo, jawab agle page par hain.</li>
+  </ol>
+</div>
+
+<table class="map t1">
+  <tr><th colspan="2">Is chapter ka naqsha (6 hisse)</th></tr>
+  <tr><td><span class="emoji">🍋</span> Hissa 1</td><td>Acid aur base pehchano (10.1, Table 10.1)</td></tr>
+  <tr><td><span class="emoji">💧</span> Hissa 2</td><td>Arrhenius concept: paani mein H⁺ ya OH⁻ (10.1.1)</td></tr>
+  <tr><td><span class="emoji">🍫</span> Hissa 3</td><td>Bronsted-Lowry concept: proton dene wala, lene wala (10.1.2)</td></tr>
+  <tr><td><span class="emoji">💪</span> Hissa 4</td><td>Strong aur weak; alkalis (10.2)</td></tr>
+  <tr><td><span class="emoji">⚗️</span> Hissa 5</td><td>Acids aur bases ke kaam (reactions) (10.3, 10.4)</td></tr>
+  <tr><td><span class="emoji">🔥</span> Hissa 6</td><td>Oxides aur hydroxides (10.5)</td></tr>
+</table>
+
+<div class="box def"><span class="t"><span class="emoji">🎯</span> Student Learning Outcomes (kitab p140): chapter ke baad tumhein ye aana chahiye</span>
+<ul>
+<li>Define Bronsted-Lowry acids as proton donors and Bronsted-Lowry bases as proton acceptors.</li>
+<li>Recognize that aqueous solutions of acids contain H⁺ ions and aqueous solutions of alkalis contain OH⁻ ions.</li>
+<li>Define a strong acid and a base as an acid or base that completely dissociates in aqueous solution, and weak acids and bases that partially dissociate in aqueous solution (for example, writing symbol equations for hydrochloric acid, sulphuric acid, nitric acid and ethanoic acid).</li>
+<li>Formulate dissociation equations for an acid or base in aqueous solution.</li>
+<li>Recognize that bases are oxides or hydroxides of metals and that alkalis are water-soluble bases.</li>
+<li>Describe the characteristic properties of acids in terms of their reactions with metals, bases, and carbonates.</li>
+<li>Identify the characteristic properties of bases in terms of their reactions with acids and ammonium salts.</li>
+<li>Define acid rain.</li>
+<li>Discuss effects of acid rain and relate them with the properties of acids.</li>
+</ul>
+<span class="small">Ye sab neeche notes mein aa raha hai.</span>
+</div>
+<!-- ================= HISSA 1 ================= -->
+<h2><span class="emoji">🍋</span> Hissa 1: Acid aur base pehchano</h2>
+
+<h3>Introduction <span class="pg">(kitab p141)</span></h3>
+<p class="cap">Acids aur bases hamare ghar mein har jagah hain:</p>
+<table class="t1">
+  <tr><th>Acids wali cheezein (khatti)</th><th>Bases wali cheezein</th></tr>
+  <tr><td>Vinegar (sirka), lemon juice (nimbu), tomato, apple, cola drinks, aspirin, toilet cleaners</td><td>Drain cleaner, antacid tablets, baking powder, soda</td></tr>
+</table>
+<ul>
+<li>Kitab: "You often use acids and bases in <b>all areas of life</b>." Hum kuch acids aur bases <b>khaate peete</b> bhi hain, aur <b>hamara jism</b> bhi inhein banata hai.</li>
+<li>"In this chapter, you will learn about the chemistry of acids and bases. This will help you better understand these important classes of compounds."</li>
+<li>"Acid indigestion" (tezabiyat) se le kar "acid rain" tak, acid ka lafz <b>news aur advertisements</b> mein baar baar aata hai.</li>
+<li>Acids <b>fertilizers (khaad)</b> banane mein aur <b>food industry</b> mein bohat istemal hote hain.</li>
+</ul>
+<p><b>Kitab ke intro ke sawal</b> (ye chapter inhi ke jawab deta hai): Acid rain kya hai? Kaunsi cheezein acids aur kaunsi bases hain? Un ki classification kaise hoti hai? Acid aur base milein to kya hota hai?</p>
+<p class="small">Intro mein do sawal aur bhi hain: "Why do we use lemon juice on fish?" aur "What do we mean by the pH of a solution like acid rain?" Kitab in dono ke jawab is chapter mein nahin deti; pH is chapter mein padhaya nahin gaya, sirf zikr hai.</p>
+
+<h3>10.1 Concepts of Acids and Bases <span class="pg">(acid aur base ki pehchan, kitab p141)</span></h3>
+<p>Kitab: <b>"Acids and bases are generally recognized by their characteristic properties."</b> Yani acid aur base ko un ki khaas properties se pehchante hain.</p>
+<p class="cap"><b>Table 10.1: Some characteristic properties of acids and bases</b> (poori yaad karo, 5 lines hain bas):</p>
+<table class="t1">
+  <tr><th>Property</th><th>Acid</th><th>Base</th></tr>
+  <tr><td>Taste (zaiqa)</td><td><b>Sour</b> (khatta)</td><td><b>Bitter</b> (kadwa)</td></tr>
+  <tr><td>Blue litmus par</td><td><b>Turns red</b></td><td>No effect</td></tr>
+  <tr><td>Red litmus par</td><td>No effect</td><td><b>Turns blue</b></td></tr>
+  <tr><td>Skin (jild) par</td><td>Corrosive</td><td>Corrosive</td></tr>
+  <tr><td>Electrical conductivity</td><td>Aqueous solutions conduct electricity</td><td>Aqueous solutions conduct electricity</td></tr>
+</table>
+
+<div class="box eg"><span class="t"><span class="emoji">🏠</span> Ghar ki misal</span>
+  Nimbu aur imli <b>khatte</b> hain: acids. Sabun ko zabaan par lagao (mat lagana!) to <b>kadwa</b> lagega aur haath mein <b>phisalta</b> hai: base.
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Litmus ki trick</span>
+  <b>B</b>ase aur <b>B</b>lue, dono <b>B</b> se! Base red litmus ko <b>blue</b> karta hai.<br>
+  Acid bilkul ulta: blue litmus ko <b>red</b> karta hai.
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Acid = khatta, blue ko red karta hai. Base = kadwa, red ko blue karta hai. Dono corrosive, dono ke solutions bijli guzarte hain.
+</div>
+
+<!-- ================= HISSA 2 ================= -->
+<h2><span class="emoji">💧</span> Hissa 2: Arrhenius concept</h2>
+
+<h3>10.1.1 Arrhenius Concept of Acids and Bases <span class="pg">(kitab p141, 142)</span></h3>
+<p><b>1887</b> mein Sweden ke chemist <b>Svante Arrhenius</b> ne acids aur bases ki pehli kamyab theory di. Ye theory <b>paani</b> ke baare mein hai: cheez ko paani mein daalo aur dekho kya nikalta hai.</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>An acid is a substance that ionizes in water to produce H⁺ ions and a base is a substance that ionizes in water to produce OH⁻ ions.</q>
+</div>
+
+<div class="box eg"><span class="t"><span class="emoji">🍪</span> Ionize ka matlab: biscuit todna</span>
+  Ionize = molecule ka <b>tootna</b>, ions mein. Jaise biscuit todo: <b>poora biscuit pehle</b> (left side), <b>tukre baad mein</b> (right side).
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">🎯</span> Pakki trick: equation ULTI mat likhna</span>
+  Pichle paper mein equation ulti likh di thi ("H + NO₃ → HNO₃"). Hamesha yaad rakho:<br>
+  <b>Poora molecule LEFT par → toote hue ions RIGHT par.</b><br>
+  Sahi: <b>HNO₃ → H⁺ + NO₃⁻</b> &nbsp;&nbsp; Ghalat: H⁺ + NO₃⁻ → HNO₃
+</div>
+
+<p class="cap"><b>Kitab ki equations</b> (arrow ke upar H₂O ka matlab: paani mein):</p>
+<table class="t1">
+  <tr><th>Cheez</th><th>Paani mein tootne ki equation</th></tr>
+  <tr><td>HCl (acid)</td><td>HCl(g) → H⁺(aq) + Cl⁻(aq)</td></tr>
+  <tr><td>HNO₃ (acid)</td><td>HNO₃(l) → H⁺(aq) + NO₃⁻(aq)</td></tr>
+  <tr><td>H₂SO₄ (acid)</td><td>H₂SO₄(l) → <b>2</b>H⁺(aq) + SO₄²⁻(aq)</td></tr>
+  <tr><td>NaOH (base)</td><td>NaOH(s) → Na⁺(aq) + OH⁻(aq)</td></tr>
+  <tr><td>KOH (base)</td><td>KOH(s) → K⁺(aq) + OH⁻(aq)</td></tr>
+  <tr><td>NH₄OH (base)</td><td>NH₄OH(aq) ⇌ NH₄⁺(aq) + OH⁻(aq)</td></tr>
+</table>
+<p class="small">H₂SO₄ mein 2 H hain, is liye <b>2H⁺</b> nikalte hain. Acid se hamesha H⁺, base se hamesha OH⁻.</p>
+<div class="box mcq"><span class="t"><span class="emoji">❓</span> Kitab ka sawal (p142): "Which substances in the following reactions are acids or bases?"</span>HNO₃ aur H₂SO₄ <b>acids</b> hain (H⁺ dete hain). KOH aur NH₄OH <b>bases</b> hain (OH⁻ dete hain).</div>
+
+<p class="cap"><b>Table 10.2: Some Common Acids names, formula and their uses</b> (pehli 4 lines) aur <b>Table 10.3: Some Common Bases names, formula and their uses</b> (aakhri 4 lines):</p>
+<table class="t1">
+  <tr><th>Naam</th><th>Formula</th><th>Kaam (use)</th><th><span class="emoji">🧠</span> Trick</th></tr>
+  <tr><td>Hydrochloric acid</td><td>HCl</td><td>Cleaning of metals, bricks and removing scale from boilers</td><td><b>Cl = Clean</b></td></tr>
+  <tr><td>Nitric acid</td><td>HNO₃</td><td>Fertilizers, explosives</td><td><b>N = Nitrogen khaad</b></td></tr>
+  <tr><td>Sulphuric acid</td><td>H₂SO₄</td><td>Many chemicals, drugs, dyes, paints and explosives</td><td><b>S = Sab kuch</b></td></tr>
+  <tr><td>Phosphoric acid</td><td>H₃PO₄</td><td>Fertilizers, acidulant for food</td><td><b>P = Plants aur Plate (khana)</b></td></tr>
+  <tr><td>Sodium hydroxide</td><td>NaOH</td><td>Soap making, drain cleaners</td><td><b>Na = Nahane ka sabun</b></td></tr>
+  <tr><td>Potassium hydroxide</td><td>KOH</td><td>Liquid soap, shaving cream</td><td><b>K = Kreem</b></td></tr>
+  <tr><td>Calcium hydroxide</td><td>Ca(OH)₂</td><td>Mortar, plasters, cement</td><td><b>Ca = Construction</b></td></tr>
+  <tr><td>Magnesium hydroxide</td><td>Mg(OH)₂</td><td>Antacid, laxative</td><td><b>Mg = Medicine</b></td></tr>
+</table>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Arrhenius (1887): paani mein <b>H⁺ de</b> = acid, paani mein <b>OH⁻ de</b> = base. Molecule left par, ions right par.
+</div>
+
+<!-- ================= HISSA 3 ================= -->
+<h2><span class="emoji">🍫</span> Hissa 3: Bronsted-Lowry concept</h2>
+
+<h3>10.1.2 The Bronsted-Lowery Concept of Acids and Bases <span class="pg">(kitab p142, 143)</span></h3>
+<p><b>Pehle: Arrhenius theory ki kami</b></p>
+<p>Arrhenius theory sirf <b>paani wale solutions</b> (aqueous) par chalti hai. Aur ye nahin bata sakti ke:</p>
+<ul>
+  <li><b>CO₂ aur SO₂ acidic kyun hain?</b> Un mein to koi H hi nahin!</li>
+  <li><b>NH₃ base kyun hai?</b> Us mein to koi OH hi nahin!</li>
+</ul>
+<p>Is kami ko door karne ke liye <b>1923</b> mein <b>J. N. Bronsted</b> aur <b>T. M. Lowry</b> ne alag alag (independently) nayi theory di.</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>According to this theory, an acid is a proton donor and a base is a proton acceptor.</q>
+</div>
+
+<p class="cap"><b>Kitab ki pehli misal (p142, dot diagram):</b></p>
+<div class="formula">HCl + H₂O → H₃O⁺ + Cl⁻</div>
+<pre class="dot">   ..          ..                 [    H    ]⁺       ..  ⁻
+ H─Cl:   +   H─O:     ──►        [    |    ]      [ :Cl: ]
+   ''          |                  [ H─O:─H  ]      [  ''  ]
+ Bronsted      H                    Hydronium ion   Chloride ion
+ Acid       Bronsted Base</pre>
+<p class="small"><b>Kitab ki tasveer (dot diagram) mein:</b> HCl ka H gol daire mein hai aur ek mura hua arrow (curved arrow) dikhata hai ke ye H⁺ paani ke O ki taraf jata hai. Paani ka O apne akele electron pair (lone pair) se ye proton pakar leta hai. Is tarah [H₃O]⁺ bracket mein + charge ke saath banta hai (O teen H se juda, ek lone pair baqi), aur Cl⁻ char lone pairs ke saath − charge par reh jata hai.</p>
+<ul>
+<li>HCl apna H⁺ (proton) paani ko de deta hai: <b>HCl = Bronsted acid</b>.</li>
+<li>Paani proton le leta hai: <b>H₂O = Bronsted base</b>.</li>
+<li>Banne wali cheezein: <b>H₃O⁺ = hydronium ion</b>, <b>Cl⁻ = chloride ion</b>. (Hydronium ka naam yaad rakho!)</li>
+</ul>
+<div class="box mcq"><span class="t"><span class="emoji">❓</span> Kitab ke 4 sawal is misal par (p143)</span>
+Q1. Which substance is donating proton? <b>HCl</b><br>Q2. Which substance is accepting proton? <b>H₂O</b><br>Q3. Which substance is an acid? <b>HCl</b><br>Q4. Which substance is a base? <b>H₂O</b></div>
+<div class="box eg"><span class="t"><span class="emoji">🍫</span> Chocolate wali misal (sab se aasan)</span>
+  <b>Proton = H⁺ = ek chocolate.</b><br>
+  Jo chocolate <b>DETA</b> hai (donor) woh <b>ACID</b>.<br>
+  Jo chocolate <b>LETA</b> hai (acceptor) woh <b>BASE</b>.<br>
+  Bas itni si baat hai!
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">🎯</span> Pakki trick: H gino!</span>
+  Pichle paper mein kabhi paani ka role ulta ho gaya, kabhi H₃O⁺ ko acid likh diya. Ab ye 3 steps karo:<br>
+  <b>1.</b> Reaction ka acid aur base hamesha <b>LEFT side</b> (reactants) mein se chuno. Right side wali cheezein (H₃O⁺, Cl⁻, NH₄⁺, OH⁻) banne wali cheezein (products) hain, woh <b>is reaction</b> ka acid ya base nahin. (Khud woh bhi proton de ya le sakti hain: H₃O⁺ aur NH₄⁺ proton de sakte hain, OH⁻ aur Cl⁻ le sakte hain. Lekin sawal hamesha reaction ke acid/base ka hota hai.)<br>
+  <b>2.</b> Left wali cheez ka right side par kya bana? <b>H kam hua</b> (chocolate de di) → woh <b>ACID</b>.<br>
+  <b>3.</b> <b>H barh gaya</b> (chocolate mil gayi) → woh <b>BASE</b>.
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 10.1 (kitab p143): "Classify substances as acids or bases or as proton donor or proton acceptor"</span>
+  <b>(a) HCl + H₂O → H₃O⁺ + Cl⁻</b>
+  <table>
+    <tr><td>HCl → Cl⁻</td><td>H kam hua, chocolate di</td><td class="ans">HCl = acid</td></tr>
+    <tr><td>H₂O → H₃O⁺</td><td>H barha, chocolate li</td><td class="ans">H₂O = base</td></tr>
+  </table>
+  <b>(b) H₂O + NH₃ ⇌ NH₄⁺ + OH⁻</b>
+  <table>
+    <tr><td>H₂O → OH⁻</td><td>H kam hua, chocolate di</td><td class="ans">H₂O = acid</td></tr>
+    <tr><td>NH₃ → NH₄⁺</td><td>H barha, chocolate li</td><td class="ans">NH₃ = base</td></tr>
+  </table>
+  <span class="small">Kitab ka solution: 1. Because HCl is converted to Cl⁻ by donating proton, HCl is an acid. 2. Because H₂O accepts the proton that HCl donates and forms H₃O⁺, water is a base. 3. H₂O is converted to OH⁻ by donating a proton, so H₂O is an acid. Because NH₃ accepts the proton and forms NH₄⁺, so it is a base.</span>
+</div>
+
+<p class="cap"><b>Ammonia wali misal (kitab p143):</b> Arrhenius theory nahin bata sakti ke ammonia (NH₃) base kaise hai, kyunke us mein OH hai hi nahin. Bronsted-Lowry theory batati hai. <b>Ammonia room temperature par gas hai.</b> Paani mein ghulne par:</p>
+<div class="formula">NH₃ + H₂O → NH₄⁺ + OH⁻</div>
+<pre class="dot">      ..                         [    H    ]⁺     [ ..    ]⁻
+   H─N─H   +   H─O:   ──►        [ H─N─H   ]      [ :O─H  ]
+      |            |             [    H    ]      [ ''    ]
+      H            H              Ammonium ion    Hydroxide ion</pre>
+<p class="small"><b>Kitab ki tasveer mein:</b> NH₃ ke N par ek lone pair hai. Mura hua arrow N ke lone pair se paani ke gol daire wale H ki taraf jata hai: NH₃ paani ka H⁺ le leta hai. Is se [NH₄]⁺ (bracket, + charge) aur [:O─H]⁻ (bracket, − charge) bante hain.</p>
+<p>Paani apna ek H⁺ NH₃ ko deta hai. NH₃ ban jata hai <b>NH₄⁺ (ammonium ion)</b> aur paani ban jata hai <b>OH⁻ (hydroxide ion)</b>. Is liye yahan <b>NH₃ = base</b> (proton acceptor) aur <b>H₂O = acid</b> (proton donor).</p>
+<div class="box mcq"><span class="t"><span class="emoji">⭐</span> Kitab ki do lines (p143)</span>
+<b>"All the acids included in the Arrhenius theory are also acids in the Bronsted-Lowry theory."</b><br>
+<b>"However, all the bases included in Bronsted-Lowry theory except OH⁻ are not Arrhenius bases."</b><br>
+Matlab: har Arrhenius acid Bronsted acid bhi hai. Lekin Bronsted bases (jaise NH₃) Arrhenius bases nahin, kyunke un mein OH nahin hota. <b>Sirf OH⁻ dono theories mein base hai</b>: Arrhenius base OH⁻ deta hai, aur OH⁻ khud proton le leta hai (Bronsted base).</div>
+<p>Dekha? <b>Paani (a) mein base tha aur (b) mein acid!</b> Isi liye kitab kehti hai: water behaves like an acid as well as a base. It is <b>amphoteric</b> in nature.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+  <q>Substances that react with both acids and bases are called amphoteric substances.</q>
+</div>
+<div class="box eg"><span class="t"><span class="emoji">👭</span> Paani ki misal</span>
+  Paani us saheli jaisa hai jo HCl ke saath ho to chocolate <b>le leti</b> hai (base), aur NH₃ ke saath ho to chocolate <b>de deti</b> hai (acid). Saathi dekh kar role badalta hai!
+</div>
+
+<div class="box mcq"><span class="t"><span class="emoji">⭐</span> Kitab ki problem solving strategy (p143)</span>
+  1. Acid proton de kar <b>negative ion</b> ban jata hai (HCl → Cl⁻).<br>
+  2. Base proton le kar <b>positive ion</b> ban jata hai (NH₃ → NH₄⁺, H₂O → H₃O⁺).<br>
+  Aur yaad rakho: Arrhenius wale <b>sab acids</b> Bronsted-Lowry mein bhi acids hain.
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">💪</span> Concept Assessment Exercise 10.1 (kitab p144): jawab ke saath</span>
+  <table>
+    <tr><td>1.</td><td>H₂SO₄ + H₂O → HSO₄⁻ + H₃O⁺</td><td class="ans">H₂SO₄ acid, H₂O base</td></tr>
+    <tr><td>2.</td><td>CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺</td><td class="ans">CH₃COOH acid, H₂O base</td></tr>
+    <tr><td>3.</td><td>H₂S + NH₃ ⇌ NH₄⁺ + HS⁻</td><td class="ans">H₂S acid, NH₃ base</td></tr>
+  </table>
+  <span class="small">Har ek mein trick lagao: kis ka H kam hua, kis ka barha?</span>
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Bronsted-Lowry (1923): acid = <b>proton donor</b> (H deta hai), base = <b>proton acceptor</b> (H leta hai). Paani dono ban sakta hai: <b>amphoteric</b>.
+</div>
+
+<!-- ================= HISSA 4 ================= -->
+<h2><span class="emoji">💪</span> Hissa 4: Strong, weak aur alkalis</h2>
+
+<h3>10.2 Strength of acids and bases <span class="pg">(kitab p144)</span></h3>
+<p>Kitab: <b>"All the acids and bases do not ionize in aqueous solutions to the same degree. Therefore, they have different strengths."</b> Yani sab paani mein ek jitna nahin toot-te, is liye kuch strong hain, kuch weak. Bases bhi acids ki tarah alag alag had tak ionize hote hain.</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definitions</span>
+  <q>An acid that ionizes completely in aqueous solution is called a strong acid.</q><br>
+  <q>Acids that do not ionize completely in aqueous solutions are called weak acids.</q><br>
+  <q>A base that ionizes completely or 100% in aqueous solution is termed as a strong base.</q><br>
+  <q>A base that ionizes to a little extent is called a weak base.</q>
+</div>
+
+<table class="t1">
+  <tr><th></th><th>Strong (100% toot-ta)</th><th>Weak (thora sa toot-ta)</th></tr>
+  <tr><td><b>Acids</b></td><td>HCl, HNO₃, H₂SO₄</td><td>CH₃COOH (ethanoic / acetic acid, <b>sirke</b> mein): sirf <b>5% tak</b></td></tr>
+  <tr><td><b>Bases</b></td><td>NaOH, KOH, Ca(OH)₂</td><td>Al(OH)₃, NH₃ (kam OH⁻ dete hain)</td></tr>
+  <tr><td><b>Arrow</b></td><td>Ek arrow <b>→</b></td><td>Do arrow <b>⇌</b></td></tr>
+</table>
+
+<p class="cap"><b>10.2.1 aur 10.2.2 ki equations (kitab p144):</b></p>
+<table class="t1">
+  <tr><th>10.2.1 Strong and weak acids: strong (sab molecules ionize, 100%)</th><th>10.2.2 Strong and weak bases: strong (100%)</th></tr>
+  <tr><td>HCl(g) → H⁺(aq) + Cl⁻(aq)<br>HNO₃(l) → H⁺(aq) + NO₃⁻(aq)<br>H₂SO₄(l) → 2H⁺(aq) + SO₄²⁻(aq)</td><td>NaOH(s) → Na⁺(aq) + OH⁻(aq)<br>KOH(s) → K⁺(aq) + OH⁻(aq)</td></tr>
+  <tr><th>Weak acid (kam molecules ionize)</th><th>Weak base (kam OH⁻ deta hai)</th></tr>
+  <tr><td>CH₃COOH ⇌ H⁺ + CH₃COO⁻</td><td>H₂O + NH₃ ⇌ NH₄⁺ + OH⁻</td></tr>
+</table>
+<div class="box eg"><span class="t"><span class="emoji">🍪</span> Biscuit packet ki misal</span>
+  <b>Strong acid</b> = poore packet ke <b>sab</b> biscuit toot gaye (100%).<br>
+  <b>Weak acid</b> = 100 biscuits mein se sirf <b>5</b> toote (sirke wala acetic acid).
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">🎯</span> Pakki trick: CH₃COOH ka sirf AAKHRI H alag hota hai</span>
+  CH₃COO<b>H</b> ⇌ H⁺ + CH₃COO⁻<br>
+  CH₃ wale H kabhi alag nahin hote. Toota hua hissa poora likho: <b>CH₃COO⁻</b> (CH₃ mat bhoolna). Aur weak hai, is liye <b>⇌</b> lagao.
+</div>
+
+<h3>Alkalis <span class="pg">(kitab p145)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span>
+  <q>A base which is soluble in water is called an alkali.</q>
+</div>
+<ul>
+  <li><b>Sab alkalis bases hain, lekin sab bases alkalis nahin.</b></li>
+  <li>Paani mein na ghulne wale bases: <b>Cu(OH)₂</b> (copper hydroxide), <b>Al(OH)₃</b> (aluminium hydroxide), <b>Fe(OH)₃</b> (ferric hydroxide).</li>
+  <li><b>"All hydroxides are bases and only water soluble bases are alkalis."</b> Bohat se bases paani mein nahin ghulte.</li>
+  <li>Ghar ke alkalis: <b>soaps, detergents, shampoos, toothpaste</b>.</li>
+  <li>KOH ya NaOH, kaun alkali? <b>Dono</b>, kyunke dono paani mein ghul jate hain.</li>
+</ul>
+<div class="box eg"><span class="t"><span class="emoji">🇵🇰</span> Aasan misal</span>
+  Har Lahori Pakistani hai, lekin har Pakistani Lahori nahin. Isi tarah har <b>alkali</b> base hai, lekin har base alkali nahin!
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Strong = poora toot-ta (→), weak = thora sa (⇌). Paani mein ghulne wala base = <b>alkali</b>.
+</div>
+
+<!-- ================= HISSA 5 ================= -->
+<h2><span class="emoji">⚗️</span> Hissa 5: Acids aur bases ke kaam</h2>
+
+<h3>10.3 Characteristic properties of acids <span class="pg">(kitab p145, 146)</span></h3>
+<p>Acids ki 5 pehchan:</p>
+<ol>
+  <li>Acids have <b>sour taste</b>.</li>
+  <li>Acids change the colour of <b>blue litmus paper to red</b>.</li>
+  <li><b>Metals ke saath:</b> "Acids react with most metals and corrode them." Zinc, magnesium, aluminium aur calcium jaise metals ke saath un ka salt aur <b>hydrogen gas</b> banti hai, jo <b>bulbulon</b> ki shakal mein nikalti hai. Zinc + hydrochloric acid → <b>zinc chloride</b> + hydrogen. Magnesium + sulphuric acid → <b>magnesium sulphate</b> + hydrogen.</li>
+  <li><b>Metal carbonates ke saath:</b> salt + water + <b>carbon dioxide</b>, jo paani mein bulbule banati hai. Hydrochloric acid + sodium carbonate → <b>sodium chloride</b> + carbon dioxide + water. Sulphuric acid + calcium carbonate (limestone ya marble) → <b>calcium sulphate</b> + carbon dioxide + water.</li>
+  <li><b>Bases ke saath:</b> salt + water. Isay <b>neutralization reaction</b> kehte hain. Hydrochloric acid + sodium hydroxide → <b>sodium chloride</b> + water. Sulphuric acid + potassium hydroxide → <b>potassium sulphate</b> + water.</li>
+</ol>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz (p145): acids ki properties 3, 4, 5</span>
+<b>3.</b> <q>Acids react with most metals and corrode them. Acids combine with metals like zinc, magnesium, aluminium and calcium to form their salts and hydrogen gas. The hydrogen gas is liberated in the form of bubbles.</q> Metal + Acid → Salt + Hydrogen gas<br>
+<b>4.</b> <q>Acids react with metal carbonates to form salts, water with the liberation of carbon dioxide. The liberated carbon dioxide forms bubbles in water.</q> Metal carbonate + Acid → Salt + Water + Carbon dioxide. <q>This reaction is used in the industrial preparation of glass, paper and soap.</q><br>
+<b>5.</b> <q>Acids combine with bases to produce salt and water. This reaction is called as neutralization reaction.</q> Acid + Base → Salt + Water</div>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Teen reactions, ek trick: "Salt har jagah!"</span>
+  Acid + <b>Metal</b> → Salt + <b>Hydrogen</b><br>
+  Acid + <b>Carbonate</b> → Salt + Water + <b>CO₂</b> &nbsp;(<b>C</b>arbonate se <b>C</b>O₂)<br>
+  Acid + <b>Base</b> → Salt + <b>Water</b> &nbsp;(neutralization)
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">🎯</span> Pakki trick: "2" lagana mat bhoolna (kitab bhi bhool gayi!)</span>
+  Kitab ne 3 misalon mein balance karna chhor diya hai. <b>Tum sahi wali likhna:</b>
+  <table class="t1">
+    <tr><th>Kitab mein chhapa (ghalat) ✗</th><th>Sahi, balanced ✓</th></tr>
+    <tr><td class="wrong">Na₂CO₃ + HCl → NaCl + H₂O + CO₂</td><td>Na₂CO₃ + <b>2</b>HCl → <b>2</b>NaCl + H₂O + CO₂</td></tr>
+    <tr><td class="wrong">H₂SO₄ + KOH → K₂SO₄ + H₂O</td><td>H₂SO₄ + <b>2</b>KOH → K₂SO₄ + <b>2</b>H₂O</td></tr>
+    <tr><td class="wrong">H₂SO₄ + NaOH → Na₂SO₄ + H₂O</td><td>H₂SO₄ + <b>2</b>NaOH → Na₂SO₄ + <b>2</b>H₂O</td></tr>
+  </table>
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">🧮</span> Balance kaise karein: atoms gino</span>
+  Na₂CO₃ + HCl → NaCl + H₂O + CO₂ (abhi balanced nahin)
+  <table>
+    <tr><td><b>Na:</b></td><td>left 2, right 1</td><td>→ right par <b>2</b>NaCl</td></tr>
+    <tr><td><b>Cl:</b></td><td>ab right 2, left 1</td><td>→ left par <b>2</b>HCl</td></tr>
+    <tr><td><b>H:</b></td><td>left 2, right 2</td><td class="ans">barabar</td></tr>
+    <tr><td><b>C, O:</b></td><td>C 1 = 1, O 3 = 3</td><td class="ans">barabar</td></tr>
+  </table>
+  <b>Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂</b> <span class="ans">Done!</span><br>
+  <span class="small">Aakhir mein har atom ek ek kar ke gin lo. 30 second lagte hain aur poore marks milte hain.</span>
+</div>
+
+<p class="cap"><b>Kitab ki baqi misalein</b> (ye pehle se balanced hain):</p>
+<table class="t1">
+  <tr><th>Reaction</th><th>Equation</th></tr>
+  <tr><td>Acid + metal</td><td>Zn + 2HCl → ZnCl₂ + H₂</td></tr>
+  <tr><td>Acid + metal</td><td>Mg + H₂SO₄ → MgSO₄ + H₂</td></tr>
+  <tr><td>Acid + carbonate</td><td>CaCO₃ + H₂SO₄ → CaSO₄ + H₂O + CO₂<br><span class="small">CaCO₃ = limestone ya marble. Acid + carbonate wali reaction glass, paper aur soap banane mein kaam aati hai.</span></td></tr>
+  <tr><td>Neutralization</td><td>HCl + NaOH → NaCl + H₂O</td></tr>
+</table>
+
+<div class="box eg"><span class="t"><span class="emoji">🤢</span> Neutralization ki ghar wali misal</span>
+  Pet mein tezabiyat (acidity)? Doctor <b>antacid</b> deta hai. Antacid mein base hota hai, jaise <b>Mg(OH)₂</b> (milk of magnesia). Ye pet ke acid (HCl) ko <b>neutralize</b> kar deta hai: acid + base → salt + water. Aag par paani jaisa!
+</div>
+
+<p><b>Acid rain</b> (kitab p145, 146):</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz: exam mein yehi likho (SLO: Define acid rain, effects of acid rain)</span>
+<q>Normal rain is slightly acidic due to dissolved carbon dioxide. As a result of human activity, many oxides enter the atmosphere, which makes rainwater more acidic, which falls as acid rain. Acid rain contains dissolved nitric and sulphuric acid. Due to the corrosive nature of acids, acid rain can damage structures, buildings, and statues containing metals and metal carbonates.</q></div>
+<ul>
+  <li><b>Normal baarish</b> bhi thori si acidic hoti hai, kyunke us mein <b>carbon dioxide</b> ghuli hoti hai.</li>
+  <li>Insaan ki activities se <b>bohat se oxides</b> hawa mein jaate hain aur baarish ka paani <b>zyada acidic</b> ho jata hai: ye <b>acid rain</b> hai.</li>
+  <li>Acid rain mein <b>nitric acid</b> aur <b>sulphuric acid</b> ghule hote hain.</li>
+  <li>Acids <b>corrosive</b> hain, is liye acid rain <b>metals aur metal carbonates</b> wali buildings, structures aur statues ko nuqsan deti hai. (Is ki poori kahani Chapter 11 mein hai.)</li>
+</ul>
+
+<h3>10.4 Characteristic properties of bases <span class="pg">(kitab p146)</span></h3>
+<ol>
+  <li>Bases have <b>bitter taste</b>.</li>
+  <li>Bases change the colour of <b>red litmus paper to blue</b>.</li>
+  <li>Aqueous solution of bases have <b>slippery touch</b>. (Sabun wala paani haath par phisalta hai!)</li>
+  <li>Bases <b>neutralize acids</b> to form salt and water: H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O</li>
+  <li><b>"Bases decompose ammonium salts on heating and liberate ammonia gas."</b> (Garam karne par base ammonium salt ko tod deta hai aur ammonia gas nikalti hai.)</li>
+</ol>
+<div class="formula">Base + Ammonium salt → Salt + Ammonia + Water</div>
+<p class="small">NaOH + NH₄Cl deta hai <b>sodium chloride</b>, KOH + NH₄Cl deta hai <b>potassium chloride</b>, dono mein ammonia gas aur paani.</p>
+<table class="t1">
+  <tr><td>NaOH + NH₄Cl → NaCl + NH₃ + H₂O</td></tr>
+  <tr><td>KOH + NH₄Cl → KCl + NH₃ + H₂O</td></tr>
+</table>
+<div class="box warn"><span class="t"><span class="emoji">🎯</span> Pakki trick: gas ka NAAM bhi likho</span>
+  Sirf "NH₃" likhna kaafi nahin. Jab sawal gas poochhe to alag se likho: <b>"The gas released is ammonia (NH₃)."</b><br>
+  Yaad kaise rakhein? <b>Ammonium</b> salt se <b>Ammonia</b> gas. Naam mein hi likha hai!
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Acid + metal = H₂; acid + carbonate = CO₂; acid + base = salt + water (neutralization). Base + ammonium salt = ammonia gas. Balance karna aur gas ka naam, dono mat bhoolo.
+</div>
+
+<!-- ================= HISSA 6 ================= -->
+<h2><span class="emoji">🔥</span> Hissa 6: Oxides aur hydroxides</h2>
+
+<h3>10.5 Oxides and hydroxides <span class="pg">(kitab p146)</span></h3>
+<p><b>Bases = metals ke oxides aur hydroxides.</b></p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition</span><q>Metallic oxides are the compounds formed by the reaction of metals with oxygen.</q></div>
+<p>Misal: sodium oxygen se react kar ke <b>sodium oxide (Na₂O)</b> banata hai. Magnesium hawa mein aag lagne par (on ignition) jal kar <b>magnesium oxide (MgO)</b> banata hai.</p>
+<div class="formula">Metal + Oxygen → Metal oxide</div>
+<table class="t1">
+  <tr><th>Equation</th><th>Naam (English mein bhi likho!)</th></tr>
+  <tr><td>4Na + O₂ → 2Na₂O</td><td>Na₂O = <b>sodium oxide</b></td></tr>
+  <tr><td>2Mg + O₂ → 2MgO</td><td>MgO = <b>magnesium oxide</b></td></tr>
+</table>
+
+<div class="box warn"><span class="t"><span class="emoji">🎯</span> Pakki trick: oxygen hamesha JORI mein</span>
+  Oxygen gas hamesha <b>O₂</b> likhi jati hai, jaise jutay hamesha jori mein. Akeli "O" kabhi nahin.<br>
+  Naam ka formula: <b>metal ka naam + "oxide"</b>. Na₂O = sodium oxide, MgO = magnesium oxide, CaO = calcium oxide.
+</div>
+
+<p><b>Metal oxide + paani → metal hydroxide.</b> Kitab ke alfaaz: metal oxide paani mein ghul kar <b>metal cations</b> aur <b>oxide ions</b> deta hai. <b>Oxide ions paani mein unstable hote hain</b>, is liye foran paani ke molecules se proton (H⁺) le kar <b>hydroxide ions</b> ban jate hain, aur paani ke molecules bhi hydroxide ions ban jate hain. Yani oxide ion <b>Bronsted base</b> hai.</p>
+<div class="box mcq"><span class="t"><span class="emoji">❓</span> Kitab ka sawal (p146): "Which species is the proton donor in the following reaction?"</span><b>Water (H-OH)</b> proton deta hai, is liye paani proton donor hai.</div>
+<div class="formula">O²⁻ + H-OH → 2OH⁻</div>
+<table class="t1">
+  <tr><th>Equation</th><th>Naam</th></tr>
+  <tr><td>MgO + H₂O → Mg(OH)₂</td><td><b>magnesium hydroxide</b></td></tr>
+  <tr><td>Na₂O + H₂O → 2NaOH</td><td><b>sodium hydroxide</b></td></tr>
+  <tr><td>CaO + H₂O → Ca(OH)₂</td><td><b>calcium hydroxide</b></td></tr>
+</table>
+
+<ul>
+  <li><b>"Most metal oxides and hydroxides are very basic in nature. They show the characteristic properties of bases."</b></li>
+  <li>Lekin kuch metal oxides aur hydroxides paani mein nahin ghulte aur chemical reactions mein <b>acid aur base dono</b> jaisa kaam karte hain. Inhein <b>amphoteric oxides</b> aur <b>amphoteric hydroxides</b> kehte hain.</li>
+  <li>Misalein: <b>aluminium oxide (Al₂O₃)</b>, <b>aluminium hydroxide (Al(OH)₃)</b>, <b>zinc oxide (ZnO)</b>, <b>zinc hydroxide (Zn(OH)₂)</b>.</li>
+</ul>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz (p146): exam mein yehi likho</span><q>Some metal oxides and hydroxides do not dissolve in water but behave in chemical reactions like both acids and bases. Such metal oxides and hydroxides are called amphoteric oxides and hydroxides, respectively.</q></div>
+<ul>
+</ul>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Amphoteric ki trick: "A se Z tak"</span>
+  <b>A</b>luminium aur <b>Z</b>inc: A se Z, yani <b>dono taraf!</b> In ke oxides aur hydroxides acid aur base dono ke saath react karte hain.
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Metal + O₂ → metal oxide; metal oxide + paani → metal hydroxide (base). Aluminium aur zinc wale = amphoteric.
+</div>
+
+<!-- ================= KEY POINTS ================= -->
+<h2><span class="emoji">📝</span> Key Points: kitab ke alfaaz mein</h2>
+<div class="box def">
+  <ul>
+    <li>According to Arrhenius theory, an acid is a substance that ionizes in water to produce H⁺ ions and a base is a substance that ionizes in water to produce OH⁻ ions.</li>
+    <li>A Bronsted-Lowry acid is a proton donor and a base is a proton acceptor.</li>
+    <li>A strong acid completely dissociates in aqueous solution and a weak acid dissociates partially in aqueous solution.</li>
+    <li>A strong base completely dissociates in aqueous solution and a weak base dissociates partially in aqueous solution.</li>
+    <li>Bases are oxides and hydroxides of metals.</li>
+    <li>Alkalis are water soluble bases.</li>
+    <li>Acids neutralize bases to form salt and water.</li>
+    <li>Acids decompose carbonates to form salt, water, and carbon dioxide.</li>
+    <li>Acids corrode metals and form salt and hydrogen.</li>
+  </ul>
+</div>
+
+<p class="small"><b>References for additional information</b> (kitab p147): Longman Chemistry for IGCSE; IGCSE Chemistry; Cambridge IGCSE Chemistry; Theories of Acids and Base, Chemguide. (Ye sirf mazeed parhne ke liye kitabein hain, exam mein nahin aatein.)</p>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ke Review Questions mein 2 ghaltiyan (p148, Q4)</span>
+  (ii) "Sulphuric acid + Sodium carbonate → Sodium sulphate + water": <b>carbon dioxide</b> bhi banti hai. Sahi: H₂SO₄ + Na₂CO₃ → Na₂SO₄ + H₂O + CO₂<br>
+  (iii) "Hydrochloric acid + Magnesium → Magnesium chloride + water": water nahin, <b>hydrogen</b> banti hai. Sahi: Mg + 2HCl → MgCl₂ + H₂
+</div>
+
+<h2 class="pb"><span class="emoji">📚</span> Kitab ke Review Questions: sab ke jawab (p147 to 149)</h2>
+<p class="cap"><b>Q1. Encircle the correct answer (MCQs)</b></p>
+<table class="t1">
+<tr><th>Sawal</th><th>Options</th><th>Jawab</th></tr>
+<tr><td>(i) Which of the following cannot be classified as Arrhenius acid?</td><td>(a) HNO₃ (b) H₂CO₃ (c) CO₂ (d) H₂SO₄</td><td class="ans">(c) CO₂: is mein H hai hi nahin</td></tr>
+<tr><td>(ii) Which of the following is a Bronsted base?</td><td>(a) NH₃ (b) HCl (c) CH₃COOH (d) H₃O⁺</td><td class="ans">(a) NH₃: proton leta hai</td></tr>
+<tr><td>(iii) Milk of magnesia contains Mg(OH)₂. It is used as antacid. It neutralizes excess stomach acid. Which salt is formed in this reaction?</td><td>(a) MgSO₄ (b) MgCO₃ (c) MgCl₂ (d) MgO</td><td class="ans">(c) MgCl₂: stomach acid HCl hai, Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O</td></tr>
+<tr><td>(iv) Ammonia is a base, because it</td><td>(a) ionizes in water to give OH⁻ ions (b) contains OH group (c) can accept an electron pair (d) can accept proton</td><td class="ans">(d) can accept proton (Bronsted-Lowry)</td></tr>
+<tr><td>(v) H₂O + HCl ⇌ H₃O⁺ + Cl⁻. Which species is a proton acceptor in this reaction? (kitab mein "electron proton acceptor" chhapa hai; "electron" ghalti se hai)</td><td>(a) H₂O (b) HCl (c) H₃O⁺ (d) none</td><td class="ans">(a) H₂O: H barha, H₃O⁺ bana</td></tr>
+</table>
+
+<p class="cap"><b>Q2. Give short answer</b></p>
+<ol type="i">
+<li><b>Write the equation for the self-ionization of water.</b><br>H₂O + H₂O ⇌ H₃O⁺ + OH⁻ <span class="small">(ek paani molecule proton deta hai, doosra leta hai; paani amphoteric hai)</span></li>
+<li><b>Define and give examples of Arrhenius acids.</b><br>An Arrhenius acid is a substance that ionizes in water to produce H⁺ ions. Examples: HCl, HNO₃, H₂SO₄, H₃PO₄.</li>
+<li><b>Why HCl acts as a strong acid?</b><br>Because it ionizes completely (100%) in aqueous solution: HCl(g) → H⁺(aq) + Cl⁻(aq).</li>
+<li><b>Why NH₃ acts as Bronsted-Lowry base?</b><br>Because it accepts a proton from water and forms NH₄⁺: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻.</li>
+<li><b>Why ammonia acts as a weak base?</b><br>Because it ionizes only to a little extent in water and produces fewer OH⁻ ions: H₂O + NH₃ ⇌ NH₄⁺ + OH⁻.</li>
+</ol>
+
+<p class="cap"><b>Q3. Ammonium hydroxide and nitric acid react and produce ammonium nitrate and water. Write the balanced equation.</b></p>
+<div class="formula">NH₄OH + HNO₃ → NH₄NO₃ + H₂O</div>
+
+<p class="cap"><b>Q4. Write balanced chemical equations</b> (kitab ki do ghaltiyan theek kar ke):</p>
+<table class="t1">
+<tr><td>(i) Sulphuric acid + magnesium hydroxide → magnesium sulphate + water</td><td>H₂SO₄ + Mg(OH)₂ → MgSO₄ + 2H₂O</td></tr>
+<tr><td>(ii) Sulphuric acid + sodium carbonate → sodium sulphate + water <b>+ carbon dioxide</b></td><td>H₂SO₄ + Na₂CO₃ → Na₂SO₄ + H₂O + CO₂</td></tr>
+<tr><td>(iii) Hydrochloric acid + magnesium → magnesium chloride + <b>hydrogen</b></td><td>2HCl + Mg → MgCl₂ + H₂</td></tr>
+</table>
+
+<p class="cap"><b>Q5. Identify Bronsted-Lowry acids or bases</b> (H gino trick):</p>
+<table class="t1">
+<tr><td>(i) HNO₃ + H₂O → H₃O⁺ + NO₃⁻</td><td><b>HNO₃ acid</b>, H₂O base</td></tr>
+<tr><td>(ii) NH₃ + HNO₃ → NH₄NO₃</td><td><b>HNO₃ acid</b> (H deta hai), <b>NH₃ base</b> (H leta hai, NH₄⁺ banta hai)</td></tr>
+</table>
+
+<p class="cap"><b>Q6. Give the Bronsted-Lowry definition of an acid. Write an equation that illustrates the definition.</b></p>
+<p>An acid is a proton donor. Example: HCl + H₂O → H₃O⁺ + Cl⁻ (HCl donates a proton to water).</p>
+
+<p class="cap"><b>Q7. Identify Bronsted acids and Bronsted bases. Classify water as proton donor or proton acceptor.</b></p>
+<table class="t1">
+<tr><th>Reaction</th><th>Acid</th><th>Base</th><th>Paani</th></tr>
+<tr><td>(i) CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺</td><td>CH₃COOH</td><td>H₂O</td><td>acceptor</td></tr>
+<tr><td>(ii) HCO₃⁻ + H₂O ⇌ CO₃²⁻ + H₃O⁺</td><td>HCO₃⁻</td><td>H₂O</td><td>acceptor</td></tr>
+<tr><td>(iii) NH₃ + H₂O ⇌ NH₄⁺ + OH⁻</td><td>H₂O</td><td>NH₃</td><td>donor</td></tr>
+<tr><td>(iv) HCl + HCO₃⁻ ⇌ H₂CO₃ + Cl⁻</td><td>HCl</td><td>HCO₃⁻</td><td>(paani nahin hai)</td></tr>
+<tr><td>(v) HS⁻ + H₂O ⇌ S²⁻ + H₃O⁺</td><td>HS⁻</td><td>H₂O</td><td>acceptor</td></tr>
+</table>
+
+<p class="cap"><b>Q8. Write equations showing the ionization of the following as Arrhenius acids.</b></p>
+<p>(a) HI(aq) → H⁺(aq) + I⁻(aq) &nbsp;&nbsp; (b) HNO₂(aq) ⇌ H⁺(aq) + NO₂⁻(aq)<br><span class="small">HI strong acid hai (→). HNO₂ (nitrous acid) weak acid hai, is liye ⇌.</span><br><span class="small">Q9 mein kitab ne yehi heading dobara chhaap di hai aur neeche koi sawal nahin; ye printing ghalti hai, us mein karne ko kuch nahin.</span></p>
+
+<p class="cap"><b>Think Tank</b></p>
+<ol start="10">
+<li><b>Compare the relative concentrations of hydrogen ions and hydroxide ions in each kind of solution.</b><br>(a) Acidic: H⁺ zyada, OH⁻ kam. (b) Basic: OH⁻ zyada, H⁺ kam. (c) Neutral: H⁺ aur OH⁻ barabar.</li>
+<li><b>Codeine, C₁₈H₂₁NO₃, is a commonly prescribed pain killer. It dissolves in water: C₁₈H₂₁NO₃ + H₂O ⇌ [C₁₈H₂₁HNO₃]⁺ + OH⁻. Differentiate codeine and water as Bronsted-Lowry acid or base.</b><br>Codeine proton leta hai (positive ion banta hai): <b>codeine = base</b>. Paani proton deta hai (OH⁻ banta hai): <b>water = acid</b>.</li>
+<li><b>Examine some ways in which you might determine whether a particular water solution contains an acid or a base.</b><br>Litmus se: blue litmus red ho jaye to <b>acid</b>; red litmus blue ho jaye to <b>base</b>. Acid mein zinc ya magnesium daalo to hydrogen ke bulbule; carbonate daalo to CO₂ ke bulbule. Base ka solution haath par phisalta hai (lekin chhuna nahin, corrosive hai).</li>
+</ol>
+
+<div class="box eg"><span class="t"><span class="emoji">🏠</span> Project (kitab p149)</span>
+Kam az kam teen antacids ke labels dekho, har ek ke ingredients ki list banao, aur pet ke HCl ke saath neutralization ki balanced equation likho. Misal, agar antacid mein magnesium hydroxide ho:<br><b>Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O</b></div>
+<!-- ================= 1-PAGE SUMMARY ================= -->
+<h2 class="pb"><span class="emoji">🗒️</span> Poora chapter, ek page mein</h2>
+<table class="t1">
+  <tr><td><b>Acid</b></td><td>Khatta, blue litmus → red, H⁺ deta hai (Arrhenius), proton deta hai (Bronsted)</td></tr>
+  <tr><td><b>Base</b></td><td>Kadwa, phisalne wala, red litmus → blue, OH⁻ deta hai (Arrhenius), proton leta hai (Bronsted)</td></tr>
+  <tr><td><b>Amphoteric</b></td><td>Acid aur base dono: paani; Al aur Zn ke oxides/hydroxides</td></tr>
+  <tr><td><b>Strong</b></td><td>100% ionize (→): HCl, HNO₃, H₂SO₄; NaOH, KOH, Ca(OH)₂</td></tr>
+  <tr><td><b>Weak</b></td><td>Thora sa ionize (⇌): CH₃COOH (5%); Al(OH)₃, NH₃</td></tr>
+  <tr><td><b>Alkali</b></td><td>Paani mein ghulne wala base (soap, shampoo, toothpaste)</td></tr>
+  <tr><td><b>Acid + metal</b></td><td>Salt + H₂</td></tr>
+  <tr><td><b>Acid + carbonate</b></td><td>Salt + H₂O + CO₂</td></tr>
+  <tr><td><b>Acid + base</b></td><td>Salt + H₂O (neutralization)</td></tr>
+  <tr><td><b>Base + NH₄Cl</b></td><td>Salt + NH₃ (ammonia) + H₂O</td></tr>
+  <tr><td><b>Metal + O₂</b></td><td>Metal oxide; + H₂O → metal hydroxide</td></tr>
+  <tr><td><b>Acid rain</b></td><td>Nitric + sulphuric acid wali baarish; metals aur carbonates ko khaati hai</td></tr>
+</table>
+<div class="box trick"><span class="t"><span class="emoji">🎯</span> Paper se pehle 4 pakki baatein</span>
+  1. Ionization: molecule <b>left</b>, ions <b>right</b>.<br>
+  2. Bronsted: <b>H gino</b>; sirf left wali cheezon ko acid/base kaho.<br>
+  3. Equation ke baad <b>atoms gino</b>, "2" lagao; oxygen hamesha <b>O₂</b>.<br>
+  4. Gas ka aur banne wali cheez ka <b>naam English mein</b> bhi likho.
+</div>
+
+<!-- ================= CHECK ================= -->
+<h2 class="pb"><span class="emoji">✅</span> Khud ko check karo (12 sawal)</h2>
+<p class="small">Pehle notebook mein khud jawab likho, phir agle page par check karo.</p>
+<ol class="check">
+  <li>Base red litmus ko kis rang ka karta hai?</li>
+  <li>Arrhenius ke mutabiq acid paani mein kaunsa ion deta hai?</li>
+  <li>HCl ke paani mein ionize hone ki equation likho (state symbols ke saath).</li>
+  <li>Bronsted-Lowry acid ki definition likho.</li>
+  <li>NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ mein Bronsted acid aur base batao.</li>
+  <li>HNO₃ + H₂O → H₃O⁺ + NO₃⁻: is reaction ka acid kaun hai, HNO₃ ya H₃O⁺? (Soch kar!)</li>
+  <li>Sirke mein kaunsa acid hai, aur woh strong hai ya weak?</li>
+  <li>Alkali kya hota hai? Ek aisa base batao jo alkali nahin.</li>
+  <li>Balance karo: Na₂CO₃ + HCl → NaCl + H₂O + CO₂</li>
+  <li>NaOH + NH₄Cl ko garam karo to kaunsi gas nikalti hai?</li>
+  <li>2Mg + O₂ → 2MgO: MgO ka English naam kya hai?</li>
+  <li>Do amphoteric oxides ke naam batao.</li>
+</ol>
+
+<div class="box eg"><span class="t"><span class="emoji">🎥</span> Agar kuch samajh na aaye (optional)</span>
+  NBF Chemistry 9 Chapter 10 exercise ki video: youtube.com/watch?v=zELXCuDYFWI<br><span class="small">Notes kaafi hain; video sirf tab dekho jab koi hissa mushkil lage.</span>
+</div>
+
+<h2 class="pb"><span class="emoji">🔑</span> Jawab</h2>
+<ol class="check">
+  <li><b>Blue</b> (B se Base, B se Blue)</li>
+  <li><b>H⁺ ion</b></li>
+  <li><b>HCl(g) → H⁺(aq) + Cl⁻(aq)</b> (molecule left, ions right)</li>
+  <li><b>An acid is a proton donor.</b></li>
+  <li>NH₃ → NH₄⁺ (H barha): <b>NH₃ = base</b>. H₂O → OH⁻ (H kam hua): <b>H₂O = acid</b>.</li>
+  <li><b>HNO₃</b> (left side par, H kam hua). Base <b>H₂O</b> hai (H barha). H₃O⁺ yahan product hai, is reaction ka acid nahin.</li>
+  <li><b>Ethanoic acid (acetic acid), CH₃COOH</b>. Ye <b>weak</b> hai, sirf 5% tak ionize hota hai.</li>
+  <li>Paani mein ghulne wala base. Jo alkali nahin: <b>Cu(OH)₂, Al(OH)₃ ya Fe(OH)₃</b> (koi ek).</li>
+  <li><b>Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂</b></li>
+  <li><b>Ammonia gas (NH₃)</b></li>
+  <li><b>Magnesium oxide</b></li>
+  <li><b>Aluminium oxide (Al₂O₃)</b> aur <b>zinc oxide (ZnO)</b></li>
+</ol>
+<div class="intro">
+  <p><b>Score dekho:</b></p>
+  <ul>
+    <li><b>10 se 12 sahi:</b> zabardast! <span class="emoji">🌟</span> Chapter 10 tumhara pakka ho gaya.</li>
+    <li><b>7 se 9 sahi:</b> bohat achha! Jo ghalat hue, sirf un ka "Pakki trick" box dobara dekh lo.</li>
+    <li><b>7 se kam:</b> koi baat nahin. Kal ek dafa aur parho, doosri dafa hamesha aasan lagta hai. <span class="emoji">💪</span></li>
+  </ul>
+</div>
+
+</body>
+</html>

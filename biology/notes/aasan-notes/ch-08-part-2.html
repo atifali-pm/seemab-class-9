@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Biology Chapter 8 Part 2 Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 9mm 9mm 10mm 9mm; }
+  :root {
+    --ink: #1f2430; --muted: #5b6475;
+    --blue: #1d5fa8; --blue-bg: #e8f1fc;
+    --green: #1e7a4a; --green-bg: #e7f6ee;
+    --yellow: #8a6200; --yellow-bg: #fff6d8;
+    --red: #a8322a; --red-bg: #fdecea;
+    --purple: #6a3fa0; --purple-bg: #f2ecfb;
+    --line: #d7dce5;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 10.2pt; line-height: 1.45; margin: 0; }
+  .emoji { font-family: "Noto Color Emoji"; font-style: normal; }
+  h1 { font-size: 19pt; color: var(--blue); margin: 0 0 2mm; line-height: 1.2; }
+  .sub { color: var(--muted); font-size: 10pt; margin-bottom: 4mm; }
+  h2 { font-size: 14pt; color: #fff; background: var(--blue); padding: 2.2mm 3.5mm; border-radius: 3mm; margin: 6mm 0 3mm; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: var(--blue); margin: 5mm 0 1.5mm; border-bottom: 1.5px solid var(--line); padding-bottom: 1mm; page-break-after: avoid; }
+  h3 .pg { font-size: 8.5pt; color: var(--muted); font-weight: normal; }
+  p { margin: 1.5mm 0; }
+  ul, ol { margin: 1mm 0 1.5mm; padding-left: 6mm; }
+  li { margin: 0.6mm 0; }
+  .box { border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .box .t { font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .def { background: var(--blue-bg); border-left: 4px solid var(--blue); }
+  .def .t { color: var(--blue); }
+  .def q { font-weight: 600; quotes: "\201C" "\201D"; }
+  .eg { background: var(--green-bg); border-left: 4px solid var(--green); }
+  .eg .t { color: var(--green); }
+  .trick { background: var(--yellow-bg); border-left: 4px solid #e0a800; }
+  .trick .t { color: var(--yellow); }
+  .warn { background: var(--red-bg); border-left: 4px solid var(--red); }
+  .warn .t { color: var(--red); }
+  .mcq { background: var(--purple-bg); border-left: 4px solid var(--purple); }
+  .mcq .t { color: var(--purple); }
+  .solve { border: 1.5px dashed var(--green); border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .solve .t { color: var(--green); font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .solve table td { padding: 0.3mm 2mm 0.3mm 0; vertical-align: top; border: none; }
+  .ans { color: var(--green); font-weight: bold; }
+  .formula { text-align: center; font-size: 13pt; font-weight: bold; color: var(--blue); margin: 2mm 0; }
+  table.t1 { border-collapse: collapse; width: 100%; font-size: 9.3pt; margin: 2mm 0; page-break-inside: avoid; }
+  table.t1 th { background: var(--blue); color: #fff; padding: 1.2mm 1.6mm; text-align: left; }
+  table.t1 td { border: 1px solid var(--line); padding: 1.1mm 1.6mm; vertical-align: top; }
+  table.t1 tr:nth-child(even) td { background: #f6f8fb; }
+  .intro { background: linear-gradient(135deg, #e8f1fc, #f2ecfb); border-radius: 3mm; padding: 3mm 3.5mm; margin: 2mm 0 3mm; }
+  .map td { padding: 1mm 1.5mm; }
+  .small { font-size: 9pt; color: var(--muted); }
+  .pb { page-break-before: always; }
+  .cap { page-break-after: avoid; break-after: avoid; }
+  h2 { margin-top: 5mm; }
+  .check li { margin: 1.4mm 0; }
+  .pill { display: inline-block; background: var(--blue); color: #fff; border-radius: 10px; padding: 0 2.2mm; font-size: 8.5pt; font-weight: bold; }
+  .one { background: #e6f7f7; border: 1.5px solid #1a8a8a; }
+  .one .t { color: #11706f; }
+  .solve table.t1 td { border: 1px solid var(--line); }
+  td.wrong { text-decoration: line-through; color: #8a8f99; }
+  pre.dot { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; background: #f6f8fb; border: 1px solid var(--line); border-radius: 2mm; padding: 2mm; margin: 2mm 0; white-space: pre; line-height: 1.35; }
+</style>
+</head>
+<body>
+<h1><span class="emoji">🌿</span> Biology Chapter 8: Part 2<br>Transport in Plants (8.2)</h1>
+<div class="sub">Aasan Notes, tumhari kitab ke saath saath (book pages 114 se 117)</div>
+
+<div class="intro">
+  <p><b>Assalam o alaikum Seemab!</b> Ye Chapter 8 ka doosra hissa hai. Part 1 mein plant ki khoraak thi; ab kahani aage barhti hai: cheezein plant ke andar <b>kaise</b> aur <b>kahan se kahan</b> jati hain.</p>
+  <p>Ye notes kitab ki heading <b>"8.2 TRANSPORT IN PLANTS" (p114)</b> se shuru ho kar <b>"8.2.3 Transpiration" (p117)</b> se theek pehle rukte hain. Transpiration agle Part mein aayega. Kitab ki <b>har line, har figure ka caption aur har side box</b> isi file mein hai.</p>
+  <p><b>Tareeqa:</b> ek dafa aaram se parho, phir sirf <b>neelay <span class="emoji">📖</span> boxes</b> dobara (yehi English lines exam mein likhni hain), aur aakhir mein <b>Exercise</b> wale 6 hal shuda sawal.</p>
+</div>
+
+<div class="box def"><span class="t"><span class="emoji">🎯</span> Student Learning Outcomes (chapter ke pehle page ka SLOs box) jo is Part mein hain</span>
+<ol start="4">
+<li>Conceptualize the transport and its need.</li>
+<li>Explain the internal structure of root and root hair.</li>
+<li>Describe how roots take up water and minerals.</li>
+<li>Describe how roots take up water and mineral salts by active and passive absorption.</li>
+</ol>
+<span class="small">Exercise ke Section III wale sawal 2 aur 3 bilkul yehi alfaaz hain, is liye ye chaar SLOs seedha exam ke sawal hain.</span>
+</div>
+
+<table class="map t1">
+  <tr><th colspan="2">Part 2 ka naqsha (4 hisse)</th></tr>
+  <tr><td><span class="emoji">🚚</span> Hissa 1</td><td>Transport kya hai aur kyun chahiye (8.2, 8.2.1), p114</td></tr>
+  <tr><td><span class="emoji">🌱</span> Hissa 2</td><td>Jarh bahar se aur andar se (8.2.2), p114, p115</td></tr>
+  <tr><td><span class="emoji">⚡</span> Hissa 3</td><td>Minerals ka uptake (8.2.2 doosra), p115, p116</td></tr>
+  <tr><td><span class="emoji">💧</span> Hissa 4</td><td>Paani ka uptake: osmosis, p116, p117</td></tr>
+</table>
+
+<!-- ================= HISSA 1 ================= -->
+<h2><span class="emoji">🚚</span> Hissa 1: Transport kya hai aur kyun chahiye</h2>
+
+<h3>8.2 TRANSPORT IN PLANTS <span class="pg">(kitab p114)</span></h3>
+<p>Pauda apni jagah khara rehta hai, lekin us ke <b>andar</b> saara din traffic chalta hai: paani jarh se patton tak, khana patton se baqi plant tak, aur waste bahar. Isi saare aane jaane ka naam <b>transport in plants</b> hai.</p>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz (p114)</span>
+  <q>You have learnt that plants absorb nutrients from the soil which are then utilized in the leaves to prepare organic nutrients by photosynthetic activity. These organic solutes are also to be moved to different parts of the plant body. When organic solutes are utilized in plant body, some waste compounds are also produced which are then removed out of the plant body. All these movements of materials are generally referred to as transport in plants.</q>
+</div>
+<p class="small">Yani: mitti se nutrients andar aate hain, patton mein photosynthesis se organic nutrients bante hain, ye organic solutes plant ke doosre hisson tak jate hain, aur jo waste compounds bante hain woh bahar nikal diye jate hain. In <b>saari movements</b> ko mila kar transport in plants kehte hain.</p>
+
+<h3>8.2.1 Need of Transport <span class="pg">(transport ki zaroorat, kitab p114)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz (p114): teen levels</span>
+  <q>In a plant body, transport occurs at three different levels:</q>
+  <p style="margin-top:1.5mm"><b>At 1<sup>st</sup> level,</b> <q>the materials are moved from outside to inside the plant body because plant needs mineral nutrients and water to maintain its live activities which are to be absorbed from the soil, however, gases like CO<sub>2</sub> and O<sub>2</sub> are obtained from air.</q></p>
+  <p><b>At 2<sup>nd</sup> level,</b> <q>the materials are transported withing the plant body from one place to another because the inorganic nutrients must be transported to the leaves so that they can be used to prepare organic solutes by photosynthetic activity. These organic solutes are also to be moved to different parts of the plant body so that they can be used in plant growth and metabolism.</q></p>
+  <p><b>At 3<sup>rd</sup> level,</b> <q>the materials are moved from inside to outside the plant body because when organic solutes are utilized in plant body, some waste compounds are also produced which are then removed out of the plant body. These are the reasons why transport in plants occurs at three different levels.</q></p>
+</div>
+<table class="t1">
+  <tr><th>Level</th><th>Kis taraf</th><th>Kyun</th></tr>
+  <tr><td>1st</td><td>Outside se inside</td><td>Minerals aur paani mitti se, gases (CO<sub>2</sub>, O<sub>2</sub>) hawa se</td></tr>
+  <tr><td>2nd</td><td>Plant ke andar andar</td><td>Nutrients patton tak, phir bana hua khana poore plant tak</td></tr>
+  <tr><td>3rd</td><td>Inside se outside</td><td>Waste compounds bahar nikalne ke liye</td></tr>
+</table>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Trick</span>
+  Ghar ka darwaza socho: <b>andar aao</b> (1st), <b>ghar mein ghoomo</b> (2nd), <b>bahar jao</b> (3rd). Bas yehi teen levels hain.
+</div>
+
+<!-- ================= HISSA 2 ================= -->
+<h2><span class="emoji">🌱</span> Hissa 2: Jarh (root) ki banawat</h2>
+
+<h3>8.2.2 Structure of root and root hairs <span class="pg">(kitab p114, p115)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz: root ki definition aur us ki do qismein</span>
+  <q>Root is an underground part of the plant, which serve as the organ of uptake of mineral nutrients and water. It possesses large surface area due to extensive branching system and root hairs which make them favourable for organ of uptake.</q>
+  <p style="margin-top:1.5mm"><q>Dicot plants have tap root which consists of a thick primary root that bears several secondary roots. Each secondary root further consists of large number of tertiary roots. On the other hand, monocot plants have fibrous adventitious roots that show no differentiation of primary, secondary, and tertiary roots.</q></p>
+</div>
+<p class="small">Yani: root zameen ke neeche ka hissa hai aur <b>organ of uptake</b> hai (minerals aur paani lene wala). Us ki surface area do wajah se bari hai: <b>extensive branching system</b> aur <b>root hairs</b>. Geela kapra phaila do to jaldi sookhta hai, kyunke surface zyada mil jata hai; jarh bhi yehi karti hai.</p>
+<table class="t1">
+  <tr><th>Dicot plants</th><th>Monocot plants</th></tr>
+  <tr><td><b>Tap root:</b> ek moti primary root, us par secondary roots, un par bohat se tertiary roots</td><td><b>Fibrous adventitious roots:</b> primary, secondary, tertiary ka koi differentiation nahi, sab barabar reshe</td></tr>
+</table>
+<p class="small"><b>Figure 8.2 ka caption (p114):</b> "Tap root in Dicot plants (Left), Fibrous Adventitious root in Monocot plants (Right)."</p>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Trick</span>
+  <b>Tap</b> = ek <b>moti</b> pipe jis se chhoti pipes nikalti hain, ye <b>dicot</b>. <b>Fibrous</b> = jhaaru ke taar jaise <b>barabar reshe</b>, ye <b>monocot</b>.
+</div>
+
+<h3>Internal structure of root and root hairs <span class="pg">(jarh andar se, kitab p115)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ka poora paragraph (p115)</span>
+  <q>In in both monopod and dicot roots, the outermost layer is called epidermis. Many cells of the epidermis have extensions that are penetrated the spaces among soil particles. These extensions of the root epidermal cells are called root hairs, which increase approximately 67% surface area of the root. Inner to the epidermis is a ground issue, the cortex. The inner lining of the cortex is called the endodermis. The endodermal cells have deposition of a vax, the suberin in their radial walls. These depositions are in the form of strips called the Casparian Strips. Inner to the endodermis is the pericycle which surrounds the innermost vascular bundles. The vascular bundle consists of xylem and phloem which are arranged in the form of ring in monocot root with central ground tissue called as pith. Whereas, in the dicot roots, the vascular bundles are present in the form of star shape in the centre of the root without the presence of pith.</q>
+  <span class="small">Kitab mein "monopod" (monocot), "ground issue" (ground tissue) aur "a vax" (a wax) chhap gaya hai. Ye sirf typing ki ghaltiyan hain.</span>
+</div>
+<p class="cap"><b>Bahar se andar tak:</b></p>
+<table class="t1">
+  <tr><th>Layer</th><th>Kya hai</th></tr>
+  <tr><td><b>Epidermis</b></td><td>Sab se bahar wali layer, monocot aur dicot dono mein. Figures mein isay <b>epiblema</b> likha gaya hai.</td></tr>
+  <tr><td><b>Root hairs</b></td><td>Epidermal cells ki <b>extensions</b> jo mitti ke zarron ke beech ghus jati hain. Surface area <b>approximately 67%</b> barha deti hain.</td></tr>
+  <tr><td><b>Cortex</b></td><td>Epidermis ke andar ka <b>ground tissue</b>.</td></tr>
+  <tr><td><b>Endodermis</b></td><td>Cortex ki <b>inner lining</b>. Is ke cells ki <b>radial walls</b> par <b>suberin</b> (wax) strips ki shakal mein jamta hai: <b>Casparian Strips</b>.</td></tr>
+  <tr><td><b>Pericycle</b></td><td>Endodermis ke andar, sab se andar wale <b>vascular bundles</b> ko gherta hai.</td></tr>
+  <tr><td><b>Vascular bundle</b></td><td><b>Xylem aur phloem</b> se banta hai. Monocot: <b>ring</b> ki shakal, beech mein <b>pith</b>. Dicot: <b>star shape</b>, centre mein, <b>pith nahi</b>.</td></tr>
+</table>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Do pakki tricks</span>
+  <b>1. Order:</b> bahar se andar <b>E, C, E, P, V</b> (Epidermis, Cortex, Endodermis, Pericycle, Vascular bundle). Do E hain: pehla sab se bahar, doosra cortex ki andar wali lining.<br>
+  <b>2. Pith:</b> <b>Mono</b> aur <b>Middle</b> dono M se: monocot ke middle mein pith hoti hai aur bundles us ke gird ring bana lete hain. Dicot mein bundles khud centre par star bana lete hain, is liye pith ki jagah hi nahi bachti.
+</div>
+<p class="small"><b>Figure 8.3 ka caption (p115):</b> "T.S. of monocot root (Left), T.S. of dicot root (Right)." Labels: <b>Root hair, Cortex, Xylem, Phloem, Xylem, Pith, Pericycle, Endodermis, Epiblema.</b></p>
+
+<!-- ================= HISSA 3 ================= -->
+<h2><span class="emoji">⚡</span> Hissa 3: Minerals ka uptake</h2>
+
+<h3>8.2.2 Uptake of mineral salts and water by active and passive transport <span class="pg">(kitab p115, p116)</span></h3>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki numbering ki ghalti</span>
+  Kitab ne <b>do alag sections</b> par ek hi number <b>8.2.2</b> chhap diya hai: p114 par "Structure of root and root hairs" aur p115 par ye wala. Number ki fikr mat karo, exam mein <b>heading ka naam</b> likhna.
+</div>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz (p115)</span>
+  <q>Plant roots serve two vital functions: anchoring the plant in soil and absorbing essential minerals and water. To support the process of photosynthesis, plants require three key nutrients: carbon dioxide, water, minerals, and light. To obtain these nutrients, roots develop an extensive branching system and are covered by root hairs. These root hairs are the primary sites for the absorption of water and minerals.</q>
+  <p style="margin-top:1.5mm"><q>With these raw materials (minerals and water from the soil, carbon dioxide from the air, and light energy), plants synthesize all the compounds they need. While most minerals enter the root hairs or epidermal cells of the roots through bulk flow with water, some are absorbed through diffusion, facilitated diffusion, or active transport.</q></p>
+</div>
+<ul>
+  <li>Root ke do bunyadi kaam: plant ko mitti mein <b>anchor</b> karna, aur minerals aur paani <b>absorb</b> karna.</li>
+  <li><b>Root hairs hi absorption ki primary sites hain.</b> Ye line MCQ ke liye sab se zaroori hai.</li>
+  <li><b>Zyada tar</b> minerals paani ke saath <b>bulk flow</b> se andar aate hain; <b>kuch</b> diffusion, facilitated diffusion ya active transport se.</li>
+</ul>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki ginti ki ghalti</span>
+  Kitab likhti hai "<b>three</b> key nutrients" magar phir <b>chaar</b> cheezein ginwati hai: carbon dioxide, water, minerals, and light. Exam mein chaaron likh dena aur ginti ka lafz na likhna.
+</div>
+<p class="small"><b>Figure 8.4 ka caption (p115):</b> "Structure of root hair." Labels: <b>A root hair cell, Mitochondria, Cell membrane, Cell wall, Nucleus, Vacuole, Cytoplasm, Root epithelial (epiblemal) cell.</b> Mitochondria is liye dikhaye gaye hain ke <b>active transport</b> ko <b>ATP</b> chahiye, aur ATP respiration se banta hai.</p>
+
+<h3>Mechanism of mineral absorption by root <span class="pg">(kitab p115)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz (p115)</span>
+  <q>Plants absorb minerals from water in the soil. When minerals are stuck to soil particles and not dissolved in water, plants can't use them. Only those minerals can be absorbed that are dissolved in soil water. Plants take in minerals through root cells using both passive and active processes that require energy, specifically ATP.</q>
+</div>
+<p class="small">Yani: minerals mitti ke <b>paani</b> se milte hain. Jo minerals soil particles ke saath chipke hue aur <b>ghule hue nahi</b>, woh plant istemal nahi kar sakta. <b>Sirf dissolved minerals hi absorb hote hain.</b></p>
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Ek confusing jumla</span>
+  Aakhri line se lagta hai ke dono processes ko ATP chahiye. Aisa nahi hai, aur kitab khud agle page par saaf kar deti hai: <b>ATP sirf active transport mein</b> lagta hai. Passive (diffusion, facilitated diffusion, osmosis) mein koi energy kharch nahi hoti.
+</div>
+<p class="small"><b>Figure 8.5 ka caption (p116):</b> "Uptake of mineral nutrients by the plant." Tasveer mein <b>Photosynthesis, Oxygen, CO<sub>2</sub>, Respiration, Stem, Soil system, Root system, Water</b> aur do jagah <b>Macronutrient</b> ke labels hain, aur mineral ions ke rangeen bubbles (Mg, Mo, P, K, Cu, Zn, Fe waghera). Upar ek box hai: <q>Nutrient uptake is facilitated by leaves, root. Movement of mineral ions involve passive and active transport.</q></p>
+
+<h3>Teen tareeqe: diffusion, facilitated diffusion, active transport <span class="pg">(kitab p116)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke teen paragraph (p116)</span>
+  <p><b>1. Passive uptake:</b> <q>Passive uptake happens through diffusion, as minerals move along their concentration gradient through plasmodesmata to cells in the root's cortex, endodermis, and pericycle before reaching the xylem cells. They are then pulled up by transpiration.</q></p>
+  <p><b>2. Facilitated diffusion:</b> <q>Certain nutrients are transported from the soil into the epidermal cells of roots through their cell membranes by a process called facilitated diffusion. In facilitated diffusion, proteins within the cell membrane act as carrier molecules to help move nutrients across the membrane. These carrier proteins are found in the cell membranes of epidermal and other root cells.</q></p>
+  <p><b>3. Active transport:</b> <q>Active transport, on the other hand, requires energy and allows plants to take in minerals even when their concentration inside the root cells is higher than in the soil. This is against the natural concentration gradient, and it involves the use of ATP. Active transport is selective and relies on respiration. Some ions can also move through passive transport.</q></p>
+</div>
+<table class="t1">
+  <tr><th>Baat</th><th>Diffusion (passive)</th><th>Facilitated diffusion</th><th>Active transport</th></tr>
+  <tr><td>ATP</td><td>Nahi</td><td>Nahi</td><td><b>Haan</b></td></tr>
+  <tr><td>Gradient</td><td><b>Along</b></td><td><b>Along</b></td><td><b>Against</b></td></tr>
+  <tr><td>Carrier proteins</td><td>Nahi</td><td><b>Haan</b></td><td>Haan, aur <b>selective</b></td></tr>
+  <tr><td>Khaas baat</td><td>Plasmodesmata se cortex, endodermis, pericycle, phir xylem; wahan se transpiration kheench leti hai</td><td>Epidermal cells ke cell membranes ke through</td><td><b>Respiration</b> par depend karta hai</td></tr>
+</table>
+<div class="box trick"><span class="t"><span class="emoji">🪜</span> Trick</span>
+  <b>Passive</b> = seerhiyan utarna, apne aap ho jata hai. <b>Active</b> = seerhiyan charhna woh bhi bhaari bag ke saath, taqat chahiye, aur woh taqat <b>ATP</b> hai.
+</div>
+<div class="box mcq"><span class="t"><span class="emoji">📌</span> Science Titbits (kitab p116, side box)</span>
+  <q>One crucial nutrient, nitrogen (N), is often scarce in both rock particles and soil water. Many plants have developed beneficial partnerships with other organisms to obtain these limited nutrients. For example, mycorrhizal fungi and nitrogen-fixing bacteria in the root nodules of legumes are examples of such partnerships. Fungal associations with the roots of higher plants enhance the plant's ability to absorb minerals like phosphorus and trace metals such as zinc and copper. A root infected with mycorrhizal fungi can absorb phosphate at a faster rate than an uninfected root. In exchange for their services, mycorrhizal fungi receive sugars and protection from the plant, ultimately increasing the plant's efficiency in acquiring mineral nutrients. Mycorrhizae form associations with plants from a wide range of plant families, covering approximately 90% of flowering plants.</q>
+  <p class="small" style="margin-top:1.5mm"><b>Yani:</b> nitrogen mitti mein aksar kam hota hai, is liye plants <b>mycorrhizal fungi</b> aur legumes ki <b>root nodules</b> wale <b>nitrogen-fixing bacteria</b> se partnership bana lete hain. Fungi plant ko phosphorus, zinc aur copper lene mein madad dete hain aur badle mein <b>sugars aur protection</b> lete hain. Ye rishta taqreeban <b>90% flowering plants</b> mein milta hai.</p>
+</div>
+
+<!-- ================= HISSA 4 ================= -->
+<h2><span class="emoji">💧</span> Hissa 4: Paani ka uptake</h2>
+
+<h3>Mechanism of water absorption by root <span class="pg">(kitab p116, p117)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz (p116 se p117): exam mein yehi likho</span>
+  <q>Absorption of water by roots occur by means of a passive transport mechanism called osmosis. This is the movement of water molecules through a partially permeable membrane from an area where they are more concentrated to an area where they are less concentrated. If water moves into a cell through osmosis, it's called endosmosis, and if it moves out of the cell, it's called exosmosis.</q>
+  <p style="margin-top:1.5mm"><q>In the epidermal cells of roots, the cell wall allows water and minerals to pass through freely. However, the cell membrane is selectively permeable, meaning it only allows certain substances from the solution to pass through. Water entering the epidermal cells follows the concentration gradient, moving through the cortex, endodermis, pericycle, and finally into the xylem cells.</q></p>
+</div>
+<p class="small">Yani: paani <b>osmosis</b> se andar aata hai, aur osmosis ek <b>passive</b> tareeqa hai, is mein <b>ATP kharch nahi</b> hota. Osmosis ka matlab hai paani ka <b>partially permeable membrane</b> ke through zyada concentrated jagah se kam concentrated jagah ki taraf move karna.</p>
+<table class="t1">
+  <tr><th>Cell wall</th><th>Cell membrane</th></tr>
+  <tr><td><b>Freely permeable:</b> paani aur minerals ko aazadi se guzarne deti hai. Jaise khula gate.</td><td><b>Selectively permeable:</b> solution mein se sirf kuch khaas cheezein guzarne deti hai. Jaise darwaza jahan pooch kar andar aane dete hain.</td></tr>
+</table>
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Do pakki tricks</span>
+  <b>1. Endo aur exo:</b> <b>Endo</b> mein "en" hai jaise <b>enter</b>, paani cell ke <b>andar</b>. <b>Exo</b> mein "ex" hai jaise <b>exit</b>, paani cell se <b>bahar</b>.<br>
+  <b>2. Paani ka rasta:</b> Root hair, Epidermis, <b>Cortex, Endodermis, Pericycle, Xylem.</b> Aur ye safar concentration gradient ke saath saath hota hai, koi taqat nahi lagti.
+</div>
+<p class="small"><b>Figure 8.6 ka caption (p117):</b> "Uptake of water by the plant." Labels: <b>Air, Water, Root, Root hair, Soil particles.</b> Zoom mein root hair mitti ke zarron ke beech ghusa nazar aata hai, zarron ke gird paani ki tehen hai aur baqi khaali jagah mein hawa.</p>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Poore Part ka khulasa, ek box mein</span>
+  Transport teen levels par hota hai. Jarh mein bahar se andar: <b>epidermis, cortex, endodermis (Casparian strips), pericycle, vascular bundle</b>. Monocot mein bundles ring aur beech mein pith; dicot mein star aur pith nahi.<br>
+  <b>Minerals:</b> sirf ghule hue absorb hote hain; diffusion aur facilitated diffusion muft (passive), active transport gradient ke khilaf ATP se.<br>
+  <b>Paani:</b> osmosis se, passive. Andar aana endosmosis, bahar jana exosmosis. Rasta: epidermis, cortex, endodermis, pericycle, xylem.
+</div>
+<p class="small">Kitab ke isi page (p117) par agli heading <b>"8.2.3 Transpiration"</b> shuru ho rahi hai. Woh aur us ke baad ka sab kuch agle Part ke notes mein aayega.</p>
+
+<!-- ================= EXERCISE ================= -->
+<h2 class="pb"><span class="emoji">📝</span> Kitab ke Exercise sawal, poore hal ke saath</h2>
+
+<h3>Section I: MCQ 2 <span class="pg">(kitab p126)</span></h3>
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Most of the uptake of water and minerals from soil takes place through:</span>
+  <p>A) epidermal cells &nbsp; (B) root cap &nbsp; C) root &nbsp; (D) root hair</p>
+  <p class="ans">Sahi jawab: (D) root hair</p>
+  <p><b>Wajah:</b> kitab p115: "These root hairs are the <b>primary sites</b> for the absorption of water and minerals." Aur p115: root hairs surface area <b>approximately 67%</b> barha deti hain. Epidermal cells bhi absorb karte hain, magar <b>sab se zyada</b> kaam root hairs ka hai (root hairs khud epidermal cells hi ki extensions hain). "Root" bohat aam lafz hai aur root cap ka kaam absorption nahi.</p>
+</div>
+
+<h3>Section II: Short Answer Questions <span class="pg">(kitab p128)</span></h3>
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Q8 (vi): Define Vascular bundle</span>
+  <p>A vascular bundle is the <b>innermost conducting part of the root</b>, which consists of <b>xylem and phloem</b>, and which is <b>surrounded by the pericycle</b>.</p>
+  <p class="small">Ek line aur likho to marks pakke: monocot root mein ye <b>ring</b> ki shakal mein hote hain (beech mein pith), aur dicot root mein <b>star shape</b> mein centre par (pith nahi hoti).</p>
+</div>
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Q8 (vii): Define Xylem</span>
+  <p>Xylem is a <b>component of the vascular bundle</b>. It is the tissue into which <b>water and mineral salts finally move</b> after passing through the epidermis, cortex, endodermis and pericycle, and from where they are <b>pulled up by transpiration</b>.</p>
+  <p class="small">Kitab ki jin lines se ye banta hai: p115 "The vascular bundle consists of <b>xylem</b> and phloem"; p116 minerals "...before reaching the <b>xylem cells</b>. They are then <b>pulled up by transpiration</b>"; p117 paani "...and <b>finally into the xylem cells</b>."</p>
+</div>
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Q9 (c): Difference between Monocot root and dicot root</span>
+  <table class="t1">
+    <tr><th>Baat</th><th>Monocot root</th><th>Dicot root</th></tr>
+    <tr><td>Root ki qism</td><td><b>Fibrous adventitious roots</b></td><td><b>Tap root</b></td></tr>
+    <tr><td>Branching</td><td>Primary, secondary, tertiary ka <b>koi differentiation nahi</b></td><td>Moti <b>primary root</b>, us par secondary, un par tertiary roots</td></tr>
+    <tr><td>Vascular bundles</td><td><b>Ring</b> ki shakal mein</td><td><b>Star shape</b> mein, centre mein</td></tr>
+    <tr><td>Pith</td><td><b>Mojood</b> (central ground tissue)</td><td><b>Mojood nahi</b></td></tr>
+  </table>
+  <p class="small">Baqi layers (epidermis, cortex, endodermis with Casparian strips, pericycle) dono mein ek jaisi hoti hain.</p>
+</div>
+
+<h3>Section III: Extensive Answer Questions <span class="pg">(kitab p128)</span></h3>
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Q2: Explain the internal structure of root and root hair.</span>
+  <p><b>Introduction:</b> Root plant ka underground hissa hai jo minerals aur paani ka <b>organ of uptake</b> hai. Is ki surface area <b>extensive branching system</b> aur <b>root hairs</b> ki wajah se bohat bari hoti hai. Monocot aur dicot, dono roots mein bahar se andar ki tarteeb ye hai:</p>
+  <ol>
+    <li><b>Epidermis:</b> sab se bahar wali layer (figures mein <b>epiblema</b>).</li>
+    <li><b>Root hairs:</b> epidermal cells ki extensions jo mitti ke zarron ke darmiyan ki jagahon mein ghus jati hain. Ye surface area <b>approximately 67%</b> barha deti hain.</li>
+    <li><b>Cortex:</b> epidermis ke andar ka <b>ground tissue</b>.</li>
+    <li><b>Endodermis:</b> cortex ki inner lining. Is ke cells ki <b>radial walls</b> par <b>suberin</b> naam ka wax strips ki shakal mein jamta hai, jinhein <b>Casparian Strips</b> kehte hain.</li>
+    <li><b>Pericycle:</b> endodermis ke andar, jo sab se andar wale vascular bundles ko gher leta hai.</li>
+    <li><b>Vascular bundle:</b> <b>xylem aur phloem</b>. Monocot mein <b>ring</b> ki shakal aur beech mein <b>pith</b>; dicot mein centre par <b>star shape</b> aur <b>pith nahi</b>.</li>
+  </ol>
+  <p><b>Root hair ki apni banawat (Figure 8.4):</b> root hair asal mein <b>root epithelial (epiblemal) cell</b> ki lambi extension hai. Is mein <b>cell wall, cell membrane, cytoplasm, nucleus, ek bara vacuole aur mitochondria</b> hote hain.</p>
+  <p><b>Function:</b> cell wall paani aur minerals ko aazadi se guzarne deti hai, jabke cell membrane <b>selectively permeable</b> hai. Mitochondria respiration se <b>ATP</b> dete hain jo <b>active transport</b> mein kaam aata hai. Isi liye root hairs paani aur minerals ke absorption ki <b>primary sites</b> hain.</p>
+  <p class="small">Saath mein Figure 8.3 (T.S. of monocot root aur dicot root) aur Figure 8.4 (structure of root hair) ke labelled diagram zaroor bana dena.</p>
+</div>
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Q3: Describe how roots take up water and mineral salts by active and passive absorption.</span>
+  <p><b>Introduction:</b> Root ke do bunyadi kaam hain: plant ko mitti mein <b>anchor</b> karna aur minerals aur paani <b>absorb</b> karna. Root hairs hi is absorption ki <b>primary sites</b> hain. Absorption do tarah se hoti hai: <b>passive</b> (energy ke baghair) aur <b>active</b> (ATP kharch kar ke).</p>
+  <p><b>(A) Mineral salts ka uptake</b></p>
+  <ol>
+    <li><b>Pehli shart:</b> jo minerals soil particles ke saath chipke hue aur paani mein ghule nahi, unhein plant istemal nahi kar sakta. <b>Sirf wohi minerals absorb hote hain jo soil water mein dissolved hon.</b></li>
+    <li><b>Bulk flow:</b> zyada tar minerals root hairs ya epidermal cells mein <b>paani ke saath</b> dakhil hote hain.</li>
+    <li><b>Passive uptake (diffusion):</b> minerals apne <b>concentration gradient ke saath</b> <b>plasmodesmata</b> ke zariye cortex, endodermis aur pericycle ke cells se hote hue <b>xylem cells</b> tak pohanchte hain, jahan se unhein <b>transpiration</b> upar kheench leti hai. Energy kharch nahi hoti.</li>
+    <li><b>Facilitated diffusion:</b> kuch nutrients epidermal cells ke <b>cell membranes</b> ke through aate hain. Membrane ke <b>proteins carrier molecules</b> ki tarah kaam kar ke unhein paar karwate hain. Ye carrier proteins epidermal aur baqi root cells ke membranes mein hote hain. Is mein bhi energy kharch nahi hoti.</li>
+    <li><b>Active transport:</b> is mein <b>energy chahiye</b>. Is se plant minerals tab bhi le leta hai jab un ki concentration <b>root cells ke andar mitti se zyada</b> ho. Ye <b>against the natural concentration gradient</b> hai aur is mein <b>ATP</b> lagta hai. Ye <b>selective</b> hai aur <b>respiration</b> par depend karta hai. Kuch ions passive transport se bhi move kar jate hain.</li>
+  </ol>
+  <p><b>(B) Water ka uptake</b></p>
+  <ol>
+    <li><b>Osmosis:</b> paani ka absorption ek <b>passive transport mechanism</b> se hota hai jise osmosis kehte hain, yani paani ke molecules ka <b>partially permeable membrane</b> ke through zyada concentrated se kam concentrated jagah ki taraf jana.</li>
+    <li><b>Endosmosis aur exosmosis:</b> paani cell ke andar aaye to <b>endosmosis</b>, bahar jaye to <b>exosmosis</b>.</li>
+    <li><b>Cell wall aur cell membrane:</b> epidermal cells mein cell wall paani aur minerals ko <b>aazadi</b> se guzarne deti hai, jabke cell membrane <b>selectively permeable</b> hai.</li>
+    <li><b>Rasta:</b> paani <b>concentration gradient</b> ke saath <b>cortex, endodermis, pericycle</b> se hota hua <b>xylem cells</b> tak pohanch jata hai.</li>
+  </ol>
+  <p><b>Conclusion:</b> Is tarah root paani aur ghule hue mineral salts dono absorb kar leti hai: paani hamesha <b>passive</b> tareeqe (osmosis) se, aur minerals kabhi <b>passive</b> (diffusion, facilitated diffusion) to kabhi <b>active transport</b> se, jis mein ATP kharch hota hai.</p>
+  <div class="box warn" style="margin-top:2mm"><span class="t"><span class="emoji">⚠️</span> Conclusion likhna mat bhoolna</span>
+  Pichle papers mein sab se zyada marks <b>conclusion na likhne</b> par kam hue hain. Is 8 marks wale sawal ke aakhir mein upar wali Conclusion wali lines zaroor likhna.</div>
+</div>
+
+</body>
+</html>

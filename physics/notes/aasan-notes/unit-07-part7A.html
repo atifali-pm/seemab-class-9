@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Physics Unit 7 Part 7A Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 4.5mm 5mm 4.5mm 5mm; }
+  :root {
+    --ink: #1f2430; --muted: #5b6475;
+    --blue: #1d5fa8; --blue-bg: #e8f1fc;
+    --green: #1e7a4a; --green-bg: #e7f6ee;
+    --yellow: #8a6200; --yellow-bg: #fff6d8;
+    --red: #a8322a; --red-bg: #fdecea;
+    --line: #d7dce5;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 8.2pt; line-height: 1.16; margin: 0; }
+  .emoji { font-family: "Noto Color Emoji"; font-style: normal; }
+  h1 { font-size: 13pt; color: var(--blue); margin: 0 0 1mm; line-height: 1.15; }
+  .sub { color: var(--muted); font-size: 8.3pt; margin-bottom: 1.3mm; }
+  h2 { font-size: 9.6pt; color: #fff; background: var(--blue); padding: 0.8mm 2.4mm; border-radius: 2mm; margin: 1.7mm 0 1mm; page-break-after: avoid; }
+  h2 .pg { font-size: 7.9pt; font-weight: normal; opacity: .9; }
+  p { margin: 0.8mm 0; }
+  ol, ul { margin: 0.8mm 0; padding-left: 4.4mm; }
+  li { margin: 0.2mm 0; }
+  .box { border-radius: 1.8mm; padding: 1.1mm 1.9mm; margin: 1mm 0; page-break-inside: avoid; }
+  .box .t { font-weight: bold; font-size: 8.6pt; display: block; margin-bottom: 0.4mm; }
+  .def { background: var(--blue-bg); border-left: 3.5px solid var(--blue); }
+  .def .t { color: var(--blue); }
+  .trick { background: var(--yellow-bg); border-left: 3.5px solid #e0a800; }
+  .trick .t { color: var(--yellow); }
+  .warn { background: var(--red-bg); border-left: 3.5px solid var(--red); }
+  .warn .t { color: var(--red); }
+  .solve { border: 1.3px dashed var(--green); border-radius: 1.8mm; padding: 1.1mm 1.9mm; margin: 1mm 0; page-break-inside: avoid; }
+  .solve .t { color: var(--green); font-weight: bold; font-size: 8.6pt; display: block; margin-bottom: 0.4mm; }
+  .ans { color: var(--green); font-weight: bold; }
+  .formula { text-align: center; font-size: 9.3pt; font-weight: bold; color: var(--blue); margin: 0.8mm 0; }
+  table.t1 { border-collapse: collapse; width: 100%; font-size: 7.4pt; margin: 1.1mm 0; page-break-inside: avoid; }
+  table.t1 th { background: var(--blue); color: #fff; padding: 0.8mm 1.2mm; text-align: left; }
+  table.t1 td { border: 1px solid var(--line); padding: 0.5mm 1.2mm; vertical-align: top; }
+  table.t1 tr:nth-child(even) td { background: #f6f8fb; }
+  .small { font-size: 7.5pt; color: var(--muted); }
+  .quiz { background: #f2ecfb; border: 1.3px solid #6a3fa0; border-radius: 2mm; padding: 1.2mm 2mm; margin: 1.2mm 0 0.8mm; page-break-inside: avoid; }
+  .quiz .t { color: #6a3fa0; font-weight: bold; font-size: 9pt; display: block; margin-bottom: 0.6mm; }
+  .quiz ol { padding-left: 4.6mm; font-size: 8pt; }
+  .quiz li { margin: 0.6mm 0; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">⚖️</span> Physics Unit 7, Part 7A</h1>
+<div class="sub">Density, &rho; = m/V, liquids aur regular solids ki density &middot; kitab p168 se p172</div>
+
+<p>Seemab, ye woh hissa hai jo tumhare scan mein chhoot gaya tha. Kitab ke chhe numericals mein se <b>chaar</b> yahin se bantay hain, to ise ittminan se parhna.</p>
+
+<h2><span class="emoji">📏</span> 1. Density <span class="pg">(7.1, kitab p168 aur p169)</span></h2>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein bilkul yehi likhna</span>
+"<b>Mass per unit volume of the substance is called its density.</b>"<br>
+Density = Mass / Volume, &nbsp; symbol: <b>&rho; = m / V</b> &nbsp;<span class="small">(Equation 7.1)</span><br>
+SI unit: <b>kilogram per cubic metre (kg/m<sup>3</sup>)</b>. Smaller unit: <b>gram per cubic centimetre (g/cm<sup>3</sup>)</b>. Density of liquids is usually measured in <b>gram per millilitre (g/mL)</b>. It is a <b>scalar quantity</b>.
+</div>
+
+<p>Matlab: ek fix volume mein kitna matter bhara hua hai. Jis cheez ke atoms jitne <b>closely packed</b> honge utni woh <b>denser</b> hogi, isi liye metals aur rocks dense hain. Kitab (Figure 7.1): "Density of solids is greater than liquids and density of liquids is greater than gases."</p>
+
+<p class="small"><b>Do book lines:</b> "Density of small amount of a substance is the same as the density of its bulk" (choti si cheeni aur poori bori, density wahi), aur "density of a material changes with the temperature" (garam karne par volume phailta hai, mass wahi, to density <b>kam</b>). <b>Can you tell:</b> liquids gases se denser hain kyunke un ke particles paas paas hain; increasing order = hydrogen, milk, mercury, gold.</p>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Unit conversion, ye hamesha kaam aayega</span>
+<b>1 g/cm<sup>3</sup> = 1000 kg/m<sup>3</sup></b>. g/cm<sup>3</sup> ko kg/m<sup>3</sup> banana ho to <b>1000 se multiply</b> karo (0.9 &times; 1000 = 900), ulta karna ho to 1000 se divide. <b>1 mL = 1 cm<sup>3</sup></b>, is liye 1 g/mL aur 1 g/cm<sup>3</sup> ek hi cheez hain.
+</div>
+
+<table class="t1">
+<tr><th>Material</th><th>Density (kg/m<sup>3</sup>)</th><th>Material</th><th>Density (kg/m<sup>3</sup>)</th></tr>
+<tr><td>Iron</td><td>7900</td><td>Pure water</td><td>1000</td></tr>
+<tr><td>Gold</td><td>19300</td><td>Mercury</td><td>13600</td></tr>
+<tr><td>Ice</td><td>920</td><td>Air</td><td>1.3</td></tr>
+<tr><td>Polythene</td><td>900</td><td>Carbon dioxide</td><td>2.0</td></tr>
+<tr><td>Petrol</td><td>800</td><td colspan="2" class="small">Table 7.1, kitab p169</td></tr>
+</table>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 7.1: Density of regular shape <span class="small">(kitab p169)</span></span>
+<b>Given:</b> Mass of the material = 500 g; side length of the cube = 5 cm<br>
+<b>Required:</b> Density of the material &rho; = ?<br>
+<b>Solution:</b> Volume of a cubic shape object = (side length)<sup>3</sup><br>
+Volume = (5 cm)<sup>3</sup> = <b>125 cm<sup>3</sup></b><br>
+&rho; = Mass of cube / Volume of cube = 500 g / 125 cm<sup>3</sup> = <span class="ans">4 g/cm<sup>3</sup></span>
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Kitab ki teen galtiyan: inhen yaad rakho</span>
+<b>1. Petrol.</b> Table 7.1 (p169) petrol <b>800 kg/m<sup>3</sup></b> deti hai, magar FOR YOUR INFORMATION box (p168) wahi petrol <b>0.9 g/cm<sup>3</sup> = 900 kg/m<sup>3</sup></b> bana deta hai. Dono sahi nahin ho sakte. Poocha jaye to <b>Table 7.1 wala 800</b> likhna; 0.9 se 900 wali baat sirf conversion ka method yaad rakhne ke liye hai.<br>
+<b>2. Osmium.</b> Do You Know box (p168) osmium ko sab se dense material kehta hai (22.59 g/cm<sup>3</sup>), phir likh deta hai "It is harder than diamond". Ye <b>ghalat</b> hai: osmium sab se <b>dense</b> hai, hard sab se <b>diamond</b>. Dense aur hard alag cheezein hain.<br>
+<b>3. Numerical Q5 (p188), iron cube ki cavity.</b> Chhapa jawab <b>935.9 cm<sup>3</sup></b> tab hi aata hai jab iron <b>7.8 g/cm<sup>3</sup></b> lo, jabke Table 7.1 <b>7.9</b> deti hai, jis se <b>936.7 cm<sup>3</sup></b> banta hai. Dono jawab theek mane jayenge.
+</div>
+
+<h2><span class="emoji">💧</span> 2. Density of liquids <span class="pg">(7.2, kitab p170 aur p171)</span></h2>
+
+<p class="small">7.2 sab methods ka aghaz hai: liquids, regular solids aur irregular solids. Liquid ke liye do cheezein chahiyen, <b>graduated measuring cylinder</b> (volume) aur <b>balance</b> (mass).</p>
+
+<ol>
+<li>Place the empty measuring cylinder on balance and measure its mass.</li>
+<li>Add liquid in the measuring cylinder and measure its volume.</li>
+<li>Subtract mass of empty cylinder from the mass of cylinder and liquid:<br><i>Mass of liquid = Mass of measuring cylinder and liquid &minus; Mass of empty cylinder</i></li>
+<li>Measure volume of liquid from the measuring cylinder.</li>
+<li>To calculate the density of liquid, divide mass of liquid by its volume.</li>
+</ol>
+
+<div class="formula">Density of liquid = Mass of liquid / Volume of liquid &nbsp;<span class="small">(Equation 7.2)</span></div>
+
+<p class="small">Poora khel step 3 ka hai: balance khali cylinder ka mass bhi gin leta hai, is liye <b>ghatana zaroori</b> hai. <b>Figure 7.2</b> ke do balance: khali cylinder (145), cylinder plus liquid (205); kitab ne dono ko galti se "Step 1" likha hai, doosra <b>Step 2</b> hai.</p>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 7.2: Density of liquid <span class="small">(kitab p171)</span></span>
+<b>Given:</b> Mass of empty cylinder = 145 g; mass of cylinder and added liquid = 205 g; volume of liquid = 60 mL<br>
+<b>Required:</b> Density of the liquid &rho; = ?<br>
+<b>Solution:</b> Mass of liquid = 205 g &minus; 145 g = <b>60 g</b><br>
+&rho; = Mass of liquid / Volume of liquid = 60 g / 60 mL = <span class="ans">1 g/mL</span><br>
+<span class="small">Kitab ka natija: 1 g/mL paani (at 4 &deg;C) ki density hai, to cylinder mein jo liquid tha woh <b>water</b> hai.</span>
+</div>
+
+<h2><span class="emoji">🧱</span> 3. Density of regularly shaped solids <span class="pg">(7.2.1, kitab p171 aur p172)</span></h2>
+
+<ol>
+<li>Find mass of the solid regular shaped object using balance.</li>
+<li>Calculate the volume of object using formula according to shape of the object.</li>
+<li>Finally calculate its density by using the formula.</li>
+</ol>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Volume formulas: yaad karna lazmi hai</span>
+Volume of cuboid = <b>Length &times; Width &times; Height</b> &nbsp;&middot;&nbsp; Volume of cube = <b>(side length)<sup>3</sup></b><br>
+Volume of sphere = <b>(4/3) &pi; r<sup>3</sup></b> <span class="small">(r = radius, yaani diameter ka aadha)</span> &nbsp;&middot;&nbsp; Density of Solid = Mass of Solid / Volume of Solid <span class="small">(Equation 7.3)</span>
+</div>
+
+<div class="solve"><span class="t"><span class="emoji">✏️</span> Example 7.3: Density of brick <span class="small">(kitab p172, cm ko metre banane wali misaal)</span></span>
+<b>Given:</b> Mass = 3.30 kg; length 21.6 cm = 0.216 m, width 10.2 cm = 0.102 m, height 6.35 cm = 0.0635 m<br>
+<b>Required:</b> Density of the solid object &rho; = ?<br>
+<b>Solution:</b> Volume = Length &times; Width &times; Height = 0.216 &times; 0.102 &times; 0.0635 = <b>0.00140 m<sup>3</sup></b><br>
+&rho; = 3.3 kg / 0.00140 m<sup>3</sup> = 2358.773 = <span class="ans">2360 kg/m<sup>3</sup></span>
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🎯</span> Pakki trick: units pehle milao</span>
+Jawab <b>kg/m<sup>3</sup></b> chahiye to mass <b>kg</b> aur volume <b>m<sup>3</sup></b> (cm ko 100 se divide kar ke metre banao, 21.6 cm = 0.216 m); jawab <b>g/cm<sup>3</sup></b> chahiye to mass <b>g</b> aur volume <b>cm<sup>3</sup></b>. kg ko cm<sup>3</sup> se divide karna sab se aam galti hai.<br>
+<span class="small">Irregular cheez (pathar) ka volume <b>displacement method</b> se nikalta hai: woh 7.2.2 hai, Part 7B ke notes mein aa chuka hai.</span>
+</div>
+
+<div class="quiz"><span class="t"><span class="emoji">✅</span> Quiz</span>
+<p class="small" style="margin:0 0 0.8mm">Ye teeno sawal tumhare Physics ke paper mein bhi aayenge.</p>
+<ol>
+<li>State the book's definition of density, write Equation 7.1 with its SI unit, and then write the volume formulas the book gives for a cuboid, a cube and a sphere.</li>
+<li>An empty measuring cylinder has a mass of 120 g. When 50 mL of a liquid is poured into it, the total mass becomes 160 g. Find the density of the liquid in g/mL, then convert your answer into kg/m<sup>3</sup>.</li>
+<li>A small cube and a large cube are cut from the same block of iron. Why is the density of both cubes exactly the same, even though their masses and volumes are different?</li>
+</ol>
+</div>
+
+<!-- ANSWER KEY, NOT PRINTED FOR HER. Kept for marking and for reuse on her paper:
+1. "Mass per unit volume of the substance is called its density." Equation 7.1: rho = m / V. SI unit: kilogram per cubic metre (kg/m3).
+   Volume of cuboid = Length x Width x Height; Volume of cube = (side length)^3; Volume of sphere = (4/3) pi r^3.
+   (Marking: definition 1, equation + SI unit 1, three volume formulas 1.5, total 3.5. Half a mark off for a missing unit.)
+2. Mass of liquid = 160 g - 120 g = 40 g. rho = 40 g / 50 mL = 0.8 g/mL. Convert: 0.8 x 1000 = 800 kg/m3.
+   (Marking: subtraction step 1, division 1, conversion 1. Half a mark off if the unit is missing.)
+3. Density is mass per unit volume, so it is a property of the MATERIAL, not of how much of it you have. The large cube has more mass but
+   proportionally more volume, so the ratio m/V is unchanged. Book line: "Density of small amount of a substance is the same as the density
+   of its bulk because density is calculated by the amount of matter in its unit volume."
+-->
+
+</body>
+</html>

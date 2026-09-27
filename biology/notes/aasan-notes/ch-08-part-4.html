@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Biology Chapter 8 Part 4 Aasan Notes</title>
+<style>
+  @page { size: A5; margin: 9mm 9mm 10mm 9mm; }
+  :root {
+    --ink: #1f2430; --muted: #5b6475;
+    --blue: #1d5fa8; --blue-bg: #e8f1fc;
+    --green: #1e7a4a; --green-bg: #e7f6ee;
+    --yellow: #8a6200; --yellow-bg: #fff6d8;
+    --red: #a8322a; --red-bg: #fdecea;
+    --purple: #6a3fa0; --purple-bg: #f2ecfb;
+    --line: #d7dce5;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 10.2pt; line-height: 1.45; margin: 0; }
+  .emoji { font-family: "Noto Color Emoji"; font-style: normal; }
+  h1 { font-size: 19pt; color: var(--blue); margin: 0 0 2mm; line-height: 1.2; }
+  .sub { color: var(--muted); font-size: 10pt; margin-bottom: 4mm; }
+  h2 { font-size: 14pt; color: #fff; background: var(--blue); padding: 2.2mm 3.5mm; border-radius: 3mm; margin: 6mm 0 3mm; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: var(--blue); margin: 5mm 0 1.5mm; border-bottom: 1.5px solid var(--line); padding-bottom: 1mm; page-break-after: avoid; }
+  h3 .pg { font-size: 8.5pt; color: var(--muted); font-weight: normal; }
+  p { margin: 1.5mm 0; }
+  ul, ol { margin: 1mm 0 1.5mm; padding-left: 6mm; }
+  li { margin: 0.6mm 0; }
+  .box { border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .box .t { font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .def { background: var(--blue-bg); border-left: 4px solid var(--blue); }
+  .def .t { color: var(--blue); }
+  .def q { font-weight: 600; quotes: "\201C" "\201D"; }
+  .eg { background: var(--green-bg); border-left: 4px solid var(--green); }
+  .eg .t { color: var(--green); }
+  .trick { background: var(--yellow-bg); border-left: 4px solid #e0a800; }
+  .trick .t { color: var(--yellow); }
+  .warn { background: var(--red-bg); border-left: 4px solid var(--red); }
+  .warn .t { color: var(--red); }
+  .mcq { background: var(--purple-bg); border-left: 4px solid var(--purple); }
+  .mcq .t { color: var(--purple); }
+  .solve { border: 1.5px dashed var(--green); border-radius: 2.5mm; padding: 2.2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid; }
+  .solve .t { color: var(--green); font-weight: bold; font-size: 9.5pt; display: block; margin-bottom: 0.8mm; }
+  .solve table td { padding: 0.3mm 2mm 0.3mm 0; vertical-align: top; border: none; }
+  .ans { color: var(--green); font-weight: bold; }
+  .formula { text-align: center; font-size: 13pt; font-weight: bold; color: var(--blue); margin: 2mm 0; }
+  table.t1 { border-collapse: collapse; width: 100%; font-size: 9.3pt; margin: 2mm 0; page-break-inside: avoid; }
+  table.t1 th { background: var(--blue); color: #fff; padding: 1.2mm 1.6mm; text-align: left; }
+  table.t1 td { border: 1px solid var(--line); padding: 1.1mm 1.6mm; vertical-align: top; }
+  table.t1 tr:nth-child(even) td { background: #f6f8fb; }
+  .intro { background: linear-gradient(135deg, #e8f1fc, #f2ecfb); border-radius: 3mm; padding: 3mm 3.5mm; margin: 2mm 0 3mm; }
+  .map td { padding: 1mm 1.5mm; }
+  .small { font-size: 9pt; color: var(--muted); }
+  .pb { page-break-before: always; }
+  .cap { page-break-after: avoid; break-after: avoid; }
+  h2 { margin-top: 5mm; }
+  .check li { margin: 1.4mm 0; }
+  .pill { display: inline-block; background: var(--blue); color: #fff; border-radius: 10px; padding: 0 2.2mm; font-size: 8.5pt; font-weight: bold; }
+  .one { background: #e6f7f7; border: 1.5px solid #1a8a8a; }
+  .one .t { color: #11706f; }
+  .solve table.t1 td { border: 1px solid var(--line); }
+  td.wrong { text-decoration: line-through; color: #8a8f99; }
+  pre.dot { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; background: #f6f8fb; border: 1px solid var(--line); border-radius: 2mm; padding: 2mm; margin: 2mm 0; white-space: pre; line-height: 1.35; }
+</style>
+</head>
+<body>
+
+<h1><span class="emoji">🌿</span> Biology Chapter 8: Part 4<br>Gas Exchange aur Homeostasis (8.3, 8.4)</h1>
+<div class="sub">Aasan Notes, tumhari kitab ke saath saath (book pages 121 se 125)</div>
+
+<div class="intro">
+  <p><b>Assalam o alaikum Seemab!</b> Ye chapter 8 ka <b>aakhri hissa</b> hai, Part 4 of 4. Is mein do badi cheezein hain: <b>8.3 Gas Exchange in Plants</b> aur <b>8.4 Homeostasis in Plants</b>. Ye notes kitab ki <b>har line</b> ke saath chalte hain, is liye kitab kholne ki zaroorat nahin. Headings aur page numbers tumhari apni kitab wale hi hain.</p>
+  <p><b>Kaise parhna hai</b> (taqreeban 30 minute):</p>
+  <ol>
+    <li>Ek dafa aaram se parho. Ratna nahin, samajhna hai.</li>
+    <li>Phir sirf <b>neelay <span class="emoji">📖</span> boxes</b> dobara parho. Yehi wali English lines exam mein likhni hain.</li>
+    <li>Aakhir mein <b>Exercise ke hal shuda sawal</b> dekho, aur phir <b>"Khud ko check karo"</b> kar lo.</li>
+  </ol>
+  <p class="small">Part 4 ka pehla lafz kitab ke page 121 ke neeche "8.3 GAS EXCHANGE IN PLANTS" hai, aur aakhri lafz page 125 par osmotic adjustment ke point 5 (succulents) par khatam hota hai. Us ke baad page 126 par SUMMARY shuru ho jati hai.</p>
+</div>
+
+<div class="box def"><span class="t"><span class="emoji">🎯</span> Student Learning Outcomes (kitab ke chapter opener par, SLOs 11 se 14): Part 4 ke baad tumhein ye aana chahiye</span>
+<ul>
+<li>11. Describe the process of gaseous exchange in plants.</li>
+<li>12. Define homeostasis and describe its importance.</li>
+<li>13. Describe the mechanism of adaptations of plants for the excretion.</li>
+<li>14. Explain osmotic adjustment in plants.</li>
+</ul>
+<span class="small">Ye chaaron neeche notes mein poore aa rahe hain, aur teenon Section III ke lambe sawal (Q7, Q8, Q9) inhi chaar SLOs se bante hain.</span>
+</div>
+
+<table class="map t1">
+  <tr><th colspan="2">Part 4 ka naqsha (4 hisse)</th></tr>
+  <tr><td><span class="emoji">🍃</span> Hissa 1</td><td>Gas exchange: patton mein aur jaron mein (8.3, 8.3.1, 8.3.2)</td></tr>
+  <tr><td><span class="emoji">🧪</span> Hissa 2</td><td>STEAM Activity: Green Breathing (p123, p124)</td></tr>
+  <tr><td><span class="emoji">⚖️</span> Hissa 3</td><td>Homeostasis aur excretion (8.4, 8.4.1, 8.4.2)</td></tr>
+  <tr><td><span class="emoji">💧</span> Hissa 4</td><td>Osmotic adjustment aur teen plant groups (8.4.3)</td></tr>
+</table>
+
+<!-- ================= HISSA 1 ================= -->
+<h2><span class="emoji">🍃</span> Hissa 1: Gas Exchange in Plants</h2>
+
+<h3>8.3 Gas Exchange in Plants <span class="pg">(kitab p121)</span></h3>
+<p>Pehle ek asaan baat. Hum saans lete hain to <b>ek hi jagah</b> se, naak se. Paudhe ke paas naak nahin hoti. Paudhe ka <b>har cell apni gas exchange khud</b> karta hai, apni zaroorat ke mutabiq. Koi pump nahin, koi lungs nahin, bas gas khud ba khud zyada wali jagah se kam wali jagah ki taraf chali jati hai. Isi ko <b>diffusion</b> kehte hain.</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz: exam mein yehi likho</span>
+  <q>Gas exchange is the type of respiration that occurs at organismic level. Gas exchange is when the entire organism exchanges gases with the environment.</q>
+</div>
+
+<p>Kitab is ka <b>maqsad</b> bhi batati hai: "The goal is to make sure that the organism must be provided with <b>oxygen</b> which is needed for <b>cellular respiration</b>, where complex organic compounds are broken down, and <b>carbon dioxide</b> is produced which is to be removed in outer environment."</p>
+<ul>
+<li>"<b>Every cell in a plant does its own gas exchange</b>, depending on what it needs."</li>
+<li>Ye exchange khaas tor par <b>do openings</b> se hota hai: <b>stomata</b> (tiny openings in leaves, patton ke chhote chhote sooraakh) aur <b>lenticels</b> (small openings in stems, tanon ke chhote sooraakh).</li>
+<li>"This exchange happens through a process called <b>diffusion</b>."</li>
+</ul>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Do lafz yaad rakhne ka tareeqa</span>
+  <b>Sto</b>mata mein "S" hai: <b>S</b>ubz patta (leaf). <b>L</b>enticels mein "L" hai: <b>L</b>akri wala tana (stem). Bas.
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Gas exchange = poore organism ka mahol ke saath gas ka len den, organismic level ki respiration. Har cell apna kaam khud karta hai, stomata (leaves) aur lenticels (stems) ke zariye, diffusion se.
+</div>
+
+<h3>8.3.1 Pattern of gas exchange in leaves (Photosynthetic parts) <span class="pg">(kitab p122)</span></h3>
+<p>Kitab: "The plants being <b>photosynthetic autotrophs</b> show <b>different pattern</b> of gas exchange in day and night through the leaves."</p>
+<p>Matlab: patte din mein ek tarah se gas lete dete hain, aur raat mein bilkul ulta.</p>
+
+<p class="cap"><b>Table 8.1: Pattern of gas exchange between plant and environment</b> (poori table, sirf 2 lines hain, zaroor yaad karo):</p>
+<table class="t1">
+  <tr><th></th><th>In daytime</th><th>In nighttime</th></tr>
+  <tr><td><b>Inhale</b> (andar lena)</td><td>Carbon dioxide (CO<sub>2</sub>)</td><td>Oxygen (O<sub>2</sub>)</td></tr>
+  <tr><td><b>Exhale</b> (bahar chhorna)</td><td>Oxygen (O<sub>2</sub>)</td><td>Carbon dioxide (CO<sub>2</sub>)</td></tr>
+</table>
+
+<p><b>Din mein kya hota hai.</b> Kitab: "During the day, plants are busy with <b>both photosynthesis (making food) and respiration</b>. The rate of photosynthesis varies throughout the day as it mainly depends upon <b>light intensity</b>. Generally, the rate of photosynthesis is <b>greater than</b> rate of respiration, therefore, the photosynthesis needs <b>more carbon dioxide</b> than what respiration produces, so plants bring extra carbon dioxide from the environment. On the other hand, photosynthesis produces <b>more oxygen</b> than respiration needs, so plants release excess oxygen."</p>
+
+<div class="box eg"><span class="t"><span class="emoji">🏠</span> Ghar ki misal</span>
+  Socho ghar mein <b>roti ban rahi hai</b> aur saath saath <b>khai bhi ja rahi hai</b>. Din mein banane ki raftaar khane se zyada hai, is liye aata (CO<sub>2</sub>) bazaar se mangwana parta hai, aur bachi hui roti (O<sub>2</sub>) bahar bhej di jati hai. Raat mein banana band, sirf khana chalta hai.
+</div>
+
+<div class="box warn"><span class="t"><span class="emoji">⚠️</span> Sab se bara ghalat fehmi</span>
+  Bohat log kehte hain "din mein paudha sirf photosynthesis karta hai aur raat mein sirf respiration". <b>Ghalat.</b> Respiration <b>chobees ghante</b> chalti rehti hai. Din mein sirf photosynthesis ki <b>raftaar zyada</b> hoti hai, is liye net mein CO<sub>2</sub> andar aur O<sub>2</sub> bahar nazar aata hai.
+</div>
+
+<p class="small"><b>Figure 8.10: Pattern of gas exchange in leaves and roots in day and night.</b> Tasveer mein ek darakht hai. Upar ki taraf "In day" par CO<sub>2</sub> andar aur O<sub>2</sub> bahar ke teer hain, aur "At night" par O<sub>2</sub> andar aur CO<sub>2</sub> bahar. Zameen ke neeche jaron par <b>dono waqt</b> ek jaisa hai: O<sub>2</sub> andar, CO<sub>2</sub> bahar.</p>
+
+<p><b>Raat mein kya hota hai.</b> Kitab: "At night, plants act more like <b>animals</b>. They <b>absorb oxygen and release carbon dioxide</b> because there's <b>no photosynthesis</b> happening in the dark."</p>
+
+<h3>Compensation point of photosynthesis <span class="pg">(kitab p122)</span></h3>
+<p>Ab subah saweray (<b>dawn</b>) aur shaam dhalte waqt (<b>dusk</b>) ki baat. Us waqt roshni <b>halki</b> hoti hai. Photosynthesis ki raftaar gir kar theek respiration ki raftaar ke <b>barabar</b> aa jati hai.</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz: exam mein yehi likho</span>
+  <q>During dawn and dusk, when light intensity is low, the rates of photosynthesis and respiration become equal. This means the carbon dioxide produced by respiration is enough for photosynthesis, and the oxygen released by photosynthesis is used in respiration. At this point, there's no net exchange of gases with the environment, and we call it the "compensation point of photosynthesis."</q>
+</div>
+
+<div class="box eg"><span class="t"><span class="emoji">🧮</span> Samajhne ka tareeqa</span>
+  Jitni CO<sub>2</sub> respiration banati hai, utni hi photosynthesis kha jati hai. Jitni O<sub>2</sub> photosynthesis banati hai, utni hi respiration kha jati hai. <b>Dono ka hisaab barabar</b>, is liye mahol ke saath <b>koi net len den nahin</b>. Gas <b>andar hi andar</b> ghoomti rehti hai.
+</div>
+
+<div class="box trick"><span class="t"><span class="emoji">🎯</span> Pakki trick: "no net exchange" ka matlab</span>
+  Compensation point par <b>na CO<sub>2</sub> absorb hoti hai, na O<sub>2</sub> absorb hoti hai</b> (mahol se). Ye MCQ 6 ka seedha jawab hai: option <b>D</b>. Yaad rakho: "compensation" ka matlab hi hai <b>barabar kar dena</b>.
+</div>
+
+<h3>8.3.2 Pattern of gas exchange in roots (non-photosynthetic parts) <span class="pg">(kitab p122)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Roots also exchange gases with soil air through root epidermal cells which involves absorption of oxygen and release carbon dioxide because there's no photosynthesis happening in the roots and it remains same day and night.</q>
+</div>
+<ul>
+<li>Jarein mitti ki hawa (<b>soil air</b>) se gas exchange karti hain.</li>
+<li>Ye kaam <b>root epidermal cells</b> karte hain.</li>
+<li>Jarein sirf <b>respiration</b> karti hain, photosynthesis bilkul nahin (wahan roshni hi nahin).</li>
+<li>Is liye jarein <b>hamesha O<sub>2</sub> leti hain aur CO<sub>2</sub> chhorti hain</b>, din ho ya raat, pattern <b>badalta nahin</b>.</li>
+</ul>
+
+<div class="box eg"><span class="t"><span class="emoji">🪴</span> Roz ki misal</span>
+  Gamle mein zaroorat se zyada paani daal do to paudha murjha jata hai. Wajah: mitti ke sooraakh paani se bhar gaye, jaron ko <b>oxygen</b> mili hi nahin. Jaron ko bhi saans chahiye.
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Patte: din mein CO<sub>2</sub> in aur O<sub>2</sub> out, raat mein ulta, dawn aur dusk par kuch bhi nahin (compensation point). Jarein: hamesha O<sub>2</sub> in aur CO<sub>2</sub> out, din raat ek jaisa.
+</div>
+
+<!-- ================= HISSA 2 ================= -->
+<h2 class="pb"><span class="emoji">🧪</span> Hissa 2: STEAM Activity</h2>
+
+<h3>Green Breathing: Unveiling Plant Respiratory Patterns in Day and Night <span class="pg">(kitab p123, p124)</span></h3>
+
+<p><b>Objective:</b> "To recognize how does a plant's exposure to light and darkness impact its gas exchange?"</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Principle (kitab ke alfaaz)</span>
+  <q>The increase or decrease in carbon dioxide concentration will be tested in this inquiry by using hydrogen carbonate indicator. It goes from pink or red to yellow when carbon dioxide builds up. The indicator becomes purple when carbon dioxide concentrations fall.</q>
+</div>
+
+<p class="cap"><b>Indicator ka rang yaad karne ki chhoti table:</b></p>
+<table class="t1">
+  <tr><th>CO<sub>2</sub> ka haal</th><th>Indicator ka rang</th></tr>
+  <tr><td>Shuru mein (normal)</td><td>Pink ya red</td></tr>
+  <tr><td>CO<sub>2</sub> barh gayi (builds up)</td><td><b>Yellow</b></td></tr>
+  <tr><td>CO<sub>2</sub> kam ho gayi (falls)</td><td><b>Purple</b></td></tr>
+</table>
+
+<p class="cap"><b>Procedure</b> (kitab ke poore 5 steps):</p>
+<ol>
+<li>"Take three test tubes of <b>50ml</b> volume and wash them properly with tap water then rinse them with distilled water and finally with hydrogen carbonate indicator (the indicator will change colour if the boiling tube is not clean)."</li>
+<li>"Add <b>30ml</b> hydrogen carbonate indicator solution into each of the three boiling tubes."</li>
+<li>"Place equal-sized pieces of <b>Canadian pondweed (Elodea)</b> or <b>Hydrilla</b> or any other locally available aquatic plant in <b>tubes 1 and 2</b>, then use stoppers to close all of the tubes."</li>
+<li>"Use a bench lamp to expose <b>tubes 1 and 3 to light</b>, then cover <b>tube 2</b> with aluminum foil or put it in a dark cabinet or black box (Figure 8.11)."</li>
+<li>"Note the colour of each tube's hydrogen carbonate indicator after a period of <b>24 hours</b>."</li>
+</ol>
+
+<p class="small"><b>Figure 8.11: Experiment to compare gas exchange in plants kept in the dark and in the light.</b> Tasveer mein teen tubes hain. Tube <b>2</b> ek kaale dabbe ke andar (andhera) aur us mein pond weed hai. Tube <b>1</b> light ke saamne, us mein bhi pond weed hai. Tube <b>3</b> light ke saamne magar <b>khaali</b> (sirf indicator). Neeche likha hai "Hydrogencarbonate indicator (pink/red at start)".</p>
+
+<div class="box eg"><span class="t"><span class="emoji">🔍</span> Har tube ka kaam</span>
+  <b>Tube 1</b> = paudha + roshni (photosynthesis chalegi). <b>Tube 2</b> = paudha + andhera (sirf respiration). <b>Tube 3</b> = <b>control</b>, paudha nahin, sirf roshni. Control is liye rakha ke pata chale rang ka farq <b>paudhe ne</b> kiya hai, roshni ne nahin.
+</div>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Result (kitab ke alfaaz)</span>
+  <q>The indicator in tube 2 (plant in the dark) should turn yellow, the indicator in tube 1 (plant in the light) should turn purple, and the indicator in tube 3 (the control), which was initially pink/red, should not change colour.</q>
+</div>
+
+<table class="t1">
+  <tr><th>Tube</th><th>Halat</th><th>Rang</th><th>Kyun</th></tr>
+  <tr><td>1</td><td>Plant + light</td><td><b>Purple</b></td><td>Photosynthesis ne CO<sub>2</sub> istemal kar li, CO<sub>2</sub> gir gayi</td></tr>
+  <tr><td>2</td><td>Plant + dark</td><td><b>Yellow</b></td><td>Sirf respiration, CO<sub>2</sub> barh gayi</td></tr>
+  <tr><td>3</td><td>Control (koi plant nahin)</td><td>Koi tabdeeli nahin (pink/red)</td><td>Rang badalne wala paudha hi tha</td></tr>
+</table>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Interpretation (kitab ke alfaaz, p123 se p124 tak)</span>
+  <q>In simple terms, hydrogen carbonate indicator helps us see changes in acidity caused by carbon dioxide. When there's more carbon dioxide, it turns orange/red, and when there's less, it becomes purple. An experiment with this indicator and plants showed that in light, plants use more carbon dioxide in photosynthesis than they produce in respiration. In the dark, plants produce carbon dioxide through respiration. A control tube without a plant showed that the plant caused the color change. However, it's noted that the indicator can react to changes in acidity or alkalinity, not just carbon dioxide. Despite this, understanding how leaves work suggests changes in carbon dioxide are more likely.</q>
+</div>
+
+<p><b>Reflection:</b> "Suggest students to emphasize the significance of gas exchange in plants for animal life on Earth. Encourage them to contemplate the potential consequences if plants were to become extinct."</p>
+<p class="small">Yani: soch kar dekho, agar paudhe khatam ho jayen to janwaron (aur hum) ko oxygen kahan se milegi?</p>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Roshni mein paudha CO<sub>2</sub> khaata hai (indicator purple), andhere mein CO<sub>2</sub> banata hai (indicator yellow), aur khaali control tube ka rang nahin badalta.
+</div>
+
+<!-- ================= HISSA 3 ================= -->
+<h2 class="pb"><span class="emoji">⚖️</span> Hissa 3: Homeostasis aur Excretion</h2>
+
+<h3>8.4 Homeostasis in Plants <span class="pg">(kitab p124)</span></h3>
+<p>Homeostasis ka matlab hai paudhe ka <b>apne andar ka balance qaim rakhna</b>, chahe bahar kuch bhi ho raha ho. Garmi bohat ho, paani kam ho, mitti mein namak zyada ho, paudha apne aap ko us ke mutabiq adjust kar leta hai.</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>Homeostasis in plants refers to the adjustment or adaptation of plants to varying degrees of environmental temperatures and availability of water and salts in the soil.</q>
+</div>
+<p class="small">Definition ke teen tukre yaad karo: <b>(1)</b> temperature, <b>(2)</b> paani ki availability, <b>(3)</b> mitti mein salts ki availability.</p>
+
+<h3>8.4.1 Importance of Homeostasis <span class="pg">(kitab p124)</span></h3>
+<p>Kitab ne is ke kayi faide ginwaye hain. Har ek alag point hai, exam mein sab likh sakti ho:</p>
+<ol>
+<li>"Homeostasis in plants is essential for their <b>survival, growth, and reproduction</b>."</li>
+<li>"Homeostatic mechanisms help plants <b>respond to temperature changes</b>, allowing them to survive in <b>various climates</b>."</li>
+<li>"Homeostasis ensures that plants maintain <b>adequate hydration levels</b>." (jism mein paani ki sahi miqdar)</li>
+<li>"Homeostasis allows plants to respond to various <b>stressors, such as drought, salinity, pathogens, and herbivores</b>." (khushk sali, namak, beemari wale jarasim, aur ghaas patta khane wale janwar)</li>
+<li>"Plants can activate specific <b>defense mechanisms</b> to mitigate damage." (nuqsan kam karne ke liye apna difaa chala lete hain)</li>
+<li>"It enables them to <b>adapt to changing environmental conditions</b> and maintain <b>internal stability</b>, ultimately contributing to their <b>ecological success</b>."</li>
+</ol>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Chaar stressors yaad karne ka tareeqa</span>
+  <b>D</b>rought, <b>S</b>alinity, <b>P</b>athogens, <b>H</b>erbivores. Yaad rakho: <b>"D S P H"</b> yani <b>D</b>hoop, <b>S</b>alt, <b>P</b>hupoondi, <b>H</b>irni. Chaaron alag alag khatra hain.
+</div>
+
+<h3>8.4.2 Excretion in plants <span class="pg">(kitab p124)</span></h3>
+<p>Janwaron mein excretion ka matlab hota hai gurdon (kidneys) se fazla nikalna. Paudhon mein baat <b>bohat wasee</b> hai: jism se <b>koi bhi cheez</b> nikalna excretion hai.</p>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Unlike animals, excretion in plants is a very broad term, which encompasses the removal of anything from plant body. Plants have a different way of getting rid of waste compared to animals. Plants make various organic and inorganic compounds that they store for different reasons and remove when needed. Following are different ways of excretion in plants.</q>
+</div>
+
+<p class="cap">Kitab <b>paanch tareeqe</b> bayan karti hai. Section III ka Q8 poora yehi hai, is liye paanchon yaad karo:</p>
+
+<h3>1. Excretion of carbon dioxide and oxygen <span class="pg">(kitab p124)</span></h3>
+<ul>
+<li>"<b>Carbon dioxide</b> is the waste of <b>respiration</b> which is excreted from plant body <b>at night</b> during gas exchange process."</li>
+<li>"Similarly, <b>oxygen</b> is the waste of <b>photosynthesis</b> which is excreted <b>in day</b> during the same gas exchange process."</li>
+</ul>
+<p class="small">Dhyan do: paudhe ke liye <b>oxygen bhi ek waste hai</b>. Hamare liye zindagi, us ke liye bacha hua maal.</p>
+
+<h3>2. Excretion of water <span class="pg">(kitab p124)</span></h3>
+<ul>
+<li>"Water is produced as waste of <b>both photosynthesis and respiration</b> and it is also <b>absorbed from soil</b>."</li>
+<li>"The excretion of water occurs through the plant body during the process of <b>transpiration</b>."</li>
+</ul>
+
+<h3>3. Excretion through leaves <span class="pg">(kitab p124)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Plant cells have large vacuoles that can store useful stuff or waste. Sometimes, these stored substances can build up and form crystals in the vacuoles. Leaves are key players in this process. When the leaves are loaded with large amount pigmented compounds, they turn yellow. Remember, this yellowing is not due to lack of chlorophyll as happens in chlorosis. Such leaves are generally fallen from plants in autumn season. In this way leaves act as organ of excretion, therefore, such leaves are also called excretophores. This is why gardeners like using decomposed autumn leaves as a mineral-rich source for plants.</q>
+</div>
+<p>Asaan alfaaz mein:</p>
+<ul>
+<li>Plant cells ke <b>bare vacuoles</b> hote hain. In mein kaam ki cheez bhi rakhi ja sakti hai aur fazla bhi.</li>
+<li>Kabhi kabhi ye jama shuda cheezein <b>crystals</b> bana leti hain.</li>
+<li>Jab patte <b>pigmented compounds</b> se bhar jate hain to <b>peelay</b> ho jate hain.</li>
+<li><b>Ye peelapan chlorosis nahin hai.</b> Chlorosis mein chlorophyll ki kami hoti hai; yahan chlorophyll ki kami nahin, balke fazla jama ho gaya hai.</li>
+<li>Aise patte <b>autumn (khizan)</b> mein gir jate hain. Patta gira, fazla bhi saath gaya. Is liye patte ko <b>organ of excretion</b> kehte hain aur aise patton ko <b>excretophores</b>.</li>
+<li>Isi wajah se maali (<b>gardeners</b>) <b>decomposed autumn leaves</b> ko mitti mein daalte hain: ye <b>mineral-rich source</b> hain.</li>
+</ul>
+
+<div class="box mcq"><span class="t"><span class="emoji">❓</span> Critical Thinking box (kitab p124): "Can you differentiate between chloroted leaves and excretophores?"</span>
+  <b>Chlorotic leaves:</b> peelay is liye hain ke <b>chlorophyll ban hi nahin paya</b> (mineral ki kami, jaise magnesium ya iron). Ye <b>beemari</b> ki nishani hai.<br>
+  <b>Excretophores:</b> peelay is liye hain ke un mein <b>pigmented waste compounds bhar gaye</b>. Chlorophyll ki koi kami nahin. Ye <b>normal</b> hai aur ye patte autumn mein gir kar paudhe ka fazla saath le jate hain.
+  <br><span class="small">Kitab mein lafz "chloroted" chhapa hai; asal lafz <b>chlorotic</b> hai (chlorosis se). Ye kitab ki printing ki ghalti hai.</span>
+</div>
+
+<h3>4. Excretion through stem and branches <span class="pg">(kitab p125)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Some trees deposit unusual chemicals in their branches and trunks, especially in old xylem that's no longer used for water transport. Ebony trees, for instance, produce very dark wood in their centres. Plant scientists consider these deposits as waste materials. Although, these wastes are not removed but are dumped in one part of the body as we put the trash in waste bin however, it is still present in the home.</q>
+</div>
+<ul>
+<li>Kuch darakht apne <b>branches aur trunks</b> mein ajeeb chemicals jama kar lete hain.</li>
+<li>Khaas tor par us <b>purane xylem</b> mein jo ab paani le jane ka kaam nahin karta.</li>
+<li><b>Ebony trees</b> (aabnoos) ki misal: in ke beech ka hissa bohat <b>gehra kaala (very dark wood)</b> ho jata hai.</li>
+<li>Plant scientists in deposits ko <b>waste materials</b> mante hain.</li>
+<li>Kitab ki misal: ye fazla jism se nikalta nahin, bas ek hissay mein <b>daal diya jata hai</b>, jaise ghar ka koora <b>waste bin</b> mein daal dete hain magar woh ghar hi mein maujood rehta hai.</li>
+</ul>
+
+<h3>5. Excretion through roots <span class="pg">(kitab p125)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Some plants actively release waste compounds into the soil, almost like using them as chemical weapons against other plants competing for resources. Conifer trees are known for this tactic.</q>
+</div>
+<ul>
+<li>Kuch paudhe apna fazla <b>mitti mein chhor dete hain</b>.</li>
+<li>Ye fazla un ke liye <b>chemical weapon</b> ka kaam karta hai un doosre paudhon ke khilaf jo wahan ke resources (paani, minerals) ke liye muqabla kar rahe hain.</li>
+<li><b>Conifer trees</b> is chaal (tactic) ke liye mashhoor hain.</li>
+</ul>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Excretion ke <b>paanch</b> raaste: gases (CO<sub>2</sub> raat ko, O<sub>2</sub> din ko), paani (transpiration se), patte (excretophores), stem aur branches (ebony ki dark wood), aur jarein (conifer ke chemical weapons).
+</div>
+
+<!-- ================= HISSA 4 ================= -->
+<h2 class="pb"><span class="emoji">💧</span> Hissa 4: Osmotic Adjustment</h2>
+
+<h3>8.4.3 Osmotic adjustment (Osmoregulation) in plants <span class="pg">(kitab p125)</span></h3>
+
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ki definition: exam mein yehi likho</span>
+  <q>Osmotic adjustment, also known as osmoregulation, is like a plant's way of maintaining the right balance of water and solutes in its body.</q>
+</div>
+<p>Kitab: "This balance creates <b>three different situations: hypotonic, hypertonic, and isotonic</b>."</p>
+
+<h3>Hypotonic Situation <span class="pg">(kitab p125)</span></h3>
+<p>Kitab: "When a cell is in a watery environment with <b>more water and less stuff dissolved in it (solute)</b>, water moves <b>into the cell</b>, making it swell up and firm (we call this '<b>turgid</b>')."</p>
+<p class="small">Bahar paani zyada, solute kam. Paani cell ke <b>andar</b> aaya. Cell phool kar <b>kasa hua (turgid)</b> ho gaya.</p>
+
+<h3>Hypertonic Situation <span class="pg">(kitab p125)</span></h3>
+<p>Kitab: "If a cell is in an environment with <b>less water and more dissolved stuff</b> than it has inside (<b>cell sap</b>), water moves <b>out of the cell</b>, causing it to shrink and become limp (we call this '<b>flaccid</b>')."</p>
+<p>Kitab yahan ek zaroori jumla likhti hai: "<b>Both of these situations, hypotonic and hypertonic, require the plant to make adjustments to keep things in balance.</b>"</p>
+
+<h3>Ideal Situation (Isotonic) <span class="pg">(kitab p125)</span></h3>
+<p>Kitab: "The best scenario for a cell is when the water and solute balance inside and outside the cell is <b>just right</b>. In this '<b>isotonic</b>' situation, there's <b>no net movement</b> of water in or out of the cell. <b>However, this balance is rarely found in a plant's natural environment.</b>"</p>
+
+<table class="t1">
+  <tr><th>Situation</th><th>Bahar ka mahol</th><th>Paani kidhar</th><th>Cell ka haal</th></tr>
+  <tr><td><b>Hypotonic</b></td><td>Paani zyada, solute kam</td><td>Cell ke <b>andar</b></td><td><b>Turgid</b> (phoola aur kasa hua)</td></tr>
+  <tr><td><b>Hypertonic</b></td><td>Paani kam, solute zyada</td><td>Cell se <b>bahar</b></td><td><b>Flaccid</b> (sukra aur dheela)</td></tr>
+  <tr><td><b>Isotonic</b></td><td>Dono taraf barabar</td><td><b>Koi net movement nahin</b></td><td>Normal, magar qudrat mein bohat kam milta hai</td></tr>
+</table>
+
+<div class="box trick"><span class="t"><span class="emoji">🧠</span> Hypo aur Hyper ki pakki trick</span>
+  <b>Hypo</b> mein "o" hai, jaise "<b>o</b>ver water". Bahar paani zyada to cell <b>phoolta</b> hai (turgid).<br>
+  <b>Hyper</b> mein "er" hai, jaise "dr<b>y</b> paani nikal jaye". Bahar solute zyada to cell <b>sukarta</b> hai (flaccid).<br>
+  Aur yaad rakho: <b>paani hamesha kam solute wali taraf se zyada solute wali taraf jata hai.</b>
+</div>
+
+<div class="box eg"><span class="t"><span class="emoji">🥗</span> Ghar ki misal</span>
+  Salad ke patton par <b>namak</b> chhirak do: thori der mein patte <b>dheele aur murjhaye</b> ho jate hain. Namak ne bahar solute barha diya (hypertonic), paani cells se nikal gaya, cells <b>flaccid</b> ho gaye. Ab wohi murjhaya patta <b>saaf paani</b> mein daalo: paani wapis andar jayega (hypotonic) aur patta phir <b>kara (turgid)</b> ho jayega.
+</div>
+
+<h3>Osmotic adjustment in different plants groups <span class="pg">(kitab p125)</span></h3>
+<div class="box def"><span class="t"><span class="emoji">📖</span> Kitab ke alfaaz</span>
+  <q>Plants are categorized into three groups based on their water availability: hydrophytes (live in water-rich environments), mesophytes (thrive where water is moderately available), and xerophytes (adapted to extreme dry conditions). These groups have distinct adaptations:</q>
+</div>
+<ul>
+<li><b>Hydrophytes:</b> paani se bharay mahol mein rehte hain (jaise lotus, water lily).</li>
+<li><b>Mesophytes:</b> jahan paani <b>darmiyani</b> ho (aam paudhe, gamle wale paudhe, fasalein).</li>
+<li><b>Xerophytes:</b> bohat <b>khushk</b> jaghon ke liye bane hue (jaise cactus, thor).</li>
+</ul>
+
+<p class="cap"><b>Kitab ke poore 5 differences</b> (ye table exam mein bohat aati hai):</p>
+<table class="t1">
+  <tr><th>#</th><th>Farq</th><th>Hydrophytes</th><th>Mesophytes</th><th>Xerophytes</th></tr>
+  <tr><td>1</td><td>Transpiration rate</td><td><b>Highest</b> (sab se zyada)</td><td>Darmiyani</td><td><b>Lowest</b> (sab se kam)</td></tr>
+  <tr><td>2</td><td>Stomatal placement</td><td><b>Upper leaf surface</b> par</td><td><b>Lower surface</b> par</td><td><b>Sunken stomata</b> (dhansay hue)</td></tr>
+  <tr><td>3</td><td>Stomatal behaviour</td><td>Din raat <b>khulay</b> rehte hain</td><td>Sirf <b>din</b> mein khulte hain</td><td><b>Raat</b> mein khulte hain</td></tr>
+  <tr><td>4</td><td>Cuticle thickness</td><td><b>Almost none</b> (taqreeban nahin)</td><td>Thinner cuticle (patli)</td><td><b>Thickest</b> (sab se moti)</td></tr>
+  <tr><td>5</td><td>Water storage</td><td>Zaroorat hi nahin</td><td>Thori si</td><td><b>Ample water</b>, inhein <b>succulents</b> kehte hain</td></tr>
+</table>
+<p class="small">Kitab ke apne alfaaz mein point 1: "Transpiration rates vary, with hydrophytes having the highest and xerophytes the lowest." Point 2: "Stomatal placement differs, hydrophytes have them on the upper leaf surface, mesophytes on the lower surface, and xerophytes have sunken stomata." Point 3: "Stomatal behaviour varies, hydrophytes keep stomata open day and night, mesophytes open them during the day, and xerophytes open them at night." Point 4: "Cuticle thickness on leaves differs, with xerophytes having the thickest, mesophytes a thinner cuticle, and hydrophytes almost none." Point 5: "Water storage capacity varies, with xerophytes, known as succulents, storing ample water."</p>
+
+<div class="box trick"><span class="t"><span class="emoji">🎯</span> Pakki trick: sab kuch ek soch se</span>
+  Sirf ek sawal pucho: <b>"is paudhe ko paani bachana hai ya nahin?"</b><br>
+  <b>Hydrophyte</b> paani mein khara hai, paani bachane ki zaroorat nahin: stomata upar (taa ke paani ke upar khule rahen), hamesha khulay, cuticle ki zaroorat nahin, transpiration sab se zyada.<br>
+  <b>Xerophyte</b> ko har boond bachani hai: stomata andar dhansay hue, sirf <b>thandi raat</b> mein khulte hain, cuticle sab se moti, transpiration sab se kam, aur paani jama kar leta hai (succulent).<br>
+  <b>Mesophyte</b> beech mein hai: har cheez darmiyani.
+</div>
+
+<div class="box one"><span class="t"><span class="emoji">✨</span> Ek line mein</span>
+  Hypotonic = turgid, hypertonic = flaccid, isotonic = koi net movement nahin (qudrat mein bohat kam). Hydrophytes paani mein, mesophytes darmiyani, xerophytes khushki mein aur ye succulents kehlate hain.
+</div>
+
+<!-- ================= EXERCISE ================= -->
+<h2 class="pb"><span class="emoji">📝</span> Exercise ke hal shuda sawal (Part 4 wale)</h2>
+<p class="small">Ye woh sawal hain jo kitab ke Exercise (p126 se p128) mein Part 4 ke hisse se bante hain. Har jawab woh hai jo tum <b>exam mein poora likh sakti ho</b>.</p>
+
+<h3>Section I: Multiple Choice Questions</h3>
+
+<div class="solve"><span class="t">MCQ 4. Which category of plants stores a small amount of water and has a thin cuticle?<br>A) Hydrophytes &nbsp; B) Xerophytes &nbsp; C) Mesophytes &nbsp; D) Succulents</span>
+<b>Jawab: <span class="ans">C) Mesophytes</span></b><br>
+<b>Wajah (kitab ke points 4 aur 5 se):</b> Cuticle ke bare mein kitab kehti hai xerophytes ki sab se <b>moti</b>, mesophytes ki <b>thinner (patli)</b>, aur hydrophytes ki <b>almost none</b>. Is liye "thin cuticle" sirf mesophytes par fit baithta hai. Water storage mein kitab kehti hai <b>xerophytes</b> (jo succulents kehlate hain) <b>ample water</b> jama karte hain, is liye "small amount of water" bhi mesophytes hi hai.<br>
+<b>Baqi options kyun ghalat:</b> A) Hydrophytes: cuticle <b>almost none</b> hai, "thin" nahin, aur woh paani hi mein khare hain. B) Xerophytes: cuticle sab se <b>moti</b> aur paani <b>zyada</b> jama karte hain. D) Succulents: kitab ke mutabiq succulents <b>xerophytes ka hi doosra naam</b> hai, is liye B aur D ek hi cheez hain aur dono ghalat hain.
+</div>
+
+<div class="solve"><span class="t">MCQ 5. What is a key role of leaves in managing waste in plants?<br>A) Storing waste materials &nbsp; B) Producing chlorophyll &nbsp; C) Absorbing water from the soil &nbsp; D) Converting waste into energy</span>
+<b>Jawab: <span class="ans">A) Storing waste materials</span></b><br>
+<b>Wajah:</b> Kitab (Excretion through leaves): "Plant cells have <b>large vacuoles that can store useful stuff or waste</b>... <b>Leaves are key players in this process</b>." Patte fazla apne vacuoles mein jama karte hain, phir autumn mein gir kar us fazle ko saath le jate hain, is liye inhein <b>excretophores</b> kehte hain.<br>
+<b>Baqi options kyun ghalat:</b> B) Chlorophyll banana photosynthesis ka kaam hai, waste management ka nahin. C) Mitti se paani <b>jarein</b> (root hairs) absorb karti hain, patte nahin. D) Waste ko energy mein badalne ka zikr kitab mein kahin nahin.
+</div>
+
+<div class="solve"><span class="t">MCQ 6. When the rate of photosynthesis become equal to that rate of respiration in the plant body, which of the following pattern of gaseous exchange occurs between plant and its environment:<br>A) Carbon dioxide is absorbed, and oxygen is released<br>B) Oxygen is absorbed, and carbon dioxide is released<br>C) Both carbon dioxide and oxygen are absorbed<br>D) Neither carbon dioxide nor oxygen are absorbed</span>
+<b>Jawab: <span class="ans">D) Neither carbon dioxide nor oxygen are absorbed</span></b><br>
+<b>Wajah:</b> Ye <b>compensation point of photosynthesis</b> hai. Kitab: "the rates of photosynthesis and respiration become equal... At this point, there's <b>no net exchange of gases</b> with the environment." Respiration ki bani hui CO<sub>2</sub> photosynthesis kha leti hai, aur photosynthesis ki bani hui O<sub>2</sub> respiration kha leti hai. Mahol se kuch bhi lena nahin parta.<br>
+<b>Baqi options kyun ghalat:</b> A) ye <b>din</b> ka pattern hai. B) ye <b>raat</b> ka pattern hai (aur jaron ka har waqt). C) aisa kabhi nahin hota.
+</div>
+
+<h3>Section II: Short Answer Questions</h3>
+
+<div class="solve"><span class="t">Q3. Why gardeners like to use autumn leaves in their soil?</span>
+Paudhon ke cells ke <b>bare vacuoles</b> hote hain jin mein fazla jama hota hai aur kabhi kabhi <b>crystals</b> ban jate hain. Jab patte <b>pigmented compounds</b> se bhar jate hain to peelay ho jate hain aur <b>autumn (khizan)</b> ke mausam mein gir jate hain. Aise patte excretion ka organ hote hain, inhein <b>excretophores</b> kehte hain.<br>
+In gire hue patton mein paudhe ke jama kiye hue <b>organic aur inorganic compounds</b> maujood hote hain. Jab ye patte mitti mein <b>decompose (gal sarr)</b> jate hain to un ke minerals mitti mein shamil ho jate hain.<br>
+<span class="ans">Is liye gardeners decomposed autumn leaves ko mitti mein daalte hain, kyunke ye paudhon ke liye ek "mineral-rich source" hain.</span>
+</div>
+
+<div class="solve"><span class="t">Q5. Write any three osmotic adjustments in hydrophytes.</span>
+Hydrophytes woh paudhe hain jo <b>water-rich environments</b> mein rehte hain. Un ke osmotic adjustments (koi bhi teen likh do):
+<ol>
+<li><b>Transpiration rate sab se zyada (highest)</b> hoti hai, kyunke paani ki kami ka koi khatra nahin.</li>
+<li><b>Stomata upper leaf surface</b> par hote hain (patte ki upar wali satah par), taa ke wo hawa ke saamne rahen.</li>
+<li><b>Stomata din aur raat dono waqt khulay</b> rehte hain.</li>
+<li><b>Cuticle taqreeban hoti hi nahin (almost none)</b>, kyunke paani rokne ki zaroorat nahin.</li>
+</ol>
+<span class="small">Paanchwan point (water storage) kitab mein khaas tor par xerophytes ke liye likha hai, hydrophytes ke liye nahin. Is liye upar wale chaar mein se koi teen chuno.</span>
+</div>
+
+<div class="solve"><span class="t">Q6. What is the pattern of gas exchange between plant and environment at the time of dawn and dusk?</span>
+Dawn (subah saweray) aur dusk (shaam dhalte) ke waqt <b>light intensity kam</b> hoti hai. Is wajah se <b>photosynthesis aur respiration ki rates barabar</b> ho jati hain.<br>
+<ul>
+<li>Respiration se bani hui <b>carbon dioxide</b> theek utni hi hoti hai jitni photosynthesis ko chahiye.</li>
+<li>Photosynthesis se nikli hui <b>oxygen</b> theek utni hi hoti hai jitni respiration istemal kar leti hai.</li>
+</ul>
+<span class="ans">Nateeja: mahol ke saath gas ka koi net exchange nahin hota. Na CO<sub>2</sub> andar aati hai, na O<sub>2</sub> bahar jati hai. Is halat ko "compensation point of photosynthesis" kehte hain.</span>
+</div>
+
+<div class="solve"><span class="t">Q7. (Kitab mein chhapa hai: "White plants absorb carbon dioxide and release oxygen during daytime.")</span>
+<div class="box warn" style="margin:1mm 0 2mm"><span class="t"><span class="emoji">⚠️</span> Kitab ki printing ki ghalti</span>Yahan "White" nahin, <b>"Why"</b> hona chahiye. Sahi sawal: <b>"Why plants absorb carbon dioxide and release oxygen during daytime?"</b> Exam mein bhi isi ka jawab likhna hai.</div>
+Din ke waqt <b>roshni maujood</b> hoti hai, is liye paudha <b>photosynthesis aur respiration dono</b> kar raha hota hai. Photosynthesis ki rate mainly <b>light intensity</b> par depend karti hai.<br>
+<ul>
+<li>Aam tor par din mein <b>photosynthesis ki rate, respiration ki rate se zyada</b> hoti hai.</li>
+<li>Photosynthesis ko jitni <b>carbon dioxide</b> chahiye hoti hai, respiration us se <b>kam</b> banati hai. Kami poori karne ke liye paudha <b>mahol se extra CO<sub>2</sub> andar leta hai</b>.</li>
+<li>Photosynthesis jitni <b>oxygen</b> banati hai, respiration ko us se <b>kam</b> chahiye hoti hai. Bachi hui O<sub>2</sub> paudha <b>bahar chhor deta hai</b>.</li>
+</ul>
+<span class="ans">Isi liye din mein paudha carbon dioxide absorb karta hai aur oxygen release karta hai.</span>
+</div>
+
+<div class="solve"><span class="t">Q8 (i). Define: Osmotic adjustment</span>
+<b>Osmotic adjustment</b>, jise <b>osmoregulation</b> bhi kehte hain, paudhe ka woh tareeqa hai jis se woh apne jism mein <b>paani aur solutes ka sahi balance</b> qaim rakhta hai.<br>
+<span class="small">English mein: "Osmotic adjustment, also known as osmoregulation, is like a plant's way of maintaining the right balance of water and solutes in its body." Is balance se teen halatein banti hain: <b>hypotonic, hypertonic aur isotonic</b>.</span>
+</div>
+
+<div class="solve"><span class="t">Q8 (v). Define: Excretophores</span>
+Jab patte <b>pigmented compounds</b> (fazla) ki bari miqdar se bhar jate hain to woh <b>peelay</b> ho jate hain aur <b>autumn</b> ke mausam mein paudhe se gir jate hain. Is tarah patte <b>organ of excretion</b> ka kaam karte hain.<br>
+<span class="ans">Aise patton ko excretophores kehte hain.</span><br>
+<span class="small">Yaad rakho: ye peelapan <b>chlorophyll ki kami</b> (chlorosis) ki wajah se nahin hota.</span>
+</div>
+
+<div class="solve"><span class="t">Q9 (b). Write the difference between: Hydrophytes and xerophytes</span>
+<table class="t1">
+  <tr><th>#</th><th>Hydrophytes</th><th>Xerophytes</th></tr>
+  <tr><td>1</td><td>Water-rich environment mein rehte hain</td><td>Extreme dry conditions ke liye adapted hain</td></tr>
+  <tr><td>2</td><td>Transpiration rate <b>sab se zyada (highest)</b></td><td>Transpiration rate <b>sab se kam (lowest)</b></td></tr>
+  <tr><td>3</td><td>Stomata <b>upper leaf surface</b> par hote hain</td><td>Stomata <b>sunken</b> (andar dhansay hue) hote hain</td></tr>
+  <tr><td>4</td><td>Stomata <b>din aur raat dono</b> khulay rehte hain</td><td>Stomata <b>raat</b> mein khulte hain</td></tr>
+  <tr><td>5</td><td>Cuticle <b>taqreeban hoti hi nahin</b></td><td>Cuticle <b>sab se moti (thickest)</b> hoti hai</td></tr>
+  <tr><td>6</td><td>Paani jama karne ki zaroorat nahin</td><td><b>Ample water</b> jama karte hain, inhein <b>succulents</b> kehte hain</td></tr>
+</table>
+</div>
+
+<div class="solve"><span class="t">Q9 (g). Write the difference between: Pattern of gas exchange in leaves and roots</span>
+<table class="t1">
+  <tr><th>#</th><th>Leaves (photosynthetic parts)</th><th>Roots (non-photosynthetic parts)</th></tr>
+  <tr><td>1</td><td>Gas exchange <b>stomata</b> ke zariye hota hai</td><td>Gas exchange <b>root epidermal cells</b> ke zariye hota hai</td></tr>
+  <tr><td>2</td><td>Exchange <b>mahol ki hawa</b> ke saath hota hai</td><td>Exchange <b>soil air</b> (mitti ki hawa) ke saath hota hai</td></tr>
+  <tr><td>3</td><td>Yahan photosynthesis aur respiration <b>dono</b> hoti hain</td><td>Yahan <b>sirf respiration</b> hoti hai, photosynthesis bilkul nahin</td></tr>
+  <tr><td>4</td><td>Pattern <b>din aur raat mein badalta hai</b></td><td>Pattern <b>din raat ek jaisa</b> rehta hai</td></tr>
+  <tr><td>5</td><td><b>Din:</b> CO<sub>2</sub> inhale, O<sub>2</sub> exhale. <b>Raat:</b> O<sub>2</sub> inhale, CO<sub>2</sub> exhale</td><td><b>Hamesha:</b> O<sub>2</sub> absorb, CO<sub>2</sub> release</td></tr>
+  <tr><td>6</td><td>Dawn aur dusk par <b>compensation point</b> aata hai (koi net exchange nahin)</td><td>Compensation point <b>kabhi nahin</b> aata</td></tr>
+</table>
+</div>
+
+<h3>Section III: Extensive Answer Questions</h3>
+
+<div class="solve"><span class="t">Q7. Describe the process of gaseous exchange in plants.</span>
+<b>Gas exchange kya hai</b><br>
+Gas exchange woh respiration hai jo <b>organismic level</b> par hoti hai, yani poora organism mahol ke saath gases ka len den karta hai. Maqsad ye hai ke organism ko <b>oxygen</b> mile jo <b>cellular respiration</b> ke liye chahiye (jahan complex organic compounds toote hain), aur jo <b>carbon dioxide</b> banti hai woh bahar nikal jaye.<br><br>
+<b>Kahan aur kaise</b><br>
+Paudhe ka <b>har cell apni gas exchange khud</b> karta hai, apni zaroorat ke mutabiq. Ye exchange khaas tor par do openings se hota hai: <b>stomata</b> (patton ke chhote sooraakh) aur <b>lenticels</b> (tanon ke chhote sooraakh). Ye sab <b>diffusion</b> ke amal se hota hai.<br><br>
+<b>1. Patton mein pattern (photosynthetic parts)</b><br>
+Paudhe photosynthetic autotrophs hain, is liye patton mein din aur raat ka pattern alag hota hai.
+<table class="t1">
+  <tr><th></th><th>In daytime</th><th>In nighttime</th></tr>
+  <tr><td>Inhale</td><td>Carbon dioxide (CO<sub>2</sub>)</td><td>Oxygen (O<sub>2</sub>)</td></tr>
+  <tr><td>Exhale</td><td>Oxygen (O<sub>2</sub>)</td><td>Carbon dioxide (CO<sub>2</sub>)</td></tr>
+</table>
+<b>Din mein:</b> paudha photosynthesis aur respiration dono kar raha hota hai. Photosynthesis ki rate light intensity par depend karti hai aur aam tor par respiration se <b>zyada</b> hoti hai. Is liye photosynthesis ko respiration se milne wali CO<sub>2</sub> kaafi nahin hoti aur paudha mahol se <b>extra CO<sub>2</sub></b> leta hai. Doosri taraf photosynthesis respiration ki zaroorat se <b>zyada O<sub>2</sub></b> banati hai, is liye paudha fazil O<sub>2</sub> <b>release</b> kar deta hai.<br>
+<b>Raat mein:</b> andhere mein photosynthesis hoti hi nahin, is liye paudhe <b>janwaron jaise</b> behave karte hain: O<sub>2</sub> absorb aur CO<sub>2</sub> release.<br>
+<b>Dawn aur dusk par:</b> light intensity kam hone se photosynthesis aur respiration ki rates <b>barabar</b> ho jati hain. Respiration ki CO<sub>2</sub> photosynthesis ke liye kaafi hoti hai aur photosynthesis ki O<sub>2</sub> respiration istemal kar leti hai. Mahol ke saath <b>koi net exchange nahin</b> hota, aur isay <b>compensation point of photosynthesis</b> kehte hain.<br><br>
+<b>2. Jaron mein pattern (non-photosynthetic parts)</b><br>
+Jarein <b>soil air</b> ke saath gas exchange karti hain, <b>root epidermal cells</b> ke zariye. Wo <b>oxygen absorb</b> karti hain aur <b>carbon dioxide release</b> karti hain, kyunke jaron mein photosynthesis bilkul nahin hoti. Ye pattern <b>din aur raat, dono waqt ek jaisa</b> rehta hai.
+</div>
+
+<div class="solve"><span class="t">Q8. Describe the mechanism of adaptations of plants for the excretion.</span>
+<b>Paudhon mein excretion kya hai</b><br>
+Janwaron ke bar aks, paudhon mein excretion ek <b>bohat wasee (very broad)</b> lafz hai jis ka matlab hai <b>paudhe ke jism se kisi bhi cheez ka nikalna</b>. Paudhon ka fazla nikalne ka tareeqa janwaron se alag hai. Paudhe tarah tarah ke <b>organic aur inorganic compounds</b> banate hain, unhein mukhtalif wajuhat se <b>jama</b> karte hain, aur zaroorat par nikal dete hain. Kitab ke mutabiq excretion ke <b>paanch</b> raaste hain:<br><br>
+<b>1. Excretion of carbon dioxide and oxygen</b><br>
+<b>Carbon dioxide</b> respiration ka waste hai, jo <b>raat</b> ke waqt gas exchange ke amal mein jism se bahar nikaali jati hai. Isi tarah <b>oxygen</b> photosynthesis ka waste hai, jo <b>din</b> mein usi gas exchange ke amal se bahar nikaali jati hai.<br><br>
+<b>2. Excretion of water</b><br>
+Paani photosynthesis aur respiration <b>dono</b> ka waste hai, aur ye <b>mitti se absorb</b> bhi hota hai. Paani ka excretion paudhe ke jism se <b>transpiration</b> ke amal ke doran hota hai.<br><br>
+<b>3. Excretion through leaves</b><br>
+Plant cells ke <b>bare vacuoles</b> hote hain jo kaam ki cheezein ya waste jama kar sakte hain. Kabhi kabhi ye jama shuda cheezein barh kar vacuoles mein <b>crystals</b> bana leti hain. Is amal mein <b>patte sab se aham</b> hain. Jab patte <b>pigmented compounds</b> ki bari miqdar se bhar jate hain to woh <b>peelay</b> ho jate hain. Ye peelapan <b>chlorosis</b> ki tarah chlorophyll ki kami se nahin hota. Aise patte aam tor par <b>autumn</b> ke mausam mein gir jate hain. Is tarah patte <b>organ of excretion</b> ban jate hain, is liye aise patton ko <b>excretophores</b> kehte hain. Yehi wajah hai ke <b>gardeners decomposed autumn leaves</b> ko paudhon ke liye <b>mineral-rich source</b> ke tor par istemal karna pasand karte hain.<br><br>
+<b>4. Excretion through stem and branches</b><br>
+Kuch darakht apni <b>branches aur trunks</b> mein ghair maamooli chemicals jama kar lete hain, khaas tor par us <b>purane xylem</b> mein jo ab paani le jane ke kaam nahin aata. Misal ke tor par <b>ebony trees</b> apne beech wale hisse mein bohat <b>gehri kaali lakri (very dark wood)</b> banate hain. Plant scientists in deposits ko <b>waste materials</b> samajhte hain. Ye waste jism se nikalta nahin, bas jism ke <b>ek hisse mein daal diya</b> jata hai, bilkul jaise hum koora <b>waste bin</b> mein daal dete hain magar woh ghar hi mein maujood rehta hai.<br><br>
+<b>5. Excretion through roots</b><br>
+Kuch paudhe apne waste compounds ko <b>mitti mein chhor dete hain</b>, taqreeban is tarah jaise unhein <b>chemical weapons</b> ke tor par un doosre paudhon ke khilaf istemal kar rahe hon jo resources ke liye muqabla kar rahe hain. <b>Conifer trees</b> is chaal ke liye mashhoor hain.
+</div>
+
+<div class="solve"><span class="t">Q9. Explain osmotic adjustment in plants.</span>
+<b>Tareef</b><br>
+<b>Osmotic adjustment</b>, jise <b>osmoregulation</b> bhi kehte hain, paudhe ka apne jism mein <b>paani aur solutes ka sahi balance</b> qaim rakhne ka tareeqa hai. Is balance se <b>teen halatein</b> banti hain: <b>hypotonic, hypertonic aur isotonic</b>.<br><br>
+<b>1. Hypotonic situation</b><br>
+Jab cell aise paani wale mahol mein ho jahan <b>paani zyada aur solute kam</b> ho, to paani <b>cell ke andar</b> chala jata hai. Cell phool kar <b>sakht aur kasa hua</b> ho jata hai, is halat ko <b>turgid</b> kehte hain.<br><br>
+<b>2. Hypertonic situation</b><br>
+Agar cell aise mahol mein ho jahan cell sap ke muqable mein <b>paani kam aur dissolved stuff zyada</b> ho, to paani <b>cell se bahar</b> nikal jata hai. Cell sukar kar <b>dheela</b> par jata hai, is halat ko <b>flaccid</b> kehte hain.<br>
+Ye <b>dono halatein (hypotonic aur hypertonic)</b> paudhe se taqaza karti hain ke woh <b>adjustments</b> kare taa ke cheezein balance mein rahen.<br><br>
+<b>3. Ideal situation (Isotonic)</b><br>
+Cell ke liye behtareen soorat ye hai ke cell ke <b>andar aur bahar paani aur solute ka balance bilkul theek</b> ho. Is <b>isotonic</b> halat mein cell ke andar ya bahar paani ki <b>koi net movement nahin</b> hoti. Lekin ye balance paudhe ke <b>qudrati mahol mein bohat kam</b> milta hai.<br><br>
+<b>Osmotic adjustment in different plants groups</b><br>
+Paani ki availability ke lihaz se paudhon ke <b>teen groups</b> hain: <b>hydrophytes</b> (paani se bharay mahol mein rehne wale), <b>mesophytes</b> (jahan paani darmiyani miqdar mein ho) aur <b>xerophytes</b> (bohat khushk halat ke liye adapted). In ki adaptations alag alag hain:
+<table class="t1">
+  <tr><th>Farq</th><th>Hydrophytes</th><th>Mesophytes</th><th>Xerophytes</th></tr>
+  <tr><td>Transpiration rate</td><td>Highest</td><td>Darmiyani</td><td>Lowest</td></tr>
+  <tr><td>Stomatal placement</td><td>Upper leaf surface</td><td>Lower surface</td><td>Sunken stomata</td></tr>
+  <tr><td>Stomatal behaviour</td><td>Din raat khulay</td><td>Din mein khulte hain</td><td>Raat mein khulte hain</td></tr>
+  <tr><td>Cuticle thickness</td><td>Almost none</td><td>Thinner cuticle</td><td>Thickest</td></tr>
+  <tr><td>Water storage</td><td>Zaroorat nahin</td><td>Thori si</td><td>Ample water, succulents kehlate hain</td></tr>
+</table>
+</div>
+
+<!-- ================= CHECK ================= -->
+<h2 class="pb"><span class="emoji">✅</span> Khud ko check karo (10 sawal)</h2>
+<p class="small">Pehle khud jawab socho ya notebook mein likho, phir agle hisse mein check karo.</p>
+<ol class="check">
+  <li>Gas exchange kin do openings se hota hai, aur kis process se?</li>
+  <li>Din mein patta kaunsi gas inhale karta hai aur kaunsi exhale?</li>
+  <li>Compensation point of photosynthesis kya hai, aur kab aata hai?</li>
+  <li>Jaron mein gas exchange kin cells ke zariye hota hai?</li>
+  <li>STEAM activity mein tube 2 (andhera) ka indicator kaunsa rang dikhata hai?</li>
+  <li>Homeostasis ki definition likho.</li>
+  <li>Kitab ne kaunse chaar stressors ginwaye hain?</li>
+  <li>Excretophores kise kehte hain?</li>
+  <li>Ebony trees aur conifer trees excretion kis tareeqe se karte hain?</li>
+  <li>Turgid aur flaccid mein kya farq hai?</li>
+</ol>
+
+<h2 class="pb"><span class="emoji">🔑</span> Jawab</h2>
+<ol class="check">
+  <li><b>Stomata</b> (leaves) aur <b>lenticels</b> (stems) se, aur process hai <b>diffusion</b>.</li>
+  <li>Inhale <b>carbon dioxide</b>, exhale <b>oxygen</b>.</li>
+  <li>Jab photosynthesis aur respiration ki rates <b>barabar</b> ho jayen aur mahol ke saath <b>koi net gas exchange na ho</b>. Ye <b>dawn aur dusk</b> par aata hai jab light intensity kam hoti hai.</li>
+  <li><b>Root epidermal cells</b> ke zariye, <b>soil air</b> ke saath.</li>
+  <li><b>Yellow</b> (CO<sub>2</sub> barh gayi, kyunke andhere mein sirf respiration chal rahi thi).</li>
+  <li>"Homeostasis in plants refers to the <b>adjustment or adaptation of plants to varying degrees of environmental temperatures and availability of water and salts in the soil</b>."</li>
+  <li><b>Drought, salinity, pathogens aur herbivores.</b></li>
+  <li>Woh patte jo pigmented compounds se bhar kar peelay ho jate hain aur autumn mein gir jate hain, yani patte jo <b>organ of excretion</b> ka kaam karte hain.</li>
+  <li><b>Ebony trees:</b> stem aur branches ke purane xylem mein chemicals jama karte hain, jis se beech ki lakri bohat <b>dark</b> ho jati hai. <b>Conifer trees:</b> jaron se waste compounds mitti mein chhorte hain, doosre paudhon ke khilaf <b>chemical weapon</b> ki tarah.</li>
+  <li><b>Turgid:</b> hypotonic mahol mein paani andar aane se cell phool kar kasa hua. <b>Flaccid:</b> hypertonic mahol mein paani bahar jane se cell sukar kar dheela.</li>
+</ol>
+
+<div class="intro">
+  <p><b>Score dekho:</b> 8 se 10 sahi: zabardast, chapter 8 mukammal! <span class="emoji">🌟</span> 5 se 7: jo ghalat hue sirf un ka hissa dobara dekh lo. 5 se kam: koi baat nahin, ek dafa aur aaram se parho. <span class="emoji">💪</span></p>
+  <p>Ye chapter 8 ka aakhri part tha. Ab tumhare paas 8.1 se 8.4 tak sab kuch hai: mineral nutrition, transport, gas exchange aur homeostasis.</p>
+</div>
+
+</body>
+</html>
