@@ -6,6 +6,8 @@ Exam key: 01=Ch1-2 (Real Numbers, Logarithms) | 02=Ch3-5 (Sets & Relations, Fact
 
 **Note:** Unit 3 (Sets & Relations), Unit 6 (Trigonometry), Unit 8 (Geometry of Straight Lines), Unit 9 (Geometry & Polygons), and Unit 11 (Basic Statistics) are outside Seemab's confirmed current syllabus and are not tracked here. **Unit 10 (Practical Geometry) is deliberately excluded from exam-13, exam-14 and all future exams** because Seemab has no geometry box &mdash; zero construction questions until Atif confirms otherwise.
 
+**SUPERSEDED 2026-09-23 (read this before trusting the note above).** Two things in that note are now out of date. (1) **[[no-geometry-box]] is retired**: Atif confirmed on 2026-09-22 that the geometry box is available, so Unit 10 construction questions are back in. (2) The whole-book programme ([[whole-book-program]]) deliberately sets units the class has not reached, so "outside her confirmed syllabus" no longer disqualifies a unit. **Exam-19 (2026-09-23) is the first paper to carry Units 10 and 11 as main content**, plus Unit 6 sections 6.1 and 6.2 only. Units 3, 8 and 9 are still untested by us.
+
 ## Unit 1 &mdash; Real Numbers
 
 | Sub-topic | Tested in |
@@ -259,3 +261,122 @@ Sourced content by reading `chapters-ocr/compressed/unit-01, 02, 04, 05` via `pd
 2. Short question 2(v)(a) originally used |3x+1|=13, whose second root (−14/3) is needless fraction-grinding for a "verify both solutions" part. Changed to **|2x+1|=13**, giving clean integer roots x=6 and x=−7 — same technique, cleanly verifiable. Checked against all 16 prior papers: no collision.
 
 Both fixes were re-verified numerically before the paper was re-rendered. `exam.pdf` in `math/exams/exam-17-ch1-2-4-5-7/` reflects the corrected version; no other question, the mark distribution, or the no-choice structure changed.
+
+## Exam-18 (this build) — 2026-09-15
+
+**School-mirror shape** (Atif: "Send Seemab Maths exam today, with 10MCQs"): 10 MCQ x 1 + 6 short x 4 + 2 long x 8 = **50 marks**, 2 h 15 m, **no choices anywhere** (rendered PDF grep-checked: no "OR"). Files: `math/exams/exam-18-ch1-2-4-5-7/exam.pdf` (2 pp) + `answers.pdf` (4 pp). Unit 10 still excluded (no confirmation of a geometry box).
+
+**Built around her real misses, per the confusing-pairs finding.** Every MCQ that re-tests a past error has the wrong twin among the options and the correct answer is the one she previously failed to choose:
+
+| Q | Tests | Past miss | Wrong twin present |
+|---|---|---|---|
+| 1 | √98 + √8 = 9√2 | exam-17 Q2 (√48+√27 = 75) | √106 |
+| 2 | log 6 + log 5 = log 30 | (same "add inside" confusion, logs) | log 11 |
+| 3 | log₃(1/27) = −3 | new | 3 |
+| 4 | 27m³ + 64n³ sum-of-cubes signs | exam-15 Q13, exam-16 Q11 | (a+b)(a²+ab+b²) |
+| 5 | 27 − 8y³ difference-of-cubes signs | pair partner of Q4 | (a−b)(a²−ab+b²) |
+| 6 | |−9| − |−4| = 5 | exam-17 Q7 (|−8|+|3| = −5) | −5, −13 |
+| 7 | −4 ≤ 2x−2 ≤ 6 ⇒ −1 ≤ x ≤ 4 | exam-17 Q8 (dropped the minus) | 1 ≤ x ≤ 4 |
+| 8 | x−3<5 ⇒ x<8 is the additive property | exam-16 Q18 (said transitive) | transitive |
+| 9 | (2a−1, b+3) = (9,5) ⇒ a = 5 | exam-16 Q22 (gave the element) | 9 |
+| 10 | mid-point of (−5,4),(9,−8) = (2,−2) | exam-17 Q10 | (7,−6) half-difference |
+
+Answer letters **B A C D A B C A D B** (A3 B3 C2 D2).
+
+**Written sections re-test the answer-every-instruction habit** with the mark tied to the extra step in the key: 2(ii)(a) name the log laws (log 72 = 1.8572), 2(iv)(a) verify both roots (|x−3|+4 = 9 ⇒ 8, −2), 2(iv)(b) state the inequality property (x ≥ 7), 2(v) written collinearity conclusion (AB 5, BC 10, AC 15), 3(i)(a) square root by division with ± (±(x²−4x+3)), 3(ii) lamp-post real-life problem from the Unit 7 opener: M(1,−2), PM = QM = RM = 5√2, PQ = 10√2 ⇒ collinear. Also 2(i) radicals √63+√28−√7 = 4√7 and (27)^(2/3)×(9)^(−1/2) = 3; 2(ii)(b) characteristic of log 0.0567 = −2 or 2̄ (her book's Example 9 notation); 2(iii) 1−343z³ and (x−2y)³; 2(vi) 1/(x−2) − 4/(x²−4) = 1/(x+2); 3(i)(b) HCF (x−7), LCM (x−4)(x−7)(x+4) of x²−11x+28 and x²−3x−28 with verification.
+
+**Uniqueness:** all 17 prior Maths papers plus the OPF First Term paper extracted to one file and grep-checked. Rejected as collisions and replaced before writing: log₂(1/8), |−6|, mid-point (−3,5), |x−4|, x⁴−6x³+13x² (division quartic), x²−5x+6 and x²−7x+12 and x²−4x−21 (HCF pairs), √50, √72, √27, √20, 8x³, 64x³−1, 125b³.
+
+**Verification:** every answer re-computed in Python (polynomial identities checked at 40 random points each; sympy is not installed), including that each MCQ has exactly one correct option and every cube-factorization distractor is genuinely false.
+
+**SENT 2026-09-15** to Shumail on WhatsApp: Roman Urdu NEW-paper message (with the MCQ rough-working and answer-every-part coaching lines), then `exam.pdf` staged as `Maths-Revision-Test-exam-18-Units-1-2-4-5-7.pdf`. Both sends returned success. **Key held**, to follow after she attempts.
+
+**VERSION B, 2026-09-15 (same day), SENT to Shumail the same afternoon** (Roman Urdu correction message telling her to use Version B instead of the morning paper, then `exam.pdf` staged as `Maths-Revision-Test-exam-18-Version-B.pdf`; both sends succeeded; key still held). Atif: "Lets strip 6 short questions to 3". Section B cut to **3 x 4 = 12**, so the paper is now **38 marks** (10 + 12 + 16), time cut to **1 h 45 m**. Kept the three short questions that carry the answer-every-instruction marks, renumbered: new 2(i) = log 72 naming the laws + characteristic of log 0.0567; new 2(ii) = |x−3|+4 = 9 with verification + 3(x−1) ≥ 2x+4 naming the property; new 2(iii) = collinear A(−2,−1), B(1,3), C(7,11) with written conclusion. **Dropped:** old 2(i) radicals/exponents (MCQ 1 still covers radicals), old 2(iii) cube factorizations (MCQs 4 and 5 still cover the signs), old 2(vi) algebraic fraction subtraction. MCQs and Section C unchanged; Section C forced onto page 2 so 3(i) no longer splits. `exam.pdf` / `answers.pdf` are now Version B; the six-question paper Shumail already holds is kept as `exam-versionA-SENT-2026-09-15.pdf` (key `answers-versionA-2026-09-15.pdf`).
+
+**RESULT SENT 2026-09-15:** Roman Urdu result message (score, specific praise for the 7 fixed re-tests and the perfect lamp-post question, six polite improvement points, the "10 second check" habit) plus `answers.pdf` staged as `Maths-exam-18-Version-B-Answer-Key.pdf`. Both sends succeeded. Marking report, overview, v62 and subject card NOT sent (English, for Atif).
+
+## Exam-19 (this build), 2026-09-23
+
+Atif: *"Lets send seemab Maths exam chapter 10, 11, 6.1 and 6.2"*, then *"make it easy exam, ok"*. **School-mirror shape:** 10 MCQ x 1 + 6 short x 4 + 2 long x 8 = **50 marks**, 2 h 15 m, **no choices anywhere** (rendered PDF grep-checked: no "OR"). Files: `math/exams/exam-19-ch6-10-11/exam.pdf` (2 pp) + `answers.pdf` (5 pp). HTML source kept at `math/exam-template/exam-19-source/`.
+
+**Difficulty deliberately low, on instruction.** Every item is a direct application of a printed formula or definition, with clean numbers: no multi-step traps, no ambiguous stems, and the Section C statistics table is built so that mean, median and mode all come out to exactly 25.5 (self-checking for her).
+
+**Mark split:** Unit 11 Basic Statistics **24** | Unit 10 Practical Geometry **15** | Unit 6 sections 6.1 and 6.2 **11**. Unit 6 is the only part not yet taught in class, so the paper carries the ahead-of-class note in Roman Urdu under the syllabus line, naming Unit 6 only.
+
+### Unit 11 Basic Statistics (first paper Seemab will actually sit on this unit)
+
+| Sub-topic | Where in exam-19 | Book source |
+|---|---|---|
+| Class mark / mid value | MCQ 7 (class 5 to 15 = 10), Q4(iii) (class 15 to 24 = 19.5), Q8(i) | 11.1 item (v), p242 |
+| Class limits (lower / upper) | Q4(i) | 11.1 item (ii), p241 |
+| Class boundaries + adjustment factor | Q4(ii) (14.5 to 24.5), Q8(i) | 11.1 item (iii), p241 |
+| Size of class interval h | Q4(iv) | 11.1 item (iv), p242 |
+| Cumulative frequency column | Q8(i) | 11.1 item (vii), p242 |
+| Mean, ungrouped | Q5(i) (7.5) | p250 |
+| Median, ungrouped, even n | Q5(ii) (6.5) | p252 |
+| Mode, ungrouped | Q5(iii) (6), MCQ 8 (definition) | p254 |
+| Mean for grouped data, Σfx/Σf | Q8(ii) (25.5) | p251 |
+| Median for grouped data, l + (h/f)(n/2 − c) | Q8(iii) (25.5) | p253 |
+| Mode for grouped data, modal class formula | Q8(iv) (25.5) | p254 |
+| **Single event probability P(E)** | **Q6(i) to (iii)** | 11.3.1, p260 |
+| **Complementary events, P(not E) = 1 − P(E)** | **Q6(iii)** | 11.3.2, p260 |
+| **Probability scale, impossible event = 0** | **MCQ 9** | 11.3, p259 |
+| **Expected frequency, n x p** | **MCQ 10 (400 tosses), Q6(iv) (300 rolls)** | 11.3.4, p261 |
+
+**Probability (11.3) had never been tested in any maths paper.** Exam-09 covered 11.1 and 11.2 only. Bolded rows above are first-time coverage.
+
+**Still untested in Unit 11 after this paper:** histogram construction (equal and unequal intervals, frequency density), frequency polygon, tally bar method, discrete frequency distribution, weighted mean, empirical relation mode = 3 median − 2 mean, relative frequency.
+
+### Unit 10 Practical Geometry
+
+| Sub-topic | Where in exam-19 | Book source |
+|---|---|---|
+| Construction, three sides given (SSS) | Q9(i), AB 6 cm, BC 5 cm, CA 4.5 cm | Example 6 method, p232 |
+| Angle bisectors of a triangle + concurrency | Q9(ii), Q9(iii) | p232, Exercise 10.2 Q1 |
+| In-centre named as the point of concurrency | MCQ 4, Q9(iii) | Key Fact p236, KEY POINTS p237 |
+| Right bisectors of a right-angled triangle | MCQ 5 (mid point of the hypotenuse) | Note (b) p234, p237 |
+| Altitudes of an obtuse-angled triangle | MCQ 6 (outside the triangle) | Key Fact p233, p237 |
+| Definition of altitude / median | Q7(i), Q7(ii) | p233, p236 |
+| Orthocentre named | Q7(iii) | p237 |
+| Centroid divides each median 2 : 1 | Q7(iv) | Key Fact p236, p237 |
+
+**Still untested in Unit 10:** SAS and ASA constructions, the ambiguous SSA case (including the impossible case), perpendicular-bisector construction and circumcentre, median construction and centroid, equilateral-triangle coincidence of all four centres.
+
+**Book defect recorded, do not use:** Miscellaneous Exercise 10, Q1(x) asks the ratio in which the centroid divides each median and offers only 1:2, 1:3, 3:1 and 2:3. The book's own Key Fact (p236) and KEY POINTS (p237) both give **2 : 1**, which is not among the options, so that printed MCQ has no correct answer. Exam-19 asks it as a written part (Q7 iv) with 2 : 1 as the answer instead.
+
+### Unit 6, sections 6.1 and 6.2 only
+
+| Sub-topic | Where in exam-19 | Book source |
+|---|---|---|
+| Sexagesimal system, 1′ = 60″ | MCQ 1 | 6.1.1, p115 |
+| 1 radian ≈ 57°17′45″ | MCQ 2 | 6.1.2, p117 |
+| Area of sector formula A = ½r²θ | MCQ 3 | 6.2.2, p119 |
+| Degrees to radians (in terms of π) | Q2(i), 75° = 5π/12 | p117, Ex 6.1 Q5 |
+| Radians to degrees | Q2(ii), 5π/6 = 150° | p117, Ex 6.1 Q7 |
+| Arc length l = rθ | Q3(i), r 6 cm, θ π/3, l = 6.28 cm | 6.2.1, p119 |
+| Area of a sector, numeric | Q3(ii), A = 18.84 cm² | 6.2.2, p119 |
+
+**Sections 6.3 to 6.6 were deliberately excluded** (trig ratios, identities, elevation and depression, bearing). Atif asked for 6.1 and 6.2 only.
+
+### Uniqueness check
+
+All 18 prior maths papers extracted with `pdftotext -layout` into one file and grep-checked for every candidate item. Only three papers touch these units at all: **exam-06** (Unit 6, never attempted), **exam-09** (Unit 11, never attempted) and **exam-10** (Unit 10, attempted).
+
+**Rejected as collisions and replaced before writing:**
+- "The length of a circular arc is given by" as an MCQ (exam-06 MCQ 3), "minutes in one degree" (exam-06 MCQ 1), "measure of a complete angle in circular system" (exam-06 MCQ 2). Replaced with seconds-in-a-minute, 1 radian in D°M′S″, and the sector-area formula.
+- Arc and sector with r = 12 m, θ = 120° (exam-06 2 iii) and r = 6 dm, θ = 60°45′30″ (exam-06 3 i). Replaced with r = 6 cm, θ = π/3.
+- Convert 45° into radians (exam-06 2 ii). Replaced with 75°.
+- "Construct a triangle ABC in which AB = 5 cm, BC = 6 cm and the included angle ∠B = 60°, write the steps" and "describe how to draw the perpendicular bisector of a line segment of length 6 cm" (both exam-10 3 iv OR). Replaced with an SSS construction plus angle bisectors.
+- Class mark of 21 to 30, lower boundary of 31 to 40, class limits of 1 to 9 (exam-09 MCQs 2 and 3, 2 ii). Replaced with the class 5 to 15 and the class 15 to 24.
+- Every Unit 11 dataset in exam-09 is lifted straight from her book (masses of 40 boys, heights of 44 students, marks of 100 students, wages of 50 workers, the Hanzala/Zaki weighted-mean table). **Exam-19 uses no book dataset at all**: the Section C table (30 students, f = 4, 6, 10, 6, 4) and the Q5 list are both freshly constructed.
+- Median of 40, 35, 45, 60, 50, 35, 40, 45, 35, 50 and mode of 125, 130, 115, ... (exam-09 2 vi, 2 vii, both straight from book Examples 8 and 10). Replaced with 4, 6, 9, 6, 10, 7, 6, 12.
+
+### Verification
+
+- Every numerical answer independently re-derived in Python, not taken from the draft: the two angle conversions, arc length and sector area both exactly and with π = 3.14, class boundaries and class mark, mean/median/mode of the ungrouped list, all four probabilities, and the full Section C table (Σfx = 765, mean 25.5, median 25.5, mode 25.5).
+- Q9 checked for validity: 4.5 + 5 > 6 so the triangle exists, and its largest angle is 78.14°, so it is **acute angled** and the in-centre must fall inside. If her O lands outside, the construction is wrong.
+- Answer letters **C A D B C D B C A B** (A2 B3 C3 D2). No two numerically identical options anywhere on the paper.
+- Every question passed the three-part test: printed in her own textbook, covered by a stated SLO from the unit's opening page, and with enough printed text to carry the marks.
+- No em dashes and no space-hyphen-space in either file (grep-checked, 0 hits).
+
+**NOT SENT.** Built and left in the repo per [[no-whatsapp-send]].

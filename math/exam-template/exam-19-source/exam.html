@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mathematics Exam 19</title>
+<style>
+  @page { size: A4; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 13pt; line-height: 1.3; margin: 0; color: #000; }
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; box-sizing: border-box; }
+
+  .header-box { border: 2.5px solid #000; padding: 7px 10px; text-align: center; page-break-after: avoid; }
+  .board { font-size: 17pt; font-weight: bold; letter-spacing: 0.5px; }
+  .exam-name { font-size: 15pt; font-weight: bold; margin-top: 2px; }
+  .subject { font-size: 15pt; font-weight: bold; margin-top: 2px; }
+  .syllabus { font-size: 13pt; font-weight: bold; margin-top: 4px; }
+  .ahead { font-size: 12pt; font-style: italic; margin-top: 4px; }
+
+  .info-row { display: flex; justify-content: space-between; margin: 6px 2px 6px 2px; font-size: 14pt; font-weight: bold; }
+
+  .instr-box { border: 1.5px solid #000; padding: 6px 10px; font-size: 12pt; line-height: 1.35; }
+  .instr-box ol { margin: 3px 0 0 16px; padding: 0; }
+  .instr-box li { margin-bottom: 2px; }
+
+  .section-bar { background: #DAA520; color: #fff; font-size: 15pt; font-weight: bold; text-align: center;
+                 padding: 2px; margin: 9px 0 6px 0; page-break-after: avoid; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 15pt; font-weight: bold; text-align: center;
+                      padding: 2px; margin: 9px 0 6px 0; page-break-after: avoid; }
+
+  table { width: 100%; border-collapse: collapse; }
+  .mcq-table td, .mcq-table th { border: 1px solid #000; padding: 4px 5px; font-size: 13pt; vertical-align: middle; }
+  .mcq-table .num { width: 4%; text-align: center; font-weight: bold; }
+  .mcq-table .q { width: 38%; }
+  .mcq-table .opt { width: 11.5%; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; white-space: nowrap; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; line-height: 14px; border: 1.5px solid #000;
+                 border-radius: 50%; font-size: 9pt; text-align: center; margin: 0 1px; }
+
+  .qt tr { page-break-inside: avoid; }
+  .qt td { border: 1px solid #000; padding: 5px 6px; font-size: 13.5pt; line-height: 1.2; vertical-align: top; }
+  .qt .part { width: 5%; text-align: center; font-weight: bold; }
+  .qt .qtext { width: 88%; }
+  .qt .marks { width: 7%; text-align: center; font-weight: bold; }
+  .sub { margin-left: 14px; }
+
+  table.data-table { width: auto; border-collapse: collapse; margin: 6px 0 6px 14px; }
+  table.data-table td, table.data-table th { border: 1px solid #000; padding: 3px 10px; font-size: 12.5pt; text-align: center; }
+  table.data-table th { background: #eee; }
+
+  .footer { margin-top: 10px; font-size: 12pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-top: 18px; font-size: 12pt; }
+  .end-mark { text-align: center; font-weight: bold; font-size: 13pt; margin-top: 8px; }
+  .note { font-size: 12pt; font-style: italic; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">FEDERAL BOARD OF INTERMEDIATE AND SECONDARY EDUCATION</div>
+    <div class="exam-name">SSC PART-I (CLASS 9) PRACTICE EXAMINATION</div>
+    <div class="subject">MATHEMATICS PAPER 19</div>
+    <div class="syllabus">Syllabus: Unit 11 Basic Statistics (24 marks) &nbsp;+&nbsp; Unit 10 Practical Geometry (15 marks) &nbsp;+&nbsp; Unit 6, sections 6.1 and 6.2 only (11 marks)</div>
+    <div class="ahead">Note: Unit 6 (6.1 Measurement of an Angle, 6.2 Sector of Circle) abhi class mein nahin parhaya gaya. Ye hissa sirf 11 marks ka hai, is liye pareshan na hon.</div>
+  </div>
+
+  <div class="info-row">
+    <div>Total Marks: 50</div>
+    <div>Time Allowed: 2 hours 15 minutes</div>
+    <div>Version A</div>
+  </div>
+
+  <div class="instr-box">
+    <b>HIDAYAAT (Instructions)</b>
+    <ol>
+      <li><b>Saaray sawal</b> hal karnay hain. Is paper mein koi bhi <b>optional sawal nahin</b> hai.</li>
+      <li>Jawab apni notebook mein likhein. Har sawal ka number <b>bilkul waisa hi</b> likhein jaisa paper par hai, aur tarteeb se hal karein.</li>
+      <li>Section A mein sawal ka number likh kar sirf apnay option ka <b>letter</b> likhein, jaise <b>1. (b)</b>. Check kar lein ke jo letter aap ne likha hai, wohi option aap ne choose kiya hai.</li>
+      <li>Har calculation mein pehlay <b>formula</b> likhein, phir working. <b>Calculator use kar sakti hain.</b> Har jawab ke saath <b>unit</b> zaroor likhein (cm, cm<sup>2</sup>, radians waghera).</li>
+      <li><b>Sawal 9 ke liye geometry box zaroori hai</b> (ruler, compass, protractor). Drawing <b>pencil</b> se karein, baqi paper pen se.</li>
+      <li>Construction wale sawal mein <b>arcs aur construction lines mitayein nahin</b>, unhi par marks hain.</li>
+      <li>Har lambay sawal ke aakhir mein <b>ek mukammal jumla</b> likhein jo sawal ka jawab de.</li>
+    </ol>
+  </div>
+
+  <div class="section-bar">SECTION A: MULTIPLE CHOICE QUESTIONS (10 &times; 1 = 10 MARKS)</div>
+
+  <table class="mcq-table">
+    <tr>
+      <td class="num">#</td><td class="q"><b>Question</b></td>
+      <td class="opt"><b>A</b></td><td class="opt"><b>B</b></td><td class="opt"><b>C</b></td><td class="opt"><b>D</b></td>
+      <td class="ans-cell"><b>Answer</b></td>
+    </tr>
+    <tr>
+      <td class="num">1</td>
+      <td class="q">How many <b>seconds</b> are there in one <b>minute</b> of an angle?</td>
+      <td class="opt">6</td><td class="opt">10</td><td class="opt">60</td><td class="opt">360</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">2</td>
+      <td class="q">1 radian is approximately equal to:</td>
+      <td class="opt">57&deg;17&prime;45&Prime;</td><td class="opt">45&deg;</td><td class="opt">60&deg;</td><td class="opt">90&deg;</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">3</td>
+      <td class="q">The <b>area</b> of a sector of a circle of radius <i>r</i> and central angle &theta; radians is:</td>
+      <td class="opt">A = <i>r</i>&theta;</td><td class="opt">A = 2&pi;<i>r</i></td><td class="opt">A = &pi;<i>r</i><sup>2</sup></td><td class="opt">A = &frac12;<i>r</i><sup>2</sup>&theta;</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">4</td>
+      <td class="q">The point where the three <b>angle bisectors</b> of a triangle meet is called the:</td>
+      <td class="opt">centroid</td><td class="opt">in-centre</td><td class="opt">orthocentre</td><td class="opt">circumcentre</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">5</td>
+      <td class="q">The <b>right bisectors</b> of a <b>right-angled</b> triangle meet at the:</td>
+      <td class="opt">vertex of the right angle</td><td class="opt">centroid of the triangle</td><td class="opt">mid point of the hypotenuse</td><td class="opt">point outside the triangle</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">6</td>
+      <td class="q">The <b>altitudes</b> of an <b>obtuse-angled</b> triangle intersect:</td>
+      <td class="opt">inside the triangle</td><td class="opt">at the mid point of the longest side</td><td class="opt">at the vertex of the obtuse angle</td><td class="opt">outside the triangle</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">7</td>
+      <td class="q">The <b>class mark</b> (mid value) of the class 5 to 15 is:</td>
+      <td class="opt">5</td><td class="opt">10</td><td class="opt">15</td><td class="opt">20</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">8</td>
+      <td class="q">The <b>most frequent</b> value of a data is called its:</td>
+      <td class="opt">mean</td><td class="opt">median</td><td class="opt">mode</td><td class="opt">class mark</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">9</td>
+      <td class="q">The probability of an <b>impossible</b> event is:</td>
+      <td class="opt">0</td><td class="opt">&frac12;</td><td class="opt">1</td><td class="opt">2</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">10</td>
+      <td class="q">A fair coin is tossed <b>400</b> times. The <b>expected</b> number of heads is:</td>
+      <td class="opt">100</td><td class="opt">200</td><td class="opt">40</td><td class="opt">400</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+  </table>
+
+  <div class="section-bar">SECTION B: SHORT ANSWER QUESTIONS (6 &times; 4 = 24 MARKS)</div>
+  <div class="note">Chhe ke chhe sawal hal karein. Har sawal <b>4 marks</b> ka hai.</div>
+
+  <table class="qt">
+    <tr>
+      <td class="part">2.</td>
+      <td class="qtext">
+        <b>Angle conversions.</b><br>
+        <span class="sub"><b>(i)</b> Convert <b>75&deg;</b> into radians. Give your answer <b>in terms of &pi;</b>. <b>(2)</b></span><br>
+        <span class="sub"><b>(ii)</b> Convert <b>5&pi;/6 radians</b> into degrees. <b>(2)</b></span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">3.</td>
+      <td class="qtext">
+        A sector of a circle has radius <b><i>r</i> = 6 cm</b> and central angle <b>&theta; = &pi;/3 radians</b>. Taking <b>&pi; = 3.14</b>, find:<br>
+        <span class="sub"><b>(i)</b> the <b>length of the arc</b> of the sector. <b>(2)</b></span><br>
+        <span class="sub"><b>(ii)</b> the <b>area</b> of the sector. <b>(2)</b></span><br>
+        <span class="sub">Write the formula first in each part, and give the unit with every answer.</span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">4.</td>
+      <td class="qtext">
+        A frequency distribution has the classes <b>5 to 14, 15 to 24, 25 to 34, 35 to 44</b>. For the class <b>15 to 24</b>, write:<br>
+        <span class="sub"><b>(i)</b> its lower class limit and its upper class limit. <b>(1)</b></span><br>
+        <span class="sub"><b>(ii)</b> its class boundaries. <b>(1)</b></span><br>
+        <span class="sub"><b>(iii)</b> its class mark. <b>(1)</b></span><br>
+        <span class="sub"><b>(iv)</b> the size of the class interval, <i>h</i>. <b>(1)</b></span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">5.</td>
+      <td class="qtext">
+        Find the <b>mean</b>, the <b>median</b> and the <b>mode</b> of the following data:<br>
+        <span class="sub"><b>4, 6, 9, 6, 10, 7, 6, 12</b></span><br>
+        <span class="sub"><b>(i)</b> mean <b>(2)</b> &nbsp;&nbsp; <b>(ii)</b> median <b>(1)</b> &nbsp;&nbsp; <b>(iii)</b> mode <b>(1)</b></span><br>
+        <span class="sub">For the median, first write the data in ascending order.</span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">6.</td>
+      <td class="qtext">
+        A bag contains <b>5 red, 3 green and 2 blue</b> marbles of the same size. One marble is drawn at random. Find the probability that it is:<br>
+        <span class="sub"><b>(i)</b> green <b>(1)</b> &nbsp;&nbsp; <b>(ii)</b> blue <b>(1)</b> &nbsp;&nbsp; <b>(iii)</b> not red <b>(1)</b></span><br>
+        <span class="sub"><b>(iv)</b> A fair die is rolled <b>300</b> times. How many times is a <b>4</b> expected to come up? <b>(1)</b></span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">7.</td>
+      <td class="qtext">
+        <b>Lines inside a triangle.</b><br>
+        <span class="sub"><b>(i)</b> Define the <b>altitude</b> of a triangle. <b>(1)</b></span><br>
+        <span class="sub"><b>(ii)</b> Define the <b>median</b> of a triangle. <b>(1)</b></span><br>
+        <span class="sub"><b>(iii)</b> What is the point called where the three <b>altitudes</b> of a triangle meet? <b>(1)</b></span><br>
+        <span class="sub"><b>(iv)</b> In what <b>ratio</b> does the centroid divide each median? <b>(1)</b></span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+  </table>
+
+  <div class="section-bar-blue">SECTION C: LONG ANSWER QUESTIONS (2 &times; 8 = 16 MARKS)</div>
+  <div class="note">Dono sawal hal karein. Har sawal <b>8 marks</b> ka hai.</div>
+
+  <table class="qt">
+    <tr>
+      <td class="part">8.</td>
+      <td class="qtext">
+        <b>Marks obtained by 30 students are given below.</b>
+        <table class="data-table">
+          <tr><th>Marks</th><td>1 to 10</td><td>11 to 20</td><td>21 to 30</td><td>31 to 40</td><td>41 to 50</td></tr>
+          <tr><th>No. of students (<i>f</i>)</th><td>4</td><td>6</td><td>10</td><td>6</td><td>4</td></tr>
+        </table>
+        <span class="sub"><b>(i)</b> Copy the table into your notebook and add columns for <b>class boundaries</b>, <b>class marks (x)</b>, <b>fx</b> and <b>cumulative frequency</b>. <b>(2)</b></span><br>
+        <span class="sub"><b>(ii)</b> Find the <b>arithmetic mean</b> using &nbsp;x&#772; = &Sigma;fx / &Sigma;f. <b>(2)</b></span><br>
+        <span class="sub"><b>(iii)</b> Find the <b>median</b> using &nbsp;x&#771; = <i>l</i> + (<i>h</i>/<i>f</i>)(<i>n</i>/2 &minus; <i>c</i>). State the median group first. <b>(2)</b></span><br>
+        <span class="sub"><b>(iv)</b> Find the <b>mode</b> using &nbsp;Mode = <i>l</i> + [(<i>f<sub>m</sub></i> &minus; <i>f</i><sub>1</sub>) / (2<i>f<sub>m</sub></i> &minus; <i>f</i><sub>1</sub> &minus; <i>f</i><sub>2</sub>)] &times; <i>h</i>. <b>(1)</b></span><br>
+        <span class="sub"><b>(v)</b> Write <b>one sentence</b> stating what your three answers tell you about this data. <b>(1)</b></span>
+      </td>
+      <td class="marks">8</td>
+    </tr>
+    <tr>
+      <td class="part">9.</td>
+      <td class="qtext">
+        <b>Construction.</b> Using only your <b>ruler and compasses</b>, construct a triangle ABC in which<br>
+        <span class="sub"><b>AB = 6 cm, BC = 5 cm and CA = 4.5 cm.</b></span><br>
+        <span class="sub"><b>(i)</b> Draw the triangle and write the <b>steps of construction</b>. <b>(3)</b></span><br>
+        <span class="sub"><b>(ii)</b> Draw the bisectors of <b>&ang;A, &ang;B and &ang;C</b>, and mark the point <b>O</b> where they meet. <b>(3)</b></span><br>
+        <span class="sub"><b>(iii)</b> Are the three angle bisectors <b>concurrent</b>? Write one sentence naming the point O and saying <b>where</b> it lies. <b>(2)</b></span><br>
+        <span class="sub">Apne arcs aur construction lines mat mitayein.</span>
+      </td>
+      <td class="marks">8</td>
+    </tr>
+  </table>
+
+  <div class="end-mark">END OF QUESTION PAPER</div>
+
+  <div class="footer">
+    <b>Units covered:</b> Unit 11 Basic Statistics (MCQs 7 to 10, Questions 4, 5, 6 and 8) &nbsp;|&nbsp;
+    Unit 10 Practical Geometry (MCQs 4 to 6, Questions 7 and 9) &nbsp;|&nbsp;
+    Unit 6 Trigonometry and Bearing, sections 6.1 and 6.2 only (MCQs 1 to 3, Questions 2 and 3).
+  </div>
+
+  <div class="sig-row">
+    <div>Student&rsquo;s Name: ______________________</div>
+    <div>Date: ______________</div>
+    <div>Marks Obtained: ________ / 50</div>
+  </div>
+
+</div>
+</body>
+</html>
