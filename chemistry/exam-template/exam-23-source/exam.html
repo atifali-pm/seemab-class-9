@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chemistry Exam 23</title>
+<style>
+  @page { size: A4; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 13pt; line-height: 1.3; margin: 0; color: #000; }
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; box-sizing: border-box; }
+
+  .header-box { border: 2.5px solid #000; padding: 7px 10px; text-align: center; page-break-after: avoid; }
+  .board { font-size: 17pt; font-weight: bold; letter-spacing: 0.5px; }
+  .exam-name { font-size: 15pt; font-weight: bold; margin-top: 2px; }
+  .subject { font-size: 15pt; font-weight: bold; margin-top: 2px; }
+  .syllabus { font-size: 13pt; font-weight: bold; margin-top: 4px; }
+
+  .info-row { display: flex; justify-content: space-between; margin: 6px 2px 6px 2px; font-size: 14pt; font-weight: bold; }
+
+  .instr-box { border: 1.5px solid #000; padding: 6px 10px; font-size: 12pt; line-height: 1.35; }
+  .instr-box ol { margin: 3px 0 0 16px; padding: 0; }
+  .instr-box li { margin-bottom: 2px; }
+
+  .section-bar { background: #DAA520; color: #fff; font-size: 15pt; font-weight: bold; text-align: center;
+                 padding: 2px; margin: 9px 0 6px 0; page-break-after: avoid; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 15pt; font-weight: bold; text-align: center;
+                      padding: 2px; margin: 9px 0 6px 0; page-break-after: avoid; }
+
+  table { width: 100%; border-collapse: collapse; }
+  .mcq-table td, .mcq-table th { border: 1px solid #000; padding: 4px 5px; font-size: 13pt; vertical-align: middle; }
+  .mcq-table .num { width: 4%; text-align: center; font-weight: bold; }
+  .mcq-table .q { width: 40%; }
+  .mcq-table .opt { width: 11%; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; white-space: nowrap; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; line-height: 14px; border: 1.5px solid #000;
+                 border-radius: 50%; font-size: 9pt; text-align: center; margin: 0 1px; }
+
+  .qt tr { page-break-inside: avoid; }
+  .qt td { border: 1px solid #000; padding: 5px 6px; font-size: 13.5pt; line-height: 1.2; vertical-align: top; }
+  .qt .part { width: 5%; text-align: center; font-weight: bold; }
+  .qt .qtext { width: 88%; }
+  .qt .marks { width: 7%; text-align: center; font-weight: bold; }
+  .sub { margin-left: 14px; }
+
+  .footer { margin-top: 10px; font-size: 12pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-top: 18px; font-size: 12pt; }
+  .end-mark { text-align: center; font-weight: bold; font-size: 13pt; margin-top: 8px; }
+  .note { font-size: 12pt; font-style: italic; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">FEDERAL BOARD OF INTERMEDIATE AND SECONDARY EDUCATION</div>
+    <div class="exam-name">SSC PART-I (CLASS 9) PRACTICE EXAMINATION</div>
+    <div class="subject">CHEMISTRY &mdash; PAPER 23 (Version B)</div>
+    <div class="syllabus">Syllabus: Chapter 10 &ndash; Acids, Bases and Salts (35 marks) &nbsp;+&nbsp; Revision: Chapters 4, 6, 8, 9 (15 marks)</div>
+  </div>
+
+  <div class="info-row">
+    <div>Total Marks: 50</div>
+    <div>Time Allowed: 2 hours 15 minutes</div>
+    <div>Version B</div>
+  </div>
+
+  <div class="instr-box">
+    <b>HIDAYAAT (Instructions)</b>
+    <ol>
+      <li><b>Saaray sawal</b> hal karnay hain. Is paper mein koi bhi <b>optional sawal nahin</b> hai.</li>
+      <li>Jawab apni notebook mein likhein. Har sawal ka number <b>bilkul waisa hi</b> likhein jaisa paper par hai, aur tarteeb se hal karein.</li>
+      <li>Section A mein sawal ka number likh kar sirf apnay option ka <b>letter</b> likhein, jaise <b>1. (b)</b>. Check kar lein ke jo letter aap ne likha hai, wohi option aap ne choose kiya hai.</li>
+      <li>Har calculation ka <b>working zaroor dikhayein</b>. Working theek ho to final jawab ghalat honay par bhi marks miltay hain.</li>
+      <li><b>Calculator use kar sakti hain.</b> Har numerical jawab ke saath <b>unit</b> zaroor likhein.</li>
+      <li>Jahan sawal mein <b>state symbols</b> maangay gaye hain, wahan <b>(s), (l), (g), (aq)</b> likhna zaroori hai. Sirf balanced equation par poore marks nahin milein ge.</li>
+      <li>Har explanation aur calculation ke aakhir mein <b>ek mukammal jumla</b> likhein jo sawal ka jawab de.</li>
+    </ol>
+  </div>
+
+  <div class="section-bar">SECTION A &mdash; MULTIPLE CHOICE QUESTIONS (10 &times; 1 = 10 MARKS)</div>
+
+  <table class="mcq-table">
+    <tr>
+      <td class="num">#</td><td class="q"><b>Question</b></td>
+      <td class="opt"><b>A</b></td><td class="opt"><b>B</b></td><td class="opt"><b>C</b></td><td class="opt"><b>D</b></td>
+      <td class="ans-cell"><b>Answer</b></td>
+    </tr>
+    <tr>
+      <td class="num">1</td>
+      <td class="q">In the reaction NH<sub>3</sub> + H<sub>2</sub>O &#8652; NH<sub>4</sub><sup>+</sup> + OH<sup>&minus;</sup>, the water molecule is behaving as a</td>
+      <td class="opt">Bronsted base</td><td class="opt">neutral solvent</td><td class="opt">Bronsted acid</td><td class="opt">a catalyst</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">2</td>
+      <td class="q">Which one of the following hydroxides is a base but <b>not</b> an alkali?</td>
+      <td class="opt">NaOH</td><td class="opt">Cu(OH)<sub>2</sub></td><td class="opt">KOH</td><td class="opt">Ca(OH)<sub>2</sub></td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">3</td>
+      <td class="q">Which statement correctly describes a <b>strong</b> acid?</td>
+      <td class="opt">It dissociates completely into ions in aqueous solution</td>
+      <td class="opt">It dissolves completely in water</td>
+      <td class="opt">It has more hydrogen atoms in its formula</td>
+      <td class="opt">It changes red litmus to blue</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">4</td>
+      <td class="q">Dilute sulphuric acid is poured on a piece of marble, CaCO<sub>3</sub>. The gas that bubbles off is</td>
+      <td class="opt">hydrogen</td><td class="opt">ammonia</td><td class="opt">oxygen</td><td class="opt">carbon dioxide</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">5</td>
+      <td class="q">Ammonium chloride is warmed with sodium hydroxide solution. The gas given off is</td>
+      <td class="opt">ammonia</td><td class="opt">hydrogen</td><td class="opt">chlorine</td><td class="opt">carbon dioxide</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">6</td>
+      <td class="q">The aqueous solution of <b>every</b> acid contains an excess of</td>
+      <td class="opt">OH<sup>&minus;</sup> ions</td><td class="opt">H<sup>+</sup> ions</td><td class="opt">metal ions</td><td class="opt">oxide ions</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">7</td>
+      <td class="q">Even in a clean area, ordinary rain is <b>slightly</b> acidic. This is caused by dissolved</td>
+      <td class="opt">sulphur dioxide</td><td class="opt">nitrogen dioxide</td><td class="opt">carbon dioxide</td><td class="opt">oxygen</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">8</td>
+      <td class="q">In the manufacture of margarine, vegetable oils are hydrogenated using a catalyst of</td>
+      <td class="opt">iron</td><td class="opt">platinum</td><td class="opt">palladium</td><td class="opt">nickel</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">9</td>
+      <td class="q">An element X has the electronic configuration 2, 8, 2. X belongs to</td>
+      <td class="opt">Group 2, Period 3</td><td class="opt">Group 8, Period 3</td><td class="opt">Group 12, Period 3</td><td class="opt">Group 2, Period 2</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">10</td>
+      <td class="q">A reversible reaction in a closed container has reached dynamic equilibrium. At that moment the rate of the forward reaction is</td>
+      <td class="opt">greater than the rate of the reverse reaction</td>
+      <td class="opt">equal to the rate of the reverse reaction</td>
+      <td class="opt">zero</td>
+      <td class="opt">smaller than the rate of the reverse reaction</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+  </table>
+
+  <div class="section-bar">SECTION B &mdash; SHORT ANSWER QUESTIONS (6 &times; 4 = 24 MARKS)</div>
+  <div class="note">Chhay ke chhay sawal hal karein. Har sawal <b>4 marks</b> ka hai.</div>
+
+  <table class="qt">
+    <tr>
+      <td class="part">2.</td>
+      <td class="qtext">
+        <b>(i)</b> Define a Bronsted-Lowry acid and a Bronsted-Lowry base. <b>(2)</b><br>
+        <b>(ii)</b> In the reaction HCl + H<sub>2</sub>O &rarr; H<sub>3</sub>O<sup>+</sup> + Cl<sup>&minus;</sup>, state which substance is the Bronsted-Lowry acid and which is the Bronsted-Lowry base, and give a reason for each answer. <b>(2)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">3.</td>
+      <td class="qtext">
+        Write the equation for the ionization of each of the following in water, using a <b>single arrow</b> for complete ionization and a <b>reversible arrow</b> for partial ionization:<br>
+        <span class="sub"><b>(i)</b> HNO<sub>3</sub> &nbsp;&nbsp; <b>(ii)</b> H<sub>2</sub>SO<sub>4</sub> &nbsp;&nbsp; <b>(iii)</b> CH<sub>3</sub>COOH &nbsp;&nbsp;<b>(3)</b></span><br>
+        <b>(iv)</b> Which one of the three is a weak acid, and why? <b>(1)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">4.</td>
+      <td class="qtext">
+        Write a <b>balanced</b> chemical equation, <b>including state symbols</b>, for each reaction below, and name the gas that is released in each case.<br>
+        <span class="sub"><b>(i)</b> zinc with dilute hydrochloric acid <b>(2)</b></span><br>
+        <span class="sub"><b>(ii)</b> solid sodium carbonate with dilute hydrochloric acid <b>(2)</b></span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">5.</td>
+      <td class="qtext">
+        <b>(i)</b> All alkalis are bases, but all bases are not alkalis. Explain this statement. <b>(2)</b><br>
+        <b>(ii)</b> Give one example of a base that <b>is</b> an alkali and one example of a base that is <b>not</b> an alkali, writing the formula of each. <b>(2)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">6.</td>
+      <td class="qtext">
+        <b>(i)</b> State two characteristic properties of bases, other than their taste. <b>(2)</b><br>
+        <b>(ii)</b> Bases decompose ammonium salts on heating. Write the equation for the reaction of potassium hydroxide with ammonium chloride and name the gas liberated. <b>(2)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">7.</td>
+      <td class="qtext">
+        A student needs 0.2 mol of sodium hydroxide, NaOH, to prepare a solution.<br>
+        <span class="sub"><b>(i)</b> Calculate the molar mass of NaOH. <b>(1)</b></span><br>
+        <span class="sub"><b>(ii)</b> Calculate the mass of NaOH she must weigh out. <b>(2)</b></span><br>
+        <span class="sub"><b>(iii)</b> Calculate the number of formula units present in this amount. <b>(1)</b></span><br>
+        <span class="sub">(Na = 23, O = 16, H = 1, N<sub>A</sub> = 6.02 &times; 10<sup>23</sup>)</span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+  </table>
+
+  <div class="section-bar-blue">SECTION C &mdash; LONG ANSWER QUESTIONS (2 &times; 8 = 16 MARKS)</div>
+  <div class="note">Dono sawal hal karein. Har sawal <b>8 marks</b> ka hai.</div>
+
+  <table class="qt">
+    <tr>
+      <td class="part">8.</td>
+      <td class="qtext">
+        <b>Oxides, hydroxides and neutralization.</b><br>
+        <span class="sub"><b>(i)</b> Bases are the oxides and hydroxides of metals. Write a balanced equation for the burning of <b>(a)</b> sodium and <b>(b)</b> magnesium in oxygen, and name the oxide formed in each case. <b>(3)</b></span><br>
+        <span class="sub"><b>(ii)</b> Metal oxides react with water to form metal hydroxides. Write a balanced equation for the reaction of water with <b>(a)</b> Na<sub>2</sub>O, <b>(b)</b> CaO and <b>(c)</b> MgO, naming the hydroxide formed in each case. <b>(3)</b></span><br>
+        <span class="sub"><b>(iii)</b> Write the general word equation for a neutralization reaction, give one balanced example from the chapter, and state what is <b>always</b> formed. <b>(2)</b></span>
+      </td>
+      <td class="marks">8</td>
+    </tr>
+    <tr>
+      <td class="part">9.</td>
+      <td class="qtext">
+        <b>Energy changes in a reaction.</b><br>
+        <span class="sub"><b>(i)</b> Define activation energy. <b>(2)</b></span><br>
+        <span class="sub"><b>(ii)</b> Draw an energy-profile diagram for an <b>exothermic</b> reaction, clearly labelling the reactants, the products, the activation energy E<sub>a</sub> and the enthalpy change &Delta;H. <b>(4)</b></span><br>
+        <span class="sub"><b>(iii)</b> On the same diagram, sketch the pathway that is followed when a catalyst is added. State clearly what happens to E<sub>a</sub> and what happens to &Delta;H. <b>(2)</b></span>
+      </td>
+      <td class="marks">8</td>
+    </tr>
+  </table>
+
+  <div class="end-mark">&mdash;&mdash;&mdash; END OF QUESTION PAPER &mdash;&mdash;&mdash;</div>
+
+  <div class="footer">
+    <b>Chapters covered:</b> Chapter 10 Acids, Bases and Salts (Q1&ndash;Q7 of Section A, and Questions 2 to 6 and 8) &nbsp;|&nbsp;
+    Revision: Chapter 4 Periodic Table, Chapter 6 Stoichiometry, Chapter 8 Energetics, Chapter 9 Chemical Equilibrium.
+  </div>
+
+  <div class="sig-row">
+    <div>Student&rsquo;s Name: ______________________</div>
+    <div>Date: ______________</div>
+    <div>Marks Obtained: ________ / 50</div>
+  </div>
+
+</div>
+</body>
+</html>

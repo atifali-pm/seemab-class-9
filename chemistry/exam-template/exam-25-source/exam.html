@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chemistry Exam 25</title>
+<style>
+  @page { size: A4; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 13pt; line-height: 1.3; margin: 0; color: #000; }
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; box-sizing: border-box; }
+
+  .header-box { border: 2.5px solid #000; padding: 7px 10px; text-align: center; page-break-after: avoid; }
+  .board { font-size: 17pt; font-weight: bold; letter-spacing: 0.5px; }
+  .exam-name { font-size: 15pt; font-weight: bold; margin-top: 2px; }
+  .subject { font-size: 15pt; font-weight: bold; margin-top: 2px; }
+  .syllabus { font-size: 13pt; font-weight: bold; margin-top: 4px; }
+
+  .info-row { display: flex; justify-content: space-between; margin: 6px 2px 6px 2px; font-size: 14pt; font-weight: bold; }
+
+  .instr-box { border: 1.5px solid #000; padding: 6px 10px; font-size: 12pt; line-height: 1.35; }
+  .instr-box ol { margin: 3px 0 0 16px; padding: 0; }
+  .instr-box li { margin-bottom: 2px; }
+
+  .section-bar { background: #DAA520; color: #fff; font-size: 15pt; font-weight: bold; text-align: center;
+                 padding: 2px; margin: 9px 0 6px 0; page-break-after: avoid; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 15pt; font-weight: bold; text-align: center;
+                      padding: 2px; margin: 9px 0 6px 0; page-break-after: avoid; }
+
+  table { width: 100%; border-collapse: collapse; }
+  .mcq-table td, .mcq-table th { border: 1px solid #000; padding: 4px 5px; font-size: 13pt; vertical-align: middle; }
+  .mcq-table .num { width: 4%; text-align: center; font-weight: bold; }
+  .mcq-table .q { width: 40%; }
+  .mcq-table .opt { width: 11%; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; white-space: nowrap; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; line-height: 14px; border: 1.5px solid #000;
+                 border-radius: 50%; font-size: 9pt; text-align: center; margin: 0 1px; }
+
+  .qt tr { page-break-inside: avoid; }
+  .qt td { border: 1px solid #000; padding: 5px 6px; font-size: 13.5pt; line-height: 1.2; vertical-align: top; }
+  .qt .part { width: 5%; text-align: center; font-weight: bold; }
+  .qt .qtext { width: 88%; }
+  .qt .marks { width: 7%; text-align: center; font-weight: bold; }
+  .sub { margin-left: 14px; }
+
+  .footer { margin-top: 10px; font-size: 12pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-top: 18px; font-size: 12pt; }
+  .end-mark { text-align: center; font-weight: bold; font-size: 13pt; margin-top: 8px; }
+  .note { font-size: 12pt; font-style: italic; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">FEDERAL BOARD OF INTERMEDIATE AND SECONDARY EDUCATION</div>
+    <div class="exam-name">SSC PART-I (CLASS 9) PRACTICE EXAMINATION</div>
+    <div class="subject">CHEMISTRY PAPER 25</div>
+    <div class="syllabus">Syllabus: Chapter 10, Acids, Bases and Salts (35 marks) &nbsp;+&nbsp; Revision: Chapters 6 and 8 (15 marks)</div>
+  </div>
+
+  <div class="info-row">
+    <div>Total Marks: 50</div>
+    <div>Time Allowed: 2 hours 15 minutes</div>
+    <div>Version A</div>
+  </div>
+
+  <div class="instr-box">
+    <b>HIDAYAAT (Instructions)</b>
+    <ol>
+      <li><b>Saaray sawal</b> hal karnay hain. Is paper mein koi bhi <b>optional sawal nahin</b> hai.</li>
+      <li>Jawab apni notebook mein likhein. Har sawal ka number <b>bilkul waisa hi</b> likhein jaisa paper par hai, aur tarteeb se hal karein.</li>
+      <li>Section A mein sawal ka number likh kar sirf apnay option ka <b>letter</b> likhein, jaise <b>1. (b)</b>. Check kar lein ke jo letter aap ne likha hai, wohi option aap ne choose kiya hai.</li>
+      <li>Har equation <b>balance</b> karein. Dono taraf atoms gin kar check karein.</li>
+      <li>Har calculation mein formula aur working likhein. <b>Calculator use kar sakti hain.</b> Har jawab ke saath <b>unit</b> zaroor likhein.</li>
+      <li>Jahan <b>naam</b> maanga gaya ho wahan angrezi naam likhein. Naam ya unit na likhne par <b>&frac12; mark</b> katega.</li>
+      <li>Har explanation aur calculation ke aakhir mein <b>ek mukammal jumla</b> likhein jo sawal ka jawab de.</li>
+    </ol>
+  </div>
+
+  <div class="section-bar">SECTION A: MULTIPLE CHOICE QUESTIONS (10 &times; 1 = 10 MARKS)</div>
+
+  <table class="mcq-table">
+    <tr>
+      <td class="num">#</td><td class="q"><b>Question</b></td>
+      <td class="opt"><b>A</b></td><td class="opt"><b>B</b></td><td class="opt"><b>C</b></td><td class="opt"><b>D</b></td>
+      <td class="ans-cell"><b>Answer</b></td>
+    </tr>
+    <tr>
+      <td class="num">1</td>
+      <td class="q">Which of the following <b>cannot</b> be classified as an Arrhenius acid?</td>
+      <td class="opt">HNO<sub>3</sub></td><td class="opt">H<sub>2</sub>CO<sub>3</sub></td><td class="opt">CO<sub>2</sub></td><td class="opt">H<sub>2</sub>SO<sub>4</sub></td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">2</td>
+      <td class="q">Which of the following is a Bronsted-Lowry <b>base</b>?</td>
+      <td class="opt">NH<sub>3</sub></td><td class="opt">HCl</td><td class="opt">CH<sub>3</sub>COOH</td><td class="opt">H<sub>3</sub>O<sup>+</sup></td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">3</td>
+      <td class="q">Milk of magnesia contains Mg(OH)<sub>2</sub>. It is used as an antacid to neutralize excess stomach acid (hydrochloric acid, HCl). Which salt is formed?</td>
+      <td class="opt">MgSO<sub>4</sub></td><td class="opt">MgCO<sub>3</sub></td><td class="opt">MgCl<sub>2</sub></td><td class="opt">MgO</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">4</td>
+      <td class="q">According to the Bronsted-Lowry theory, ammonia is a base because it</td>
+      <td class="opt">contains an OH group</td><td class="opt">donates a proton</td><td class="opt">produces H<sup>+</sup> ions</td><td class="opt">accepts a proton</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">5</td>
+      <td class="q">Which one of these is a <b>weak</b> base?</td>
+      <td class="opt">NaOH</td><td class="opt">Al(OH)<sub>3</sub></td><td class="opt">KOH</td><td class="opt">Ca(OH)<sub>2</sub></td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">6</td>
+      <td class="q">According to Table 10.1, which property do acids and bases <b>share</b>?</td>
+      <td class="opt">sour taste</td><td class="opt">turn blue litmus red</td><td class="opt">bitter taste</td><td class="opt">their aqueous solutions conduct electricity</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">7</td>
+      <td class="q">A <b>strong</b> base is a base that</td>
+      <td class="opt">completely dissociates in aqueous solution</td><td class="opt">dissolves in water</td><td class="opt">partially dissociates in aqueous solution</td><td class="opt">has a bitter taste</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">8</td>
+      <td class="q">For C<sub>(s)</sub> + H<sub>2</sub>O<sub>(g)</sub> &rarr; CO<sub>(g)</sub> + H<sub>2(g)</sub>, &Delta;H&deg; = +131.4 kJ. This reaction is</td>
+      <td class="opt">exothermic</td><td class="opt">endothermic</td><td class="opt">at equilibrium</td><td class="opt">neutral, with no heat change</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">9</td>
+      <td class="q">The mass of 0.75 mol of carbon dioxide, CO<sub>2</sub>, is (C = 12, O = 16)</td>
+      <td class="opt">44 g</td><td class="opt">33 g</td><td class="opt">22 g</td><td class="opt">11 g</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">10</td>
+      <td class="q">How many moles are present in 54 g of water, H<sub>2</sub>O? (H = 1, O = 16)</td>
+      <td class="opt">3 mol</td><td class="opt">0.33 mol</td><td class="opt">54 mol</td><td class="opt">1.5 mol</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+  </table>
+
+  <div class="section-bar" style="page-break-before: always;">SECTION B: SHORT ANSWER QUESTIONS (6 &times; 4 = 24 MARKS)</div>
+  <div class="note">Chhay ke chhay sawal hal karein. Har sawal <b>4 marks</b> ka hai.</div>
+
+  <table class="qt">
+    <tr>
+      <td class="part">2.</td>
+      <td class="qtext">
+        <b>(i)</b> Define Arrhenius acids and give <b>two</b> examples. <b>(2)</b><br>
+        <b>(ii)</b> Why does HCl act as a <b>strong</b> acid? <b>(1)</b><br>
+        <b>(iii)</b> Why does ammonia act as a <b>weak</b> base? <b>(1)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">3.</td>
+      <td class="qtext">
+        <b>(i)</b> State <b>two</b> limitations of the Arrhenius theory of acids and bases. <b>(2)</b><br>
+        <b>(ii)</b> NH<sub>3</sub> + HNO<sub>3</sub> &rarr; NH<sub>4</sub>NO<sub>3</sub>. Using the Bronsted-Lowry theory, explain why NH<sub>3</sub> is the base and HNO<sub>3</sub> is the acid in this reaction. <b>(2)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">4.</td>
+      <td class="qtext">
+        <b>(i)</b> HNO<sub>3</sub> + H<sub>2</sub>O &rarr; H<sub>3</sub>O<sup>+</sup> + NO<sub>3</sub><sup>&minus;</sup>. Identify the Bronsted-Lowry acid and the Bronsted-Lowry base, giving a reason for each. <b>(2)</b><br>
+        <b>(ii)</b> Write the equation for the ionization of <b>(a)</b> KOH and <b>(b)</b> NH<sub>4</sub>OH in water, with charges and the correct arrow. Which of the two is the weak base? <b>(2)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">5.</td>
+      <td class="qtext">
+        Write a <b>balanced</b> chemical equation for each of these neutralization reactions:<br>
+        <span class="sub"><b>(i)</b> ammonium hydroxide + nitric acid &rarr; ammonium nitrate + water <b>(2)</b></span><br>
+        <span class="sub"><b>(ii)</b> sulphuric acid + magnesium hydroxide &rarr; magnesium sulphate + water <b>(2)</b></span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">6.</td>
+      <td class="qtext">
+        Using Table 10.1 of your book, compare an <b>acid</b> and a <b>base</b> under each heading:<br>
+        <span class="sub"><b>(i)</b> taste &nbsp;&nbsp; <b>(ii)</b> effect on blue litmus &nbsp;&nbsp; <b>(iii)</b> effect on red litmus &nbsp;&nbsp; <b>(iv)</b> effect on skin &nbsp;&nbsp;<b>(4)</b></span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">7.</td>
+      <td class="qtext">
+        The bond energies are: H&ndash;H = 436 kJ/mol, I&ndash;I = 151 kJ/mol, H&ndash;I = 299 kJ/mol.<br>
+        Calculate &Delta;H for the reaction <b>2HI<sub>(g)</sub> &rarr; H<sub>2(g)</sub> + I<sub>2(g)</sub></b>, showing the formula you use, and state whether the reaction is exothermic or endothermic, with a reason. <b>(4)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+  </table>
+
+  <div class="section-bar-blue">SECTION C: LONG ANSWER QUESTIONS (2 &times; 8 = 16 MARKS)</div>
+  <div class="note">Dono sawal hal karein. Har sawal <b>8 marks</b> ka hai.</div>
+
+  <table class="qt">
+    <tr>
+      <td class="part">8.</td>
+      <td class="qtext">
+        <b>Proton donors and proton acceptors.</b><br>
+        <span class="sub"><b>(i)</b> Identify the Bronsted-Lowry acid and the Bronsted-Lowry base in each reaction, giving a reason for each: <b>(4)</b></span><br>
+        <span class="sub">&nbsp;&nbsp;&nbsp;&nbsp;<b>(a)</b> HCO<sub>3</sub><sup>&minus;</sup> + H<sub>2</sub>O &#8652; CO<sub>3</sub><sup>2&minus;</sup> + H<sub>3</sub>O<sup>+</sup></span><br>
+        <span class="sub">&nbsp;&nbsp;&nbsp;&nbsp;<b>(b)</b> HCl + HCO<sub>3</sub><sup>&minus;</sup> &#8652; H<sub>2</sub>CO<sub>3</sub> + Cl<sup>&minus;</sup></span><br>
+        <span class="sub"><b>(ii)</b> Using your answers to (a) and (b), explain why HCO<sub>3</sub><sup>&minus;</sup> can be described as <b>amphoteric</b>. <b>(2)</b></span><br>
+        <span class="sub"><b>(iii)</b> In HS<sup>&minus;</sup> + H<sub>2</sub>O &#8652; S<sup>2&minus;</sup> + H<sub>3</sub>O<sup>+</sup>, is water a proton donor or a proton acceptor? Give a reason. <b>(2)</b></span>
+      </td>
+      <td class="marks">8</td>
+    </tr>
+    <tr>
+      <td class="part">9.</td>
+      <td class="qtext">
+        <b>Zinc and hydrochloric acid.</b> Zinc reacts with dilute hydrochloric acid: &nbsp;Zn + 2HCl &rarr; ZnCl<sub>2</sub> + H<sub>2</sub><br>
+        A student uses <b>6.5 g of zinc</b>. (Zn = 65, H = 1, Cl = 35.5, N<sub>A</sub> = 6.02 &times; 10<sup>23</sup>)<br>
+        <span class="sub"><b>(i)</b> Calculate the number of moles of zinc used. <b>(1)</b></span><br>
+        <span class="sub"><b>(ii)</b> Calculate the number of moles, and the mass, of HCl needed to react with it completely. <b>(2)</b></span><br>
+        <span class="sub"><b>(iii)</b> Calculate the number of moles, and the mass, of hydrogen gas produced. <b>(2)</b></span><br>
+        <span class="sub"><b>(iv)</b> Calculate the number of hydrogen molecules produced. <b>(1)</b></span><br>
+        <span class="sub"><b>(v)</b> Calculate the mass of zinc chloride formed. <b>(1)</b></span><br>
+        <span class="sub"><b>(vi)</b> Write one concluding sentence that states the mass of hydrogen and of zinc chloride produced. <b>(1)</b></span>
+      </td>
+      <td class="marks">8</td>
+    </tr>
+  </table>
+
+  <div class="end-mark">END OF QUESTION PAPER</div>
+
+  <div class="footer">
+    <b>Chapters covered:</b> Chapter 10 Acids, Bases and Salts (MCQs 1 to 7, Questions 2 to 6 and 8) &nbsp;|&nbsp;
+    Revision: Chapter 8 Energetics (MCQ 8, Question 7), Chapter 6 Stoichiometry (MCQs 9 and 10, Question 9).
+  </div>
+
+  <div class="sig-row">
+    <div>Student&rsquo;s Name: ______________________</div>
+    <div>Date: ______________</div>
+    <div>Marks Obtained: ________ / 50</div>
+  </div>
+
+</div>
+</body>
+</html>

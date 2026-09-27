@@ -2,7 +2,7 @@
 
 Tracks which sub-topics have been tested in which exam, per [[exam-coverage-discipline]]. Built retroactively on 2026-07-22 while creating exam-16, by reading the full text of exam-01 through exam-06 (individual-chapter papers) and exam-12 through exam-16 (comprehensive Ch1-9 papers). Update this file whenever a new chemistry exam covering Ch1-9 is built. Updated 2026-08-22 for exam-20.
 
-Exam key: 01=Ch1-2, 02=Ch3-5, 03=Ch6, 04=Ch7, 05=Ch8, 06=Ch9, 07=Ch10, 08=Ch11, 09=Ch12, 10=Ch13, 11=Ch14 (07-11 are outside the current studied syllabus, Ch1-9 only — not tracked below), 12/13/14/15/16/17/18/19/20=Ch1-9 comprehensive papers (18 = 31-mark revision test, 19 = 43-mark revision test, 20 = 71-mark 60-MCQ revision test).
+Exam key: 01=Ch1-2, 02=Ch3-5, 03=Ch6, 04=Ch7, 05=Ch8, 06=Ch9, 07=Ch10, 08=Ch11, 09=Ch12, 10=Ch13, 11=Ch14 (**07-11 EXIST as complete 65-mark papers with answer keys and were NEVER sent or attempted**; they were built ahead of the syllabus and their sub-topics are not tabulated below, so grep their PDFs before writing any Ch 10 to Ch 14 question), 12/13/14/15/16/17/18/19/20=Ch1-9 comprehensive papers (18 = 31-mark revision test, 19 = 43-mark revision test, 20 = 71-mark 60-MCQ revision test).
 
 **Saturation warning:** Ch7 (Electrochemistry), Ch8 (Energetics), and Ch9 (Chemical Equilibrium) are short chapters (14, 7, and 6 pages respectively) that each already received a FULL dedicated 65-mark paper (exam-04, exam-05, exam-06) in addition to repeated reuse across exam-12 through exam-15. Their content pools are now close to exhausted — exam-16 deliberately gave Ch8 and Ch9 only light representation (1-2 questions each) rather than manufacture near-duplicate content. Exam-17 pushed this further: Ch9 received ZERO questions (no MCQ, no Section B/C — genuinely no fresh angle remained), and Ch8 was reduced to a single MCQ. Flag this to Atif: future comprehensive papers may need to accept heavier thematic recycling for these three chapters, or Atif may want to deprioritize them in favour of Ch1-6, or consider Ch9 fully retired from future comprehensive papers until new source material (e.g. a re-OCR or supplementary exercises) is found.
 
@@ -405,3 +405,168 @@ A six-part numerical chain on an unnamed dicarboxylic acid **Z**: 49.3% C / 6.8%
 **Zero-overlap check:** the builder extracted all 20 prior chemistry papers and grep-checked every stem, compound and numeric value, reporting zero hits. Independently re-verified on the finished PDF: all 30 MCQs present and numbered, no optional questions, and every keyed answer confirmed present among its four options.
 
 **Note on the key's letter sequence:** the pattern runs close to repeating blocks of four containing one of each letter (ABCD / BADC / ABDC / BACD / ABCD ...). Balance is correct, but future builds should shuffle more irregularly so the sequence cannot be pattern-guessed.
+
+---
+
+## Exam-22 (Ch1-9) — built 2026-09-14
+
+**Format specified by Atif: 10 MCQs.** Built in the school-mirror shape from `reference_paper_formats`: **10 MCQ x 1 + 6 short x 4 + 2 long x 8 = 50 marks, 2 h 15 m, no choices**. With only ten MCQs, Sections B and C carry 40 of the 50 marks, so this paper leans on written depth and on the 4-mark and 8-mark answer lengths her school actually uses.
+
+**Every chapter 1-9 is represented** (per the exam-21 reversal: never drop a chapter on saturation grounds).
+
+**The ten MCQs deliberately target her documented confusable pairs**, with the wrong twin always among the options:
+
+| # | Pair tested | Source of the pair |
+|---|---|---|
+| 1 | technology vs engineering vs science | Ch1 SLO 4 |
+| 2 | diamond (4 bonds, tetrahedral) vs graphite (3, layers) | Ch2 allotropes |
+| 3 | Bohr orbits vs quantum orbitals | her exam-21 Q9 miss |
+| 4 | NEUTRON emission -> isotope (inverse of exam-20 Q14, which asked about protons) | her exam-20 Q14 miss |
+| 5 | electron affinity vs ionization energy | her exam-21 Q13 miss |
+| 6 | margarine = nickel vs Haber = iron | her exam-21 Q14 miss |
+| 7 | giant covalent SiO2 vs simple molecular | her exam-21 Q19 miss |
+| 8 | subscript outside a bracket multiplies the ion | her exam-20 Q50 / exam-19 Q20 bracket slips |
+| 9 | oxidation = loss of hydrogen vs reduction | oxidizing/reducing pair |
+| 10 | CoCl2 anhydrous blue -> hydrated pink (vs CuSO4 white) | Ch9 SLO |
+
+Answer letters **B D A C A B D B C A** (3/3/2/2, no letter twice running), verified by script against the final option order, plus the no-duplicate text and numeric checks.
+
+**Section B (6 x 4):** (i) saturated/unsaturated definitions + Table 2.2 NH4Cl vs Ca(OH)2 temperature trends; (ii) relative atomic mass of **bromine** 79Br 50.5% / 81Br 49.5% = 79.99, p/n/e in 81Br (35/46/35), why isotopes share chemical properties; (iii) period and group of X (3s2, Period 3 Group 2) and Y (3s2 3p4, Period 3 Group 16), ion charges, formula XY (**directly re-tests her exam-20 group-vs-period confusion**); (iv) HCl dot-and-cross + polar covalent reasoning (first covalent dot-and-cross since NH3 on exam-20); (v) redox in **2NH3 + 3CuO -> 3Cu + N2 + 3H2O** (book Review Q6(e)): oxidation numbers Cu +2->0, N -3->0, oxidizing agent CuO, reducing agent NH3 (**re-tests the exam-20 agent inversion and the whole-molecule rule**); (vi) 2SO2 + O2 <-> 2SO3 in a sealed container: forward/reverse, why reverse rate is zero at the start, two features of equilibrium.
+
+**Section C (2 x 8):** (i) **N2 + O2 -> 2NO from bond energies** N≡N 945, O=O 498, N=O 630: ΔH = 1443 − 1260 = **+183 kJ/mol** (book lists +180.5), endothermic reasoning, full labelled pathway diagram with catalysed and uncatalysed Ea, and what a catalyst does and does not change (**re-tests her exam-21 Q27 misconception that a catalyst changes ΔH**). Deliberately avoids the school paper's H2 + Cl2 436/243/432 numbers. (ii) Hydrocarbon **P**: 1.8 g C + 0.3 g H in 2.1 g, Mr 42 -> **CH2 -> C3H6**; 8.4 g = 0.2 mol = 1.204 x 10^23 molecules; **2C3H6(g) + 9O2(g) -> 6CO2(g) + 6H2O(l)** with state symbols (the "answer every instruction" check, worth a separate mark); mass of one molecule 6.97 x 10^-23 g.
+
+Every numerical was recomputed independently by script before rendering. Overlap check run against the full text of exam-01 to exam-21: 79Br/81Br, 630 kJ N=O, the NH3 + CuO reaction and the 2.1 g hydrocarbon data had zero prior occurrences. Diamond's four bonds, SiO2 giant covalent, margarine = nickel, HCl polarity and forward/reverse rates HAVE appeared before; they were kept deliberately as confusable-pair re-tests, not as fresh coverage.
+
+**Exam-22 attempt (2026-09-14): 42/50 (84.0%, A).** MCQ 9/10 (lost Q6, margarine catalyst). Re-test outcomes: agents, catalyst-and-dH, Bohr/orbitals, electron affinity, giant covalent, neutron emission all FIXED; group-vs-period half fixed; catalyst-to-process list and state symbols NOT fixed. Next paper should re-set the full catalyst table (all four processes) and an s-block group-from-configuration item, and keep a separate mark for state symbols.
+
+---
+
+## Exam-23 (Ch10 at 70% + revision) — built 2026-09-20
+
+**First paper of the whole-book program** (see the `whole-book-program` memory). From here the papers run ahead of the teacher: **one not-yet-examined chapter carries 70% of the marks (35) and 30% (15) is weak-spot revision.** Same 50-mark school-mirror shape, no choices anywhere: 10 MCQ + 6 short x 4 + 2 long x 8, 2 h 15 m.
+
+~~**Chapter 10 Acids, Bases and Salts had never appeared in any paper.**~~ **THIS WAS WRONG, corrected 2026-09-20.** `chemistry/exams/exam-07-ch10/` already exists: a complete 65-mark Ch 10 paper built in the old format, **never sent and never attempted** (no `attempts/` dir), committed in the ee7c91e backlog. I trusted the tracker's header line saying exams 07-11 are "not tracked below" and never opened the PDFs. **Exam-23 substantially duplicates it** (Bronsted identification in HCl + H2O, strong-acid definition, ethanoic acid 5%, base-vs-alkali, Zn + HCl and Na2CO3 + HCl, NaOH/KOH + NH4Cl, properties of acids and bases, and the same acid-rain over-reach). **No harm to Seemab, because she has never seen exam-07.** **Exams 08-ch11, 09-ch12, 10-ch13 and 11-ch14 also exist**, all 65-mark with OR choices, none attempted. **Before building any further chemistry paper in this program, extract and grep those five PDFs.**
+
+| Section | Chapter 10 (new) | Revision | Total |
+|---|---|---|---|
+| A MCQs | 7 (Q1-Q7) | 3 (Q8, Q9, Q10) | 10 |
+| B Short | 20 (Q2-Q6) | 4 (Q7) | 24 |
+| C Long | 8 (Q8) | 8 (Q9) | 16 |
+| **Total** | **35 (70%)** | **15 (30%)** | **50** |
+
+**Chapter 10 coverage, all first time ever, each tied to a printed SLO:**
+
+| Item | SLO | Book |
+|---|---|---|
+| Water as the Bronsted acid in NH3 + H2O (MCQ 1) | Bronsted-Lowry acid = proton donor, base = proton acceptor | 10.1.2, p143 |
+| Cu(OH)2 is a base but not an alkali (MCQ 2, Short 5) | bases are oxides/hydroxides of metals; alkalis are water-soluble bases | Alkalis, p145 |
+| Strong acid = completely dissociates (MCQ 3, Short 3) | define strong acid / weak acid | 10.2.1, p144 |
+| CO2 from acid + metal carbonate (MCQ 4, Short 4, Long 8iii) | properties of acids: metals, bases, carbonates | 10.3, p145 |
+| NH3 from base + ammonium salt (MCQ 5, Short 6ii) | properties of bases: acids and ammonium salts | 10.4, p146 |
+| H+ in every acid solution (MCQ 6) | aqueous acids contain H+, alkalis contain OH- | 10.1.1, p141 |
+| Normal rain slightly acidic = dissolved CO2 (MCQ 7) | define acid rain | end of 10.3, p145 |
+| Ionization equations with single vs reversible arrow (Short 3) | formulate dissociation equations in aqueous solution | 10.1.1 / 10.2.1 |
+| Acid rain: definition, HNO3 + H2SO4, damage via acid properties (Long 8) | define acid rain; relate its effects to the properties of acids | 10.3-10.4, p145-146 |
+
+**Deliberately excluded:** amphoteric oxides (Al2O3, ZnO, p146) and the uses tables 10.2 / 10.3. Both are printed in the chapter but **no SLO in the Ch 10 list covers them**, so they fail the two-part test and stay off the paper until an SLO is found.
+
+**The 15-mark revision slice is aimed at her four open weaknesses**, not spread evenly:
+
+| Item | What it repairs |
+|---|---|
+| MCQ 8 nickel for margarine (options iron / platinum / palladium / nickel, all four from the same book list) | catalyst-to-process list, missed TWICE (exam-21 Haber, exam-22 margarine) |
+| MCQ 9 configuration 2, 8, 2 -> Group 2 Period 3 | the s-block "+10" slip on exam-22 that turned Group 2 into Group 8 |
+| Short 7, 0.2 mol NaOH, with the answer demanded as a full sentence | the missing-conclusion habit |
+| Long 9, energy profile with Ea labelled, catalysed curve and "dH does not change" | exam-22 lost marks for no Ea label and no catalysed curve |
+
+Plus **state symbols carry their own half marks in Short 4**, the instruction she has never yet followed, and paper instruction 6 warns her about it explicitly.
+
+**Answer letters c b a d a b c d a b** — a=3 (Q3, Q5, Q9), b=3 (Q2, Q6, Q10), c=2 (Q1, Q7), d=2 (Q4, Q8). No letter three times running.
+
+**Verification pass caught two real defects before the paper was finalised:**
+
+1. The first draft of MCQ 8 offered **vanadium(V) oxide** as a distractor and the key explained it as the Contact-process catalyst. Her book says otherwise: **Ch 4 p64 states "Platinum is used as catalyst in the contact process"**, while **Ch 9 p135 prints V2O5 over the arrow** for 2SO2 + O2 -> 2SO3. **Her textbook contradicts itself.** The option was replaced with palladium so that all four options come from the single Ch 4 p64 list. **Never set a "catalyst for the contact process" question from this book.**
+2. The first draft defined activation energy as "the minimum energy for a successful collision". Her book (8.5, p130) says "**the minimum amount of energy that, in addition to the average kinetic energy, particles must have in an effective collision**". The key now uses the book's wording and accepts equivalents.
+
+Also confirmed during verification: **Fig. 8.1 (p130) "Energy level diagram for exothermic reaction" in her own book carries every label Long 9 asks for** (transition state, activation energy, reactants, enthalpy change dH < 0, products, reaction progress), and Fig. 8.3 (p131) is the catalysed version. The question is modelled directly on those two figures.
+
+**Prep sheet:** `seemab-reports/revision/chem-ch10-quick-prep-2026-09-20.pdf`, 2 pages of Roman Urdu covering the whole chapter plus a six-row trap table, issued with the paper.
+
+**Sources kept** at `chemistry/exam-template/exam-23-source/` (exam, answers, prep HTML). This is a change from the old chemistry practice of keeping PDFs only: with 22 papers due by 15 October, same-day edits are likely and rebuilding from scratch is wasteful. Matches what Islamiat and Quran already do.
+
+### Exam-23 defect found after sending (2026-09-20): acid rain is over-weighted
+
+Atif queried where acid rain came from. It is properly in Ch 10 (two SLOs, and three sentences at the end of 10.3, book p145-146), so the paper is in syllabus. **But the chapter does not teach it to the depth the SLOs claim:** no heading, no section number, **nothing in the Key Points box, nothing in the Review Questions**, and the body text defers the consequences to Ch 11 in the sentence that introduces them.
+
+Q8 therefore puts **8 marks on three sentences**. Parts (i), (ii) and (iii) each map to their own sentence or to the printed CaCO3 + H2SO4 equation and are sound. **Part (iv) is the defect:** it asks for "two further kinds of damage" where the book gives one compound sentence, and the key splits that sentence in two and adds a restatement as a third option.
+
+**Binding marking rule, set BEFORE her attempt came back:** on Q8(iv) any two sensible damages tied to a property of acids earn full marks, and any mark lost only because the book is thin goes to her, per the question-defect-favours-student rule. Not reissued as a Version B because the paper was already with her and the content is genuinely in syllabus.
+
+**This produced the third leg of the syllabus test** (book content + stated SLO + **enough printed text to carry the marks**). See the `mcq-book-citation` memory. Apply it to every remaining paper; thin chapters ahead are Chemistry 14 (5 pages), 9 (6), 8 (7), Biology 10 (11) and Chemistry 12 (11).
+
+### Exam-23 VERSION B (2026-09-20): acid rain removed from Section C
+
+Atif: *"Acid rain is available in the chapter but not for the long question"*, then *"why you are getting from Chapter 11?"*
+
+The point is precise and correct. No Chapter 11 text was quoted; every word of the old Q8 is printed in Chapter 10. But **Q8(iv) demanded the consequences of acid rain, and Chapter 10 gives one sentence on damage before deferring: "You can learn about the consequences of acid rain in the chapter on environmental chemistry."** An 8-mark question on it can only be answered to depth from Ch 11. The words were Ch 10; the *demand* was Ch 11.
+
+**Version B replaces Q8** with **Oxides, hydroxides and neutralization** (8 marks), which section 10.5 teaches properly with five worked equations printed in the book:
+- (i) 4Na + O2 -> 2Na2O and 2Mg + O2 -> 2MgO, with the oxides named. (3)
+- (ii) Na2O, CaO and MgO with water, with the hydroxides named. (3)
+- (iii) General word equation for neutralization, one balanced example, and what is always formed. (2)
+
+**Acid rain now survives only as MCQ 7** (normal rain slightly acidic from dissolved CO2), which is a single printed sentence carrying a single mark. That is the right weight for it.
+
+The 35/15 split is unchanged. Version A, which Seemab already holds, is kept as `exam-versionA-SENT-2026-09-20.pdf` with its key, so her attempt can still be marked if she has already started it.
+
+**Independently confirmed by session class-9-da**, which re-read the chapter and reported that acid rain has no heading, no section number, nothing in the nine-bullet Key Points box, and nothing in the Review Questions. It added a refinement now adopted: **a topic the book itself defers to another chapter is capped at an MCQ or one part of a short question, even if it does appear in a Key Points bullet.**
+
+---
+
+## Exam-24 (Ch 11 at 70%) — PRE-BUILD depth map, 2026-09-21
+
+Written while the exam-23 attempt was being marked. **The 15-mark revision slice is NOT chosen yet**: it waits for the exam-23 result, since her new errors decide it. The 35-mark Ch 11 portion can be planned now.
+
+**Start from `exam-08-ch11/`** (65-mark draft with OR choices, never sent or attempted). Verified its doubtful-looking items against the book: pH 5.6 (p157, and a Key Points entry), N95 masks / air quality index / CO detectors (11.9, p160), flue gas desulphurization (11.7.2, p159), rhodium in catalytic converters (11.6, p158), carboxyhaemoglobin (11.2.4, p153), belching and flatulence (11.2.5, p153). **All are genuinely in her book.** The question is only how much weight each can carry.
+
+**Third-leg depth test, Chapter 11 (book p150-162):**
+
+| Topic | Section | Depth in the book | Can carry |
+|---|---|---|---|
+| **Acid rain: formation and effects** | 11.5, p156-157 | Own section; 3 formation equations (2SO2 + O2 -> 2SO3, SO3 + H2O -> H2SO4, 4NO2 + O2 + 2H2O -> 4HNO3); definition pH < 5.6; effects on metals (Fe + H2SO4), marble (CaCO3 with H2SO4 and 2HNO3), fish, trees; Figs 11.4-11.6; Concept Assessment 11.6; Key Points; Review long Q4 | **Long question (8)** |
+| Greenhouse effect / global warming | 11.4, p155-156 | Own section, Fig 11.3, four listed consequences, Concept Assessment 11.5, Key Points, Review Qs | **Long or short** |
+| The six air pollutants | 11.2 + Table 11.1, p152-155 | Six subsections + a four-column table of properties, sources, effects | **Short (4)**, or long |
+| Sources of pollution + equations | 11.3, p154 | Natural vs human; C + O2(limited) -> CO, S + O2 -> SO2, N2 + O2 -> 2NO, 2NO + O2 -> 2NO2 | **Short (4)** |
+| Catalytic converters | 11.6, p158 | One paragraph + one equation (Pt/Pd/Rh) + Review short Q | **Short (4) max** |
+| Composition of air | 11.1, p151 | Pie chart, 78% N2 / 21% O2, Key Points, Review MCQ | **MCQ** |
+| Photosynthesis | 11.8, p159-160 | Short paragraph + 6CO2 + 6H2O -> C6H12O6 + 6O2 | **MCQ or 1-2 mark part** |
+| Strategies (climate, acid rain) | 11.7, p158-159 | Bulleted lists, one line each | **MCQ or short part** |
+| Masks / AQI / CO detector | 11.9, p160 | Three short paragraphs; **no Key Points, no Review Qs** | **MCQ only** |
+| Flue gas desulphurization | 11.7.2, p159 | **One sentence** | **MCQ only** |
+| Risk factors | 11.10, p160 | Five one-line items; no Key Points, no Review Qs | **MCQ only** |
+
+**Do NOT reuse from exam-23** (either version she may have sat): the acid rain definition as a bare recall, normal rain slightly acidic from dissolved CO2, "name the two acids", CaCO3 + H2SO4, and the acids-corrode-metals framing. Take acid rain through the **formation sequence**, the **pH 5.6 threshold**, **CaCO3 + 2HNO3**, **Fe + H2SO4**, and **fish and trees**, which exam-23 never touched.
+
+**Do NOT reuse exam-08's defects:** its 2(xi) (personal protective measures, 3 marks) over-weights 11.9, and its MCQ 8 mixes iron and nickel into the catalytic converter options, which is fine as a distractor but its answer must be the book's "platinum, palladium and rhodium".
+
+## Exam-24 (Ch 11 at 70% + revision Ch 10, Ch 8) — BUILT AND SENT 2026-09-21
+
+Atif: *"Lets send a new exam to Seemab that includes chapter 10"*, read as the next program paper with Chapter 10 carrying the revision slice. Full detail in `exam-24-ch11-rev8-10/SEND-NOTE.md`; sources in `exam-template/exam-24-source/`.
+
+**Chapter 11 items, all first time on a SEEN paper** (exam-08-ch11 exists but was never sent): O₂ 21% (p151); SO₂ and haze (p152); particulates and lungs (p153); half of pollution from vehicles (p154); Pt/Pd/Rh converters (p158); methane from rice fields (p153); photosynthesis removes CO₂ (p158-160); pollutant definition and natural/human sources (p152, p154); four formation equations (p154); carbon monoxide and carboxyhaemoglobin (p153); greenhouse mechanism and consequences (p155-156); ground-level ozone as secondary pollutant with NO₂ → NO + O and O + O₂ → O₃ (p153-154); acid rain pH 5.6, the three formation equations, Fe + H₂SO₄ and CaCO₃ + 2HNO₃, fish and trees (p156-157).
+
+**Deliberately NOT set:** ozone's health effects (in the text but NOT in the SLO list); masks, AQI, CO detectors and flue gas desulphurization (thin, one paragraph or one sentence each); the catalytic converter equation (the book's "2NO + 2HC/CO → N₂ + 2CO₂ + H₂O" is garbled, and the SLO version "CO + 2NO → 2CO + N₂" is itself wrong).
+
+**Revision items, all re-tests of her exam-23 misses:** HNO₃ ionization with the reversed form as the trap; H₂S + NH₃ acid (Concept Assessment 10.1, p144) with the product NH₄⁺ as the trap; 2Mg + O₂ with the single-O forms as traps; Bronsted pairs in CH₃COOH + H₂O and H₂O + NH₃ (water base then acid); HCl and H₂SO₄ ionization; four names; the exothermic catalyst diagram with ΔH.
+
+**Book defects found during this build:** Ch 11 p154 prints C + O₂ → CO unbalanced (script-checked). Ch 8 has NO endothermic energy diagram (Figs 8.1 and 8.3 are both exothermic), so an endothermic-profile question fails the depth test. **But the book ASKS for one three times without ever showing it** (confirmed by session class-9-da): the SLO "Draw, label and interpret reaction pathway diagram for exothermic and endothermic reaction", Review Question 5 on p133, and the Project box. It is "asked but not taught", and the school's papers lift from the review questions, so she may meet it at school having never seen a model. Our papers: never at long-question weight; the book's own Review Q5 wording at short weight is defensible only if marked generously. The Ch 11 SLO catalytic-converter equation "CO + 2NO → 2CO + N₂" does not balance and would be wrong chemistry: never set it.
+
+**Checks run:** all 13 key equations balance by script except the book's C + O₂ → CO, which the key corrects; answer letters 3/3/2/2 with no triple run; no duplicate options; no "OR" in the paper; no em dashes in any of the three files; uniqueness grepped against every paper she has seen (all hits were in unrelated contexts: formula mass, oxidation states, redox).
+
+## Exam-24 ON HOLD, exam-25 (second Ch 10 paper) SENT — 2026-09-21
+
+**Exam-24 (Ch 11) was sent by mistake.** Atif's "a new exam that includes chapter 10" meant a Chapter 10 paper; I read it as the next program chapter. He: *"send seemab chapter 10 not 11 yet"*. She was told to put Paper 24 aside. Its Ch 11 items are therefore seen by her but unattempted; still grep them before any future Ch 11 paper.
+
+**Exam-25** (`exam-25-ch10-rev6-8/`, see SEND-NOTE.md): Chapter 10 at 35 marks, built mainly from the book's Review Questions p147-148: CO2 not an Arrhenius acid; NH3 a Bronsted base; milk of magnesia gives MgCl2; ammonia accepts a proton; Al(OH)3 a weak base (p144); Table 10.1 shared property (conductivity) and comparison (taste, both litmus, skin); strong base completely dissociates (Key Points); Arrhenius acid definition, HCl strong, ammonia weak; Arrhenius limitations (p142); NH3 + HNO3 and HNO3 + H2O Bronsted pairs; KOH single arrow and NH4OH reversible (p142); NH4OH + HNO3 and H2SO4 + Mg(OH)2 (2H2O); HCO3− amphoteric via Review Q7(ii) and (iv); water as proton acceptor with HS− (Review Q7(v)). Revision: ΔH +131.4 → endothermic (Ch 8 p129); 0.75 mol CO2 = 33 g; 54 g water = 3 mol; 2HI → H2 + I2 = +11 kJ/mol, the deliberate reverse of Example 8.1; Zn + 2HCl mole chain on 6.5 g (0.1 mol, 7.3 g HCl, 0.2 g H2, 6.02 × 10^22, 13.6 g ZnCl2).
+
+**Chapter 10 pool is now largely spent** across exam-23 (both versions) and exam-25. Untouched and SLO-backed: little beyond acid rain (thin) and the H2SO4 + H2O Concept Assessment pair. A third Ch 10 paper would have to repeat concepts in new reactions.
