@@ -356,3 +356,84 @@ Section C: 3(i) Ch6 SLO 7+8 — **draw a well-labelled nucleotide** (three compo
 **Option audit:** no two options within any single question are textually or numerically identical. Answer letters balanced at exactly **5 A / 5 B / 5 C / 5 D** (sequence: B D A C A D B C A D C A D B A C B D C B — no cyclic 4-block repeat), verified by script against the final option ordering in the rendered PDF.
 
 **Post-build fix (2026-09-11, same day):** Q2 was rebuilt after review caught that it was constructed backwards as an error re-test. Her documented exam-15 mistake is "chose theory where the definition given was of a law" — the original Q2 gave the THEORY definition and made "scientific theory" the correct answer, so her known bias (always answering "theory") would have scored it correct by accident, making it useless as a re-test. Fixed by flipping the stem to give the LAW definition instead ("a statement that describes an observable occurrence in nature which appears to always be true, but does not explain why, is called a"), with "scientific law" now the correct answer (kept at option D to preserve the 5A/5B/5C/5D balance and the exact answer sequence) and "scientific theory" moved into option C as the wrong twin she must actively resist. Same SLO 9 citation retained.
+
+## Exam-17 (this build), 2026-09-17
+
+**First Biology paper after Chapter 7 was completed in class.** Atif confirmed on 2026-09-17 that all of Ch 7 is now taught, so 7.7 Photosynthesis (SLO 7) and 7.8 Respiration (SLO 8) are IN. The whole paper is built on that new content. Shape at Atif's request: **38 marks** (10 MCQ + 3 short x 4 + 2 long x 8), 1 hour 45 minutes, no OR choices. Files: `biology/exams/exam-17-ch1-7/exam.pdf` (2 pp) + `answers.pdf` (2 pp).
+
+| Q | Section | SLO / source |
+|---|---|---|
+| 1 | 7.7.1.1 | SLO 7, photolysis makes up the electron loss of photosystem II chlorophyll |
+| 2 | 7.7.1 | SLO 7, light independent reactions "do not use light directly" |
+| 3 | 7.7.1.1 | SLO 7, oxygen leaves the leaf through stomata |
+| 4 | Exercise MCQ 20 | SLO 7, grass under a carton turns yellow: lack of light |
+| 5 | 7.8.3 | SLO 8, acetyl CoA formation releases 2 CO2 + 2 NADH |
+| 6 | 7.8.3 ETC | SLO 8, each FADH2 gives 2 ATP |
+| 7 | 7.8.1 importance | SLO 8, earliest organisms: early earth had no free oxygen |
+| 8 | 7.8.1 importance | SLO 8, yeast fermentation used in wine making and baking |
+| 9 | 7.8.3 ATP usage | SLO 6/8, brain uses 25% of ATP |
+| 10 | 7.8.3 ETC | SLO 8, oxygen + hydrogen ions form water |
+
+Answer letters C A D C B A B D A B (3 A, 3 B, 2 C, 2 D), checked by script.
+
+Section B: 2(i) limiting factors as a pond weed scenario (light intensity, CO2 only up to a point, 25°C optimum, above optimum lowers rate); 2(ii) lactic acid fermentation as a 400 m race scenario (why oxygen runs short, pyruvic acid to lactic acid, Fig 7.12 labels 2 ATP glycolysis and 36 ATP ETC); 2(iii) Calvin cycle by carbon count (RuBP 5C, 6C intermediate, two 3PGA, NADPH and ATP, G3P uses).
+
+Section C: 3(i) **draw and label Activity 7.3** (Hydrilla, NaHCO3, funnel, test tube, oxygen) with reasons for each step and the match stick test (first time this activity appears in any paper; satisfies the diagram requirement); 3(ii) photosynthesis and aerobic respiration are interlinked: both equations, two links, four differences in a table (book Exercise II Q14 and III Q9).
+
+**Uniqueness vs exam-02-ch7 (April, the only other paper with 7.7 and 7.8):** exam-02 asked photolysis gives oxygen, Calvin cycle site, glycolysis net ATP, yeast products, final electron acceptor, the photosynthesis equation, limiting factors list, light dependent reactions, alcoholic vs lactic comparison, importance of anaerobic respiration (as an OR), and the four stages of aerobic respiration. None of those stems was reused; every exam-17 stem was grepped against all 16 prior Biology papers. Residual topical overlap, disclosed: the Calvin cycle steps (2(iii)) and limiting factors (2(i)) were in exam-02 as parts of OR alternatives; here they are asked through carbon counting and a practical scenario.
+
+Not used, so still fresh for later papers: the ETC NADH gives 3 ATP, Krebs cycle products and site, glycolysis site, alcoholic fermentation equation, lactic acid from milk to yogurt bacteria, photosystem I reducing NADP+ to NADPH, Fig 7.9 overview labelling, 3PGA/G3P naming as MCQs, uses of ATP in the body list.
+
+**Deep check (background, against the book page images):** all 10 MCQs re-solved blind and matched the key. Fixes applied: the book never states 36 ATP as a per-glucose total (Fig 7.12 labels 2 ATP under glycolysis and 36 ATP under the ETC, and the Krebs equation adds 2 more), so 2(ii)(d) now asks for the figure's labels and the MCQ 6 explanation dropped the total. **Do not set "36 ATP total" as a fact in future papers.** Also: 2(i) stem no longer gives 25°C away; 3(ii) table site row now says chloroplasts (in plants) and Krebs matrix / ETC inner membrane (book does not place acetyl CoA formation); 7.1 is p.94; the match stick must burn MORE BRIGHTLY for the mark.
+
+## Exam-17 Version B, 2026-09-17 (replaces Version 1)
+
+Seemab's voice note on the afternoon of 17 Sep, echoed by Atif: Version 1's short questions were "weird and strange" and "more activities instead of actual questions", and she wanted all studied chapters included. Version 1 is kept in `exam-17-ch1-7/superseded/`. Rule saved: textbook exercise style, at most one activity, cover every taught chapter.
+
+Version B (38 marks, same shape), Ch 1 to 7 with about half on 7.7 and 7.8:
+- MCQs: Ch1 book MCQ 7 (observation) and MCQ 8 (data); Ch2 book MCQ 17 (same class, same phylum); Ch3 thylakoids of adjacent grana fuse to form intergrana; Ch6 book MCQ 10 (vitamin D is a lipid); Ch7 brain 25% ATP, light independent reactions do not depend directly on light, FADH2 gives 2 ATP, yeast used in wine making and baking, oxygen + H+ gives water. Letters C D A B B A A C D B.
+- 2(i) write the equations of photosynthesis, alcoholic fermentation and aerobic respiration, and the muscle product (Ch7 Ex II Q11/Q12); 2(ii) unripe/ripe oranges: chloroplast, chromoplast, chromoplasts in petals, seed dispersal (Ch3 Ex II Q10); 2(iii) four differences between aerobic and anaerobic respiration.
+- 3(i) describe and sketch the light dependent reactions (Ch7 Ex III Q6); 3(ii) "Meiosis II is identical to mitosis. Explain." (Ch4 Ex III Q3).
+
+Deep check: 10/10 MCQs re-solved blind and matched. Fixed: the book never says chloroplasts decrease or chromoplasts increase on ripening (part replaced); the book's chromoplast colour list has no orange; intergrana are "fused thylakoids", not "connecting" structures; the biological method starts with recognising the problem; anaerobic respiration is only "comparatively less energy" (no 2 ATP claim); meiosis is section 4.5 (p.53), not 4.4; also accept the Ch6 p.83 photosynthesis equation (6H2O form). Disclosed overlaps: equations, aerobic vs anaerobic comparison and the light reactions are close to April's exam-02; the meiosis II phases were asked in an earlier comprehensive paper (3(ii)(a) reworded). These are accepted as re-tests because the book-style rule takes priority over novelty.
+
+## Exam-18 (this build), 2026-09-24
+
+**Atif's brief:** a Biology paper on **Chapters 1 to 7 only**, her already-learned curriculum, with the hard constraint that **nothing from Chapter 8, 9 or 10 may appear, not even as a distractor**. Shape: **50 marks** school-mirror, no optional questions (10 MCQ x 1 + 6 short x 4 + 2 long x 8), 2 hours 15 minutes. Files: `biology/exams/exam-18-ch1-7/exam.pdf` (3 pp) + `answers.pdf` (6 pp) + `SEND-NOTE.md`; sources at `biology/exam-template/exam-18-source/`. NOT SENT.
+
+**Mark spread by chapter:** Ch1 5, Ch2 5, Ch3 5, Ch4 9, Ch5 6, Ch6 6, Ch7 14. Chapter 7 is weighted heaviest because it is the most recently completed chapter and 7.7 / 7.8 are still thinly examined.
+
+| Q | Chapter | Source and SLO | Tag |
+|---|---|---|---|
+| MCQ 1 | Ch1 | Inserting the human insulin gene into bacteria is biotechnology. Section 1.3 / Table 1.2, Exercise MCQ 6 (p17). SLO 5, 6 | NEW |
+| MCQ 2 | Ch2 | Colonial organization is unique to Protista. Section 2.4, Exercise MCQ 12 (p29). SLO 4 | NEW |
+| MCQ 3 | Ch3 | Ribosomes are assembled in the nucleus and work in the cytoplasm. Ribosomes p34, Summary point 3 p43, Exercise MCQ 11 (p46). SLO 3 | NEW |
+| MCQ 4 | Ch4 | The chromosome number halves because homologous chromosomes separate in meiosis I. Section 4.5 p55, Exercise MCQ 10 (p61). SLO 2, 3 | RE-TEST (exam-17 3(ii)(c)) |
+| MCQ 5 | Ch5 | Table 5.2 homeostatic role "removing pathogens, fighting infections and helping in healing" is the immune system. p69 to p70. SLO 4, 6 | RE-TEST (exam-16 Q12) |
+| MCQ 6 | Ch5 | Neuron is a cell, the other three are organs. Section 5.1, Exercise MCQ 14 (p76). SLO 2 | NEW |
+| MCQ 7 | Ch6 | Sucrose is the transport sugar. Section 6.6.2, Exercise MCQ 9 (p92). SLO 6 | NEW |
+| MCQ 8 | Ch6 | All RNA nucleotides differ from DNA nucleotides in the pentose sugar. Section 6.9 p89, Exercise MCQ 7 (p92). SLO 9 | NEW |
+| MCQ 9 | Ch7 | The wavy line bonds of ATP are high energy bonds. Section 7.6.2 and Fig. 7.8, p101. SLO 6 | RE-TEST (exam-16 Q17) |
+| MCQ 10 | Ch7 | Products of the light reactions are ATP, NADPH and oxygen. Sections 7.7.1 and 7.7.1.1, Exercise MCQ 14 (p110). SLO 7 | NEW |
+| 2 (4) | Ch1 | Spread of malaria: the hypothesis, Ross's sparrow experiment, and the Italian biologist's test on a human. Section 1.8 and Fig. 1.5, p15 to p16. SLO 8 | NEW stems, old topic |
+| 3 (4) | Ch2 | Bacteria vs Protists, Fungi vs Plants. Section 2.4, Exercise Section II Q5(a) and Q5(b), p29. SLO 3, 4 | NEW |
+| 4 (4) | Ch3 | Roles of a cell rich in SER; organelles abundant in a salivary gland cell. p34 to p36, Exercise Section III Q3 and Section II Q11, p46 to p47. SLO 3, 7 | NEW |
+| 5 (4) | Ch5 | Xylem vs phloem; dermal vs ground tissue. Sections 5.3 and 5.3.2, p70 and p72, Exercise Section II Q1(c) and Q1(f), p76. SLO 7, 8 | NEW (xylem and phloem had only one MCQ before) |
+| 6 (4) | Ch6 | "Hydrates of carbon" 1:2:1 and Cx(H2O)y; composition of chromatin and nucleosomes. Sections 6.5.1 and 6.8 with Fig. 6.14, p84 to p89. SLO 5, 6, 8 | NEW |
+| 7 (4) | Ch7 | Site and products of glycolysis; the four stages of aerobic respiration and where oxygen is used. Sections 7.8.1 and 7.8.3, Key Points 13 and 16, p105 to p108. SLO 8 | topic last in exam-02, stems rewritten |
+| 8 (8) | Ch7 | **Label the given figure:** Fig. 7.9 overview of photosynthesis with H2O, CO2, O2 and sugar blanked as A to D; then the balanced equation with Light and Chlorophyll; then ATP and NADPH as the link to the Calvin cycle. p102 to p104. SLO 7 | NEW figure; part (ii) RE-TEST (exam-17 2(i)(a)) |
+| 9 (8) | Ch4 | Four differences between meiosis I and meiosis II; a 2n = 18 cell through both divisions; why the daughter cells are not identical. Section 4.5 and 4.4.1, p53 to p58, Exercise Section II Q6 (p62). SLO 2, 3, 4 | NEW; also RE-TEST (exam-17 3(ii)(c)) |
+
+**Chapter 8, 9 and 10 exclusion.** This was the hard constraint. Every stem, every option and every line of the answer key was checked by text grep on the rendered PDFs. The only occurrences of the strings "Chapter 8", "Chapter 9" and "Chapter 10" anywhere are the two compliance statements in the answer key that say nothing comes from them. The exam PDF has zero hits for evolution, fossils, transpiration, pollination and plant reproduction.
+
+**Verification done on this build.**
+- Every chapter page was rendered at 250 dpi and the relevant pages were read as images, because the Biology scans have no usable text layer. Book pages actually read: Ch1 p6 to p7 and p15 to p19, Ch2 p24 and p29 to p30, Ch3 p34 and p43 and p46 to p47, Ch4 p61 to p63, Ch5 p69 to p70 and p72 to p76, Ch6 p89 and p91 to p92, Ch7 p96 to p111.
+- All 16 prior Biology papers and their keys were extracted with `pdftotext -layout` and every candidate stem was grepped against them. **Four drafted questions were dropped as verbatim or near-verbatim repeats:** "explain interdisciplinary research collaboration" (exam-01 and exam-10), "intracellular and extracellular enzymes, giving one example of each" (exam-10), the three lipid tests, spot, water and emulsion (exam-09 and exam-10), and the Quranic references plus Muslim scientists (exam-09 2(i)). The Ch4 chromosome halving MCQ is a deliberate re-test of an exam-03 item with a reworded stem and reordered options.
+- **Two candidate questions were rejected for other reasons and are recorded so nobody retries them.** (a) The Chapter 4 Exercise Section III Q2 figure, the cell in mid division, was dropped: the printed chromosomes can be read either as anaphase I or as an anaphase with single chromatids, and a disputed "identify the stage" mark is exactly the defect class that voided Physics exam-13. (b) The Chapter 3 Exercise Section II Q5 nucleus figure was dropped because **Seemab has already written the answers on that page of her own book**, so the crop cannot be used.
+- **Scan gap noticed:** the Chapter 1 PDF jumps from book page 17 to book page 19, so **book page 18, which holds Exercise Section II questions 1 to 5, is missing from the scan.** Nothing on this paper depends on it, but a future Ch1 build should not assume those items are available.
+- Option audit by script against the final rendered option order: 10 questions, no two options identical as text or as a number, 0 problems. Answer letters **b, c, a, d, b, a, d, c, a, b** = 3 A, 3 B, 2 C, 2 D, with no letter twice in a row.
+- Both PDFs: **zero em dash characters, zero en dashes, zero space-hyphen-space separators, zero "OR" alternatives.** Every page of both PDFs was rendered to PNG and inspected for layout defects; the MCQ table and both long questions now sit whole on their pages.
+
+**Consumed by exam-18, so do not pick these again:** Ch1 the spread of malaria walked through as a method (hypothesis, Ross's sparrows, the Italian biologist) and biotechnology as a career MCQ. Ch2 colonial organization in Protista, Bacteria vs Protists, Fungi vs Plants. Ch3 the ribosome statement MCQ, the SER rich cell, the salivary gland cell. Ch4 the chromosome halving MCQ, meiosis I vs meiosis II differences, the 2n = 18 walk-through. Ch5 the immune vs lymphatic Table 5.2 pair, the neuron as a different level of organization, xylem vs phloem, dermal vs ground tissue. Ch6 sucrose as the transport sugar, the pentose sugar difference between RNA and DNA nucleotides, hydrates of carbon and the general formula, chromatin and nucleosomes. Ch7 the ATP wavy line bonds, the products of the light reactions, the site and products of glycolysis, the four stages of aerobic respiration, and Fig. 7.9 as a labelling figure.
+
+**Still fresh for the next Biology paper:** Ch7 the ETC giving 3 ATP per NADH, the Krebs cycle products and site, the alcoholic fermentation equation, lactic acid and the yogurt bacteria, photosystem I reducing NADP+ to NADPH, 3PGA and G3P naming, Fig. 7.11 (the Calvin cycle) as a describe-and-sketch, the uses of ATP in the body. Ch3 the fluid versus mosaic components of the membrane, the modifications of epidermal cells for gas exchange and for absorption. Ch4 the significance of crossing over, the events of G1, the spindle apparatus in detail. Ch2 the characteristics of domain Archaea, why a mule is not a species. Ch1 data analysis and reading a graph, the careers table. Ch6 the ring versus open chain form of monosaccharides, waxes, the fat soluble vitamins.
