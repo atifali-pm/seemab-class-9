@@ -118,3 +118,28 @@ The earlier version of this section recommended translation and the untouched su
 - **Confirm scope before widening.** Taught surahs are still inferred from the school paper. A photo of her physical book's فہرست would settle it (she black-stars taught lessons in Islamiat). Never pick a surah *because* nothing has tested it.
 - **Rotate within the six confirmed surahs** and avoid re-setting what exam-01 and the school paper already used, especially the Najashi/Jafar episode, the meaning of نمل, Luqman's naming and advice, the other name of السجدة, and the Zakariya dua.
 - **Check dua questions.** Exam-01 B(a)(i) asks for a dua's Arabic with its meaning. If the class does not write dua translations either, stop setting that type.
+
+## Practice exam-02 (built 2026-09-17, not sent)
+
+`exams/exam-02-taha-luqman-naml-sajdah-maryam-anbiya-hajj/`: **38 marks, 1 hour 45 minutes, no OR anywhere** (10 MCQ + 3 x 4 short + 2 x 8 detailed). Scope is the teacher's list of 16 Sep 2026: Luqman, **Taha (first time tested)**, An-Naml, As-Sajdah, Maryam, Al-Anbiya, Al-Hajj. No translation question. Sources: `exam-template/exam-02-source/build.py`.
+
+**Section A (MCQs), answer string B D A C A B D A C B**
+
+| Q | Surah | Topic | Book p |
+|---|---|---|---|
+| 1 | طٰهٰ | Umar (RA) accepted Islam on hearing it | 18 |
+| 2 | مریم | first hijrat to Habsha in the 5th year of nabuwwat | 4 |
+| 3 | طٰهٰ | named after the حروفِ مقطعات طٰہٰ | 18 |
+| 4 | لقمٰن | Luqman famous among Arabs as حکیم و دانا | 137 |
+| 5 | الحج | hajj began in the time of Ibrahim (AS) | 48 |
+| 6 | النمل | Sulaiman (AS) son of Dawood (AS) | 88 |
+| 7 | طٰهٰ | deal with deniers of truth with صبر و تحمل | 18-19 |
+| 8 | الانبیاء | Prophet (SAW) sent as mercy for all the worlds | 34 |
+| 9 | السجدة | the patient and firm believers made رہنما (ayah 24) | 146 |
+| 10 | الحج | منفرد: part Madani, part Makki | 48 |
+
+**Section B (Q.2, 3 x 4):** (i) طٰهٰ, three stages of Musa (AS)'s life + خلاصہ (p18); (ii) النمل, any four علمی و عملی نکات (p89); (iii) السجدة, two فضیلتیں + خلاصہ (p145).
+
+**Section C (2 x 8):** Q.3 طٰهٰ, Musa (AS) and Firaun as told in the surah: sent to Firaun, contest with the magicians, Firaun drowned (p20-25); Q.4 لقمٰن, Luqman's advice to his son (p137, ayat 13-19 on p140).
+
+**Still untested inside the seven surahs:** the Queen of Saba episode (النمل, book p91-94), Taha's dua box and Ashura hadith (p31), Maryam's hijrat details beyond the year, Al-Hajj's qurbani passage (p53-54) as a question of its own.

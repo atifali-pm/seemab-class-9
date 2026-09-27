@@ -6,7 +6,9 @@ Read page by page on 2026-09-10 and 2026-09-11 from `islamiat/chapters/islamiat-
 - Bab 5, the صحابیات block (p139 to 140) and Bab 1 p3: every answer checked against the lesson pages.
 - Everything else: the answer is the one the lesson states, but it was not re-read item by item. Glance at the lesson page before reusing.
 
-**Legend:** ✅ taught | ⛔ NOT taught (see the syllabus section in `islamiat/exams/coverage-tracker.md`) | **USED** = already set in exam-02 Version B, so avoid repeating it | *VA* = only in the sent Version A.
+**Legend:** ✅ taught | ⛔ NOT taught (see the syllabus section in `islamiat/exams/coverage-tracker.md`) | **USED** = already set in exam-02 Version B, so avoid repeating it | **USED exam-03** = set in exam-03 (built 2026-09-17) | *VA* = only in the sent Version A.
+
+**Syllabus narrowed 2026-09-17** (teacher's latest list): Bab 1 hadith 1 to 15 only and Asma-ul-Husna "37"; Bab 3 only فتحِ مکہ، حنین، عام الوفود، بچپن و جوانی، ذوقِ عبادت، سخاوت و ایثار (تبوک، حجۃ الوداع، وصال، صلہ رحمی are now OUT). Items below tagged ✅ under the old star list may now be out; check `islamiat/exams/coverage-tracker.md` first.
 
 Answer letters are as printed in the book. Exam papers reorder the options to balance letters.
 
@@ -66,21 +68,43 @@ Answer letters are as printed in the book. Exam papers reorder the options to ba
 - (iv) عشا اور فجر باجماعت کا ثواب → **(الف) ایک مکمل رات کی عبادت کے برابر**
 - (v) باجماعت نماز سے صفت → **(ج) نظم و ضبط** | صلہ رحمی، سخاوت، کفایت شعاری
 
-**Not yet read:** روزہ (p34), زکوٰۃ (p37), حج و قربانی (p40).
+**p34, روزہ** (read 2026-09-17)
+- (i) قرآن کے مطابق روزے کا سب سے اہم مقصد → **(الف) تقویٰ کا حصول** | ہمدردی، صدقات کی کثرت، غربا کی امداد. Lesson p32. **USED exam-03 Q2**
+- (ii) مقبول نہیں وہ روزہ → **(الف) جس میں جھوٹ اور فحش گوئی شامل ہو** | سحری نہ کی، صدقہ نہ کیا، پیٹ بھر کر نہ کھایا
+- (iii) بھوک پیاس سے جذبات پیدا ہوتے ہیں → **(الف) ہمدردی کے** | رواداری، عفو، کفایت شعاری
+- (iv) مقررہ وقت پر سحر و افطار سے صفت → **(ج) نظم و ضبط کی** | صبر، استقامت، صلہ رحمی
+- (v) بھوک پیاس سے دوسروں کے بارے میں احساس → **(الف) بھوک پیاس کا** | مالی پریشانی، جسمانی مشقت، عزتِ نفس
+- Short: صوم کا معنیٰ و مفہوم؛ رمضان کے دو مسنون اعمال؛ روزے کے دو معاشرتی فوائد (school First Term). Detailed: روزے پر جامع نوٹ (**USED exam-03 Q3**).
+
+**p37, زکوٰۃ** (read 2026-09-17)
+- (i) زکوٰۃ کی حیثیت → **(د) فرض کی** | اختیاری نیکی، نفلی صدقہ، خیرات
+- (ii) ابو بکر نے اعلانِ جنگ فرمایا → **(الف) زکوٰۃ کا انکار کرنے والوں سے** | فضول خرچی، حج کا انکار، نماز کا انکار
+- (iii) اللہ بارش روک دیتا ہے → **(الف) زکوٰۃ نہ دینے سے**
+- (iv) زمینی پیداوار کی زکوٰۃ → **(الف) عشر** | صدقہ، فدیہ، ٹیکس
+- (v) نظامِ زکوٰۃ سے خاتمہ → **(ج) گداگری کا** | تجارت، محنت، ملازمت
+- Short: زکوٰۃ و عشر کی فرضیت کی حکمت؛ زکوٰۃ و عشر میں فرق (**USED exam-03 Q2(i)**); معاشی نظام میں اہمیت. Detailed: زکوٰۃ و عشر پر نوٹ.
+
+**p40, حج و قربانی** (read 2026-09-17)
+- (i) عمرہ ادا کرنا → **(الف) سنت** | واجب، فرض، نفل (lesson p38: سنت اور مستحب)
+- (ii) حج کا رکنِ اعظم → **(ج) وقوفِ عرفہ** | احرام، طوافِ زیارت، قربانی. Lesson p39. **USED exam-03 Q3** (re-test of the school Waqoof vs Tawaf pair)
+- (iii) نبی ﷺ نے حج ادا کیا → **(الف) ایک مرتبہ** (lesson p38: ایک حج اور چار عمرے)
+- (iv) عید الاضحیٰ کے دن سب سے افضل عمل → **(ب) قربانی**
+- (v) آٹھ ذوالحجہ کو احرام → **(الف) فجر کی نماز کے بعد**
+- Short: قربانی کے دو احکام (school First Term); مقدس مقامات کے انوار؛ اتحادِ امت. Detailed: حج و قربانی پر مضمون.
 
 ## Bab 3: سیرتِ نبوی ✅ (all six of الف; only the first four of ب)
 
 **p43, فتحِ مکہ**
-- (i) اسباب میں سے → **(ج) بنو خزاعہ پر حملہ**. **USED Q11**
+- (i) اسباب میں سے → **(ج) بنو خزاعہ پر حملہ**. **USED Q11**; re-tested with new wording as **exam-03 Q4**. Detailed p43 3(i) فتحِ مکہ پر تفصیلی نوٹ: **USED exam-03 Q4 (Section C)**
 - (ii) دار الامن → **(الف) حضرت ابو سفیان کا گھر**. **USED Q12**
 - (iii) نبی ﷺ کی اونٹنی → **(الف) قصوا**. **USED Q13**
 - (iv) قدرت کے باوجود دشمنوں کو معاف کرنا مثال ہے → **(ب) عفو و درگزر کی** | امانت داری، سخاوت، ایثار
 - (v) خانہ کعبہ کی چابی → **(د) حضرت عثمان بن طلحہ**. **USED Q14**
 
 **p46, غزوہ حنین**
-- (i) وادیِ حنین کا مکہ سے فاصلہ → **(ب) تیس کلومیٹر**. **USED Q15**
+- (i) وادیِ حنین کا مکہ سے فاصلہ → **(ج) چالیس کلومیٹر**. **USED Q15.** ⚠ CORRECTED 2026-09-17: the lesson text p44 line 1 says «مکہ مکرمہ سے چالیس (40) کلومیٹر». This file and the exam-02 key had تیس (30), which is WRONG; Seemab answered C (چالیس) on exam-02 Q15 and was marked wrong.
 - (ii) وادی میں آباد → **(د) بنو ہوازن و بنو ثقیف**. **USED Q16**
-- (iii) بکھرنے والوں کو آواز دے کر جمع کیا → **(ب) حضرت عباس بن عبد المطلب**. **USED Q17**
+- (iii) بکھرنے والوں کو آواز دے کر جمع کیا → **(ب) حضرت عباس بن عبد المطلب**. **USED Q17**; re-tested with new wording (بیعتِ رضوان والو) as **exam-03 Q5**
 - (iv) کفار پر پھینکی → **(الف) مٹھی بھر خاک** | زنجیر، تلوار، زرہ
 - (v) غزوہ حنین کا سبق → **(الف) توکل کا** | عفو، کفایت شعاری، رواداری
 
@@ -94,7 +118,21 @@ Answer letters are as printed in the book. Exam papers reorder the options to ba
 - (iv) حضرت علی کی شان کس مقام پر → **(ج) غدیرِ خم**. **USED Q20**
 - (v) خطبے میں صحابہ سے گواہی لی → **(ج) رسالت کا حق ادا کرنے پر** | حج، قربانی، نماز
 
-**Not yet read:** عام الوفود (p49), وصالِ نبوی (p59), بچپن و جوانی (p63), ذوقِ عبادت (p66), سخاوت و ایثار (p69), صلہ رحمی (p72). ⛔ Do not use the مشق of خواتین کے ساتھ حسنِ سلوک or اندازِ تربیت.
+**p49, عام الوفود** (read 2026-09-17)
+- (i) عام الوفود سے مراد → **(الف) وفود کا سال** | دن، صدی، مہینا
+- (ii) بنو تمیم کے سامنے بطور خطیب → **(الف) حضرت ثابت بن قیس** | حسان بن ثابت (شاعر)، خالد بن ولید، زید بن ثابت
+- (iii) وفود کو ٹھہرایا جاتا → **(الف) مسجدِ نبوی میں** | مسجد قبا، ابو ایوب انصاری کا گھر، سرائے
+- (iv) وفد بنو تمیم کی قیادت → **(الف) اقرع بن حابس** | مالک بن فہر، عبد اللہ بن ابی، اشج
+- (v) اشج کی دو نمایاں خوبیاں → **(الف) حلم اور وقار**
+- Short: مہمانوں کے ساتھ عزت و اکرام (**USED exam-03 Q2(ii)**); وفود کا کردار؛ بنو تمیم کے آداب (school First Term). Detailed: وفدِ نجران کا احوال.
+
+**p63, بچپن و جوانی** (read 2026-09-17)
+- (i) تاریخ پیدائش → **(ب) 22 اپریل 571ء**
+- (ii) عبد المطلب کے انتقال کے وقت عمر → **(ب) آٹھ سال**
+- (iii) قحط میں → **(ج) دعا کے دوران آسمان کی طرف انگلی اٹھائی**
+- (iv) سرخ اونٹوں سے زیادہ محبوب معاہدہ → **(ج) حلف الفضول** | میثاقِ مدینہ، صلحِ حدیبیہ، مؤاخاتِ مدینہ. Lesson p61. **USED exam-03 Q6**
+- ⛔ (v) رضاعی والدہ → حلیمہ سعدیہ; its options include ام ایمن (untaught), so do not reuse as printed
+- Short: غزوہ حنین میں حضرت شیما سے سلوک؛ حلف الفضول کے نکات؛ حضرت عباس کو ترغیب دینے والی نشانی. Detailed: خدمتِ خلق، عفت و حیا، شجاعت، حسنِ سلوک. ⛔ Do not use the مشق of خواتین کے ساتھ حسنِ سلوک or اندازِ تربیت.
 
 ## Bab 4: اخلاق و آداب (only شکر، امانت، تکبر، حسد are taught)
 
@@ -106,7 +144,7 @@ Answer letters are as printed in the book. Exam papers reorder the options to ba
 
 **p93** ⛔ (توہم پرستی, not taught): چالیس دن نماز قبول نہیں → قسمت کا حال پوچھنے والے کی. جادو کا علاج کھجور → عجوہ.
 
-Q23 of exam-02 (حسد = نعمت کے زوال کی تمنا) came from the lesson text on p86, not a مشق. The مشق for تکبر and حسد has not been located yet.
+Q23 of exam-02 (حسد = نعمت کے زوال کی تمنا) came from the lesson text on p86, not a مشق. Re-tested with new wording (نعمت پر خوش نہ ہو، چاہے کہ چھن جائے; answer حسد, twin رشک) as **USED exam-03 Q7**. The مشق for تکبر and حسد has not been located yet.
 
 ## Bab 5: حسنِ معاملات و معاشرت ⛔ NOT TAUGHT (all answers checked against the lessons)
 
@@ -137,7 +175,25 @@ Other facts from the taught صحابیات that make good questions: Shifa could
 
 **Short questions, p140:** ✅ (i) شفا کا تعارف, (ii) شفا کی محبت, (iii) ام سلیم کی غزوات میں خدمات (**USED Q.2 ii**), (iv) ام سلیم کی محبت کا واقعہ, (v) ام عطیہ کا تعارف (already asked by the school First Term), (vi) ام عطیہ کی خدمات. ⛔ (vii) to (xii) are on untaught women.
 
-**Not yet read:** the اہلِ بیت مشق (after p116) and the صحابہ کرام مشق (p134).
+Shifa attribute re-test (پڑھی لکھی مشہور طبیبہ vs Umm Atiya's battles/cooking vs Umm Sulaim as Anas's mother): **USED exam-03 Q8**.
+
+**p114 to 115, امام زین العابدین** ✅ (read 2026-09-17)
+- (i) زین العابدین کا معنیٰ → **(الف) عبادت گزاروں کی زینت** | کثرت سے سجدہ کرنے والے (= سید الساجدین, good twin), کثرت سے خرچ کرنے والے، صلح کرنے والے
+- (ii) کربلا کے وقت عمر → **(ب) تئیس سال**
+- (iii) چہرے کا رنگ متغیر ہو جاتا → **(ب) وضو کرتے وقت**
+- (iv) رات کا صدقہ → **(الف) اللہ کے غضب کو ٹھنڈا کرتا ہے**
+- (v) سپردِ خاک → **(د) مدینہ منورہ میں**
+- Short: (i) مختصر تعارف (**USED exam-03 Q2(iii)**); عبادت و ریاضت؛ علمی و ادبی خدمات؛ ہم عصر علما کے خیالات؛ کربلا میں والد سے آخری ملاقات؛ کربلا کے بعد کردار.
+
+**p123, عبد اللہ بن عمرو بن العاص** ✅ (read 2026-09-17)
+- (i) کنیت → **(الف) ابو عبد الرحمٰن** (lesson p122: ابو محمد اور ابو عبد الرحمٰن)
+- (ii) سیرت کا نمایاں پہلو → **(الف) زہد و تقویٰ**
+- (iii) امام حسین کو دیکھ کر فرمایا → **(الف) آسمان والوں کے نزدیک دنیا میں سب سے زیادہ محبوب**
+- (iv) صحیفہ صادقہ مرتب کرنے والے → **(ب) حضرت عبد اللہ بن عمرو** | عبد اللہ بن عمر، عبد اللہ بن زبیر (avoid: Asma's son, untaught), عبد اللہ بن عباس. **USED exam-03 Q9** (with ابن مسعود in place of ابن زبیر)
+- (v) اہم سبق → **(ج) علم و فن سے محبت کا**
+- Short: مختصر تعارف؛ زہد و تقویٰ؛ اہلِ بیت سے محبت کا واقعہ؛ کب اور کہاں وفات (65 ہجری، فسطاط)؛ دینی و علمی خدمات.
+
+**Not yet read:** ابو موسیٰ اشعری and عمرو بن امیہ مشق (p121, p125).
 
 ## Bab 7: عصرِ حاضر (only خود اعتمادی and جسمانی صحت are taught)
 
@@ -148,7 +204,17 @@ Other facts from the taught صحابیات that make good questions: Shifa could
 - (iv) دو بڑی نعمتیں → **(الف) صحت اور فراغت**. **USED Q29**
 - (v) صحابہ کی دلچسپی کے کھیل → **(الف) نیزہ بازی و گھڑ سواری**. **USED Q30**
 
-**Not yet read:** خود اعتمادی (p153).
+**p153, خود اعتمادی و خود انحصاری** ✅ (read 2026-09-17)
+- (i) بڑے کام میں ضروری → **(د) اعتماد** | حسن و جمال، جسمانی قوت، بہادری
+- (ii) خود اعتمادی کے حکم کے ساتھ تلقین → **(د) اللہ تعالیٰ پر توکل کی** | صبر و تحمل، عجز و انکسار، باہمی تعاون. Lesson p152 (آلِ عمران 159). **USED exam-03 Q10**
+- (iii) خود اعتمادی سے پیدا ہونے والے تکبر سے بچاتا ہے → **(الف) توکل**
+- (iv) معاملات احسن طریقے سے → **(د) خود اعتمادی کے سبب**
+- (v) اجتماعی عزت و آبرو کا سبب → **(د) خود اعتمادی**
+- Short: خود اعتمادی کا مفہوم؛ سیرت سے ایک واقعہ (بھیک مانگنے والے کو محنت کا سبق)؛ اللہ کی نصیحت.
+
+## Asma-ul-Husna (Bab 1, p10 to 11)
+
+The book prints **40 numbered names** with meanings. The teacher's 2026-09-17 list says "37". Name no. 37 is **الصبور = بہت زیادہ مہلت دینے والا**, set as **exam-03 Q1** (the only name that is in syllabus whether "37" means "name 37" or "names 1 to 37"). Ask Atif which reading is right before setting any other name.
 
 ## Still missing
 

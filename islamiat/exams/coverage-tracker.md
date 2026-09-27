@@ -35,6 +35,7 @@ Seemab marks lessons **already covered in class with a black star** in her فہ�
 |---|---|---|
 | exam-01-bab5 | Bab 5, 46 marks | **QUARANTINED — entirely out of syllabus.** See `exam-01-bab5-OUT-OF-SYLLABUS-DO-NOT-SEND/` |
 | exam-02-bab1-2-3-4-6-7 | taught lessons only, 46 marks | Version A **sent** 2026-09-11 but 8 marks were on untaught صحابیات. **Version B** with those replaced was sent the same day as a correction. |
+| exam-03-bab1-2-3-4-6-7 | teacher's narrowed list of 2026-09-17, 38 marks (10 MCQ + 3x4 + 2x8), 1h45m, no OR | Built 2026-09-17, **not sent**. exam.pdf 3 pages, answer-key.pdf 6 pages. Source in `exam-template/exam-03-source/`. |
 
 ### exam-02 coverage (2026-09-11)
 
@@ -75,3 +76,63 @@ After exam-02 the remaining untouched, in-syllabus material is:
 - **Bab 3** — وصالِ نبوی and صلہ رحمی still untested; بچپن و جوانی, ذوقِ عبادت, سخاوت و ایثار only lightly touched.
 - **Bab 6** — امام زین العابدین, عبد اللہ بن عمرو بن العاص, عمرو بن امیہ still untested. All three taught صحابیات (شفا، ام سلیم، ام عطیہ) are now covered.
 - **الاسماء الحسنیٰ** still never tested, and the scheme requires at least one per paper in Q2. Highest-priority gap.
+
+### exam-03 coverage (built 2026-09-17, not sent)
+
+**Syllabus used:** the teacher's list of 2026-09-17, narrower than the star list. Bab 1: تدوینِ قرآن، تدوینِ حدیث، احادیث 1 to 15, Asma-ul-Husna "37". Bab 2: all nine. Bab 3: only فتحِ مکہ، حنین، عام الوفود، بچپن و جوانی، ذوقِ عبادت، سخاوت و ایثار (تبوک، حجۃ الوداع، وصال، صلہ رحمی now OUT). Bab 4: شکر، امانت، تکبر، حسد. Bab 5: nothing. Bab 6: زین العابدین، ابو موسیٰ، عبد اللہ بن عمرو، عمرو بن امیہ; صحابیات only شفا، ام سلیم، ام عطیہ. Bab 7: خود اعتمادی، جسمانی صحت.
+
+MCQ spread: Bab 1 = 1, Bab 2 = 2, Bab 3 = 3, Bab 4 = 1, Bab 6 = 2, Bab 7 = 1. Answer letters C A D B A C B D A B (A3 B3 C2 D2).
+
+| # | Topic | Book page |
+|---|---|---|
+| 1 | Asma-ul-Husna no. 37 الصبور = بہت زیادہ مہلت دینے والا (first ever Asma item) | p11 |
+| 2 | روزے کا اہم مقصد: تقویٰ | p32 (مشق p34) |
+| 3 | حج کا رکنِ اعظم: وقوفِ عرفہ (school twin re-test vs طوافِ زیارت) | p39 (مشق p40) |
+| 4 | فتحِ مکہ: بنو بکر نے بنو خزاعہ پر حملہ کیا (exam-02 re-test) | p41 |
+| 5 | حنین: حضرت عباس نے «بیعتِ رضوان والو» پکارا (exam-02 re-test) | p45 |
+| 6 | حلف الفضول (school twin re-test vs صلحِ حدیبیہ) | p61 (مشق p63) |
+| 7 | حسد کی تعریف, twin رشک (exam-02 re-test) | p86 |
+| 8 | حضرت شفا: پڑھی لکھی مشہور طبیبہ, twins ام عطیہ / ام سلیم (exam-02 re-test) | p135 to 136 |
+| 9 | صحیفہ صادقہ: عبد اللہ بن عمرو (twin ابن عمر) | p122 (مشق p123) |
+| 10 | خود اعتمادی کے ساتھ توکل | p152 (مشق p153) |
+
+Section B: Q.2 (i) زکوٰۃ اور عشر میں دو فرق (Bab 2, p35 to 36, مشق p37); Q.2 (ii) عام الوفود میں مہمانوں کا اکرام، چار نکات (Bab 3, p47 to 49, مشق p49); Q.2 (iii) امام زین العابدین کا مختصر تعارف (Bab 6, p112 to 114, مشق p115).
+Section C: Q.3 روزے پر جامع نوٹ (Bab 2, p32 to 33, مشق p34); Q.4 فتحِ مکہ پر تفصیلی نوٹ (Bab 3, p41 to 42, مشق p43).
+
+**Found while building:** book p44 gives وادیِ حنین as **40 km** from Makkah. exam-02's key (Q15) and the mashq bank said 30 km. Seemab answered 40 km (C) on exam-02 and was marked wrong, so exam-02 should be 31/46, not 30/46. Not yet corrected in the exam-02 reports.
+
+**Still untested inside the narrowed syllabus:** ذوقِ عبادت, سخاوت و ایثار, ابو موسیٰ اشعری (school only), عمرو بن امیہ, امانت و دیانت and تکبر (MCQs), ملائکہ/کتبِ سماویہ short questions, تدوینِ حدیث short questions, any hadith 1 to 15.
+
+### exam-04 coverage (built 2026-09-26, Bab 3(ب))
+
+**Scope:** Bab 3(ب) خواتین کے ساتھ حسنِ سلوک (p73-75) and نبی کریم ﷺ کا اندازِ تربیت (p76-78) as the new
+27 marks; غزوۂ حنین (p44-46) as the 11 revision marks. Not in the teacher's 16 Sep list, so the paper
+carries the ahead-of-class notice, per the whole-book programme.
+
+Answer letters ب ج د الف ب د الف ج ب ج (الف=2 ب=3 ج=3 د=2).
+
+| # | Topic | Book page |
+|---|---|---|
+| i | جنت ماں کے قدموں میں (Sunan Nasai 3106) | p74, مشق p74 Q1(i) |
+| ii | دو بیٹیوں کی تربیت، دو انگلیاں (Sahih Muslim 6695) | p73, مشق p74 Q1(ii) |
+| iii | فاطمۃ الزہرا کی آمد پر کھڑے ہو جانا (Shuab-ul-Iman 8927) | p74, مشق p75 Q1(iii) |
+| iv | عورتوں کے ساتھ بھلائی کی وصیت | p73-74, مشق p75 Q1(iv) |
+| v | انس بن مالک کی دس سالہ خدمت (Sahih Muslim 2309) | p76, مشق p78 Q1(i) |
+| vi | معاذ بن جبل کو یمن (Sahih Bukhari 1395) | p77, مشق p78 Q1(ii) |
+| vii | تدریج کا اہتمام (answer confirmed from the p77 lesson text) | p77, مشق p78 Q1(v) |
+| viii | وادیِ حنین 40 km from Makkah (REVISION; exam-02 key was wrong here) | p44 |
+| ix | «بیعتِ رضوان والو» حضرت عباس (REVISION; LEFT BLANK on exam-03) | p45 |
+| x | لشکر بارہ ہزار، 8 ہجری شوال (REVISION) | p44 |
+
+Section B: all three husn-e-sulook Quiz questions, the book's own مشق p75 Q2(i)(ii)(iii).
+Section C: Q.3 اندازِ تربیت جامع نوٹ (مشق p78 Q3(i)), which carries all three andaz-e-tarbiyat Quiz
+questions; Q.4 غزوۂ حنین تفصیلی نوٹ (REVISION, p44-46), first time Hunain is set at 8-mark level.
+
+**Aimed at a habit, not a gap:** exam-03 showed her 8-mark answers have correct headings and one thin
+sentence each. Instruction 5, and the way Q.4 is marked, both target that.
+
+**Newly read into the bank:** the Bab 3(ب) مشق pages (p74, p75, p78), which the mashq bank had listed as
+not yet read. Ten MCQs, six shorts and two تفصیلی questions now recorded.
+
+**Still untested:** مشق p78 Q1(iii) قیامت والا سوال and Q1(iv) مزدور کے ہاتھ چومنا as MCQs (both sit
+inside Q.3 here instead).
