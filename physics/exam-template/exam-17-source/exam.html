@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Physics Exam 17</title>
+<style>
+  @page { size: A4; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 13pt; line-height: 1.3; margin: 0; color: #000; }
+  .page { width: 100%; padding: 7mm 9mm 0 9mm; box-sizing: border-box; }
+
+  .header-box { border: 2.5px solid #000; padding: 7px 10px; text-align: center; page-break-after: avoid; }
+  .board { font-size: 17pt; font-weight: bold; letter-spacing: 0.5px; }
+  .exam-name { font-size: 15pt; font-weight: bold; margin-top: 2px; }
+  .subject { font-size: 15pt; font-weight: bold; margin-top: 2px; }
+  .syllabus { font-size: 12.5pt; font-weight: bold; margin-top: 4px; }
+  .ahead { font-size: 12pt; font-style: italic; margin-top: 5px; }
+
+  .info-row { display: flex; justify-content: space-between; margin: 6px 2px 6px 2px; font-size: 14pt; font-weight: bold; }
+
+  .instr-box { border: 1.5px solid #000; padding: 4px 10px; font-size: 11.4pt; line-height: 1.24; }
+  .instr-box ol { margin: 3px 0 0 16px; padding: 0; }
+  .instr-box li { margin-bottom: 2px; }
+
+  .section-bar { background: #DAA520; color: #fff; font-size: 15pt; font-weight: bold; text-align: center;
+                 padding: 2px; margin: 7px 0 5px 0; page-break-after: avoid; }
+  .section-bar-blue { background: #4682B4; color: #fff; font-size: 15pt; font-weight: bold; text-align: center;
+                      padding: 2px; margin: 7px 0 5px 0; page-break-after: avoid; }
+
+  table { width: 100%; border-collapse: collapse; }
+  .mcq-table tr { page-break-inside: avoid; }
+  .mcq-table td, .mcq-table th { border: 1px solid #000; padding: 3px 5px; font-size: 12.5pt; vertical-align: middle; }
+  .mcq-table .num { width: 4%; text-align: center; font-weight: bold; }
+  .mcq-table .q { width: 34%; }
+  .mcq-table .opt { width: 12.5%; }
+  .mcq-table td.ans-cell { width: 12%; text-align: center; white-space: nowrap; }
+  span.mcq-opt { display: inline-block; width: 14px; height: 14px; line-height: 14px; border: 1.5px solid #000;
+                 border-radius: 50%; font-size: 9pt; text-align: center; margin: 0 1px; }
+
+  .qt tr { page-break-inside: avoid; }
+  .qt td { border: 1px solid #000; padding: 4px 6px; font-size: 13.2pt; line-height: 1.22; vertical-align: top; }
+  .qt .part { width: 5%; text-align: center; font-weight: bold; }
+  .qt .qtext { width: 88%; }
+  .qt .marks { width: 7%; text-align: center; font-weight: bold; }
+  .sub { margin-left: 14px; }
+
+  .footer { margin-top: 5px; font-size: 12pt; }
+  .sig-row { display: flex; justify-content: space-between; margin-top: 6px; font-size: 12pt; }
+  .end-mark { text-align: center; font-weight: bold; font-size: 13pt; margin-top: 5px; }
+  .note { font-size: 12pt; font-style: italic; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header-box">
+    <div class="board">FEDERAL BOARD OF INTERMEDIATE AND SECONDARY EDUCATION</div>
+    <div class="exam-name">SSC PART-I (CLASS 9) PRACTICE EXAMINATION</div>
+    <div class="subject">PHYSICS PAPER 17 | UNIT 7 PARTS 7A AND 7B</div>
+    <div class="syllabus">Syllabus: Unit 7 Density and Temperature, Parts 7A and 7B, that is sections 7.1, 7.2, 7.2.1, 7.2.2, 7.3 and 7.4 (27 marks) &nbsp;+&nbsp; Revision: Unit 6 Work and Energy, including 6.5 Efficiency, and Unit 3 Dynamics-I (11 marks)</div>
+    <div class="ahead">Note: Unit 7 ka ye hissa (Part 7A aur Part 7B: density, density naapne ke tareeqay, states of matter aur plasma) abhi class mein nahin parhaya gaya. Ye wohi material hai jo Aasan Notes Part 7A aur Part 7B mein diya gaya tha, aur un dono notes ke saaray Quiz sawal is paper par mojood hain. Is liye agar score hamesha se thora kam aaye to bilkul fikar na karein. Is paper ka maqsad sirf ye dekhna hai ke kaunsi cheez dobara samjhani hai.</div>
+  </div>
+
+  <div class="info-row">
+    <div>Total Marks: 38</div>
+    <div>Time Allowed: 1 hour 30 minutes</div>
+    <div>Version A</div>
+  </div>
+
+  <div class="instr-box">
+    <b>HIDAYAAT (Instructions)</b>
+    <ol>
+      <li><b>Saaray sawal</b> hal karnay hain. Is paper mein koi bhi <b>optional sawal nahin</b> hai.</li>
+      <li>Jawab apni notebook mein likhein. Har sawal ka number <b>bilkul waisa hi</b> likhein jaisa paper par hai, aur tarteeb se hal karein.</li>
+      <li>Section A mein sawal ka number likh kar sirf apnay option ka <b>letter</b> likhein, jaise <b>1. (b)</b>. Har MCQ ki rough working saath likhein, phir check kar lein ke jo letter aap ne likha hai wohi aap ki apni working ka jawab hai. Aakhir mein gin lein ke <b>dason</b> MCQ ho gaye hain.</li>
+      <li>Har calculation mein pehle <b>formula</b>, phir <b>values (substitution)</b>, phir jawab likhein. Marks working ke hain.</li>
+      <li><b>Calculator use kar sakti hain.</b> Phir bhi formula aur substitution zaroor likhein.</li>
+      <li>Har jawab ke saath uska <b>unit</b> likhein. Unit ya naam na likhne par <b>&frac12; mark</b> katega.</li>
+      <li>Har calculation ke aakhir mein <b>ek mukammal jumla</b> likhein jo sawal ka jawab de, jaise: "Is liye is cheez ki density 2.5 g/cm<sup>3</sup> hai." Jahan <b>show that, state, name</b> ya <b>hence</b> likha ho, wahan ye jumla likhna zaroori hai.</li>
+      <li>Units milayen: mass <b>gram</b> mein ho to volume <b>cm<sup>3</sup></b> mein lein, aur mass <b>kilogram</b> mein ho to volume <b>m<sup>3</sup></b> mein.</li>
+    </ol>
+  </div>
+
+  <div class="section-bar">SECTION A: MULTIPLE CHOICE QUESTIONS (10 &times; 1 = 10 MARKS)</div>
+
+  <table class="mcq-table">
+    <tr>
+      <td class="num">#</td><td class="q"><b>Question</b></td>
+      <td class="opt"><b>A</b></td><td class="opt"><b>B</b></td><td class="opt"><b>C</b></td><td class="opt"><b>D</b></td>
+      <td class="ans-cell"><b>Answer</b></td>
+    </tr>
+    <tr>
+      <td class="num">1</td>
+      <td class="q">A metal has a density of 2700 kg/m<sup>3</sup>. Written in g/cm<sup>3</sup>, this density is:</td>
+      <td class="opt">270 g/cm<sup>3</sup></td><td class="opt">27 g/cm<sup>3</sup></td><td class="opt">2.7 g/cm<sup>3</sup></td><td class="opt">0.27 g/cm<sup>3</sup></td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">2</td>
+      <td class="q">A solid cube of side 3 cm has a mass of 81 g. Its density is:</td>
+      <td class="opt">3 g/cm<sup>3</sup></td><td class="opt">27 g/cm<sup>3</sup></td><td class="opt">0.33 g/cm<sup>3</sup></td><td class="opt">9 g/cm<sup>3</sup></td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">3</td>
+      <td class="q">According to your book, density is:</td>
+      <td class="opt">a vector quantity</td><td class="opt">a scalar quantity</td><td class="opt">a base quantity</td><td class="opt">a quantity that has no unit</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">4</td>
+      <td class="q">A gas spreads out in its container and fills it. According to your book, the volume of that gas is:</td>
+      <td class="opt">fixed, whatever the size of the container</td><td class="opt">always half the volume of the container</td><td class="opt">always smaller than the volume of the container</td><td class="opt">equal to the volume of the container</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">5</td>
+      <td class="q">Liquids and gases do not keep a fixed shape, so both of them are able to flow. Together they are called:</td>
+      <td class="opt">solids</td><td class="opt">crystals</td><td class="opt">fluids</td><td class="opt">plasmas</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">6</td>
+      <td class="q">Plasma conducts electric current very well because it contains:</td>
+      <td class="opt">only neutral atoms</td><td class="opt">free electrons and moving ions</td><td class="opt">tightly bound electrons</td><td class="opt">closely packed atoms in a lattice</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">7</td>
+      <td class="q">When a gas is heated continuously, electrons are removed from its atoms and the atoms become:</td>
+      <td class="opt">positive ions</td><td class="opt">negative ions</td><td class="opt">neutral atoms</td><td class="opt">free electrons</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">8</td>
+      <td class="q"><b>[Revision, Unit 6]</b> A moving body has kinetic energy E<sub>k</sub>. If its mass is halved and its speed is doubled, its new kinetic energy is:</td>
+      <td class="opt">E<sub>k</sub></td><td class="opt">&frac12; E<sub>k</sub></td><td class="opt">4 E<sub>k</sub></td><td class="opt">2 E<sub>k</sub></td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+  </table>
+
+  <table class="mcq-table" style="page-break-inside: avoid; margin-top: 6px;">
+    <tr>
+      <td class="num">#</td><td class="q"><b>Question</b></td>
+      <td class="opt"><b>A</b></td><td class="opt"><b>B</b></td><td class="opt"><b>C</b></td><td class="opt"><b>D</b></td>
+      <td class="ans-cell"><b>Answer</b></td>
+    </tr>
+    <tr>
+      <td class="num">9</td>
+      <td class="q"><b>[Revision, Unit 6]</b> In a hydroelectric power station, the water held in the reservoir behind the dam stores:</td>
+      <td class="opt">electrical energy</td><td class="opt">sonic energy</td><td class="opt">gravitational potential energy</td><td class="opt">nuclear energy</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+    <tr>
+      <td class="num">10</td>
+      <td class="q"><b>[Revision, Unit 3]</b> A stone weighs 540 N on Earth. Taking g = 10 N/kg, the mass of the stone is:</td>
+      <td class="opt">5.4 kg</td><td class="opt">54 kg</td><td class="opt">540 kg</td><td class="opt">5400 kg</td>
+      <td class="ans-cell"><span class="mcq-opt">A</span><span class="mcq-opt">B</span><span class="mcq-opt">C</span><span class="mcq-opt">D</span></td>
+    </tr>
+  </table>
+
+  <div class="section-bar">SECTION B: SHORT ANSWER QUESTIONS (3 &times; 4 = 12 MARKS)</div>
+  <div class="note">Teenon sawal hal karein. Har sawal <b>4 marks</b> ka hai. Ye teenon sawal Unit 7 Parts 7A aur 7B se hain.</div>
+
+  <table class="qt">
+    <tr>
+      <td class="part">2.</td>
+      <td class="qtext">
+        <b>(i)</b> Define density in the words of your book, write Equation 7.1 and state what each symbol stands for, and give the SI unit of density. <b>(1&frac12;)</b><br>
+        <b>(ii)</b> Write the formulas your book gives for the volume of a <b>cuboid</b>, the volume of a <b>cube</b> and the volume of a <b>sphere</b>. <b>(1&frac12;)</b><br>
+        <b>(iii)</b> A small cube and a large cube are cut from the same block of iron. The large cube has a greater mass and a greater volume. Explain why the density of both cubes is exactly the same. <b>(1)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">3.</td>
+      <td class="qtext">
+        An empty measuring cylinder is placed on a balance and its mass is <b>120 g</b>. <b>50 mL</b> of a liquid is then poured into the cylinder, and the mass of the cylinder together with the liquid becomes <b>160&nbsp;g</b>.<br>
+        <span class="sub"><b>(i)</b> Calculate the mass of the liquid. <b>(1)</b></span><br>
+        <span class="sub"><b>(ii)</b> Calculate the density of the liquid in g/mL. <b>(1&frac12;)</b></span><br>
+        <span class="sub"><b>(iii)</b> Convert your answer into kg/m<sup>3</sup>, and write one full sentence stating the density of the liquid. <b>(1&frac12;)</b></span>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+    <tr>
+      <td class="part">4.</td>
+      <td class="qtext">
+        <b>(i)</b> Using Table 7.2 of your book, compare a <b>solid</b>, a <b>liquid</b> and a <b>gas</b> under each of these headings: <b>(3)</b><br>
+        <span class="sub"><b>(a)</b> density &nbsp;&nbsp; <b>(b)</b> arrangement of particles &nbsp;&nbsp; <b>(c)</b> movement of particles</span><br>
+        <b>(ii)</b> Explain, in terms of the <b>attractive force</b> between the particles, why the density of a solid is much higher than the density of a gas. <b>(1)</b>
+      </td>
+      <td class="marks">4</td>
+    </tr>
+  </table>
+
+  <div class="section-bar-blue">SECTION C: LONG ANSWER QUESTIONS (2 &times; 8 = 16 MARKS)</div>
+  <div class="note">Dono sawal hal karein. Har sawal <b>8 marks</b> ka hai. Q.5 Unit 7 se hai aur Q.6 revision (Unit 6) se hai.</div>
+
+  <table class="qt">
+    <tr>
+      <td class="part">5.</td>
+      <td class="qtext">
+        <b>Finding the density of solids.</b><br>
+        <b>(A)</b> A stone of mass <b>175 g</b> is tied with a thread and lowered gently into a measuring cylinder containing water. The water level rises from <b>30 mL</b> to <b>55 mL</b>.<br>
+        <span class="sub"><b>(i)</b> Find the volume of the stone in cm<sup>3</sup>. <b>(1)</b></span><br>
+        <span class="sub"><b>(ii)</b> Find the density of the stone in g/cm<sup>3</sup>. <b>(1&frac12;)</b></span><br>
+        <span class="sub"><b>(iii)</b> Name the method you have used, state what kind of object this method is meant for, and state the <b>two</b> conditions your book gives for an object to be tested by it. <b>(1&frac12;)</b></span><br>
+        <b>(B)</b> A solid rectangular metal block has length <b>20 cm</b>, width <b>10 cm</b> and height <b>5 cm</b>. Its mass is <b>19.3 kg</b>.<br>
+        <span class="sub"><b>(iv)</b> Write the length, the width and the height in metres, and calculate the volume of the block in m<sup>3</sup>. <b>(1&frac12;)</b></span><br>
+        <span class="sub"><b>(v)</b> Calculate the density of the metal in kg/m<sup>3</sup>. <b>(1)</b></span><br>
+        <span class="sub"><b>(vi)</b> Using Table 7.1 of your book, name the metal. Write your answer as one full sentence. <b>(1&frac12;)</b></span>
+      </td>
+      <td class="marks">8</td>
+    </tr>
+    <tr>
+      <td class="part">6.</td>
+      <td class="qtext">
+        <b>[Revision, Unit 6: Efficiency, section 6.5]</b><br>
+        <span class="sub"><b>(i)</b> Define efficiency in the words of your book, and write the formula for percentage efficiency. <b>(2)</b></span><br>
+        <span class="sub"><b>(ii)</b> An electric motor takes in <b>2500 J</b> of electrical energy and does <b>1500 J</b> of useful work. Calculate its efficiency as a percentage. <b>(2)</b></span><br>
+        <span class="sub"><b>(iii)</b> The input power of this same motor is <b>600 W</b>. Using P<sub>out</sub> = &eta; &times; P<sub>in</sub>, calculate its useful output power. <b>(2)</b></span><br>
+        <span class="sub"><b>(iv)</b> State why it is not possible for a machine to have an efficiency of 100%, and name the device in Table 6.3 of your book that has the <b>lowest</b> efficiency. <b>(2)</b></span>
+      </td>
+      <td class="marks">8</td>
+    </tr>
+  </table>
+
+  <div class="end-mark">END OF QUESTION PAPER</div>
+
+  <div class="footer">
+    <b>Units covered:</b> Unit 7 Density and Temperature, Parts 7A and 7B, sections 7.1 to 7.4 (MCQs 1 to 7, Questions 2, 3, 4 and 5) &nbsp;|&nbsp;
+    Revision: Unit 6 Work and Energy (MCQs 8 and 9, Question 6), Unit 3 Dynamics-I (MCQ 10).
+  </div>
+
+  <div class="sig-row">
+    <div>Student&rsquo;s Name: ______________________</div>
+    <div>Date: ______________</div>
+    <div>Marks Obtained: ________ / 38</div>
+  </div>
+
+</div>
+</body>
+</html>

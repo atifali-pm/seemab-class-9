@@ -2,7 +2,7 @@
 
 Tracks which sub-topics have been tested in which exam, per [[exam-coverage-discipline]]. Built retroactively on 2026-07-16 while creating exam-10, by reading the full text of exam-01 through exam-09; updated 2026-07-23 for exam-11; updated 2026-08-03 for exam-12; updated 2026-08-20 for exam-14.
 
-Exam key: 01=Ch1-2, 02=Ch3-4-9, 03=Ch5, 04=Ch6, 05=Ch7 (not in current syllabus), 06=Ch8 (not in current syllabus), 07/08/09/10/11/12/13/14=Ch1-6(till 6.4)-9 comprehensive papers (13 = 31-mark revision test, 14 = 43-mark revision test).
+Exam key: 01=Ch1-2, 02=Ch3-4-9, 03=Ch5, 04=Ch6, 05=Ch7 (not in current syllabus), 06=Ch8 (not in current syllabus), 07/08/09/10/11/12/13/14=Ch1-6(till 6.4)-9 comprehensive papers (13 = 31-mark revision test, 14 = 43-mark revision test). 15 = 46-mark paper (30 MCQ + 2 short + 1 long), 16 = 38-mark paper (10 MCQ + 3 short + 2 long), **17 = the first paper of the section calendar: Unit 7 Parts 7A and 7B (sections 7.1 to 7.4) at 27 marks plus 11 marks of revision from Units 6 and 3; rebuilt 2026-09-25 to carry the Part 7A and Part 7B note quizzes**.
 
 ## Unit 1 — Physical Quantities & Measurement
 
@@ -43,6 +43,7 @@ Exam key: 01=Ch1-2, 02=Ch3-4-9, 03=Ch5, 04=Ch6, 05=Ch7 (not in current syllabus)
 | Newton's 1st law / inertia | 02, 07, 08, 10, 11 (fresh bus-accelerating-forward/passenger-falls-backward angle) |
 | Newton's 2nd law F=ma | 02, 07, 08, 09, 10, 11, 12 (fresh mass-from-force-and-acceleration SQ + lift-tension LQ) |
 | Newton's 3rd law | 02, 07, 09, 11, 12 (fresh jumper pushing-off-ground MCQ, textbook's own example, not previously used) |
+| Weight, mass and gravitational field strength (W = mg, m = W/g) | 13, 15, **17 (MCQ 10: mass from a 540 N weight, a re-test of her OPF school 2(ii) miss)** |
 | Momentum | 02, 07, 08, 09, 10, 11 |
 | Impulse | 02, 08, 09, 10, 11 (fresh airbag/crash-dummy context), 14 (SI unit N s, as an MCQ) |
 | Conservation of momentum | 02, 07, 08, 09, 10, 11, 12 (fresh head-on car/truck collision with bodies moving in **opposite directions** — first time signed/vector momentum used, breaking from same-direction collision template of 09/10/11) |
@@ -83,20 +84,21 @@ Exam key: 01=Ch1-2, 02=Ch3-4-9, 03=Ch5, 04=Ch6, 05=Ch7 (not in current syllabus)
 | Manometer — numerical application | 10, 11 (fresh density/height values + added absolute-pressure calc) |
 | Pascal's principle / hydraulic lift | 03, 07, 08, 09, 11, 12 (fresh balloon-inflation framing — de-linked from hydraulic lift/car/brake entirely) |
 
-## Unit 6 — Work & Energy (till Ex. 6.4 — Work, KE/PE, conservation, energy resources, power; Section 6.5 Efficiency is OUT of syllabus)
+## Unit 6 | Work & Energy (papers 04 to 16 stopped at Ex. 6.4; **section 6.5 Efficiency came back into scope with the whole-book program and was examined for the first time in exam-17**)
 
 | Sub-topic | Tested in |
 |---|---|
 | **Work W=Fd** | 04, 07, 08, **12 (first revisit since exam-08; NEW sub-skill: work done by a force applied at an angle, W = Fd cos θ, never tested before — toy-wagon MCQ + SQ)** |
-| Kinetic energy KE=½mv² | 04, 07, 08, 09, 10, 12 (embedded in falling-rock energy-conservation LQ) |
+| Kinetic energy KE=½mv² | 04, 07, 08, 09, 10, 12 (embedded in falling-rock energy-conservation LQ), **17 (MCQ 8: mass halved and speed doubled gives 2 Ek, a re-test of her OPF school miss)** |
 | Potential energy PE=mgh | 04, 07, 08, 09, 10, 12 (embedded in falling-rock energy-conservation LQ) |
 | Conservation of energy | 04, 07, 08, 09, 10, 11, 12 (fresh 6 kg / 45 m falling-rock problem with an added work-done-against-air-resistance step) |
 | Power P=W/t | 04, 08, 10, 11 (embedded in tidal-barrage numeric), 13 (crane), 14 (watt = 1 J/s MCQ + conveyor-belt numeric, 700 W) |
-| Efficiency (Section 6.5) | 04, 07, 08 (tested in older papers before the strict "till 6.4" boundary was clarified; excluded from exam-10, 11, 12 since Section 6.5 falls after the syllabus cutoff — flag if this boundary interpretation changes) |
+| Efficiency (Section 6.5) | 04, 07, 08 (older 65 mark papers, before the strict "till 6.4" boundary was clarified), then excluded from 10, 11, 12, 13, 14, 15, 16. **17 (first time in the program: definition, 1500 J out of 2500 J = 60%, P_out = eta x P_in gives 360 W from 600 W, why 100% is impossible, lowest device in Table 6.3)** |
 | **Fossil fuels / nuclear fuel** | 04, **12 (first revisit since exam-04; NEW depth on nuclear fuel: nuclear fission process + Uranium-235/Plutonium-239 named as the two power-plant fuels, not covered in exam-04)** |
 | **Perpetual motion machine impossible (violates conservation of energy)** | 04, **14 (first time in a comprehensive paper, ten papers later)** |
 | Renewable vs non-renewable (general) | 04, 07, 10, **14 (full differentiate-plus-two-examples-each question, first since exam-10)** |
 | Biomass, geothermal, wave, tidal energy | 10, 11 |
+| Hydroelectric: the stored water holds gravitational PE | **17 (MCQ 9, a re-test of her OPF school miss where she chose electrical energy)** |
 | Hydroelectric / solar / wind | 04 (brief), 10 (hydro numerical, first time), 14 (hydro advantage + disadvantage, from §6.3.4 verbatim) |
 
 ## Unit 9 — Nature of Science and Physics
@@ -254,3 +256,158 @@ Priority gaps from the "Known gaps after exam-14" list that were cleared this bu
 - Unit 5: manometer and Hooke's law were both refreshed here. **Liquid pressure P=&rho;gh as a standalone numerical** (last exam-12) and **atmospheric pressure/barometer** (last exam-14) are next due.
 - Unit 6: work-at-angle, KE/PE conservation, power, and renewable/non-renewable were all refreshed here. **Wind energy** (last exam-12) and **fossil fuel/conservation-of-energy as a dedicated question** (last exam-12) are next due.
 - Unit 9: hypothesis/theory/law is no longer avoided (successfully re-included per Atif's override) and should not be treated as "saturated" again. Falsifiability (last exam-14) and Physical vs Biological Sciences framing (last exam-12, refreshed again here) are both reasonably current. Interdisciplinary fields (last exam-12) is next due.
+
+## Exam-16 (this build) — 2026-09-16
+
+**Shape at Atif's request** ("same pattern like Chemistry exam yesterday", then he chose the shorter Section B): **10 MCQ + 3 short x 4 + 2 long x 8 = 38 marks**, 1 h 45 m, no choices anywhere (rendered PDF grep-checked: no "OR"). He also chose to **keep the existing MCQ grid layout** rather than the proposed phone-friendly block layout. Files: `physics/exams/exam-16-ch1-6-9/exam.pdf` (3 pp) + `answers.pdf` (3 pp). Units 1-6 (Ch6 to Example 6.4, efficiency still OUT) and Unit 9.
+
+**Built from the "Known gaps after exam-15" list.** Cleared this build: **centre of gravity as a standalone question** (MCQ 4, the book's own wording), **equilibrium conditions** (MCQ 5 second condition, and Section B 2(ii) principle of moments numerical), **liquid pressure P = rho g h as a standalone numerical** (MCQ 6, 40,000 Pa), **wind energy** (MCQ 9), **interdisciplinary fields** (MCQ 10, biophysics), **resultant of two vectors at right angles** (Section B 2(i), 9 N and 12 N to 15 N at 53.1 degrees). Torque numerical (MCQ 7) and power (MCQ 8) also refreshed.
+
+**Retention re-test:** MCQ 1 isolates the **gradient** of a speed-time graph again (cyclist 5 to 20 m/s in 5 s = 3 m/s^2). She got both gradient and area right on exam-15 after failing them on exam-12 and exam-14; this checks the fix held. Area was deliberately not re-set, to see whether she still separates the two when only one is asked.
+
+**Section C is numerical-heavy per [[exam-content-requirements]]:** 3(i) a four-part kinematics/dynamics chain on one car (600 kg, rest to 20 m/s in 10 s: a = 2 m/s^2, s = 100 m, F = 1200 N, change in momentum 12,000 kg m/s, with the unit carrying its own mark) and 3(ii) a four-part hydraulic jack (100 N on 0.004 m^2 gives 25,000 Pa; 0.2 m^2 gives 5000 N; force ratio 50 = area ratio 50; why a liquid and not a gas).
+
+**Instruction lines aimed at her documented leaks** (no extra writing for her, per [[no-printer-phone-reading]]): instruction 3 tells her to check the MCQ letter against her own working (the exam-15 Q3 and exam-18 Q7 error), instruction 4 tells her to number MCQs as on the paper and check all ten are answered (exam-18 skipped Q3 through a numbering slip), instruction 5 requires formula, substitution and unit, and instruction 6 covers state/name/show that.
+
+**Answer letters A=3, B=3, C=2, D=2.** The first draft came out C=5, B=4, A=1, D=0 and was caught by the balance check before rendering; five option lists were reordered.
+
+**Every answer verified numerically in Python** (sympy is not installed, see [[reference-broken-local-tooling]]), including the vector resultant and its angle, the moments balance, and both Section C chains.
+
+**Uniqueness:** every prior physics paper and key plus the OPF school physics paper extracted to one file and grep-checked. Rejected and replaced during the build: the vernier least-count MCQ (a near-identical MCQ already exists), a 30,000 Pa liquid-pressure value (used in an exam key), 150 m as an area-under-graph answer (used), 144 m (used), 1200 J and 240 W (used), 1600 N (used), 50,000 Pa (used), a barometer MCQ (76 cm and 0.76 m versions already exist), a falsifiability MCQ (used twice), and a Pascal's-principle statement question (already a Section B item).
+
+**SENT 2026-09-16** to Shumail: Roman Urdu NEW-paper message (with the four coaching lines from her exam-18 result: check the MCQ letter against the working, number MCQs as on the paper and count ten, formula/substitution/unit in numericals, write the full sentence for state/name/show that/explain), then `exam.pdf` staged as `Physics-Revision-Test-exam-16-Units-1-6-and-9.pdf`. Both sends succeeded. **Key held**, to follow after she attempts.
+
+**VERSION B, 2026-09-16 (same day), SENT.** Atif: "Calculator is allowed." Instruction 7 changed from "Use of a calculator is not allowed" to "A calculator may be used. Even so, write the formula and the substitution for every numerical, because the marks are for the working." Nothing else changed: same 10 MCQs, same Section B and C, same answer letters. Re-rendered as Version 16 (B) and sent to Shumail with a Roman Urdu correction message that also **retracted the criticism of her calculator use on Maths exam-18**. The originally sent file is kept as `exam-versionA-SENT-2026-09-16.pdf`. See [[calculator-allowed]].
+
+**RESULT SENT 2026-09-16:** Roman Urdu result message (score; specific praise for MCQs 10/10 with the Maths exam-18 numbering and letter slips fixed in one day, the gradient re-test, the perfect car numerical, the hydraulic explanation; three polite half-mark points: unit N not m, substitute h = 4 not 8, write the show-that sentence; clockwise/anticlockwise note) plus `answers.pdf` staged as `Physics-exam-16-Answer-Key.pdf`. Both sends succeeded. English reports not sent.
+
+**Follow-up sent 2026-09-16 18:20:** Seemab asked by Urdu voice note which question each mistake was on. Sent a Roman Urdu message listing every mistake by question number (Q.2(i)(a) 15 m, Q.2(iii)(a) 8 for h, Q.3(ii)(c) no sentence; no-mark: MCQ 7 unit, Q.2(ii)(a) anticlockwise) and naming every fully correct question.
+
+## Unit 7 | Density and Temperature (entered the program 2026-09-22; the unit is split into two papers)
+
+**REBUILT 2026-09-25.** Exam-17 was re-cut to match what she has actually studied. Its scope is now
+**Parts 7A and 7B**, that is sections 7.1, 7.2, 7.2.1, 7.2.2, 7.3 and 7.4, and all six quiz questions from
+the Part 7A and Part 7B Aasan Notes are on the paper. The old scan gap is closed: the complete 22 page
+chapter is in the repo, so **density of liquids and the volume formulas are now examined**, which the first
+cut of exam-17 could not do. Part 2 = sections 7.5 to 7.12, still due as a later paper. Cite **her own page
+numbers**, which run two ahead of the online copy.
+
+| Sub-topic | Tested in |
+|---|---|
+| Definition of density, rho = m/V, symbols, SI unit | **17 (Section B Q2(i))**; 05 (never sent) |
+| Density as a scalar quantity | **17 (MCQ 3)** |
+| Unit conversion between g/cm3 and kg/m3 | **17 (MCQ 1, 2700 to 2.7; and Q3(iii), 0.8 g/mL to 800 kg/m3)** |
+| Density of a substance is independent of the amount | **17 (Section B Q2(iii), two cubes from one iron block)** |
+| **Density of liquids: mass by subtraction, Equation 7.2** | **17 (Section B Q3, 120 g empty, 50 mL, 160 g total, 0.8 g/mL)** |
+| **Volume formulas: cuboid, cube, sphere** | **17 (Section B Q2(ii) as recall; applied in MCQ 2 and Q5(B))** |
+| Density of a regular shape, cube | **17 (MCQ 2, side 3 cm, 81 g)** |
+| Density of a regular shape, cuboid in SI units (cm to m) | **17 (Section C Q5(B), 20 x 10 x 5 cm, 19.3 kg, 19300 kg/m3)** |
+| Displacement method, calculation | **17 (Section C Q5(A)(i) and (ii), 175 g in 30 to 55 mL)** |
+| Displacement method: name, kind of object, conditions (sinks, insoluble) | **17 (Section C Q5(A)(iii))** |
+| Table 7.1 densities as recall | **17 (Q5(B)(vi), gold)** |
+| Particle structure of solids, liquids and gases (Table 7.2) | **17 (Section B Q4(i): density, arrangement, movement rows)** |
+| Volume of a gas equals the volume of its container | **17 (MCQ 4)** |
+| **Fluids (liquids and gases both flow)** | **17 (MCQ 5)** |
+| Why a solid is far denser than a gas, in terms of attractive force | **17 (Section B Q4(ii))** |
+| Plasma: conduction, and formation by ionization | **17 (MCQs 6 and 7)** |
+| Cavity inside a solid, volume by subtraction | dropped from the rebuild; still open for the Part 2 paper or a later revision slice |
+| Plasma as the fourth state, the three kinds of particle it consists of | dropped from the rebuild (it was a written part in the first cut); still open |
+| Figure 7.4 (particle motion panels) | **never to be set**: in her printing the Solids and Gases panels are swapped |
+| Osmium as the densest material | **never to be set** (no SLO, and the book calls it harder than diamond, which is false) |
+| Petrol density | **never to be set** (Table 7.1 says 800 kg/m3, the p168 box works from 0.9 g/cm3) |
+| 7.5 to 7.12 (temperature, absolute zero, internal energy, thermometers, fixed points, sensitivity, range, linearity) | part 2, not yet set in this program; 05 covered them in the never-sent 65 mark paper |
+
+
+## Exam-17 | built 2026-09-22, rebuilt 2026-09-25, never sent
+
+**First paper of the section calendar** in [[whole-book-program]]: 38 mark shape (10 MCQ + 3 short x 4 +
+2 long x 8), 1 h 30 m, no choices. Files: `physics/exams/exam-17-ch7p1-rev3-6/exam.pdf` (2 pp) and
+`answers.pdf` (4 pp); sources at `physics/exam-template/exam-17-source/`; full build note in that
+directory's `SEND-NOTE.md`.
+
+**What the 2026-09-25 rebuild changed.** Scope retitled from "Unit 7 Part 1" to **Unit 7 Parts 7A and 7B**
+to match the notes she actually received. All six quiz questions from the Part 7A and Part 7B Aasan Notes
+were folded in with the numbers she practised, per the rule that a note's quiz must appear on that
+subject's paper: 7A Q1 became Q2(i) and Q2(ii), 7A Q2 became the whole of Q3, 7A Q3 became Q2(iii), 7B Q1
+became Q5(A)(iii), 7B Q2 became Q5(A)(i) and (ii), 7B Q3 became Q4(ii). Those six items carry 13 of the 27
+new marks. **Density of liquids and the three volume formulas are examined for the first time**, which the
+first cut could not do while the scan lacked her p170 and p171. Dropped to make room: the old displacement
+MCQ, the iron cube cavity long part, the "name the fourth state" written part, the Table 7.2 arrangement
+and gases MCQs. The split is unchanged at 27 new and 11 revision, and the revision slice (MCQs 8, 9, 10 and
+Q6 Efficiency) is untouched.
+
+**Split held exactly at 27 new (71%) and 11 revision (29%):** MCQs 1 to 7 plus Questions 2, 3, 4 and 5 are
+Unit 7 Parts 7A and 7B; MCQs 8, 9, 10 and Question 6 are revision.
+
+**Ahead-of-class paper**, so it carries the banner rule: a Roman Urdu note under the syllabus line saying
+the part has not been taught yet, naming Parts 7A and 7B so she connects it to her notes, and telling her
+the notes' quiz questions are on the paper. No date is mentioned. Instructions (HIDAYAAT) are in Roman
+Urdu, questions, options and key in English.
+
+**Revision slice, chosen as repair rather than coverage.** All three revision MCQs are her documented OPF
+First Term school misses, set so that the correct answer is the option she failed to choose: MCQ 8 kinetic
+energy with half the mass and double the speed (school MCQ 9, the 4 Ek trap left in as a distractor), MCQ 9
+the water in a dam reservoir storing gravitational potential energy (school MCQ 11, where she chose
+electrical), MCQ 10 mass from a weight of 540 N (school 2(ii), where 600 N was used as a mass). Section C
+Q6 is **Unit 6 section 6.5 Efficiency, examined for the first time ever**: it was outside the studied
+syllabus in exam-10, 11, 12, 14, 15 and 16. It asks for the definition, a percentage efficiency (1500 J out
+of 2500 J = 60%), an output power through P_out = eta x P_in (0.6 x 600 W = 360 W), why 100% is impossible,
+and the lowest device in Table 6.3 (incandescent light, 5%).
+
+**Missing-conclusion habit targeted in the new section too:** Q3(iii) and Q5(B)(vi) each ask for one full
+sentence, and both carry half a mark of their own for it.
+
+**Numerical-heavy, as required for Physics:** 3 of the 10 MCQs and 3 of the 5 written questions are
+calculations (a unit conversion, density from a cube, density of a liquid by subtraction, density from two
+displacement readings, density of a cuboid in SI units, an efficiency and an output power).
+
+**Answer letters c, a, b, d, c, b, a, d, c, b: a = 2, b = 3, c = 3, d = 2**, no letter repeated in
+consecutive questions, all ten verified by script against the printed option order (0 mismatches), no two
+options identical as text or as a number.
+
+**Every item re-solved blind** from the printed stems before the key was compared, and every MCQ answer
+re-checked against the page images of the chapter scan, because the Unit 7 text layer is garbled. Table 6.3
+and section 6.5 were re-read on her own Unit 6 scan for Q6.
+
+**Two answer leaks found and fixed during the rebuild:** an early draft made MCQ 1 say "written in SI
+units", which handed her the SI unit asked for in Q2(i), so MCQ 1 now converts kg/m3 into g/cm3 instead;
+and a draft MCQ 3 asked which apparatus measures the volume of a liquid, which Q3's own stem answers, so
+MCQ 3 now asks whether density is a scalar quantity.
+
+**Traps avoided:** petrol never asked (Table 7.1 and the p168 box disagree), and the key tells the marker to
+accept without reward if she names petrol off her own bat in Q3; osmium never asked; nothing from 7.5
+onwards; no question built on Figure 7.4, whose panels are swapped in her printing; none of the book's own
+numericals on her p188 reused, only their style with fresh numbers.
+
+**Uniqueness:** every prior physics paper and key, plus the OPF school physics paper and script, extracted
+to one file and grep-checked for each stem phrase and numeric value. No collisions: 175 g, 30 mL, 55 mL,
+160 g, 19.3 kg, 19300, 2700 kg/m3, 81 g and "cuboid" have never appeared on any paper she has seen. The
+only topical overlap is `physics/exams/exam-05-ch7`, the 65 mark Unit 7 paper in the backlog that was
+**never sent and never attempted**; it was read in full and deliberately not reused.
+
+
+## Known gaps after exam-17 (for the Unit 7 part 2 paper and later revision slices)
+
+- **Unit 7 part 2** (7.5 to 7.12) is entirely untested in this program: motion of particles and
+  temperature, absolute zero, internal energy, thermometric properties, fixed points and calibration,
+  sensitivity, range, linearity, liquid-in-glass versus thermocouple.
+- **Parts 7A and 7B leftovers (updated 2026-09-25):** density of liquids, the volume formulas and fluids
+  are now all examined, and no photos are owed because the complete chapter is in the repo. What is still
+  open from 7A and 7B: the **cavity by subtraction** question (dropped in the rebuild to make room for the
+  quiz items), **naming the fourth state and its three kinds of particle** as a written item, and the
+  **energy of particles** row of Table 7.2. Density of gases is never set: section 7.2 gives no method for
+  it, so the book's own Long Q1 is defective on that point.
+- Unit 6: efficiency is now open and examined; the output power relation P_out = eta x P_in is fresh and
+  should rest. **Work at an angle** (last exam-15) and **fossil fuel or nuclear fuel** (last exam-12) are
+  the oldest Unit 6 items.
+- Unit 1: **vernier and screw gauge readings** (last exam-14) and **resultant of two vectors** (exam-16)
+  are the next due; significant figures has a weak SLO hook (A-16 covers rounding, not counting), so
+  prefer rounding a calculated result if it is set again.
+- Unit 2: all sub-topics reasonably current; the speed-time **area** has not been re-set since exam-15,
+  while the gradient was re-tested in exam-16.
+- Unit 3: **impulse** and **conservation of momentum** (both exam-15) are due again; weight and mass have
+  just been refreshed here.
+- Unit 4: **torque and principle of moments** were refreshed in exam-16; orbital motion (exam-15) can rest.
+- Unit 5: **Pascal's principle** was refreshed in exam-16; **Hooke's law** (exam-15) is next due.
+- Unit 9: nothing set on this paper. Falsifiability (exam-14) and science versus technology versus
+  engineering (exam-15) are the oldest.
