@@ -1,0 +1,3369 @@
+{
+ "generated": "2026-09-30",
+ "lessons": [
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.1",
+   "title": "Introduction to Physics",
+   "covers": [
+    {
+     "ref": "1.1",
+     "title": "Introduction to Physics"
+    }
+   ],
+   "source_chars": 137,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch01-introduction-to-physics",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.2",
+   "title": "Physical and Non-Physical Quantities",
+   "covers": [
+    {
+     "ref": "1.2",
+     "title": "Physical and Non-Physical Quantities"
+    },
+    {
+     "ref": "1.2.1",
+     "title": "Base and Derived Physical Quantities"
+    }
+   ],
+   "source_chars": 119,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch01-physical-and-non-physical-quantities",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.3",
+   "title": "International System of Units",
+   "covers": [
+    {
+     "ref": "1.3",
+     "title": "International System of Units"
+    },
+    {
+     "ref": "1.3.1",
+     "title": "SI Base Units"
+    },
+    {
+     "ref": "1.3.2",
+     "title": "SI Derived Units"
+    }
+   ],
+   "source_chars": 222,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch01-international-system-of-units",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.4",
+   "title": "Standard Form / Scientific Notation",
+   "covers": [
+    {
+     "ref": "1.4",
+     "title": "Standard Form / Scientific Notation"
+    }
+   ],
+   "source_chars": 66,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch01-standard-form-scientific-notation",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.5",
+   "title": "Prefixes to Power of Ten",
+   "covers": [
+    {
+     "ref": "1.5",
+     "title": "Prefixes to Power of Ten"
+    }
+   ],
+   "source_chars": 44,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch01-prefixes-to-power-of-ten",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.6",
+   "title": "Scalars and Vectors",
+   "covers": [
+    {
+     "ref": "1.6",
+     "title": "Scalars and Vectors"
+    },
+    {
+     "ref": "1.6.1",
+     "title": "Scalar Quantities"
+    },
+    {
+     "ref": "1.6.2",
+     "title": "Vector Quantities"
+    },
+    {
+     "ref": "1.6.3",
+     "title": "Adding Vector Quantities"
+    }
+   ],
+   "source_chars": 344,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch01-scalars-and-vectors",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.7",
+   "title": "Measuring Instruments",
+   "covers": [
+    {
+     "ref": "1.7",
+     "title": "Measuring Instruments"
+    },
+    {
+     "ref": "1.7.1",
+     "title": "Metre Rule and Measuring Tape"
+    },
+    {
+     "ref": "1.7.2",
+     "title": "Vernier Caliper"
+    },
+    {
+     "ref": "1.7.3",
+     "title": "Screw Gauge"
+    },
+    {
+     "ref": "1.7.4",
+     "title": "Physical Balance"
+    },
+    {
+     "ref": "1.7.5",
+     "title": "Measuring Cylinder"
+    },
+    {
+     "ref": "1.7.6",
+     "title": "Stop Watch"
+    }
+   ],
+   "source_chars": 437,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch01-measuring-instruments",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.8",
+   "title": "Errors",
+   "covers": [
+    {
+     "ref": "1.8",
+     "title": "Errors"
+    },
+    {
+     "ref": "1.8.1",
+     "title": "Systematic Errors"
+    },
+    {
+     "ref": "1.8.2",
+     "title": "Random Errors"
+    }
+   ],
+   "source_chars": 168,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch01-errors",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.9",
+   "title": "Precision and Accuracy",
+   "covers": [
+    {
+     "ref": "1.9",
+     "title": "Precision and Accuracy"
+    }
+   ],
+   "source_chars": 656,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch01-precision-and-accuracy",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.1",
+   "title": "Rest and Motion",
+   "covers": [
+    {
+     "ref": "2.1",
+     "title": "Rest and Motion"
+    },
+    {
+     "ref": "2.1.1",
+     "title": "Types of Motion"
+    }
+   ],
+   "source_chars": 723,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch02-rest-and-motion",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.2",
+   "title": "Distance and Displacement",
+   "covers": [
+    {
+     "ref": "2.2",
+     "title": "Distance and Displacement"
+    }
+   ],
+   "source_chars": 374,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch02-distance-and-displacement",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.3",
+   "title": "Speed and Velocity",
+   "covers": [
+    {
+     "ref": "2.3",
+     "title": "Speed and Velocity"
+    }
+   ],
+   "source_chars": 599,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch02-speed-and-velocity",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.4",
+   "title": "Acceleration",
+   "covers": [
+    {
+     "ref": "2.4",
+     "title": "Acceleration"
+    }
+   ],
+   "source_chars": 408,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch02-acceleration",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.5",
+   "title": "Motion Due to Gravity",
+   "covers": [
+    {
+     "ref": "2.5",
+     "title": "Motion Due to Gravity"
+    }
+   ],
+   "source_chars": 198,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch02-motion-due-to-gravity",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.6",
+   "title": "Graphical Analysis",
+   "covers": [
+    {
+     "ref": "2.6",
+     "title": "Graphical Analysis"
+    }
+   ],
+   "source_chars": 1024,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "physics-ch02-graphical-analysis",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.1",
+   "title": "Force",
+   "covers": [
+    {
+     "ref": "3.1",
+     "title": "Force"
+    },
+    {
+     "ref": "3.1.1",
+     "title": "Types of Forces"
+    },
+    {
+     "ref": "3.1.2",
+     "title": "Four Fundamental Forces of Nature"
+    }
+   ],
+   "source_chars": 1651,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "physics-ch03-force",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.2",
+   "title": "Newton's Laws of Motion",
+   "covers": [
+    {
+     "ref": "3.2",
+     "title": "Newton's Laws of Motion"
+    }
+   ],
+   "source_chars": 1110,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "physics-ch03-newton-s-laws-of-motion",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.3",
+   "title": "Mass and Weight",
+   "covers": [
+    {
+     "ref": "3.3",
+     "title": "Mass and Weight"
+    }
+   ],
+   "source_chars": 172,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch03-mass-and-weight",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.4",
+   "title": "Gravitational Field",
+   "covers": [
+    {
+     "ref": "3.4",
+     "title": "Gravitational Field"
+    }
+   ],
+   "source_chars": 288,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch03-gravitational-field",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.5",
+   "title": "Momentum",
+   "covers": [
+    {
+     "ref": "3.5",
+     "title": "Momentum"
+    },
+    {
+     "ref": "3.5.1",
+     "title": "Force and Change in Momentum"
+    },
+    {
+     "ref": "3.5.2",
+     "title": "Impulse"
+    },
+    {
+     "ref": "3.5.3",
+     "title": "Conservation of Momentum"
+    }
+   ],
+   "source_chars": 851,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch03-momentum",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.1",
+   "title": "Forces on Bodies",
+   "covers": [
+    {
+     "ref": "4.1",
+     "title": "Forces on Bodies"
+    }
+   ],
+   "source_chars": 223,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch04-forces-on-bodies",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.2",
+   "title": "Moment of Force",
+   "covers": [
+    {
+     "ref": "4.2",
+     "title": "Moment of Force"
+    }
+   ],
+   "source_chars": 422,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch04-moment-of-force",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.3",
+   "title": "Center of Mass / Center of Gravity",
+   "covers": [
+    {
+     "ref": "4.3",
+     "title": "Center of Mass / Center of Gravity"
+    }
+   ],
+   "source_chars": 510,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch04-center-of-mass-center-of-gravity",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.4",
+   "title": "Equilibrium",
+   "covers": [
+    {
+     "ref": "4.4",
+     "title": "Equilibrium"
+    },
+    {
+     "ref": "4.4.2",
+     "title": "Principle of Moments"
+    },
+    {
+     "ref": "4.4.3",
+     "title": "Types of Equilibrium"
+    }
+   ],
+   "source_chars": 962,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "physics-ch04-equilibrium",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.5",
+   "title": "Stability",
+   "covers": [
+    {
+     "ref": "4.5",
+     "title": "Stability"
+    }
+   ],
+   "source_chars": 469,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch04-stability",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.6",
+   "title": "Friction",
+   "covers": [
+    {
+     "ref": "4.6",
+     "title": "Friction"
+    },
+    {
+     "ref": "4.6.5",
+     "title": "Terminal Velocity"
+    },
+    {
+     "ref": "4.6.6",
+     "title": "Frictional Dissipation"
+    }
+   ],
+   "source_chars": 1335,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "physics-ch04-friction",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.7",
+   "title": "Centripetal Force",
+   "covers": [
+    {
+     "ref": "4.7",
+     "title": "Centripetal Force"
+    }
+   ],
+   "source_chars": 385,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch04-centripetal-force",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.8",
+   "title": "Orbital Motion",
+   "covers": [
+    {
+     "ref": "4.8",
+     "title": "Orbital Motion"
+    }
+   ],
+   "source_chars": 383,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch04-orbital-motion",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.9",
+   "title": "Planetary Data",
+   "covers": [
+    {
+     "ref": "4.9",
+     "title": "Planetary Data"
+    }
+   ],
+   "source_chars": 506,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch04-planetary-data",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.1",
+   "title": "Elasticity",
+   "covers": [
+    {
+     "ref": "5.1",
+     "title": "Elasticity"
+    },
+    {
+     "ref": "5.1.1",
+     "title": "Hooke's Law"
+    },
+    {
+     "ref": "5.1.2",
+     "title": "Applications"
+    }
+   ],
+   "source_chars": 623,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch05-elasticity",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.2",
+   "title": "Pressure",
+   "covers": [
+    {
+     "ref": "5.2",
+     "title": "Pressure"
+    }
+   ],
+   "source_chars": 201,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch05-pressure",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.3",
+   "title": "Atmospheric Pressure",
+   "covers": [
+    {
+     "ref": "5.3",
+     "title": "Atmospheric Pressure"
+    },
+    {
+     "ref": "5.3.1",
+     "title": "Measurement"
+    },
+    {
+     "ref": "5.3.3",
+     "title": "Weather"
+    },
+    {
+     "ref": "5.3.4",
+     "title": "Applications"
+    }
+   ],
+   "source_chars": 560,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch05-atmospheric-pressure",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.4",
+   "title": "Liquid Pressure",
+   "covers": [
+    {
+     "ref": "5.4",
+     "title": "Liquid Pressure"
+    }
+   ],
+   "source_chars": 102,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch05-liquid-pressure",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.5",
+   "title": "Manometer",
+   "covers": [
+    {
+     "ref": "5.5",
+     "title": "Manometer"
+    }
+   ],
+   "source_chars": 216,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch05-manometer",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.6",
+   "title": "Pascal's Principle",
+   "covers": [
+    {
+     "ref": "5.6",
+     "title": "Pascal's Principle"
+    }
+   ],
+   "source_chars": 177,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch05-pascal-s-principle",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.7",
+   "title": "Hydraulic Lift",
+   "covers": [
+    {
+     "ref": "5.7.1",
+     "title": "Hydraulic Lift"
+    },
+    {
+     "ref": "5.7.2",
+     "title": "Hydraulic Car Brake System"
+    }
+   ],
+   "source_chars": 485,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch05-hydraulic-lift",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.1",
+   "title": "Work",
+   "covers": [
+    {
+     "ref": "6.1",
+     "title": "Work"
+    }
+   ],
+   "source_chars": 197,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch06-work",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.2",
+   "title": "Energy and Its Forms",
+   "covers": [
+    {
+     "ref": "6.2",
+     "title": "Energy and Its Forms"
+    },
+    {
+     "ref": "6.2.1",
+     "title": "Kinetic Energy"
+    },
+    {
+     "ref": "6.2.2",
+     "title": "Potential Energy"
+    },
+    {
+     "ref": "6.2.3",
+     "title": "Energy Conversion and Conservation"
+    }
+   ],
+   "source_chars": 852,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch06-energy-and-its-forms",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.3",
+   "title": "Major Energy Resources",
+   "covers": [
+    {
+     "ref": "6.3",
+     "title": "Major Energy Resources"
+    }
+   ],
+   "source_chars": 824,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch06-major-energy-resources",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.4",
+   "title": "Power",
+   "covers": [
+    {
+     "ref": "6.4",
+     "title": "Power"
+    }
+   ],
+   "source_chars": 213,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch06-power",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.5",
+   "title": "Efficiency",
+   "covers": [
+    {
+     "ref": "6.5",
+     "title": "Efficiency"
+    }
+   ],
+   "source_chars": 247,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "physics-ch06-efficiency",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 9,
+   "ref": "9.1",
+   "title": "Objectives of Physics",
+   "covers": [
+    {
+     "ref": "9.1",
+     "title": "Objectives of Physics"
+    }
+   ],
+   "source_chars": 637,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "physics-ch09-objectives-of-physics",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 9,
+   "ref": "9.2",
+   "title": "Fields of Physics",
+   "covers": [
+    {
+     "ref": "9.2",
+     "title": "Fields of Physics"
+    }
+   ],
+   "source_chars": 1502,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "physics-ch09-fields-of-physics",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 9,
+   "ref": "9.3",
+   "title": "Hypothesis, Theory and Law",
+   "covers": [
+    {
+     "ref": "9.3",
+     "title": "Hypothesis, Theory and Law"
+    }
+   ],
+   "source_chars": 1195,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "physics-ch09-hypothesis-theory-and-law",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 9,
+   "ref": "9.4",
+   "title": "Science, Technology and Engineering",
+   "covers": [
+    {
+     "ref": "9.4",
+     "title": "Science, Technology and Engineering"
+    }
+   ],
+   "source_chars": 6254,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "physics-ch09-science-technology-and-engineering",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.1",
+   "title": "Definition of Chemistry",
+   "covers": [
+    {
+     "ref": "1.1",
+     "title": "Definition of Chemistry"
+    }
+   ],
+   "source_chars": 261,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch01-definition-of-chemistry",
+   "note": "seemab-reports/revision/chem-ch01-definition-notes-2026-09-30.pdf",
+   "audio": "chem-ch01-definition",
+   "done": true
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.2",
+   "title": "Branches of Chemistry",
+   "covers": [
+    {
+     "ref": "1.2",
+     "title": "Branches of Chemistry"
+    }
+   ],
+   "source_chars": 925,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "chemistry-ch01-branches-of-chemistry",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.3",
+   "title": "Essential Questions for Branches",
+   "covers": [
+    {
+     "ref": "1.3",
+     "title": "Essential Questions for Branches"
+    }
+   ],
+   "source_chars": 198,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch01-essential-questions-for-branches",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.4",
+   "title": "Daily Life Applications",
+   "covers": [
+    {
+     "ref": "1.4",
+     "title": "Daily Life Applications"
+    }
+   ],
+   "source_chars": 304,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch01-daily-life-applications",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.5",
+   "title": "Science, Technology, and Engineering",
+   "covers": [
+    {
+     "ref": "1.5",
+     "title": "Science, Technology, and Engineering"
+    }
+   ],
+   "source_chars": 414,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch01-science-technology-and-engineering",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.6",
+   "title": "Applications of Science, Technology, and Engineering",
+   "covers": [
+    {
+     "ref": "1.6",
+     "title": "Applications of Science, Technology, and Engineering"
+    }
+   ],
+   "source_chars": 401,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch01-applications-of-science-technology-a",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.1",
+   "title": "States of Matter",
+   "covers": [
+    {
+     "ref": "2.1",
+     "title": "States of Matter"
+    }
+   ],
+   "source_chars": 836,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch02-states-of-matter",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.2",
+   "title": "Elements, Compounds, and Mixtures",
+   "covers": [
+    {
+     "ref": "2.2",
+     "title": "Elements, Compounds, and Mixtures"
+    }
+   ],
+   "source_chars": 319,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch02-elements-compounds-and-mixtures",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.3",
+   "title": "Allotropes",
+   "covers": [
+    {
+     "ref": "2.3",
+     "title": "Allotropes"
+    }
+   ],
+   "source_chars": 469,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch02-allotropes",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.4",
+   "title": "Solution",
+   "covers": [
+    {
+     "ref": "2.4",
+     "title": "Solution"
+    }
+   ],
+   "source_chars": 856,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch02-solution",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.5",
+   "title": "Colloids & Suspensions",
+   "covers": [
+    {
+     "ref": "2.5",
+     "title": "Colloids & Suspensions"
+    }
+   ],
+   "source_chars": 412,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch02-colloids-suspensions",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.1",
+   "title": "Atomic Models",
+   "covers": [
+    {
+     "ref": "3.1",
+     "title": "Atomic Models"
+    }
+   ],
+   "source_chars": 1321,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "chemistry-ch03-atomic-models",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.2",
+   "title": "Subatomic Particles",
+   "covers": [
+    {
+     "ref": "3.2",
+     "title": "Subatomic Particles"
+    }
+   ],
+   "source_chars": 411,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch03-subatomic-particles",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.3",
+   "title": "Proton/Atomic Number",
+   "covers": [
+    {
+     "ref": "3.3",
+     "title": "Proton/Atomic Number"
+    }
+   ],
+   "source_chars": 312,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch03-proton-atomic-number",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.4",
+   "title": "Relative Atomic Mass",
+   "covers": [
+    {
+     "ref": "3.4",
+     "title": "Relative Atomic Mass"
+    }
+   ],
+   "source_chars": 216,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch03-relative-atomic-mass",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.5",
+   "title": "Isotopes",
+   "covers": [
+    {
+     "ref": "3.5",
+     "title": "Isotopes"
+    },
+    {
+     "ref": "3.5.5",
+     "title": "Determination of Relative Atomic Mass"
+    },
+    {
+     "ref": "3.5.6",
+     "title": "Uses of Isotopes"
+    },
+    {
+     "ref": "3.5.7",
+     "title": "Carbon Dating"
+    }
+   ],
+   "source_chars": 1021,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "chemistry-ch03-isotopes",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.6",
+   "title": "Cations and Anions",
+   "covers": [
+    {
+     "ref": "3.6",
+     "title": "Cations and Anions"
+    }
+   ],
+   "source_chars": 176,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch03-cations-and-anions",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.7",
+   "title": "Electronic Configuration",
+   "covers": [
+    {
+     "ref": "3.7",
+     "title": "Electronic Configuration"
+    }
+   ],
+   "source_chars": 414,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch03-electronic-configuration",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.1",
+   "title": "Periodic Table",
+   "covers": [
+    {
+     "ref": "4.1",
+     "title": "Periodic Table"
+    },
+    {
+     "ref": "4.1.1",
+     "title": "Periods and Groups of Elements"
+    },
+    {
+     "ref": "4.1.2",
+     "title": "s and p Blocks in the Periodic Table"
+    }
+   ],
+   "source_chars": 149,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch04-periodic-table",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.2",
+   "title": "Group Number and Charge on an Ion",
+   "covers": [
+    {
+     "ref": "4.2",
+     "title": "Group Number and Charge on an Ion"
+    }
+   ],
+   "source_chars": 113,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch04-group-number-and-charge-on-an-ion",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.3",
+   "title": "Periodicity of Properties",
+   "covers": [
+    {
+     "ref": "4.3",
+     "title": "Periodicity of Properties"
+    },
+    {
+     "ref": "4.3.1",
+     "title": "Shielding Effect"
+    },
+    {
+     "ref": "4.3.2",
+     "title": "Atomic Size"
+    },
+    {
+     "ref": "4.3.3",
+     "title": "Ionization Energy"
+    },
+    {
+     "ref": "4.3.4",
+     "title": "Electron Affinity"
+    },
+    {
+     "ref": "4.3.5",
+     "title": "Electronegativity"
+    }
+   ],
+   "source_chars": 159,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch04-periodicity-of-properties",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.4",
+   "title": "Characteristic Properties",
+   "covers": [
+    {
+     "ref": "4.4",
+     "title": "Characteristic Properties"
+    },
+    {
+     "ref": "4.4.1",
+     "title": "Metallic Character"
+    },
+    {
+     "ref": "4.4.2",
+     "title": "Reactivity"
+    },
+    {
+     "ref": "4.4.3",
+     "title": "Density"
+    },
+    {
+     "ref": "4.4.4",
+     "title": "Characteristic Properties of Alkali Metals"
+    },
+    {
+     "ref": "4.4.5",
+     "title": "Prediction of properties of other elements in Group 1"
+    },
+    {
+     "ref": "4.4.6",
+     "title": "Position of Unknown Element in the Periodic Table"
+    }
+   ],
+   "source_chars": 270,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch04-characteristic-properties",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.5",
+   "title": "Transition Elements",
+   "covers": [
+    {
+     "ref": "4.5",
+     "title": "Transition Elements"
+    }
+   ],
+   "source_chars": 119,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch04-transition-elements",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.6",
+   "title": "Lanthanides and Actinides",
+   "covers": [
+    {
+     "ref": "4.6",
+     "title": "Lanthanides and Actinides"
+    }
+   ],
+   "source_chars": 31,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch04-lanthanides-and-actinides",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.7",
+   "title": "Halogens",
+   "covers": [
+    {
+     "ref": "4.7",
+     "title": "Halogens"
+    }
+   ],
+   "source_chars": 129,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch04-halogens",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.8",
+   "title": "Noble Gases",
+   "covers": [
+    {
+     "ref": "4.8",
+     "title": "Noble Gases"
+    }
+   ],
+   "source_chars": 65,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch04-noble-gases",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.9",
+   "title": "Comparison of General Physical Properties of Metals and Non-Metals",
+   "covers": [
+    {
+     "ref": "4.9",
+     "title": "Comparison of General Physical Properties of Metals and Non-Metals"
+    }
+   ],
+   "source_chars": 1029,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "chemistry-ch04-comparison-of-general-physical-prope",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.1",
+   "title": "Why Do Atoms React?",
+   "covers": [
+    {
+     "ref": "5.1",
+     "title": "Why Do Atoms React?"
+    }
+   ],
+   "source_chars": 72,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch05-why-do-atoms-react",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.2",
+   "title": "Chemical Bonds",
+   "covers": [
+    {
+     "ref": "5.2",
+     "title": "Chemical Bonds"
+    }
+   ],
+   "source_chars": 67,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch05-chemical-bonds",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.3",
+   "title": "Types of Bonds",
+   "covers": [
+    {
+     "ref": "5.3",
+     "title": "Types of Bonds"
+    },
+    {
+     "ref": "5.3.1",
+     "title": "Ionic Bonds"
+    },
+    {
+     "ref": "5.3.2",
+     "title": "Covalent Bonds"
+    },
+    {
+     "ref": "5.3.3",
+     "title": "Polar and Nonpolar Covalent Bonds"
+    },
+    {
+     "ref": "5.3.4",
+     "title": "Coordinate Covalent Bond"
+    }
+   ],
+   "source_chars": 356,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch05-types-of-bonds",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.4",
+   "title": "Intermolecular Forces",
+   "covers": [
+    {
+     "ref": "5.4",
+     "title": "Intermolecular Forces"
+    }
+   ],
+   "source_chars": 68,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch05-intermolecular-forces",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.5",
+   "title": "Nature of Bonding, Structure and Properties",
+   "covers": [
+    {
+     "ref": "5.5",
+     "title": "Nature of Bonding, Structure and Properties"
+    },
+    {
+     "ref": "5.5.1",
+     "title": "Graphite"
+    },
+    {
+     "ref": "5.5.2",
+     "title": "Diamond"
+    },
+    {
+     "ref": "5.5.3",
+     "title": "Contrasting Ionic and Covalent Compounds and Their Uses"
+    }
+   ],
+   "source_chars": 437,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch05-nature-of-bonding-structure-and-prop",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.6",
+   "title": "Metallic Bonds",
+   "covers": [
+    {
+     "ref": "5.6",
+     "title": "Metallic Bonds"
+    },
+    {
+     "ref": "5.6.1",
+     "title": "Structure and Properties of Metals for Industrial Purposes"
+    }
+   ],
+   "source_chars": 852,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch05-metallic-bonds",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.1",
+   "title": "Empirical Formula and Molecular Formula",
+   "covers": [
+    {
+     "ref": "6.1",
+     "title": "Empirical Formula and Molecular Formula"
+    }
+   ],
+   "source_chars": 297,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch06-empirical-formula-and-molecular-form",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.2",
+   "title": "Molecular Mass and Formula Mass",
+   "covers": [
+    {
+     "ref": "6.2",
+     "title": "Molecular Mass and Formula Mass"
+    }
+   ],
+   "source_chars": 295,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch06-molecular-mass-and-formula-mass",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.3",
+   "title": "Chemical Formula and Name of Binary Ionic Compounds",
+   "covers": [
+    {
+     "ref": "6.3",
+     "title": "Chemical Formula and Name of Binary Ionic Compounds"
+    }
+   ],
+   "source_chars": 354,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch06-chemical-formula-and-name-of-binary-",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.4",
+   "title": "Avogadro's Number and Mole",
+   "covers": [
+    {
+     "ref": "6.4",
+     "title": "Avogadro's Number and Mole"
+    },
+    {
+     "ref": "6.4.1",
+     "title": "Gram Atomic Mass, Gram Molecular Mass, Gram Formula Mass"
+    },
+    {
+     "ref": "6.4.2",
+     "title": "Differences"
+    }
+   ],
+   "source_chars": 627,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch06-avogadro-s-number-and-mole",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.5",
+   "title": "Chemical Calculations",
+   "covers": [
+    {
+     "ref": "6.5",
+     "title": "Chemical Calculations"
+    },
+    {
+     "ref": "6.5.1",
+     "title": "Mole-Mass Calculations"
+    },
+    {
+     "ref": "6.5.2",
+     "title": "Mole-Particles Calculations"
+    }
+   ],
+   "source_chars": 343,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch06-chemical-calculations",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "0.5",
+   "title": "mol CH₄ = 3.011×10²³ molecules",
+   "covers": [
+    {
+     "ref": "0.5",
+     "title": "mol CH₄ = 3.011×10²³ molecules"
+    }
+   ],
+   "source_chars": 161,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch06-mol-ch-3-011-10-molecules",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.6",
+   "title": "Chemical Equation and Balancing",
+   "covers": [
+    {
+     "ref": "6.6",
+     "title": "Chemical Equation and Balancing"
+    },
+    {
+     "ref": "6.6.2",
+     "title": "Ionic Equations"
+    }
+   ],
+   "source_chars": 351,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch06-chemical-equation-and-balancing",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.7",
+   "title": "Molecular and Structural Formula",
+   "covers": [
+    {
+     "ref": "6.7",
+     "title": "Molecular and Structural Formula"
+    }
+   ],
+   "source_chars": 236,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch06-molecular-and-structural-formula",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.1",
+   "title": "In terms of loss/gain of oxygen",
+   "covers": [
+    {
+     "ref": "7.1.1",
+     "title": "In terms of loss/gain of oxygen"
+    },
+    {
+     "ref": "7.1.2",
+     "title": "In terms of transfer of hydrogen"
+    },
+    {
+     "ref": "7.1.3",
+     "title": "In terms of transfer of electrons"
+    }
+   ],
+   "source_chars": 254,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch07-in-terms-of-loss-gain-of-oxygen",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.2",
+   "title": "Oxidation states definition",
+   "covers": [
+    {
+     "ref": "7.2.1",
+     "title": "Oxidation states definition"
+    },
+    {
+     "ref": "7.2.2",
+     "title": "Rules for assigning"
+    },
+    {
+     "ref": "7.2.3",
+     "title": "Determining oxidation number in a compound"
+    }
+   ],
+   "source_chars": 268,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch07-oxidation-states-definition",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.3",
+   "title": "Roman numerals as oxidation number",
+   "covers": [
+    {
+     "ref": "7.3.1",
+     "title": "Roman numerals as oxidation number"
+    }
+   ],
+   "source_chars": 105,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch07-roman-numerals-as-oxidation-number",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.4",
+   "title": "Definitions",
+   "covers": [
+    {
+     "ref": "7.4.1",
+     "title": "Definitions"
+    },
+    {
+     "ref": "7.4.2",
+     "title": "Identifying agents in reactions"
+    }
+   ],
+   "source_chars": 275,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch07-definitions",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.5",
+   "title": "Corrosion definition and rusting mechanism",
+   "covers": [
+    {
+     "ref": "7.5.1",
+     "title": "Corrosion definition and rusting mechanism"
+    },
+    {
+     "ref": "7.5.2",
+     "title": "Prevention: paint, alloying"
+    }
+   ],
+   "source_chars": 233,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch07-corrosion-definition-and-rusting-mec",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 8,
+   "ref": "8.1",
+   "title": "System and Surroundings",
+   "covers": [
+    {
+     "ref": "8.1.1",
+     "title": "System and Surroundings"
+    }
+   ],
+   "source_chars": 67,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch08-system-and-surroundings",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 8,
+   "ref": "8.2",
+   "title": "Exothermic Reactions",
+   "covers": [
+    {
+     "ref": "8.2.1",
+     "title": "Exothermic Reactions"
+    },
+    {
+     "ref": "8.2.2",
+     "title": "Endothermic Reactions"
+    }
+   ],
+   "source_chars": 2259,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "chemistry-ch08-exothermic-reactions",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.1",
+   "title": "Concepts of Acids and Bases",
+   "covers": [
+    {
+     "ref": "10.1",
+     "title": "Concepts of Acids and Bases"
+    }
+   ],
+   "source_chars": 1472,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "chemistry-ch10-concepts-of-acids-and-bases",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.2",
+   "title": "Strength of Acids and Bases",
+   "covers": [
+    {
+     "ref": "10.2",
+     "title": "Strength of Acids and Bases"
+    }
+   ],
+   "source_chars": 740,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch10-strength-of-acids-and-bases",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.3",
+   "title": "Characteristic Properties of Acids",
+   "covers": [
+    {
+     "ref": "10.3",
+     "title": "Characteristic Properties of Acids"
+    }
+   ],
+   "source_chars": 618,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "chemistry-ch10-characteristic-properties-of-acids",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.4",
+   "title": "Characteristic Properties of Bases",
+   "covers": [
+    {
+     "ref": "10.4",
+     "title": "Characteristic Properties of Bases"
+    }
+   ],
+   "source_chars": 306,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "chemistry-ch10-characteristic-properties-of-bases",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.5",
+   "title": "Oxides and Hydroxides",
+   "covers": [
+    {
+     "ref": "10.5",
+     "title": "Oxides and Hydroxides"
+    }
+   ],
+   "source_chars": 3050,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "chemistry-ch10-oxides-and-hydroxides",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.1",
+   "title": "Introduction to Biology",
+   "covers": [
+    {
+     "ref": "1.1",
+     "title": "Introduction to Biology"
+    },
+    {
+     "ref": "1.1.2",
+     "title": "Quranic Instructions"
+    }
+   ],
+   "source_chars": 510,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch01-introduction-to-biology",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.2",
+   "title": "Major Fields of Biology",
+   "covers": [
+    {
+     "ref": "1.2",
+     "title": "Major Fields of Biology"
+    }
+   ],
+   "source_chars": 974,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch01-major-fields-of-biology",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.3",
+   "title": "Relationship of Biology with Other Sciences",
+   "covers": [
+    {
+     "ref": "1.3",
+     "title": "Relationship of Biology with Other Sciences"
+    }
+   ],
+   "source_chars": 589,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch01-relationship-of-biology-with-other-s",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.4",
+   "title": "Careers in Biology",
+   "covers": [
+    {
+     "ref": "1.4",
+     "title": "Careers in Biology"
+    }
+   ],
+   "source_chars": 169,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch01-careers-in-biology",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.5",
+   "title": "Science is a Collaborative Field",
+   "covers": [
+    {
+     "ref": "1.5",
+     "title": "Science is a Collaborative Field"
+    }
+   ],
+   "source_chars": 266,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch01-science-is-a-collaborative-field",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.6",
+   "title": "Biological Method",
+   "covers": [
+    {
+     "ref": "1.6",
+     "title": "Biological Method"
+    }
+   ],
+   "source_chars": 355,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch01-biological-method",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.7",
+   "title": "Hypothesis, Theory and Law",
+   "covers": [
+    {
+     "ref": "1.7",
+     "title": "Hypothesis, Theory and Law"
+    }
+   ],
+   "source_chars": 386,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch01-hypothesis-theory-and-law",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.8",
+   "title": "Malaria - Example of Biological Method",
+   "covers": [
+    {
+     "ref": "1.8",
+     "title": "Malaria - Example of Biological Method"
+    }
+   ],
+   "source_chars": 1482,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch01-malaria-example-of-biological-method",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.1",
+   "title": "Definition and Introduction to Biodiversity",
+   "covers": [
+    {
+     "ref": "2.1",
+     "title": "Definition and Introduction to Biodiversity"
+    }
+   ],
+   "source_chars": 376,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch02-definition-and-introduction-to-biodi",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.2",
+   "title": "Classification",
+   "covers": [
+    {
+     "ref": "2.2",
+     "title": "Classification"
+    },
+    {
+     "ref": "2.2.1",
+     "title": "Advantages of Classification"
+    }
+   ],
+   "source_chars": 600,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch02-classification",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.3",
+   "title": "History of Classification",
+   "covers": [
+    {
+     "ref": "2.3",
+     "title": "History of Classification"
+    }
+   ],
+   "source_chars": 816,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch02-history-of-classification",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.4",
+   "title": "Three Domains System",
+   "covers": [
+    {
+     "ref": "2.4",
+     "title": "Three Domains System"
+    }
+   ],
+   "source_chars": 1754,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch02-three-domains-system",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.5",
+   "title": "Taxonomic Ranks",
+   "covers": [
+    {
+     "ref": "2.5",
+     "title": "Taxonomic Ranks"
+    }
+   ],
+   "source_chars": 477,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch02-taxonomic-ranks",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.6",
+   "title": "Species",
+   "covers": [
+    {
+     "ref": "2.6",
+     "title": "Species"
+    }
+   ],
+   "source_chars": 253,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch02-species",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.7",
+   "title": "Binomial Nomenclature",
+   "covers": [
+    {
+     "ref": "2.7",
+     "title": "Binomial Nomenclature"
+    }
+   ],
+   "source_chars": 341,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch02-binomial-nomenclature",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.8",
+   "title": "Complications of Classifying Viruses",
+   "covers": [
+    {
+     "ref": "2.8",
+     "title": "Complications of Classifying Viruses"
+    }
+   ],
+   "source_chars": 834,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch02-complications-of-classifying-viruses",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.1",
+   "title": "Cell",
+   "covers": [
+    {
+     "ref": "3.1",
+     "title": "Cell"
+    },
+    {
+     "ref": "3.1.1",
+     "title": "Structure of Cell"
+    },
+    {
+     "ref": "3.1.2",
+     "title": "Structural Advantages of Animal and Plant Cell"
+    }
+   ],
+   "source_chars": 5659,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch03-cell",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.2",
+   "title": "Cell Specialization",
+   "covers": [
+    {
+     "ref": "3.2",
+     "title": "Cell Specialization"
+    }
+   ],
+   "source_chars": 988,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch03-cell-specialization",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.3",
+   "title": "Division of Labour",
+   "covers": [
+    {
+     "ref": "3.3",
+     "title": "Division of Labour"
+    }
+   ],
+   "source_chars": 413,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch03-division-of-labour",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.4",
+   "title": "Stem Cells",
+   "covers": [
+    {
+     "ref": "3.4",
+     "title": "Stem Cells"
+    }
+   ],
+   "source_chars": 524,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch03-stem-cells",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.1",
+   "title": "Cell Cycle",
+   "covers": [
+    {
+     "ref": "4.1",
+     "title": "Cell Cycle"
+    }
+   ],
+   "source_chars": 1008,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch04-cell-cycle",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.2",
+   "title": "Spindle Apparatus",
+   "covers": [
+    {
+     "ref": "4.2",
+     "title": "Spindle Apparatus"
+    }
+   ],
+   "source_chars": 375,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch04-spindle-apparatus",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.3",
+   "title": "Mitosis",
+   "covers": [
+    {
+     "ref": "4.3",
+     "title": "Mitosis"
+    },
+    {
+     "ref": "4.3.1",
+     "title": "Significance of Mitosis"
+    }
+   ],
+   "source_chars": 1774,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch04-mitosis",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.5",
+   "title": "Meiosis",
+   "covers": [
+    {
+     "ref": "4.5",
+     "title": "Meiosis"
+    }
+   ],
+   "source_chars": 1944,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch04-meiosis",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.4",
+   "title": "Significance of Meiosis",
+   "covers": [
+    {
+     "ref": "4.4.1",
+     "title": "Significance of Meiosis"
+    }
+   ],
+   "source_chars": 1099,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch04-significance-of-meiosis",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.1",
+   "title": "Levels of Organization",
+   "covers": [
+    {
+     "ref": "5.1",
+     "title": "Levels of Organization"
+    },
+    {
+     "ref": "5.1.1",
+     "title": "Organs"
+    },
+    {
+     "ref": "5.1.2",
+     "title": "Organ Systems"
+    },
+    {
+     "ref": "5.1.3",
+     "title": "Organ Systems Work Together"
+    }
+   ],
+   "source_chars": 1454,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch05-levels-of-organization",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.2",
+   "title": "Homeostasis",
+   "covers": [
+    {
+     "ref": "5.2",
+     "title": "Homeostasis"
+    },
+    {
+     "ref": "5.2.1",
+     "title": "Maintaining Homeostasis"
+    },
+    {
+     "ref": "5.2.2",
+     "title": "Homeostatic Responses in Temperature Regulation"
+    }
+   ],
+   "source_chars": 2351,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch05-homeostasis",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.3",
+   "title": "Plant Tissues",
+   "covers": [
+    {
+     "ref": "5.3",
+     "title": "Plant Tissues"
+    },
+    {
+     "ref": "5.3.1",
+     "title": "Plant Organs and Organ Systems"
+    },
+    {
+     "ref": "5.3.2",
+     "title": "Structure and Functions of Cells of a Leaf"
+    }
+   ],
+   "source_chars": 1653,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch05-plant-tissues",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.1",
+   "title": "Biochemistry/Molecular Biology",
+   "covers": [
+    {
+     "ref": "6.1",
+     "title": "Biochemistry/Molecular Biology"
+    },
+    {
+     "ref": "6.1.1",
+     "title": "Importance of Biochemistry"
+    },
+    {
+     "ref": "6.1.2",
+     "title": "Bioelements"
+    }
+   ],
+   "source_chars": 809,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch06-biochemistry-molecular-biology",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.2",
+   "title": "Biological Molecules",
+   "covers": [
+    {
+     "ref": "6.2",
+     "title": "Biological Molecules"
+    }
+   ],
+   "source_chars": 777,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch06-biological-molecules",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.3",
+   "title": "Proteins",
+   "covers": [
+    {
+     "ref": "6.3",
+     "title": "Proteins"
+    },
+    {
+     "ref": "6.3.2",
+     "title": "Amino Acids"
+    },
+    {
+     "ref": "6.3.3",
+     "title": "Structure of Proteins"
+    },
+    {
+     "ref": "6.3.4",
+     "title": "Functions of Proteins"
+    },
+    {
+     "ref": "6.3.5",
+     "title": "Sources of Proteins"
+    }
+   ],
+   "source_chars": 1897,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch06-proteins",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.4",
+   "title": "Lipids",
+   "covers": [
+    {
+     "ref": "6.4",
+     "title": "Lipids"
+    },
+    {
+     "ref": "6.4.1",
+     "title": "Structure of Lipids"
+    },
+    {
+     "ref": "6.4.2",
+     "title": "Functions of Lipids"
+    },
+    {
+     "ref": "6.4.3",
+     "title": "Sources of Lipids"
+    }
+   ],
+   "source_chars": 1566,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch06-lipids",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.5",
+   "title": "Carbohydrates",
+   "covers": [
+    {
+     "ref": "6.5",
+     "title": "Carbohydrates"
+    },
+    {
+     "ref": "6.5.1",
+     "title": "Structure of Carbohydrates"
+    },
+    {
+     "ref": "6.5.2",
+     "title": "Functions of Carbohydrates"
+    }
+   ],
+   "source_chars": 945,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch06-carbohydrates",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.6",
+   "title": "Classification of Carbohydrates",
+   "covers": [
+    {
+     "ref": "6.6",
+     "title": "Classification of Carbohydrates"
+    },
+    {
+     "ref": "6.6.1",
+     "title": "Monosaccharides"
+    },
+    {
+     "ref": "6.6.2",
+     "title": "Disaccharides"
+    },
+    {
+     "ref": "6.6.3",
+     "title": "Polysaccharides"
+    }
+   ],
+   "source_chars": 1288,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch06-classification-of-carbohydrates",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.7",
+   "title": "Nucleic Acids",
+   "covers": [
+    {
+     "ref": "6.7",
+     "title": "Nucleic Acids"
+    },
+    {
+     "ref": "6.7.1",
+     "title": "Structure of Nucleotide"
+    },
+    {
+     "ref": "6.7.2",
+     "title": "Structure of DNA"
+    }
+   ],
+   "source_chars": 1252,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch06-nucleic-acids",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.8",
+   "title": "Function of DNA",
+   "covers": [
+    {
+     "ref": "6.8",
+     "title": "Function of DNA"
+    },
+    {
+     "ref": "6.8.1",
+     "title": "Chromosomes Contain Genes"
+    },
+    {
+     "ref": "6.8.2",
+     "title": "Gametes Transfer Hereditary Information"
+    }
+   ],
+   "source_chars": 789,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch06-function-of-dna",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.9",
+   "title": "Structure of RNA",
+   "covers": [
+    {
+     "ref": "6.9",
+     "title": "Structure of RNA"
+    }
+   ],
+   "source_chars": 1404,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch06-structure-of-rna",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.1",
+   "title": "Metabolism and Its Types",
+   "covers": [
+    {
+     "ref": "7.1",
+     "title": "Metabolism and Its Types"
+    }
+   ],
+   "source_chars": 561,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch07-metabolism-and-its-types",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.2",
+   "title": "Enzymes and Their Characteristics",
+   "covers": [
+    {
+     "ref": "7.2",
+     "title": "Enzymes and Their Characteristics"
+    },
+    {
+     "ref": "7.2.1",
+     "title": "Characteristics of Enzymes"
+    }
+   ],
+   "source_chars": 1744,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch07-enzymes-and-their-characteristics",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.3",
+   "title": "Mechanism of Enzyme Action",
+   "covers": [
+    {
+     "ref": "7.3",
+     "title": "Mechanism of Enzyme Action"
+    }
+   ],
+   "source_chars": 370,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "biology-ch07-mechanism-of-enzyme-action",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.4",
+   "title": "Factors Affecting Enzyme Activity",
+   "covers": [
+    {
+     "ref": "7.4",
+     "title": "Factors Affecting Enzyme Activity"
+    },
+    {
+     "ref": "7.4.1",
+     "title": "Temperature"
+    },
+    {
+     "ref": "7.4.3",
+     "title": "Substrate Concentration"
+    }
+   ],
+   "source_chars": 736,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch07-factors-affecting-enzyme-activity",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.5",
+   "title": "Enzyme Inhibition",
+   "covers": [
+    {
+     "ref": "7.5",
+     "title": "Enzyme Inhibition"
+    },
+    {
+     "ref": "7.5.1",
+     "title": "Competitive Inhibition"
+    },
+    {
+     "ref": "7.5.2",
+     "title": "Non-competitive Inhibition"
+    }
+   ],
+   "source_chars": 608,
+   "target_words": 420,
+   "target_minutes": 3.1,
+   "slug": "biology-ch07-enzyme-inhibition",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.6",
+   "title": "Role of ATP - The Energy Currency of Cell",
+   "covers": [
+    {
+     "ref": "7.6",
+     "title": "Role of ATP - The Energy Currency of Cell"
+    },
+    {
+     "ref": "7.6.1",
+     "title": "ATP-ADP Cycle"
+    },
+    {
+     "ref": "7.6.2",
+     "title": "Structure of ATP Molecule"
+    }
+   ],
+   "source_chars": 1034,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch07-role-of-atp-the-energy-currency-of-c",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.7",
+   "title": "Photosynthesis",
+   "covers": [
+    {
+     "ref": "7.7",
+     "title": "Photosynthesis"
+    },
+    {
+     "ref": "7.7.1",
+     "title": "Mechanism of Photosynthesis"
+    },
+    {
+     "ref": "7.7.2",
+     "title": "Limiting Factors of Photosynthesis"
+    }
+   ],
+   "source_chars": 1531,
+   "target_words": 560,
+   "target_minutes": 4.1,
+   "slug": "biology-ch07-photosynthesis",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.8",
+   "title": "Respiration",
+   "covers": [
+    {
+     "ref": "7.8",
+     "title": "Respiration"
+    },
+    {
+     "ref": "7.8.1",
+     "title": "Anaerobic and Aerobic Respiration"
+    },
+    {
+     "ref": "7.8.2",
+     "title": "Aerobic Respiration"
+    },
+    {
+     "ref": "7.8.3",
+     "title": "Mechanism of Aerobic Respiration"
+    }
+   ],
+   "source_chars": 2394,
+   "target_words": 680,
+   "target_minutes": 5.0,
+   "slug": "biology-ch07-respiration",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "islamiat",
+   "subject_label": "Islamiat",
+   "chapter": 1,
+   "ref": "(الف)",
+   "title": "قرآن مجید کی تدوین اور اس کی حفاظت",
+   "covers": [
+    {
+     "ref": "(الف)",
+     "title": "قرآن مجید کی تدوین اور اس کی حفاظت"
+    }
+   ],
+   "source_chars": 0,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "islamiat-ch01-",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "islamiat",
+   "subject_label": "Islamiat",
+   "chapter": 1,
+   "ref": "(ب)",
+   "title": "حفاظت و تدوینِ حدیث, دورِ اول",
+   "covers": [
+    {
+     "ref": "(ب)",
+     "title": "حفاظت و تدوینِ حدیث, دورِ اول"
+    }
+   ],
+   "source_chars": 0,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "islamiat-ch01-",
+   "note": null,
+   "audio": null,
+   "done": false
+  },
+  {
+   "subject": "islamiat",
+   "subject_label": "Islamiat",
+   "chapter": 1,
+   "ref": "(ج)",
+   "title": "احادیثِ نبویہ / منتخب احادیث مبارکہ + الاسماء الحسنیٰ",
+   "covers": [
+    {
+     "ref": "(ج)",
+     "title": "احادیثِ نبویہ / منتخب احادیث مبارکہ + الاسماء الحسنیٰ"
+    }
+   ],
+   "source_chars": 0,
+   "target_words": 300,
+   "target_minutes": 2.2,
+   "slug": "islamiat-ch01-",
+   "note": null,
+   "audio": null,
+   "done": false
+  }
+ ]
+}
