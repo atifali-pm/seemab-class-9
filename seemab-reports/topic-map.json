@@ -1,0 +1,2575 @@
+{
+ "generated": "2026-09-30",
+ "topics": [
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.1",
+   "title": "Introduction to Physics",
+   "slug": "physics-ch01-introduction-to-physics",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.2",
+   "title": "Physical and Non-Physical Quantities",
+   "slug": "physics-ch01-physical-and-non-physical-quantities",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.2.1",
+   "title": "Base and Derived Physical Quantities",
+   "slug": "physics-ch01-base-and-derived-physical-quantities",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.3",
+   "title": "International System of Units",
+   "slug": "physics-ch01-international-system-of-units",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.3.1",
+   "title": "SI Base Units",
+   "slug": "physics-ch01-si-base-units",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.3.2",
+   "title": "SI Derived Units",
+   "slug": "physics-ch01-si-derived-units",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.4",
+   "title": "Standard Form / Scientific Notation",
+   "slug": "physics-ch01-standard-form-scientific-notation",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.5",
+   "title": "Prefixes to Power of Ten",
+   "slug": "physics-ch01-prefixes-to-power-of-ten",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.6",
+   "title": "Scalars and Vectors",
+   "slug": "physics-ch01-scalars-and-vectors",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.6.1",
+   "title": "Scalar Quantities",
+   "slug": "physics-ch01-scalar-quantities",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.6.2",
+   "title": "Vector Quantities",
+   "slug": "physics-ch01-vector-quantities",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.6.3",
+   "title": "Adding Vector Quantities",
+   "slug": "physics-ch01-adding-vector-quantities",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.7",
+   "title": "Measuring Instruments",
+   "slug": "physics-ch01-measuring-instruments",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.7.1",
+   "title": "Metre Rule and Measuring Tape",
+   "slug": "physics-ch01-metre-rule-and-measuring-tape",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.7.2",
+   "title": "Vernier Caliper",
+   "slug": "physics-ch01-vernier-caliper",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.7.3",
+   "title": "Screw Gauge",
+   "slug": "physics-ch01-screw-gauge",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.7.4",
+   "title": "Physical Balance",
+   "slug": "physics-ch01-physical-balance",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.7.5",
+   "title": "Measuring Cylinder",
+   "slug": "physics-ch01-measuring-cylinder",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.7.6",
+   "title": "Stop Watch",
+   "slug": "physics-ch01-stop-watch",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.8",
+   "title": "Errors",
+   "slug": "physics-ch01-errors",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.8.1",
+   "title": "Systematic Errors",
+   "slug": "physics-ch01-systematic-errors",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.8.2",
+   "title": "Random Errors",
+   "slug": "physics-ch01-random-errors",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 1,
+   "ref": "1.9",
+   "title": "Precision and Accuracy",
+   "slug": "physics-ch01-precision-and-accuracy",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.1",
+   "title": "Rest and Motion",
+   "slug": "physics-ch02-rest-and-motion",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.1.1",
+   "title": "Types of Motion",
+   "slug": "physics-ch02-types-of-motion",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.2",
+   "title": "Distance and Displacement",
+   "slug": "physics-ch02-distance-and-displacement",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.3",
+   "title": "Speed and Velocity",
+   "slug": "physics-ch02-speed-and-velocity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.4",
+   "title": "Acceleration",
+   "slug": "physics-ch02-acceleration",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.5",
+   "title": "Motion Due to Gravity",
+   "slug": "physics-ch02-motion-due-to-gravity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 2,
+   "ref": "2.6",
+   "title": "Graphical Analysis",
+   "slug": "physics-ch02-graphical-analysis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.1",
+   "title": "Force",
+   "slug": "physics-ch03-force",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.1.1",
+   "title": "Types of Forces",
+   "slug": "physics-ch03-types-of-forces",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.1.2",
+   "title": "Four Fundamental Forces of Nature",
+   "slug": "physics-ch03-four-fundamental-forces-of-nature",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.2",
+   "title": "Newton's Laws of Motion",
+   "slug": "physics-ch03-newton-s-laws-of-motion",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.3",
+   "title": "Mass and Weight",
+   "slug": "physics-ch03-mass-and-weight",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.4",
+   "title": "Gravitational Field",
+   "slug": "physics-ch03-gravitational-field",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.5",
+   "title": "Momentum",
+   "slug": "physics-ch03-momentum",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.5.1",
+   "title": "Force and Change in Momentum",
+   "slug": "physics-ch03-force-and-change-in-momentum",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.5.2",
+   "title": "Impulse",
+   "slug": "physics-ch03-impulse",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 3,
+   "ref": "3.5.3",
+   "title": "Conservation of Momentum",
+   "slug": "physics-ch03-conservation-of-momentum",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.1",
+   "title": "Forces on Bodies",
+   "slug": "physics-ch04-forces-on-bodies",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.2",
+   "title": "Moment of Force",
+   "slug": "physics-ch04-moment-of-force",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.3",
+   "title": "Center of Mass / Center of Gravity",
+   "slug": "physics-ch04-center-of-mass-center-of-gravity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.4",
+   "title": "Equilibrium",
+   "slug": "physics-ch04-equilibrium",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.4.2",
+   "title": "Principle of Moments",
+   "slug": "physics-ch04-principle-of-moments",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.4.3",
+   "title": "Types of Equilibrium",
+   "slug": "physics-ch04-types-of-equilibrium",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.5",
+   "title": "Stability",
+   "slug": "physics-ch04-stability",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.6",
+   "title": "Friction",
+   "slug": "physics-ch04-friction",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.6.5",
+   "title": "Terminal Velocity",
+   "slug": "physics-ch04-terminal-velocity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.6.6",
+   "title": "Frictional Dissipation",
+   "slug": "physics-ch04-frictional-dissipation",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.7",
+   "title": "Centripetal Force",
+   "slug": "physics-ch04-centripetal-force",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.8",
+   "title": "Orbital Motion",
+   "slug": "physics-ch04-orbital-motion",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 4,
+   "ref": "4.9",
+   "title": "Planetary Data",
+   "slug": "physics-ch04-planetary-data",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.1",
+   "title": "Elasticity",
+   "slug": "physics-ch05-elasticity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.1.1",
+   "title": "Hooke's Law",
+   "slug": "physics-ch05-hooke-s-law",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.1.2",
+   "title": "Applications",
+   "slug": "physics-ch05-applications",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.2",
+   "title": "Pressure",
+   "slug": "physics-ch05-pressure",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.3",
+   "title": "Atmospheric Pressure",
+   "slug": "physics-ch05-atmospheric-pressure",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.3.1",
+   "title": "Measurement",
+   "slug": "physics-ch05-measurement",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.3.3",
+   "title": "Weather",
+   "slug": "physics-ch05-weather",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.3.4",
+   "title": "Applications",
+   "slug": "physics-ch05-applications",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.4",
+   "title": "Liquid Pressure",
+   "slug": "physics-ch05-liquid-pressure",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.5",
+   "title": "Manometer",
+   "slug": "physics-ch05-manometer",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.6",
+   "title": "Pascal's Principle",
+   "slug": "physics-ch05-pascal-s-principle",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.7.1",
+   "title": "Hydraulic Lift",
+   "slug": "physics-ch05-hydraulic-lift",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 5,
+   "ref": "5.7.2",
+   "title": "Hydraulic Car Brake System",
+   "slug": "physics-ch05-hydraulic-car-brake-system",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.1",
+   "title": "Work",
+   "slug": "physics-ch06-work",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.2",
+   "title": "Energy and Its Forms",
+   "slug": "physics-ch06-energy-and-its-forms",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.2.1",
+   "title": "Kinetic Energy",
+   "slug": "physics-ch06-kinetic-energy",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.2.2",
+   "title": "Potential Energy",
+   "slug": "physics-ch06-potential-energy",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.2.3",
+   "title": "Energy Conversion and Conservation",
+   "slug": "physics-ch06-energy-conversion-and-conservation",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.3",
+   "title": "Major Energy Resources",
+   "slug": "physics-ch06-major-energy-resources",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.4",
+   "title": "Power",
+   "slug": "physics-ch06-power",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 6,
+   "ref": "6.5",
+   "title": "Efficiency",
+   "slug": "physics-ch06-efficiency",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 9,
+   "ref": "9.1",
+   "title": "Objectives of Physics",
+   "slug": "physics-ch09-objectives-of-physics",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 9,
+   "ref": "9.2",
+   "title": "Fields of Physics",
+   "slug": "physics-ch09-fields-of-physics",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 9,
+   "ref": "9.3",
+   "title": "Hypothesis, Theory and Law",
+   "slug": "physics-ch09-hypothesis-theory-and-law",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "physics",
+   "subject_label": "Physics",
+   "chapter": 9,
+   "ref": "9.4",
+   "title": "Science, Technology and Engineering",
+   "slug": "physics-ch09-science-technology-and-engineering",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.1",
+   "title": "Definition of Chemistry",
+   "slug": "chemistry-ch01-definition-of-chemistry",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.2",
+   "title": "Branches of Chemistry",
+   "slug": "chemistry-ch01-branches-of-chemistry",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.3",
+   "title": "Essential Questions for Branches",
+   "slug": "chemistry-ch01-essential-questions-for-branches",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.4",
+   "title": "Daily Life Applications",
+   "slug": "chemistry-ch01-daily-life-applications",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.5",
+   "title": "Science, Technology, and Engineering",
+   "slug": "chemistry-ch01-science-technology-and-engineering",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 1,
+   "ref": "1.6",
+   "title": "Applications of Science, Technology, and Engineering",
+   "slug": "chemistry-ch01-applications-of-science-technology-and",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.1",
+   "title": "States of Matter",
+   "slug": "chemistry-ch02-states-of-matter",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.2",
+   "title": "Elements, Compounds, and Mixtures",
+   "slug": "chemistry-ch02-elements-compounds-and-mixtures",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.3",
+   "title": "Allotropes",
+   "slug": "chemistry-ch02-allotropes",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.4",
+   "title": "Solution",
+   "slug": "chemistry-ch02-solution",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 2,
+   "ref": "2.5",
+   "title": "Colloids & Suspensions",
+   "slug": "chemistry-ch02-colloids-suspensions",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.1",
+   "title": "Atomic Models",
+   "slug": "chemistry-ch03-atomic-models",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.2",
+   "title": "Subatomic Particles",
+   "slug": "chemistry-ch03-subatomic-particles",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.3",
+   "title": "Proton/Atomic Number",
+   "slug": "chemistry-ch03-proton-atomic-number",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.4",
+   "title": "Relative Atomic Mass",
+   "slug": "chemistry-ch03-relative-atomic-mass",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.5",
+   "title": "Isotopes",
+   "slug": "chemistry-ch03-isotopes",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.5.5",
+   "title": "Determination of Relative Atomic Mass",
+   "slug": "chemistry-ch03-determination-of-relative-atomic-mass",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.5.6",
+   "title": "Uses of Isotopes",
+   "slug": "chemistry-ch03-uses-of-isotopes",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.5.7",
+   "title": "Carbon Dating",
+   "slug": "chemistry-ch03-carbon-dating",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.6",
+   "title": "Cations and Anions",
+   "slug": "chemistry-ch03-cations-and-anions",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 3,
+   "ref": "3.7",
+   "title": "Electronic Configuration",
+   "slug": "chemistry-ch03-electronic-configuration",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.1",
+   "title": "Periodic Table",
+   "slug": "chemistry-ch04-periodic-table",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.1.1",
+   "title": "Periods and Groups of Elements",
+   "slug": "chemistry-ch04-periods-and-groups-of-elements",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.1.2",
+   "title": "s and p Blocks in the Periodic Table",
+   "slug": "chemistry-ch04-s-and-p-blocks-in-the-periodic-table",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.2",
+   "title": "Group Number and Charge on an Ion",
+   "slug": "chemistry-ch04-group-number-and-charge-on-an-ion",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.3",
+   "title": "Periodicity of Properties",
+   "slug": "chemistry-ch04-periodicity-of-properties",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.3.1",
+   "title": "Shielding Effect",
+   "slug": "chemistry-ch04-shielding-effect",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.3.2",
+   "title": "Atomic Size",
+   "slug": "chemistry-ch04-atomic-size",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.3.3",
+   "title": "Ionization Energy",
+   "slug": "chemistry-ch04-ionization-energy",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.3.4",
+   "title": "Electron Affinity",
+   "slug": "chemistry-ch04-electron-affinity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.3.5",
+   "title": "Electronegativity",
+   "slug": "chemistry-ch04-electronegativity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.4",
+   "title": "Characteristic Properties",
+   "slug": "chemistry-ch04-characteristic-properties",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.4.1",
+   "title": "Metallic Character",
+   "slug": "chemistry-ch04-metallic-character",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.4.2",
+   "title": "Reactivity",
+   "slug": "chemistry-ch04-reactivity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.4.3",
+   "title": "Density",
+   "slug": "chemistry-ch04-density",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.4.4",
+   "title": "Characteristic Properties of Alkali Metals",
+   "slug": "chemistry-ch04-characteristic-properties-of-alkali-me",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.4.5",
+   "title": "Prediction of properties of other elements in Group 1",
+   "slug": "chemistry-ch04-prediction-of-properties-of-other-elem",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.4.6",
+   "title": "Position of Unknown Element in the Periodic Table",
+   "slug": "chemistry-ch04-position-of-unknown-element-in-the-per",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.5",
+   "title": "Transition Elements",
+   "slug": "chemistry-ch04-transition-elements",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.6",
+   "title": "Lanthanides and Actinides",
+   "slug": "chemistry-ch04-lanthanides-and-actinides",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.7",
+   "title": "Halogens",
+   "slug": "chemistry-ch04-halogens",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.8",
+   "title": "Noble Gases",
+   "slug": "chemistry-ch04-noble-gases",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 4,
+   "ref": "4.9",
+   "title": "Comparison of General Physical Properties of Metals and Non-Metals",
+   "slug": "chemistry-ch04-comparison-of-general-physical-propert",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.1",
+   "title": "Why Do Atoms React?",
+   "slug": "chemistry-ch05-why-do-atoms-react",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.2",
+   "title": "Chemical Bonds",
+   "slug": "chemistry-ch05-chemical-bonds",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.3",
+   "title": "Types of Bonds",
+   "slug": "chemistry-ch05-types-of-bonds",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.3.1",
+   "title": "Ionic Bonds",
+   "slug": "chemistry-ch05-ionic-bonds",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.3.2",
+   "title": "Covalent Bonds",
+   "slug": "chemistry-ch05-covalent-bonds",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.3.3",
+   "title": "Polar and Nonpolar Covalent Bonds",
+   "slug": "chemistry-ch05-polar-and-nonpolar-covalent-bonds",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.3.4",
+   "title": "Coordinate Covalent Bond",
+   "slug": "chemistry-ch05-coordinate-covalent-bond",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.4",
+   "title": "Intermolecular Forces",
+   "slug": "chemistry-ch05-intermolecular-forces",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.5",
+   "title": "Nature of Bonding, Structure and Properties",
+   "slug": "chemistry-ch05-nature-of-bonding-structure-and-proper",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.5.1",
+   "title": "Graphite",
+   "slug": "chemistry-ch05-graphite",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.5.2",
+   "title": "Diamond",
+   "slug": "chemistry-ch05-diamond",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.5.3",
+   "title": "Contrasting Ionic and Covalent Compounds and Their Uses",
+   "slug": "chemistry-ch05-contrasting-ionic-and-covalent-compoun",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.6",
+   "title": "Metallic Bonds",
+   "slug": "chemistry-ch05-metallic-bonds",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 5,
+   "ref": "5.6.1",
+   "title": "Structure and Properties of Metals for Industrial Purposes",
+   "slug": "chemistry-ch05-structure-and-properties-of-metals-for",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.1",
+   "title": "Empirical Formula and Molecular Formula",
+   "slug": "chemistry-ch06-empirical-formula-and-molecular-formul",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.2",
+   "title": "Molecular Mass and Formula Mass",
+   "slug": "chemistry-ch06-molecular-mass-and-formula-mass",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.3",
+   "title": "Chemical Formula and Name of Binary Ionic Compounds",
+   "slug": "chemistry-ch06-chemical-formula-and-name-of-binary-io",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.4",
+   "title": "Avogadro's Number and Mole",
+   "slug": "chemistry-ch06-avogadro-s-number-and-mole",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.4.1",
+   "title": "Gram Atomic Mass, Gram Molecular Mass, Gram Formula Mass",
+   "slug": "chemistry-ch06-gram-atomic-mass-gram-molecular-mass-g",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.4.2",
+   "title": "Differences",
+   "slug": "chemistry-ch06-differences",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.5",
+   "title": "Chemical Calculations",
+   "slug": "chemistry-ch06-chemical-calculations",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.5.1",
+   "title": "Mole-Mass Calculations",
+   "slug": "chemistry-ch06-mole-mass-calculations",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.5.2",
+   "title": "Mole-Particles Calculations",
+   "slug": "chemistry-ch06-mole-particles-calculations",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "0.5",
+   "title": "mol CH₄ = 3.011×10²³ molecules",
+   "slug": "chemistry-ch06-mol-ch-3-011-10-molecules",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.6",
+   "title": "Chemical Equation and Balancing",
+   "slug": "chemistry-ch06-chemical-equation-and-balancing",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.6.2",
+   "title": "Ionic Equations",
+   "slug": "chemistry-ch06-ionic-equations",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 6,
+   "ref": "6.7",
+   "title": "Molecular and Structural Formula",
+   "slug": "chemistry-ch06-molecular-and-structural-formula",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.1.1",
+   "title": "In terms of loss/gain of oxygen",
+   "slug": "chemistry-ch07-in-terms-of-loss-gain-of-oxygen",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.1.2",
+   "title": "In terms of transfer of hydrogen",
+   "slug": "chemistry-ch07-in-terms-of-transfer-of-hydrogen",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.1.3",
+   "title": "In terms of transfer of electrons",
+   "slug": "chemistry-ch07-in-terms-of-transfer-of-electrons",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.2.1",
+   "title": "Oxidation states definition",
+   "slug": "chemistry-ch07-oxidation-states-definition",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.2.2",
+   "title": "Rules for assigning",
+   "slug": "chemistry-ch07-rules-for-assigning",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.2.3",
+   "title": "Determining oxidation number in a compound",
+   "slug": "chemistry-ch07-determining-oxidation-number-in-a-comp",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.3.1",
+   "title": "Roman numerals as oxidation number",
+   "slug": "chemistry-ch07-roman-numerals-as-oxidation-number",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.4.1",
+   "title": "Definitions",
+   "slug": "chemistry-ch07-definitions",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.4.2",
+   "title": "Identifying agents in reactions",
+   "slug": "chemistry-ch07-identifying-agents-in-reactions",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.5.1",
+   "title": "Corrosion definition and rusting mechanism",
+   "slug": "chemistry-ch07-corrosion-definition-and-rusting-mecha",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 7,
+   "ref": "7.5.2",
+   "title": "Prevention: paint, alloying",
+   "slug": "chemistry-ch07-prevention-paint-alloying",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 8,
+   "ref": "8.1.1",
+   "title": "System and Surroundings",
+   "slug": "chemistry-ch08-system-and-surroundings",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 8,
+   "ref": "8.2.1",
+   "title": "Exothermic Reactions",
+   "slug": "chemistry-ch08-exothermic-reactions",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 8,
+   "ref": "8.2.2",
+   "title": "Endothermic Reactions",
+   "slug": "chemistry-ch08-endothermic-reactions",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.1",
+   "title": "Concepts of Acids and Bases",
+   "slug": "chemistry-ch10-concepts-of-acids-and-bases",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.2",
+   "title": "Strength of Acids and Bases",
+   "slug": "chemistry-ch10-strength-of-acids-and-bases",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.3",
+   "title": "Characteristic Properties of Acids",
+   "slug": "chemistry-ch10-characteristic-properties-of-acids",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.4",
+   "title": "Characteristic Properties of Bases",
+   "slug": "chemistry-ch10-characteristic-properties-of-bases",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "chemistry",
+   "subject_label": "Chemistry",
+   "chapter": 10,
+   "ref": "10.5",
+   "title": "Oxides and Hydroxides",
+   "slug": "chemistry-ch10-oxides-and-hydroxides",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.1",
+   "title": "Introduction to Biology",
+   "slug": "biology-ch01-introduction-to-biology",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.1.2",
+   "title": "Quranic Instructions",
+   "slug": "biology-ch01-quranic-instructions",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.2",
+   "title": "Major Fields of Biology",
+   "slug": "biology-ch01-major-fields-of-biology",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.3",
+   "title": "Relationship of Biology with Other Sciences",
+   "slug": "biology-ch01-relationship-of-biology-with-other-sci",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.4",
+   "title": "Careers in Biology",
+   "slug": "biology-ch01-careers-in-biology",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.5",
+   "title": "Science is a Collaborative Field",
+   "slug": "biology-ch01-science-is-a-collaborative-field",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.6",
+   "title": "Biological Method",
+   "slug": "biology-ch01-biological-method",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.7",
+   "title": "Hypothesis, Theory and Law",
+   "slug": "biology-ch01-hypothesis-theory-and-law",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 1,
+   "ref": "1.8",
+   "title": "Malaria - Example of Biological Method",
+   "slug": "biology-ch01-malaria-example-of-biological-method",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.1",
+   "title": "Definition and Introduction to Biodiversity",
+   "slug": "biology-ch02-definition-and-introduction-to-biodive",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.2",
+   "title": "Classification",
+   "slug": "biology-ch02-classification",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.2.1",
+   "title": "Advantages of Classification",
+   "slug": "biology-ch02-advantages-of-classification",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.3",
+   "title": "History of Classification",
+   "slug": "biology-ch02-history-of-classification",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.4",
+   "title": "Three Domains System",
+   "slug": "biology-ch02-three-domains-system",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.5",
+   "title": "Taxonomic Ranks",
+   "slug": "biology-ch02-taxonomic-ranks",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.6",
+   "title": "Species",
+   "slug": "biology-ch02-species",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.7",
+   "title": "Binomial Nomenclature",
+   "slug": "biology-ch02-binomial-nomenclature",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 2,
+   "ref": "2.8",
+   "title": "Complications of Classifying Viruses",
+   "slug": "biology-ch02-complications-of-classifying-viruses",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.1",
+   "title": "Cell",
+   "slug": "biology-ch03-cell",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.1.1",
+   "title": "Structure of Cell",
+   "slug": "biology-ch03-structure-of-cell",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.1.2",
+   "title": "Structural Advantages of Animal and Plant Cell",
+   "slug": "biology-ch03-structural-advantages-of-animal-and-pl",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.2",
+   "title": "Cell Specialization",
+   "slug": "biology-ch03-cell-specialization",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.3",
+   "title": "Division of Labour",
+   "slug": "biology-ch03-division-of-labour",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 3,
+   "ref": "3.4",
+   "title": "Stem Cells",
+   "slug": "biology-ch03-stem-cells",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.1",
+   "title": "Cell Cycle",
+   "slug": "biology-ch04-cell-cycle",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.2",
+   "title": "Spindle Apparatus",
+   "slug": "biology-ch04-spindle-apparatus",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.3",
+   "title": "Mitosis",
+   "slug": "biology-ch04-mitosis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.3.1",
+   "title": "Significance of Mitosis",
+   "slug": "biology-ch04-significance-of-mitosis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.5",
+   "title": "Meiosis",
+   "slug": "biology-ch04-meiosis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 4,
+   "ref": "4.4.1",
+   "title": "Significance of Meiosis",
+   "slug": "biology-ch04-significance-of-meiosis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.1",
+   "title": "Levels of Organization",
+   "slug": "biology-ch05-levels-of-organization",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.1.1",
+   "title": "Organs",
+   "slug": "biology-ch05-organs",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.1.2",
+   "title": "Organ Systems",
+   "slug": "biology-ch05-organ-systems",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.1.3",
+   "title": "Organ Systems Work Together",
+   "slug": "biology-ch05-organ-systems-work-together",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.2",
+   "title": "Homeostasis",
+   "slug": "biology-ch05-homeostasis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.2.1",
+   "title": "Maintaining Homeostasis",
+   "slug": "biology-ch05-maintaining-homeostasis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.2.2",
+   "title": "Homeostatic Responses in Temperature Regulation",
+   "slug": "biology-ch05-homeostatic-responses-in-temperature-r",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.3",
+   "title": "Plant Tissues",
+   "slug": "biology-ch05-plant-tissues",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.3.1",
+   "title": "Plant Organs and Organ Systems",
+   "slug": "biology-ch05-plant-organs-and-organ-systems",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 5,
+   "ref": "5.3.2",
+   "title": "Structure and Functions of Cells of a Leaf",
+   "slug": "biology-ch05-structure-and-functions-of-cells-of-a-",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.1",
+   "title": "Biochemistry/Molecular Biology",
+   "slug": "biology-ch06-biochemistry-molecular-biology",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.1.1",
+   "title": "Importance of Biochemistry",
+   "slug": "biology-ch06-importance-of-biochemistry",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.1.2",
+   "title": "Bioelements",
+   "slug": "biology-ch06-bioelements",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.2",
+   "title": "Biological Molecules",
+   "slug": "biology-ch06-biological-molecules",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.3",
+   "title": "Proteins",
+   "slug": "biology-ch06-proteins",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.3.2",
+   "title": "Amino Acids",
+   "slug": "biology-ch06-amino-acids",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.3.3",
+   "title": "Structure of Proteins",
+   "slug": "biology-ch06-structure-of-proteins",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.3.4",
+   "title": "Functions of Proteins",
+   "slug": "biology-ch06-functions-of-proteins",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.3.5",
+   "title": "Sources of Proteins",
+   "slug": "biology-ch06-sources-of-proteins",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.4",
+   "title": "Lipids",
+   "slug": "biology-ch06-lipids",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.4.1",
+   "title": "Structure of Lipids",
+   "slug": "biology-ch06-structure-of-lipids",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.4.2",
+   "title": "Functions of Lipids",
+   "slug": "biology-ch06-functions-of-lipids",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.4.3",
+   "title": "Sources of Lipids",
+   "slug": "biology-ch06-sources-of-lipids",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.5",
+   "title": "Carbohydrates",
+   "slug": "biology-ch06-carbohydrates",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.5.1",
+   "title": "Structure of Carbohydrates",
+   "slug": "biology-ch06-structure-of-carbohydrates",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.5.2",
+   "title": "Functions of Carbohydrates",
+   "slug": "biology-ch06-functions-of-carbohydrates",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.6",
+   "title": "Classification of Carbohydrates",
+   "slug": "biology-ch06-classification-of-carbohydrates",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.6.1",
+   "title": "Monosaccharides",
+   "slug": "biology-ch06-monosaccharides",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.6.2",
+   "title": "Disaccharides",
+   "slug": "biology-ch06-disaccharides",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.6.3",
+   "title": "Polysaccharides",
+   "slug": "biology-ch06-polysaccharides",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.7",
+   "title": "Nucleic Acids",
+   "slug": "biology-ch06-nucleic-acids",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.7.1",
+   "title": "Structure of Nucleotide",
+   "slug": "biology-ch06-structure-of-nucleotide",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.7.2",
+   "title": "Structure of DNA",
+   "slug": "biology-ch06-structure-of-dna",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.8",
+   "title": "Function of DNA",
+   "slug": "biology-ch06-function-of-dna",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.8.1",
+   "title": "Chromosomes Contain Genes",
+   "slug": "biology-ch06-chromosomes-contain-genes",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.8.2",
+   "title": "Gametes Transfer Hereditary Information",
+   "slug": "biology-ch06-gametes-transfer-hereditary-informatio",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 6,
+   "ref": "6.9",
+   "title": "Structure of RNA",
+   "slug": "biology-ch06-structure-of-rna",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.1",
+   "title": "Metabolism and Its Types",
+   "slug": "biology-ch07-metabolism-and-its-types",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.2",
+   "title": "Enzymes and Their Characteristics",
+   "slug": "biology-ch07-enzymes-and-their-characteristics",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.2.1",
+   "title": "Characteristics of Enzymes",
+   "slug": "biology-ch07-characteristics-of-enzymes",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.3",
+   "title": "Mechanism of Enzyme Action",
+   "slug": "biology-ch07-mechanism-of-enzyme-action",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.4",
+   "title": "Factors Affecting Enzyme Activity",
+   "slug": "biology-ch07-factors-affecting-enzyme-activity",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.4.1",
+   "title": "Temperature",
+   "slug": "biology-ch07-temperature",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.4.3",
+   "title": "Substrate Concentration",
+   "slug": "biology-ch07-substrate-concentration",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.5",
+   "title": "Enzyme Inhibition",
+   "slug": "biology-ch07-enzyme-inhibition",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.5.1",
+   "title": "Competitive Inhibition",
+   "slug": "biology-ch07-competitive-inhibition",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.5.2",
+   "title": "Non-competitive Inhibition",
+   "slug": "biology-ch07-non-competitive-inhibition",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.6",
+   "title": "Role of ATP - The Energy Currency of Cell",
+   "slug": "biology-ch07-role-of-atp-the-energy-currency-of-cel",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.6.1",
+   "title": "ATP-ADP Cycle",
+   "slug": "biology-ch07-atp-adp-cycle",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.6.2",
+   "title": "Structure of ATP Molecule",
+   "slug": "biology-ch07-structure-of-atp-molecule",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.7",
+   "title": "Photosynthesis",
+   "slug": "biology-ch07-photosynthesis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.7.1",
+   "title": "Mechanism of Photosynthesis",
+   "slug": "biology-ch07-mechanism-of-photosynthesis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.7.2",
+   "title": "Limiting Factors of Photosynthesis",
+   "slug": "biology-ch07-limiting-factors-of-photosynthesis",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.8",
+   "title": "Respiration",
+   "slug": "biology-ch07-respiration",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.8.1",
+   "title": "Anaerobic and Aerobic Respiration",
+   "slug": "biology-ch07-anaerobic-and-aerobic-respiration",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.8.2",
+   "title": "Aerobic Respiration",
+   "slug": "biology-ch07-aerobic-respiration",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "biology",
+   "subject_label": "Biology",
+   "chapter": 7,
+   "ref": "7.8.3",
+   "title": "Mechanism of Aerobic Respiration",
+   "slug": "biology-ch07-mechanism-of-aerobic-respiration",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "islamiat",
+   "subject_label": "Islamiat",
+   "chapter": 1,
+   "ref": "(الف)",
+   "title": "قرآن مجید کی تدوین اور اس کی حفاظت",
+   "slug": "islamiat-ch01-",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "islamiat",
+   "subject_label": "Islamiat",
+   "chapter": 1,
+   "ref": "(ب)",
+   "title": "حفاظت و تدوینِ حدیث, دورِ اول",
+   "slug": "islamiat-ch01-",
+   "note": null,
+   "audio": null
+  },
+  {
+   "subject": "islamiat",
+   "subject_label": "Islamiat",
+   "chapter": 1,
+   "ref": "(ج)",
+   "title": "احادیثِ نبویہ / منتخب احادیث مبارکہ + الاسماء الحسنیٰ",
+   "slug": "islamiat-ch01-",
+   "note": null,
+   "audio": null
+  }
+ ]
+}

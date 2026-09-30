@@ -5,3 +5,21 @@
 .DS_Store
 *.swp
 *~
+
+# Recorded lessons are build output, not source.
+#
+# Each recording is generated from its own script, which IS tracked:
+#   seemab-reports/revision/audio/<topic>-STORY-script-urdu.txt
+#   python3 scripts/tts_mixed.py <script>.txt <out>.mp3
+#
+# Keeping the audio out of git stops the repo growing by roughly a gigabyte as
+# the whole syllabus gets recorded. The website still serves these files; they
+# are uploaded straight to Cloudflare Pages from the working tree.
+*.mp3
+*.ogg
+*.m4a
+*.wav
+
+# Python bytecode
+__pycache__/
+*.pyc
