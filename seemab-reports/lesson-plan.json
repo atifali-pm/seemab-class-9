@@ -1069,9 +1069,9 @@
    "target_words": 560,
    "target_minutes": 4.1,
    "slug": "chemistry-ch01-branches-of-chemistry",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch01-branches-notes-2026-09-30.pdf",
+   "audio": "chem-ch01-branches",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1089,9 +1089,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch01-essential-questions-for-branches",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch01-essential-questions-notes-2026-09-30.pdf",
+   "audio": "chem-ch01-essential-questions",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1109,9 +1109,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch01-daily-life-applications",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch01-daily-life-notes-2026-09-30.pdf",
+   "audio": "chem-ch01-daily-life",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1129,9 +1129,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch01-science-technology-and-engineering",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch01-science-tech-eng-notes-2026-09-30.pdf",
+   "audio": "chem-ch01-science-tech-eng",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1149,9 +1149,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch01-applications-of-science-technology-a",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch01-applications-notes-2026-09-30.pdf",
+   "audio": "chem-ch01-applications",
+   "done": true
   },
   {
    "subject": "chemistry",

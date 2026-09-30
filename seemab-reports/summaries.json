@@ -29,5 +29,10 @@
   "chemistry-ch10": "Chapter 10 revision: acids, bases and salts, the proton donor and acceptor test, and neutralisation.",
   "chemistry-ch10-quick-prep": "A ten minute run through Chapter 10 before the paper: the definitions, the pH scale, and the equations that must balance.",
   "chemistry-ch11-quick-prep": "A ten minute run through Unit 11 before the paper: the atmosphere, the six pollutants, and the combustion equations.",
-  "chemistry-ch01-definition": "What chemistry actually studies, the book's definition word for word, and what green chemistry means."
+  "chemistry-ch01-definition": "What chemistry actually studies, the book's definition word for word, and what green chemistry means.",
+  "chemistry-ch01-branches": "The twelve branches of chemistry your book names, what each one studies, and how to tell the confusable pairs apart.",
+  "chemistry-ch01-essential-questions": "The guiding question behind each branch of chemistry, which is how the book expects you to tell them apart.",
+  "chemistry-ch01-daily-life": "Five everyday uses your book gives, one for each branch: medicines, batteries, forensics, car batteries and water purification.",
+  "chemistry-ch01-science-tech-eng": "The book's definitions of science, technology and engineering, how they differ, and what a chemical engineer does.",
+  "chemistry-ch01-applications": "The book's four worked examples: rusting iron, solar energy, french fries and plastic bags, each showing science, technology and engineering together."
 }
