@@ -1,6 +1,6 @@
 # Class 9 study pipeline: state of play
 
-Working handoff for anyone (or any assistant session) picking this up. Last updated **24 September 2026**.
+Working handoff for anyone (or any assistant session) picking this up. Last updated **30 September 2026**.
 Private per-session memory lives outside the repo; this file is the public, in-repo summary so a session started
 anywhere can get current without it. No phone numbers or email addresses belong in this repo.
 
@@ -9,11 +9,18 @@ anywhere can get current without it. No phone numbers or email addresses belong 
 Every subject is being walked to the end of its book with **nightly topic notes plus one exam per subject**
 once that subject's notes are done.
 
-- **Calendar:** 43 days, Friday 25 September to Friday 6 November. Monday to Saturday carry two subjects and
-  four notes a night; **Sunday carries notes only, never an exam**, one subject, two notes.
-- **Notes ("Aasan Notes"):** 2 pages, 3 for Maths and Chemistry. Content, tables and worked examples in English;
-  Roman Urdu only for the explanation. Each note ends with quiz questions and **prints no answers**, because the
-  same questions reappear on that subject's paper. About 156 notes after bundling, from roughly 270 topics.
+- **Daily shape, changed 29 September and first run on 30 September.** Every day now carries **all six
+  subjects in one PDF**, replacing the earlier two-subjects-a-night plan. Monday to Thursday and Sunday give
+  **one page and a five minute audio per subject**; **Friday and Saturday give two pages and ten minutes**.
+  **Sunday still never carries an exam.**
+- **Calendar:** 43 days, Friday 25 September to Friday 6 November.
+- **Notes ("Aasan Notes"):** content, tables and worked examples in English; Roman Urdu only for the
+  explanation. Each subject page ends with **two quiz questions** and **prints no answers**, because the same
+  questions reappear on that subject's paper. Keys live in HTML comments in the source, never in the PDF.
+- **Audio is Urdu only.** English versions were dropped on 29 September. Scripts are Urdu script with English
+  technical terms left in Latin, voiced with `ur-PK-UzmaNeural` at `--rate=-15%`, and delivered as Opus voice
+  notes. Roughly **670 Urdu words makes five minutes**. Sources and renders live in
+  `seemab-reports/revision/audio/`, combined daily PDFs in `seemab-reports/daily/`.
 - **Papers deliberately run ahead of what the class has covered.** That is the point of the programme, and it
   suspends the usual never-out-of-syllabus rule. Two things it does **not** relax: a paper never mixes another
   subject's content, and every question still needs explicit content in her own textbook plus a stated learning
@@ -87,12 +94,22 @@ letter by letter against the book image.
 
 ## Open items
 
-- **Nine story audio lessons are built and waiting to go out.** They sit in `seemab-reports/revision/audio/`,
-  one per note she already holds (Physics 7A and 7B, Maths 3A, 3B and 3C, Chemistry Ch 10 parts 1 and 2, the
-  two Islamiat Bab 3 lessons), 7 to 8 minutes each. Atif asked for them to be sent on 25 September; the
-  permission layer refused the WhatsApp call, so nothing left the machine. His word is needed on how to send.
-- **The Mistake Bank is now in English**, at `seemab-reports/revision/mistake-bank-2026-09-25.pdf`, one page per
-  subject, 48 carry-forward rules, her own wording quoted exactly. It goes out with every paper from now on.
+- **Two chapter moves are flagged but not approved.** The 30 September package advanced **Maths to Unit 6**
+  and **Islamiat to Bab 4**, because Unit 3 and Bab 3(ب) were finished and the six-subject format needs
+  something for every subject daily. Both sit on the agreed plan, but the rule above says each move needs an
+  explicit instruction, and that was not given. Atif was told. **Advance nothing further until he rules.**
+  Quran was deliberately held at An-Naml and Al-Hajj consolidation rather than opening a new surah.
+- **Deliverables owed:** cumulative **v73** plus per-exam overviews and subject cards for **Islamiat exam-05**
+  and **Quran exam-03**. The headline still reads v72.
+- **Chemistry exam-26** (Ch 11 Part 1 with Unit 8 revision, 38 marks) went out on 30 September. Key held,
+  attempt not yet received.
+- **The Mistake Bank** at `seemab-reports/revision/mistake-bank-2026-09-25.pdf` is **seven pages, not the
+  one-page-per-subject sheet** the send rule assumes, and it is stale for Islamiat and Quran. It was left out
+  of the 30 September send. Proper per-subject one-pagers are offered but not built.
+- **Physics exam-17's key cites Table 7.1 as p169.** Her printing runs one page ahead of the online copy, so
+  it is **p168**. Unfixed. Never correct a Physics page citation downward.
+- **Repo size:** `.git` is 2.6 GB and the tree 5.0 GB, growing by roughly 13 MB of audio a day. Git LFS should
+  be set up before the next large scan import.
 - **Islamiat exam-02, question 15:** the book (p.44) gives 40 km and she answered 40 km, but the key said 30 km.
   Her score should be 31/46, not 30/46. The correction is written up but not applied anywhere.
 - **Chemistry exam-24 (Chapter 11):** sent by mistake, she was told to set it aside. Do not mark it or release its

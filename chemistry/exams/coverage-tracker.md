@@ -570,3 +570,19 @@ Atif: *"Lets send a new exam to Seemab that includes chapter 10"*, read as the n
 **Exam-25** (`exam-25-ch10-rev6-8/`, see SEND-NOTE.md): Chapter 10 at 35 marks, built mainly from the book's Review Questions p147-148: CO2 not an Arrhenius acid; NH3 a Bronsted base; milk of magnesia gives MgCl2; ammonia accepts a proton; Al(OH)3 a weak base (p144); Table 10.1 shared property (conductivity) and comparison (taste, both litmus, skin); strong base completely dissociates (Key Points); Arrhenius acid definition, HCl strong, ammonia weak; Arrhenius limitations (p142); NH3 + HNO3 and HNO3 + H2O Bronsted pairs; KOH single arrow and NH4OH reversible (p142); NH4OH + HNO3 and H2SO4 + Mg(OH)2 (2H2O); HCO3− amphoteric via Review Q7(ii) and (iv); water as proton acceptor with HS− (Review Q7(v)). Revision: ΔH +131.4 → endothermic (Ch 8 p129); 0.75 mol CO2 = 33 g; 54 g water = 3 mol; 2HI → H2 + I2 = +11 kJ/mol, the deliberate reverse of Example 8.1; Zn + 2HCl mole chain on 6.5 g (0.1 mol, 7.3 g HCl, 0.2 g H2, 6.02 × 10^22, 13.6 g ZnCl2).
 
 **Chapter 10 pool is now largely spent** across exam-23 (both versions) and exam-25. Untouched and SLO-backed: little beyond acid rain (thin) and the H2SO4 + H2O Concept Assessment pair. A third Ch 10 paper would have to repeat concepts in new reactions.
+
+## exam-26 (Ch 11 Part 1 + Unit 8 revision), sent 2026-09-30
+
+38 marks, 10 MCQ + 3x4 + 2x8, no optional. New 27 (71%), revision 11 (29%).
+
+| Covered | Where |
+|---|---|
+| 11.1 composition of air | MCQ (i), (ii) |
+| 11.2.1 to 11.2.6 air pollutants | MCQ (iii) to (vii), Q.2, Q.3, Q.4, Q.5 |
+| 8.3 enthalpy of reaction, signs | MCQ (viii), Q.6 (i) to (iv) |
+| 8.4 bond energy | MCQ (ix), Q.6 (v) |
+| 8.5 activation energy | MCQ (x) |
+
+All three Quiz questions from the Ch 11 Part 1 notes appear as Section B, as promised on the notes.
+Q.6(v) is a deliberate re-test of the exam-25 Q.7 loss (reversed reaction, sign of ΔH).
+Answer letters c a d b c a d b c a. Key held.

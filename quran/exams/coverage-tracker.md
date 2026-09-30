@@ -143,3 +143,35 @@ The earlier version of this section recommended translation and the untouched su
 **Section C (2 x 8):** Q.3 طٰهٰ, Musa (AS) and Firaun as told in the surah: sent to Firaun, contest with the magicians, Firaun drowned (p20-25); Q.4 لقمٰن, Luqman's advice to his son (p137, ayat 13-19 on p140).
 
 **Still untested inside the seven surahs:** the Queen of Saba episode (النمل, book p91-94), Taha's dua box and Ashura hadith (p31), Maryam's hijrat details beyond the year, Al-Hajj's qurbani passage (p53-54) as a question of its own.
+
+### exam-03 coverage (built 2026-09-29, An-Naml and Al-Hajj)
+
+**Scope deliberately NOT widened.** Only the two taught surahs, but entirely from passages the first two
+papers never touched: An-Naml p91-94 (the Queen of Saba narrative and the valley of the ants) and Al-Hajj
+p53-54 (the Hajj proclamation and the qurbani passage). Every page was read as an image before any question
+was written. No translation question.
+
+Answer letters ب ج الف د الف د ب ج ب د (الف=2 ب=3 ج=2 د=3).
+
+| # | Topic | Book p |
+|---|---|---|
+| i | ہدہد brought news from سبا | 92 |
+| ii | The Queen and her people prostrated to the sun | 92 |
+| iii | The letter opened with بسم اللہ الرحمٰن الرحیم | 92 |
+| iv | The عفریت of the jinn offered the throne first | 93 |
+| v | The one with knowledge of the Book brought it in the blink of an eye | 93 |
+| vi | She took the glass floor for deep water | 94 |
+| vii | The ant told its people to enter their dwellings | 91 |
+| viii | Neither flesh nor blood reaches Allah, but taqwa does | 54 |
+| ix | Ibrahim AS was told to proclaim the Hajj | 53 |
+| x | Feed the القانع and the المعتر | 54 |
+
+Section B: the valley of the ants plus Sulaiman AS's dua (p91); the Queen's consultation with her chiefs
+(p92); four teachings on qurbani (p53-54).
+Section C: Q.3 the full Queen of Saba narrative (p91-94); Q.4 Hajj and qurbani in Surah Al-Hajj (p53-54).
+
+**Still untested after this paper:** Taha's dua box and the Ashura hadith (p31), Maryam's hijrat details
+beyond the year, the Salih AS and Thamud passage that follows the Queen of Saba on p94.
+
+**The فہرست photo is still the open item.** Until her book's contents page is seen, the taught-surah list
+stays inferred and the nine remaining surahs cannot be opened safely.

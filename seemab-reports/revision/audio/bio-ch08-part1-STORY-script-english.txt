@@ -1,0 +1,74 @@
+Hello Seemab. Today a new Biology chapter begins, Chapter eight, Plant Physiology. But first, a question.
+
+Think of a large tree standing outside your house. Every day it pulls water up out of the ground. How much? Around four hundred litres. Every day.
+
+Now guess how much of those four hundred litres it actually uses. Half? A quarter?
+
+The answer is: about one litre. Just one. The other three hundred and ninety nine evaporate into the air.
+
+That seems mad, doesn't it. All that effort to pull water up, and ninety nine percent of it thrown away. Why would any plant be so wasteful? Hold that thought, we will come back to it.
+
+First, something simple. Where do plants get their food?
+
+You eat food that is already made. Roti, salan, fruit. But a plant? A plant takes only raw material from the soil: water, carbon dioxide and some minerals. And then it makes its own food. That is why plants are called autotrophs, self feeders.
+
+Here is the book's definition, the one to write in the exam: any substance that provides necessary elements to the organism for growth and metabolism is called nutrient.
+
+Now an important count. The book says sixteen elements are essential for plant growth. Nine of them are needed in fairly large quantities, and seven in only trace amounts.
+
+The large ones are called macronutrients: carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, sulphur, calcium and magnesium. Nine.
+
+The trace ones are micronutrients: iron, boron, manganese, copper, molybdenum, chlorine and zinc. Seven.
+
+And where is the line between them? Nought point nought five percent of dry weight. More than that is a macronutrient, less than that is a micronutrient. Learn that figure, because the question is built on it.
+
+But listen carefully to one thing. Micro does not mean unimportant. Every nutrient is essential. Needing little is not the same as mattering little. Think of salt in cooking: only a pinch goes in, but without it the food cannot be eaten.
+
+Now two nutrients that come up again and again in exams.
+
+First, nitrogen. The plant takes it from the soil as nitrates. Those nitrates come from the decomposition of dead organic matter. Inside the plant, nitrogen goes into three things: amino acids, nucleotides and chlorophyll. And the amino acids then go on to make proteins. If nitrogen runs short, the most obvious symptom is that the plant's growth is severely stunted.
+
+Second, magnesium. The plant takes it as magnesium ions. It is used to make chlorophyll. So if magnesium runs short, chlorophyll cannot be made, and without chlorophyll the leaves cannot stay green. The leaves turn yellow.
+
+That is the easiest way to hold the two apart: short of nitrogen and growth stops, short of magnesium and the colour goes.
+
+Now the second part: how do the water and minerals actually get in?
+
+The root is the underground part of the plant and it is the organ for taking in water and minerals. And the root has one great advantage: it branches a great deal, and those branches carry very fine hairs called root hairs. Together these make the root's surface area enormous.
+
+Imagine you had to soak up water. Would you use one thick pipe, or a hundred fine channels? The hundred fine channels give far more surface, and take up far more water. That is exactly what root hairs do.
+
+And inside the root, water always travels in the same order, from the outside inwards: epidermis, then cortex, then endodermis, then pericycle, and finally the xylem. Learn that order, because that is what the question asks for.
+
+Now there are two ways things get in, and the difference between them is the most important question here.
+
+The first is passive transport. No energy is spent. The substance moves from where there is more of it to where there is less. Downhill, in other words.
+
+The second is active transport. This uses the energy of ATP, and it works uphill, against the gradient. That is, when the root cells already hold more than the soil does, and the plant still wants more.
+
+Here is how to keep them apart. Water runs downhill on its own, and that is passive. To send water uphill you must run a pump, and that is active. A pump needs electricity, and inside a plant that electricity is ATP.
+
+And how does the water itself get in? By osmosis. In the book's words: the movement of water molecules through a partially permeable membrane from an area where they are more concentrated to an area where they are less concentrated.
+
+Learn two words alongside it: water moving into a cell is endosmosis, and water moving out of a cell is exosmosis.
+
+Now the last part, and this is the answer to our opening question. Transpiration.
+
+The water taken up by the roots travels to the leaves, and from there about ninety nine percent of it escapes into the air as vapour. That loss is called transpiration.
+
+It happens in three ways, and learn all three figures because the question is built on them:
+Ninety percent through the stomata, which are mostly in the leaves. That is stomatal transpiration.
+Seven to nine percent through the cuticle, the general body surface. That is cuticular transpiration.
+And less than three percent through lenticels, the scar like regions on the stem. That is lenticular transpiration.
+
+Now back to the tree. One litre out of four hundred. Ninety nine percent gone.
+
+So is the plant being foolish? Not at all. Because that escaping water is the very pump that drags minerals up from the roots to the leaves. If water did not leave at the top, none would be pulled up at the bottom. And transpiration keeps the plant cool as well.
+
+That is why the book gives it a rather beautiful name: a necessary evil. It looks like a loss, but without it the plant cannot live.
+
+And the loss is real: if transpiration goes unchecked the plant wilts, which means it loses its turgor, and it can eventually die. Your answer needs both halves, the benefit and the harm. Write only one and you lose half a mark.
+
+Remember this for life: the plant is not wasting water, it is using water to run a pump.
+
+Goodbye, Seemab. Next time we will see how that water climbs from the root all the way to the leaves, sometimes a hundred feet up, with no motor of any kind.
