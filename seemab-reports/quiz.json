@@ -339,6 +339,60 @@
     "Explain, using the idea of free electrons, why metals conduct electricity and can be hammered into sheets while non-metals are brittle. Give one exception to each rule."
    ],
    "answer": "1. Metals are good thermal and electrical conductors, malleable and ductile, usually with high melting and boiling points, and sit on the left. Non-metals are poor conductors, brittle and not ductile, usually with low melting points, and sit on the right. 2. In a metal the outer electrons are free and move through the whole structure (a sea of electrons). Those free electrons carry current and heat. When a metal is hammered the layers of atoms slide while the electron sea keeps them bonded, so it flattens instead of breaking. In a non-metal the electrons are held in fixed bonds, so there is nothing to carry current and the rigid bonds snap, making it brittle. Exceptions: graphite is a non-metal that conducts; mercury is a metal that is liquid at room temperature."
+  },
+  {
+   "title": "\\U0001F9F2 Chemistry Ch 5.1: Why Do Atoms React?",
+   "source": "chemistry ch05",
+   "questions": [
+    "Why do noble gases not react? State the octet rule and the duplet rule, and name the three elements the duplet rule applies to.",
+    "Name the three ways an atom can achieve a stable outer shell, and say which type of bond each one leads to."
+   ],
+   "answer": "1. Noble gases already have a complete outer shell, so they are stable and have no need to gain, lose or share electrons. Octet rule: an atom tends to achieve eight electrons in its outermost shell. Duplet rule: for hydrogen, lithium and beryllium two electrons complete the first shell, which holds only two. 2. Losing electrons (forms a cation), gaining electrons (forms an anion), or sharing electrons. Losing and gaining together give an ionic bond; sharing gives a covalent bond."
+  },
+  {
+   "title": "\\U0001F517 Chemistry Ch 5.2: Chemical Bonds",
+   "source": "chemistry ch05",
+   "questions": [
+    "Define a chemical bond, and explain in terms of energy why atoms form one.",
+    "Explain the difference between an electropositive and an electronegative element, say where each sits in the periodic table, and give the type of bond formed by metal plus non-metal, non-metal plus non-metal, and metal plus metal."
+   ],
+   "answer": "1. A chemical bond is the force of attraction that holds two atoms together. Atoms bond because the combined state has lower energy than the separate atoms, and lower energy means greater stability. 2. An electropositive element gives up electrons easily; these are the metals on the left of the periodic table. An electronegative element attracts electrons to itself; these are the non-metals on the right. Metal plus non-metal gives an ionic bond, non-metal plus non-metal gives a covalent bond, metal plus metal gives a metallic bond."
+  },
+  {
+   "title": "\\U0001F91D Chemistry Ch 5.3: Types of Bonds",
+   "source": "chemistry ch05b",
+   "questions": [
+    "Explain how an ionic bond forms and how a covalent bond forms, with two examples of each from your book. Then name a molecule with a single, a double and a triple bond.",
+    "What is the difference between a polar and a nonpolar covalent bond? Then define a coordinate covalent bond and give the three examples your book provides."
+   ],
+   "answer": "1. Ionic: one atom loses electrons to become a cation, the other gains them to become an anion, and the opposite charges attract (NaCl, MgO, MgF2, NaF). Covalent: both atoms share electrons (H2, CH4, H2O, F2). Single H2 or CH4; double O2 or CO2; triple N2 or HCN. 2. In a nonpolar covalent bond the atoms have equal or near-equal electronegativity so the shared electrons sit midway (H2, O2). In a polar covalent bond one atom is more electronegative and pulls the shared pair toward itself, giving it a slight negative and the other a slight positive charge (H2O, HCl). A coordinate covalent bond is one where both shared electrons come from the same atom, which must have a lone pair; the other atom supplies only the empty space. Examples: NH4+, H3O+, NH3-BF3."
+  },
+  {
+   "title": "\\U0001F4A7 Chemistry Ch 5.4: Intermolecular Forces",
+   "source": "chemistry ch05b",
+   "questions": [
+    "Explain the difference between intramolecular and intermolecular forces, and say which of them decides a substance's boiling point.",
+    "Name the two intermolecular forces your book gives. For hydrogen bonding, name the three elements hydrogen must be bonded to, and use it to explain why water boils at a much higher temperature than H2S."
+   ],
+   "answer": "1. Intramolecular forces act inside a molecule, between its atoms, and are the ionic and covalent bonds; they are strong. Intermolecular forces act between separate molecules and are weak. Boiling point depends on the intermolecular forces, because boiling separates molecules from each other rather than breaking them apart. 2. Dipole-dipole forces and hydrogen bonding. Hydrogen bonding needs hydrogen bonded to nitrogen, oxygen or fluorine. Water has hydrogen bonding because H is bonded to O; H2S does not, because sulphur is not one of the three. The extra energy needed to break those hydrogen bonds is why water boils far higher despite being lighter."
+  },
+  {
+   "title": "\\U0001F48E Chemistry Ch 5.5: Bonding, Structure and Properties",
+   "source": "chemistry ch05b",
+   "questions": [
+    "Compare ionic and covalent compounds for melting point, state at room temperature, conduction of electricity and solubility in water.",
+    "Explain why an ionic compound does not conduct electricity when solid but does when molten or dissolved. Then give two uses each for graphite and diamond, with the reason behind each use."
+   ],
+   "answer": "1. Ionic: high melting and boiling points, usually solid at room temperature, conduct when molten or dissolved, usually soluble in water. Covalent: low melting and boiling points, often liquid or gas, generally do not conduct, often insoluble. 2. Conduction needs charges that can move. In the solid the ions are locked in place in the lattice, so nothing moves and no current flows. Melting or dissolving frees the ions to move, so the current flows. The ions are the same; only their freedom to move changes. Graphite: lubricant and pencils (layers slide), electrodes (free fourth electron conducts). Diamond: cutting tools and jewellery (hardest substance, from its rigid four-bond network)."
+  },
+  {
+   "title": "\\U0001F529 Chemistry Ch 5.6: Metallic Bonds",
+   "source": "chemistry ch05b",
+   "questions": [
+    "Describe the electron sea model of metallic bonding, and define a delocalised electron.",
+    "Using that model, explain why metals conduct electricity and why they are malleable. Then give one industrial use each for copper, aluminium and iron, with the property behind it."
+   ],
+   "answer": "1. In a metal the atoms release their outermost electrons, which no longer belong to any one atom but move freely throughout the whole structure. These are delocalised electrons, and the picture is called the sea of electrons: a lattice of positive metal ions immersed in that sea, with the attraction between them being the metallic bond. 2. Conduction: the free electrons carry charge through the metal. Malleability: when hammered, layers of ions slide over one another while the electron sea keeps them bonded, so the metal flattens rather than shattering. Copper for electrical wiring (best conductor, ductile); aluminium for foil and utensils (light, malleable); iron and steel for building frames (strength)."
   }
  ]
 }

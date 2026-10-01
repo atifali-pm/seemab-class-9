@@ -1653,9 +1653,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch05-why-do-atoms-react",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch05-why-atoms-react-notes-2026-09-30.pdf",
+   "audio": "chem-ch05-why-atoms-react",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1673,9 +1673,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch05-chemical-bonds",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch05-chemical-bonds-notes-2026-09-30.pdf",
+   "audio": "chem-ch05-chemical-bonds",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1706,12 +1706,12 @@
     }
    ],
    "source_chars": 356,
-   "target_words": 300,
-   "target_minutes": 2.2,
+   "target_words": 680,
+   "target_minutes": 5.0,
    "slug": "chemistry-ch05-types-of-bonds",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch05-types-of-bonds-notes-2026-09-30.pdf",
+   "audio": "chem-ch05-types-of-bonds",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1729,9 +1729,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch05-intermolecular-forces",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch05-intermolecular-forces-notes-2026-09-30.pdf",
+   "audio": "chem-ch05-intermolecular-forces",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1761,9 +1761,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch05-nature-of-bonding-structure-and-prop",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch05-structure-and-properties-notes-2026-09-30.pdf",
+   "audio": "chem-ch05-structure-and-properties",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1785,9 +1785,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch05-metallic-bonds",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch05-metallic-bonds-notes-2026-09-30.pdf",
+   "audio": "chem-ch05-metallic-bonds",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1901,26 +1901,6 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch06-chemical-calculations",
-   "note": null,
-   "audio": null,
-   "done": false
-  },
-  {
-   "subject": "chemistry",
-   "subject_label": "Chemistry",
-   "chapter": 6,
-   "ref": "0.5",
-   "title": "mol CH₄ = 3.011×10²³ molecules",
-   "covers": [
-    {
-     "ref": "0.5",
-     "title": "mol CH₄ = 3.011×10²³ molecules"
-    }
-   ],
-   "source_chars": 161,
-   "target_words": 300,
-   "target_minutes": 2.2,
-   "slug": "chemistry-ch06-mol-ch-3-011-10-molecules",
    "note": null,
    "audio": null,
    "done": false
