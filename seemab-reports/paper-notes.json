@@ -1,0 +1,26 @@
+{
+  "_comment": "One honest line per paper saying what she lost, shown in red on the progress page. Keyed by <subject>/<exam-folder>. Where there is no entry the site falls back to pulling a sentence out of the marking report, which is rougher. Add a line here after each marking.",
+
+  "chemistry/exam-26-ch11p1-rev8": "Half a mark on Q.4(iii): wrote \"it is emitted directly\" where she meant \"is NOT emitted directly\". One dropped word inverted the answer.",
+  "chemistry/exam-25-ch10-rev6-8": "Q.7 reversed the reaction and reused the worked example's value instead of re-deriving it, and Q.9(ii) left a mole result with no unit.",
+  "chemistry/exam-23-ch10-rev4-6-8-9": "Section C was the loss: incomplete equations and missing state symbols, plus the conclusion habit returning.",
+  "chemistry/exam-22-ch1-9": "A missing minus sign on an exponent, and three re-set errors from exam-21 that had not yet stuck.",
+  "chemistry/exam-21-ch1-9": "Written work was perfect at 16/16. Everything lost was in the MCQ section, on confusable pairs.",
+
+  "islamiat/exam-05-bab3b-retest": "Q.2(iii) missed the five things the book says to avoid, and one reference was still missing: Sahih Bukhari 4315.",
+  "islamiat/exam-04-bab3b": "Zero references across six pages on a paper that asked for them three times, and the eight-mark answers were headings with one line each.",
+  "islamiat/exam-03-bab1-2-3-4-6-7": "Lost marks where the answer named a thing but gave no incident, date or reference to go with it.",
+
+  "quran/exam-03-naml-hajj": "Q.4 asked about Hajj and qurbani and she answered only qurbani. Across the whole paper she wrote one surah name and no ayah numbers.",
+  "quran/exam-02": "All five lost marks sat in Section B, and shared one cause: the question asked for teachings and the answer retold the story.",
+
+  "physics/exam-17-ch7p1-rev3-6": "Q.5(vi) named tungsten from memory when the question said to use Table 7.1, where the answer is gold. Half a mark more for writing \"flowing\" as an arrangement.",
+  "physics/exam-16-ch1-6-9": "Three half-marks for recording slips: a wrong unit, a value copied wrongly, and one missing concluding sentence.",
+  "physics/exam-15-ch1-6-9": "One mark, on a question she knew. Her best paper of the year at that point.",
+
+  "biology/exam-18-ch1-7": "Two marks: the H of NADPH left off, and lymphatic confused with immune for the second time.",
+  "biology/exam-17-ch1-7": "Two equation slips, and one difference explained in the wrong direction.",
+
+  "math/exam-19-ch6-10-11": "Q.6 on probability was not attempted at all, the single largest loss. Unit 6 was untaught and still came out perfect at 11/11.",
+  "math/exam-18-ch1-2-4-5-7": "Q.3 was skipped because her numbering slipped, and one log law was named loosely."
+}
