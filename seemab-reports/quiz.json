@@ -1,0 +1,344 @@
+{
+ "generated": "2026-10-01",
+ "items": [
+  {
+   "title": "🌡️ 1. Physics: Thermometers",
+   "source": "Daily notes 2026-09-30",
+   "questions": [
+    "Define thermometric property in the words of your book, and name the four physical properties your book says can vary with temperature.",
+    "Write any four rows of Table 7.3, that is four thermometric properties with the thermometer that uses each. Then state which law the constant volume gas thermometer is based on."
+   ],
+   "answer": "Q1. \"These physical properties on the basis of which a thermometre works is called its thermometric property.\" Four properties: volume, pressure, change in colour, electrical resistance. Q2. Any four of Table 7.3 (see the table above, 0.5 each pair). Constant volume gas thermometer = Gay-Lussac's law (pressure directly proportional to temperature at constant volume)."
+  },
+  {
+   "title": "🏭 2. Chemistry: Sources of Pollution aur Global Warming",
+   "source": "Daily notes 2026-09-30",
+   "questions": [
+    "Write three natural sources and three human activities that cause air pollution. Then write the four equations your book gives, and explain what the word limited changes in the first one.",
+    "Explain the greenhouse effect in your own words, naming the three greenhouse gases your book lists, and state what the Earth would be like without it."
+   ],
+   "answer": "Q1. Natural (any 3): forest fires; dust storms; volcanoes (dust, poisonous gases, ash); termites and cows releasing methane; electrical discharges producing nitrogen oxides. Human (any 3): burning fossil fuels (coal, petroleum, natural gas); cars and motor vehicles (nearly half of air pollution); factories; power plants burning coal or oil; incineration. Equations: C + O2 (limited) -> CO ; S + O2 -> SO2 ; N2 + O2 -> 2NO ; 2NO + O2 -> 2NO2. \"Limited\" means the oxygen supply is not enough, so incomplete combustion gives CO instead of CO2. Q2. Sunlight is absorbed by the Earth's surface, which warms and emits infrared. Greenhouse gases absorb this energy and re-radiate some of it, acting like a blanket trapping heat in the lower atmosphere. The three named: water vapour, methane, carbon dioxide. Without it the Earth would be much colder, making it difficult for life to exist."
+  },
+  {
+   "title": "🌿 3. Biology: Ascent of Sap aur TACT",
+   "source": "Daily notes 2026-09-30",
+   "questions": [
+    "Define ascent of sap in the words of your book. Then write what TACT stands for and explain adhesion and cohesion, making the difference between them clear.",
+    "(i) Name the two types of xylem cells and give one feature of each. (ii) Define translocation, name the two important components of phloem, and state which step of the pressure flow mechanism requires ATP."
+   ],
+   "answer": "Q1. \"This upward movement of the water and dissolved minerals through the xylem tissue is known as the ascent of sap.\" TACT = Transpiration pull, Adhesion, Cohesion, Tension. Adhesion = attraction between water molecules and OTHER substances (the xylem cell walls, because water and cellulose are both polar). Cohesion = attraction between water molecules and EACH OTHER. The difference is other-substance vs each-other. Q2. (i) Tracheids: long dead cells with pointed ends. Vessels: long, dead, thick-walled tube-like structures formed by the fusion of vessel elements placed end to end. (ii) \"The transport of prepared food (organic solutes) to different parts of the plant through the phloem tissue is translocation.\" Components: sieve tube elements and companion cells. ATP is required for the ACTIVE LOADING of sucrose into the sieve tube at the source (and for active unloading at the sink)."
+  },
+  {
+   "title": "📐 4. Mathematics: Measurement of an Angle",
+   "source": "Daily notes 2026-09-30",
+   "questions": [
+    "Define an angle in the words of your book, state when it is positive and when negative, and write the condition for an angle to be in standard position. Then name the three systems of measuring an angle.",
+    "Convert: (i) 30°15′36″ into seconds. (ii) 20.25° into D°M′S″. (iii) 45°30′18″ into degrees, correct to 4 decimal places."
+   ],
+   "answer": "Q1. \"Union of two rays having common end point forms an angle.\" Positive if measured anti-clockwise, negative if clockwise. Standard position: vertex at the origin AND initial arm along the positive x-axis. Three systems: Sexagesimal (English), Radian measure (Circular), Centesimal (French). Q2. (i) 30x3600 + 15x60 + 36 = 108000 + 900 + 36 = 108936\" (ii) 20.25 = 20 + 0.25; 0.25x60 = 15'; so 20 deg 15' 0\" (iii) 45 + 30/60 + 18/3600 = 45 + 0.5 + 0.005 = 45.5050 deg"
+  },
+  {
+   "title": "🕌 5. Islamiat: اخلاص و تقویٰ",
+   "source": "Daily notes 2026-09-30",
+   "questions": [
+    "۱۔ اخلاص اور تقویٰ کا لغوی اور اصطلاحی مفہوم لکھیں، اور ہر ایک کے ساتھ ایک قرآنی حوالہ بھی دیں۔"
+   ],
+   "answer": "Q1. Ikhlas: lughvi = khalis banana, saaf karna. Istilahi = har amal sirf Allah ki raza ke liye ho. Hawala: Surah Al-Bayyinah 5. Taqwa: lughvi = darna, parhezgari ikhtiyar karna. Istilahi = dil ki wo halat jo Allah ke dar se neki par aamada kare aur gunah se roke. Hawala: Surah Al-Hujurat 13. Marking: 1 each for lughvi+istilahi, 0.5 each hawala. Q2. Sooraj/chand: the full statement to Abu Talib RA. Mughira bin Shu'ba RA: standing all night in prayer until his feet swelled; when told his sins were forgiven he said \"should I not be a grateful servant?\" (Sahih Bukhari 4836). Marking: the sun-and-moon sentence complete = 2; the swollen feet incident = 1.5; the hawala 4836 = 0.5."
+  },
+  {
+   "title": "⚡ 1. Physics: Plasma aur Temperature",
+   "source": "Daily notes 2026-10-01",
+   "questions": [
+    "Define plasma in the words of your book, say under what conditions it forms, and give two examples from nature and two from daily life.",
+    "State the book's definition of temperature. Then explain the two things that can happen when a substance is heated, and say why plasma conducts electricity so well."
+   ],
+   "answer": "1. \"Plasma consists of positive ions, free electrons and neutral atoms in gaseous state.\" It forms at very high temperature or high pressure or both, and can also be made using high electric and magnetic fields. Nature: the Sun, nebulae, auroras, lightning. Daily life: neon tube lights, welding arcs, plasma lamps. 2. \"The temperature of a substance is the measure of its hotness or coldness, and the temperature of a substance is directly proportional to the average K.E. of its particles.\" On heating, either the attractive force weakens and bonds break (melting and boiling), or the particles speed up and their kinetic energy rises. Plasma conducts well because it contains both free electrons and moving ions."
+  },
+  {
+   "title": "🌧️ 2. Chemistry: Acid Rain",
+   "source": "Daily notes 2026-10-01",
+   "questions": [
+    "What is the pH of normal rainwater, and why is it already slightly acidic? Then explain how acid rain forms, naming the two gases responsible and where each comes from.",
+    "Name the three acids your book says are created in rainwater, write the formula of each, and explain the difference between nitrous and nitric acid."
+   ],
+   "answer": "1. pH 5.6, because normal rainwater is saturated with carbon dioxide. Acid rain forms when sulphur dioxide (from fossil fuels burned in power plants) and nitrogen oxides (from car exhausts) dissolve in rainwater and create acids, pushing the pH below 5.6. 2. Sulphuric acid H2SO4, nitrous acid HNO2 and nitric acid HNO3. Nitrous acid has two oxygen atoms, nitric acid has three."
+  },
+  {
+   "title": "🍃 3. Biology: Source, Sink aur Gas Exchange",
+   "source": "Daily notes 2026-10-01",
+   "questions": [
+    "Explain source and sink with an example of each, say which plant part is always which, and give the composition of phloem sap.",
+    "Define gas exchange in the words of your book, name the two openings through which it happens and where each is found, and name the process that moves the gases."
+   ],
+   "answer": "1. A source supplies food (leaves, which make it); a sink uses food (roots or storage organs). Leaves are always sources, fruits are always sinks, and stems and roots can act as both. Phloem sap is 10 to 25 percent dry matter, most of which is sucrose plus some other organic compounds. 2. \"Gas exchange is when the entire organism exchanges gases with the environment.\" Through stomata (tiny openings in leaves) and lenticels (small openings in stems). The process is diffusion."
+  },
+  {
+   "title": "📐 4. Mathematics: Radian, Arc aur Sector",
+   "source": "Daily notes 2026-10-01",
+   "questions": [
+    "Define one radian in the words of your book, write the relation between radians and degrees, and convert 150° into radians in terms of π.",
+    "A circle has radius 14 cm and a sector whose arc length is 22 cm. Find the central angle in radians, then the area of that sector. Give the unit with each answer."
+   ],
+   "answer": "1. One radian is the angle subtended at the centre of a circle by an arc whose length equals the radius. pi radians = 180 degrees. 150 x pi/180 = 5pi/6 radians. 2. theta = l/r = 22/14 = 11/7 = 1.5714 rad. A = 1/2 r^2 theta = 1/2 x 196 x 11/7 = 154 cm2."
+  },
+  {
+   "title": "🕌 5. Islamiat: تکبر اور حسد",
+   "source": "Daily notes 2026-10-01",
+   "questions": [
+    "۱۔ تکبر کی چار صورتیں لکھیں، اور قرآن مجید سے اس کی ایک مثال حوالے کے ساتھ بیان کریں۔"
+   ],
+   "answer": "1. Any four of: denying the truth, looking down on others, walking arrogantly, dragging clothes on the ground, disliking to sit with the less wealthy, thinking oneself superior. Quranic example: Iblees refused to prostrate to Adam AS despite Allah's command, Surah Al-Baqarah 34. 2. Hasad is wishing a blessing taken away from another and is haram; rashk is wishing the same blessing for oneself without wanting the other to lose it, and is permitted. Hasad hadith: Sunan Abu Dawud 4903 (envy eats good deeds as fire eats wood). Rashk hadith: Sahih Bukhari 7529 (the two who may be envied)."
+  },
+  {
+   "title": "📖 6. Tarjuma-tul-Quran: سورۃ الحج ki Hajj taleemat",
+   "source": "Daily notes 2026-10-01",
+   "questions": [
+    "۱۔ سورۃ الحج کی روشنی میں حج کے بارے میں چھ تعلیمات ترتیب سے لکھیں۔ (قربانی کے بارے میں نہیں)"
+   ],
+   "answer": "1. The six teachings in the table above, each tagged Surah Al-Hajj. 2. Ibrahim AS was shown the site of the House, told to associate nothing with Allah, to purify it for those who circle, stand, bow and prostrate, and to proclaim the Hajj among the people: \"wa azzin fin-naasi bil-hajj\", Surah Al-Hajj 27."
+  },
+  {
+   "title": "⚗️ Chemistry Ch 1.1: Definition of Chemistry",
+   "source": "chemistry ch01",
+   "questions": [
+    "Define chemistry in the words of your book, and name the three things about matter that it studies.",
+    "What is green chemistry? Give one reason why it matters."
+   ],
+   "answer": "1. Chemistry is the science that investigates the materials of the universe and the changes they undergo. The three: composition, structure and properties (of matter), plus changes in matter and energy. 2. Green chemistry reduces the use of hazardous substances. It matters because it cuts harm to health and the environment while still producing what is needed."
+  },
+  {
+   "title": "🌳 Chemistry Ch 1.2: Branches of Chemistry",
+   "source": "chemistry ch01 b",
+   "questions": [
+    "Name any six branches of chemistry from your book and write one line on what each studies.",
+    "Organic chemistry deals with carbon compounds. Name the four carbon containing substances your book excludes from it, and say which branch they belong to instead."
+   ],
+   "answer": "1. Any six of the twelve in the table, one line each. 2. Carbonates, bicarbonates, oxides and carbides. They belong to inorganic chemistry."
+  },
+  {
+   "title": "❓ Chemistry Ch 1.3: Essential Questions",
+   "source": "chemistry ch01 b",
+   "questions": [
+    "Write the essential question behind Analytical, Physical and Biochemistry.",
+    "A scientist is finding out how much lead is in a water sample. Which branch is this, and why?"
+   ],
+   "answer": "1. Analytical: what is in this sample and how much. Physical: why does this change happen and what law governs it. Biochemistry: how does this process happen inside a living body. 2. Analytical chemistry, because the question is \"how much\", which is measurement and identification."
+  },
+  {
+   "title": "🏠 Chemistry Ch 1.4: Daily Life Applications",
+   "source": "chemistry ch01 b",
+   "questions": [
+    "Write the everyday application your book gives for Organic, Inorganic and Analytical chemistry.",
+    "Name the three steps of water purification in order, and say which branch of chemistry this belongs to."
+   ],
+   "answer": "1. Organic: synthesising medicines (proteins and enzymes). Inorganic: lithium ion batteries. Analytical: forensic chemistry, identifying body fluids, bones, fibres and drugs. 2. Sedimentation, then filtration, then disinfection. Environmental chemistry."
+  },
+  {
+   "title": "⚙️ Chemistry Ch 1.5: Science, Technology and Engineering",
+   "source": "chemistry ch01 b",
+   "questions": [
+    "Define science, technology and engineering in the words of your book, and give one example that shows the difference between them.",
+    "What do chemical engineers do, and name the five things your book says they make processes for?"
+   ],
+   "answer": "1. Science: a systematic process of constructing and organising knowledge about the universe. Technology: applying scientific knowledge to practical applications, such as tools, machines and systems. Engineering: using science and mathematics to design and construct systems and structures. Example: understanding the laws of electricity is science, making a bulb is technology, designing a city's power system is engineering. 2. Chemical engineers develop manufacturing processes, for chemicals, fuels, food, medicines and polymers."
+  },
+  {
+   "title": "🔬 Chemistry Ch 1.6: Applications, the four examples",
+   "source": "chemistry ch01 b",
+   "questions": [
+    "Name the four examples your book gives in section 1.6, and write one line on each.",
+    "For solar energy, write the three stages in order from the smallest part to the whole system. Then explain the difference between a monomer and a polymer using the plastic bag example."
+   ],
+   "answer": "1. Example 1.1 rusting of iron; 1.2 harnessing solar energy; 1.3 organic chemistry in action, french fries; 1.4 plastic bags. One line each as in the table. 2. Photovoltaic cells, then solar panels, then the wider infrastructure. A monomer is a single small unit; a polymer is many monomers joined into a long chain. In a plastic bag the monomers join to form the polymer polyethylene."
+  },
+  {
+   "title": "🧊 Chemistry Ch 2.1: States of Matter",
+   "source": "chemistry ch02",
+   "questions": [
+    "Name the four states of matter with one example of each, then name the two exotic states and say what makes each one special.",
+    "Copy Table 2.1, comparing density, compressibility and fluidity for gas, liquid and solid."
+   ],
+   "answer": "1. Solid (ice/diamond/metals), liquid (water/oil/milk), gas (O2/H2/N2), plasma (sun, lightning, welding arc). Exotic: BEC, formed near absolute zero (-273.14 C) where particles share one quantum state; liquid crystals, between liquid and solid, flowing like a liquid but with ordered structure, used in LCDs. 2. Density: low, high, high. Compressibility: very, moderate, not. Fluidity: can flow, can flow, cannot flow."
+  },
+  {
+   "title": "🔗 Chemistry Ch 2.2: Elements, Compounds and Mixtures",
+   "source": "chemistry ch02",
+   "questions": [
+    "Define element, compound and mixture in the words of your book, with one example of each.",
+    "Give two differences between a compound and a mixture, and explain why table salt is a compound and not a mixture of sodium and chlorine."
+   ],
+   "answer": "1. Element: made of one type of atom, cannot be broken down chemically (O2, Au, C). Compound: two or more elements chemically combined in a fixed ratio, with properties different from its elements (H2O, CO2, NaCl). Mixture: two or more substances physically mixed, no fixed ratio, separable (air, saltwater, sand and iron). 2. (i) A compound has a fixed ratio, a mixture does not. (ii) A compound needs a chemical change to separate, a mixture separates physically. Salt is a compound because sodium and chlorine are chemically combined in a fixed ratio and the result has completely different properties from either element."
+  },
+  {
+   "title": "💎 Chemistry Ch 2.3: Allotropes of Carbon",
+   "source": "chemistry ch02",
+   "questions": [
+    "Define allotropy, then name the three allotropes of carbon your book gives and describe the structure of each.",
+    "Graphite and diamond are both pure carbon. Explain why graphite is soft and conducts electricity while diamond is the hardest substance and does not conduct."
+   ],
+   "answer": "1. Allotropy is the property of an element to exist in different physical forms. Graphite: 2D hexagonal layers with weak bonds between layers. Diamond: each carbon bonded to four others in a tetrahedral arrangement. Buckyballs (C-60/fullerenes): hollow football-like ring of 20 hexagons and 12 pentagons, 60 carbon atoms each bonded to three others. 2. In graphite the bonds within a layer are strong but those between layers are weak, so layers slide over one another, making it soft and slippery; its fourth electron is free, so it conducts. In diamond every carbon uses all four electrons in bonds, giving a rigid tetrahedral network (hardest, very high melting point) and leaving no free electrons, so it cannot conduct."
+  },
+  {
+   "title": "🥤 Chemistry Ch 2.4: Solutions and Solubility",
+   "source": "chemistry ch02",
+   "questions": [
+    "Define solution, solute and solvent, then name the three types of solution with one example of each.",
+    "Explain the difference between saturated, unsaturated and supersaturated solutions, and name two substances whose solubility decreases as temperature rises."
+   ],
+   "answer": "1. A solution is a homogeneous mixture with particles smaller than 1 nm, and it is stable. The solute is the substance dissolved; the solvent is the substance doing the dissolving. Types: gaseous (N2 and H2 in Haber's process, fog, smoke), liquid (carbonated drinks, vinegar, brine), solid (hydrogen on nickel, amalgam, alloys). 2. Unsaturated holds less than the maximum and can dissolve more. Saturated holds the maximum at that temperature and is in dynamic equilibrium. Supersaturated holds more than saturated, is unstable, and is made by heating then cooling. Solubility falls with temperature for calcium hydroxide and sodium sulphate."
+  },
+  {
+   "title": "🥛 Chemistry Ch 2.5: Colloids and Suspensions",
+   "source": "chemistry ch02",
+   "questions": [
+    "Give the particle size range for a solution, a colloid and a suspension, with one example of each.",
+    "What is the Tyndall effect, and which of the three shows it? Then give two more differences between a colloid and a suspension."
+   ],
+   "answer": "1. Solution: below 1 nm (salt water). Colloid: 1 to 1000 nm (milk, starch, blood, soap). Suspension: above 1000 nm (chalk in water, paints, muddy water). 2. The Tyndall effect is the scattering of light by particles so that the beam's path becomes visible. Only a colloid shows it. Two further differences: a colloid passes through filter paper while a suspension is held back; a colloid does not separate on standing while a suspension settles."
+  },
+  {
+   "title": "⚛️ Chemistry Ch 3.1: Atomic Models",
+   "source": "chemistry ch03",
+   "questions": [
+    "Describe Rutherford's gold foil experiment and the three conclusions he drew. Then state the defect that made his planetary model fail.",
+    "Write Bohr's five postulates, and name the three scientists behind the quantum mechanical model with what each contributed."
+   ],
+   "answer": "1. Alpha particles from polonium fired at gold foil 0.00004 cm thick. Conclusions: most of the atom is empty space; the nucleus is small, dense and positive; electrons orbit the nucleus. Defect: an orbiting electron is an accelerating charge, so it should radiate energy continuously and give a continuous spectrum, which is not observed. 2. The five postulates as listed. de Broglie: dual nature of electrons. Heisenberg: position and momentum cannot both be known exactly. Davisson and Germer: experimentally confirmed the wave nature."
+  },
+  {
+   "title": "🔴 Chemistry Ch 3.2: Subatomic Particles",
+   "source": "chemistry ch03",
+   "questions": [
+    "Make a table of the three subatomic particles with their charge and mass. Then explain why almost all the mass of an atom is in the nucleus.",
+    "How does each of the three behave in an electric field, and why? What holds the nucleus together despite the protons repelling each other?"
+   ],
+   "answer": "1. Proton +1, ~1 amu; neutron 0, ~1 amu; electron -1, ~1/1836 amu. The proton and neutron each weigh about 1 amu while the electron is only 1/1836 of that, so the nucleus carries essentially all the mass. 2. Protons deflect toward the negative plate, electrons toward the positive plate, neutrons travel straight because they carry no charge. The nuclear force (strong force) binds protons and neutrons together."
+  },
+  {
+   "title": "🔢 Chemistry Ch 3.3: Atomic Number and Mass Number",
+   "source": "chemistry ch03",
+   "questions": [
+    "Define atomic number and mass number. An atom has A = 35 and Z = 17: how many protons, neutrons and electrons does it have?",
+    "What is radioactive decay? Give the two examples your book provides."
+   ],
+   "answer": "1. Atomic number Z is the number of protons in the nucleus and identifies the element. Mass number A is protons plus neutrons. For A=35, Z=17: 17 protons, 35-17=18 neutrons, and 17 electrons in a neutral atom. 2. Unstable isotopes break down into another element. C-14 decays to N-14; U-238 decays to Pb-206."
+  },
+  {
+   "title": "⚖️ Chemistry Ch 3.4: Relative Atomic Mass",
+   "source": "chemistry ch03",
+   "questions": [
+    "Define relative atomic mass and 1 amu. Which atom is the standard, and since which year?",
+    "The relative atomic mass of chlorine is 35.453, not a whole number. Explain why."
+   ],
+   "answer": "1. Relative atomic mass is the mass of an atom compared with one twelfth of the mass of a carbon-12 atom. 1 amu is the mass of one C-12 atom divided by 12. The standard is carbon-12, used since 1961. 2. Because chlorine occurs naturally as two isotopes, Cl-35 and Cl-37, and the tabulated value is the weighted average of them according to their natural abundance, not the mass of any single atom."
+  },
+  {
+   "title": "👥 Chemistry Ch 3.5: Isotopes",
+   "source": "chemistry ch03",
+   "questions": [
+    "Define isotopes. Name the three isotopes of hydrogen with their neutrons, and give the two isotopes of chlorine with their percentages.",
+    "Calculate the relative atomic mass of chlorine from Cl-35 (75.77%) and Cl-37 (24.23%). Then give four uses of isotopes, naming the isotope in each case."
+   ],
+   "answer": "1. Isotopes are atoms of the same element with the same atomic number but different mass numbers, that is different numbers of neutrons. Protium H-1 (no neutron), deuterium H-2 (1 neutron), tritium H-3 (2 neutrons). Chlorine: Cl-35 at 75.77% and Cl-37 at 24.23%. 2. (35 x 75.77 + 37 x 24.23) / 100 = (2651.95 + 896.51)/100 = 35.48. Uses, any four: I-131 for the thyroid, Na-24 for blood flow, I-123 for brain imaging, Co-60 for cancer treatment, C-14 for tracing photosynthesis and for carbon dating, S-35 for molecular structure."
+  },
+  {
+   "title": "➕ Chemistry Ch 3.6: Cations and Anions",
+   "source": "chemistry ch03",
+   "questions": [
+    "Define cation and anion, say which type of element usually forms each, and give two examples of each from your book.",
+    "Magnesium forms Mg2+. Explain what happened to its electrons and why the charge is positive."
+   ],
+   "answer": "1. A cation is a positive ion formed when an atom loses electrons, typically a metal (Na to Na+, Mg to Mg2+). An anion is a negative ion formed when an atom gains electrons, typically a non-metal (O to O2-, F to F-). 2. Magnesium lost two electrons. Electrons carry negative charge, so removing two negatives leaves the atom with two more protons than electrons, giving a 2+ charge."
+  },
+  {
+   "title": "🪜 Chemistry Ch 3.7: Electronic Configuration",
+   "source": "chemistry ch03",
+   "questions": [
+    "Name the first four shells with their numbers, and give the maximum electrons each sub-shell can hold.",
+    "State the Auf Bau principle, write the energy order up to 3d, and give the electronic configuration of sodium (Z = 11). Explain why 4s fills before 3d."
+   ],
+   "answer": "1. K=1, L=2, M=3, N=4. s holds 2, p holds 6, d holds 10, f holds 14. 2. Electrons fill the lowest energy sub-shell first. Order: 1s < 2s < 2p < 3s < 3p < 4s < 3d. Sodium: 1s2 2s2 2p6 3s1 (2+2+6+1 = 11). 4s fills before 3d because filling follows energy, not shell number, and the 4s sub-shell has lower energy than 3d."
+  },
+  {
+   "title": "📊 Chemistry Ch 4.1: The Periodic Table",
+   "source": "chemistry ch04",
+   "questions": [
+    "What is the difference between a period and a group? Why do elements of the same group behave alike?",
+    "An element has the configuration 1s2 2s2 2p6 3s2 3p1. Give its period, its group and its block, and explain how you worked each one out."
+   ],
+   "answer": "1. Periods are horizontal rows, groups are vertical columns. Elements in a group have the same number of outermost electrons, which is what decides chemical behaviour. 2. Highest shell is 3, so period 3. Outermost electrons 2+1 = 3, and it is a p block element, so group 13. Block p, because the last electron entered a p sub-shell."
+  },
+  {
+   "title": "🔢 Chemistry Ch 4.2: Group Number and Ion Charge",
+   "source": "chemistry ch04",
+   "questions": [
+    "Name the families of groups 1, 2, 16, 17 and 18, and give the charge each one's ion carries.",
+    "Explain why a group 2 element forms a 2+ ion while a group 17 element forms a 1- ion."
+   ],
+   "answer": "1. Group 1 alkali metals, +1. Group 2 alkaline earth metals, +2. Group 16 chalcogens, -2. Group 17 halogens, -1. Group 18 noble gases, no ion. 2. Atoms become stable by reaching a full outer shell of eight electrons. A group 2 element has two more than the nearest noble gas, so it loses two and becomes 2+. A group 17 element has one fewer, so it gains one and becomes 1-."
+  },
+  {
+   "title": "📉 Chemistry Ch 4.3: Periodicity of Properties",
+   "source": "chemistry ch04",
+   "questions": [
+    "Define shielding effect, ionization energy and electronegativity.",
+    "Copy the trend table for all five properties, across a period and down a group, and explain in one or two sentences why ionization energy rises across a period."
+   ],
+   "answer": "1. Shielding: inner electrons screen the outer electron from the nucleus. Ionization energy: the energy needed to remove the outermost electron. Electronegativity: an atom's ability to attract the shared electrons of a bond toward itself. 2. The table as given. Across a period the atomic size decreases, so the outer electron sits closer to the nucleus and is held more tightly, which means more energy is needed to remove it."
+  },
+  {
+   "title": "🔩 Chemistry Ch 4.4: Characteristic Properties",
+   "source": "chemistry ch04",
+   "questions": [
+    "How do metallic character, reactivity and density change as you go down a group? Explain the reason for the metallic character trend.",
+    "Give three properties of the alkali metals, and explain how you would predict the behaviour of an unknown group 1 element placed below potassium."
+   ],
+   "answer": "1. Going down a group, metallic character increases, reactivity (group 1) increases and density increases. Metallic character increases because the atom gets larger, the outer electron is further from the nucleus and is lost more easily, and metallic character is the readiness to give up electrons. 2. Alkali metals are soft, have low density and are very reactive, reacting with water to give hydrogen. For an unknown element below potassium, continue the trend: it would be even more reactive, even more metallic, and denser than potassium."
+  },
+  {
+   "title": "🎨 Chemistry Ch 4.5: Transition Elements",
+   "source": "chemistry ch04",
+   "questions": [
+    "Name the five characteristic properties of the transition elements your book gives.",
+    "Give one everyday example of a transition metal showing variable oxidation states, and one of a transition metal acting as a catalyst."
+   ],
+   "answer": "1. High density, high melting points, variable oxidation states, coloured compounds, and they act as catalysts. 2. Iron forms both Fe2+ and Fe3+. Iron is the catalyst in Haber's process (vanadium in the contact process is also acceptable)."
+  },
+  {
+   "title": "📏 Chemistry Ch 4.6: Lanthanides and Actinides",
+   "source": "chemistry ch04",
+   "questions": [
+    "What are the lanthanides and actinides, which periods do they belong to, and which block are they in?",
+    "Why are these two rows printed separately below the main table? Name two actinides."
+   ],
+   "answer": "1. The lanthanides follow lanthanum in period 6 and the actinides follow actinium in period 7. Both are f block elements, because their last electron enters an f sub-shell. The lanthanides are also called the rare earth elements. 2. They are printed below only to keep the table narrow enough to fit a page; chemically they belong inside period 6 and period 7. Two actinides: uranium and plutonium."
+  },
+  {
+   "title": "🧂 Chemistry Ch 4.7: The Halogens (Group 17)",
+   "source": "chemistry ch04",
+   "questions": [
+    "Give the appearance and physical state of the four halogens, and say how density and reactivity change down the group.",
+    "Write the displacement order and the thermal stability order of the hydrogen halides. Will Br2 displace Cl2 from KCl? Explain."
+   ],
+   "answer": "1. F2 pale yellow gas, Cl2 greenish yellow gas, Br2 reddish brown liquid, I2 brownish black solid. Down the group density increases and reactivity decreases. 2. Displacement: F2 > Cl2 > Br2 > I2. Thermal stability: HF > HCl > HBr > HI. No, bromine will not displace chlorine, because chlorine is above bromine and therefore more reactive; only a more reactive halogen displaces a less reactive one."
+  },
+  {
+   "title": "🎈 Chemistry Ch 4.8: Noble Gases (Group 18)",
+   "source": "chemistry ch04",
+   "questions": [
+    "Give the three characteristic properties of the noble gases, and write the outer electronic configuration of helium, neon and argon.",
+    "Explain why the noble gases are both inert and mono-atomic. Why does helium have 2 outer electrons rather than 8?"
+   ],
+   "answer": "1. Inert, mono-atomic, and they have full outer shells. He 1s2, Ne 2s2 2p6, Ar 3s2 3p6. 2. A full outer shell means the atom has no need to gain or lose electrons, so it does not react (inert) and does not bond to another atom, so it stays as a single atom (mono-atomic). Helium has only 2 because the first shell holds a maximum of 2 electrons, so 2 is already full for it."
+  },
+  {
+   "title": "⚖️ Chemistry Ch 4.9: Metals and Non-Metals Compared",
+   "source": "chemistry ch04",
+   "questions": [
+    "Compare metals and non-metals for thermal and electrical conductivity, malleability and ductility, and melting point. Say which side of the periodic table each is on.",
+    "Explain, using the idea of free electrons, why metals conduct electricity and can be hammered into sheets while non-metals are brittle. Give one exception to each rule."
+   ],
+   "answer": "1. Metals are good thermal and electrical conductors, malleable and ductile, usually with high melting and boiling points, and sit on the left. Non-metals are poor conductors, brittle and not ductile, usually with low melting points, and sit on the right. 2. In a metal the outer electrons are free and move through the whole structure (a sea of electrons). Those free electrons carry current and heat. When a metal is hammered the layers of atoms slide while the electron sea keeps them bonded, so it flattens instead of breaking. In a non-metal the electrons are held in fixed bonds, so there is nothing to carry current and the rigid bonds snap, making it brittle. Exceptions: graphite is a non-metal that conducts; mercury is a metal that is liquid at room temperature."
+  }
+ ]
+}
