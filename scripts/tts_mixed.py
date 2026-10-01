@@ -3,7 +3,7 @@
 
     Urdu     the teaching, in ur-PK-UzmaNeural
     Arabic   Quranic ayat and Arabic hadith, recited by ar-SA-HamedNeural
-    English  the book's own words, read by en-GB-SoniaNeural
+    English  the book's own words, read by en-IN-NeerjaNeural
 
 An Urdu voice reading a full English definition sounds wrong, but switching voice
 for a single embedded technical term would sound choppy. So only a run of six or
@@ -25,7 +25,9 @@ import tempfile
 VENV = "/home/atif/.local/share/tts-venv/bin/edge-tts"
 URDU_VOICE = "ur-PK-UzmaNeural"
 ARABIC_VOICE = "ar-SA-HamedNeural"
-ENGLISH_VOICE = "en-GB-SoniaNeural"
+# Indian English, which is the register she hears from her own teachers.
+# edge-tts has no Pakistani English voice.
+ENGLISH_VOICE = "en-IN-NeerjaNeural"
 
 HARAKAT = re.compile(r"[ً-ْٰۖ-ۭ]")
 ARABIC_CH = re.compile(r"[؀-ۿ]")
