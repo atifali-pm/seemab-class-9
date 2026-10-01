@@ -32,7 +32,9 @@ Degree سے radian جانا ہو تو پائی بٹا ایک سو اسی سے ض
 
 اب آج کا دوسرا حصہ، sector of circle۔ اور یہاں صرف دو formulay ہیں۔
 
-پہلا، arc کی لمبائی۔ l برابر ہے r ضرب theta۔ کتاب کے الفاظ میں: arc کی لمبائی radius اور مرکزی زاویے کے radian measure کا حاصل ضرب ہے۔
+پہلا، arc کی لمبائی۔ l برابر ہے r ضرب theta۔ اور کتاب کے اپنے الفاظ یہ ہیں:
+{{en}}So, length of a circular arc is product of radius and radian measure of central angle.{{/en}}
+یعنی arc کی لمبائی radius اور مرکزی زاویے کے radian measure کا حاصل ضرب ہے۔
 
 اور دوسرا، sector کا رقبہ۔ A برابر ہے آدھا r کا مربع ضرب theta۔
 
