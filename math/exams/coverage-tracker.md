@@ -380,3 +380,19 @@ All 18 prior maths papers extracted with `pdftotext -layout` into one file and g
 - No em dashes and no space-hyphen-space in either file (grep-checked, 0 hits).
 
 **NOT SENT.** Built and left in the repo per [[no-whatsapp-send]].
+
+## exam-20 (Unit 6 radian and sector + Unit 11 probability revision), sent 2026-10-01
+
+38 marks, 10 MCQ + 3x4 + 2x8, no optional. New 27 (71%), revision 11 (29%).
+
+| Covered | Where |
+|---|---|
+| 6.1 radian measure, degree and radian conversion | MCQ 1, 3, 5, 6, 7; Q.2; Q.4(i); Q.5(i), (ii) |
+| 6.2.1 length of an arc, l = r0 | MCQ 2, 4; Q.3(i); Q.4(ii); Q.5(iii) |
+| 6.2.2 area of a sector, A = 1/2 r^2 0 | Q.3(ii); Q.4(ii); Q.5(iii) |
+| Unit 11 probability (revision) | MCQ 8, 9, 10; Q.6 |
+
+Both quiz questions from the Unit 6 Part 2 notes appear on the paper, as the notes promised.
+Q.6 re-sets the exam-19 probability question she did not attempt, with changed numbers.
+Repeat-checked against all 19 prior Maths papers; one collision found and replaced (see SEND-NOTE).
+Answer letters C A B D C A B C D A. Key held until she submits.
