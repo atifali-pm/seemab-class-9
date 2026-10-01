@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
-"""Render a lesson script where Quranic ayat and Arabic hadith are recited by an
-Arabic voice and everything else is spoken in Urdu.
+"""Render a lesson script in three voices.
+
+    Urdu     the teaching, in ur-PK-UzmaNeural
+    Arabic   Quranic ayat and Arabic hadith, recited by ar-SA-HamedNeural
+    English  the book's own words, read by en-GB-SoniaNeural
+
+An Urdu voice reading a full English definition sounds wrong, but switching voice
+for a single embedded technical term would sound choppy. So only a run of six or
+more English words counts as a quotation; shorter runs stay in the Urdu voice.
 
 Both Urdu and Arabic use the same script, so the Arabic is found by its
 vocalisation: Quranic text carries full harakat, Urdu prose carries almost none.
@@ -18,16 +25,36 @@ import tempfile
 VENV = "/home/atif/.local/share/tts-venv/bin/edge-tts"
 URDU_VOICE = "ur-PK-UzmaNeural"
 ARABIC_VOICE = "ar-SA-HamedNeural"
+ENGLISH_VOICE = "en-GB-SoniaNeural"
 
 HARAKAT = re.compile(r"[ً-ْٰۖ-ۭ]")
 ARABIC_CH = re.compile(r"[؀-ۿ]")
-EXPLICIT = re.compile(r"\{\{ar\}\}(.*?)\{\{/ar\}\}", re.S)
+EXPLICIT = re.compile(r"\{\{(ar|en)\}\}(.*?)\{\{/\1\}\}", re.S)
+# a quoted definition, not a stray technical term
+LATIN_RUN = re.compile(r"[A-Za-z][A-Za-z0-9.,'\-]*(?:\s+[A-Za-z][A-Za-z0-9.,'\-]*)*")
+MIN_EN_WORDS = 6
 # A gap this short between two recited runs is part of the same ayah, not prose.
 BRIDGE_MAX = 5
 
 
 def _vocalised(tok):
     return len(HARAKAT.findall(tok)) >= 2
+
+
+def _split_english(chunk):
+    """Pull long English quotations out of an Urdu chunk."""
+    out, pos = [], 0
+    for m in LATIN_RUN.finditer(chunk):
+        run = m.group(0)
+        if len(run.split()) < MIN_EN_WORDS:
+            continue
+        if m.start() > pos:
+            out.append(("ur", chunk[pos:m.start()]))
+        out.append(("en", run))
+        pos = m.end()
+    if pos < len(chunk):
+        out.append(("ur", chunk[pos:]))
+    return [(k, t) for k, t in out if t.strip()]
 
 
 def _auto_segments(text):
@@ -64,16 +91,25 @@ def _auto_segments(text):
 
 
 def segments(text):
-    """Explicit {{ar}} markers first, auto-detection for everything else."""
-    out, pos = [], 0
+    """[(kind, text)] with kind in ur / ar / en. Explicit markers always win."""
+    staged, pos = [], 0
     for m in EXPLICIT.finditer(text):
         if m.start() > pos:
-            out += _auto_segments(text[pos:m.start()])
-        out.append((True, m.group(1).strip()))
+            staged += [(("ar" if a else "auto"), t) for a, t in _auto_segments(text[pos:m.start()])]
+        staged.append((m.group(1), m.group(2).strip()))
         pos = m.end()
     if pos < len(text):
-        out += _auto_segments(text[pos:])
-    return [(a, t) for a, t in out if t.strip()]
+        staged += [(("ar" if a else "auto"), t) for a, t in _auto_segments(text[pos:])]
+
+    out = []
+    for kind, t in staged:
+        if not t.strip():
+            continue
+        if kind == "auto":
+            out += _split_english(t)
+        else:
+            out.append((kind, t))
+    return [(k, t.strip()) for k, t in out if t.strip()]
 
 
 def say(text, voice, rate, dest):
@@ -102,30 +138,36 @@ def main():
     ap.add_argument("--arabic-rate", default="-25%")
     ap.add_argument("--urdu-voice", default=URDU_VOICE)
     ap.add_argument("--arabic-voice", default=ARABIC_VOICE)
+    ap.add_argument("--english-voice", default=ENGLISH_VOICE)
+    # the book's wording is read steadily, a touch slower than the Urdu around it
+    ap.add_argument("--english-rate", default="-8%")
     a = ap.parse_args()
 
     text = open(a.script, encoding="utf-8").read()
     segs = segments(text)
-    n_ar = sum(1 for is_ar, _ in segs if is_ar)
-    print("%d segments, %d recited in Arabic" % (len(segs), n_ar))
+    n_ar = sum(1 for k, _ in segs if k == "ar")
+    n_en = sum(1 for k, _ in segs if k == "en")
+    print("%d segments: %d Arabic, %d English quotations, rest Urdu"
+          % (len(segs), n_ar, n_en))
 
     tmp = tempfile.mkdtemp(prefix="tts_mixed_")
     parts, pause = [], os.path.join(tmp, "pause.mp3")
     silence(0.45, pause)
 
-    for i, (is_ar, chunk) in enumerate(segs):
+    VOICES = {"ur": (a.urdu_voice, a.rate),
+              "ar": (a.arabic_voice, a.arabic_rate),
+              "en": (a.english_voice, a.english_rate)}
+    for i, (kind, chunk) in enumerate(segs):
         dest = os.path.join(tmp, "%03d.mp3" % i)
-        voice = a.arabic_voice if is_ar else a.urdu_voice
-        rate = a.arabic_rate if is_ar else a.rate
+        voice, rate = VOICES[kind]
         if not say(chunk, voice, rate, dest):
             continue
-        if is_ar:
-            parts.append(pause)          # a beat before the ayah
+        if kind != "ur":
+            parts.append(pause)          # a beat before the quotation
         parts.append(dest)
-        if is_ar:
-            parts.append(pause)          # and one after, before the translation
-        if is_ar:
-            print("   AR: %s" % chunk[:70])
+        if kind != "ur":
+            parts.append(pause)          # and one after, before the Urdu resumes
+            print("   %s: %s" % (kind.upper(), chunk[:68]))
 
     lst = os.path.join(tmp, "list.txt")
     with open(lst, "w") as fh:
