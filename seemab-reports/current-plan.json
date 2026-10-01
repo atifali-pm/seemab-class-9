@@ -1,0 +1,63 @@
+{
+  "_comment": "The course still ahead of her, taken from the part maps. This is the live programme, distinct from topic-map.json which covers chapters she finished before it started. Mark done:true as each part goes out, and keep it in step with seemab-reports/daily/COVERAGE-LOG.md.",
+
+  "physics": [
+    {"ref": "7A", "title": "Density, and density of liquids and regular solids (7.1 to 7.2.1)", "done": true},
+    {"ref": "7B", "title": "Density of irregular solids, and floating (7.2.2 to 7.3)", "done": true},
+    {"ref": "7C", "title": "Plasma as the fourth state, and temperature from particle motion (7.4 to 7.6)", "done": true},
+    {"ref": "7D", "title": "Thermometric property and the six thermometers (7.8 to 7.8.5)", "done": true},
+    {"ref": "7E", "title": "Thermal expansion and the rest of Unit 7 (7.10 to 7.12.5)", "done": false},
+    {"ref": "8A", "title": "Magnetism: domains, poles, magnetic field, solenoid (8.1 to 8.2.4)", "done": false},
+    {"ref": "8B", "title": "Temporary and permanent magnets, uses, Earth's field (8.3 onward)", "done": false}
+  ],
+  "chemistry": [
+    {"ref": "11 P1", "title": "Atmosphere, the six air pollutants, Table 11.1, global warming", "done": true},
+    {"ref": "11 P2a", "title": "Sources of pollution and the greenhouse effect", "done": true},
+    {"ref": "11 P2b", "title": "Acid rain and the three acids it forms (11.5)", "done": true},
+    {"ref": "11 P2c", "title": "Catalytic converters, control strategies, personal protection", "done": false},
+    {"ref": "12", "title": "Environmental Chemistry, Water: treatment, pollution, scarcity", "done": false},
+    {"ref": "13 P1", "title": "Organic chemistry: homologous series, formulae, isomerism", "done": false},
+    {"ref": "13 P2", "title": "Functional groups, haloalkanes to amines", "done": false},
+    {"ref": "14", "title": "Hydrocarbons: alkanes, preparation, halogenation, combustion", "done": false},
+    {"ref": "15", "title": "Biochemistry: the nutrients (overlaps Biology Ch 6)", "done": false}
+  ],
+  "biology": [
+    {"ref": "8 P1", "title": "Nutrition, nutrients, uptake, osmosis, transpiration", "done": true},
+    {"ref": "8 P2a", "title": "Ascent of sap, TACT, translocation", "done": true},
+    {"ref": "8 P2b", "title": "Source and sink, pressure flow, gas exchange (8.3)", "done": true},
+    {"ref": "8 P2c", "title": "Homeostasis, excretion, osmotic adjustment", "done": false},
+    {"ref": "9 P1", "title": "Asexual reproduction and vegetative propagation", "done": false},
+    {"ref": "9 P2", "title": "Sexual reproduction, pollination, seed and germination", "done": false},
+    {"ref": "10", "title": "Evolution: natural selection, evidence, speciation", "done": false}
+  ],
+  "math": [
+    {"ref": "3A", "title": "Sets and set operations", "done": true},
+    {"ref": "3B", "title": "Associative and distributive laws", "done": true},
+    {"ref": "3C", "title": "Venn word problems and counting formulas", "done": true},
+    {"ref": "3D", "title": "Ordered pairs, Cartesian product, relations", "done": true},
+    {"ref": "6A-1", "title": "Measurement of an angle, the sexagesimal system (6.1)", "done": true},
+    {"ref": "6A-2", "title": "Radian measure, arc length and sector area (6.1 to 6.2)", "done": true},
+    {"ref": "6B", "title": "Trig ratios, the unit circle, 30 45 60, quadrant signs (6.3)", "done": false},
+    {"ref": "6C", "title": "Identities and solving right triangles (6.4)", "done": false},
+    {"ref": "6D", "title": "Angles of elevation and depression (6.5)", "done": false},
+    {"ref": "6E", "title": "Bearing, three-figure bearings (6.6)", "done": false},
+    {"ref": "8", "title": "Geometry of Straight Lines (5 parts)", "done": false},
+    {"ref": "9", "title": "Geometry and Polygons (6 parts)", "done": false},
+    {"ref": "10", "title": "Practical Geometry, the constructions", "done": false},
+    {"ref": "11", "title": "Basic Statistics (4 parts)", "done": false}
+  ],
+  "islamiat": [
+    {"ref": "3B-1", "title": "Husn e sulook with women", "done": true},
+    {"ref": "3B-2", "title": "The Prophet's method of teaching, parts 1 and 2", "done": true},
+    {"ref": "4-1", "title": "Ikhlas and taqwa", "done": true},
+    {"ref": "4-2", "title": "Takabbur and hasad", "done": true},
+    {"ref": "4-3", "title": "The remaining akhlaq of Bab 4", "done": false},
+    {"ref": "6", "title": "Mashaheer e Islam, the taught subset", "done": false},
+    {"ref": "7", "title": "Islamic teachings and the demands of the present age", "done": false}
+  ],
+  "quran": [
+    {"ref": "Q1", "title": "An-Naml and Al-Hajj: tagging answers with surah and ayah", "done": true},
+    {"ref": "Q2", "title": "Surah Al-Hajj, the six teachings about Hajj", "done": true},
+    {"ref": "Q3", "title": "The remaining surahs, awaiting Atif's word on which", "done": false}
+  ]
+}
