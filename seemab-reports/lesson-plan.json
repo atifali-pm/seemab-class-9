@@ -1169,9 +1169,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch02-states-of-matter",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch02-states-of-matter-notes-2026-09-30.pdf",
+   "audio": "chem-ch02-states-of-matter",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1189,9 +1189,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch02-elements-compounds-and-mixtures",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch02-element-compound-mixture-notes-2026-09-30.pdf",
+   "audio": "chem-ch02-element-compound-mixture",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1209,9 +1209,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch02-allotropes",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch02-allotropes-notes-2026-09-30.pdf",
+   "audio": "chem-ch02-allotropes",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1229,9 +1229,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch02-solution",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch02-solutions-notes-2026-09-30.pdf",
+   "audio": "chem-ch02-solutions",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1249,9 +1249,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch02-colloids-suspensions",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch02-colloids-suspensions-notes-2026-09-30.pdf",
+   "audio": "chem-ch02-colloids-suspensions",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1269,9 +1269,9 @@
    "target_words": 560,
    "target_minutes": 4.1,
    "slug": "chemistry-ch03-atomic-models",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch03-atomic-models-notes-2026-09-30.pdf",
+   "audio": "chem-ch03-atomic-models",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1289,9 +1289,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch03-subatomic-particles",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch03-subatomic-particles-notes-2026-09-30.pdf",
+   "audio": "chem-ch03-subatomic-particles",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1309,9 +1309,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch03-proton-atomic-number",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch03-atomic-number-notes-2026-09-30.pdf",
+   "audio": "chem-ch03-atomic-number",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1329,9 +1329,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch03-relative-atomic-mass",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch03-relative-atomic-mass-notes-2026-09-30.pdf",
+   "audio": "chem-ch03-relative-atomic-mass",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1361,9 +1361,9 @@
    "target_words": 560,
    "target_minutes": 4.1,
    "slug": "chemistry-ch03-isotopes",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch03-isotopes-notes-2026-09-30.pdf",
+   "audio": "chem-ch03-isotopes",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1381,9 +1381,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch03-cations-and-anions",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch03-cations-anions-notes-2026-09-30.pdf",
+   "audio": "chem-ch03-cations-anions",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1401,9 +1401,9 @@
    "target_words": 420,
    "target_minutes": 3.1,
    "slug": "chemistry-ch03-electronic-configuration",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch03-electronic-configuration-notes-2026-09-30.pdf",
+   "audio": "chem-ch03-electronic-configuration",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1429,9 +1429,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch04-periodic-table",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-periodic-table-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-periodic-table",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1449,9 +1449,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch04-group-number-and-charge-on-an-ion",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-group-and-ion-charge-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-group-and-ion-charge",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1489,9 +1489,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch04-periodicity-of-properties",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-periodicity-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-periodicity",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1533,9 +1533,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch04-characteristic-properties",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-characteristic-properties-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-characteristic-properties",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1553,9 +1553,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch04-transition-elements",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-transition-elements-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-transition-elements",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1573,9 +1573,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch04-lanthanides-and-actinides",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-lanthanides-actinides-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-lanthanides-actinides",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1593,9 +1593,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch04-halogens",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-halogens-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-halogens",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1613,9 +1613,9 @@
    "target_words": 300,
    "target_minutes": 2.2,
    "slug": "chemistry-ch04-noble-gases",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-noble-gases-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-noble-gases",
+   "done": true
   },
   {
    "subject": "chemistry",
@@ -1633,9 +1633,9 @@
    "target_words": 560,
    "target_minutes": 4.1,
    "slug": "chemistry-ch04-comparison-of-general-physical-prope",
-   "note": null,
-   "audio": null,
-   "done": false
+   "note": "seemab-reports/revision/chem-ch04-metals-vs-nonmetals-notes-2026-09-30.pdf",
+   "audio": "chem-ch04-metals-vs-nonmetals",
+   "done": true
   },
   {
    "subject": "chemistry",

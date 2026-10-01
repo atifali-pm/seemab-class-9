@@ -61,19 +61,34 @@ def render_note(lesson, body_html, colour, dest):
     return npages, txt.count("—"), ("KEY-" in txt or "Marking:" in txt)
 
 
+def _dur(path):
+    if not os.path.exists(path):
+        return 0.0
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                        "-of", "csv=p=0", path], capture_output=True)
+    try:
+        return float(r.stdout.decode().strip() or 0)
+    except ValueError:
+        return 0.0
+
+
 def render_audio(script_text, slug, date, target_words):
     sp = os.path.join(AUDIO, "%s-STORY-script-urdu.txt" % slug)
     open(sp, "w", encoding="utf-8").write(script_text)
     mp3 = os.path.join(AUDIO, "%s-URDU-audio-%s.mp3" % (slug, date))
-    subprocess.run(["python3", TTS, sp, mp3], capture_output=True)
+    # edge-tts reaches a network service and occasionally drops a segment, which
+    # would otherwise leave a silent file in an unattended run. Retry and check.
+    for attempt in range(3):
+        subprocess.run(["python3", TTS, sp, mp3], capture_output=True)
+        if _dur(mp3) > 20:
+            break
+        print("     retrying audio for %s (attempt %d gave %.1fs)" % (slug, attempt + 1, _dur(mp3)))
     ogg = os.path.join(AUDIO, "ogg", "%s-%s.ogg" % (slug, date))
     os.makedirs(os.path.dirname(ogg), exist_ok=True)
     subprocess.run(["ffmpeg", "-y", "-i", mp3, "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
                     "-c:a", "libopus", "-b:a", "64k", "-vbr", "on",
                     "-ar", "24000", "-ac", "1", ogg], capture_output=True)
-    d = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                        "-of", "csv=p=0", mp3], capture_output=True).stdout.decode().strip()
-    return float(d or 0) / 60, len(script_text.split())
+    return _dur(mp3) / 60, len(script_text.split())
 
 
 def _topic_key(slug):
@@ -114,6 +129,10 @@ def build(lessons, colour, date="2026-09-30"):
             flag += " EM-DASH!"
         if leak:
             flag += " KEY-LEAK!"
+        if mins < 0.5:
+            flag += " AUDIO FAILED!"
+        if npages not in ("1", "2"):
+            flag += " PAGES=%s!" % npages
         print("  %-34s note %sp  audio %.1f min (target %.1f, %d words)%s"
               % (item["ref"] + " " + meta["title"][:26], npages, mins,
                  meta["target_minutes"], words, flag))
